@@ -1,0 +1,44 @@
+{
+  "name": "att4",
+  "description": "att3",
+  "createdBy": 664,
+  "attributePid": 1,
+  "status": "ACTIVE",
+  "attributeValues": [
+    {
+      "pid": 1,
+      "value": "attval2",
+      "version": 0,
+      "enabled": true
+    },
+    {
+      "pid": 2,
+      "value": "attval3",
+      "version": 0,
+      "enabled": false
+    }
+  ],
+  "hasGlobalVisibility": false,
+  "specificPublisherVisibility": [
+    {
+      "name": "DataXu",
+      "publisherPid": 638
+    },
+    {
+      "name": "Burst Media",
+      "publisherPid": 651
+    },
+    {
+      "name": "AdFonic",
+      "publisherPid": 664
+    }
+  ],
+  "assignedLevel": [
+    1,
+    2,
+    3
+  ],
+  "version": 0,
+  "required": false,
+  "internalOnly": false
+}

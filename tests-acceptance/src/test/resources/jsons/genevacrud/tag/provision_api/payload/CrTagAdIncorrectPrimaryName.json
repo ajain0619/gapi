@@ -1,0 +1,19 @@
+{
+  "name": "AV88",
+  "buyer": {
+    "pid": "7069"
+  },
+  "primaryId": "apikey",
+  "primaryName": "ç",
+  "secondaryId": "sid",
+  "secondaryName": "sname",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "Username",
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

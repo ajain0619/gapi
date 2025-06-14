@@ -1,0 +1,53 @@
+{
+  "content": [
+    {
+      "id": "8a859e0f013a3a9da202acdbffe40005",
+      "pid": 248,
+      "name": "MedFTCompany",
+      "defaultRtbProfilesEnabled": false
+    },
+    {
+      "id": "8a859e0f013c3c4e139863ef9e74000b",
+      "pid": 456,
+      "name": "Rovio",
+      "defaultRtbProfilesEnabled": false
+    },
+    {
+      "id": "SELLER-S11",
+      "pid": 800,
+      "name": "Seller_S11",
+      "defaultRtbProfilesEnabled": true
+    },
+    {
+      "id": "SELLER-S21",
+      "pid": 801,
+      "name": "Seller_S21",
+      "defaultRtbProfilesEnabled": true
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": false,
+      "sorted": true,
+      "empty": false
+    },
+    "pageNumber": 0,
+    "pageSize": 4,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalElements": 6,
+  "totalPages": 2,
+  "last": false,
+  "numberOfElements": 4,
+  "number": 0,
+  "sort": {
+    "unsorted": false,
+    "sorted": true,
+    "empty": false
+  },
+  "size": 4,
+  "first": true,
+  "empty": false
+}

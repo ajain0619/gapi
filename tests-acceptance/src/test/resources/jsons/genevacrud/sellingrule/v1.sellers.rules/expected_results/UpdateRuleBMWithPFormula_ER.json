@@ -1,0 +1,42 @@
+{
+  "assignments": {},
+  "description": "ruleBMWithoutPFormulaDesc",
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST",
+      "pid": 4,
+      "version": 0
+    }
+  ],
+  "name": "BMruleWithoutPFormula",
+  "ownerCompanyPid": 10000,
+  "pid": 36,
+  "ruleFormula": {
+    "autoUpdate": false,
+    "pid": 1,
+    "placementFormula": {
+      "formulaGroups": [
+        {
+          "formulaRules": [
+            {
+              "attribute": "PLACEMENT_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "position"
+            },
+            {
+              "attribute": "SITE_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "al"
+            }
+          ]
+        }
+      ],
+      "groupedBy": "OR"
+    },
+    "version": 0
+  },
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "version": 1
+}

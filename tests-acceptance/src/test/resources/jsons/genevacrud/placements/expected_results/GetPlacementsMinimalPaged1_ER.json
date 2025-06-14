@@ -1,0 +1,101 @@
+{
+  "content": [
+    {
+      "pid": 13599,
+      "name": "position3",
+      "mraidAdvancedTracking": true,
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "version": 4,
+      "screenLocation": "UNDEFINED"
+    },
+    {
+      "pid": 13612,
+      "name": "default",
+      "mraidAdvancedTracking": true,
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "version": 4,
+      "screenLocation": "UNDEFINED"
+    },
+    {
+      "pid": 13625,
+      "name": "body",
+      "mraidAdvancedTracking": true,
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "version": 7,
+      "screenLocation": "UNDEFINED"
+    },
+    {
+      "pid": 13638,
+      "name": "header",
+      "mraidAdvancedTracking": true,
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "version": 4,
+      "screenLocation": "UNDEFINED"
+    },
+    {
+      "pid": 13651,
+      "name": "position1",
+      "mraidAdvancedTracking": true,
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "version": 5,
+      "screenLocation": "UNDEFINED"
+    },
+    {
+      "pid": 13664,
+      "name": "custom1a",
+      "mraidAdvancedTracking": true,
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "version": 6,
+      "screenLocation": "UNDEFINED"
+    },
+    {
+      "pid": 13677,
+      "name": "footer",
+      "mraidAdvancedTracking": true,
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "version": 1,
+      "screenLocation": "UNDEFINED"
+    },
+    {
+      "pid": 13690,
+      "name": "position2",
+      "mraidAdvancedTracking": true,
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "version": 4,
+      "screenLocation": "UNDEFINED"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 1,
+  "totalElements": 8,
+  "last": true,
+  "size": 10,
+  "numberOfElements": 8,
+  "number": 0,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "first": true,
+  "empty": false
+}

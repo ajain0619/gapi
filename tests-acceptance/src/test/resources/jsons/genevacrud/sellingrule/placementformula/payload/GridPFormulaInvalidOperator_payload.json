@@ -1,0 +1,14 @@
+{
+  "groupedBy": "AND",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "SITE_NAME",
+          "operator": "CONTAIN",
+          "ruleData": "sites"
+        }
+      ]
+    }
+  ]
+}

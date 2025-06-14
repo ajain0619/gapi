@@ -1,0 +1,11 @@
+{
+  "adStrictApproval": false,
+  "defaultTransparencyMgmtEnablement": "DISABLED",
+  "revenueGroupPid": 3,
+  "revenueShare": 0,
+  "sellerPid": 10201,
+  "smartQPSEnabled": false,
+  "version": 1,
+  "humanOptOut": false,
+  "customDealFloorEnabled": true
+}

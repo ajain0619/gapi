@@ -1,0 +1,7 @@
+# geneva-common-swagger
+
+Placeholder module for minimal common swagger settings.
+
+- Status: `Incubating`
+
+> NOTE: PLEASE DO NOT ADD ANYTHING TO THIS MODULE YET.

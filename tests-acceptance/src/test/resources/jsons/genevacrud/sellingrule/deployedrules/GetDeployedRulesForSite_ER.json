@@ -1,0 +1,9 @@
+[
+  {
+    "name": "brand protection rule for position",
+    "description": "some_other_description",
+    "status": "ACTIVE",
+    "type": "BRAND_PROTECTION",
+    "ownerCompanyPid": 10225
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "content": [
+    {
+      "description": "description",
+      "intendedActions": [
+        {
+          "actionData": "BLOCKLIST",
+          "actionType": "FILTER",
+          "version": 0
+        }
+      ],
+      "name": "SellerSeatBPrule",
+      "sellerSeatPid": 1,
+      "status": "ACTIVE",
+      "targets": [
+        {
+          "data": "category2",
+          "matchType": "EXCLUDE_LIST",
+          "status": "ACTIVE",
+          "targetType": "IAB_CATEGORY",
+          "version": 0
+        },
+        {
+          "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]",
+          "matchType": "EXCLUDE_LIST",
+          "status": "ACTIVE",
+          "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+          "version": 0
+        },
+        {
+          "data": "cid4",
+          "matchType": "EXCLUDE_LIST",
+          "status": "ACTIVE",
+          "targetType": "CREATIVE_ID",
+          "version": 0
+        },
+        {
+          "status": "ACTIVE",
+          "matchType": "EXCLUDE_LIST",
+          "targetType": "CREATIVE_BEACON",
+          "data": "[{\"tag_id\":120,\"tag_values\":[\"5min Media\"]}]"
+        }
+      ],
+      "type": "BRAND_PROTECTION",
+      "version": 0
+    }
+  ],
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

@@ -1,0 +1,24 @@
+{
+  "pid": 2,
+  "name": "Seller seat 2",
+  "description": "updated 2",
+  "status": false,
+  "version": 0,
+  "sellers": [
+    {
+      "pid": 810,
+      "name": "Seller_S12",
+      "type": "SELLER"
+    },
+    {
+      "pid": 811,
+      "name": "Seller_S22",
+      "type": "SELLER"
+    },
+    {
+      "pid": 812,
+      "name": "Seller_S32",
+      "type": "SELLER"
+    }
+  ]
+}

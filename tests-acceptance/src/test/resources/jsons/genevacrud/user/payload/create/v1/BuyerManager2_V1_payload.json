@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 10004,
+      "type": "BUYER"
+    }
+  ],
+  "role": "ROLE_MANAGER",
+  "userName": "buyermanager2_V1",
+  "email": "01reqwtwqa@qwert.ru",
+  "contactNumber": "785",
+  "name": "tas nexageTestLastName",
+  "title": "Mr.",
+  "primaryContact": false
+}

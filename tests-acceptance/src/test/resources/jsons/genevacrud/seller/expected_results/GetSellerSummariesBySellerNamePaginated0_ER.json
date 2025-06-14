@@ -1,0 +1,53 @@
+{
+  "content": [
+    {
+      "id": "8a858a1a013636e50ccce51312320005",
+      "pid": 27,
+      "name": "adserverSellerCompany1",
+      "defaultRtbProfilesEnabled": false
+    },
+    {
+      "id": "8a858a1a013636e50ccce56b6a8a000c",
+      "pid": 40,
+      "name": "adserverSellerCompany2",
+      "defaultRtbProfilesEnabled": false
+    },
+    {
+      "id": "8a858a51013636eaabf5eb1aeb0d000b",
+      "pid": 53,
+      "name": "adserverSellerTest3",
+      "defaultRtbProfilesEnabled": false
+    },
+    {
+      "id": "8a858a29013636f4f4b9f4f88b730005",
+      "pid": 79,
+      "name": "adserverFTGroup5",
+      "defaultRtbProfilesEnabled": false
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": false,
+      "sorted": true,
+      "empty": false
+    },
+    "pageSize": 4,
+    "pageNumber": 0,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 2,
+  "totalElements": 8,
+  "last": false,
+  "number": 0,
+  "numberOfElements": 4,
+  "size": 4,
+  "sort": {
+    "unsorted": false,
+    "sorted": true,
+    "empty": false
+  },
+  "first": true,
+  "empty": false
+}

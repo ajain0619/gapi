@@ -1,0 +1,13 @@
+{
+  "sitePid": 10000196,
+  "tiers": [],
+  "name": "MRAIDTrackingNative",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "NATIVE",
+  "screenLocation": "UNDEFINED",
+  "mraidAdvancedTracking": true,
+  "status": "ACTIVE",
+  "placementCategory": "NATIVE"
+}

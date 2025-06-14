@@ -1,0 +1,39 @@
+{
+  "name": "BPruleWithBuyerTargets",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10000,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MATCHED_USER_ID",
+      "data": "buyerData2"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYER_SEATS",
+      "data": "[{\"bidder\":1},{\"bidder\":2},{\"bidder\":3}]"
+    }
+  ],
+  "assignments": {
+    "publishers": [
+      {
+        "pid": 10000
+      }
+    ],
+    "sites": [
+      {
+        "pid": 10000160
+      }
+    ]
+  }
+}

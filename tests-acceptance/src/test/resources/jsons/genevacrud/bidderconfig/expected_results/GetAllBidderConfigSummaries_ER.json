@@ -1,0 +1,59 @@
+{
+  "content": [
+    {
+      "pid": 6,
+      "id": "ff808081016261fe152101646a530006",
+      "companyPid": 10230,
+      "name": "USA",
+      "formatType": "OpenRTBv2",
+      "billingSource": "ONE_MOBILE",
+      "defaultBidCurrency": "USD",
+      "version": 2
+    },
+    {
+      "pid": 7,
+      "id": "ff808081016261fe1521016ee6900007",
+      "companyPid": 10230,
+      "name": "USA",
+      "formatType": "OpenRTBv2",
+      "billingSource": "ONE_MOBILE",
+      "defaultBidCurrency": "USD",
+      "version": 2
+    },
+    {
+      "pid": 8,
+      "id": "ff808081016261fe1521016ef5830008",
+      "companyPid": 10230,
+      "name": "USA",
+      "formatType": "OpenRTBv2",
+      "billingSource": "ONE_MOBILE",
+      "defaultBidCurrency": "USD",
+      "version": 2
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 5,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalPages": 1,
+  "totalElements": 3,
+  "last": true,
+  "size": 5,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "numberOfElements": 3,
+  "first": true,
+  "empty": false
+}

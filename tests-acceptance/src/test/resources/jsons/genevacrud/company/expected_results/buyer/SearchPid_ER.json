@@ -1,0 +1,23 @@
+{
+  "id": "8a809449012f2ee2fbcc01c46f32001a",
+  "pid": 664,
+  "version": 3,
+  "name": "AdFonic",
+  "type": "BUYER",
+  "website": "http://www.adfonic.com",
+  "description": "AdFonic - RTB",
+  "contactUserPid": 482,
+  "adServingEnabled": false,
+  "restrictDrillDown": false,
+  "cpiTrackingEnabled": false,
+  "rtbEnabled": true,
+  "mediationEnabled": false,
+  "rtbRevenueReportEnabled": false,
+  "status": "INACTIVE",
+  "numberOfUsers": 1,
+  "adsourceNames": [],
+  "externalDataProviderNames": [],
+  "test": false,
+  "selfServeAllowed": false,
+  "thirdPartyFraudDetectionEnabled": false
+}

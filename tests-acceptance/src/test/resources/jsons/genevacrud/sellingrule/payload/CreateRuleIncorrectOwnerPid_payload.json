@@ -1,0 +1,26 @@
+{
+  "name": "incorrectOwner",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10226,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [],
+    "positions": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 1,
+  "name": "buyergroup1_changed",
+  "sfdcLineId": "12345_changed",
+  "sfdcIoId": "67890_changed",
+  "currency": "VND",
+  "billingCountry": "ARG",
+  "billable": true,
+  "version": 0,
+  "companyPid": 10200
+}

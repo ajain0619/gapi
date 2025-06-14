@@ -1,0 +1,38 @@
+{
+  "content": [
+    {
+      "dcn": "8a858a330137372da0982da362880006",
+      "id": "8a858a330137372da0982da362890007",
+      "pId": 950,
+      "version": 84,
+      "name": "AS8A",
+      "status": "ACTIVE",
+      "metadataEnablement": false,
+      "hbEnabled": false,
+      "companyPid": 105
+    },
+    {
+      "dcn": "8a858a330137372da0982da3ffc50009",
+      "id": "8a858a330137372da0982da3ffc5000a",
+      "pId": 963,
+      "version": 65,
+      "name": "AS8B",
+      "status": "ACTIVE",
+      "metadataEnablement": false,
+      "hbEnabled": false,
+      "companyPid": 105
+    }
+  ],
+  "last": true,
+  "totalElements": 2,
+  "totalPages": 1,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  },
+  "first": true,
+  "numberOfElements": 2
+}

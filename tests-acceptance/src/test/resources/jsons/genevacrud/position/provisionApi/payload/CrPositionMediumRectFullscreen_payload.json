@@ -1,0 +1,11 @@
+{
+  "placementCategory": "MEDIUM_RECTANGLE",
+  "memo": "allmyloving",
+  "name": "allmyloving",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 300,
+  "height": 250,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "interstitial": false
+}

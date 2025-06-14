@@ -1,0 +1,2567 @@
+[
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "4INFO",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "API Key",
+        "name": "pid"
+      },
+      {
+        "alias": "Placement ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 4512,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "4th Screen Advertising",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "adsiid",
+        "name": "pid"
+      }
+    ],
+    "pid": 4252,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A10A",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5500,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A12A",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5552,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A12B",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5565,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A15",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5643,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A1A",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5357,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A1B",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5539,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A24",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5747,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A4A",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5084,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A4B ",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5032,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A4C",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5045,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A4E",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5071,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A5A",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5318,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A5B",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5331,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A5C",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5344,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A6A",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5578,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "YES",
+    "decisionMakerEnabled": "NO",
+    "exchange": true,
+    "name": "A6B",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5591,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A7A",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5604,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A7B",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5617,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A7C",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5630,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A8A",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5383,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A8B",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5396,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A8C",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5409,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A8D",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5461,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A8E",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5474,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A8F",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5487,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A8X",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5422,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A8Y",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5435,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A8Z",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5448,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A9A",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5058,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "A9B",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5370,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Addictive Mobility AMO",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "App Key",
+        "name": "pid"
+      },
+      {
+        "alias": "Zone",
+        "name": "sid"
+      }
+    ],
+    "pid": 4967,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Addictive Mobility via CM",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 4590,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdFonic",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Slot ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Name",
+        "name": "pname"
+      },
+      {
+        "alias": "Slot Name",
+        "name": "sid"
+      }
+    ],
+    "pid": 4278,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdForce",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "adsiid",
+        "name": "pid"
+      }
+    ],
+    "pid": 4616,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdInfuse",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4031,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdMarvel",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Partner Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Id",
+        "name": "sid"
+      }
+    ],
+    "pid": 4694,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdMax Campaign Manager",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 5097,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdMax Loopback Network",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 2,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdMob",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Publisher Id",
+        "name": "pid"
+      }
+    ],
+    "pid": 4044,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdMob - Direct SDK Only",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Publisher Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Ad Type [preapp inapp other]",
+        "name": "sid"
+      }
+    ],
+    "pid": 5175,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdModa",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Publisher Id",
+        "name": "pid"
+      }
+    ],
+    "pid": 4291,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "adnet2",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "API Key",
+        "name": "pid"
+      },
+      {
+        "alias": "Placement ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 7021,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "adnet3",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "API Key",
+        "name": "pid"
+      },
+      {
+        "alias": "Placement ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 7034,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Adnetik",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 5149,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": true,
+    "name": "AdScreening ad source",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 2160,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdsHandy",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Site ID",
+        "name": "pid"
+      }
+    ],
+    "pid": 4083,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdsMobi",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 4811,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdsMovil",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Site ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Zone ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 4746,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Adstars",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "pid",
+        "name": "pid"
+      },
+      {
+        "alias": "AdSpace ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 4473,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdTech - Europe",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4954,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdTech - Interstitials",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4915,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdTech - VAST",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Network Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Type [e.g. pre_roll]",
+        "name": "pname"
+      },
+      {
+        "alias": "Placement ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 4720,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AdultModa (ADULT)",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Publisher Id",
+        "name": "pid"
+      }
+    ],
+    "pid": 5136,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Amobee",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Partner ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Name",
+        "name": "pname"
+      }
+    ],
+    "pid": 4213,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Appealing Media",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "key",
+        "name": "pid"
+      }
+    ],
+    "pid": 4551,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Appealing Media CM",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 4785,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AT&amp;T Local",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "apikey",
+        "name": "pid"
+      },
+      {
+        "alias": "platform [iOS | Android | BB | WM | WebOS]",
+        "name": "pname"
+      },
+      {
+        "alias": "zone",
+        "name": "sid"
+      }
+    ],
+    "pid": 4655,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "AT&amp;T National",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "apikey",
+        "name": "pid"
+      },
+      {
+        "alias": "platform-optional [iOS | Android | BB | WM | WebOS]",
+        "name": "pname"
+      },
+      {
+        "alias": "zone",
+        "name": "sid"
+      }
+    ],
+    "pid": 4837,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "B!mobile",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Partner Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Id",
+        "name": "sid"
+      }
+    ],
+    "pid": 4486,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Brightroll - Standard",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4876,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Brightroll - VAST",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Tag ID",
+        "name": "pid"
+      }
+    ],
+    "pid": 4772,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "BuzzCity",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4135,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Celtra",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 5266,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "ChinaMobile",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "contextFullName",
+        "name": "pid"
+      },
+      {
+        "alias": "placeHolderName",
+        "name": "sid"
+      }
+    ],
+    "pid": 4889,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Cloudmob via CM",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 4993,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "CostPerInstallAdnet",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5695,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "cpi_adnet",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "1",
+        "name": "pid"
+      },
+      {
+        "alias": "2",
+        "name": "pname"
+      },
+      {
+        "alias": "3",
+        "name": "sid"
+      },
+      {
+        "alias": "4",
+        "name": "sname"
+      }
+    ],
+    "pid": 5721,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "PUBLISHER",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "DataXu",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "site URL",
+        "name": "pid"
+      },
+      {
+        "alias": "IAB cat ID",
+        "name": "pname"
+      },
+      {
+        "alias": "IAB cat ID",
+        "name": "sid"
+      },
+      {
+        "alias": "IAB cat ID",
+        "name": "sname"
+      }
+    ],
+    "pid": 5279,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "DoubleClick Dart for Mobile",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4187,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "DoubleClick Dart for Publishers(DFP online)",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4265,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Echo Ad Server",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 1,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "eJam",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Site Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Zone ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 4707,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "enabled adnet",
+    "paramMetadata": {
+      "acceptsCreativeAttributes": "true",
+      "integrationTypes": "",
+      "passwordAlias": "Password",
+      "passwordRequired": "true",
+      "placementTypes": "",
+      "siteTypes": "",
+      "specificAttributesEnabled": "false",
+      "usernameAlias": "Username",
+      "usernameRequired": "true"
+    },
+    "parameterConfig": [
+      {
+        "alias": "123",
+        "name": "pid"
+      }
+    ],
+    "pid": 7049,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "PUBLISHER",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Enrich Mobile Ltd",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Partner ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Name",
+        "name": "pname"
+      }
+    ],
+    "pid": 4902,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "go2",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Partner ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Campaign ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 5227,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Google AdSense for iPhone Apps",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4161,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Google AdSense for Mobile",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Publisher Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Report ID",
+        "name": "pname"
+      },
+      {
+        "alias": "Custom Channel ID - custom channels only",
+        "name": "sid"
+      },
+      {
+        "alias": "Custom Channel ID - custom channels only",
+        "name": "sname"
+      }
+    ],
+    "pid": 4018,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Google AdSense for SmartPhones",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4239,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Google AFMA - Embedded",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5240,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Greystripe",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Publisher ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Reporting Name",
+        "name": "pname"
+      },
+      {
+        "alias": "Site ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 4369,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Greystripe Direct SDK",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "App ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Reporting Name",
+        "name": "pname"
+      },
+      {
+        "alias": "Ad Type [fullscreen]",
+        "name": "sid"
+      }
+    ],
+    "pid": 5513,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Hunt Mobile Ads",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "site ID",
+        "name": "pid"
+      },
+      {
+        "alias": "zone ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 4941,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "iAd",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "App Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Name",
+        "name": "pname"
+      }
+    ],
+    "pid": 5253,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "inMobi",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Site Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Name",
+        "name": "pname"
+      },
+      {
+        "alias": "setup on InMobi as wap or android or iphone - default to wap",
+        "name": "sid"
+      }
+    ],
+    "pid": 4070,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "inMobi - JP",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Site Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Name",
+        "name": "pname"
+      },
+      {
+        "alias": "setup on InMobi as wap or android or iphone - default to wap",
+        "name": "sid"
+      }
+    ],
+    "pid": 4863,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "inMobi - SDK Embed",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5526,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "iPromote",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "site",
+        "name": "pid"
+      },
+      {
+        "alias": "nid",
+        "name": "pname"
+      },
+      {
+        "alias": "sid",
+        "name": "sid"
+      }
+    ],
+    "pid": 5123,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "iVdopia",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 4317,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "iVdopia - Banner And Video",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4538,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "iVdopia - S2S",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "API Key",
+        "name": "pid"
+      },
+      {
+        "alias": "Ad Format [inappvideo | preappvideo | banner | vdobanner]",
+        "name": "sid"
+      }
+    ],
+    "pid": 4642,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "iVdopia - SDK",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "API Key",
+        "name": "pid"
+      },
+      {
+        "alias": "Type [preapp or inapp]",
+        "name": "sid"
+      }
+    ],
+    "pid": 4447,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "iVdopia - WAP Preroll",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "API Key",
+        "name": "pid"
+      },
+      {
+        "alias": "format [preinter | banner]",
+        "name": "pname"
+      },
+      {
+        "alias": "Session seconds",
+        "name": "sid"
+      },
+      {
+        "alias": "Slide true or false",
+        "name": "sname"
+      }
+    ],
+    "pid": 4343,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "JiWire",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "netid",
+        "name": "pid"
+      },
+      {
+        "alias": "size [default: 320x50]",
+        "name": "pname"
+      },
+      {
+        "alias": "Zone name",
+        "name": "sid"
+      },
+      {
+        "alias": "Campaign",
+        "name": "sname"
+      }
+    ],
+    "pid": 4798,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "JiWire - PROBE Only",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4850,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "JumpTap",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Publisher Alias",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Alias",
+        "name": "sid"
+      },
+      {
+        "alias": "Ad Spot Alias",
+        "name": "sname"
+      }
+    ],
+    "pid": 4122,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Lifestreet",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "adFeedKey",
+        "name": "pid"
+      },
+      {
+        "alias": "apiKey",
+        "name": "pname"
+      },
+      {
+        "alias": "publisherId",
+        "name": "sid"
+      },
+      {
+        "alias": "applicationId",
+        "name": "sname"
+      }
+    ],
+    "pid": 4980,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "LinkIt360",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Site ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Site URL",
+        "name": "pname"
+      },
+      {
+        "alias": "Analytic ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 5019,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Liquid Wireless",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "site URL",
+        "name": "pid"
+      }
+    ],
+    "pid": 4434,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "MadHouse",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Position",
+        "name": "pid"
+      }
+    ],
+    "pid": 4824,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "madvertise",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Partner ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Site",
+        "name": "sid"
+      },
+      {
+        "alias": "Subsite",
+        "name": "sname"
+      }
+    ],
+    "pid": 5201,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Marchex",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "API Key",
+        "name": "pid"
+      }
+    ],
+    "pid": 4304,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "MdotM",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "API Key",
+        "name": "pid"
+      },
+      {
+        "alias": "Secret Key",
+        "name": "pname"
+      },
+      {
+        "alias": "App Key",
+        "name": "sid"
+      },
+      {
+        "alias": "dimensions [default: 300x50]",
+        "name": "sname"
+      }
+    ],
+    "pid": 4629,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "MediaMath--CM",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      },
+      {
+        "alias": "Site Name",
+        "name": "sid"
+      }
+    ],
+    "pid": 4577,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Millennial iVdopia",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "APID",
+        "name": "pid"
+      }
+    ],
+    "pid": 4395,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Millennial Media",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "APID",
+        "name": "pid"
+      }
+    ],
+    "pid": 3992,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "MobFox",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Site ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Category ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 4603,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Mobilefuse",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Site Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Zone ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 5214,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "MobileTheory",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Partner Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Id",
+        "name": "sid"
+      }
+    ],
+    "pid": 4356,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Mobpartner",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Pool Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Sub Id",
+        "name": "pname"
+      }
+    ],
+    "pid": 5162,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Mojiva",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Site Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Zone ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 4109,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Moolah Media",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Sig",
+        "name": "pid"
+      },
+      {
+        "alias": "Custom Moolah ID",
+        "name": "pname"
+      },
+      {
+        "alias": "Type (app or web)",
+        "name": "sid"
+      }
+    ],
+    "pid": 4421,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Motrixi",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "pid",
+        "name": "pid"
+      },
+      {
+        "alias": "chid",
+        "name": "sid"
+      }
+    ],
+    "pid": 5006,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Nexage Ad Server",
+    "paramMetadata": {
+      "passwordAlias": "Password",
+      "passwordRequired": "true",
+      "usernameAlias": "Username",
+      "usernameRequired": "true"
+    },
+    "parameterConfig": [
+      {
+        "alias": "Campaign Types (direct or house)",
+        "name": "pid"
+      },
+      {
+        "alias": "Test Position Name (for test tags only)",
+        "name": "pname"
+      },
+      {
+        "alias": "Custom Banner Size WxH (for example 300x250)",
+        "name": "sid"
+      }
+    ],
+    "pid": 7048,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "PUBLISHER",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "YES",
+    "decisionMakerEnabled": "NO",
+    "exchange": true,
+    "name": "Nexage Exchange",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Tag Id",
+        "name": "pid"
+      }
+    ],
+    "pid": 4668,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "YES",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Nexage Exchange for CPI",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "123",
+        "name": "pid"
+      }
+    ],
+    "pid": 7008,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "PUBLISHER",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "YES",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Nexage Exchange Integrated",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "123",
+        "name": "pid"
+      }
+    ],
+    "pid": 5734,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "YES",
+    "decisionMakerEnabled": "NO",
+    "exchange": true,
+    "name": "Nexage Exchange Test",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Tag ID",
+        "name": "pid"
+      },
+      {
+        "alias": "BidderId [hardcoded. optional]",
+        "name": "pname"
+      }
+    ],
+    "pid": 4681,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Nexage SDK Vast Demo",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4733,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Nexage-Adserver",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5669,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "NFL Sponsorship",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5305,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Nokia",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4005,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Oneriot",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "android iphone bberry windows or encodedbberry",
+        "name": "pid"
+      },
+      {
+        "alias": "Site Name",
+        "name": "pname"
+      }
+    ],
+    "pid": 4382,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Oneriot_via_CM",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 4330,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "PK4 Media",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "zone",
+        "name": "pid"
+      },
+      {
+        "alias": "Partner ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 4408,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "reverse_geocoding_adnet",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "test",
+        "name": "pid"
+      }
+    ],
+    "pid": 5682,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "RulesPosSub",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5708,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "SAPO",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4200,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "SD_XPVT_IFA",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "APID",
+        "name": "pid"
+      }
+    ],
+    "pid": 3995,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Smaato",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Publisher ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Ad Space ID",
+        "name": "sid"
+      }
+    ],
+    "pid": 4525,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Tapad opt-out",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4928,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Tapad-static",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "site URL",
+        "name": "pid"
+      },
+      {
+        "alias": "CPM (0.10 0.25 0.50 1.00)",
+        "name": "pname"
+      }
+    ],
+    "pid": 4499,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Todacell",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "pub ID",
+        "name": "pid"
+      },
+      {
+        "alias": "site ID",
+        "name": "pname"
+      }
+    ],
+    "pid": 4564,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Traffic Marketplace",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5292,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Transpera",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4174,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Ubiyoo",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Ad Space ID",
+        "name": "pid"
+      }
+    ],
+    "pid": 5188,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Unanimis UK",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "pid",
+        "name": "pid"
+      },
+      {
+        "alias": "Unanimis content name",
+        "name": "pname"
+      },
+      {
+        "alias": "cid",
+        "name": "sid"
+      }
+    ],
+    "pid": 4096,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "velocity template adnet",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "id",
+        "name": "pid"
+      }
+    ],
+    "pid": 7047,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Vodafone - Amobee Ad Server",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4226,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Wapstart",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 5110,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "Webmoblink",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Publisher ID",
+        "name": "pid"
+      }
+    ],
+    "pid": 4759,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "WHERE",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Pub ID",
+        "name": "pid"
+      },
+      {
+        "alias": "Site ID optional",
+        "name": "pname"
+      },
+      {
+        "alias": "API key",
+        "name": "sid"
+      }
+    ],
+    "pid": 4460,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "YOC",
+    "paramMetadata": {},
+    "parameterConfig": [],
+    "pid": 4148,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  },
+  {
+    "bidEnabled": "NO",
+    "decisionMakerEnabled": "NO",
+    "exchange": false,
+    "name": "ZestAdz",
+    "paramMetadata": {},
+    "parameterConfig": [
+      {
+        "alias": "Site Id",
+        "name": "pid"
+      },
+      {
+        "alias": "Reporting Name",
+        "name": "pname"
+      }
+    ],
+    "pid": 4057,
+    "reportAuthType": "USERNAME_PASSWORD",
+    "selfServeEnablement": "NONE",
+    "testExchange": false
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "pid": 7,
+  "dealId": "1457031635254364732",
+  "description": "ArchivedTagTest-EnabledDeal",
+  "start": 1456981200000,
+  "floor": 1,
+  "createdBy": 2,
+  "status": "Active",
+  "dateCreated": 1457031747000,
+  "auctionType": "Fixed",
+  "bidders": [
+    {
+      "wseat": [
+        "2121212121"
+      ],
+      "adomains": [],
+      "bidderPid": 1
+    }
+  ],
+  "profiles": [
+    {
+      "pid": 12,
+      "rtbProfilePid": 10000042,
+      "description": "DealSelectedSupplier-NonPSS-Active1",
+      "auctionType": 0,
+      "defaultReserve": 1,
+      "pubAlias": "10201",
+      "siteAlias": "10000176",
+      "pubNameAlias": "CRUDPositionTest",
+      "siteNameAlias": "CRUDPosition_Site3",
+      "siteType": "A",
+      "isRealName": "false",
+      "siteId": 10000176,
+      "siteName": "CRUDPosition_Site3",
+      "categories": [
+        "IAB4"
+      ],
+      "countries": [],
+      "platform": "OTHER",
+      "pubId": 10201,
+      "pubName": "CRUDPositionTest",
+      "tagPid": 7370,
+      "tagName": "DealSelectedSupplier-NonPSS-Active1"
+    },
+    {
+      "pid": 11,
+      "rtbProfilePid": 10000044,
+      "description": "DealSelectedSupplier-NonPSS-Inactive1",
+      "auctionType": 0,
+      "defaultReserve": 1,
+      "pubAlias": "10201",
+      "siteAlias": "10000176",
+      "pubNameAlias": "CRUDPositionTest",
+      "siteNameAlias": "CRUDPosition_Site3",
+      "siteType": "W",
+      "isRealName": "false",
+      "siteId": 10000176,
+      "siteName": "CRUDPosition_Site3",
+      "categories": [
+        "IAB4"
+      ],
+      "countries": [],
+      "platform": "OTHER",
+      "pubId": 10201,
+      "pubName": "CRUDPositionTest",
+      "tagPid": 7372,
+      "tagName": "DealSelectedSupplier-NonPSS-Inactive1"
+    }
+  ],
+  "visibility": true,
+  "targets": [
+    {
+      "pid": 4,
+      "data": "alcatel/*",
+      "ruleType": "POSITIVE",
+      "targetType": "DEVICE_MAKE_MODEL"
+    },
+    {
+      "data": "google/*",
+      "ruleType": "POSITIVE",
+      "targetType": "DEVICE_MAKE_MODEL"
+    },
+    {
+      "pid": 5,
+      "data": "uk/*,kor",
+      "ruleType": "NEGATIVE",
+      "targetType": "COUNTRY_STATE"
+    },
+    {
+      "data": "male/1/13,female/1/16",
+      "ruleType": "NEGATIVE",
+      "targetType": "GENDER_AGE"
+    },
+    {
+      "pid": 3,
+      "data": "sdk/6.0.0/*",
+      "paramName": "FOO_updated",
+      "ruleType": "POSITIVE",
+      "targetType": "SDK_VERSION"
+    },
+    {
+      "pid": 2,
+      "data": "android/*/2.1,ios/7.0/9.0",
+      "ruleType": "POSITIVE",
+      "targetType": "DEVICE_OS_VERSION"
+    },
+    {
+      "data": "jpn/*,usa/ma",
+      "ruleType": "NEGATIVE",
+      "targetType": "COUNTRY_STATE"
+    },
+    {
+      "data": "jpn/*,kor",
+      "ruleType": "POSITIVE",
+      "targetType": "COUNTRY_STATE"
+    },
+    {
+      "data": "huawei/honor8",
+      "ruleType": "NEGATIVE",
+      "targetType": "DEVICE_MAKE_MODEL"
+    },
+    {
+      "data": "android/*/2.1,ios/10.0/*",
+      "ruleType": "NEGATIVE",
+      "targetType": "DEVICE_OS_VERSION"
+    }
+  ]
+}

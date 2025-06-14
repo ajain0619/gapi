@@ -1,0 +1,19 @@
+{
+  "id": "ff8080810151510f18db1ad0fc8a03e6",
+  "pid": 726,
+  "userName": "sellermanager2",
+  "name": "seller manager2 updated",
+  "email": "1jgdfjdf@qew.ru",
+  "contactNumber": "654233",
+  "title": "Mr",
+  "role": "ROLE_MANAGER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 482,
+      "type": "SELLER",
+      "name": "222 DJG"
+    }
+  ]
+}

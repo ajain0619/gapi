@@ -1,0 +1,8 @@
+package com.ssp.geneva.sdk.dv360.seller.model.type;
+
+public enum SkippableMatchType {
+  SKIPPABLE_MATCH_TYPE_UNSPECIFIED,
+  SKIPPABLE_MATCH_TYPE_SKIPPABLE,
+  SKIPPABLE_MATCH_TYPE_NOT_SKIPPABLE,
+  SKIPPABLE_MATCH_TYPE_ANY;
+}

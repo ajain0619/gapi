@@ -1,0 +1,60 @@
+{
+  "pid": 9,
+  "version": 0,
+  "name": "multiplePositions",
+  "description": "some_description",
+  "status": "ACTIVE",
+  "intendedActions": [
+    {
+      "pid": 9,
+      "version": 0,
+      "actionType": "FLOOR",
+      "actionData": "5.00"
+    }
+  ],
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 105,
+  "targets": [
+    {
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MATCHED_USER_ID",
+      "data": "data2"
+    }
+  ],
+  "assignments": {
+    "publishers": [
+      {
+        "pid": 105,
+        "name": "adserverSellerTest8"
+      }
+    ],
+    "positions": [
+      {
+        "pid": 13690,
+        "name": "position2",
+        "siteAssignment": {
+          "pid": 950,
+          "name": "AS8A",
+          "publisherAssignment": {
+            "pid": 105,
+            "name": "adserverSellerTest8"
+          }
+        }
+      },
+      {
+        "pid": 13677,
+        "name": "footer",
+        "siteAssignment": {
+          "pid": 950,
+          "name": "AS8A",
+          "publisherAssignment": {
+            "pid": 105,
+            "name": "adserverSellerTest8"
+          }
+        }
+      }
+    ]
+  }
+}

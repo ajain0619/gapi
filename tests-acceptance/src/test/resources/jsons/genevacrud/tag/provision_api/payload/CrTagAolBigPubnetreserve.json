@@ -1,0 +1,19 @@
+{
+  "name": "AV6",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 100,
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": [
+  ]
+}

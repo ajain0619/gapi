@@ -1,0 +1,11 @@
+[
+  {
+    "pid": 2056,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "OS",
+    "rule": "IS_ANY_OF",
+    "filter": "iOS/7.0,iOS/7.1,Android/4.3,Android/4.4,Nokia OS,REX,Linux,PalmOS,VRTXmc",
+    "name": "OS Targets"
+  }
+]

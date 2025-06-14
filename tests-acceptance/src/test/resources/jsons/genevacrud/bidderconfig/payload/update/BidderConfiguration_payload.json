@@ -1,0 +1,58 @@
+{
+  "adScreeningEnabled": false,
+  "adSizesFilter": [
+    "_432_X_72"
+  ],
+  "adSizesFilterMode": false,
+  "allowBridgeIdMatch": false,
+  "allowIdGraphMatch": true,
+  "allowLiveramp": false,
+  "allowConnectId": false,
+  "allowedDeviceTypes": [
+    {
+      "deviceTypeId": 3
+    }
+  ],
+  "allowedTraffic": "APPLICATION,MOBILE_WEB",
+  "auctionTypeFilter": 0,
+  "bidRequestCpm": 0,
+  "bidRequestUrl": "qwe",
+  "bidderConfigDenyAllowFilterLists": [],
+  "billingSource": "BRXD",
+  "categoriesFilterMode": false,
+  "companyPid": 300,
+  "countryFilterMode": false,
+  "defaultBidCurrency": "USD",
+  "defaultBidUnit": 0,
+  "deviceIdentifiedOnly": false,
+  "devicesFilterMode": false,
+  "domainFilterAllowList": false,
+  "domainFilterAllowUnknownUrls": true,
+  "domainVerificationAuthLevel": "ALLOW_ALL",
+  "exchangeRegionals": [
+    {
+      "pid": 1,
+      "id": "USA"
+    }
+  ],
+  "formatType": "OpenRTBv2",
+  "headerBiddingEnabled": true,
+  "id": "8a859e06014f4fd97b68dbce90c10009",
+  "imprFilter": [],
+  "includeLists": 1,
+  "locationEnabledOnly": false,
+  "name": "USA4",
+  "nativeVersion": "1.2",
+  "noticeUrl": "test",
+  "pid": 2,
+  "publishersFilterMode": false,
+  "regionLimits": [],
+  "requestRateFilter": -1,
+  "scriptAllowedFilter": false,
+  "sendDealSizes": false,
+  "sitesFilterMode": false,
+  "subscriptions": [],
+  "trafficStatus": true,
+  "verificationType": "STANDARD",
+  "version": 3
+}

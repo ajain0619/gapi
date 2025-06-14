@@ -1,0 +1,100 @@
+[
+  {
+    "assignedLevel": [
+      1
+    ],
+    "attributePid": 1,
+    "attributeValues": [
+      {
+        "enabled": true,
+        "pid": 1,
+        "value": "Assignable Value 3",
+        "version": 0
+      }
+    ],
+    "createdBy": 10232,
+    "hasGlobalVisibility": true,
+    "internalOnly": true,
+    "lastUpdated": "2019-02-08",
+    "name": "Inventory Attribute",
+    "prefix": "",
+    "required": false,
+    "specificPublisherVisibility": [
+      {
+        "name": "Nexage Inc",
+        "publisherPid": 1
+      }
+    ],
+    "status": "ACTIVE",
+    "version": 0
+  },
+  {
+    "assignedLevel": [
+      1,
+      2,
+      3
+    ],
+    "attributePid": 2,
+    "attributeValues": [
+      {
+        "enabled": false,
+        "pid": 3,
+        "value": "Assignable Value 5",
+        "version": 0
+      },
+      {
+        "enabled": true,
+        "pid": 2,
+        "value": "Assignable Value 4",
+        "version": 0
+      }
+    ],
+    "createdBy": 10232,
+    "hasGlobalVisibility": true,
+    "internalOnly": true,
+    "lastUpdated": "2019-02-08",
+    "name": "Inventory Attribute2",
+    "prefix": "",
+    "required": false,
+    "status": "ACTIVE",
+    "version": 0
+  },
+  {
+    "assignedLevel": [
+      2
+    ],
+    "attributePid": 3,
+    "attributeValues": [
+      {
+        "enabled": false,
+        "pid": 4,
+        "value": "Assignable Value 6",
+        "version": 0
+      }
+    ],
+    "createdBy": 10232,
+    "hasGlobalVisibility": true,
+    "internalOnly": true,
+    "lastUpdated": "2019-02-08",
+    "name": "Inventory Attribute3",
+    "prefix": "",
+    "required": false,
+    "status": "INACTIVE",
+    "version": 0
+  },
+  {
+    "assignedLevel": [
+      0
+    ],
+    "attributePid": 4,
+    "createdBy": 339,
+    "hasGlobalVisibility": true,
+    "internalOnly": true,
+    "lastUpdated": "2018-12-06",
+    "name": "ks test global placement level",
+    "prefix": "",
+    "required": false,
+    "status": "ACTIVE",
+    "version": 10
+  }
+]

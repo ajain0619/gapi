@@ -1,0 +1,67 @@
+{
+  "content": [
+    {
+      "adScreeningEnabled": true,
+      "appBundle": "gg",
+      "buyerTimeout": 500,
+      "companyPid": 10201,
+      "consumerProfileContributed": false,
+      "consumerProfileUsed": false,
+      "coppaRestricted": true,
+      "creationDate": 1456853745000,
+      "daysFree": 0,
+      "dcn": "ff8080810153532e00ff334000af02d8",
+      "description": "DealTagTestSite1",
+      "domain": "DealTagTestSite1",
+      "filterBots": true,
+      "globalAliasName": "DealTagTestSite1",
+      "groupsEnabled": true,
+      "hbEnabled": false,
+      "id": "ff8080810153532e00ff334000af02d9",
+      "isAdTruthEnabled": false,
+      "lastUpdate": 1456854220000,
+      "live": false,
+      "metadataEnablement": false,
+      "name": "DealTagTestSite1-App-ImpressionGroups",
+      "overrideIP": false,
+      "pId": 10000183,
+      "platform": "BLACKBERRY",
+      "reportBatchSize": 10,
+      "reportFrequency": 180000,
+      "rtb1CategoryRollup": "",
+      "rulesUpdateFrequency": 1800000,
+      "status": "ACTIVE",
+      "statusVal": 1,
+      "totalTimeout": 1000,
+      "trafficThrottle": 0,
+      "type": "APPLICATION",
+      "url": "DealTagTestSite1",
+      "version": 15
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

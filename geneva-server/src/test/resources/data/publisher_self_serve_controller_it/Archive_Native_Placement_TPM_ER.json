@@ -1,0 +1,32 @@
+{
+  "performanceMetrics": [
+    {
+      "tagPid": 7308,
+      "tagName": "AdFonic&#32;-&#32;PositionArchiving_TestTag7",
+      "requests": 24,
+      "revenue": 5.00000000,
+      "served": 5,
+      "delivered": 3,
+      "clicks": 4
+    },
+    {
+      "tagPid": 7310,
+      "tagName": "AdFonic&#32;-&#32;PositionArchiving_TestTag9",
+      "requests": 0,
+      "revenue": 0E-8,
+      "served": 0,
+      "delivered": 0,
+      "clicks": 0
+    },
+    {
+      "tagPid": 7350,
+      "tagName": "Nexage&#32;Exchange&#32;-&#32;PositionArchiving_TestTag10",
+      "requests": 0,
+      "revenue": 0E-8,
+      "served": 0,
+      "delivered": 0,
+      "clicks": 0
+    }
+  ],
+  "txId": "74f006b9c91cd78c3c08a0df75c69354"
+}

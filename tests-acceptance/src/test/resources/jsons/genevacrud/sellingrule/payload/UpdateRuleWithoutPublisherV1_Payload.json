@@ -1,0 +1,8 @@
+{
+  "pid": 1,
+  "version": 1,
+  "name": "Rule without publisher",
+  "description": "updated_description",
+  "status": "ACTIVE",
+  "type": "DEAL"
+}

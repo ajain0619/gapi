@@ -1,0 +1,11 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "interceptor",
+  "name": "interceptor",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 300,
+  "height": 400,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "interstitial": true
+}

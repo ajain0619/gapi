@@ -1,0 +1,11 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "FridayNight",
+  "name": "fridaynight",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 9999,
+  "height": 9999,
+  "mraidSupport": "NO",
+  "videoSupport": "BANNER",
+  "interstitial": true
+}

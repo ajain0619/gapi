@@ -1,0 +1,19 @@
+{
+  "site":{
+    "pid":10000192,
+    "type": "MOBILE_WEB"
+  },
+  "screenLocation":"UNKNOWN",
+  "mraidSupport":"YES",
+  "placementCategory":"BANNER",
+  "interstitial": false,
+  "mraidAdvancedTracking":true,
+  "positionAliasName":"CreatePlacementInFeedAliasInvalid",
+  "videoSupport":"BANNER",
+  "width":1400,
+  "height":400,
+  "adSizeType":"STANDARD",
+  "memo":"CreatePlacementInFeedInvalid",
+  "name":"createplacementinfeedinvalid",
+  "impressionTypeHandling": "BASED_ON_INBOUND_REQUEST"
+}

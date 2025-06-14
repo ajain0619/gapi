@@ -1,0 +1,40 @@
+{
+  "name": "Deleted rule for position",
+  "description": "test deleted position",
+  "status": "DELETED",
+  "intendedActions": [
+    {
+      "pid": 9,
+      "version": 0,
+      "actionType": "FLOOR",
+      "actionData": "5.00"
+    }
+  ],
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10201,
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MATCHED_USER_ID",
+      "data": "demandData1"
+    }
+  ],
+  "assignments": {
+    "positions": [
+      {
+        "pid": 100249,
+        "name": "medium_rectangle_placement",
+        "memo": "medium rectangle placement",
+        "siteAssignment": {
+          "pid": 10000174,
+          "name": "CRUDPosition_Site1",
+          "publisherAssignment": {
+            "pid": 10201,
+            "name": "CRUDPositionTest"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:metrics="http://www.ryantenney.com/schema/metrics"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.ryantenney.com/schema/metrics
+       http://www.ryantenney.com/schema/metrics/metrics.xsd">
+
+  <metrics:metric-registry id="metricRegistry"/>
+
+  <bean id="ssoMockServer" class="com.nexage.app.crs.SsoMockServer"
+        init-method="start" destroy-method="shutdown">
+    <constructor-arg name="port" value="18096" />
+  </bean>
+
+  <bean id="crsMockServer" class="com.nexage.app.crs.CrsMockHelper" depends-on="ssoMockServer"
+        init-method="startCRSMocService" destroy-method="stopCRSMockService">
+    <constructor-arg name="crsMockHost" value="localhost"/>
+    <constructor-arg name="crsMockPort" value="18097" />
+  </bean>
+</beans>

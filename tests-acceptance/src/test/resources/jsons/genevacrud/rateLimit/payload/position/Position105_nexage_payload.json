@@ -1,0 +1,13 @@
+{
+  "sitePid": 950,
+  "tiers": [],
+  "name": "BannerTest",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "BELOW_VISIBLE",
+  "mraidAdvancedTracking": true,
+  "status": "ACTIVE",
+  "placementCategory": "BANNER"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "withoutTarget",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+  ],
+  "assignments": {
+    "publishers": [
+      {
+        "pid": 10225,
+        "name": "transparency_enabled"
+      }
+    ],
+    "sites": [],
+    "positions": []
+  }
+}

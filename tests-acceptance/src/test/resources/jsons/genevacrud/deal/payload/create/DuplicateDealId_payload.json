@@ -1,0 +1,28 @@
+{
+  "description": "test",
+  "pid": 1,
+  "dealId": "1442225178554269962",
+  "status": "Inactive",
+  "start": "2015-09-24T00:00:00-04:00",
+  "profiles": [
+    {
+      "rtbProfilePid": 50003,
+      "auctionType": 0,
+      "defaultReserve": 0,
+      "pubAlias": 1,
+      "siteAlias": 1,
+      "pubNameAlias": "",
+      "siteNameAlias": "Site-1 For AdTruth Functional Testing",
+      "siteType": "A",
+      "isRealName": "false",
+      "siteId": 20003,
+      "siteName": "Gogii-textPlus-Android",
+      "pubId": 10000,
+      "pubName": "Seller1"
+    }
+  ],
+  "bidders": [],
+  "auctionType": "None",
+  "visibility": false,
+  "floor": null
+}

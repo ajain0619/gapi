@@ -1,0 +1,61 @@
+{
+  "pid": 10000190,
+  "version": 0,
+  "publisher": {
+    "pid": 10215
+  },
+  "dcn": "ff808081015d5df07de9f1d02aa6000a",
+  "domain": "jobs_transp_site3.com",
+  "name": "jobs_transp_site3",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "http://jobs_transp_site3.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB10"
+  ],
+  "positions": [
+    {
+      "pid": 100301,
+      "name": "jobs_transp_pos3"
+    }
+  ],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "siteTransparencySettings": {
+    "transparencyMode": "Aliases",
+    "nameAlias": "site3_name_alias"
+  },
+  "consumerProfileContributed": true,
+  "consumerProfileUsed": true,
+  "ethnicityMap": "afro=0,asiano=1,hisp=2,whe=3,othrt=4",
+  "genderMap": "a1=M1",
+  "inputDateFormat": "123",
+  "maritalStatusMap": "single=S1,married=M1,divorced=D,other=O",
+  "overrideIP": true,
+  "totalTimeout": 1000,
+  "trafficThrottle": 99,
+  "buyerTimeout": 10,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "adTruthEnabled": true,
+  "globalAliasName": "aliaz",
+  "metadataEnablement": true,
+  "adScreeningEnabled": false,
+  "reportBatchSize": 9,
+  "reportFrequency": 17000,
+  "rulesUpdateFrequency": 17000,
+  "filterBots": true,
+  "daysFree": 1,
+  "passthruParameters": [
+    ""
+  ],
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.13,
+    "rtbFee": 0.12
+  }
+}

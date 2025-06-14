@@ -1,0 +1,26 @@
+{
+  "name": "invalidMultiAdSizeData",
+  "description": "supplyDescription",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "MULTI_AD_SIZE",
+      "data": "10x10"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [],
+    "positions": []
+  }
+}

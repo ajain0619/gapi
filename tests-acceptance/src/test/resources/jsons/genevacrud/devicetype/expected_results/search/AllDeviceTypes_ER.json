@@ -1,0 +1,59 @@
+{
+  "content": [
+    {
+      "pid": 1,
+      "deviceTypeId": 2,
+      "name": "Personal Computer"
+    },
+    {
+      "pid": 2,
+      "deviceTypeId": 3,
+      "name": "Connected TV"
+    },
+    {
+      "pid": 3,
+      "deviceTypeId": 4,
+      "name": "Phone"
+    },
+    {
+      "pid": 4,
+      "deviceTypeId": 5,
+      "name": "Tablet"
+    },
+    {
+      "pid": 5,
+      "deviceTypeId": 6,
+      "name": "Connected Device"
+    },
+    {
+      "pid": 6,
+      "deviceTypeId": 7,
+      "name": "Set Top Box"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": true,
+  "totalElements": 6,
+  "totalPages": 1,
+  "first": true,
+  "numberOfElements": 6,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "empty": false
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 1,
+  "name": "BGR1",
+  "version": 0,
+  "publisherPid": 105,
+  "privilegeLevel": "PUBLISHER",
+  "data": "domain1.com,domain2.com",
+  "itemType": "ADOMAIN",
+  "listType": "BLOCKLIST",
+  "isIndividualsGroup": false
+}

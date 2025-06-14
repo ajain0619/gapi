@@ -1,0 +1,18 @@
+{
+  "id": "ff8080810151510f18db1ad1098403ec",
+  "pid": 732,
+  "version": 0,
+  "userName": "selleruser5",
+  "name": "seller user udpated",
+  "email": "selleruser5@req.ru",
+  "contactNumber": "54223",
+  "title": "Mr",
+  "role": "ROLE_USER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10063
+    }
+  ]
+}

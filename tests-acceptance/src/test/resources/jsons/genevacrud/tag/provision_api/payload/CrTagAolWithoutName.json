@@ -1,0 +1,17 @@
+{
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "tagController": {
+    "autoExpand": false
+  },
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "rules": []
+}

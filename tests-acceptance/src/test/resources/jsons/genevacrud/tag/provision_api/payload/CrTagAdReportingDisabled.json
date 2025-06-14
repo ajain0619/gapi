@@ -1,0 +1,16 @@
+{
+  "name": "AV210",
+  "buyer": {
+    "pid": "7053"
+  },
+  "primaryId": "06111550",
+  "ecpmManual": 10,
+  "ecpmProvision": "Manual",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "east",
+  "adNetReportPassword": "west",
+  "tagController": {
+    "autoExpand": false
+  }
+}

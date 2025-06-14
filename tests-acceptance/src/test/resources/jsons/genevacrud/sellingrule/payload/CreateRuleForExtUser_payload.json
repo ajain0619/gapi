@@ -1,0 +1,29 @@
+{
+  "name": "ruleForExtUser",
+  "description": "demandDescription",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10063,
+  "action": {
+    "floor": 1,
+    "intent": "BLOCKLIST"
+  },
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYERS",
+      "data": "demandData1"
+    }
+  ],
+  "assignments": {
+    "publishers": [
+      {
+        "pid": 10063,
+        "name": "transparency_enabled"
+      }
+    ],
+    "sites": [],
+    "positions": []
+  }
+}

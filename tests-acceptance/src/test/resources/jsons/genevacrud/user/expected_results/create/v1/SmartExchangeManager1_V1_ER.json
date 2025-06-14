@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 1,
+      "type": "NEXAGE"
+    }
+  ],
+  "role": "ROLE_MANAGER_SMARTEX",
+  "userName": "SmartExchangeManager1_V1",
+  "email": "smartexchangemanager1@ex.com",
+  "contactNumber": "123",
+  "name": "smartex manager1",
+  "title": "mr",
+  "primaryContact": true,
+  "oneCentralUserName": "SmartExchangeManager1_V1",
+  "firstName": "smartex",
+  "lastName": "manager1"
+}

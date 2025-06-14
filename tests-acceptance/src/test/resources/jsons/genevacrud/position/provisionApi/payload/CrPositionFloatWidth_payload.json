@@ -1,0 +1,10 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "ArabiaHanine",
+  "name": "arabiahanine",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 1.23,
+  "height": 9999,
+  "mraidSupport": "NO",
+  "interstitial": true
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ff8080810151510f18db1ad0f58703e1",
+  "pid": 721,
+  "userName": "selleruser1",
+  "name": "seller user1 updated",
+  "email": "01dfgfsd@ew.ri",
+  "contactNumber": "123213",
+  "dealAdmin": false,
+  "title": "Mr",
+  "role": "ROLE_USER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10063,
+      "type": "SELLER",
+      "name": "test_rtb"
+    }
+  ]
+}

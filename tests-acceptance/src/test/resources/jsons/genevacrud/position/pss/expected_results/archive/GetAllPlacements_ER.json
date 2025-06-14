@@ -1,0 +1,212 @@
+[
+  {
+    "pid": 100255,
+    "version": 3,
+    "site": {
+      "pid": 10000179
+    },
+    "name": "PositionArchiving_TestPosition4",
+    "mraidSupport": "NO",
+    "videoSupport": "NATIVE",
+    "screenLocation": "UNDEFINED",
+    "interstitial": false,
+    "placementCategory": "NATIVE_V2",
+    "tags": [
+      {
+        "pid": 7310
+      },
+      {
+        "pid": 7308
+      }
+    ],
+    "tiers": [
+      {
+        "pid": 10309,
+        "version": 0,
+        "level": 0,
+        "orderStrategy": "Dynamic",
+        "position": {
+          "pid": 100255
+        },
+        "tags": [
+          {
+            "pid": 7308
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pid": 100252,
+    "version": 3,
+    "site": {
+      "pid": 10000179
+    },
+    "name": "PositionArchiving_TestPosition1",
+    "mraidSupport": "YES",
+    "videoSupport": "BANNER",
+    "screenLocation": "FOOTER_VISIBLE",
+    "interstitial": false,
+    "placementCategory": "BANNER",
+    "tiers": [
+      {
+        "pid": 10300,
+        "version": 2,
+        "level": 0,
+        "orderStrategy": "Dynamic",
+        "position": {
+          "pid": 100252
+        }
+      },
+      {
+        "pid": 10301,
+        "version": 2,
+        "level": 1,
+        "orderStrategy": "Dynamic",
+        "position": {
+          "pid": 100252
+        }
+      }
+    ]
+  },
+  {
+    "pid": 100254,
+    "version": 1,
+    "site": {
+      "pid": 10000179
+    },
+    "name": "PositionArchiving_TestPosition3",
+    "mraidSupport": "YES",
+    "videoSupport": "BANNER",
+    "screenLocation": "FOOTER_VISIBLE",
+    "interstitial": false,
+    "height": 250,
+    "width": 300,
+    "placementCategory": "MEDIUM_RECTANGLE",
+    "tiers": [
+      {
+        "pid": 10306,
+        "version": 0,
+        "level": 1,
+        "orderStrategy": "Dynamic",
+        "position": {
+          "pid": 100254
+        }
+      },
+      {
+        "pid": 10305,
+        "version": 0,
+        "level": 0,
+        "orderStrategy": "Dynamic",
+        "position": {
+          "pid": 100254
+        }
+      }
+    ]
+  },
+  {
+    "pid": 100256,
+    "version": 6,
+    "site": {
+      "pid": 10000179
+    },
+    "name": "PositionArchiving_TestPosition5",
+    "mraidSupport": "NO",
+    "videoSupport": "VIDEO",
+    "screenLocation": "FULLSCREEN_VISIBLE",
+    "interstitial": false,
+    "videoLinearity": "LINEAR",
+    "height": 480,
+    "width": 320,
+    "placementCategory": "INSTREAM_VIDEO",
+    "tags": [
+      {
+        "pid": 7302
+      },
+      {
+        "pid": 7309
+      },
+      {
+        "pid": 7307
+      }
+    ],
+    "tiers": [
+      {
+        "pid": 10307,
+        "version": 1,
+        "level": 0,
+        "orderStrategy": "Dynamic",
+        "position": {
+          "pid": 100256
+        },
+        "tags": [
+          {
+            "pid": 7302
+          },
+          {
+            "pid": 7307
+          }
+        ]
+      },
+      {
+        "pid": 10308,
+        "version": 0,
+        "level": 1,
+        "orderStrategy": "Dynamic",
+        "position": {
+          "pid": 100256
+        },
+        "tags": [
+          {
+            "pid": 7309
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pid": 100253,
+    "version": 5,
+    "site": {
+      "pid": 10000179
+    },
+    "name": "PositionArchiving_TestPosition2",
+    "mraidSupport": "YES",
+    "videoSupport": "VIDEO_AND_BANNER",
+    "screenLocation": "FULLSCREEN_VISIBLE",
+    "interstitial": true,
+    "videoLinearity": "LINEAR",
+    "height": 480,
+    "width": 320,
+    "placementCategory": "INTERSTITIAL",
+    "tiers": [
+      {
+        "pid": 10303,
+        "version": 1,
+        "level": 1,
+        "orderStrategy": "Dynamic",
+        "position": {
+          "pid": 100253
+        }
+      },
+      {
+        "pid": 10302,
+        "version": 1,
+        "level": 0,
+        "orderStrategy": "Dynamic",
+        "position": {
+          "pid": 100253
+        }
+      },
+      {
+        "pid": 10304,
+        "version": 1,
+        "level": 2,
+        "orderStrategy": "Dynamic",
+        "position": {
+          "pid": 100253
+        }
+      }
+    ]
+  }
+]

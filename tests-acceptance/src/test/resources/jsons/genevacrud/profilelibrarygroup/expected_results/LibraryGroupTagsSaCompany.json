@@ -1,0 +1,50 @@
+[
+  {
+    "site": [
+      {
+        "sitePid": 10000207,
+        "siteType": "W",
+        "siteName": "traffic_site",
+        "status": "ACTIVE",
+        "mode": "LIVE",
+        "positions": [
+          {
+            "pid": 100330,
+            "positionName": "16012018",
+            "placementType": 0,
+            "trafficType": "SMART_YIELD",
+            "tags": []
+          },
+          {
+            "pid": 100329,
+            "positionName": "15012018",
+            "placementType": 0,
+            "trafficType": "SMART_YIELD",
+            "tags": []
+          },
+          {
+            "pid": 100331,
+            "positionName": "17012018",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": [
+              {
+                "tagPid": 5566605,
+                "tagname": "SampleTag",
+                "filterBiddersWhitelist": true,
+                "filterBiddersAllowlist": true,
+                "tierPid": 10360,
+                "tierLevel": 0,
+                "tierType": "WATERFALL",
+                "belongsToRTBGroup": false,
+                "blockedAsDefault": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "publisherPid": 10228,
+    "publisherName": "traffic_type"
+  }
+]

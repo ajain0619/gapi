@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout
+        pattern="%style{%d{ISO8601}}{black} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow} [%X{requestId}] [%X{userName}] : %msg %mdc%n%throwable"/>
+    </Console>
+    <RollingFile name="rollingFile" fileName="target/service.log"
+                 ignoreExceptions="false" filePattern="target/service.%i.log">
+      <PatternLayout>
+        <Pattern>%-5p %d{yyyy-MM-dd} %c{1.}:%L [%X{requestId}] - [%m]%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <OnStartupTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="25MB"/>
+      </Policies>
+      <DefaultRolloverStrategy max="4"/>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Logger name="org.hibernate.SQL_SLOW" additivity="false" level="INFO">
+      <AppenderRef ref="Console"/>
+    </Logger>
+    <Logger name="net.ttddyy" additivity="false" level="INFO">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Logger name="com.nexage" additivity="false" level="DEBUG">
+      <AppenderRef ref="Console"/>
+    </Logger>
+    <Logger name="com.ssp.geneva" additivity="false" level="DEBUG">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Root level="WARN">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="rollingFile"/>
+    </Root>
+  </Loggers>
+</Configuration>

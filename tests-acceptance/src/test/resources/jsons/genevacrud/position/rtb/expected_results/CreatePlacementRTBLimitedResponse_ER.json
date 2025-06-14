@@ -1,0 +1,25 @@
+{
+  "pid": 100329,
+  "version": 0,
+  "site": {
+    "pid": 10000202,
+    "hbEnabled": false
+  },
+  "name": "tracker3",
+  "memo": "banner placement",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "defaultRtbProfile": {
+    "pid": 10000070,
+    "description": "Self Service Created Default RTB Profile",
+    "name": "Evgeniya"
+  },
+  "mraidAdvancedTracking": false
+}

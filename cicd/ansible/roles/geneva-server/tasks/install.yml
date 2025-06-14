@@ -1,0 +1,65 @@
+- name: Creates Geneva Server directories
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: "{{ geneva_server_app_user }}"
+    group: "{{ geneva_server_app_group }}"
+    mode: 0755
+  with_items:
+    - "{{ geneva_server_home }}"
+    - "{{ geneva_server_home }}/bin"
+    - "{{ geneva_server_home }}/conf"
+    - "{{ geneva_server_logs }}"
+- name: Configure Geneva Systemd Services
+  template:
+    dest: "{{ geneva_server_service_path }}/{{ item }}.service"
+    group: root
+    mode: 0644
+    owner: root
+    src: "{{ item }}.service.j2"
+  with_items:
+    - "{{ geneva_server_service_name }}"
+    - "{{ geneva_server_healthcheck_service_name }}"
+- name: Enable {{ geneva_server_service_name }} service on start
+  service:
+    name: "{{ item }}"
+    enabled: yes
+  with_items:
+    - "{{ geneva_server_service_name }}"
+    - "{{ geneva_server_healthcheck_service_name }}"
+- name: "Configure {{ geneva_server_home }}/bin/{{ item }}"
+  template:
+    dest: "{{ geneva_server_home }}/bin/{{ item }}"
+    group: root
+    mode: 0755
+    owner: root
+    src: "{{ item }}.j2"
+  with_items:
+    - "start"
+    - "healthcheck"
+    - "override-properties.rb"
+- name: Download Geneva Server Jar
+  shell: |
+    SD={{ sd }}
+    echo "SD=$SD"
+    if [ $SD = 0 ]
+    then
+      curl "https://artifactory.ouroath.com/artifactory/onemobile-release/com/ssp/geneva/geneva-server/{{ app_version }}/geneva-server-{{ app_version }}.jar" -o "{{ geneva_server_home }}/bin/geneva-server.jar"
+    else
+      curl "https://artifactory.ouroath.com/artifactory/ssp-release/com/ssp/geneva/geneva-server/{{ app_version }}/geneva-server-{{ app_version }}.jar" -o "{{ geneva_server_home }}/bin/geneva-server.jar"
+    fi
+    chmod 0440 "{{ geneva_server_home }}/bin/geneva-server.jar"
+- name: Install Java JDK17
+  yum:
+    name:
+      - y1.0-yjava-jdk-17-openjdk
+    enablerepo: 'oath-rpms-stable'
+    state: latest
+- name: Set JAVA_HOME variable
+  shell: |
+    export JAVA_HOME=/opt/y/1.0/jvm/java
+- name: Configure timezone
+  command: timedatectl set-timezone America/New_York
+- copy:
+    src: cacerts
+    dest: "{{ geneva_server_home }}/conf"

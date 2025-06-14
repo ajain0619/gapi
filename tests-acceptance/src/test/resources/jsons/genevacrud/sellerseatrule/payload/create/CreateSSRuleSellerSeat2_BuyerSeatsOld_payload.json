@@ -1,0 +1,21 @@
+{
+  "name": "SellerSeatruleOldBuyerSeatsFormat",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "sellerSeatPid": 2,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYER_SEATS",
+      "data": "[{\"bidder\":1},{\"bidder\":2},{\"bidder\":3}]"
+    }
+  ]
+}

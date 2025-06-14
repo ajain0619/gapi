@@ -1,0 +1,26 @@
+{
+  "name": "TEST CLONE",
+  "version": 0,
+  "publisherPid": 105,
+  "privilegeLevel": "PUBLISHER",
+  "groups": [
+    {
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "data": "IAB1,IAB7-1,IAB3,ADDITIONAl",
+      "itemType": "CATEGORY",
+      "listType": "BLOCKLIST",
+      "isIndividualsGroup": false
+    },
+    {
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "data": "domain3.com,domain2.com,domain1.com",
+      "itemType": "ADOMAIN",
+      "listType": "BLOCKLIST",
+      "isIndividualsGroup": false
+    }
+  ]
+}

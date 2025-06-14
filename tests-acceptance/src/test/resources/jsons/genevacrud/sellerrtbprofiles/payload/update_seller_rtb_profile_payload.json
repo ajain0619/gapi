@@ -1,0 +1,20 @@
+{
+  "name": "My Default RTB Profile S22",
+  "pid": 60001,
+  "numberOfEffectivePlacements": 0,
+  "publisherDefault": true,
+  "auctionType": 0,
+  "pubNetReserve": 10.00000000,
+  "screeningLevel": "AllowAll",
+  "version": 0,
+  "alterReserve": "ONLY_IF_HIGHER",
+  "defaultReserve": 0E-8,
+  "includeConsumerId": true,
+  "includeConsumerProfile": true,
+  "includeDomainReferences": true,
+  "includeGeoData": true,
+  "lowReserve": 0E-8,
+  "creationDate": 1574281555000,
+  "description": "Self Service Created Default RTB Profile S22",
+  "lastUpdate": 1574281555000
+}

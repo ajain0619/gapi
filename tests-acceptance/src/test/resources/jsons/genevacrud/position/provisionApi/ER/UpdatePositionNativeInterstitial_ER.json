@@ -1,0 +1,12 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "downinnewOrleans",
+  "name": "downinneworleans",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 1000,
+  "height": 990,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "interstitial": true,
+  "version": 1
+}

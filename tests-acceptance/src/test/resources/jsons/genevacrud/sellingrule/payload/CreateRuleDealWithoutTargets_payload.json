@@ -1,0 +1,11 @@
+{
+  "name": "DealRuleWithoutTargets",
+  "description": "description",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10225,
+  "type": "DEAL",
+  "intendedActions": [
+  ],
+  "targets": [
+  ]
+}

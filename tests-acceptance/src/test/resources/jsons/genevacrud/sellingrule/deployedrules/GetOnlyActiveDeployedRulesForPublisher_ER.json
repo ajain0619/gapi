@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Active rule for publisher",
+    "description": "test_active_description",
+    "status": "ACTIVE",
+    "type": "BRAND_PROTECTION",
+    "ownerCompanyPid": 10225
+  }
+]

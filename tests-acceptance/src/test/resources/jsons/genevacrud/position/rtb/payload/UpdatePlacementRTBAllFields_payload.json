@@ -1,0 +1,54 @@
+{
+  "pid": 100331,
+  "version": 2,
+  "site": {
+    "pid": 10000202,
+    "hbEnabled": false,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "tracker31",
+  "memo": "banner placement",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "defaultRtbProfile": {
+    "pid": 10000071,
+    "version": 1,
+    "name": "newName",
+    "pubNetReserve": 3,
+    "libraries": [],
+    "bidderFilterWhitelist": true,
+    "bidderFilterAllowlist": false,
+    "useDefaultBlock": true,
+    "includeConsumerId": true,
+    "includeDomainReferences": true,
+    "includeConsumerProfile": true,
+    "screeningLevel": "RequireDomain",
+    "useDefaultBidders": true,
+    "auctionType": "FIRST_PRICE",
+    "lowReserve": 2,
+    "alterReserve": "OFF",
+    "siteTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "nameAlias": "siteName"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "nameAlias": "pubName"
+    },
+    "description": "description",
+    "defaultReserve": 1,
+    "blockedExternalDataProviderMap": {},
+    "bidderFilterMap": {},
+    "includeGeoData": true,
+    "defaultRtbProfileOwnerCompanyPid": 10225
+  },
+  "mraidAdvancedTracking": false
+}

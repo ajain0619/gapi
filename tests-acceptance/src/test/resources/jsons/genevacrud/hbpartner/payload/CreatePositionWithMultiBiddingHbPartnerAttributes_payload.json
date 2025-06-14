@@ -1,0 +1,37 @@
+{
+  "name": "create_placement_with_multibidding",
+  "site": {
+    "pid": 10000208,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "status": "ACTIVE",
+  "hbPartnerAttributes": [
+    {
+      "externalId": "mopub_pub_id_1",
+      "hbPartnerPid": 2,
+      "type": "NON_DEFAULT"
+    }
+  ],
+  "memo": "CreatePlacementWithMultiBiddingAlias",
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width":1400,
+  "height":400,
+  "interstitial": false,
+  "placementCategory": "INSTREAM_VIDEO",
+  "mraidAdvancedTracking": true,
+  "positionAliasName": "CreatePlacementWithMultiBiddingAlias",
+  "adSizeType":"STANDARD",
+  "longform":true,
+  "placementVideo": {
+    "linearity":"LINEAR",
+    "playerRequired":false,
+    "longform":true,
+    "streamType":"LIVE",
+    "ssai":"ALL_SERVER_SIDE",
+    "multiImpressionBid": true,
+    "competitiveSeparation": true
+  }
+}

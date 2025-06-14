@@ -1,0 +1,42 @@
+{
+  "pid": 2,
+  "id": "8a859e06014f4fd97b68dbce90c10009",
+  "version": 3,
+  "adScreeningEnabled": true,
+  "adSizesFilter": [],
+  "adSizesFilterMode": false,
+  "allowedTraffic": "MOBILE_WEB,APPLICATION",
+  "auctionTypeFilter": 0,
+  "bidRequestCpm": 0,
+  "bidRequestUrl": "pbs.org",
+  "categoriesFilterMode": false,
+  "companyPid": 300,
+  "countryFilterMode": false,
+  "defaultBidCurrency": "USD",
+  "defaultBidUnit": 0,
+  "deviceIdentifiedOnly": false,
+  "devicesFilterMode": false,
+  "exchangeRegionals": [
+    {
+      "pid": 1,
+      "id": "USA"
+    }
+  ],
+  "formatType": "OpenRTBv2",
+  "imprFilter": [],
+  "includeLists": 1,
+  "locationEnabledOnly": false,
+  "name": "USA4",
+  "publishersFilterMode": false,
+  "regionLimits": [],
+  "requestRateFilter": -1,
+  "scriptAllowedFilter": false,
+  "sitesFilterMode": false,
+  "subscriptions": [],
+  "trafficStatus": true,
+  "userIdBidRequestType": "UNKNOWN",
+  "userIdPreference": "NO_ID_RESTRICTION",
+  "verificationType": "STANDARD",
+  "smartQpsOutboundEnabled": false,
+  "throttleRate": 0.0
+}

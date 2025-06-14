@@ -1,0 +1,32 @@
+{
+  "name": "Novogrudok",
+  "description": "CreatedByThoseWhoLeaving",
+  "prefix": "",
+  "createdBy": 10225,
+  "attributePid": 6,
+  "status": "ACTIVE",
+  "attributeValues": [
+    {
+      "pid": 7,
+      "value": "Novogrudok",
+      "version": 0,
+      "enabled": false
+    }
+  ],
+  "hasGlobalVisibility": false,
+  "specificPublisherVisibility": [
+    {
+      "name": "transparency_enabled",
+      "publisherPid": 10225
+    }
+  ],
+  "assignedLevel": [
+    1,
+    2,
+    3
+  ],
+  "lastUpdated": "2018-10-10",
+  "version": 0,
+  "required": false,
+  "internalOnly": false
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "name": "Audio Ad (Auto Play) (1)"
+  },
+  {
+    "id": 2,
+    "name": "Audio Ad (User Initiated) (2)"
+  },
+  {
+    "id": 3,
+    "name": "Expandable (Automatic) (3)"
+  },
+  {
+    "id": 4,
+    "name": "Expandable (User Initiated - Click) (4)"
+  },
+  {
+    "id": 5,
+    "name": "Expandable (User Initiated - Rollover) (5)"
+  },
+  {
+    "id": 6,
+    "name": "In-Banner Video Ad (Auto Play) (6)"
+  },
+  {
+    "id": 7,
+    "name": "In-Banner Video Ad (User Initiated) (7)"
+  },
+  {
+    "id": 8,
+    "name": "Pop (e.g., Over, Under, or upon Exit) (8)"
+  },
+  {
+    "id": 9,
+    "name": "Provocative or Suggestive Imagery (9)"
+  },
+  {
+    "id": 10,
+    "name": "Shaky, Flashing, Flickering, Extreme Animation, Smileys (10)"
+  },
+  {
+    "id": 11,
+    "name": "Surveys (11)"
+  },
+  {
+    "id": 12,
+    "name": "Text Only (12)"
+  },
+  {
+    "id": 13,
+    "name": "User Interactive (e.g., Embedded Games) (13)"
+  },
+  {
+    "id": 14,
+    "name": "Windows Dialog or Alert Style (14)"
+  },
+  {
+    "id": 15,
+    "name": "Has audio on/off button (15)"
+  },
+  {
+    "id": 16,
+    "name": "Ad can be skipped (e.g., skip button on preroll video) (16)"
+  },
+  {
+    "id": 17,
+    "name": "Adobe Flash"
+  }
+]

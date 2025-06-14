@@ -1,0 +1,50 @@
+{
+  "publisher": {
+    "pid": 10228
+  },
+  "description": "site for revenue",
+  "domain": "domain.com",
+  "name": "incRtbFee",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "rev.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE",
+  "appBundle": "",
+  "consumerProfileContributed": true,
+  "consumerProfileUsed": true,
+  "ethnicityMap": "afr=0,asian=1,hisp=2,wh=3,oth=4",
+  "genderMap": "a1=M",
+  "inputDateFormat": "123456780",
+  "maritalStatusMap": "single=S,married=M,divorced=D,other=O",
+  "overrideIP": false,
+  "totalTimeout": 90,
+  "trafficThrottle": 45,
+  "buyerTimeout": 90,
+  "impressionGroup": {
+    "enabled": true,
+    "groups": [
+      "EnBarraquillaMeQuedo"
+    ]
+  },
+  "rtb1CategoryRollup": "IAB1",
+  "adTruthEnabled": false,
+  "globalAliasName": "globAli",
+  "metadataEnablement": true,
+  "hbEnabled": true,
+  "adScreeningEnabled": false,
+  "reportBatchSize": 1,
+  "reportFrequency": 15000,
+  "rulesUpdateFrequency": 15000,
+  "filterBots": false,
+  "daysFree": 0,
+  "passthruParameters": [],
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.53,
+    "rtbFee": 1.32
+  }
+}

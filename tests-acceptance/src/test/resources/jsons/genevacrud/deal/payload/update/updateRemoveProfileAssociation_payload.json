@@ -1,0 +1,15 @@
+{
+  "pid": 1,
+  "dealId": "1442225178554269962",
+  "description": "1) Deal with all feature enabled",
+  "start": 1442314800000,
+  "stop": 1443697199000,
+  "floor": 1000,
+  "createdBy": 2,
+  "status": "Active",
+  "dateCreated": 1442250404000,
+  "auctionType": "Fixed",
+  "bidders": [],
+  "profiles": [],
+  "visibility": true
+}

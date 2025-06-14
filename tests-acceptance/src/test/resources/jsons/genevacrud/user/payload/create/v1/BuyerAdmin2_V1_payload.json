@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 10003,
+      "type": "BUYER"
+    }
+  ],
+  "role": "ROLE_ADMIN",
+  "userName": "buyeradmin2_V1",
+  "email": "01qweqwe@eraw.ru",
+  "contactNumber": "765",
+  "name": "ytr nexageTestLastName",
+  "title": "rtwe",
+  "primaryContact": false
+}

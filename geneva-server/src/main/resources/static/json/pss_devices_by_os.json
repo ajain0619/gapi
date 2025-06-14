@@ -1,0 +1,817 @@
+[
+  {
+    "os": "iOS",
+    "versions": [
+      {
+        "name": "11 (all)",
+        "value": "11.0,",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "11.0",
+            "value": "11.0"
+          }
+        ]
+      },
+      {
+        "name": "10 (all)",
+        "value": "10.3,10.2,10.1,10.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "10.3",
+            "value": "10.3"
+          },
+          {
+            "name": "10.2",
+            "value": "10.2"
+          },
+          {
+            "name": "10.1",
+            "value": "10.1"
+          },
+          {
+            "name": "10.0",
+            "value": "10.0"
+          }
+        ]
+      },
+      {
+        "name": "9 (all)",
+        "value": "9.3,9.2,9.1,9.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "9.3",
+            "value": "9.3"
+          },
+          {
+            "name": "9.2",
+            "value": "9.2"
+          },
+          {
+            "name": "9.1",
+            "value": "9.1"
+          },
+          {
+            "name": "9.0",
+            "value": "9.0"
+          }
+        ]
+      },
+      {
+        "name": "8 (all)",
+        "value": "8.4,8.3,8.2,8.1,8.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "8.4",
+            "value": "8.4"
+          },
+          {
+            "name": "8.3",
+            "value": "8.3"
+          },
+          {
+            "name": "8.2",
+            "value": "8.2"
+          },
+          {
+            "name": "8.1",
+            "value": "8.1"
+          },
+          {
+            "name": "8.0",
+            "value": "8.0"
+          }
+        ]
+      },
+      {
+        "name": "7 (all)",
+        "value": "7.1,7.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "7.1",
+            "value": "7.1"
+          },
+          {
+            "name": "7.0",
+            "value": "7.0"
+          }
+        ]
+      },
+      {
+        "name": "6 (all)",
+        "value": "6.1,6.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "6.1",
+            "value": "6.1"
+          },
+          {
+            "name": "6.0",
+            "value": "6.0"
+          }
+        ]
+      },
+      {
+        "name": "5 (all)",
+        "value": "5.1,5.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "5.1",
+            "value": "5.1"
+          },
+          {
+            "name": "5.0",
+            "value": "5.0"
+          }
+        ]
+      },
+      {
+        "name": "4 (all)",
+        "value": "4.3,4.2,4.1,4.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "4.3",
+            "value": "4.3"
+          },
+          {
+            "name": "4.2",
+            "value": "4.2"
+          },
+          {
+            "name": "4.1",
+            "value": "4.1"
+          },
+          {
+            "name": "4.0",
+            "value": "4.0"
+          }
+        ]
+      },
+      {
+        "name": "3 (all)",
+        "value": "3.2,3.1,3.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "3.2",
+            "value": "3.2"
+          },
+          {
+            "name": "3.1",
+            "value": "3.1"
+          },
+          {
+            "name": "3.0",
+            "value": "3.0"
+          }
+        ]
+      }
+    ],
+    "devices": [
+      {
+        "make": "Apple",
+        "children": [
+          {
+            "model": "iPhone",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "iPod Touch",
+            "type": "OTHER"
+          },
+          {
+            "model": "iPad",
+            "type": "TABLET"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "os": "Android",
+    "versions": [
+      {
+        "name": "7 (all)",
+        "value": "7.0,7.1",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "7.1 Nougat",
+            "value": "7.1"
+          },
+          {
+            "name": "7.0 Nougat",
+            "value": "7.0"
+          }
+        ]
+      },
+      {
+        "name": "6 (all)",
+        "value": "6.0,",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "6.0 Marshmallow",
+            "value": "6.0"
+          }
+        ]
+      },
+      {
+        "name": "5 (all)",
+        "value": "5.1,5.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "5.1 Lollipop",
+            "value": "5.1"
+          },
+          {
+            "name": "5.0 Lollipop",
+            "value": "5.0"
+          }
+        ]
+      },
+      {
+        "name": "4 (all)",
+        "value": "4.4,4.3,4.2,4.1,4.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "4.4 KitKat",
+            "value": "4.4"
+          },
+          {
+            "name": "4.3 Jelly Bean",
+            "value": "4.3"
+          },
+          {
+            "name": "4.2 Jelly Bean",
+            "value": "4.2"
+          },
+          {
+            "name": "4.1 Jelly Bean",
+            "value": "4.1"
+          },
+          {
+            "name": "4.0 Ice Cream Sandwich",
+            "value": "4.0"
+          }
+        ]
+      },
+      {
+        "name": "3 (all)",
+        "value": "3.2,3.1,3.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "3.2 Honeycomb",
+            "value": "3.2"
+          },
+          {
+            "name": "3.1 Honeycomb",
+            "value": "3.1"
+          },
+          {
+            "name": "3.0 Honeycomb",
+            "value": "3.0"
+          }
+        ]
+      },
+      {
+        "name": "2 (all)",
+        "value": "2.3,2.2,2.1,2.0",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "2.3 Gingerbread",
+            "value": "2.3"
+          },
+          {
+            "name": "2.2 Froyo",
+            "value": "2.2"
+          },
+          {
+            "name": "2.1 Eclair",
+            "value": "2.1"
+          },
+          {
+            "name": "2.0 Eclair",
+            "value": "2.0"
+          }
+        ]
+      },
+      {
+        "name": "1 (all)",
+        "value": "1.6,1.5",
+        "rootNode": true,
+        "children": [
+          {
+            "name": "1.6 Donut",
+            "value": "1.6"
+          },
+          {
+            "name": "1.5 Cupcake",
+            "value": "1.5"
+          }
+        ]
+      }
+    ],
+    "devices": [
+      {
+        "make": "Kyocera",
+        "children": [
+          {
+            "model": "C5170",
+            "type": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "make": "Huawei",
+        "children": [
+          {
+            "model": "Y300",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "M931",
+            "type": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "make": "ZTE",
+        "children": [
+          {
+            "model": "N9120",
+            "type": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "make": "Sony",
+        "children": [
+          {
+            "model": "C5303",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "Xperia Z C6603",
+            "type": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "make": "Motorola",
+        "children": [
+          {
+            "model": "XT1080",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "XT926",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "DROID RAZR",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "XT1032",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "XT907",
+            "type": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "make": "Alcatel",
+        "children": [
+          {
+            "model": "One Touch Fierce",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "One Touch 5020D",
+            "type": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "make": "Sony Ericsson",
+        "children": [
+          {
+            "model": "ST25i",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "LT26i",
+            "type": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "make": "Metro PCS",
+        "children": [
+          {
+            "model": "Y301A1",
+            "type": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "make": "Amazon",
+        "children": [
+          {
+            "model": "Kindle Fire",
+            "type": "TABLET"
+          },
+          {
+            "model": "Kindle Fire HD",
+            "type": "TABLET"
+          }
+        ]
+      },
+      {
+        "make": "Google",
+        "children": [
+          {
+            "model": "Nexus 5",
+            "type": "TABLET"
+          },
+          {
+            "model": "Nexus 7",
+            "type": "TABLET"
+          }
+        ]
+      },
+      {
+        "make": "HTC",
+        "children": [
+          {
+            "model": "One",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "Evo 4G LTE",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "6435 LVW",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "One X",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "Incredible S",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "One V",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "One S",
+            "type": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "make": "LG",
+        "children": [
+          {
+            "model": "L38C",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "VS840",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "MS769",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "E960",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "P769",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "MS770",
+            "type": "SMARTPHONE"
+          }
+        ]
+      },
+      {
+        "make": "Samsung",
+        "children": [
+          {
+            "model": "GT-P3110",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-T989",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-S5310",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SPH-L710",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SPH-L720",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-M919",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-N7000 Galaxy Note",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I9300",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SPH-L900",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I9305",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I8552",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SCH-I605",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "S6102",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SCH-S738C",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-P5100",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SM-N9005",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SM-N900V",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SPH-D710BST",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I9100 Galaxy S2",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-T999",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-S5360 Galaxy Y",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SCH-I545",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-N7100",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SCH-I535",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-S5301",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I8190",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-P3100",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-I747",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SCH-R970",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-S7560M",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I9500",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I8262D",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-N8000",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I8160",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-T599N",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I9082",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-I317",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-I747M",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I8190L",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I9195",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-P5200",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-I337",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-P7500 Galaxy Tab 10.1",
+            "type": "TABLET"
+          },
+          {
+            "model": "GT-I9105P",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-S5830i",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-P3113",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SCH-R530U",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I9070",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "Galaxy Nexus",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-I337M",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SCH-I200",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SM-N900A",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I9505",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-S7500",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SPH-D710",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SM-T211",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SM-T210R",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-I537",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SGH-T889",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "SPH-M830",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-I8190N",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-S6310",
+            "type": "SMARTPHONE"
+          },
+          {
+            "model": "GT-S7562",
+            "type": "SMARTPHONE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "os": "RIM"
+  },
+  {
+    "os": "Windows"
+  },
+  {
+    "os": "Nokia OS"
+  },
+  {
+    "os": "REX"
+  },
+  {
+    "os": "Symbian"
+  },
+  {
+    "os": "Linux"
+  },
+  {
+    "os": "BREW"
+  },
+  {
+    "os": "WebOS"
+  },
+  {
+    "os": "Nucleusplus"
+  },
+  {
+    "os": "PalmOS"
+  },
+  {
+    "os": "VRTXmc"
+  },
+  {
+    "os": "Motorola"
+  },
+  {
+    "os": "Hiptop"
+  }
+]

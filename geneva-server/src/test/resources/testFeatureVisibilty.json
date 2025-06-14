@@ -1,0 +1,61 @@
+{
+  "menu": {
+    "dashboard": {
+      "visible": true
+    },
+    "insertionOrders": {
+      "visible": true
+    },
+    "reports": {
+      "visible": true
+    },
+    "adQuality": {
+      "visible": true,
+      "adScreening": {
+        "visible": true
+      }
+    },
+    "adScreeningTopLevel": {
+      "visible": false
+    },
+    "rtbConfiguration": {
+      "visible": true
+    },
+    "companies": {
+      "visible": true,
+      "buyers": {
+        "visible": true
+      },
+      "sellers": {
+        "visible": true
+      },
+      "seatHolders": {
+        "visible": true
+      },
+      "partners": {
+        "visible": false
+      },
+      "hbPartners": {
+        "visible": true
+      }
+    },
+    "users": {
+      "visible": true
+    },
+    "campaigns": {
+      "visible": false
+    },
+    "experiments": {
+      "visible": true
+    },
+    "dealId": {
+      "visible": false
+    }
+  },
+  "loginAccess": {
+    "NEXAGE": true,
+    "SELLER": true,
+    "BUYER": false,
+    "SEATHOLDER": true
+  }
+}

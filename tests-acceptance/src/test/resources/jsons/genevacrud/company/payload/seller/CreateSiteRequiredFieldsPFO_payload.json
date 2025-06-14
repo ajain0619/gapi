@@ -1,0 +1,56 @@
+{
+  "adScreeningEnabled": false,
+  "buyerTimeout": 500,
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "daysFree": "2",
+  "revenueLaunchDate": null,
+  "description": "PFOSite",
+  "domain": "domain",
+  "ethnicityMap": null,
+  "filterBots": true,
+  "genderMap": null,
+  "inputDateFormat": "",
+  "type": "APPLICATION",
+  "platform": "ANDROID",
+  "isAdTruthEnabled": false,
+  "live": false,
+  "maritalStatusMap": null,
+  "name": "PFOSite",
+  "overrideIP": false,
+  "reportBatchSize": 10,
+  "reportFrequency": 180000,
+  "rulesUpdateFrequency": 1800000,
+  "status": "ACTIVE",
+  "trafficThrottle": 0,
+  "totalTimeout": 1000,
+  "url": "url",
+  "metadataEnablement": false,
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "companyPid": 10220,
+  "currentDealTerm": {
+    "effectiveDate": 0,
+    "flatBands": null,
+    "revenueMode": "REV_SHARE",
+    "nexageRevenueShare": "0.00100000",
+    "rtbFee": "0.00100000",
+    "tagPid": null,
+    "hasDealTermChanged": false
+  },
+  "appBundle": null,
+  "metadata": {
+    "savedRtbProfileId": null,
+    "savedMediationTagId": null
+  },
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "passthruParameters": [],
+  "iabCategories": [
+    "IAB1"
+  ],
+  "globalAliasName": null,
+  "dcn": null
+}

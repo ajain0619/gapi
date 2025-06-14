@@ -1,0 +1,17 @@
+{
+  "name": "my attr 256-2",
+  "prefix": "pref-new",
+  "createdBy": 10232,
+  "pid": 1,
+  "status": "ACTIVE",
+  "hasGlobalVisibility": true,
+  "assignedLevel": [
+    1,
+    2,
+    3
+  ],
+  "lastUpdated": "2020-07-08",
+  "version": 1,
+  "internalOnly": false,
+  "required": true
+}

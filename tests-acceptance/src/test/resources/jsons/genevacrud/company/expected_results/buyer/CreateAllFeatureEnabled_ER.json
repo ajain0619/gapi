@@ -1,0 +1,16 @@
+{
+  "type": "BUYER",
+  "name": "createName",
+  "website": "aa",
+  "description": "ddd",
+  "salesforceId": "sss",
+  "cpiTrackingEnabled": true,
+  "rtbEnabled": true,
+  "mediationEnabled": true,
+  "rtbRevenueReportEnabled": false,
+  "cpiConversionNoticeUrl": "aaa",
+  "status": "ACTIVE",
+  "dhReportingId": "dhReportingId",
+  "currency": "USD",
+  "thirdPartyFraudDetectionEnabled": false
+}

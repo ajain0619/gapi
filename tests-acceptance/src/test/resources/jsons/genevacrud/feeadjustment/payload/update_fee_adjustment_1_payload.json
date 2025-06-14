@@ -1,0 +1,25 @@
+{
+  "pid": 1,
+  "name": "test-fee-adjustment-1-updated",
+  "inclusive": true,
+  "demandFeeAdjustment": 0.11,
+  "version": 0,
+  "enabled": true,
+  "description": "A test fee adjustment updated.",
+  "feeAdjustmentSellers": [
+    {
+      "sellerPid": 27
+    },
+    {
+      "sellerPid": 40
+    }
+  ],
+  "feeAdjustmentBuyers": [
+    {
+      "buyerPid": 274
+    },
+    {
+      "buyerPid": 261
+    }
+  ]
+}

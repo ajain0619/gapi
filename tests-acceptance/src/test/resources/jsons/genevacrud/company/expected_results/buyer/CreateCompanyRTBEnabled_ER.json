@@ -1,0 +1,16 @@
+{
+  "pid": 1234545,
+  "type": "BUYER",
+  "name": "testBidderConfig",
+  "website": "aa",
+  "description": "ddd",
+  "salesforceId": "sss",
+  "cpiTrackingEnabled": true,
+  "rtbEnabled": true,
+  "mediationEnabled": true,
+  "rtbRevenueReportEnabled": false,
+  "cpiConversionNoticeUrl": "aaa",
+  "status": "ACTIVE",
+  "currency": "USD",
+  "thirdPartyFraudDetectionEnabled": false
+}

@@ -1,0 +1,41 @@
+{
+  "content": [
+    {
+      "checkDate": 1665613848000,
+      "currency": "EUR",
+      "forexId": 2,
+      "rate": 0.98040266
+    },
+    {
+      "checkDate": 1665613848000,
+      "currency": "GBP",
+      "forexId": 2,
+      "rate": 1.1082993
+    },
+    {
+      "checkDate": 1665632666000,
+      "currency": "EUR",
+      "forexId": 1,
+      "rate": 0.97040266
+    },
+    {
+      "checkDate": 1665632666000,
+      "currency": "GBP",
+      "forexId": 1,
+      "rate": 1.1092993
+    }
+  ],
+  "last": true,
+  "totalElements": 4,
+  "totalPages": 1,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "first": true,
+  "numberOfElements": 4,
+  "empty": false
+}

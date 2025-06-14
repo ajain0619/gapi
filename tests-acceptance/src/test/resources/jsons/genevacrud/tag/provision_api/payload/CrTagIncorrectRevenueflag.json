@@ -1,0 +1,16 @@
+{
+  "name": "AV10",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": "something",
+  "tagController": {
+    "autoExpand": false
+  },
+  "rtbProfile": {
+    "pubNetReserve": 0
+  },
+  "rules": []
+}

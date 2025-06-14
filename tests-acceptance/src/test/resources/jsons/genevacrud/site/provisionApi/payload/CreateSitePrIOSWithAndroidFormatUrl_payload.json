@@ -1,0 +1,14 @@
+{
+  "name": "a59",
+  "description": "kuskus",
+  "domain": "q1",
+  "appBundle": "B_cQmFm1S5s",
+  "url": "https://play.google.com/store/movies/details/King_Arthur_Legend_of_the_Sword?id=B_cQmFm1S5s",
+  "coppaRestricted": false,
+  "platform": "IPAD_IPHONE",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "APPLICATION"
+}

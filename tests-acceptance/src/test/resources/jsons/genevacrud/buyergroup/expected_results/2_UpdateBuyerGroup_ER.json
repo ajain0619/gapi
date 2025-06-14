@@ -1,0 +1,11 @@
+{
+  "pid": 3,
+  "name": "BuyerGroupCucumber_updated",
+  "sfdcLineId": "testsfdcLineId_updated",
+  "sfdcIoId": "testsfdcIoId_updated",
+  "currency": "YEN",
+  "billingCountry": "JPN",
+  "billable": true,
+  "version": 1,
+  "companyPid": 10024
+}

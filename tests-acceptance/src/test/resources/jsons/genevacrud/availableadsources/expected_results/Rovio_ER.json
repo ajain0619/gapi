@@ -1,0 +1,42 @@
+[
+  {
+    "pid": 15,
+    "version": 0,
+    "sellerPid": 456,
+    "adSourcePid": 5058,
+    "username": "5058_username",
+    "password": "5058_pw",
+    "apiToken": "5058_api_token",
+    "apiKey": "5058_api_key"
+  },
+  {
+    "pid": 14,
+    "version": 0,
+    "sellerPid": 456,
+    "adSourcePid": 5747,
+    "username": "5747_username",
+    "password": "5747_pw",
+    "apiToken": "5747_api_token",
+    "apiKey": "5747_api_key"
+  },
+  {
+    "version": 0,
+    "adSourcePid": 7048
+  },
+  {
+    "version": 11,
+    "adSourcePid": 5721
+  },
+  {
+    "version": 0,
+    "adSourcePid": 7049
+  },
+  {
+    "version": 0,
+    "adSourcePid": 7050
+  },
+  {
+    "version": 3,
+    "adSourcePid": 7008
+  }
+]

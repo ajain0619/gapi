@@ -1,0 +1,176 @@
+{
+  "pid": 1125,
+  "sellerId": 10218,
+  "advertiserId": 586,
+  "externalId": "8a859e06015a5aa43487a553b1390355",
+  "name": "defaultCampaign",
+  "type": "SPONSORSHIP",
+  "model": "CPM",
+  "price": "12",
+  "goal": null,
+  "daily": null,
+  "capHour": 0,
+  "cap24": 0,
+  "capLife": 0,
+  "bias": 0,
+  "start": 1344274691000,
+  "stop": null,
+  "startAdjusted": "2012-08-06T13:38:11-04:00",
+  "stopAdjusted": null,
+  "status": "ACTIVE",
+  "impressions": 0,
+  "delivered": 0,
+  "clicks": 0,
+  "clickThroughRate": 0,
+  "campaignCreatives": [],
+  "inFlight": true,
+  "deployable": true,
+  "advertiserName": "adv1",
+  "purgeable": false,
+  "campaignTargets": [
+    {
+      "pid": 2064,
+      "type": "ZONE",
+      "campaignId": 1125,
+      "rule": "IS_ANY_OF",
+      "filter": "10000195/defaultplacement"
+    }
+  ],
+  "creatives": [
+    {
+      "creative": {
+        "pid": 1590,
+        "sellerId": 10218,
+        "advertiserId": 586,
+        "name": "defaultCreative",
+        "adType": "CUSTOM",
+        "height": 250,
+        "width": 300,
+        "banner": null,
+        "mma120x20": null,
+        "mma168x28": null,
+        "mma216x36": null,
+        "mma300x50": null,
+        "mma320x50": null,
+        "bannerAlt": null,
+        "adText": null,
+        "landingUrl": null,
+        "trackingUrl": null,
+        "status": "NOT_DELETED",
+        "templateId": 66,
+        "customMarkup": "defaultCreative",
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    },
+    {
+      "creative": {
+        "sellerId": 10218,
+        "advertiserId": 586,
+        "name": "defaultCreative2",
+        "adType": "CUSTOM",
+        "height": 250,
+        "width": 300,
+        "banner": null,
+        "landingUrl": null,
+        "trackingUrl": null,
+        "status": "DELETED",
+        "templateId": 66,
+        "customMarkup": "m1",
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    },
+    {
+      "creative": {
+        "sellerId": 10218,
+        "advertiserId": 586,
+        "name": "defaultCreative3",
+        "adType": "CUSTOM",
+        "height": 250,
+        "width": 300,
+        "banner": null,
+        "landingUrl": null,
+        "trackingUrl": null,
+        "status": "NOT_DELETED",
+        "templateId": 66,
+        "customMarkup": "m1",
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    },
+    {
+      "creative": {
+        "sellerId": 10218,
+        "advertiserId": 586,
+        "name": "defaultCreative4",
+        "adType": "CUSTOM",
+        "height": 250,
+        "width": 300,
+        "banner": null,
+        "landingUrl": null,
+        "trackingUrl": null,
+        "status": "NOT_DELETED",
+        "templateId": 66,
+        "customMarkup": "m1",
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    },
+    {
+      "creative": {
+        "sellerId": 10218,
+        "advertiserId": 586,
+        "name": "defaultCreative5",
+        "adType": "CUSTOM",
+        "height": 250,
+        "width": 300,
+        "banner": null,
+        "landingUrl": null,
+        "trackingUrl": null,
+        "status": "NOT_DELETED",
+        "templateId": 66,
+        "customMarkup": "m1",
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    },
+    {
+      "creative": {
+        "sellerId": 10218,
+        "advertiserId": 586,
+        "name": "defaultCreative6",
+        "adType": "CUSTOM",
+        "height": 250,
+        "width": 300,
+        "banner": null,
+        "landingUrl": null,
+        "trackingUrl": null,
+        "status": "NOT_DELETED",
+        "templateId": 66,
+        "customMarkup": "m1",
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    },
+    {
+      "creative": {
+        "sellerId": 10218,
+        "advertiserId": 586,
+        "name": "defaultCreative7",
+        "adType": "CUSTOM",
+        "height": 250,
+        "width": 300,
+        "banner": null,
+        "landingUrl": null,
+        "trackingUrl": null,
+        "status": "NOT_DELETED",
+        "templateId": 66,
+        "customMarkup": "m1",
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    }
+  ],
+  "positions": null
+}

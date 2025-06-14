@@ -1,0 +1,15 @@
+{
+  "name": "AV3",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "tagController": {
+    "autoExpand": false
+  },
+  "rtbProfile": {
+  },
+  "rules": []
+}

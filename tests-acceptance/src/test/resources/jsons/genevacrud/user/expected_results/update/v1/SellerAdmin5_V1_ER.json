@@ -1,0 +1,16 @@
+{
+  "userName": "selleradmin5",
+  "name": "seller admin updated again",
+  "email": "selleradmin5@qwe.ru",
+  "contactNumber": "123",
+  "title": "mr",
+  "role": "ROLE_ADMIN",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10063
+    }
+  ],
+  "oneCentralUserName": "selleradmin5"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "8a809449012f2f35efa846b08a1c04b6",
+    "pid": 638,
+    "version": 4,
+    "name": "DataXu",
+    "type": "BUYER",
+    "website": "http://dataxu.com",
+    "contactUserPid": 456,
+    "adServingEnabled": false,
+    "dynamicBuyerRegistrationEnabled": false,
+    "brxdBuyerIdEnabledOnBidRequest": false,
+    "restrictDrillDown": false,
+    "cpiTrackingEnabled": false,
+    "rtbEnabled": true,
+    "mediationEnabled": false,
+    "rtbRevenueReportEnabled": false,
+    "status": "ACTIVE",
+    "disableAdFeedback": false,
+  "test": false,
+    "selfServeAllowed": false,
+    "payoutEnabled": false,
+    "thirdPartyFraudDetectionEnabled": false,
+    "defaultRtbProfilesEnabled": false,
+    "currency": "USD",
+    "externalAdVerificationEnabled": false,
+    "fraudDetectionJavascriptEnabled": true,
+    "adsourceNames": [],
+    "externalDataProviderNames": [],
+    "numberOfUsers": 0
+  }
+]

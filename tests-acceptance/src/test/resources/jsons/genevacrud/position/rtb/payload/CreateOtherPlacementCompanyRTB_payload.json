@@ -1,0 +1,56 @@
+{
+  "site": {
+    "pid": 10000202,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "interstitial": false,
+  "screenLocation": "ABOVE_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "width": 300,
+  "height": 50,
+  "memo": "banner placement",
+  "name": "tracker4",
+  "placementCategory": "BANNER",
+  "mraidAdvancedTracking": false,
+  "defaultRtbProfile": {
+    "pid": 10000069,
+    "version": 1,
+    "name": "Julia",
+    "id": "ff808081015d5df26508f55c81210009",
+    "pubNetReserve": 1.01,
+    "libraries": [],
+    "bidderFilterWhitelist": false,
+    "useDefaultBlock": true,
+    "includeConsumerId": true,
+    "includeDomainReferences": false,
+    "includeConsumerProfile": true,
+    "screeningLevel": "AllowAll",
+    "useDefaultBidders": false,
+    "auctionType": "EXCHANGE_DEFAULT",
+    "alterReserve": "ONLY_IF_HIGHER",
+    "siteTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "idAlias": "3679583977801206576",
+      "nameAlias": "sitenamealias"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "idAlias": "1056092428181061820",
+      "nameAlias": "pubnamealias"
+    },
+    "description": "Self Service Created Ad Source",
+    "siteType": "W",
+    "defaultReserve": 1.04,
+    "creationDate": 1503060066000,
+    "lastUpdate": 1503060066000,
+    "blockedExternalDataProviderMap": {},
+    "bidderFilterMap": {},
+    "libraryPids": [],
+    "includeGeoData": true,
+    "blockedAdvertisers": [],
+    "bidderFilters": [],
+    "blockedAdCategories": []
+  }
+}

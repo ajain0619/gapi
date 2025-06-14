@@ -1,0 +1,12 @@
+{
+  "placementCategory": "BANNER",
+  "memo": "ifoundmythrillonblueberryhillonblueberryhill",
+  "name": "whenifoundyou",
+  "screenLocation": "ABOVE_VISIBLE",
+  "width": 199,
+  "height": 87,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "interstitial": false,
+  "version": 0
+}

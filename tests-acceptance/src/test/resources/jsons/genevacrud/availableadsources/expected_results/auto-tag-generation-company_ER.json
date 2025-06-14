@@ -1,0 +1,30 @@
+[
+  {
+    "pid": 17,
+    "version": 0,
+    "sellerPid": 10210,
+    "adSourcePid": 7048,
+    "username": "aaa",
+    "password": "aaa"
+  },
+  {
+    "pid": 18,
+    "version": 0,
+    "sellerPid": 10210,
+    "adSourcePid": 5721,
+    "username": "qq",
+    "password": "qq"
+  },
+  {
+    "version": 0,
+    "adSourcePid": 7049
+  },
+  {
+    "version": 0,
+    "adSourcePid": 7050
+  },
+  {
+    "version": 6,
+    "adSourcePid": 7008
+  }
+]

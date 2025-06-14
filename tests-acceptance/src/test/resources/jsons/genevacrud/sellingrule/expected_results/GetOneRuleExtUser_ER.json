@@ -1,0 +1,27 @@
+{
+  "version": 0,
+  "name": "a4techExtUser",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10201,
+  "intendedActions": [
+    {
+      "pid": 10,
+      "version": 0,
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "targets": [
+    {
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "CITY",
+      "data": "data3"
+    }
+  ],
+  "assignments": {
+  }
+}

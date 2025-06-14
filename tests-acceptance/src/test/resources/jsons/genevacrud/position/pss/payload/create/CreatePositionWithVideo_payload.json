@@ -1,0 +1,22 @@
+{
+  "site": {
+    "pid": 10000192,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "impressionTypeHandling": "BASED_ON_PLACEMENT_CONFIG",
+  "longform": true,
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "mraidSupport": "NO",
+  "placementCategory": "INSTREAM_VIDEO",
+  "interstitial": false,
+  "mraidAdvancedTracking": false,
+  "positionAliasName": "CreatePlacementInStreamVideoabc",
+  "videoSupport": "VIDEO",
+  "width": 1400,
+  "height": 400,
+  "adSizeType": "STANDARD",
+  "memo": "CreatePlacementInStreamVideo",
+  "name": "createplacementinstreamvideoabc",
+  "hbPartnerAttributes": []
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "site": [
+      {
+        "sitePid": 10000193,
+        "sitealias": 10000193,
+        "siteNameAlias": "SellerRtbSite1",
+        "siteType": "A",
+        "siteName": "SellerRtbSite1",
+        "status": "ACTIVE",
+        "mode": "TEST",
+        "positions": [
+          {
+            "pid": 100313,
+            "positionName": "SellerRTBPosition1_memo",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": [
+              {
+                "tagPid": 5566575,
+                "tagname": "Nexage Exchange - Tag_nondefault_not_picked",
+                "filterBiddersAllowlist": false,
+                "belongsToRTBGroup": false,
+                "blockedAsDefault": false
+              },
+              {
+                "tagPid": 5566573,
+                "tagname": "Nexage Exchange - Tag_default_not_picked",
+                "filterBiddersAllowlist": false,
+                "belongsToRTBGroup": false,
+                "blockedAsDefault": true
+              },
+              {
+                "tagPid": 5566572,
+                "tagname": "Nexage Exchange - Tag_default_picked",
+                "filterBiddersAllowlist": false,
+                "belongsToRTBGroup": false,
+                "blockedAsDefault": true
+              },
+              {
+                "tagPid": 5566574,
+                "tagname": "Nexage Exchange - Tag_nondefault_picked",
+                "filterBiddersAllowlist": false,
+                "belongsToRTBGroup": false,
+                "blockedAsDefault": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "publisherPid": 10217,
+    "publisherName": "SellerRtbProfileDefaultTest"
+  }
+]

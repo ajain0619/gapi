@@ -1,0 +1,13 @@
+{
+  "pid": 10063,
+  "version": 1,
+  "name": "test_rtb",
+  "id": "8a859e0f01434397a17d97d3740a0004",
+  "eligibleBidderGroups": [],
+  "adServingEnabled": false,
+  "restrictDrillDown": false,
+  "test": false,
+  "selfServeAllowed": false,
+  "numberOfUsers": 0,
+  "defaultRtbProfilesEnabled": false
+}

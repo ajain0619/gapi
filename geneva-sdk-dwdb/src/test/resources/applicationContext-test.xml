@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/jdbc
+    http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+  <util:properties id="adScreenConfig" location="classpath:adscreen.properties"/>
+
+  <jdbc:embedded-database id="coreDS">
+    <jdbc:script location="create_and_feed_core_tables.sql"/>
+  </jdbc:embedded-database>
+
+  <context:annotation-config/>
+  <context:component-scan base-package="com.nexage.admin.dw"/>
+  <context:component-scan base-package="com.nexage.dw"/>
+
+  <context:property-placeholder location="classpath:db.properties"/>
+
+  <bean id="dwDS"
+        class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"
+        p:driverClassName="${dw.db.driver}"
+        p:url="${dw.db.url}"
+        p:username="${dw.db.username}"
+        p:password="${dw.db.password}"/>
+
+  <bean id="dwJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+    <constructor-arg ref="dwDS"/>
+  </bean>
+
+  <bean id="dwNamedJdbcTemplate"
+        class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+    <constructor-arg ref="dwDS"/>
+  </bean>
+
+  <bean id="countryService" class="com.nexage.countryservice.CountryServiceFactory"
+        factory-method="create"/>
+
+  <util:list id="genevaReportFacadeList">
+    <value>buyerReportFacadeImpl</value>
+    <value>exchangeReportFacadeImpl</value>
+    <value>financeReportFacadeImpl</value>
+    <value>sellerReportFacadeImpl</value>
+  </util:list>
+
+  <bean id="marshaller" class="org.springframework.oxm.xstream.XStreamMarshaller">
+    <property name="annotatedClasses">
+      <list>
+        <value>com.nexage.admin.dw.xstream.XmlReportDefinition</value>
+      </list>
+    </property>
+  </bean>
+</beans>

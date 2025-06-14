@@ -1,0 +1,24 @@
+[
+  {
+    "ecpmAuto": 0,
+    "ecpmManual": 0,
+    "ecpmProvision": "Auto",
+    "owner": "Publisher",
+    "status": "ACTIVE",
+    "buyer": {
+      "pid": 7051,
+      "primaryIdRequired": false,
+      "primaryNameRequired": false,
+      "secondaryIdRequired": false,
+      "secondaryNameRequired": false
+    },
+    "position": {
+      "pid": 100329
+    },
+    "primaryId": "124",
+    "adNetReportUserName": "user",
+    "adNetReportPassword": "pass",
+    "importRevenueFlag": true,
+    "name": "becido_SY_Exchange_1"
+  }
+]

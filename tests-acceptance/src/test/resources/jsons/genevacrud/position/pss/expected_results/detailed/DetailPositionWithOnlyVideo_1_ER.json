@@ -1,0 +1,27 @@
+{
+  "pid": 100248,
+  "version": 1,
+  "site": {
+    "pid": 10000174,
+    "hbEnabled": false
+  },
+  "name": "interstitial_placement",
+  "memo": "interstitial placement",
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "interstitial": true,
+  "videoLinearity": "LINEAR",
+  "height": 768,
+  "width": 1024,
+  "placementCategory": "INTERSTITIAL",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "hbPartnerAttributes": [
+    {
+      "externalId": "ex-id-1",
+      "hbPartnerPid": 2,
+      "type": "DEFAULT"
+    }
+  ]
+}

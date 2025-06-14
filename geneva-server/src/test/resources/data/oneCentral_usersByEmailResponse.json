@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "id": 224264,
+      "firstName": "John3",
+      "lastName": "Doe3",
+      "username": "john.doe3",
+      "email": "john.doe3@ssp.geneva.com",
+      "status": "ACTIVE",
+      "internal": false,
+      "systemUser": true,
+      "defaultOrgSapId": 0,
+      "defaultVideoOrgId": 0,
+      "primaryUserContact": false,
+      "last_login_date": ""
+    }
+  ],
+  "totalCount": 1
+}

@@ -1,0 +1,40 @@
+{
+  "id": "8a859e0f013b3b761d5a76c17b7a0020",
+  "pid": 200,
+  "version": 0,
+  "userName": "sellerSeatUser1",
+  "name": "Seller Seat User 1",
+  "email": "SSUser1@athens1.com",
+  "contactNumber": "7816765433",
+  "title": "mr",
+  "role": "ROLE_USER",
+  "enabled": true,
+  "global": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 800,
+      "name": "Seller_S11",
+      "type": "SELLER"
+    },
+    {
+      "pid": 801,
+      "name": "Seller_S21",
+      "type": "SELLER"
+    },
+    {
+      "pid": 802,
+      "name": "Seller_S31",
+      "type": "SELLER"
+    }
+  ],
+  "sellerSeat": {
+    "pid": 1,
+    "name": "Seller seat 1",
+    "description": "Some desc 1",
+    "status": true,
+    "version": 0,
+    "updatedOn": 1570454794000
+  },
+  "dealAdmin": false
+}

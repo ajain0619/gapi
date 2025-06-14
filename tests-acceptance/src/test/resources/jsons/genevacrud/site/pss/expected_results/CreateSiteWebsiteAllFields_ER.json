@@ -1,0 +1,40 @@
+{
+  "dcn": "customId",
+  "description": "website",
+  "domain": "website_site1.com",
+  "name": "website_site1",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "WEBSITE",
+  "url": "website_site1.com",
+  "appBundle": "",
+  "coppaRestricted": true,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0
+  }
+}

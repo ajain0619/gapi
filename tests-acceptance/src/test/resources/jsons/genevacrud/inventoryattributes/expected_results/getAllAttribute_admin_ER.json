@@ -1,0 +1,169 @@
+[
+  {
+    "name": "Inventory Attribute",
+    "prefix": "",
+    "createdBy": 10232,
+    "attributePid": 1,
+    "status": "ACTIVE",
+    "attributeValues": [
+      {
+        "pid": 1,
+        "value": "Assignable Value 3",
+        "version": 0,
+        "enabled": true
+      }
+    ],
+    "hasGlobalVisibility": true,
+    "specificPublisherVisibility": [
+      {
+        "name": "Nexage Inc",
+        "publisherPid": 1
+      }
+    ],
+    "assignedLevel": [
+      1
+    ],
+    "lastUpdated": "2019-02-08",
+    "version": 0,
+    "internalOnly": true,
+    "required": false
+  },
+  {
+    "name": "Inventory Attribute2",
+    "prefix": "",
+    "createdBy": 10232,
+    "attributePid": 2,
+    "status": "ACTIVE",
+    "attributeValues": [
+      {
+        "pid": 2,
+        "value": "Assignable Value 4",
+        "version": 0,
+        "enabled": true
+      },
+      {
+        "pid": 3,
+        "value": "Assignable Value 5",
+        "version": 0,
+        "enabled": false
+      }
+    ],
+    "hasGlobalVisibility": true,
+    "assignedLevel": [
+      1,
+      2,
+      3
+    ],
+    "lastUpdated": "2019-02-08",
+    "version": 0,
+    "internalOnly": true,
+    "required": false
+  },
+  {
+    "name": "Inventory Attribute3",
+    "prefix": "",
+    "createdBy": 10232,
+    "attributePid": 3,
+    "status": "INACTIVE",
+    "attributeValues": [
+      {
+        "pid": 4,
+        "value": "Assignable Value 6",
+        "version": 0,
+        "enabled": false
+      }
+    ],
+    "hasGlobalVisibility": true,
+    "assignedLevel": [
+      2
+    ],
+    "lastUpdated": "2019-02-08",
+    "version": 0,
+    "internalOnly": true,
+    "required": false
+  },
+  {
+    "name": "att5",
+    "description": "att3updated",
+    "prefix": "",
+    "createdBy": 664,
+    "attributePid": 4,
+    "status": "ACTIVE",
+    "attributeValues": [
+      {
+        "pid": 5,
+        "value": "attval5",
+        "version": 1,
+        "enabled": true
+      }
+    ],
+    "hasGlobalVisibility": false,
+    "specificPublisherVisibility": [
+      {
+        "name": "DataXu",
+        "publisherPid": 638
+      },
+      {
+        "name": "Burst Media",
+        "publisherPid": 651
+      },
+      {
+        "name": "AdFonic",
+        "publisherPid": 664
+      }
+    ],
+    "assignedLevel": [
+      1,
+      2,
+      3
+    ],
+    "version": 1,
+    "internalOnly": false,
+    "required": false
+  },
+  {
+    "name": "att4",
+    "description": "att3",
+    "prefix": "",
+    "createdBy": 664,
+    "attributePid": 5,
+    "status": "ACTIVE",
+    "attributeValues": [
+      {
+        "pid": 7,
+        "value": "attval3",
+        "version": 0,
+        "enabled": false
+      },
+      {
+        "pid": 6,
+        "value": "attval2",
+        "version": 0,
+        "enabled": true
+      }
+    ],
+    "hasGlobalVisibility": false,
+    "specificPublisherVisibility": [
+      {
+        "name": "DataXu",
+        "publisherPid": 638
+      },
+      {
+        "name": "AdFonic",
+        "publisherPid": 664
+      },
+      {
+        "name": "Burst Media",
+        "publisherPid": 651
+      }
+    ],
+    "assignedLevel": [
+      1,
+      2,
+      3
+    ],
+    "version": 0,
+    "internalOnly": false,
+    "required": false
+  }
+]

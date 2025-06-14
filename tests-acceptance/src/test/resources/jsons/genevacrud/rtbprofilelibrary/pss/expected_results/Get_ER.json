@@ -1,0 +1,19 @@
+{
+  "pid": 3,
+  "name": "BGN1",
+  "version": 1,
+  "publisherPid": 105,
+  "privilegeLevel": "PUBLISHER",
+  "groups": [
+    {
+      "pid": 5,
+      "name": "BGN1",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "data": "4,2",
+      "itemType": "BIDDER",
+      "listType": "WHITELIST"
+    }
+  ]
+}

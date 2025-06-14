@@ -1,0 +1,38 @@
+{
+  "content": [
+    {
+      "pid": 2302,
+      "name": "AdMob - Direct SDK Only - T12C-1",
+      "adsourceName": "AdMob - Direct SDK Only",
+      "status": "ACTIVE",
+      "siteId": 456,
+      "buyerId": 5175,
+      "ecpmProvision": "Auto"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": false,
+      "sorted": true,
+      "empty": false
+    },
+    "pageNumber": 0,
+    "pageSize": 10,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 1,
+  "totalElements": 1,
+  "last": true,
+  "size": 10,
+  "first": true,
+  "numberOfElements": 1,
+  "number": 0,
+  "sort": {
+    "unsorted": false,
+    "sorted": true,
+    "empty": false
+  },
+  "empty": false
+}

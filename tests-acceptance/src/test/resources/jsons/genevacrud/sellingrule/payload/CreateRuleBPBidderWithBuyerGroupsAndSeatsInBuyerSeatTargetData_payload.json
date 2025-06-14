@@ -1,0 +1,32 @@
+{
+  "name": "BPRuleBidderWithSeatsInBuyerSeatTargetData",
+  "description": "Brand protection rule with bidder, buyer groups and seats in data for buyer seat target",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10225,
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYER_SEATS",
+      "data": "[{\"bidder\":1,\"buyerGroups\":[1,2],\"seats\":[\"12345abc\",\"6789def\"]}]"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [],
+    "positions": []
+  }
+}

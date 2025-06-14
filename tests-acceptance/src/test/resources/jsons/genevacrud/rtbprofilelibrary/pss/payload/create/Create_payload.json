@@ -1,0 +1,17 @@
+{
+  "name": "TEST",
+  "version": 0,
+  "publisherPid": 105,
+  "privilegeLevel": "PUBLISHER",
+  "groups": [
+    {
+      "name": "TEST1",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "data": "somedata",
+      "itemType": "ADOMAIN",
+      "listType": "BLOCKLIST"
+    }
+  ]
+}

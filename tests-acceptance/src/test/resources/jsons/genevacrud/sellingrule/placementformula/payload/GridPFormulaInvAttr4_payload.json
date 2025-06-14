@@ -1,0 +1,24 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "operator": "EQUALS",
+          "ruleData": "NOVOGRUDOK",
+          "attributePid": 6
+        }
+      ]
+    },
+    {
+      "formulaRules": [
+        {
+          "attribute": "PLACEMENT_NAME",
+          "operator": "CONTAINS",
+          "ruleData": "_formula"
+        }
+      ]
+    }
+  ]
+}

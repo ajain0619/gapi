@@ -1,0 +1,54 @@
+{
+  "pid": 950,
+  "version": 86,
+  "publisher": {
+    "pid": 105
+  },
+  "dcn": "8a858a330137372da0982da362880006",
+  "description": "test",
+  "domain": "test.com",
+  "name": "AS8Aupdate",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "www.test.com",
+  "coppaRestricted": true,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "positions": [
+    {
+      "pid": 13612,
+      "name": "default"
+    },
+    {
+      "pid": 13651,
+      "name": "position1"
+    },
+    {
+      "pid": 13638,
+      "name": "header"
+    },
+    {
+      "pid": 13690,
+      "name": "position2"
+    },
+    {
+      "pid": 13599,
+      "name": "position3"
+    },
+    {
+      "pid": 13677,
+      "name": "footer"
+    },
+    {
+      "pid": 13625,
+      "name": "body"
+    },
+    {
+      "pid": 13664,
+      "name": "custom1a"
+    }
+  ],
+  "mode": "TEST"
+}

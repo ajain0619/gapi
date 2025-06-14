@@ -1,0 +1,119 @@
+{
+  "content": [
+    {
+      "id": "8a859e0f013b3b761d5a76c17b7a0020",
+      "pid": 200,
+      "version": 0,
+      "userName": "sellerSeatUser1",
+      "name": "Seller Seat User 1",
+      "email": "SSUser1@athens1.com",
+      "contactNumber": "7816765433",
+      "title": "mr",
+      "role": "ROLE_USER",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 800,
+          "name": "Seller_S11",
+          "type": "SELLER"
+        },
+        {
+          "pid": 801,
+          "name": "Seller_S21",
+          "type": "SELLER"
+        },
+        {
+          "pid": 802,
+          "name": "Seller_S31",
+          "type": "SELLER"
+        }
+      ],
+      "sellerSeat": {
+        "pid": 1,
+        "name": "Seller seat 1",
+        "description": "Some desc 1",
+        "status": true,
+        "version": 0,
+        "updatedOn": 1570454794000
+      }
+    },
+    {
+      "companies": [],
+      "dealAdmin": false,
+      "email": "genevajobs@test.com",
+      "enabled": false,
+      "firstName": "genevajobs",
+      "global": false,
+      "id": "ff808094015b5b8b8f448b90a7700099",
+      "name": "SSPApplication-84409",
+      "pid": 84409,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "sellerSeat": {
+        "description": "Some desc 1",
+        "name": "Seller seat 1",
+        "pid": 1,
+        "status": true,
+        "updatedOn": 1570454794000,
+        "version": 0
+      },
+      "title": "headless account for automated tasks",
+      "userName": "genevajobs@test.com",
+      "version": 0
+    },
+    {
+      "companies": [
+        {
+          "adStrictApproval": false,
+          "name": "Cooler Screens",
+          "pid": 10235,
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false,
+      "email": "walgreens-user@test.com",
+      "enabled": true,
+      "global": false,
+      "id": "ff808094015b5b8b8f448b90a7700012",
+      "name": "Test Walgreens Ad Reviewer",
+      "oneCentralUserName": "walgreensadreviewerseller",
+      "pid": 803,
+      "primaryContact": false,
+      "role": "ROLE_AD_REVIEWER",
+      "sellerSeat": {
+        "description": "Some desc 1",
+        "name": "Seller seat 1",
+        "pid": 1,
+        "status": true,
+        "version": 0
+      }
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalPages": 1,
+  "last": true,
+  "totalElements": 3,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "first": true,
+  "size": 10,
+  "numberOfElements": 3,
+  "empty": false
+}

@@ -1,0 +1,21 @@
+{
+  "hbPartnerAttributes": [
+  ],
+  "height": 50,
+  "interstitial": false,
+  "memo": "banner placement",
+  "mraidSupport": "YES",
+  "name": "tracker2",
+  "pid": 100330,
+  "placementCategory": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "site": {
+    "hbEnabled": false,
+    "pid": 10000202
+  },
+  "status": "ACTIVE",
+  "trafficType": "MEDIATION",
+  "version": 0,
+  "videoSupport": "BANNER",
+  "width": 300
+}

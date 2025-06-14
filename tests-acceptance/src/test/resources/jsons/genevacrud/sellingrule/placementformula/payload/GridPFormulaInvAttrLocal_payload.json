@@ -1,0 +1,25 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "operator": "EQUALS",
+          "ruleData": "Minsk",
+          "attributePid": 4
+        }
+      ]
+    },
+    {
+      "formulaRules": [
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "operator": "EQUALS",
+          "ruleData": "principality",
+          "attributePid": 5
+        }
+      ]
+    }
+  ]
+}

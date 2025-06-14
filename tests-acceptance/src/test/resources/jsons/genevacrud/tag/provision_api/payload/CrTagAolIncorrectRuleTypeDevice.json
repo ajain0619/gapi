@@ -1,0 +1,39 @@
+{
+  "name": "AV43",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": [
+    {
+      "targetType": "Keyword",
+      "ruleType": "DeviceMakeModels",
+      "data": "Alcatel/*"
+    },
+    {
+      "targetType": "NegKeyword",
+      "ruleType": "OsVersion",
+      "data": "iOS/*/*"
+    },
+    {
+      "targetType": "Keyword",
+      "ruleType": "ISPCarrier",
+      "data": "MTS"
+    },
+    {
+      "targetType": "Keyword",
+      "ruleType": "Country",
+      "data": "USA"
+    }
+  ]
+}

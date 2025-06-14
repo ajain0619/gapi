@@ -1,0 +1,43 @@
+{
+  "dealId": "11238948",
+  "description": "Deal with external deal id enabled",
+  "status": "Active",
+  "start": "1446613200000",
+  "stop": "1446958799000",
+  "profiles": [],
+  "bidders": [
+    {
+      "bidderPid": 4,
+      "wseat": [
+      ],
+      "adomains": [
+      ]
+    }
+  ],
+  "sites": [
+    {
+      "sitePid": 1197
+    }
+  ],
+  "positions": [
+    {
+      "positionPid": 7762
+    }
+  ],
+  "publishers": [
+    {
+      "publisherPid": 10201
+    }
+  ],
+  "rules": [
+    {
+      "rulePid": 2
+    }
+  ],
+  "priorityType": "OPEN",
+  "auctionType": "Fixed",
+  "visibility": true,
+  "floor": "200",
+  "external": true
+
+}

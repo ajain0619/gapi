@@ -1,0 +1,48 @@
+{
+  "allBidders": false,
+  "allSellers": false,
+  "auctionType": "FloorPrice",
+  "autoUpdate": true,
+  "bidders": [],
+  "createdBy": 744,
+  "currency": "USD",
+  "dealCategory": 3,
+  "dealId": "162217052464269152022",
+  "description": "CreateDealAssociatedWithSellerTest",
+  "pid": 15,
+  "placementFormula": {
+    "formulaGroups": [
+      {
+        "formulaRules": [
+          {
+            "attribute": "PUBLISHER_NAME",
+            "operator": "EQUALS",
+            "ruleData": "TagArchive_TestCompany"
+          },
+          {
+            "attribute": "PLACEMENT_NAME",
+            "operator": "CONTAINS",
+            "ruleData": "Food"
+          }
+        ]
+      }
+    ],
+    "groupedBy": "OR"
+  },
+  "positions": [],
+  "priorityType": "OPEN",
+  "profiles": [],
+  "publishers": [],
+  "rules": [
+    {
+      "pid": 5,
+      "rulePid": 66113
+    }
+  ],
+  "sellers": [],
+  "sites": [],
+  "start": 1622088000000,
+  "status": "Active",
+  "targets": [],
+  "visibility": true
+}

@@ -1,0 +1,26 @@
+{
+  "id": "8a859e0f013a3ad6170edc7e563f0005",
+  "pid": 274,
+  "version": 8,
+  "name": "cpi buyer",
+  "type": "BUYER",
+  "website": "http://www.nexage.com qw",
+  "contactUserPid": 157,
+  "adServingEnabled": false,
+  "restrictDrillDown": false,
+  "cpiTrackingEnabled": true,
+  "cpiConversionNoticeUrl": "",
+  "rtbEnabled": false,
+  "mediationEnabled": true,
+  "rtbRevenueReportEnabled": false,
+  "status": "ACTIVE",
+  "numberOfUsers": 7,
+  "adsourceNames": [
+    "Nexage Exchange for CPI",
+    "cpi_adnet"
+  ],
+  "externalDataProviderNames": [],
+  "test": false,
+  "selfServeAllowed": false,
+  "thirdPartyFraudDetectionEnabled": false
+}

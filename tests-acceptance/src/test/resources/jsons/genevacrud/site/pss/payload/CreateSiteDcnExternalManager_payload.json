@@ -1,0 +1,16 @@
+{
+  "dcn": "ff808081015e5e616d087077d07e0at4",
+  "description": "dcn_external_manager_ok",
+  "domain": "http://dcn_external.com",
+  "name": "dcn_external_manager",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "mode": "TEST",
+  "url": "https://dcn_external.com",
+  "coppaRestricted": true,
+  "hbEnabled": true,
+  "iabCategories": [
+    "IAB5"
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "8a859e0f013b3b761d5a769e7db10007",
+    "pid": 170,
+    "version": 5,
+    "userName": "adminathens1",
+    "name": "adminforathens1company",
+    "email": "adminathens1@athens1.com",
+    "contactNumber": "781-8761234",
+    "title": "Mr",
+    "role": "ROLE_ADMIN",
+    "enabled": true,
+    "primaryContact": false,
+    "companyPid": 339,
+    "companyName": "Athens1",
+    "companyType": "SELLER"
+  },
+  {
+    "id": "8a859e0f013b3b761d5a76c002aa0015",
+    "pid": 209,
+    "version": 3,
+    "userName": "athens1manager1",
+    "name": "manager1",
+    "email": "athens1manager1@athens1.com",
+    "contactNumber": "7827678976",
+    "title": "mr",
+    "role": "ROLE_MANAGER",
+    "enabled": true,
+    "primaryContact": false,
+    "companyPid": 339,
+    "companyName": "Athens1",
+    "companyType": "SELLER"
+  },
+  {
+    "id": "8a859e0f013b3b761d5a76c17b7a0016",
+    "pid": 222,
+    "version": 3,
+    "userName": "athens1user1",
+    "name": "user1",
+    "email": "athens1user1@athens1.com",
+    "contactNumber": "7816765432",
+    "title": "mr",
+    "role": "ROLE_USER",
+    "enabled": true,
+    "primaryContact": false,
+    "companyPid": 339,
+    "companyName": "Athens1",
+    "companyType": "SELLER"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "name": "MX-4361-8",
+  "attributes": {
+    "version": 1,
+    "defaultBlock": [],
+    "individualsDefaultBlock": [],
+    "defaultBidderGroups": [],
+    "individualsDefaultBidderGroups": [],
+    "defaultBiddersAllowList": false,
+    "defaultTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "defaultTransparencyMgmtEnablement": "ENABLED"
+  },
+  "eligibleBidderGroups": [],
+  "contactUserPid": "1",
+  "adServingEnabled": true,
+  "restrictDrillDown": false,
+  "directAdServingFee": "1",
+  "houseAdServingFee": "2",
+  "nonRemnantHouseAdCap": "3",
+  "houseAdOverageFee": "4",
+  "cpiTrackingEnabled": true,
+  "cpiConversionNoticeUrl": "url",
+  "rtbEnabled": true,
+  "mediationEnabled": true,
+  "rtbRevenueReportEnabled": true,
+  "salesforceId": "1234567980123456",
+  "bidderAdServingFee": "2",
+  "status": "INACTIVE",
+  "globalAliasName": "thanksGod",
+  "website": "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901",
+  "description": "Description",
+  "type": "SELLER",
+  "test": true,
+  "selfServeAllowed": false,
+  "regionId": "1",
+  "payoutEnabled": false,
+  "thirdPartyFraudDetectionEnabled": false
+}

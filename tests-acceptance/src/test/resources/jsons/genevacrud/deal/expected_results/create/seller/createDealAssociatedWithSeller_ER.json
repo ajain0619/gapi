@@ -1,0 +1,26 @@
+{
+  "auctionType":"FloorPrice",
+  "bidders":[],
+  "currency":"USD",
+  "dealId":"1622170524642691520",
+  "description":"CreateDealAssociatedWithSellerTest",
+  "positions":[],
+  "priorityType":"OPEN",
+  "profiles":[],
+  "publishers":[
+    {
+      "publisherPid":10213
+    }
+  ],
+  "rules":[
+    {
+      "rulePid":66113
+    }
+  ],
+  "sites":[],
+  "start":1622088000000,
+  "status":"Active",
+  "visibility":true,
+  "dealCategory": 3,
+  "placementFormulaStatus": "DONE"
+}

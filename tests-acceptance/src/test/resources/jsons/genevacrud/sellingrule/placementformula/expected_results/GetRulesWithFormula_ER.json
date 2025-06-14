@@ -1,0 +1,325 @@
+[
+  {
+    "name": "RulePFormulaContains",
+    "description": "allBMdescription",
+    "status": "ACTIVE",
+    "intendedActions": [
+      {
+        "actionType": "FLOOR",
+        "actionData": "1.00"
+      }
+    ],
+    "type": "BRAND_PROTECTION",
+    "ownerCompanyPid": 10225,
+    "targets": [
+      {
+        "status": "ACTIVE",
+        "matchType": "EXCLUDE_LIST",
+        "targetType": "COUNTRY",
+        "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+      }
+    ],
+    "assignments": {
+      "positions": [
+        {
+          "pid": 100318,
+          "name": "transparency_enabled_position",
+          "memo": "transparency_enabled_position",
+          "siteAssignment": {
+            "pid": 10000202,
+            "name": "aleksis_site",
+            "publisherAssignment": {
+              "pid": 10225,
+              "name": "transparency_enabled"
+            }
+          }
+        }
+      ]
+    },
+    "ruleFormula": {
+      "placementFormula": {
+        "groupedBy": "OR",
+        "formulaGroups": [
+          {
+            "formulaRules": [
+              {
+                "attribute": "PLACEMENT_NAME",
+                "operator": "CONTAINS",
+                "ruleData": "trans"
+              },
+              {
+                "attribute": "PLACEMENT_TYPE",
+                "operator": "EQUALS",
+                "ruleData": "BANNER"
+              },
+              {
+                "attribute": "SITE_NAME",
+                "operator": "CONTAINS",
+                "ruleData": "al"
+              },
+              {
+                "attribute": "SITE_TYPE",
+                "operator": "EQUALS",
+                "ruleData": "MOBILE_WEB"
+              }
+            ]
+          },
+          {
+            "formulaRules": [
+              {
+                "attribute": "PLACEMENT_NAME",
+                "operator": "CONTAINS",
+                "ruleData": "_formula"
+              },
+              {
+                "attribute": "PLACEMENT_TYPE",
+                "operator": "EQUALS",
+                "ruleData": "INTERSTITIAL"
+              },
+              {
+                "attribute": "SITE_NAME",
+                "operator": "CONTAINS",
+                "ruleData": "site"
+              },
+              {
+                "attribute": "SITE_TYPE",
+                "operator": "NOT_EQUALS",
+                "ruleData": "APPLICATION"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "RulePFormulaNotContains",
+    "description": "description",
+    "status": "ACTIVE",
+    "intendedActions": [
+      {
+        "pid": 2,
+        "version": 0,
+        "actionType": "FLOOR",
+        "actionData": "1.00"
+      }
+    ],
+    "type": "BRAND_PROTECTION",
+    "ownerCompanyPid": 10225,
+    "targets": [
+      {
+        "status": "ACTIVE",
+        "matchType": "EXCLUDE_LIST",
+        "targetType": "COUNTRY",
+        "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+      }
+    ],
+    "assignments": {
+      "positions": [
+        {
+          "pid": 100318,
+          "name": "transparency_enabled_position",
+          "memo": "transparency_enabled_position",
+          "siteAssignment": {
+            "pid": 10000202,
+            "name": "aleksis_site",
+            "publisherAssignment": {
+              "pid": 10225,
+              "name": "transparency_enabled"
+            }
+          }
+        },
+        {
+          "pid": 100329,
+          "name": "special_formula",
+          "memo": "special_formula",
+          "siteAssignment": {
+            "pid": 10000202,
+            "name": "aleksis_site",
+            "publisherAssignment": {
+              "pid": 10225,
+              "name": "transparency_enabled"
+            }
+          }
+        },
+        {
+          "pid": 100330,
+          "name": "position",
+          "memo": "position",
+          "siteAssignment": {
+            "pid": 10000208,
+            "name": "DESKTOP new",
+            "publisherAssignment": {
+              "pid": 10225,
+              "name": "transparency_enabled"
+            }
+          }
+        }
+      ]
+    },
+    "ruleFormula": {
+      "placementFormula": {
+        "groupedBy": "OR",
+        "formulaGroups": [
+          {
+            "formulaRules": [
+              {
+                "attribute": "PLACEMENT_NAME",
+                "operator": "NOT_CONTAINS",
+                "ruleData": "MX6124"
+              },
+              {
+                "attribute": "PLACEMENT_TYPE",
+                "operator": "NOT_EQUALS",
+                "ruleData": "INTERSTITIAL"
+              },
+              {
+                "attribute": "SITE_NAME",
+                "operator": "NOT_CONTAINS",
+                "ruleData": "random"
+              },
+              {
+                "attribute": "SITE_TYPE",
+                "operator": "NOT_EQUALS",
+                "ruleData": "APPLICATION"
+              }
+            ]
+          },
+          {
+            "formulaRules": [
+              {
+                "attribute": "PLACEMENT_NAME",
+                "operator": "NOT_CONTAINS",
+                "ruleData": "trans"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "pid": 3,
+    "version": 0,
+    "name": "RulePFormulaEquals",
+    "description": "description",
+    "status": "ACTIVE",
+    "intendedActions": [
+      {
+        "actionType": "FLOOR",
+        "actionData": "1.00"
+      }
+    ],
+    "type": "BRAND_PROTECTION",
+    "ownerCompanyPid": 10225,
+    "targets": [
+      {
+        "status": "ACTIVE",
+        "matchType": "EXCLUDE_LIST",
+        "targetType": "COUNTRY",
+        "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+      }
+    ],
+    "assignments": {},
+    "ruleFormula": {
+      "placementFormula": {
+        "groupedBy": "OR",
+        "formulaGroups": [
+          {
+            "formulaRules": [
+              {
+                "attribute": "SITE_NAME",
+                "operator": "EQUALS",
+                "ruleData": "aleksis"
+              },
+              {
+                "attribute": "SITE_TYPE",
+                "operator": "EQUALS",
+                "ruleData": "MOBILE_WEB"
+              }
+            ]
+          },
+          {
+            "formulaRules": [
+              {
+                "attribute": "INVENTORY_ATTRIBUTE",
+                "operator": "EQUALS",
+                "ruleData": "aleksisxxdummyxx",
+                "attributePid": 888
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "RulePFormulaNotEquals",
+    "description": "description",
+    "status": "ACTIVE",
+    "intendedActions": [
+      {
+        "actionType": "FLOOR",
+        "actionData": "1.00"
+      }
+    ],
+    "type": "BRAND_PROTECTION",
+    "ownerCompanyPid": 10225,
+    "targets": [
+      {
+        "status": "ACTIVE",
+        "matchType": "EXCLUDE_LIST",
+        "targetType": "COUNTRY",
+        "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+      }
+    ],
+    "assignments": {
+      "positions": [
+        {
+          "pid": 100330,
+          "name": "position",
+          "memo": "position",
+          "siteAssignment": {
+            "pid": 10000208,
+            "name": "DESKTOP new",
+            "publisherAssignment": {
+              "pid": 10225,
+              "name": "transparency_enabled"
+            }
+          }
+        }
+      ]
+    },
+    "ruleFormula": {
+      "placementFormula": {
+        "groupedBy": "OR",
+        "formulaGroups": [
+          {
+            "formulaRules": [
+              {
+                "attribute": "PLACEMENT_NAME",
+                "operator": "NOT_EQUALS",
+                "ruleData": "name"
+              },
+              {
+                "attribute": "PLACEMENT_TYPE",
+                "operator": "NOT_EQUALS",
+                "ruleData": "BANNER"
+              },
+              {
+                "attribute": "SITE_NAME",
+                "operator": "NOT_EQUALS",
+                "ruleData": "site"
+              },
+              {
+                "attribute": "SITE_TYPE",
+                "operator": "NOT_EQUALS",
+                "ruleData": "APPLICATION"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

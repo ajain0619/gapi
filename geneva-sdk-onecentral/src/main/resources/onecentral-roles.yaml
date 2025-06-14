@@ -1,0 +1,94 @@
+qa:
+  - name: ONE Mobile - Placeholder Role
+    id: 164227
+  - name: AdminNexage
+    id: 510335
+  - name: ManagerYieldNexage
+    id: 510338
+  - name: ManagerSmartexNexage
+    id: 510374
+  - name: ManagerNexage
+    id: 510380
+  - name: UserNexage
+    id: 510383
+  - name: AdminSeller
+    id: 510386
+  - name: ManagerSeller
+    id: 510365
+  - name: UserSeller
+    id: 510368
+  - name: AdminBuyer
+    id: 510389
+  - name: ManagerBuyer
+    id: 510371
+  - name: UserBuyer
+    id: 510377
+  - name: AdminSeatHolder
+    id: 510350
+  - name: ManagerSeatHolder
+    id: 510401
+  - name: UserSeatHolder
+    id: 510395
+  - name: AdminSellerSeat
+    id: 510392
+  - name: ManagerSellerSeat
+    id: 510356
+  - name: UserSellerSeat
+    id: 510398
+  - name: ApiIIQ
+    id: 510362
+  - name: DealManager
+    id: 510353
+  - name: ApiSeller
+    id: 510869
+  - name: ApiBuyer
+    id: 510870
+  - name: DummyRole
+    id: 510896
+prod:
+  - name: ONE Mobile - Placeholder Role
+    id: 19218
+  - name: AdminNexage
+    id: 74547
+  - name: ManagerYieldNexage
+    id: 74535
+  - name: ManagerSmartexNexage
+    id: 74592
+  - name: ManagerNexage
+    id: 74562
+  - name: UserNexage
+    id: 74550
+  - name: AdminSeller
+    id: 74577
+  - name: ManagerSeller
+    id: 74538
+  - name: UserSeller
+    id: 74541
+  - name: AdminBuyer
+    id: 74553
+  - name: ManagerBuyer
+    id: 74565
+  - name: UserBuyer
+    id: 74580
+  - name: AdminSeatHolder
+    id: 74583
+  - name: ManagerSeatHolder
+    id: 74586
+  - name: UserSeatHolder
+    id: 74556
+  - name: AdminSellerSeat
+    id: 74568
+  - name: ManagerSellerSeat
+    id: 74544
+  - name: UserSellerSeat
+    id: 74589
+  - name: ApiIIQ
+    id: 74571
+  - name: DealManager
+    id: 74574
+  - name: ApiSeller
+    id: 75332
+  - name: ApiBuyer
+    id: 75335
+  - name: DummyRole
+    id: 75574

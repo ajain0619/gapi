@@ -1,0 +1,15 @@
+{
+  "sitePid": 10000174,
+  "name": "InvalidVideo11",
+  "tiers": [],
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO",
+  "screenLocation": null,
+  "mraidAdvancedTracking": true,
+  "videoLinearity": "NON_LINEAR",
+  "height": 3000,
+  "width": 2000,
+  "placementCategory": "INSTREAM_VIDEO"
+}

@@ -1,0 +1,87 @@
+{
+  "sitePid": 10000209,
+  "name": "native_web_placement 1",
+  "memo": "Native web Placement 1",
+  "mraidSupport": "YES",
+  "videoSupport": "NATIVE",
+  "screenLocation": "UNDEFINED",
+  "mraidAdvancedTracking": true,
+  "status": "ACTIVE",
+  "placementCategory": "NATIVE_V2",
+  "trafficType": "MEDIATION",
+  "nativePlacementExtension": {
+    "context": "SOCIAL",
+    "contextSubType": "USER_GENERATED",
+    "placementType": "IN_FEED",
+    "assetTemplate": "awesomeAssets",
+    "assetSets": [
+      {
+        "rule": "REQ_ALL",
+        "assets": [
+          {
+            "type": "TITLE",
+            "key": "title_41265559-e93d-4e1c-95ea-4392058fb975",
+            "title": {
+              "maxLength": 90
+            }
+          },
+          {
+            "type": "DATA",
+            "key": "data_1e28a2b6-14ad-4c15-957e-53bc3922f01d",
+            "data": {
+              "maxLength": 15,
+              "type": "SPONSORED"
+            }
+          },
+          {
+            "type": "IMAGE",
+            "key": "image_a27c87f4-6081-4f59-b9a2-ce2532eefa7f",
+            "image": {
+              "type": "ICON",
+              "width": null,
+              "widthMinimum": 50,
+              "height": null,
+              "heightMinimum": 50
+            }
+          },
+          {
+            "type": "IMAGE",
+            "key": "image_ba69335a-fa47-4684-836f-4b9686700d85",
+            "image": {
+              "type": "MAIN",
+              "width": null,
+              "widthMinimum": 1200,
+              "height": null,
+              "heightMinimum": 627
+            }
+          },
+          {
+            "type": "VIDEO",
+            "key": "video_f177e60b-3cf5-4fd7-9397-928b0fef1119",
+            "video": {
+              "minDuration": 5,
+              "maxDuration": 30,
+              "protocols": [
+                "VAST_3_0_WRAPPER",
+                "VAST_3_0"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule": "REQ_NONE",
+        "assets": [
+          {
+            "type": "DATA",
+            "key": "data_33fe8746-00a3-4dcb-9426-c101948259a6",
+            "data": {
+              "maxLength": 12,
+              "type": "CTA_TEXT"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

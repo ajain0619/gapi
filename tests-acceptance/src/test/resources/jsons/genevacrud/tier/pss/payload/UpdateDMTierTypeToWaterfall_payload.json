@@ -1,0 +1,12 @@
+{
+  "pid": 10352,
+  "version": 0,
+  "level": 0,
+  "orderStrategy": "Dynamic",
+  "tierType": "WATERFALL",
+  "tags": [
+    {
+      "pid": 5566590
+    }
+  ]
+}

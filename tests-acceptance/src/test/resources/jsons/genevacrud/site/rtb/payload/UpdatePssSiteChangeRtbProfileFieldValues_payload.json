@@ -1,0 +1,92 @@
+{
+  "pid": 10000202,
+  "version": 4,
+  "publisher": {
+    "pid": 10225,
+    "adServingEnabled": false,
+    "restrictDrillDown": false,
+    "test": false,
+    "selfServeAllowed": false,
+    "numberOfUsers": 0
+  },
+  "dcn": "ff808081015d5df1ecc8f21eb7260005",
+  "description": "aleksis_site",
+  "domain": "aleksis_site",
+  "name": "aleksis_site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "aleksis_site",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "positions": [
+    {
+      "pid": 100318,
+      "name": "transparency_enabled_position",
+      "memo": "transparency_enabled_position"
+    }
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "defaultRtbProfile": {
+    "pid": 10000069,
+    "version": 0,
+    "name": "changeRtbProfile",
+    "id": "ff808081015d5df26508f55c81210009",
+    "libraries": [],
+    "useDefaultBlock": false,
+    "pubNetReserve": 1.6,
+    "defaultReserve": 0.75,
+    "includeConsumerId": false,
+    "includeDomainReferences": true,
+    "includeConsumerProfile": false,
+    "useDefaultBidders": false,
+    "auctionType": "FIRST_PRICE",
+    "lowReserve": 1,
+    "alterReserve": "ONLY_IF_HIGHER",
+    "description": "DenzaFaradenza",
+    "screeningLevel": "RequireDomain",
+    "siteType": "W",
+    "blockedExternalDataProviderMap": {},
+    "bidderFilterMap": {},
+    "libraryPids": [],
+    "includeGeoData": true,
+    "defaultRtbProfileOwnerCompanyPid": 10225,
+    "bidderFilterAllowlist": true,
+    "siteTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "bidderFilters": [],
+    "blockedAdCategories": []
+  },
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.009,
+    "rtbFee": 0.025
+  }
+}

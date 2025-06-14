@@ -1,0 +1,170 @@
+{
+  "content": [
+    {
+      "assignments": {
+        "positions": [
+          {
+            "name": "Pos name 34",
+            "pid": 34,
+            "siteAssignment": {
+              "name": "Site name 13",
+              "pid": 13,
+              "publisherAssignment": {
+                "name": "Seller1",
+                "pid": 10000
+              }
+            }
+          },
+          {
+            "name": "Pos name 31",
+            "pid": 31,
+            "siteAssignment": {
+              "name": "Site name 11",
+              "pid": 11,
+              "publisherAssignment": {
+                "name": "Seller1",
+                "pid": 10000
+              }
+            }
+          }
+        ],
+        "publishers": [
+          {
+            "name": "Seller1",
+            "pid": 10000
+          }
+        ],
+        "sites": [
+          {
+            "name": "Site name 11",
+            "pid": 11,
+            "publisherAssignment": {
+              "name": "Seller1",
+              "pid": 10000
+            }
+          }
+        ]
+      },
+      "description": "desc 21",
+      "name": "rn21",
+      "ownerCompanyPid": 10000,
+      "pid": 21,
+      "status": "ACTIVE",
+      "type": "BRAND_PROTECTION",
+      "version": 1
+    },
+    {
+      "assignments": {
+        "positions": [
+          {
+            "name": "Pos name 31",
+            "pid": 31,
+            "siteAssignment": {
+              "name": "Site name 11",
+              "pid": 11,
+              "publisherAssignment": {
+                "name": "Seller1",
+                "pid": 10000
+              }
+            }
+          }
+        ],
+        "sites": [
+          {
+            "name": "Site name 11",
+            "pid": 11,
+            "publisherAssignment": {
+              "name": "Seller1",
+              "pid": 10000
+            }
+          }
+        ]
+      },
+      "description": "desc 22",
+      "name": "rn22",
+      "ownerCompanyPid": 10000,
+      "pid": 22,
+      "status": "ACTIVE",
+      "type": "BRAND_PROTECTION",
+      "version": 1
+    },
+    {
+      "assignments": {
+        "positions": [
+          {
+            "name": "Pos name 33",
+            "pid": 33,
+            "siteAssignment": {
+              "name": "Site name 12",
+              "pid": 12,
+              "publisherAssignment": {
+                "name": "Seller1",
+                "pid": 10000
+              }
+            }
+          },
+          {
+            "name": "Pos name 34",
+            "pid": 34,
+            "siteAssignment": {
+              "name": "Site name 13",
+              "pid": 13,
+              "publisherAssignment": {
+                "name": "Seller1",
+                "pid": 10000
+              }
+            }
+          }
+        ],
+        "publishers": [
+          {
+            "name": "Seller1",
+            "pid": 10000
+          }
+        ],
+        "sites": [
+          {
+            "name": "Site name 12",
+            "pid": 12,
+            "publisherAssignment": {
+              "name": "Seller1",
+              "pid": 10000
+            }
+          }
+        ]
+      },
+      "description": "desc 24",
+      "name": "rn24",
+      "ownerCompanyPid": 10000,
+      "pid": 24,
+      "status": "ACTIVE",
+      "type": "BRAND_PROTECTION",
+      "version": 1
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 3,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 3,
+  "totalPages": 1
+}

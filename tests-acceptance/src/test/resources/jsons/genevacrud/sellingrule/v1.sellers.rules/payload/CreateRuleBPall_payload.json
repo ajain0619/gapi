@@ -1,0 +1,112 @@
+{
+  "name": "BPruleWithAllTargets",
+  "description": "description",
+  "status": "INACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10000,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "REGION",
+      "data": "supplyData3"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "STATE",
+      "data": "supplyData4"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "CITY",
+      "data": "supplyData5"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "GENDER",
+      "data": "F"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "AGE",
+      "data": "18-20"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "AD_SIZE",
+      "data": "1x1"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MATCHED_USER_ID",
+      "data": "buyerData2"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYER_SEATS",
+      "data": "[{\"buyerCompany\":10200,\"bidders\":[1],\"bidder\":1},{\"buyerCompany\":300,\"bidders\":[2],\"bidder\":2},{\"buyerCompany\":10204,\"bidders\":[3],\"bidder\":3}]"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+      "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "IAB_CATEGORY",
+      "data": "bidData2"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "CREATIVE_ID",
+      "data": "bidData4"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "BIDDER",
+      "data": "4"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "CREATIVE_LANGUAGE",
+      "data": "[{\"tag_id\":249}]"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "CREATIVE_BEACON",
+      "data": "[{\"tag_id\":120,\"tag_values\":[\"AdMeld\"]}]"
+    }
+  ],
+  "assignments": {
+    "positions": [
+      {
+        "pid": 100231
+      }
+    ]
+  }
+}

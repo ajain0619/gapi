@@ -1,0 +1,30 @@
+[
+  {
+    "configKey": "blockedBidResponseAttributes"
+  },
+  {
+    "configKey": "priceMacro"
+  },
+  {
+    "configKey": "deliveryTrackingUrl",
+    "configOptions": [
+      "burl",
+      "adm",
+      "nurl"
+    ]
+  },
+  {
+    "configKey": "noAdResponseCode",
+    "configOptions": [
+      "200",
+      "204"
+    ]
+  },
+  {
+    "configKey": "jsWrapDisabled",
+    "configOptions": [
+      "true",
+      "false"
+    ]
+  }
+]

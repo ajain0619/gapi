@@ -1,0 +1,147 @@
+{
+  "sites": {
+    "content": [
+      {
+        "dcn": "8a859e0f013c3c4e13986d6c81650013",
+        "id": "8a859e0f013c3c4e13986d6c81650014",
+        "status": "ACTIVE",
+        "name": "Rovio-Angry Birds Classic Free-iOS",
+        "type": "MOBILE_WEB",
+        "live": false,
+        "platform": "OTHER",
+        "sellerRevenue": 0.0,
+        "adRequested": 0,
+        "adDelivered": 0,
+        "adServed": 0,
+        "adClicked": 0,
+        "fillRate": 0.0,
+        "ecpm": 0.0,
+        "ctr": 0.0,
+        "rpm": 0.0,
+        "revenueTrendPercent": 0.0,
+        "pid": 1301
+      },
+      {
+        "dcn": "8a859e0f013c3c4e13986d71e1070017",
+        "id": "8a859e0f013c3c4e13986d71e1070018",
+        "status": "ACTIVE",
+        "name": "Rovio-Angry Birds Classic Free-iPad",
+        "type": "MOBILE_WEB",
+        "live": false,
+        "platform": "OTHER",
+        "sellerRevenue": 0.0,
+        "adRequested": 0,
+        "adDelivered": 0,
+        "adServed": 0,
+        "adClicked": 0,
+        "fillRate": 0.0,
+        "ecpm": 0.0,
+        "ctr": 0.0,
+        "rpm": 0.0,
+        "revenueTrendPercent": 0.0,
+        "pid": 1314
+      },
+      {
+        "dcn": "8a859e0f013c3c4e13986d7657af001a",
+        "id": "8a859e0f013c3c4e13986d7657af001b",
+        "status": "ACTIVE",
+        "name": "Rovio-Angry Birds Seasons-Android",
+        "type": "MOBILE_WEB",
+        "live": false,
+        "platform": "OTHER",
+        "sellerRevenue": 0.0,
+        "adRequested": 0,
+        "adDelivered": 0,
+        "adServed": 0,
+        "adClicked": 0,
+        "fillRate": 0.0,
+        "ecpm": 0.0,
+        "ctr": 0.0,
+        "rpm": 0.0,
+        "revenueTrendPercent": 0.0,
+        "pid": 1327
+      }
+    ],
+    "pageable": {
+      "sort": {
+        "sorted": true,
+        "unsorted": false,
+        "empty": false
+      },
+      "pageNumber": 0,
+      "pageSize": 3,
+      "offset": 0,
+      "unpaged": false,
+      "paged": true
+    },
+    "totalPages": 2,
+    "totalElements": 5,
+    "last": false,
+    "numberOfElements": 3,
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "number": 0,
+    "first": true,
+    "size": 3,
+    "empty": false
+  },
+  "summary": {
+    "requests": {
+      "current": 0.0,
+      "past": 0.0,
+      "diff": 0.0,
+      "diffPercent": 0.0
+    },
+    "served": {
+      "current": 0.0,
+      "past": 0.0,
+      "diff": 0.0,
+      "diffPercent": 0.0
+    },
+    "delivered": {
+      "current": 0.0,
+      "past": 0.0,
+      "diff": 0.0,
+      "diffPercent": 0.0
+    },
+    "clicks": {
+      "current": 0.0,
+      "past": 0.0,
+      "diff": 0.0,
+      "diffPercent": 0.0
+    },
+    "revenue": {
+      "current": 0.0,
+      "past": 0.0,
+      "diff": 0.0,
+      "diffPercent": 0.0
+    },
+    "fillRate": {
+      "current": 0.0,
+      "past": 0.0,
+      "diff": 0.0,
+      "diffPercent": 0.0
+    },
+    "ctr": {
+      "current": 0.0,
+      "past": 0.0,
+      "diff": 0.0,
+      "diffPercent": 0.0
+    },
+    "rpm": {
+      "current": 0.0,
+      "past": 0.0,
+      "diff": 0.0,
+      "diffPercent": 0.0
+    },
+    "ecpm": {
+      "current": 0.0,
+      "past": 0.0,
+      "diff": 0.0,
+      "diffPercent": 0.0
+    }
+  }
+}

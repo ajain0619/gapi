@@ -1,0 +1,42 @@
+{
+  "content": [
+    {
+      "pid": 1,
+      "name": "google_partner_test",
+      "multiImpressionBid": true,
+      "fillMaxDuration": false,
+      "maxAdsPerPod": 8
+    },
+    {
+      "pid": 2,
+      "name": "mopub_partner_test",
+      "formattedDefaultTypeEnabled": false,
+      "multiImpressionBid": true,
+      "fillMaxDuration": true
+    },
+    {
+      "pid": 3,
+      "name": "amazon-partner-test",
+      "multiImpressionBid": false,
+      "fillMaxDuration": false
+    },
+    {
+      "pid": 4,
+      "name": "ebay-partner-test",
+      "multiImpressionBid": false,
+      "fillMaxDuration": false
+    }
+  ],
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 4,
+  "size": 1000,
+  "number": 0,
+  "first": true,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  },
+  "numberOfElements": 4
+}

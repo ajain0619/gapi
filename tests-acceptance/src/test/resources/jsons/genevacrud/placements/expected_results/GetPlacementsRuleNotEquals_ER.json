@@ -1,0 +1,40 @@
+{
+  "content":[
+    {
+      "sitePid": 1842,
+      "siteName": "seller_seat_site-2",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100330,
+      "placementName": "test_placement_2",
+      "placementMemo": "test_placement_2",
+      "placementType": "BANNER",
+      "height": 50,
+      "width": 300
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "pageNumber": 0,
+    "pageSize": 10,
+    "offset": 0,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 1,
+  "first": true,
+  "numberOfElements": 1,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "empty": false
+}

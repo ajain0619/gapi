@@ -1,0 +1,14 @@
+{
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "MediationNumTrafficTypeBannerTest",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "BELOW_VISIBLE",
+  "mraidAdvancedTracking": false,
+  "status": "ACTIVE",
+  "placementCategory": "BANNER",
+  "trafficType": 0
+}

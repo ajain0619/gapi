@@ -1,0 +1,15 @@
+{
+  "name": "AV22",
+  "buyer": {
+    "pid": 4252
+  },
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": "false",
+  "primaryId": "535",
+  "tagController": {
+    "autoExpand": false
+  },
+  "videoSupport": "BANNER",
+  "rules": [
+  ]
+}

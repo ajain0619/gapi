@@ -1,0 +1,55 @@
+[
+  {
+    "pid": 13,
+    "version": 0,
+    "sellerPid": 105,
+    "adSourcePid": 5747,
+    "username": "5747_username",
+    "password": "5747_pw",
+    "apiToken": "5747_api_token",
+    "apiKey": "5747_api_key"
+  },
+  {
+    "pid": 12,
+    "version": 0,
+    "sellerPid": 105,
+    "adSourcePid": 7047,
+    "username": "7047_username",
+    "password": "7047_pw",
+    "apiToken": "7047_api_token",
+    "apiKey": "7047_api_key"
+  },
+  {
+    "version": 0,
+    "adSourcePid": 7048
+  },
+  {
+    "version": 18,
+    "adSourcePid": 5721
+  },
+  {
+    "version": 0,
+    "adSourcePid": 7049
+  },
+  {
+    "version": 0,
+    "adSourcePid": 7050
+  },
+  {
+    "pid": 16,
+    "version": 0,
+    "sellerPid": 105,
+    "adSourcePid": 5292,
+    "username": "5292_username"
+  },
+  {
+    "pid": 3,
+    "version": 4,
+    "sellerPid": 105,
+    "adSourcePid": 7008,
+    "username": "7008_username",
+    "password": "7008_pw",
+    "apiToken": "7008_api_token",
+    "apiKey": "7008_api_key"
+  }
+]

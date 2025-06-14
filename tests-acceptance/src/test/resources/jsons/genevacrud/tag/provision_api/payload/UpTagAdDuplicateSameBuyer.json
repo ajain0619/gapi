@@ -1,0 +1,16 @@
+{
+  "name": "AV291",
+  "buyer": {
+    "pid": "4252"
+  },
+  "adNetReportUserName": "username",
+  "adNetReportPassword": "password",
+  "adNetReportApiKey": "1232478",
+  "adNetReportApiToken": "243",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "primaryId": "piztez",
+  "version": 0
+}

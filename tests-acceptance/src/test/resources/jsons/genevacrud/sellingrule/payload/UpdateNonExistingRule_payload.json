@@ -1,0 +1,29 @@
+{
+  "pid": 100000000,
+  "version": 0,
+  "name": "nonExistingRule",
+  "description": "supplyDescription",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "ownerCompanyPid": 10225,
+  "targets": [
+    {
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "AD_SIZE",
+      "data": "1x1"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [],
+    "positions": []
+  }
+}

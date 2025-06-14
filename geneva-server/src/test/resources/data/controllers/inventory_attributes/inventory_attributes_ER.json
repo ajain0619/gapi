@@ -1,0 +1,59 @@
+{
+  "content": [
+    {
+      "name": "Inventory Attribute",
+      "attributePid": 1,
+      "status": "ACTIVE",
+      "hasGlobalVisibility": false,
+      "assignedLevel": [
+        1
+      ],
+      "lastUpdated": "2019-02-08",
+      "inventoryAttributeValueCount": 1,
+      "inventoryAttributeValueCountActive": 0,
+      "internalOnly": false,
+      "required": false
+    },
+    {
+      "name": "Inventory Attribute2",
+      "attributePid": 2,
+      "status": "ACTIVE",
+      "hasGlobalVisibility": false,
+      "assignedLevel": [
+        1,
+        2,
+        3
+      ],
+      "lastUpdated": "2019-02-08",
+      "inventoryAttributeValueCount": 0,
+      "inventoryAttributeValueCountActive": 0,
+      "internalOnly": false,
+      "required": false
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 2,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": false,
+  "totalPages": 2,
+  "totalElements": 3,
+  "first": true,
+  "size": 2,
+  "number": 0,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "numberOfElements": 2,
+  "empty": false
+}

@@ -1,0 +1,153 @@
+{
+  "assetSets": [
+    {
+      "rule": "REQ_ALL",
+      "assets": [
+        {
+          "key": "myTitle",
+          "type": "TITLE",
+          "title": {
+            "maxLength": 75
+          }
+        },
+        {
+          "key": "descDescription",
+          "type": "DATA",
+          "data": {
+            "type": "DESCRIPTION",
+            "maxLength": 120
+          }
+        }
+      ]
+    },
+    {
+      "rule": "REQ_ONE_PLUS",
+      "assets": [
+        {
+          "key": "myImage",
+          "type": "IMAGE",
+          "image": {
+            "type": "MAIN",
+            "width": 200,
+            "widthMinimum": 150,
+            "height": 300,
+            "heightMinimum": 280
+          }
+        },
+        {
+          "key": "myVideo",
+          "type": "VIDEO",
+          "video": {
+            "minDuration": 10,
+            "maxDuration": 25,
+            "protocols": [
+              "VAST_3_0",
+              "VAST_3_0_WRAPPER"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rule": "REQ_NONE",
+      "assets": [
+        {
+          "key": "mySalesDescription",
+          "type": "DATA",
+          "data": {
+            "type": "CTA_TEXT",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "PRICEDescription",
+          "type": "DATA",
+          "data": {
+            "type": "PRICE",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "PhoneDescription",
+          "type": "DATA",
+          "data": {
+            "type": "PHONE",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "RatingDescription",
+          "type": "DATA",
+          "data": {
+            "type": "RATING",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "AddressDescription",
+          "type": "DATA",
+          "data": {
+            "type": "ADDRESS",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "LikesDescription",
+          "type": "DATA",
+          "data": {
+            "type": "LIKES",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "SalePriceDescription",
+          "type": "DATA",
+          "data": {
+            "type": "SALE_PRICE",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "DownloadsDescription",
+          "type": "DATA",
+          "data": {
+            "type": "DOWNLOADS",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "DisplayUrlDescription",
+          "type": "DATA",
+          "data": {
+            "type": "DISPLAY_URL",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "descDescriptionData",
+          "type": "DATA",
+          "data": {
+            "type": "DESCRIPTION2",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "descDescriptionData",
+          "type": "DATA",
+          "data": {
+            "type": "DESCRIPTION",
+            "maxLength": 120
+          }
+        },
+        {
+          "key": "sponsoredData",
+          "type": "DATA",
+          "data": {
+            "type": "SPONSORED",
+            "maxLength": 120
+          }
+        }
+      ]
+    }
+  ]
+}

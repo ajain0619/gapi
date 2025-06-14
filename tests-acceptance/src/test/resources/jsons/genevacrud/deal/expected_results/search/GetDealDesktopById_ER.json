@@ -1,0 +1,40 @@
+{
+  "pid": 11,
+  "dealId": "13021645789",
+  "description": "DesktopDeskription",
+  "start": 1518498000000,
+  "stop": 1518670799000,
+  "createdBy": 781,
+  "status": "Active",
+  "auctionType": "None",
+  "bidders": [],
+  "profiles": [
+    {
+      "pid": 26,
+      "rtbProfilePid": 10000070,
+      "description": "Self Service Created Ad Source",
+      "auctionType": 0,
+      "defaultReserve": 1.00000000,
+      "siteNameAlias": "ban1",
+      "siteType": "D",
+      "isRealName": "false",
+      "siteId": 10000208,
+      "siteName": "desktop_site1",
+      "categories": [
+        "IAB1"
+      ],
+      "countries": [],
+      "platform": "OTHER",
+      "pubId": 1,
+      "pubName": "Nexage Inc",
+      "tagPid": 5566599,
+      "tagName": "tag1",
+      "videoSupport": "BANNER",
+      "placementType": "BANNER",
+      "placementName": "ban1",
+      "placementPid": 100329
+    }
+  ],
+  "visibility": false,
+  "placementFormulaStatus": "DONE"
+}

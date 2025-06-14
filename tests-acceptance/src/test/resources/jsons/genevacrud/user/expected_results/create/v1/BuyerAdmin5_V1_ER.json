@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 274,
+      "type": "BUYER"
+    }
+  ],
+  "role": "ROLE_ADMIN",
+  "userName": "buyeradmin5",
+  "email": "buyeradmin5@eraw.ru",
+  "contactNumber": "765",
+  "name": "ytr ytr",
+  "title": "rtwe",
+  "primaryContact": false,
+  "oneCentralUserName": "buyeradmin5",
+  "firstName": "ytr",
+  "lastName": "ytr"
+}

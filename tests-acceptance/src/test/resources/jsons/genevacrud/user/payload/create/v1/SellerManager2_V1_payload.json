@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 482,
+      "type": "SELLER"
+    }
+  ],
+  "role": "ROLE_MANAGER",
+  "userName": "sellermanager2_V1",
+  "email": "01jgdfjdf@qew.ru",
+  "contactNumber": "654",
+  "name": "fgdj nexageTestLastName",
+  "title": "jf",
+  "primaryContact": false
+}

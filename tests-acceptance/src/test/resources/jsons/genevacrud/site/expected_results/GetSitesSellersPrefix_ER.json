@@ -1,0 +1,270 @@
+[
+  {
+    "name": "AS-test7-site",
+    "pid": 937,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "adserverSellerTest7"
+  },
+  {
+    "name": "DealTagTestSite1-App-ImpressionGroups",
+    "pid": 10000183,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "CRUDPositionTest"
+  },
+  {
+    "name": "PositionArchiving_TestSite",
+    "pid": 10000179,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "PositionArchiving_TestCompany1"
+  },
+  {
+    "name": "Functional Test 1",
+    "pid": 1,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "MedFTCompany"
+  },
+  {
+    "name": "Functional Test -Group 3-1",
+    "pid": 2,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "MedFTCompany"
+  },
+  {
+    "name": "test_velocity_tmplt",
+    "pid": 10000134,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "MedFTCompany"
+  },
+  {
+    "name": "SellerToTestRtbReport1Site1",
+    "pid": 1210,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "SellerToTestRtbReport1"
+  },
+  {
+    "name": "SellerToTestRtbReport1Site2",
+    "pid": 1223,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "SellerToTestRtbReport1"
+  },
+  {
+    "name": "SellerToTestRtbReport2Site1",
+    "pid": 1236,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "SellerToTestRtbReport2"
+  },
+  {
+    "name": "SellerToTestRtbReport2Site2",
+    "pid": 1249,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "SellerToTestRtbReport2"
+  },
+  {
+    "name": "Rovio - Test Android",
+    "pid": 1275,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Rovio"
+  },
+  {
+    "name": "Rovio - Test iOS",
+    "pid": 1288,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Rovio"
+  },
+  {
+    "name": "testing",
+    "pid": 10000056,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "A new Seller"
+  },
+  {
+    "name": "velocity template site test",
+    "pid": 10000147,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "velocity template seller"
+  },
+  {
+    "name": "AliasTestSite",
+    "pid": 10000178,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "AliasSiteTestSeller"
+  },
+  {
+    "name": "TagArchive_TestSite1",
+    "pid": 10000184,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "TagArchive_TestCompany"
+  },
+  {
+    "name": "TagArchive_TestSite2",
+    "pid": 10000185,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "TagArchive_TestCompany"
+  },
+  {
+    "name": "testposarchivesite1",
+    "pid": 10000186,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "TestSellerPosArchive"
+  },
+  {
+    "name": "testposarchivesite2",
+    "pid": 10000187,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "TestSellerPosArchive"
+  },
+  {
+    "name": "dfp_test_site",
+    "pid": 10000013,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "dfp_test_seller"
+  },
+  {
+    "name": "Exchange Functional Test Site-1",
+    "pid": 20000,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Seller1"
+  },
+  {
+    "name": "Exchange Functional Test Site-2",
+    "pid": 20001,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Seller1"
+  },
+  {
+    "name": "Exchange Functional Test Site-3",
+    "pid": 20002,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Seller1"
+  },
+  {
+    "name": "ExchangeFunctionalTest-4",
+    "pid": 10000160,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Seller1"
+  },
+  {
+    "name": "adserverSellerTest8",
+    "pid": 105,
+    "type": "SELLER"
+  },
+  {
+    "name": "adserverSellerTest7",
+    "pid": 92,
+    "type": "SELLER"
+  },
+  {
+    "name": "adserverSellerTest3",
+    "pid": 53,
+    "type": "SELLER"
+  },
+  {
+    "name": "AdserverSellerTest9",
+    "pid": 118,
+    "type": "SELLER"
+  },
+  {
+    "name": "CRUDPositionTest",
+    "pid": 10201,
+    "type": "SELLER"
+  },
+  {
+    "name": "PositionArchiving_TestCompany1",
+    "pid": 10208,
+    "type": "SELLER"
+  },
+  {
+    "name": "PositionArchiving_TestCompany2",
+    "pid": 10209,
+    "type": "SELLER"
+  },
+  {
+    "name": "PRSTest2",
+    "pid": 287,
+    "type": "SELLER"
+  },
+  {
+    "name": "SellerToTestRtbReport1",
+    "pid": 391,
+    "type": "SELLER"
+  },
+  {
+    "name": "SellerToTestRtbReport2",
+    "pid": 404,
+    "type": "SELLER"
+  },
+  {
+    "name": "A test Seller",
+    "pid": 690,
+    "type": "SELLER"
+  },
+  {
+    "name": "tagtest 1",
+    "pid": 781,
+    "type": "SELLER"
+  },
+  {
+    "name": "AdTruth Test Company",
+    "pid": 10050,
+    "type": "SELLER"
+  },
+  {
+    "name": "test_rtb",
+    "pid": 10063,
+    "type": "SELLER"
+  },
+  {
+    "name": "PRELDTest",
+    "pid": 10076,
+    "type": "SELLER"
+  },
+  {
+    "name": "alias test",
+    "pid": 10206,
+    "type": "SELLER"
+  },
+  {
+    "name": "AliasSiteTestSeller",
+    "pid": 10207,
+    "type": "SELLER"
+  },
+  {
+    "name": "TagArchive_TestCompany",
+    "pid": 10213,
+    "type": "SELLER"
+  },
+  {
+    "name": "TestSellerPosArchive",
+    "pid": 10214,
+    "type": "SELLER"
+  },
+  {
+    "name": "dfp_test_seller",
+    "pid": 10032,
+    "type": "SELLER"
+  }
+]

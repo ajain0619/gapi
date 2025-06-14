@@ -1,0 +1,45 @@
+{
+  "pid": 10000200,
+  "version": 4,
+  "publisher": {
+    "pid": 10225
+  },
+  "dcn": "ff808081015d5d7a1d357b0ac86a0012",
+  "description": "site for testing transparency settings ",
+  "domain": "transparency_enabled.com",
+  "name": "site_for_transparency_enabled",
+  "platform": "IPHONE",
+  "status": "ACTIVE",
+  "type": "APPLICATION",
+  "url": "http://transparency_enabled.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "publisherTransparencySettings": {
+    "transparencyMode": "Aliases",
+    "nameAlias": "pub_alias_name"
+  },
+  "buyerTimeout": 1000,
+  "daysFree": 1,
+  "filterBots": true,
+  "adTruthEnabled": true,
+  "reportBatchSize": 10,
+  "globalAliasName": "alias",
+  "metadataEnablement": true,
+  "adScreeningEnabled": false,
+  "reportFrequency": 1000,
+  "rulesUpdateFrequency": 1000,
+  "totalTimeout": 1000,
+  "trafficThrottle": 1,
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.009,
+    "rtbFee": 0.016
+  }
+}

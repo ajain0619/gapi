@@ -1,0 +1,14 @@
+{
+   "site": {
+      "pid": 10000208
+   },
+   "interstitial": false,
+   "screenLocation": "FOOTER_VISIBLE",
+   "mraidSupport": "YES",
+   "placementCategory": "MEDIUM_RECTANGLE",
+   "videoSupport": "BANNER",
+   "width": 300,
+   "height": 250,
+   "memo": "medium",
+   "name": "medium"
+}

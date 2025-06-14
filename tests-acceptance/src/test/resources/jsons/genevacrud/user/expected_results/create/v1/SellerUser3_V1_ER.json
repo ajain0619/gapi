@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 10063,
+      "type": "SELLER"
+    }
+  ],
+  "role": "ROLE_USER",
+  "userName": "selleruser3_V1",
+  "email": "01hgdfh@req.ru",
+  "contactNumber": "hdf",
+  "name": "hgdf nexageTestLastName",
+  "title": "hgdf",
+  "primaryContact": false,
+  "oneCentralUserName": "selleruser3_V1",
+  "firstName": "hgdf",
+  "lastName": "nexageTestLastName"
+}

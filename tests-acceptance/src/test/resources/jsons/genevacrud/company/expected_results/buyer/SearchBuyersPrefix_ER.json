@@ -1,0 +1,17 @@
+[
+  {
+    "name": "RTB Buyer 1",
+    "pid": 378,
+    "type": "BUYER"
+  },
+  {
+    "name": "RTB Buyer 2",
+    "pid": 417,
+    "type": "BUYER"
+  },
+  {
+    "name": "rtb_integration_buyer",
+    "pid": 430,
+    "type": "BUYER"
+  }
+]

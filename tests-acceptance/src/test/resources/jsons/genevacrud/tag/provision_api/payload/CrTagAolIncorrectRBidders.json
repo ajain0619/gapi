@@ -1,0 +1,26 @@
+{
+  "name": "AV307",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": true,
+    "rtbProfileBidders": [
+      {
+        "seatWhitelist": [
+          "1"
+        ],
+        "bidderPid": 10
+      }
+    ],
+    "useDefaultBidders": false
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

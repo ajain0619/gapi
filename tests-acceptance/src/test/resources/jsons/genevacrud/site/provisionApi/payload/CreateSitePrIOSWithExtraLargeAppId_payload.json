@@ -1,0 +1,14 @@
+{
+  "name": "a8",
+  "description": "por la sierra yo me voy",
+  "domain": "q1",
+  "appBundle": "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901",
+  "url": "https://itunes.apple.com/us/artist/r-e-m/id12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901",
+  "coppaRestricted": false,
+  "platform": "IPAD_IPHONE",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "APPLICATION"
+}

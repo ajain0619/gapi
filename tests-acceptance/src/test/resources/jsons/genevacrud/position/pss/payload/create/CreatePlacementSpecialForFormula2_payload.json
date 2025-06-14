@@ -1,0 +1,18 @@
+{
+  "site": {
+    "pid": 10000208,
+    "type": "DESKTOP",
+    "platform": "OTHER"
+  },
+  "interstitial": false,
+  "screenLocation": "ABOVE_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO",
+  "name": "position",
+  "memo": "position",
+  "placementCategory": "INTERSTITIAL",
+  "positionAliasName": "position",
+  "mraidAdvancedTracking": false,
+  "width":1,
+  "height":5,
+}

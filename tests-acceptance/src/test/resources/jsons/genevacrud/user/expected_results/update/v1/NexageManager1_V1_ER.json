@@ -1,0 +1,20 @@
+{
+  "id": "ff8080810151510f18db1ad0f0f603dd",
+  "pid": 717,
+  "userName": "NexageManager1",
+  "name": "nexage manager1 updated",
+  "email": "01nexagemanager1@ex.com",
+  "contactNumber": "12345",
+  "title": "Ms",
+  "role": "ROLE_MANAGER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 1,
+      "type": "NEXAGE",
+      "name": "Nexage Inc"
+    }
+  ],
+  "oneCentralUserName": "NexageManager1"
+}

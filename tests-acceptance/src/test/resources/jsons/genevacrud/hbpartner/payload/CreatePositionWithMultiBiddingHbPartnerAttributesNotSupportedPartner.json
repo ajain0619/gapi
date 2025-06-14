@@ -1,0 +1,38 @@
+{
+  "site": {
+    "pid": 10000208,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "memo": "CreatePlacementWithMultiBiddingAlias",
+  "name": "create_placement_with_multibidding",
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width":1400,
+  "height":400,
+  "interstitial": false,
+  "placementCategory": "INSTREAM_VIDEO",
+  "trafficType": "MEDIATION",
+  "mraidAdvancedTracking": true,
+  "status": "ACTIVE",
+  "positionAliasName": "CreatePlacementWithMultiBiddingAlias",
+  "hbPartnerAttributes": [
+    {
+      "externalId": "",
+      "hbPartnerPid": 3,
+      "type": "NON_DEFAULT"
+    }
+  ],
+  "multiImpressionBid": true,
+  "adSizeType":"STANDARD",
+  "placementVideo": {
+    "linearity":"LINEAR",
+    "playerRequired":false,
+    "longform":true,
+    "streamType":"LIVE",
+    "ssai":"ALL_SERVER_SIDE",
+    "multiImpressionBid": true,
+    "competitiveSeparation": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "PLACEMENT_NAME",
+          "operator": "CONTAINS",
+          "ruleData": "position"
+        },
+        {
+          "attribute": "SITE_NAME",
+          "operator": "CONTAINS",
+          "ruleData": "al"
+        }
+      ]
+    }
+  ]
+}

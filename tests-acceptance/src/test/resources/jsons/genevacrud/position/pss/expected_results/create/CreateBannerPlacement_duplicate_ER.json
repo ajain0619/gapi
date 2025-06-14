@@ -1,0 +1,16 @@
+{
+  "pid": null,
+  "version": null,
+  "site": {
+    "pid": 10000174
+  },
+  "interstitial": false,
+  "screenLocation": "ABOVE_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "width": 300,
+  "height": 50,
+  "memo": "banner placement",
+  "name": "BANNER_PlAcEMenT_1",
+  "placementCategory": "BANNER"
+}

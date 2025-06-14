@@ -1,0 +1,57 @@
+{
+  "pid": 10000200,
+  "publisher": {
+    "pid": 10225,
+    "adServingEnabled": false,
+    "restrictDrillDown": false,
+    "test": false,
+    "selfServeAllowed": false,
+    "numberOfUsers": 0,
+    "defaultRtbProfilesEnabled": false
+  },
+  "dcn": "ff808081015d5d7a1d357b0ac86a0012",
+  "description": "site for testing transparency settings",
+  "domain": "transparency_enabled.com",
+  "name": "site_for_transparency_enabled",
+  "platform": "IPHONE",
+  "status": "ACTIVE",
+  "type": "APPLICATION",
+  "url": "http://transparency_enabled.com",
+  "coppaRestricted": false,
+  "iabCategories": [],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "siteTransparencySettings": {
+    "transparencyMode": "Aliases",
+    "idAlias": "261411428736453824",
+    "nameAlias": "site_alias_name"
+  },
+  "publisherTransparencySettings": {
+    "transparencyMode": "Aliases",
+    "nameAlias": "pub_alias_name"
+  },
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.1,
+    "rtbFee": 0.2
+  }
+}

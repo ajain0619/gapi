@@ -1,0 +1,36 @@
+[
+  {
+    "adRequests": 0,
+    "adServed": 1,
+    "adDelivered": 0,
+    "adClicks": 0,
+    "fillRate": 0,
+    "ctr": 0,
+    "revenue": 0,
+    "cpm": 0,
+    "rpm": 0,
+    "totalRevenue": 0,
+    "totalEcpm": 0,
+    "mmRevenue": 0,
+    "outboundRequest": false,
+    "interval": "2020-03-01 00:00:00",
+    "totalrpm": 0
+  },
+  {
+    "adRequests": 0,
+    "adServed": 1,
+    "adDelivered": 0,
+    "adClicks": 0,
+    "fillRate": 0,
+    "ctr": 0,
+    "revenue": 0,
+    "cpm": 0,
+    "rpm": 0,
+    "totalRevenue": 0,
+    "totalEcpm": 0,
+    "mmRevenue": 0,
+    "outboundRequest": false,
+    "interval": "2020-03-02 00:00:00",
+    "totalrpm": 0
+  }
+]

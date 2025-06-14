@@ -1,0 +1,35 @@
+{
+  "pid": 10000036,
+  "rtbProfilePid": 10000036,
+  "description": "DealTagTest-PSS-Banner-BlacklistTargetsettings",
+  "auctionType": 0,
+  "defaultReserve": 1.00000000,
+  "pubAlias": "10201",
+  "siteAlias": "10000176",
+  "pubNameAlias": "CRUDPositionTest",
+  "siteNameAlias": "CRUDPosition_Site3",
+  "siteType": "W",
+  "isRealName": "false",
+  "siteId": 10000176,
+  "siteName": "CRUDPosition_Site3",
+  "categories": [
+    "IAB4"
+  ],
+  "countries": [
+    {
+      "pid": 782,
+      "target": "CAN, USA",
+      "targetType": "NegKeyword",
+      "ruleType": "Country"
+    }
+  ],
+  "platform": "OTHER",
+  "pubId": 10201,
+  "pubName": "CRUDPositionTest",
+  "tagPid": 7364,
+  "tagName": "DealTagTest-PSS-Banner-BlacklistTargetsettings",
+  "videoSupport": "BANNER",
+  "placementType": "BANNER",
+  "placementName": "DealTagTest-Banner",
+  "placementPid": 100279
+}

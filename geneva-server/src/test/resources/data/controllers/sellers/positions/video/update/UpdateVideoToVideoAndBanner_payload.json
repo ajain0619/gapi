@@ -1,0 +1,16 @@
+{
+  "pid": 100250,
+  "version": 2,
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "banner_placement",
+  "memo": "banner placement",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "mraidAdvancedTracking": true,
+  "videoLinearity": "NON_LINEAR",
+  "status": "ACTIVE"
+}

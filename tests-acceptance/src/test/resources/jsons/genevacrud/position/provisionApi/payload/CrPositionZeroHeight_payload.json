@@ -1,0 +1,11 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "lulelule",
+  "name": "lulelule",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 9999,
+  "height": 0,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "interstitial": true
+}

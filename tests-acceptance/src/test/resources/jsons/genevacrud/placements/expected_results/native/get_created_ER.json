@@ -1,0 +1,41 @@
+{
+  "hbPartnerAttributes": [],
+  "memo": "native-position_[&,(./)]",
+  "mraidAdvancedTracking": false,
+  "mraidSupport": "YES",
+  "nativePlacementExtension": {
+    "context": "SOCIAL",
+    "contextSubType": "USER_GENERATED",
+    "placementType": "IN_FEED",
+    "assetTemplate": "awesomeAssets",
+    "assetSets": [
+      {
+        "rule": "REQ_ALL",
+        "assets": [
+          {
+            "key": "myTitle",
+            "type": "TITLE",
+            "title": {
+              "maxLength": 22
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pid": 100329,
+  "placementBuyer": {
+    "pid": 1,
+    "sectionId": "testSectionId",
+    "version": 0
+  },
+  "placementCategory": "NATIVE_V2",
+  "positionAliasName": "native_position",
+  "screenLocation": "FOOTER_VISIBLE",
+  "sitePid": 950,
+  "status": "ACTIVE",
+  "tiers": [],
+  "trafficType": "MEDIATION",
+  "version": 0,
+  "videoSupport": "NATIVE"
+}

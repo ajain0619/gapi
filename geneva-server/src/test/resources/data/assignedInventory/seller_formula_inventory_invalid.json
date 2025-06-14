@@ -1,0 +1,27 @@
+{
+  "content": [
+    {
+      "dealPid": 71858,
+      "autoUpdate": true,
+      "placementFormula": {
+        "groupedBy": "OR",
+        "formulaGroups": [
+          {
+            "formulaRules": [
+              {
+                "attribute": "PUBLISHER_NAME",
+                "operator": "EQUALS",
+                "ruleData": "Yahoo"
+              },
+              {
+                "attribute": "PLACEMENT_NAME",
+                "operator": "CONTAINS",
+                "ruleData": "Food"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

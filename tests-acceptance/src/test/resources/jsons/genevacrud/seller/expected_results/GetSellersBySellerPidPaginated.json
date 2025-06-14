@@ -1,0 +1,54 @@
+{
+  "content": [
+    {
+      "adServingEnabled": false,
+      "brxdBuyerIdEnabledOnBidRequest": false,
+      "cpiTrackingEnabled": false,
+      "currency": "USD",
+      "defaultRtbProfilesEnabled": false,
+      "description": "",
+      "dynamicBuyerRegistrationEnabled": false,
+      "id": "8a859e06014f4fd97b68dbd03b3c000a",
+      "mediationEnabled": false,
+      "name": "CRUDPositionTest",
+      "payoutEnabled": false,
+      "pid": 10201,
+      "restrictDrillDown": true,
+      "revenueGroupPid": 3,
+      "rtbEnabled": false,
+      "rtbRevenueReportEnabled": false,
+      "selfServeAllowed": true,
+      "status": "ACTIVE",
+      "test": false,
+      "thirdPartyFraudDetectionEnabled": false,
+      "type": "SELLER",
+      "version": 1,
+      "website": "www.nexage.com"
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 4,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 4,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

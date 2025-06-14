@@ -1,0 +1,22 @@
+[
+  {
+    "sitePid": 10000202,
+    "siteName": "aleksis_site",
+    "siteType": "MOBILE_WEB",
+    "placementId": 100318,
+    "placementName": "transparency_enabled_position",
+    "placementMemo": "transparency_enabled_position",
+    "placementType": "BANNER"
+  },
+  {
+    "sitePid": 10000202,
+    "siteName": "aleksis_site",
+    "siteType": "MOBILE_WEB",
+    "placementId": 100329,
+    "placementName": "special_formula",
+    "placementMemo": "special_formula",
+    "placementType": "BANNER",
+    "height": 50,
+    "width": 300
+  }
+]

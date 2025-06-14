@@ -1,0 +1,43 @@
+{
+  "pid": 10000179,
+  "version": 24,
+  "publisher": {
+    "pid": 10208,
+    "adServingEnabled": false,
+    "restrictDrillDown": false,
+    "test": false,
+    "selfServeAllowed": false,
+    "numberOfUsers": 0,
+    "defaultRtbProfilesEnabled": false
+  },
+  "dcn": "8a859e060151515bed725fadca9800e3",
+  "description": "aol.com",
+  "domain": "aol.com",
+  "name": "PositionArchiving_TestSite",
+  "platform": "ANDROID_TAB",
+  "status": "ACTIVE",
+  "type": "APPLICATION",
+  "url": "aol.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB5"
+  ],
+  "positions": [
+    {
+      "pid": 100252,
+      "name": "PositionArchiving_TestPosition1",
+      "trafficType": "MEDIATION",
+      "longform":false,
+      "impressionTypeHandling": "BASED_ON_PLACEMENT_CONFIG"
+    }
+  ],
+  "mode": "TEST",
+  "hbEnabled":false,
+  "adTruthEnabled":false,
+  "adScreeningEnabled":false,
+  "filterBots":false,
+  "consumerProfileContributed":false,
+  "consumerProfileUsed":false,
+  "overrideIP":false
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "pid": 2057,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/header",
+    "name": "Position Targets"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "name": "string",
+  "description": "string",
+  "prefix": "string",
+  "createdBy": 1000,
+  "status": "ACTIVE",
+  "attributeValues": [
+    {
+      "pid": 1200,
+      "value": "string",
+      "enabled": true
+    }
+  ],
+  "internalOnly": true,
+  "hasGlobalVisibility": true,
+  "specificPublisherVisibility": [
+    {
+      "name": "string",
+      "publisherPid": 1000
+    }
+  ],
+  "assignedLevel": [
+    1,
+    2,
+    3
+  ],
+  "required": false,
+  "lastUpdated": "2018-09-01"
+}

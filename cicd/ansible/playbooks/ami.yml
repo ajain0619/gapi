@@ -1,0 +1,29 @@
+---
+- hosts: localhost
+  become: True
+  become_user: root
+  gather_facts: yes
+  roles:
+    - role: '../roles/geneva-server'
+  tasks:
+    - import_role:
+        name: geneva-server
+        tasks_from: install-gpg-keys
+    - import_role:
+        name: geneva-server
+        tasks_from: install-fluentd
+    - import_role:
+        name: geneva-server
+        tasks_from: install-newrelic-infra
+    - import_role:
+        name: geneva-server
+        tasks_from: install-newrelic
+    - import_role:
+        name: geneva-server
+        tasks_from: install-sia
+    - import_role:
+        name: geneva-server
+        tasks_from: install-splunk
+    - import_role:
+        name: geneva-server
+        tasks_from: install

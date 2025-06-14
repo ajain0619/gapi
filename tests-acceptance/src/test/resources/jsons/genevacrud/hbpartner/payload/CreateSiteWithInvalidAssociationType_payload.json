@@ -1,0 +1,23 @@
+{
+  "dcn": "ff808081015e5e616d087077d07e0by2",
+  "description": "hb_partner_site_invalid",
+  "domain": "http://hb_partner_site_invalid.com",
+  "name": "hb_partner_site_invalid",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "mode": "TEST",
+  "url": "https://hb_partner_site.com",
+  "coppaRestricted": true,
+  "hbEnabled": true,
+  "iabCategories": [
+    "IAB5"
+  ],
+  "hbPartnerAttributes": [
+    {
+      "externalId": "google_pub_id_1",
+      "hbPartnerPid": 1,
+      "type": "DEFAULT_VIDEO"
+    }
+  ]
+}

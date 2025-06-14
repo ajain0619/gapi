@@ -1,0 +1,65 @@
+[
+  {
+    "groups": [
+      {
+        "data": "3,4",
+        "isIndividualsGroup": false,
+        "itemType": "BIDDER",
+        "listType": "BLOCKLIST",
+        "name": "Default Eligible Bidder Group",
+        "pid": 15,
+        "privilegeLevel": "PUBLISHER",
+        "publisherPid": 10218,
+        "version": 0
+      }
+    ],
+    "isDefaultEligible": true,
+    "name": "Default Eligible Bidder Group",
+    "pid": 11,
+    "privilegeLevel": "PUBLISHER",
+    "publisherPid": 10218,
+    "version": 2
+  },
+  {
+    "groups": [
+      {
+        "data": "1,2",
+        "isIndividualsGroup": false,
+        "itemType": "BIDDER",
+        "listType": "WHITELIST",
+        "name": "BDGRP1",
+        "pid": 16,
+        "privilegeLevel": "PUBLISHER",
+        "publisherPid": 10218,
+        "version": 0
+      }
+    ],
+    "isDefaultEligible": false,
+    "name": "BDGRP1",
+    "pid": 12,
+    "privilegeLevel": "PUBLISHER",
+    "publisherPid": 10218,
+    "version": 1
+  },
+  {
+    "groups": [
+      {
+        "data": "IAB1-2,IAB1-7",
+        "isIndividualsGroup": false,
+        "itemType": "CATEGORY",
+        "listType": "BLOCKLIST",
+        "name": "defaultBlockGroup1",
+        "pid": 17,
+        "privilegeLevel": "PUBLISHER",
+        "publisherPid": 10218,
+        "version": 0
+      }
+    ],
+    "isDefaultEligible": false,
+    "name": "defaultBlockGroup1",
+    "pid": 13,
+    "privilegeLevel": "PUBLISHER",
+    "publisherPid": 10218,
+    "version": 1
+  }
+]

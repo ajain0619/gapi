@@ -1,0 +1,13 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "operator": "CONTAINS",
+          "ruleData": "position"
+        }
+      ]
+    }
+  ]
+}

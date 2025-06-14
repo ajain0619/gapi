@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue
+        FROM
+            fact_traffic_adserver f
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+      ]]>
+  </entry>
+
+  <entry key="dim=site">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+            d.name as site, f.site_id as siteId
+        FROM
+            fact_traffic_adserver f
+        INNER JOIN dim_site d ON d.id = f.site_id
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        GROUP BY f.site_id, d.name
+        ]]>
+  </entry>
+
+  <entry key="dim=position">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+            f.zone AS position
+        FROM
+            fact_traffic_adserver f
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        GROUP BY f.zone
+        ]]>
+  </entry>
+
+  <entry key="dim=tag">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+            d.name as adTag, f.tag_id AS adTagId
+        FROM
+            fact_traffic_adserver f
+            INNER JOIN dim_tag d ON d.id = f.tag_id
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        GROUP BY f.tag_id, d.name
+        ]]>
+  </entry>
+
+  <entry key="dim=advertiser">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+            d.name as advertiser, f.advertiser_id AS advertiserId
+        FROM
+            fact_traffic_adserver f
+            INNER JOIN dim_advertiser d ON d.id = f.advertiser_id
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        GROUP BY f.advertiser_id, d.name
+        ]]>
+  </entry>
+
+  <entry key="dim=campaignType">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+            d.name as campaignType, f.campaign_type as campaignTypeId
+        FROM
+            fact_traffic_adserver f
+            INNER JOIN dim_campaign_type d ON d.id = f.campaign_type
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        GROUP BY f.campaign_type, d.name
+        ]]>
+  </entry>
+
+  <entry key="dim=campaign">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+            d.name as campaign, f.campaign_id AS campaignId
+        FROM
+            fact_traffic_adserver f
+            INNER JOIN dim_campaign d ON d.id = f.campaign_id
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        GROUP BY f.campaign_id, d.name
+        ]]>
+  </entry>
+
+  <entry key="dim=creative">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+            d.name as creative, f.creative_id AS creativeId
+        FROM
+            fact_traffic_adserver f
+            INNER JOIN dim_creative d ON d.id = f.creative_id
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        GROUP BY f.creative_id, d.name
+        ]]>
+  </entry>
+
+  <entry key="dim=hour">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+      f.interval AS interval
+        FROM(
+            select f.*,
+                TIMESTAMPADD('hour', hour(f.start), date(:start)) AS interval
+            FROM
+                fact_traffic_adserver f
+            WHERE
+                f.start >= :start AND f.start < :stop
+                #if($siteIds && !$siteIds.isEmpty())
+                    AND f.site_id IN (:siteIds) ## Sites restriction is present
+                #elseif($siteIds && $siteIds.isEmpty())
+                    AND 1 = 0 ## No sites are allowed
+                #end
+                #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+                #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+                #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+                #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+                #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+                #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+                #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        )f
+        GROUP BY f.interval
+      ]]>
+  </entry>
+
+  <entry key="dim=day">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+      DATE_TRUNC('day', f.start) AS interval
+        FROM
+            fact_traffic_adserver f
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        GROUP BY DATE_TRUNC('day', f.start)
+      ]]>
+  </entry>
+
+  <entry key="dim=week">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+      greatest(timestamp_trunc(f.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) AS interval
+        FROM
+            fact_traffic_adserver f
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        GROUP BY timestamp_trunc(f.start, 'dy')
+      ]]>
+  </entry>
+
+  <entry key="dim=month">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_delivered) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            SUM(f.revenue) AS revenue,
+      DATE_TRUNC('month', f.start) AS interval
+        FROM
+            fact_traffic_adserver f
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+            #if(!$StringUtils.isEmpty($advertiser)) AND f.advertiser_id = :advertiser #end
+            #if(!$StringUtils.isEmpty($campaignType)) AND f.campaign_type = :campaignType #end
+            #if(!$StringUtils.isEmpty($campaign)) AND f.campaign_id = :campaign #end
+            #if(!$StringUtils.isEmpty($creative)) AND f.creative_id = :creative #end
+        GROUP BY DATE_TRUNC('month', f.start)
+      ]]>
+  </entry>
+
+</properties>

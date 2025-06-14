@@ -1,0 +1,11 @@
+{
+  "placementCategory": "BANNER",
+  "memo": "12345678901234567890123456789012",
+  "name": "12345678901234567890123456789012",
+  "screenLocation": "ABOVE_VISIBLE",
+  "width": 199,
+  "height": 87,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "interstitial": false
+}

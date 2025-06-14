@@ -1,0 +1,15 @@
+{
+  "description": "dcn_internal_null",
+  "domain": "http://dcn_internal.com",
+  "name": "dcn_internal_null",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "mode": "TEST",
+  "url": "https://dcn_internal.com",
+  "coppaRestricted": true,
+  "hbEnabled": true,
+  "iabCategories": [
+    "IAB5"
+  ]
+}

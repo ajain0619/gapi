@@ -1,0 +1,36 @@
+{
+  "pid": 1,
+  "version": 0,
+  "name": "BMruleWithAllTargets",
+  "description": "newSupplyDescription",
+  "status": "INACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "14"
+    }
+  ],
+  "targets": [
+    {
+      "pid": 2,
+      "status": "INACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "DEVICE_MAKE_MODEL",
+      "data": "[        {          \"make\": \"Apple\",          \"models\": [\"iPhone \"]        }      ]"
+    },
+    {
+      "pid": 5,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "AD_SIZE",
+      "data": "1x1"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [],
+    "positions": []
+  }
+}

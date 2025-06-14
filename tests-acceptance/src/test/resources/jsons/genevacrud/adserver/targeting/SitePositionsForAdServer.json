@@ -1,0 +1,18 @@
+[
+  {
+    "siteName": "AS2A",
+    "sitePid": 846,
+    "positions": [
+      "header"
+    ]
+  },
+  {
+    "siteName": "AS2C",
+    "sitePid": 885,
+    "positions": [
+      "positiona",
+      "positionb",
+      "positionc"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "operator": "EQUALS",
+          "ruleData": "Minsk",
+          "attributePid": 1
+        },
+        {
+          "attribute": "SITE_TYPE",
+          "operator": "EQUALS",
+          "ruleData": "MOBILE_WEB"
+        }
+      ]
+    },
+    {
+      "formulaRules": [
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "operator": "NOT_EQUALS",
+          "ruleData": "principality",
+          "attributePid": 2
+        },
+        {
+          "attribute": "PLACEMENT_TYPE",
+          "operator": "NOT_EQUALS",
+          "ruleData": "BANNER"
+        }
+      ]
+    }
+  ]
+}

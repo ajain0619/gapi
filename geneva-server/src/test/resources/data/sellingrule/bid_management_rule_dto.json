@@ -1,0 +1,8 @@
+{
+  "pid": 123456,
+  "version": 123,
+  "name": "test1",
+  "description": "test1",
+  "status": 1,
+  "ownerCompanyPid": 123456
+}

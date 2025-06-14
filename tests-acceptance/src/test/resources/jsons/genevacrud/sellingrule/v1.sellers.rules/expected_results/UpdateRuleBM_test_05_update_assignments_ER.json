@@ -1,0 +1,47 @@
+{
+  "pid": 36,
+  "version": 6,
+  "name": "BMTest",
+  "description": "test",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10000,
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "pid": 4,
+      "version": 2,
+      "actionType": "FLOOR",
+      "actionData": "1.00"
+    }
+  ],
+  "targets": [
+    {
+      "pid": 34,
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "REGION",
+      "data": "data"
+    }
+  ],
+  "assignments": {
+    "sites": [
+      {
+        "name": "Exchange Functional Test Site-1",
+        "pid": 20000,
+        "publisherAssignment": {
+          "name": "Seller1",
+          "pid": 10000
+        }
+      },
+      {
+        "name": "Exchange Functional Test Site-2",
+        "pid": 20001,
+        "publisherAssignment": {
+          "name": "Seller1",
+          "pid": 10000
+        }
+      }
+    ]
+  }
+}

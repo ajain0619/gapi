@@ -1,0 +1,26 @@
+{
+  "publisher": {
+    "pid": 105,
+    "adServingEnabled": false,
+    "restrictDrillDown": false,
+    "test": false,
+    "selfServeAllowed": false,
+    "numberOfUsers": 0,
+    "defaultRtbProfilesEnabled": false
+  },
+  "description": "updated site for revenue",
+  "domain": "domain.com",
+  "name": "revenueSite",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "revaloriuse.com",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "IAB2",
+  "iabCategories": [
+    "IAB2"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": true
+}

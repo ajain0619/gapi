@@ -1,0 +1,31 @@
+{
+  "memo": "",
+  "mraidAdvancedTracking": false,
+  "mraidSupport": "YES",
+  "name": "native_position",
+  "nativePlacementExtension": {
+    "context": "SOCIAL",
+    "contextSubType": "USER_GENERATED",
+    "placementType": "IN_FEED",
+    "assetTemplate": "awesomeAssets",
+    "assetSets": [
+      {
+        "rule": "REQ_ALL",
+        "assets": [
+          {
+            "key": "myTitle",
+            "type": "TITLE",
+            "title": {
+              "maxLength": 22
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "placementCategory": "NATIVE_V2",
+  "positionAliasName": "native_position",
+  "screenLocation": "FOOTER_VISIBLE",
+  "sitePid": 950,
+  "videoSupport": "NATIVE",
+}

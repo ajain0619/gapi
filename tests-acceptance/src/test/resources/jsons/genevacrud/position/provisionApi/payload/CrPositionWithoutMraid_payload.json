@@ -1,0 +1,10 @@
+{
+  "placementCategory": "MEDIUM_RECTANGLE",
+  "memo": "charisma",
+  "name": "charisma",
+  "screenLocation": "FOOTER_VISIBLE",
+  "width": 300,
+  "height": 250,
+  "videoSupport": "BANNER",
+  "interstitial": false
+}

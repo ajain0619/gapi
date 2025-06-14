@@ -1,0 +1,13 @@
+{
+  "name": "a52",
+  "description": "8",
+  "domain": "q1",
+  "url": " ",
+  "coppaRestricted": false,
+  "platform": "OTHER",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "MOBILE_WEB"
+}

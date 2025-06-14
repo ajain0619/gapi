@@ -1,0 +1,41 @@
+{
+  "name": "AdMob - Direct SDK Only - TestAdSourceNOSYSDK1",
+  "sitePid": 456,
+  "buyerPid": 5175,
+  "status": "ACTIVE",
+  "primaryId": "1",
+  "primaryName": "",
+  "secondaryId": "",
+  "secondaryName": "",
+  "ecpmProvision": "Auto",
+  "ecpmAuto": 0,
+  "ecpmManual": 0,
+  "owner": "Nexage",
+  "clickthroughDisable": false,
+  "rules": [
+    {
+      "target": "true",
+      "paramName": "",
+      "ruleType": "Country",
+      "targetType": "Keyword"
+    },
+    {
+      "target": "True",
+      "paramName": "",
+      "ruleType": "DeviceMake",
+      "targetType": "Regex"
+    },
+    {
+      "target": "any",
+      "paramName": "",
+      "ruleType": "DeviceModel",
+      "targetType": "Keyword"
+    }
+  ],
+  "monetization": true,
+  "returnRawResponse": false,
+  "deployments": [],
+  "position": {
+    "pid": 10206
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "BuyerSeatCucumber23",
+  "enabled": true,
+  "seat": "SeatFourx",
+  "buyerGroupPid": 1,
+  "companyPid": 10024,
+  "buyerTransparencyFeedEnabled": false
+}

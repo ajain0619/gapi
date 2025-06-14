@@ -1,0 +1,2190 @@
+[
+  {
+    "id": "25031313",
+    "name": "360 Safe Browser (Other versions) "
+  },
+  {
+    "id": "20173314",
+    "name": "Amazon Silk (Other versions) "
+  },
+  {
+    "id": "20173338",
+    "name": "Android Browser (Other versions) "
+  },
+  {
+    "id": "20173321",
+    "name": "BlackBerry Browser (Other versions) "
+  },
+  {
+    "id": "25012851",
+    "name": "Cake (Other versions) "
+  },
+  {
+    "id": "20173344",
+    "name": "Chrome (Other versions) "
+  },
+  {
+    "id": "20173313",
+    "name": "Chrome Mobile (Other versions) "
+  },
+  {
+    "id": "20173299",
+    "name": "Chromium (Other versions) "
+  },
+  {
+    "id": "25040588",
+    "name": "Coc Coc (Other versions) "
+  },
+  {
+    "id": "20173311",
+    "name": "Edge (Other versions) "
+  },
+  {
+    "id": "20173305",
+    "name": "Firefox (Other versions) "
+  },
+  {
+    "id": "20981789",
+    "name": "Firefox Focus (Other versions) "
+  },
+  {
+    "id": "25029745",
+    "name": "HeyTap Browser (Other versions) "
+  },
+  {
+    "id": "25040876",
+    "name": "Instabridge (Other versions) "
+  },
+  {
+    "id": "20173339",
+    "name": "Internet Explorer (Other versions) "
+  },
+  {
+    "id": "20173297",
+    "name": "Internet Explorer Mobile (Other versions) "
+  },
+  {
+    "id": "20449173",
+    "name": "MIUI Browser (Other versions) "
+  },
+  {
+    "id": "20173306",
+    "name": "MQQ Browser (Other versions) "
+  },
+  {
+    "id": "25031315",
+    "name": "Mozilla (Other versions) "
+  },
+  {
+    "id": "20173335",
+    "name": "NetFront (Other versions) "
+  },
+  {
+    "id": "20442349",
+    "name": "Nintendo Browser (Other versions) "
+  },
+  {
+    "id": "20173342",
+    "name": "Nokia Browser (Other versions) "
+  },
+  {
+    "id": "20173301",
+    "name": "Nokia S40 Browser (Other versions) "
+  },
+  {
+    "id": "20173343",
+    "name": "Nokia S60 Browser (Other versions) "
+  },
+  {
+    "id": "25029744",
+    "name": "OPPO Browser (Other versions) "
+  },
+  {
+    "id": "20173329",
+    "name": "Opera (Other versions) "
+  },
+  {
+    "id": "20173317",
+    "name": "Opera Mini (Other versions) "
+  },
+  {
+    "id": "20173312",
+    "name": "Opera Mobile (Other versions) "
+  },
+  {
+    "id": "25016086",
+    "name": "Opera Touch (Other versions) "
+  },
+  {
+    "id": "20173298",
+    "name": "Polaris (Other versions) "
+  },
+  {
+    "id": "20818019",
+    "name": "Puffin (Other versions) "
+  },
+  {
+    "id": "20981786",
+    "name": "QQ Browser (Other versions) "
+  },
+  {
+    "id": "20173322",
+    "name": "SEMC Browser (Other versions) "
+  },
+  {
+    "id": "20173316",
+    "name": "Safari (Other versions) "
+  },
+  {
+    "id": "20447821",
+    "name": "Samsung Browser (Other versions) "
+  },
+  {
+    "id": "20990108",
+    "name": "Seznam Browser (Other versions) "
+  },
+  {
+    "id": "25031319",
+    "name": "Sogou Explorer (Other versions) "
+  },
+  {
+    "id": "20173315",
+    "name": "UC Browser (Other versions) "
+  },
+  {
+    "id": "20173300",
+    "name": "UP.Browser (Other versions) "
+  },
+  {
+    "id": "25031316",
+    "name": "Whale Browser (Other versions) "
+  },
+  {
+    "id": "20173337",
+    "name": "Yandex.Browser (Other versions) "
+  },
+  {
+    "id": "20173302",
+    "name": "webOS Browser (Other versions) "
+  },
+  {
+    "id": "25029406",
+    "name": "360 Safe Browser 0"
+  },
+  {
+    "id": "20173414",
+    "name": "Amazon Silk 1"
+  },
+  {
+    "id": "25026759",
+    "name": "Amazon Silk 2"
+  },
+  {
+    "id": "20173413",
+    "name": "Amazon Silk 3"
+  },
+  {
+    "id": "20173412",
+    "name": "Amazon Silk 4"
+  },
+  {
+    "id": "20173411",
+    "name": "Amazon Silk 44"
+  },
+  {
+    "id": "25020930",
+    "name": "Amazon Silk 71"
+  },
+  {
+    "id": "25020729",
+    "name": "Amazon Silk 73"
+  },
+  {
+    "id": "25020785",
+    "name": "Amazon Silk 75"
+  },
+  {
+    "id": "25026743",
+    "name": "Amazon Silk 80"
+  },
+  {
+    "id": "25030724",
+    "name": "Amazon Silk 81"
+  },
+  {
+    "id": "25033620",
+    "name": "Amazon Silk 86"
+  },
+  {
+    "id": "25040016",
+    "name": "Amazon Silk 87"
+  },
+  {
+    "id": "25040099",
+    "name": "Amazon Silk 88"
+  },
+  {
+    "id": "25040086",
+    "name": "Amazon Silk 89"
+  },
+  {
+    "id": "25040055",
+    "name": "Amazon Silk 90"
+  },
+  {
+    "id": "25040088",
+    "name": "Amazon Silk 91"
+  },
+  {
+    "id": "25040106",
+    "name": "Amazon Silk 92"
+  },
+  {
+    "id": "25040067",
+    "name": "Amazon Silk 93"
+  },
+  {
+    "id": "25018893",
+    "name": "Android Browser 1"
+  },
+  {
+    "id": "25040038",
+    "name": "Android Browser 10"
+  },
+  {
+    "id": "25018171",
+    "name": "Android Browser 3"
+  },
+  {
+    "id": "20173457",
+    "name": "Android Browser 4"
+  },
+  {
+    "id": "25018134",
+    "name": "Android Browser 5"
+  },
+  {
+    "id": "20173433",
+    "name": "BlackBerry Browser 1"
+  },
+  {
+    "id": "20173432",
+    "name": "BlackBerry Browser 10"
+  },
+  {
+    "id": "20173430",
+    "name": "BlackBerry Browser 6"
+  },
+  {
+    "id": "20173431",
+    "name": "BlackBerry Browser 7"
+  },
+  {
+    "id": "25030560",
+    "name": "Cake 6"
+  },
+  {
+    "id": "25029258",
+    "name": "Chrome 22"
+  },
+  {
+    "id": "25029351",
+    "name": "Chrome 24"
+  },
+  {
+    "id": "25029454",
+    "name": "Chrome 30"
+  },
+  {
+    "id": "25029367",
+    "name": "Chrome 33"
+  },
+  {
+    "id": "25029380",
+    "name": "Chrome 34"
+  },
+  {
+    "id": "25029332",
+    "name": "Chrome 35"
+  },
+  {
+    "id": "25029285",
+    "name": "Chrome 38"
+  },
+  {
+    "id": "20173476",
+    "name": "Chrome 39"
+  },
+  {
+    "id": "20173475",
+    "name": "Chrome 40"
+  },
+  {
+    "id": "20173474",
+    "name": "Chrome 41"
+  },
+  {
+    "id": "20173473",
+    "name": "Chrome 42"
+  },
+  {
+    "id": "20173472",
+    "name": "Chrome 43"
+  },
+  {
+    "id": "20173471",
+    "name": "Chrome 44"
+  },
+  {
+    "id": "20173470",
+    "name": "Chrome 45"
+  },
+  {
+    "id": "20173469",
+    "name": "Chrome 46"
+  },
+  {
+    "id": "20173468",
+    "name": "Chrome 47"
+  },
+  {
+    "id": "25029334",
+    "name": "Chrome 48"
+  },
+  {
+    "id": "25029379",
+    "name": "Chrome 49"
+  },
+  {
+    "id": "25029211",
+    "name": "Chrome 50"
+  },
+  {
+    "id": "25029233",
+    "name": "Chrome 51"
+  },
+  {
+    "id": "25029242",
+    "name": "Chrome 52"
+  },
+  {
+    "id": "25029353",
+    "name": "Chrome 53"
+  },
+  {
+    "id": "25029369",
+    "name": "Chrome 54"
+  },
+  {
+    "id": "25029381",
+    "name": "Chrome 55"
+  },
+  {
+    "id": "25029391",
+    "name": "Chrome 56"
+  },
+  {
+    "id": "25029309",
+    "name": "Chrome 57"
+  },
+  {
+    "id": "25029317",
+    "name": "Chrome 58"
+  },
+  {
+    "id": "25029352",
+    "name": "Chrome 59"
+  },
+  {
+    "id": "25029207",
+    "name": "Chrome 60"
+  },
+  {
+    "id": "25029400",
+    "name": "Chrome 61"
+  },
+  {
+    "id": "25029371",
+    "name": "Chrome 62"
+  },
+  {
+    "id": "25029360",
+    "name": "Chrome 63"
+  },
+  {
+    "id": "25029350",
+    "name": "Chrome 64"
+  },
+  {
+    "id": "25029336",
+    "name": "Chrome 65"
+  },
+  {
+    "id": "25029318",
+    "name": "Chrome 66"
+  },
+  {
+    "id": "25029310",
+    "name": "Chrome 67"
+  },
+  {
+    "id": "25029291",
+    "name": "Chrome 68"
+  },
+  {
+    "id": "25029323",
+    "name": "Chrome 69"
+  },
+  {
+    "id": "25029200",
+    "name": "Chrome 70"
+  },
+  {
+    "id": "25029219",
+    "name": "Chrome 71"
+  },
+  {
+    "id": "25029284",
+    "name": "Chrome 72"
+  },
+  {
+    "id": "25029260",
+    "name": "Chrome 73"
+  },
+  {
+    "id": "25029269",
+    "name": "Chrome 74"
+  },
+  {
+    "id": "25029337",
+    "name": "Chrome 75"
+  },
+  {
+    "id": "25029348",
+    "name": "Chrome 76"
+  },
+  {
+    "id": "25029311",
+    "name": "Chrome 77"
+  },
+  {
+    "id": "25029314",
+    "name": "Chrome 78"
+  },
+  {
+    "id": "25029399",
+    "name": "Chrome 79"
+  },
+  {
+    "id": "25029209",
+    "name": "Chrome 80"
+  },
+  {
+    "id": "25029249",
+    "name": "Chrome 81"
+  },
+  {
+    "id": "25029447",
+    "name": "Chrome 82"
+  },
+  {
+    "id": "25029376",
+    "name": "Chrome 83"
+  },
+  {
+    "id": "25029396",
+    "name": "Chrome 84"
+  },
+  {
+    "id": "25029816",
+    "name": "Chrome 85"
+  },
+  {
+    "id": "25030980",
+    "name": "Chrome 86"
+  },
+  {
+    "id": "25032533",
+    "name": "Chrome 87"
+  },
+  {
+    "id": "25032535",
+    "name": "Chrome 88"
+  },
+  {
+    "id": "25033768",
+    "name": "Chrome 89"
+  },
+  {
+    "id": "25034773",
+    "name": "Chrome 90"
+  },
+  {
+    "id": "25035423",
+    "name": "Chrome 91"
+  },
+  {
+    "id": "25036164",
+    "name": "Chrome 92"
+  },
+  {
+    "id": "25036974",
+    "name": "Chrome 93"
+  },
+  {
+    "id": "25037749",
+    "name": "Chrome 94"
+  },
+  {
+    "id": "25038225",
+    "name": "Chrome 95"
+  },
+  {
+    "id": "25038660",
+    "name": "Chrome 96"
+  },
+  {
+    "id": "25039202",
+    "name": "Chrome 97"
+  },
+  {
+    "id": "25040260",
+    "name": "Chrome 98"
+  },
+  {
+    "id": "25040564",
+    "name": "Chrome 99"
+  },
+  {
+    "id": "25040352",
+    "name": "Chrome 100"
+  },
+  {
+    "id": "25041178",
+    "name": "Chrome 101"
+  },
+  {
+    "id": "25041460",
+    "name": "Chrome 102"
+  },
+  {
+    "id": "25025580",
+    "name": "Chrome Mobile 1"
+  },
+  {
+    "id": "25040017",
+    "name": "Chrome Mobile 12"
+  },
+  {
+    "id": "20173398",
+    "name": "Chrome Mobile 18"
+  },
+  {
+    "id": "25022115",
+    "name": "Chrome Mobile 19"
+  },
+  {
+    "id": "25020369",
+    "name": "Chrome Mobile 25"
+  },
+  {
+    "id": "25023287",
+    "name": "Chrome Mobile 26"
+  },
+  {
+    "id": "20173404",
+    "name": "Chrome Mobile 28"
+  },
+  {
+    "id": "20173405",
+    "name": "Chrome Mobile 30"
+  },
+  {
+    "id": "25020695",
+    "name": "Chrome Mobile 31"
+  },
+  {
+    "id": "20173401",
+    "name": "Chrome Mobile 34"
+  },
+  {
+    "id": "20173400",
+    "name": "Chrome Mobile 36"
+  },
+  {
+    "id": "25020537",
+    "name": "Chrome Mobile 37"
+  },
+  {
+    "id": "20173409",
+    "name": "Chrome Mobile 38"
+  },
+  {
+    "id": "20173410",
+    "name": "Chrome Mobile 39"
+  },
+  {
+    "id": "20173402",
+    "name": "Chrome Mobile 40"
+  },
+  {
+    "id": "20173407",
+    "name": "Chrome Mobile 42"
+  },
+  {
+    "id": "20173403",
+    "name": "Chrome Mobile 43"
+  },
+  {
+    "id": "20173406",
+    "name": "Chrome Mobile 44"
+  },
+  {
+    "id": "25019090",
+    "name": "Chrome Mobile 45"
+  },
+  {
+    "id": "25022379",
+    "name": "Chrome Mobile 46"
+  },
+  {
+    "id": "25019041",
+    "name": "Chrome Mobile 47"
+  },
+  {
+    "id": "25021150",
+    "name": "Chrome Mobile 50"
+  },
+  {
+    "id": "25018715",
+    "name": "Chrome Mobile 51"
+  },
+  {
+    "id": "25022012",
+    "name": "Chrome Mobile 52"
+  },
+  {
+    "id": "25021041",
+    "name": "Chrome Mobile 54"
+  },
+  {
+    "id": "25018843",
+    "name": "Chrome Mobile 55"
+  },
+  {
+    "id": "25021240",
+    "name": "Chrome Mobile 56"
+  },
+  {
+    "id": "25018869",
+    "name": "Chrome Mobile 57"
+  },
+  {
+    "id": "25021252",
+    "name": "Chrome Mobile 58"
+  },
+  {
+    "id": "25018785",
+    "name": "Chrome Mobile 59"
+  },
+  {
+    "id": "25018469",
+    "name": "Chrome Mobile 60"
+  },
+  {
+    "id": "25020971",
+    "name": "Chrome Mobile 61"
+  },
+  {
+    "id": "25018508",
+    "name": "Chrome Mobile 62"
+  },
+  {
+    "id": "25020641",
+    "name": "Chrome Mobile 63"
+  },
+  {
+    "id": "25018213",
+    "name": "Chrome Mobile 64"
+  },
+  {
+    "id": "25020713",
+    "name": "Chrome Mobile 65"
+  },
+  {
+    "id": "25018292",
+    "name": "Chrome Mobile 66"
+  },
+  {
+    "id": "25020723",
+    "name": "Chrome Mobile 67"
+  },
+  {
+    "id": "25018341",
+    "name": "Chrome Mobile 68"
+  },
+  {
+    "id": "25020782",
+    "name": "Chrome Mobile 69"
+  },
+  {
+    "id": "25022665",
+    "name": "Chrome Mobile 70"
+  },
+  {
+    "id": "25020365",
+    "name": "Chrome Mobile 71"
+  },
+  {
+    "id": "25022627",
+    "name": "Chrome Mobile 72"
+  },
+  {
+    "id": "25020314",
+    "name": "Chrome Mobile 73"
+  },
+  {
+    "id": "25022733",
+    "name": "Chrome Mobile 74"
+  },
+  {
+    "id": "25020430",
+    "name": "Chrome Mobile 75"
+  },
+  {
+    "id": "25022664",
+    "name": "Chrome Mobile 76"
+  },
+  {
+    "id": "25019853",
+    "name": "Chrome Mobile 77"
+  },
+  {
+    "id": "25022218",
+    "name": "Chrome Mobile 78"
+  },
+  {
+    "id": "25019893",
+    "name": "Chrome Mobile 79"
+  },
+  {
+    "id": "25024907",
+    "name": "Chrome Mobile 80"
+  },
+  {
+    "id": "25026677",
+    "name": "Chrome Mobile 81"
+  },
+  {
+    "id": "25030562",
+    "name": "Chrome Mobile 83"
+  },
+  {
+    "id": "25030590",
+    "name": "Chrome Mobile 84"
+  },
+  {
+    "id": "25033005",
+    "name": "Chrome Mobile 85"
+  },
+  {
+    "id": "25032994",
+    "name": "Chrome Mobile 86"
+  },
+  {
+    "id": "25033657",
+    "name": "Chrome Mobile 87"
+  },
+  {
+    "id": "25035211",
+    "name": "Chrome Mobile 88"
+  },
+  {
+    "id": "25040046",
+    "name": "Chrome Mobile 89"
+  },
+  {
+    "id": "25040111",
+    "name": "Chrome Mobile 90"
+  },
+  {
+    "id": "25040094",
+    "name": "Chrome Mobile 91"
+  },
+  {
+    "id": "25040039",
+    "name": "Chrome Mobile 92"
+  },
+  {
+    "id": "25040023",
+    "name": "Chrome Mobile 93"
+  },
+  {
+    "id": "25040022",
+    "name": "Chrome Mobile 94"
+  },
+  {
+    "id": "25024893",
+    "name": "Chromium 25"
+  },
+  {
+    "id": "25041451",
+    "name": "Coc Coc 104"
+  },
+  {
+    "id": "25041528",
+    "name": "Coc Coc 105"
+  },
+  {
+    "id": "20173379",
+    "name": "Edge 12"
+  },
+  {
+    "id": "25018208",
+    "name": "Edge 14"
+  },
+  {
+    "id": "25020767",
+    "name": "Edge 15"
+  },
+  {
+    "id": "25024933",
+    "name": "Edge 16"
+  },
+  {
+    "id": "25024878",
+    "name": "Edge 17"
+  },
+  {
+    "id": "25018315",
+    "name": "Edge 18"
+  },
+  {
+    "id": "25032553",
+    "name": "Edge 19"
+  },
+  {
+    "id": "25020708",
+    "name": "Edge 41"
+  },
+  {
+    "id": "25018240",
+    "name": "Edge 42"
+  },
+  {
+    "id": "25018207",
+    "name": "Edge 44"
+  },
+  {
+    "id": "25026766",
+    "name": "Edge 45"
+  },
+  {
+    "id": "25035663",
+    "name": "Edge 46"
+  },
+  {
+    "id": "25029204",
+    "name": "Edge 84"
+  },
+  {
+    "id": "25030261",
+    "name": "Edge 85"
+  },
+  {
+    "id": "25035666",
+    "name": "Edge 89"
+  },
+  {
+    "id": "25036704",
+    "name": "Edge 91"
+  },
+  {
+    "id": "25036661",
+    "name": "Edge 92"
+  },
+  {
+    "id": "25037759",
+    "name": "Edge 93"
+  },
+  {
+    "id": "25038649",
+    "name": "Edge 94"
+  },
+  {
+    "id": "25040043",
+    "name": "Edge 95"
+  },
+  {
+    "id": "25040105",
+    "name": "Edge 96"
+  },
+  {
+    "id": "25040757",
+    "name": "Edge 97"
+  },
+  {
+    "id": "25041031",
+    "name": "Edge 98"
+  },
+  {
+    "id": "25041296",
+    "name": "Edge 99"
+  },
+  {
+    "id": "25041579",
+    "name": "Edge 100"
+  },
+  {
+    "id": "25029616",
+    "name": "Firefox 0"
+  },
+  {
+    "id": "25029605",
+    "name": "Firefox 1"
+  },
+  {
+    "id": "25029583",
+    "name": "Firefox 2"
+  },
+  {
+    "id": "25029556",
+    "name": "Firefox 3"
+  },
+  {
+    "id": "25029313",
+    "name": "Firefox 4"
+  },
+  {
+    "id": "25029585",
+    "name": "Firefox 5"
+  },
+  {
+    "id": "25029600",
+    "name": "Firefox 6"
+  },
+  {
+    "id": "25029477",
+    "name": "Firefox 7"
+  },
+  {
+    "id": "25029492",
+    "name": "Firefox 8"
+  },
+  {
+    "id": "25029526",
+    "name": "Firefox 9"
+  },
+  {
+    "id": "25029683",
+    "name": "Firefox 10"
+  },
+  {
+    "id": "25029623",
+    "name": "Firefox 11"
+  },
+  {
+    "id": "25029637",
+    "name": "Firefox 12"
+  },
+  {
+    "id": "25029439",
+    "name": "Firefox 13"
+  },
+  {
+    "id": "25029456",
+    "name": "Firefox 14"
+  },
+  {
+    "id": "25029414",
+    "name": "Firefox 15"
+  },
+  {
+    "id": "25029528",
+    "name": "Firefox 16"
+  },
+  {
+    "id": "25029517",
+    "name": "Firefox 17"
+  },
+  {
+    "id": "25029490",
+    "name": "Firefox 18"
+  },
+  {
+    "id": "25029487",
+    "name": "Firefox 19"
+  },
+  {
+    "id": "25029500",
+    "name": "Firefox 20"
+  },
+  {
+    "id": "25029486",
+    "name": "Firefox 21"
+  },
+  {
+    "id": "25029536",
+    "name": "Firefox 22"
+  },
+  {
+    "id": "25029512",
+    "name": "Firefox 23"
+  },
+  {
+    "id": "25029240",
+    "name": "Firefox 24"
+  },
+  {
+    "id": "25029469",
+    "name": "Firefox 25"
+  },
+  {
+    "id": "25029428",
+    "name": "Firefox 26"
+  },
+  {
+    "id": "25029662",
+    "name": "Firefox 27"
+  },
+  {
+    "id": "25029635",
+    "name": "Firefox 29"
+  },
+  {
+    "id": "25029615",
+    "name": "Firefox 30"
+  },
+  {
+    "id": "25029628",
+    "name": "Firefox 31"
+  },
+  {
+    "id": "25029646",
+    "name": "Firefox 32"
+  },
+  {
+    "id": "20173368",
+    "name": "Firefox 33"
+  },
+  {
+    "id": "20173367",
+    "name": "Firefox 34"
+  },
+  {
+    "id": "20173366",
+    "name": "Firefox 35"
+  },
+  {
+    "id": "20173365",
+    "name": "Firefox 36"
+  },
+  {
+    "id": "20173364",
+    "name": "Firefox 37"
+  },
+  {
+    "id": "20173363",
+    "name": "Firefox 38"
+  },
+  {
+    "id": "20173361",
+    "name": "Firefox 40"
+  },
+  {
+    "id": "25029267",
+    "name": "Firefox 43"
+  },
+  {
+    "id": "25029286",
+    "name": "Firefox 44"
+  },
+  {
+    "id": "25029303",
+    "name": "Firefox 45"
+  },
+  {
+    "id": "25029248",
+    "name": "Firefox 48"
+  },
+  {
+    "id": "25029274",
+    "name": "Firefox 50"
+  },
+  {
+    "id": "25029262",
+    "name": "Firefox 51"
+  },
+  {
+    "id": "25029254",
+    "name": "Firefox 52"
+  },
+  {
+    "id": "25029458",
+    "name": "Firefox 53"
+  },
+  {
+    "id": "25029230",
+    "name": "Firefox 54"
+  },
+  {
+    "id": "25029226",
+    "name": "Firefox 55"
+  },
+  {
+    "id": "25029208",
+    "name": "Firefox 56"
+  },
+  {
+    "id": "25029395",
+    "name": "Firefox 57"
+  },
+  {
+    "id": "25029658",
+    "name": "Firefox 58"
+  },
+  {
+    "id": "25029368",
+    "name": "Firefox 59"
+  },
+  {
+    "id": "25029326",
+    "name": "Firefox 60"
+  },
+  {
+    "id": "25029375",
+    "name": "Firefox 63"
+  },
+  {
+    "id": "25029243",
+    "name": "Firefox 65"
+  },
+  {
+    "id": "25029273",
+    "name": "Firefox 68"
+  },
+  {
+    "id": "25029347",
+    "name": "Firefox 70"
+  },
+  {
+    "id": "25029270",
+    "name": "Firefox 72"
+  },
+  {
+    "id": "25029244",
+    "name": "Firefox 77"
+  },
+  {
+    "id": "25030260",
+    "name": "Firefox 78"
+  },
+  {
+    "id": "25030822",
+    "name": "Firefox 79"
+  },
+  {
+    "id": "25030760",
+    "name": "Firefox 80"
+  },
+  {
+    "id": "25030781",
+    "name": "Firefox 81"
+  },
+  {
+    "id": "25030794",
+    "name": "Firefox 82"
+  },
+  {
+    "id": "25030811",
+    "name": "Firefox 83"
+  },
+  {
+    "id": "25030842",
+    "name": "Firefox 84"
+  },
+  {
+    "id": "25030863",
+    "name": "Firefox 85"
+  },
+  {
+    "id": "25032637",
+    "name": "Firefox 86"
+  },
+  {
+    "id": "25030762",
+    "name": "Firefox 87"
+  },
+  {
+    "id": "25030780",
+    "name": "Firefox 88"
+  },
+  {
+    "id": "25036327",
+    "name": "Firefox 89"
+  },
+  {
+    "id": "25030859",
+    "name": "Firefox 90"
+  },
+  {
+    "id": "25030849",
+    "name": "Firefox 91"
+  },
+  {
+    "id": "25038183",
+    "name": "Firefox 92"
+  },
+  {
+    "id": "25030804",
+    "name": "Firefox 93"
+  },
+  {
+    "id": "25030789",
+    "name": "Firefox 94"
+  },
+  {
+    "id": "25040243",
+    "name": "Firefox 95"
+  },
+  {
+    "id": "25030752",
+    "name": "Firefox 96"
+  },
+  {
+    "id": "25030867",
+    "name": "Firefox 97"
+  },
+  {
+    "id": "25030755",
+    "name": "Firefox 98"
+  },
+  {
+    "id": "25033037",
+    "name": "Firefox 99"
+  },
+  {
+    "id": "25019830",
+    "name": "Firefox Focus 4"
+  },
+  {
+    "id": "25022194",
+    "name": "Firefox Focus 7"
+  },
+  {
+    "id": "25030682",
+    "name": "HeyTap Browser 15"
+  },
+  {
+    "id": "25030720",
+    "name": "HeyTap Browser 25"
+  },
+  {
+    "id": "25030563",
+    "name": "HeyTap Browser 40"
+  },
+  {
+    "id": "25030633",
+    "name": "HeyTap Browser 45"
+  },
+  {
+    "id": "25040891",
+    "name": "Instabridge 0"
+  },
+  {
+    "id": "25041013",
+    "name": "Instabridge 21"
+  },
+  {
+    "id": "25029451",
+    "name": "Internet Explorer 0"
+  },
+  {
+    "id": "25029589",
+    "name": "Internet Explorer 4"
+  },
+  {
+    "id": "25029563",
+    "name": "Internet Explorer 5"
+  },
+  {
+    "id": "20174420",
+    "name": "Internet Explorer 6"
+  },
+  {
+    "id": "20173458",
+    "name": "Internet Explorer 7"
+  },
+  {
+    "id": "20173462",
+    "name": "Internet Explorer 8"
+  },
+  {
+    "id": "20173460",
+    "name": "Internet Explorer 10"
+  },
+  {
+    "id": "20173459",
+    "name": "Internet Explorer 11"
+  },
+  {
+    "id": "20173461",
+    "name": "Internet Explorer 9"
+  },
+  {
+    "id": "20173349",
+    "name": "Internet Explorer Mobile 10"
+  },
+  {
+    "id": "20173350",
+    "name": "Internet Explorer Mobile 11"
+  },
+  {
+    "id": "25025060",
+    "name": "Internet Explorer Mobile 3"
+  },
+  {
+    "id": "25019544",
+    "name": "Internet Explorer Mobile 4"
+  },
+  {
+    "id": "25020499",
+    "name": "Internet Explorer Mobile 6"
+  },
+  {
+    "id": "25022770",
+    "name": "Internet Explorer Mobile 7"
+  },
+  {
+    "id": "25020446",
+    "name": "Internet Explorer Mobile 8"
+  },
+  {
+    "id": "20173348",
+    "name": "Internet Explorer Mobile 9"
+  },
+  {
+    "id": "25019708",
+    "name": "MIUI Browser 10"
+  },
+  {
+    "id": "25022050",
+    "name": "MIUI Browser 11"
+  },
+  {
+    "id": "25030639",
+    "name": "MIUI Browser 12"
+  },
+  {
+    "id": "25040033",
+    "name": "MIUI Browser 14"
+  },
+  {
+    "id": "25040100",
+    "name": "MIUI Browser 15"
+  },
+  {
+    "id": "25019341",
+    "name": "MIUI Browser 8"
+  },
+  {
+    "id": "25021761",
+    "name": "MIUI Browser 9"
+  },
+  {
+    "id": "25026637",
+    "name": "MQQ Browser 10"
+  },
+  {
+    "id": "25040058",
+    "name": "MQQ Browser 11"
+  },
+  {
+    "id": "25020408",
+    "name": "MQQ Browser 6"
+  },
+  {
+    "id": "25024842",
+    "name": "Maxthon 5"
+  },
+  {
+    "id": "25031322",
+    "name": "Mozilla 0"
+  },
+  {
+    "id": "20173456",
+    "name": "NetFront 3"
+  },
+  {
+    "id": "25034268",
+    "name": "NetFront 35"
+  },
+  {
+    "id": "20173455",
+    "name": "NetFront 4"
+  },
+  {
+    "id": "25024957",
+    "name": "Nintendo Browser 1"
+  },
+  {
+    "id": "25026650",
+    "name": "Nokia Browser 8"
+  },
+  {
+    "id": "20173358",
+    "name": "Nokia S40 Browser 3"
+  },
+  {
+    "id": "20173465",
+    "name": "Nokia S60 Browser 2"
+  },
+  {
+    "id": "20173466",
+    "name": "Nokia S60 Browser 3"
+  },
+  {
+    "id": "20173464",
+    "name": "Nokia S60 Browser 5"
+  },
+  {
+    "id": "20173463",
+    "name": "Nokia S60 Browser 7"
+  },
+  {
+    "id": "20173467",
+    "name": "Nokia S60 Browser 8"
+  },
+  {
+    "id": "25030679",
+    "name": "OPPO Browser 15"
+  },
+  {
+    "id": "25029435",
+    "name": "Opera 0"
+  },
+  {
+    "id": "25029494",
+    "name": "Opera 7"
+  },
+  {
+    "id": "25029545",
+    "name": "Opera 8"
+  },
+  {
+    "id": "25029558",
+    "name": "Opera 9"
+  },
+  {
+    "id": "25029654",
+    "name": "Opera 10"
+  },
+  {
+    "id": "25029573",
+    "name": "Opera 11"
+  },
+  {
+    "id": "20173444",
+    "name": "Opera 12"
+  },
+  {
+    "id": "20173441",
+    "name": "Opera 28"
+  },
+  {
+    "id": "20173438",
+    "name": "Opera 31"
+  },
+  {
+    "id": "25029255",
+    "name": "Opera 36"
+  },
+  {
+    "id": "25029604",
+    "name": "Opera 40"
+  },
+  {
+    "id": "25029562",
+    "name": "Opera 43"
+  },
+  {
+    "id": "25029498",
+    "name": "Opera 46"
+  },
+  {
+    "id": "25029263",
+    "name": "Opera 66"
+  },
+  {
+    "id": "25029259",
+    "name": "Opera 67"
+  },
+  {
+    "id": "25029294",
+    "name": "Opera 68"
+  },
+  {
+    "id": "25037255",
+    "name": "Opera 77"
+  },
+  {
+    "id": "25038030",
+    "name": "Opera 78"
+  },
+  {
+    "id": "25038866",
+    "name": "Opera 79"
+  },
+  {
+    "id": "25038475",
+    "name": "Opera 80"
+  },
+  {
+    "id": "25040256",
+    "name": "Opera 81"
+  },
+  {
+    "id": "25040476",
+    "name": "Opera 82"
+  },
+  {
+    "id": "25040907",
+    "name": "Opera 83"
+  },
+  {
+    "id": "25041155",
+    "name": "Opera 84"
+  },
+  {
+    "id": "25041587",
+    "name": "Opera 85"
+  },
+  {
+    "id": "25022564",
+    "name": "Opera Mini 1"
+  },
+  {
+    "id": "25032973",
+    "name": "Opera Mini 3"
+  },
+  {
+    "id": "20173427",
+    "name": "Opera Mini 4"
+  },
+  {
+    "id": "20173428",
+    "name": "Opera Mini 5"
+  },
+  {
+    "id": "25020107",
+    "name": "Opera Mini 6"
+  },
+  {
+    "id": "20173426",
+    "name": "Opera Mini 7"
+  },
+  {
+    "id": "20173424",
+    "name": "Opera Mini 8"
+  },
+  {
+    "id": "20173425",
+    "name": "Opera Mini 9"
+  },
+  {
+    "id": "20173429",
+    "name": "Opera Mini 10"
+  },
+  {
+    "id": "25021081",
+    "name": "Opera Mini 11"
+  },
+  {
+    "id": "25018668",
+    "name": "Opera Mini 12"
+  },
+  {
+    "id": "25025652",
+    "name": "Opera Mini 13"
+  },
+  {
+    "id": "25026653",
+    "name": "Opera Mini 14"
+  },
+  {
+    "id": "25021979",
+    "name": "Opera Mini 15"
+  },
+  {
+    "id": "25018631",
+    "name": "Opera Mini 16"
+  },
+  {
+    "id": "25026674",
+    "name": "Opera Mini 17"
+  },
+  {
+    "id": "25018830",
+    "name": "Opera Mini 18"
+  },
+  {
+    "id": "25021235",
+    "name": "Opera Mini 19"
+  },
+  {
+    "id": "25020749",
+    "name": "Opera Mini 20"
+  },
+  {
+    "id": "25026686",
+    "name": "Opera Mini 21"
+  },
+  {
+    "id": "25025040",
+    "name": "Opera Mini 22"
+  },
+  {
+    "id": "25018477",
+    "name": "Opera Mini 23"
+  },
+  {
+    "id": "25020963",
+    "name": "Opera Mini 24"
+  },
+  {
+    "id": "25024809",
+    "name": "Opera Mini 25"
+  },
+  {
+    "id": "25020675",
+    "name": "Opera Mini 26"
+  },
+  {
+    "id": "25018255",
+    "name": "Opera Mini 27"
+  },
+  {
+    "id": "25020712",
+    "name": "Opera Mini 28"
+  },
+  {
+    "id": "25026699",
+    "name": "Opera Mini 29"
+  },
+  {
+    "id": "25019573",
+    "name": "Opera Mini 30"
+  },
+  {
+    "id": "25022868",
+    "name": "Opera Mini 31"
+  },
+  {
+    "id": "25019542",
+    "name": "Opera Mini 32"
+  },
+  {
+    "id": "25022680",
+    "name": "Opera Mini 33"
+  },
+  {
+    "id": "25022633",
+    "name": "Opera Mini 35"
+  },
+  {
+    "id": "25020447",
+    "name": "Opera Mini 36"
+  },
+  {
+    "id": "25022726",
+    "name": "Opera Mini 37"
+  },
+  {
+    "id": "25020419",
+    "name": "Opera Mini 38"
+  },
+  {
+    "id": "25022693",
+    "name": "Opera Mini 39"
+  },
+  {
+    "id": "25022406",
+    "name": "Opera Mini 40"
+  },
+  {
+    "id": "25026753",
+    "name": "Opera Mini 41"
+  },
+  {
+    "id": "25022368",
+    "name": "Opera Mini 42"
+  },
+  {
+    "id": "25019051",
+    "name": "Opera Mini 43"
+  },
+  {
+    "id": "25022320",
+    "name": "Opera Mini 44"
+  },
+  {
+    "id": "25026685",
+    "name": "Opera Mini 45"
+  },
+  {
+    "id": "25026638",
+    "name": "Opera Mini 46"
+  },
+  {
+    "id": "25026740",
+    "name": "Opera Mini 47"
+  },
+  {
+    "id": "25040089",
+    "name": "Opera Mini 58"
+  },
+  {
+    "id": "25021793",
+    "name": "Opera Mobile 4"
+  },
+  {
+    "id": "25030594",
+    "name": "Opera Mobile 6"
+  },
+  {
+    "id": "25040048",
+    "name": "Opera Mobile 7"
+  },
+  {
+    "id": "25021869",
+    "name": "Opera Mobile 8"
+  },
+  {
+    "id": "20173383",
+    "name": "Opera Mobile 9"
+  },
+  {
+    "id": "20173395",
+    "name": "Opera Mobile 10"
+  },
+  {
+    "id": "20173381",
+    "name": "Opera Mobile 11"
+  },
+  {
+    "id": "20173393",
+    "name": "Opera Mobile 12"
+  },
+  {
+    "id": "20173391",
+    "name": "Opera Mobile 14"
+  },
+  {
+    "id": "20173387",
+    "name": "Opera Mobile 18"
+  },
+  {
+    "id": "20173388",
+    "name": "Opera Mobile 19"
+  },
+  {
+    "id": "20173392",
+    "name": "Opera Mobile 20"
+  },
+  {
+    "id": "20173380",
+    "name": "Opera Mobile 21"
+  },
+  {
+    "id": "25026636",
+    "name": "Opera Mobile 25"
+  },
+  {
+    "id": "20173394",
+    "name": "Opera Mobile 26"
+  },
+  {
+    "id": "20173384",
+    "name": "Opera Mobile 29"
+  },
+  {
+    "id": "20173386",
+    "name": "Opera Mobile 30"
+  },
+  {
+    "id": "25020684",
+    "name": "Opera Mobile 33"
+  },
+  {
+    "id": "25018271",
+    "name": "Opera Mobile 34"
+  },
+  {
+    "id": "25020646",
+    "name": "Opera Mobile 35"
+  },
+  {
+    "id": "25018214",
+    "name": "Opera Mobile 36"
+  },
+  {
+    "id": "25020957",
+    "name": "Opera Mobile 37"
+  },
+  {
+    "id": "25026721",
+    "name": "Opera Mobile 41"
+  },
+  {
+    "id": "25021238",
+    "name": "Opera Mobile 42"
+  },
+  {
+    "id": "25018858",
+    "name": "Opera Mobile 43"
+  },
+  {
+    "id": "25022008",
+    "name": "Opera Mobile 44"
+  },
+  {
+    "id": "25018592",
+    "name": "Opera Mobile 45"
+  },
+  {
+    "id": "25021072",
+    "name": "Opera Mobile 46"
+  },
+  {
+    "id": "25018621",
+    "name": "Opera Mobile 47"
+  },
+  {
+    "id": "25021123",
+    "name": "Opera Mobile 48"
+  },
+  {
+    "id": "25018733",
+    "name": "Opera Mobile 49"
+  },
+  {
+    "id": "25022500",
+    "name": "Opera Mobile 50"
+  },
+  {
+    "id": "25019171",
+    "name": "Opera Mobile 51"
+  },
+  {
+    "id": "25022372",
+    "name": "Opera Mobile 52"
+  },
+  {
+    "id": "25019038",
+    "name": "Opera Mobile 53"
+  },
+  {
+    "id": "25022437",
+    "name": "Opera Mobile 54"
+  },
+  {
+    "id": "25024821",
+    "name": "Opera Mobile 55"
+  },
+  {
+    "id": "25026656",
+    "name": "Opera Mobile 56"
+  },
+  {
+    "id": "25026682",
+    "name": "Opera Mobile 57"
+  },
+  {
+    "id": "25030621",
+    "name": "Opera Mobile 58"
+  },
+  {
+    "id": "25033077",
+    "name": "Opera Mobile 60"
+  },
+  {
+    "id": "25033668",
+    "name": "Opera Mobile 61"
+  },
+  {
+    "id": "25040065",
+    "name": "Opera Mobile 62"
+  },
+  {
+    "id": "25040057",
+    "name": "Opera Mobile 63"
+  },
+  {
+    "id": "25040047",
+    "name": "Opera Mobile 64"
+  },
+  {
+    "id": "25040028",
+    "name": "Opera Mobile 65"
+  },
+  {
+    "id": "25019918",
+    "name": "Opera Touch 1"
+  },
+  {
+    "id": "25022244",
+    "name": "Opera Touch 2"
+  },
+  {
+    "id": "25019629",
+    "name": "Opera Touch 3"
+  },
+  {
+    "id": "20173351",
+    "name": "Polaris 6"
+  },
+  {
+    "id": "25032425",
+    "name": "Puffin 2"
+  },
+  {
+    "id": "25026683",
+    "name": "Puffin 3"
+  },
+  {
+    "id": "25018925",
+    "name": "Puffin 4"
+  },
+  {
+    "id": "25040113",
+    "name": "Puffin 6"
+  },
+  {
+    "id": "25020500",
+    "name": "Puffin 8"
+  },
+  {
+    "id": "25040056",
+    "name": "Puffin 9"
+  },
+  {
+    "id": "25029394",
+    "name": "QQ Browser 10"
+  },
+  {
+    "id": "25038963",
+    "name": "QQ Browser 12"
+  },
+  {
+    "id": "20173434",
+    "name": "SEMC Browser 4"
+  },
+  {
+    "id": "25029639",
+    "name": "Safari 2"
+  },
+  {
+    "id": "25018819",
+    "name": "Safari 3"
+  },
+  {
+    "id": "25021060",
+    "name": "Safari 4"
+  },
+  {
+    "id": "20173422",
+    "name": "Safari 5"
+  },
+  {
+    "id": "20173420",
+    "name": "Safari 6"
+  },
+  {
+    "id": "20173421",
+    "name": "Safari 7"
+  },
+  {
+    "id": "20173423",
+    "name": "Safari 8"
+  },
+  {
+    "id": "25018609",
+    "name": "Safari 9"
+  },
+  {
+    "id": "25019034",
+    "name": "Safari 10"
+  },
+  {
+    "id": "25022339",
+    "name": "Safari 11"
+  },
+  {
+    "id": "25019997",
+    "name": "Safari 12"
+  },
+  {
+    "id": "25022278",
+    "name": "Safari 13"
+  },
+  {
+    "id": "25030587",
+    "name": "Safari 14"
+  },
+  {
+    "id": "25037254",
+    "name": "Safari 15"
+  },
+  {
+    "id": "25029239",
+    "name": "Safari 604"
+  },
+  {
+    "id": "25033623",
+    "name": "Safari 605"
+  },
+  {
+    "id": "25022875",
+    "name": "Samsung Browser 2"
+  },
+  {
+    "id": "25019543",
+    "name": "Samsung Browser 3"
+  },
+  {
+    "id": "25021390",
+    "name": "Samsung Browser 4"
+  },
+  {
+    "id": "25018908",
+    "name": "Samsung Browser 5"
+  },
+  {
+    "id": "25021318",
+    "name": "Samsung Browser 6"
+  },
+  {
+    "id": "25019020",
+    "name": "Samsung Browser 7"
+  },
+  {
+    "id": "25021457",
+    "name": "Samsung Browser 8"
+  },
+  {
+    "id": "25018979",
+    "name": "Samsung Browser 9"
+  },
+  {
+    "id": "25020779",
+    "name": "Samsung Browser 10"
+  },
+  {
+    "id": "25018411",
+    "name": "Samsung Browser 11"
+  },
+  {
+    "id": "25030640",
+    "name": "Samsung Browser 12"
+  },
+  {
+    "id": "25032732",
+    "name": "Samsung Browser 13"
+  },
+  {
+    "id": "25040042",
+    "name": "Samsung Browser 14"
+  },
+  {
+    "id": "25040098",
+    "name": "Samsung Browser 15"
+  },
+  {
+    "id": "25040109",
+    "name": "Samsung Browser 16"
+  },
+  {
+    "id": "25040045",
+    "name": "Samsung Browser 86"
+  },
+  {
+    "id": "25040114",
+    "name": "Seznam Browser 8"
+  },
+  {
+    "id": "25031324",
+    "name": "Sogou Explorer 0"
+  },
+  {
+    "id": "25018841",
+    "name": "UC Browser 2"
+  },
+  {
+    "id": "25025009",
+    "name": "UC Browser 6"
+  },
+  {
+    "id": "25025023",
+    "name": "UC Browser 7"
+  },
+  {
+    "id": "20173415",
+    "name": "UC Browser 8"
+  },
+  {
+    "id": "20173418",
+    "name": "UC Browser 10"
+  },
+  {
+    "id": "25018264",
+    "name": "UC Browser 11"
+  },
+  {
+    "id": "25020638",
+    "name": "UC Browser 12"
+  },
+  {
+    "id": "25025527",
+    "name": "UC Browser 13"
+  },
+  {
+    "id": "20173354",
+    "name": "UP.Browser 5"
+  },
+  {
+    "id": "20173352",
+    "name": "UP.Browser 6"
+  },
+  {
+    "id": "25040414",
+    "name": "Whale Browser 3"
+  },
+  {
+    "id": "25022412",
+    "name": "Yandex.Browser 17"
+  },
+  {
+    "id": "25019992",
+    "name": "Yandex.Browser 18"
+  },
+  {
+    "id": "25022360",
+    "name": "Yandex.Browser 19"
+  },
+  {
+    "id": "25025631",
+    "name": "Yandex.Browser 20"
+  },
+  {
+    "id": "25035521",
+    "name": "Yandex.Browser 21"
+  },
+  {
+    "id": "25040799",
+    "name": "Yandex.Browser 22"
+  },
+  {
+    "id": "25018701",
+    "name": "webOS Browser 221"
+  }
+]

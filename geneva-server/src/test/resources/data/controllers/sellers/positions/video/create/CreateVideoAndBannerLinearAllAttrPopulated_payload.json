@@ -1,0 +1,15 @@
+{
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "VideoAndBanner",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "screenLocation": "HEADER_VISIBLE",
+  "mraidAdvancedTracking": true,
+  "videoLinearity": "NON_LINEAR",
+  "height": 100,
+  "width": 200,
+  "status": "ACTIVE"
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+        SELECT /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName)*/
+            MAX(d.name) AS auctionType,
+            SUM(adRequests) AS adRequests,
+            SUM(auctions) AS auctions,
+            SUM(adServed) AS adServed,
+            SUM(noBidders) AS noBidders,
+            SUM(insufficientBids) AS insufficientBids,
+            SUM(noBids) AS noBids,
+            SUM(maxEligibleBids) AS maxEligibleBids,
+            SUM(biddersSum) AS biddersSum,
+            SUM(maxCpm) AS maxCpm,
+            SUM(priceSum) AS priceSum,
+            SUM(bidsReceived) AS bidsReceived
+        FROM
+        (
+            SELECT
+                CAST(0 AS INTEGER) AS adRequests,
+                CAST(0 AS INTEGER) AS auctions,
+                CAST(0 AS INTEGER) AS adServed,
+                CAST(0 AS INTEGER) AS noBidders,
+                CAST(0 AS INTEGER) AS insufficientBids,
+                CAST(0 AS INTEGER) AS noBids,
+                CAST(0 AS INTEGER) AS maxEligibleBids,
+                CAST(0 AS INTEGER) AS biddersSum,
+                CAST(0 AS DECIMAL(16,8)) AS maxCpm,
+                CAST(0 AS DECIMAL(16,8)) AS priceSum,
+                SUM(f2.bids) AS bidsReceived,
+                CAST(2 AS INTEGER) AS auction_type
+            FROM fact_exchange_bidders f2
+            WHERE
+                f2.tag_id IN
+                (
+                    SELECT
+                        DISTINCT f3.tag_id FROM fact_exchange_auctions f3
+                    WHERE
+                        f3.start >= :start
+                        AND
+                        f3.start < :stop
+                )
+                AND
+                f2.start >= :start
+                AND
+                f2.start < :stop
+            UNION ALL
+            SELECT
+                SUM(f1.ads_requested) AS adRequests,
+                SUM(f1.auctions) AS auctions,
+                SUM(f1.ads_served) AS adServed,
+                SUM(f1.no_bidders) AS noBidders,
+                SUM(f1.no_sufficient_bids) AS insufficientBids,
+                SUM(f1.no_bids) AS noBids,
+                MAX(f1.bids_max) AS maxEligibleBids,
+                SUM(f1.bidders_sum) AS biddersSum,
+                MAX(f1.price_max) AS maxCpm,
+                SUM(f1.price_sum) AS priceSum,
+                CAST(0 AS INTEGER) AS bidsReceived,
+                CAST(f1.auction_type AS INTEGER) AS auction_type
+            FROM fact_exchange_auctions f1
+            WHERE
+                f1.start >= :start
+                AND
+                f1.start < :stop
+            GROUP BY f1.auction_type
+        ) f
+        INNER JOIN dim_auction d
+        ON d.id = f.auction_type
+        GROUP BY f.auction_type;
+  ]]>
+  </entry>
+</properties>

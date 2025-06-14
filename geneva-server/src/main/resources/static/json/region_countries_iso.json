@@ -1,0 +1,1132 @@
+[
+  {
+    "code": "AGO,BDI,BEN,BFA,BWA,CAF,CIV,CMR,COD,COG,COM,CPV,DJI,DZA,EGY,ERI,ESH,ETH,GAB,GHA,GIN,GMB,GNB,GNQ,KEN,LBR,LBY,LSO,MAR,MDG,MLI,MOZ,MRT,MUS,MWI,MYT,NAM,NER,NGA,REU,RWA,SDN,SEN,SHN,SLE,SOM,SSD,STP,SWZ,SYC,TCD,TGO,TUN,TZA,UGA,ZAF,ZMB,ZWE",
+    "name": "Africa",
+    "children": [
+      {
+        "code": "BDI,COM,DJI,ERI,ETH,KEN,MDG,MWI,MUS,MYT,MOZ,REU,RWA,SYC,SOM,SSD,UGA,TZA,ZMB,ZWE",
+        "name": "Eastern Africa",
+        "children": [
+          {
+            "code": "BDI",
+            "name": "Burundi"
+          },
+          {
+            "code": "COM",
+            "name": "Comoros"
+          },
+          {
+            "code": "DJI",
+            "name": "Djibouti"
+          },
+          {
+            "code": "ERI",
+            "name": "Eritrea"
+          },
+          {
+            "code": "ETH",
+            "name": "Ethiopia"
+          },
+          {
+            "code": "KEN",
+            "name": "Kenya"
+          },
+          {
+            "code": "MDG",
+            "name": "Madagascar"
+          },
+          {
+            "code": "MWI",
+            "name": "Malawi"
+          },
+          {
+            "code": "MUS",
+            "name": "Mauritius"
+          },
+          {
+            "code": "MYT",
+            "name": "Mayotte"
+          },
+          {
+            "code": "MOZ",
+            "name": "Mozambique"
+          },
+          {
+            "code": "REU",
+            "name": "Reunion"
+          },
+          {
+            "code": "RWA",
+            "name": "Rwanda"
+          },
+          {
+            "code": "SYC",
+            "name": "Seychelles"
+          },
+          {
+            "code": "SOM",
+            "name": "Somalia"
+          },
+          {
+            "code": "SSD",
+            "name": "South Sudan"
+          },
+          {
+            "code": "UGA",
+            "name": "Uganda"
+          },
+          {
+            "code": "TZA",
+            "name": "United Republic of Tanzania"
+          },
+          {
+            "code": "ZMB",
+            "name": "Zambia"
+          },
+          {
+            "code": "ZWE",
+            "name": "Zimbabwe"
+          }
+        ]
+      },
+      {
+        "code": "AGO,CMR,CAF,TCD,COG,COD,GNQ,GAB,STP",
+        "name": "Middle Africa",
+        "children": [
+          {
+            "code": "AGO",
+            "name": "Angola"
+          },
+          {
+            "code": "CMR",
+            "name": "Cameroon"
+          },
+          {
+            "code": "CAF",
+            "name": "Central African Republic"
+          },
+          {
+            "code": "TCD",
+            "name": "Chad"
+          },
+          {
+            "code": "COG",
+            "name": "Congo"
+          },
+          {
+            "code": "COD",
+            "name": "Democratic Republic of the Congo"
+          },
+          {
+            "code": "GNQ",
+            "name": "Equatorial Guinea"
+          },
+          {
+            "code": "GAB",
+            "name": "Gabon"
+          },
+          {
+            "code": "STP",
+            "name": "Sao Tome and Principe"
+          }
+        ]
+      },
+      {
+        "code": "DZA,EGY,LBY,MAR,SDN,TUN,ESH",
+        "name": "Northern Africa",
+        "children": [
+          {
+            "code": "DZA",
+            "name": "Algeria"
+          },
+          {
+            "code": "EGY",
+            "name": "Egypt"
+          },
+          {
+            "code": "LBY",
+            "name": "Libya"
+          },
+          {
+            "code": "MAR",
+            "name": "Morocco"
+          },
+          {
+            "code": "SDN",
+            "name": "Sudan"
+          },
+          {
+            "code": "TUN",
+            "name": "Tunisia"
+          },
+          {
+            "code": "ESH",
+            "name": "Western Sahara"
+          }
+        ]
+      },
+      {
+        "code": "BWA,LSO,NAM,ZAF,SWZ",
+        "name": "Southern Africa",
+        "children": [
+          {
+            "code": "BWA",
+            "name": "Botswana"
+          },
+          {
+            "code": "LSO",
+            "name": "Lesotho"
+          },
+          {
+            "code": "NAM",
+            "name": "Namibia"
+          },
+          {
+            "code": "ZAF",
+            "name": "South Africa"
+          },
+          {
+            "code": "SWZ",
+            "name": "Swaziland"
+          }
+        ]
+      },
+      {
+        "code": "BEN,BFA,CPV,CIV,GMB,GHA,GIN,GNB,LBR,MLI,MRT,NER,NGA,SHN,SEN,SLE,TGO",
+        "name": "Western Africa",
+        "children": [
+          {
+            "code": "BEN",
+            "name": "Benin"
+          },
+          {
+            "code": "BFA",
+            "name": "Burkina Faso"
+          },
+          {
+            "code": "CPV",
+            "name": "Cabo Verde"
+          },
+          {
+            "code": "CIV",
+            "name": "Cote d'Ivoire"
+          },
+          {
+            "code": "GMB",
+            "name": "Gambia"
+          },
+          {
+            "code": "GHA",
+            "name": "Ghana"
+          },
+          {
+            "code": "GIN",
+            "name": "Guinea"
+          },
+          {
+            "code": "GNB",
+            "name": "Guinea-Bissau"
+          },
+          {
+            "code": "LBR",
+            "name": "Liberia"
+          },
+          {
+            "code": "MLI",
+            "name": "Mali"
+          },
+          {
+            "code": "MRT",
+            "name": "Mauritania"
+          },
+          {
+            "code": "NER",
+            "name": "Niger"
+          },
+          {
+            "code": "NGA",
+            "name": "Nigeria"
+          },
+          {
+            "code": "SHN",
+            "name": "Saint Helena"
+          },
+          {
+            "code": "SEN",
+            "name": "Senegal"
+          },
+          {
+            "code": "SLE",
+            "name": "Sierra Leone"
+          },
+          {
+            "code": "TGO",
+            "name": "Togo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ABW,AIA,ARG,ATG,BES,BHS,BLM,BLZ,BMU,BOL,BRA,BRB,CAN,CHL,COL,CRI,CUB,CUW,CYM,DMA,DOM,ECU,FLK,GLP,GRD,GRL,GTM,GUF,GUY,HND,HTI,JAM,KNA,LCA,MAF,MEX,MSR,MTQ,NIC,PAN,PER,PRI,PRY,SLV,SPM,SUR,SXM,TCA,TTO,URY,USA,VCT,VEN,VGB,VIR",
+    "name": "Americas",
+    "children": [
+      {
+        "code": "AIA,ATG,ABW,BHS,BRB,BES,VGB,CYM,CUB,CUW,DMA,DOM,GRD,GLP,HTI,JAM,MTQ,MSR,PRI,BLM,KNA,LCA,MAF,VCT,SXM,TTO,TCA,VIR",
+        "name": "Caribbean",
+        "children": [
+          {
+            "code": "AIA",
+            "name": "Anguilla"
+          },
+          {
+            "code": "ATG",
+            "name": "Antigua and Barbuda"
+          },
+          {
+            "code": "ABW",
+            "name": "Aruba"
+          },
+          {
+            "code": "BHS",
+            "name": "Bahamas"
+          },
+          {
+            "code": "BRB",
+            "name": "Barbados"
+          },
+          {
+            "code": "BES",
+            "name": "Bonaire,  Saint Eustatius and Saba"
+          },
+          {
+            "code": "VGB",
+            "name": "British Virgin Islands"
+          },
+          {
+            "code": "CYM",
+            "name": "Cayman Islands"
+          },
+          {
+            "code": "CUB",
+            "name": "Cuba"
+          },
+          {
+            "code": "CUW",
+            "name": "Curacao"
+          },
+          {
+            "code": "DMA",
+            "name": "Dominica"
+          },
+          {
+            "code": "DOM",
+            "name": "Dominican Republic"
+          },
+          {
+            "code": "GRD",
+            "name": "Grenada"
+          },
+          {
+            "code": "GLP",
+            "name": "Guadeloupe"
+          },
+          {
+            "code": "HTI",
+            "name": "Haiti"
+          },
+          {
+            "code": "JAM",
+            "name": "Jamaica"
+          },
+          {
+            "code": "MTQ",
+            "name": "Martinique"
+          },
+          {
+            "code": "MSR",
+            "name": "Montserrat"
+          },
+          {
+            "code": "PRI",
+            "name": "Puerto Rico"
+          },
+          {
+            "code": "BLM",
+            "name": "Saint-Barthelemy"
+          },
+          {
+            "code": "KNA",
+            "name": "Saint Kitts and Nevis"
+          },
+          {
+            "code": "LCA",
+            "name": "Saint Lucia"
+          },
+          {
+            "code": "MAF",
+            "name": "Saint Martin (French part)"
+          },
+          {
+            "code": "VCT",
+            "name": "Saint Vincent and the Grenadines"
+          },
+          {
+            "code": "SXM",
+            "name": "Sint Maarten (Dutch part)"
+          },
+          {
+            "code": "TTO",
+            "name": "Trinidad and Tobago"
+          },
+          {
+            "code": "TCA",
+            "name": "Turks and Caicos Islands"
+          },
+          {
+            "code": "VIR",
+            "name": "United States Virgin Islands"
+          }
+        ]
+      },
+      {
+        "code": "BLZ,CRI,SLV,GTM,HND,MEX,NIC,PAN",
+        "name": "Central America",
+        "children": [
+          {
+            "code": "BLZ",
+            "name": "Belize"
+          },
+          {
+            "code": "CRI",
+            "name": "Costa Rica"
+          },
+          {
+            "code": "SLV",
+            "name": "El Salvador"
+          },
+          {
+            "code": "GTM",
+            "name": "Guatemala"
+          },
+          {
+            "code": "HND",
+            "name": "Honduras"
+          },
+          {
+            "code": "MEX",
+            "name": "Mexico"
+          },
+          {
+            "code": "NIC",
+            "name": "Nicaragua"
+          },
+          {
+            "code": "PAN",
+            "name": "Panama"
+          }
+        ]
+      },
+      {
+        "code": "ARG,BOL,BRA,CHL,COL,ECU,FLK,GUF,GUY,PRY,PER,SUR,URY,VEN",
+        "name": "South America",
+        "children": [
+          {
+            "code": "ARG",
+            "name": "Argentina"
+          },
+          {
+            "code": "BOL",
+            "name": "Bolivia (Plurinational State of)"
+          },
+          {
+            "code": "BRA",
+            "name": "Brazil"
+          },
+          {
+            "code": "CHL",
+            "name": "Chile"
+          },
+          {
+            "code": "COL",
+            "name": "Colombia"
+          },
+          {
+            "code": "ECU",
+            "name": "Ecuador"
+          },
+          {
+            "code": "FLK",
+            "name": "Falkland Islands (Malvinas)"
+          },
+          {
+            "code": "GUF",
+            "name": "French Guiana"
+          },
+          {
+            "code": "GUY",
+            "name": "Guyana"
+          },
+          {
+            "code": "PRY",
+            "name": "Paraguay"
+          },
+          {
+            "code": "PER",
+            "name": "Peru"
+          },
+          {
+            "code": "SUR",
+            "name": "Suriname"
+          },
+          {
+            "code": "URY",
+            "name": "Uruguay"
+          },
+          {
+            "code": "VEN",
+            "name": "Venezuela (Bolivarian Republic of)"
+          }
+        ]
+      },
+      {
+        "code": "BMU,CAN,GRL,SPM,USA",
+        "name": "Northern America",
+        "children": [
+          {
+            "code": "BMU",
+            "name": "Bermuda"
+          },
+          {
+            "code": "CAN",
+            "name": "Canada"
+          },
+          {
+            "code": "GRL",
+            "name": "Greenland"
+          },
+          {
+            "code": "SPM",
+            "name": "Saint Pierre and Miquelon"
+          },
+          {
+            "code": "USA",
+            "name": "United States of America"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "AFG,ARE,ARM,AZE,BGD,BHR,BRN,BTN,CHN,CYP,GEO,HKG,IDN,IND,IRN,IRQ,ISR,JOR,JPN,KAZ,KGZ,KHM,KOR,KWT,LAO,LBN,LKA,MAC,MDV,MMR,MNG,MYS,NPL,OMN,PAK,PHL,PRK,PSE,QAT,SAU,SGP,SYR,THA,TJK,TKM,TLS,TUR,TWN,UZB,VNM,YEM",
+    "name": "Asia",
+    "children": [
+      {
+        "code": "KAZ,KGZ,TJK,TKM,UZB",
+        "name": "Central Asia",
+        "children": [
+          {
+            "code": "KAZ",
+            "name": "Kazakhstan"
+          },
+          {
+            "code": "KGZ",
+            "name": "Kyrgyzstan"
+          },
+          {
+            "code": "TJK",
+            "name": "Tajikistan"
+          },
+          {
+            "code": "TKM",
+            "name": "Turkmenistan"
+          },
+          {
+            "code": "UZB",
+            "name": "Uzbekistan"
+          }
+        ]
+      },
+      {
+        "code": "CHN,HKG,MAC,PRK,JPN,MNG,KOR,TWN",
+        "name": "Eastern Asia",
+        "children": [
+          {
+            "code": "CHN",
+            "name": "China"
+          },
+          {
+            "code": "HKG",
+            "name": "China Hong Kong Special Administrative Region"
+          },
+          {
+            "code": "MAC",
+            "name": "China Macao Special Administrative Region"
+          },
+          {
+            "code": "PRK",
+            "name": "Democratic People's Republic of Korea"
+          },
+          {
+            "code": "JPN",
+            "name": "Japan"
+          },
+          {
+            "code": "MNG",
+            "name": "Mongolia"
+          },
+          {
+            "code": "KOR",
+            "name": "Republic of Korea"
+          },
+          {
+            "code": "TWN",
+            "name": "Taiwan, Province of China"
+          }
+        ]
+      },
+      {
+        "code": "AFG,BGD,BTN,IND,IRN,MDV,NPL,PAK,LKA",
+        "name": "Southern Asia",
+        "children": [
+          {
+            "code": "AFG",
+            "name": "Afghanistan"
+          },
+          {
+            "code": "BGD",
+            "name": "Bangladesh"
+          },
+          {
+            "code": "BTN",
+            "name": "Bhutan"
+          },
+          {
+            "code": "IND",
+            "name": "India"
+          },
+          {
+            "code": "IRN",
+            "name": "Iran (Islamic Republic of)"
+          },
+          {
+            "code": "MDV",
+            "name": "Maldives"
+          },
+          {
+            "code": "NPL",
+            "name": "Nepal"
+          },
+          {
+            "code": "PAK",
+            "name": "Pakistan"
+          },
+          {
+            "code": "LKA",
+            "name": "Sri Lanka"
+          }
+        ]
+      },
+      {
+        "code": "BRN,KHM,IDN,LAO,MYS,MMR,PHL,SGP,THA,TLS,VNM",
+        "name": "South-Eastern Asia",
+        "children": [
+          {
+            "code": "BRN",
+            "name": "Brunei Darussalam"
+          },
+          {
+            "code": "KHM",
+            "name": "Cambodia"
+          },
+          {
+            "code": "IDN",
+            "name": "Indonesia"
+          },
+          {
+            "code": "LAO",
+            "name": "Lao People's Democratic Republic"
+          },
+          {
+            "code": "MYS",
+            "name": "Malaysia"
+          },
+          {
+            "code": "MMR",
+            "name": "Myanmar"
+          },
+          {
+            "code": "PHL",
+            "name": "Philippines"
+          },
+          {
+            "code": "SGP",
+            "name": "Singapore"
+          },
+          {
+            "code": "THA",
+            "name": "Thailand"
+          },
+          {
+            "code": "TLS",
+            "name": "Timor-Leste"
+          },
+          {
+            "code": "VNM",
+            "name": "Viet Nam"
+          }
+        ]
+      },
+      {
+        "code": "ARM,AZE,BHR,CYP,GEO,IRQ,ISR,JOR,KWT,LBN,OMN,QAT,SAU,PSE,SYR,TUR,ARE,YEM",
+        "name": "Western Asia",
+        "children": [
+          {
+            "code": "ARM",
+            "name": "Armenia"
+          },
+          {
+            "code": "AZE",
+            "name": "Azerbaijan"
+          },
+          {
+            "code": "BHR",
+            "name": "Bahrain"
+          },
+          {
+            "code": "CYP",
+            "name": "Cyprus"
+          },
+          {
+            "code": "GEO",
+            "name": "Georgia"
+          },
+          {
+            "code": "IRQ",
+            "name": "Iraq"
+          },
+          {
+            "code": "ISR",
+            "name": "Israel"
+          },
+          {
+            "code": "JOR",
+            "name": "Jordan"
+          },
+          {
+            "code": "KWT",
+            "name": "Kuwait"
+          },
+          {
+            "code": "LBN",
+            "name": "Lebanon"
+          },
+          {
+            "code": "OMN",
+            "name": "Oman"
+          },
+          {
+            "code": "QAT",
+            "name": "Qatar"
+          },
+          {
+            "code": "SAU",
+            "name": "Saudi Arabia"
+          },
+          {
+            "code": "PSE",
+            "name": "State of Palestine"
+          },
+          {
+            "code": "SYR",
+            "name": "Syrian Arab Republic"
+          },
+          {
+            "code": "TUR",
+            "name": "Turkey"
+          },
+          {
+            "code": "ARE",
+            "name": "United Arab Emirates"
+          },
+          {
+            "code": "YEM",
+            "name": "Yemen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ALA,ALB,AND,AUT,BEL,BGR,BIH,BLR,CHE,CHI,CZE,DEU,DNK,ESP,EST,FIN,FRA,FRO,GBR,GGY,GIB,GRC,HRV,HUN,IMN,IRL,ISL,ITA,JEY,LIE,LTU,LUX,LVA,MCO,MDA,MKD,MLT,MNE,NLD,NOR,POL,PRT,ROU,RUS,SJM,SMR,SRB,SRK,SVK,SVN,SWE,UKR,VAT",
+    "name": "Europe",
+    "children": [
+      {
+        "code": "BLR,BGR,CZE,HUN,POL,MDA,ROU,RUS,SVK,UKR",
+        "name": "Eastern Europe",
+        "children": [
+          {
+            "code": "BLR",
+            "name": "Belarus"
+          },
+          {
+            "code": "BGR",
+            "name": "Bulgaria"
+          },
+          {
+            "code": "CZE",
+            "name": "Czech Republic"
+          },
+          {
+            "code": "HUN",
+            "name": "Hungary"
+          },
+          {
+            "code": "POL",
+            "name": "Poland"
+          },
+          {
+            "code": "MDA",
+            "name": "Republic of Moldova"
+          },
+          {
+            "code": "ROU",
+            "name": "Romania"
+          },
+          {
+            "code": "RUS",
+            "name": "Russian Federation"
+          },
+          {
+            "code": "SVK",
+            "name": "Slovakia"
+          },
+          {
+            "code": "UKR",
+            "name": "Ukraine"
+          }
+        ]
+      },
+      {
+        "code": "ALA,CHI,DNK,EST,FRO,FIN,GGY,ISL,IRL,IMN,JEY,LVA,LTU,NOR,SRK,SJM,SWE,GBR",
+        "name": "Northern Europe",
+        "children": [
+          {
+            "code": "ALA",
+            "name": "Aland Islands"
+          },
+          {
+            "code": "CHI",
+            "name": "Channel Islands"
+          },
+          {
+            "code": "DNK",
+            "name": "Denmark"
+          },
+          {
+            "code": "EST",
+            "name": "Estonia"
+          },
+          {
+            "code": "FRO",
+            "name": "Faeroe Islands"
+          },
+          {
+            "code": "FIN",
+            "name": "Finland"
+          },
+          {
+            "code": "GGY",
+            "name": "Guernsey"
+          },
+          {
+            "code": "ISL",
+            "name": "Iceland"
+          },
+          {
+            "code": "IRL",
+            "name": "Ireland"
+          },
+          {
+            "code": "IMN",
+            "name": "Isle of Man"
+          },
+          {
+            "code": "JEY",
+            "name": "Jersey"
+          },
+          {
+            "code": "LVA",
+            "name": "Latvia"
+          },
+          {
+            "code": "LTU",
+            "name": "Lithuania"
+          },
+          {
+            "code": "NOR",
+            "name": "Norway"
+          },
+          {
+            "code": "SRK",
+            "name": "Sark"
+          },
+          {
+            "code": "SJM",
+            "name": "Svalbard and Jan Mayen Islands"
+          },
+          {
+            "code": "SWE",
+            "name": "Sweden"
+          },
+          {
+            "code": "GBR",
+            "name": "United Kingdom of Great Britain and Northern Ireland"
+          }
+        ]
+      },
+      {
+        "code": "ALB,AND,BIH,HRV,GIB,GRC,VAT,ITA,MLT,MNE,PRT,SMR,SRB,SVN,ESP,MKD",
+        "name": "Southern Europe",
+        "children": [
+          {
+            "code": "ALB",
+            "name": "Albania"
+          },
+          {
+            "code": "AND",
+            "name": "Andorra"
+          },
+          {
+            "code": "BIH",
+            "name": "Bosnia and Herzegovina"
+          },
+          {
+            "code": "HRV",
+            "name": "Croatia"
+          },
+          {
+            "code": "GIB",
+            "name": "Gibraltar"
+          },
+          {
+            "code": "GRC",
+            "name": "Greece"
+          },
+          {
+            "code": "VAT",
+            "name": "Holy See"
+          },
+          {
+            "code": "ITA",
+            "name": "Italy"
+          },
+          {
+            "code": "MLT",
+            "name": "Malta"
+          },
+          {
+            "code": "MNE",
+            "name": "Montenegro"
+          },
+          {
+            "code": "PRT",
+            "name": "Portugal"
+          },
+          {
+            "code": "SMR",
+            "name": "San Marino"
+          },
+          {
+            "code": "SRB",
+            "name": "Serbia"
+          },
+          {
+            "code": "SVN",
+            "name": "Slovenia"
+          },
+          {
+            "code": "ESP",
+            "name": "Spain"
+          },
+          {
+            "code": "MKD",
+            "name": "The former Yugoslav Republic of Macedonia"
+          }
+        ]
+      },
+      {
+        "code": "AUT,BEL,FRA,DEU,LIE,LUX,MCO,NLD,CHE",
+        "name": "Western Europe",
+        "children": [
+          {
+            "code": "AUT",
+            "name": "Austria"
+          },
+          {
+            "code": "BEL",
+            "name": "Belgium"
+          },
+          {
+            "code": "FRA",
+            "name": "France"
+          },
+          {
+            "code": "DEU",
+            "name": "Germany"
+          },
+          {
+            "code": "LIE",
+            "name": "Liechtenstein"
+          },
+          {
+            "code": "LUX",
+            "name": "Luxembourg"
+          },
+          {
+            "code": "MCO",
+            "name": "Monaco"
+          },
+          {
+            "code": "NLD",
+            "name": "Netherlands"
+          },
+          {
+            "code": "CHE",
+            "name": "Switzerland"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ASM,AUS,COK,FJI,FSM,GUM,KIR,MHL,MNP,NCL,NFK,NIU,NRU,NZL,PCN,PLW,PNG,PYF,SLB,TKL,TON,TUV,VUT,WLF,WSM",
+    "name": "Oceania",
+    "children": [
+      {
+        "code": "AUS,NZL,NFK",
+        "name": "Australia and New Zealand",
+        "children": [
+          {
+            "code": "AUS",
+            "name": "Australia"
+          },
+          {
+            "code": "NZL",
+            "name": "New Zealand"
+          },
+          {
+            "code": "NFK",
+            "name": "Norfolk Island"
+          }
+        ]
+      },
+      {
+        "code": "FJI,NCL,PNG,SLB,VUT",
+        "name": "Melanesia",
+        "children": [
+          {
+            "code": "FJI",
+            "name": "Fiji"
+          },
+          {
+            "code": "NCL",
+            "name": "New Caledonia"
+          },
+          {
+            "code": "PNG",
+            "name": "Papua New Guinea"
+          },
+          {
+            "code": "SLB",
+            "name": "Solomon Islands"
+          },
+          {
+            "code": "VUT",
+            "name": "Vanuatu"
+          }
+        ]
+      },
+      {
+        "code": "GUM,KIR,MHL,FSM,NRU,MNP,PLW",
+        "name": "Micronesia",
+        "children": [
+          {
+            "code": "GUM",
+            "name": "Guam"
+          },
+          {
+            "code": "KIR",
+            "name": "Kiribati"
+          },
+          {
+            "code": "MHL",
+            "name": "Marshall Islands"
+          },
+          {
+            "code": "FSM",
+            "name": "Micronesia (Federated States of)"
+          },
+          {
+            "code": "NRU",
+            "name": "Nauru"
+          },
+          {
+            "code": "MNP",
+            "name": "Northern Mariana Islands"
+          },
+          {
+            "code": "PLW",
+            "name": "Palau"
+          }
+        ]
+      },
+      {
+        "code": "ASM,COK,PYF,NIU,PCN,WSM,TKL,TON,TUV,WLF",
+        "name": "Polynesia",
+        "children": [
+          {
+            "code": "ASM",
+            "name": "American Samoa"
+          },
+          {
+            "code": "COK",
+            "name": "Cook Islands"
+          },
+          {
+            "code": "PYF",
+            "name": "French Polynesia"
+          },
+          {
+            "code": "NIU",
+            "name": "Niue"
+          },
+          {
+            "code": "PCN",
+            "name": "Pitcairn"
+          },
+          {
+            "code": "WSM",
+            "name": "Samoa"
+          },
+          {
+            "code": "TKL",
+            "name": "Tokelau"
+          },
+          {
+            "code": "TON",
+            "name": "Tonga"
+          },
+          {
+            "code": "TUV",
+            "name": "Tuvalu"
+          },
+          {
+            "code": "WLF",
+            "name": "Wallis and Futuna Islands"
+          }
+        ]
+      }
+    ]
+  }
+]

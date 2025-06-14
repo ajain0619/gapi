@@ -1,0 +1,10 @@
+{
+  "placementCategory": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "name": "Indian",
+  "width": 199,
+  "height": 87,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "interstitial": false
+}

@@ -1,0 +1,23 @@
+{
+  "pid": 10201,
+  "version": 1,
+  "name": "CRUDPositionTestUpdate",
+  "id": "8a859e06014f4fd97b68dbd03b3c000a",
+  "attributes": {
+    "version": 1,
+    "defaultBlock": [
+    ],
+    "individualsDefaultBlock": [
+    ],
+    "defaultBidderGroups": [
+    ],
+    "individualsDefaultBidderGroups": [
+    ],
+    "defaultBiddersAllowList": true,
+    "adFeedbackOptOut": false,
+    "humanOptOut": false
+  },
+  "eligibleBidderGroups": [
+  ],
+  "thirdPartyFraudDetectionEnabled": false
+}

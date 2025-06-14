@@ -1,0 +1,36 @@
+{
+  "content": [
+    {
+      "pid": 1,
+      "discountName": "golden-data-discount-1",
+      "discountStatus": true,
+      "discountPercent": 5.5,
+      "discountDescription": "a test description"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 1,
+  "first": true,
+  "size": 10,
+  "number": 0,
+  "numberOfElements": 1,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "empty": false
+}

@@ -1,0 +1,18 @@
+{
+  "pid": 10000211,
+  "description": "site with all fields deskription",
+  "domain": "mgbPssite.com",
+  "name": "mgbPssite",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "pss.com",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "IAB12",
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false
+}

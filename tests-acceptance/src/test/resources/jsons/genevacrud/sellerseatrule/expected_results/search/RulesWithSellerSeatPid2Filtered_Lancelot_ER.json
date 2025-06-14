@@ -1,0 +1,41 @@
+{
+  "content": [
+    {
+      "description": "The Brave Knight",
+      "intendedActions": [
+        {
+          "actionData": "BLOCKLIST",
+          "actionType": "FILTER",
+          "version": 0
+        }
+      ],
+      "name": "Sir Lancelot 1234",
+      "sellerSeatPid": 2,
+      "status": "ACTIVE",
+      "targets": [
+        {
+          "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]",
+          "matchType": "EXCLUDE_LIST",
+          "pid": 8,
+          "status": "ACTIVE",
+          "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+          "version": 0
+        }
+      ],
+      "type": "BRAND_PROTECTION",
+      "version": 0
+    }
+  ],
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

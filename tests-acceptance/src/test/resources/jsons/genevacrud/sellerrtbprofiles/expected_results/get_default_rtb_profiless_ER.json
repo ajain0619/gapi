@@ -1,0 +1,49 @@
+{
+  "content": [
+    {
+      "alterReserve": "ONLY_IF_HIGHER",
+      "auctionType": 0,
+      "creationDate": 1574281555000,
+      "defaultReserve": 0,
+      "description": "Self Service Created Default RTB Profile S21",
+      "includeConsumerId": true,
+      "includeConsumerProfile": true,
+      "includeDomainReferences": true,
+      "includeGeoData": true,
+      "lastUpdate": 1574281555000,
+      "lowReserve": 0,
+      "name": "My Default RTB Profile S21",
+      "numberOfEffectivePlacements": 0,
+      "pid": 60001,
+      "pubNetReserve": 10,
+      "publisherDefault": true,
+      "screeningLevel": "AllowAll",
+      "version": 0
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 20,
+    "paged": true,
+    "sort": {
+      "empty": true,
+      "sorted": false,
+      "unsorted": true
+    },
+    "unpaged": false
+  },
+  "size": 20,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

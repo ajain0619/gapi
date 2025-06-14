@@ -1,0 +1,33 @@
+[
+  {
+    "id": "8a858a47012d2d14893c148945e16ad1",
+    "pid": 1,
+    "version": 5,
+    "name": "Nexage Inc",
+    "type": "NEXAGE",
+    "website": "www.nexage.com",
+    "description": "'Mobile Advertising Solutions and Mediation",
+    "contactUserPid": 717,
+    "adServingEnabled": false,
+    "dynamicBuyerRegistrationEnabled": false,
+    "brxdBuyerIdEnabledOnBidRequest": false,
+    "restrictDrillDown": false,
+    "cpiTrackingEnabled": false,
+    "rtbEnabled": false,
+    "mediationEnabled": false,
+    "rtbRevenueReportEnabled": false,
+    "status": "ACTIVE",
+    "disableAdFeedback": false,
+  "test": false,
+    "selfServeAllowed": false,
+    "payoutEnabled": false,
+    "thirdPartyFraudDetectionEnabled": false,
+    "defaultRtbProfilesEnabled": false,
+    "currency": "USD",
+    "externalAdVerificationEnabled": false,
+    "fraudDetectionJavascriptEnabled": true,
+    "adsourceNames": [],
+    "externalDataProviderNames": [],
+    "numberOfUsers": 0
+  }
+]

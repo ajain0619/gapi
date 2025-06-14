@@ -1,0 +1,19 @@
+{
+  "name": "AV011",
+  "buyer": {
+    "pid": "7054"
+  },
+  "primaryId": "pid15",
+  "primaryName": "pname15",
+  "secondaryId": "sid15",
+  "secondaryName": "sname15",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "east",
+  "adNetReportPassword": "west",
+  "tagController": {
+    "autoExpand": false
+  }
+}

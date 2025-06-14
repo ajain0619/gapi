@@ -1,0 +1,19 @@
+{
+  "name": "Test Empty Group",
+  "version": 0,
+  "publisherPid": 10218,
+  "privilegeLevel": "PUBLISHER",
+  "isDefaultEligible": false,
+  "groups": [
+    {
+      "name": "Test Empty Group",
+      "version": 0,
+      "publisherPid": 10218,
+      "privilegeLevel": "PUBLISHER",
+      "data": "",
+      "itemType": "BIDDER",
+      "listType": "WHITELIST",
+      "isIndividualsGroup": false
+    }
+  ]
+}

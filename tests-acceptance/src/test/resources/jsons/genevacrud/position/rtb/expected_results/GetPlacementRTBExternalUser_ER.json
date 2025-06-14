@@ -1,0 +1,19 @@
+{
+  "pid": 100331,
+  "version": 2,
+  "site": {
+    "pid": 10000202,
+    "hbEnabled": false
+  },
+  "name": "tracker3",
+  "memo": "banner placement",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE"
+}

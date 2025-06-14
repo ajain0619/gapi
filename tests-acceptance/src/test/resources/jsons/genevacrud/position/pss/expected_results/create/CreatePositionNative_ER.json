@@ -1,0 +1,16 @@
+{
+  "site": {
+    "pid": 10000183
+  },
+  "screenLocation": "UNDEFINED",
+  "mraidSupport": "NO",
+  "videoSupport": "NATIVE",
+  "adSizeType": "CUSTOM",
+  "memo": "native placement_1",
+  "name": "native_placement_1",
+  "placementCategory":"NATIVE_V2",
+  "interstitial": false,
+  "trafficType": "MEDIATION",
+  "positionAliasName": "torino",
+  "mraidAdvancedTracking": true
+}

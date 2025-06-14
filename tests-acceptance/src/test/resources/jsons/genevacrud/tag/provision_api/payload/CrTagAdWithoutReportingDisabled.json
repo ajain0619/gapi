@@ -1,0 +1,14 @@
+{
+  "name": "AV211",
+  "buyer": {
+    "pid": "7053"
+  },
+  "primaryId": "pid",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "tagController": {
+    "autoExpand": false
+  }
+}

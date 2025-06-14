@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 10063,
+      "type": "SELLER"
+    }
+  ],
+  "role": "ROLE_MANAGER",
+  "userName": "sellermanager3_V1",
+  "email": "01jdffgd@rea.ru",
+  "contactNumber": "654",
+  "name": "jhfkhdf nexageTestLastName",
+  "title": "mr",
+  "primaryContact": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ff8080810151510f18db1ad104a503e8",
+  "pid": 728,
+  "userName": "buyeradmin2",
+  "name": "buyer admin2 updated",
+  "email": "1qweqwe@eraw.ru",
+  "contactNumber": "7652313",
+  "title": "Mrs",
+  "role": "ROLE_ADMIN",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10003,
+      "type": "BUYER",
+      "name": "Buyer3"
+    }
+  ]
+}

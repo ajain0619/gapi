@@ -1,0 +1,17 @@
+{
+  "name": "AV2772",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

@@ -1,0 +1,21 @@
+---
+- name: Register environment
+  shell: cat /etc/environment
+  register: app_environment
+- debug: msg="{{ app_environment }}"
+- name: Include New Relic vars
+  include_vars:
+    file: newrelic.yml
+- name: Configure New Relic agent configuration
+  template:
+    dest: "{{ newrelic_agent_lib_path }}/{{ item }}"
+    mode: 0664
+    owner: root
+    src: "newrelic/{{ item }}.j2"
+  with_items:
+    - "newrelic.yml"
+- name: Stop service newrelic-infra, if started
+  ansible.builtin.service:
+    name: newrelic-infra
+    state: stopped
+  when: (app_environment.stdout == "dev" or app_environment.stdout == "qa" or app_environment.stdout == "perf" or app_environment.stdout == "beta")

@@ -1,0 +1,19 @@
+{
+  "name": "testBidderGroupLimit10218",
+  "version": 0,
+  "publisherPid": 10218,
+  "privilegeLevel": "PUBLISHER",
+  "isDefaultEligible": false,
+  "groups": [
+    {
+      "name": "testBidderGroupLimit10218",
+      "version": 0,
+      "publisherPid": 10218,
+      "privilegeLevel": "PUBLISHER",
+      "data": "1,2",
+      "itemType": "BIDDER",
+      "listType": "WHITELIST",
+      "isIndividualsGroup": false
+    }
+  ]
+}

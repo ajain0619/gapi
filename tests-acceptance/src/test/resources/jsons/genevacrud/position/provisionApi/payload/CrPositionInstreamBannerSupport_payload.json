@@ -1,0 +1,11 @@
+{
+  "placementCategory": "INSTREAM_VIDEO",
+  "memo": "lastDayMyLife",
+  "name": "lastdaymylife",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 1000,
+  "height": 990,
+  "mraidSupport": "NO",
+  "videoSupport": "BANNER",
+  "interstitial": false
+}

@@ -1,0 +1,134 @@
+#!/usr/bin/env ruby
+
+require "aws-sdk"
+require "json"
+require "net/http"
+
+AWS_META_DATA_ENDPOINT = "http://169.254.169.254/latest"
+WAIT_TIME = 5
+
+def get_region()
+  begin
+    metadata_endpoint =  "#{AWS_META_DATA_ENDPOINT}/dynamic/instance-identity/document"
+    document = JSON.parse(Net::HTTP.get(URI.parse(metadata_endpoint)))
+    return document["region"]
+  rescue Exception => msg
+    return "us-east-1"
+  end
+end
+
+def get_tag_value(instance_id, key, region)
+  client = Aws::EC2::Client.new(region: region)
+  resp = client.describe_instances({
+    instance_ids: [instance_id]
+  })
+  tags = resp["reservations"][0]["instances"][0]["tags"]
+  tags.each do |tag|
+    if tag["key"] == key then
+      return tag["value"]
+    end
+  end
+end
+
+def get_load_balancer_arn(client, stack_name, logical_resource_id)
+  begin
+    resp = client.describe_stack_resources({
+      stack_name: stack_name,
+      logical_resource_id: logical_resource_id
+    })
+    load_balancer_arn = resp.stack_resources[0].physical_resource_id
+    puts "Load balancer ARN: #{load_balancer_arn}"
+    return load_balancer_arn
+  rescue
+    puts "Failed to get load balancer ARN"
+    return nil
+  end
+end
+
+def get_lb_target_group_arn(client, lb_arn)
+  target_group_arn = nil
+  resp = client.describe_target_groups({})
+  tg_list = resp["target_groups"]
+  arn_found = false
+  tg_list.each do |tg|
+    lb_arn_list = tg.load_balancer_arns
+    lb_arn_list.each do |lb|
+      if lb == lb_arn
+        target_group_arn = tg.target_group_arn
+        arn_found = true
+        break
+      end
+    end
+    break if arn_found
+  end
+  return target_group_arn
+end
+
+
+def get_instance_id()
+  metadata_endpoint = "#{AWS_META_DATA_ENDPOINT}/meta-data"
+  instance_id = Net::HTTP.get(URI.parse("#{metadata_endpoint}/instance-id"))
+  puts "Instance id found from the local metadata: #{instance_id}"
+  return instance_id
+end
+
+def is_instance_healthy(client, target_group_arn, instance_id)
+  state = "unhealthy"
+  resp = client.describe_target_health({
+    target_group_arn: target_group_arn,
+  })
+  health_desc_list = resp.target_health_descriptions
+  found_health_description = false
+  health_desc_list.each do |desc|
+    if desc.target.id == instance_id
+      found_health_description = true
+      puts "Found target. Health: #{desc.target_health.state}, reason: #{desc.target_health.reason}"
+      return desc.target_health.state
+    end
+  end
+  if not found_health_description
+    state = "Instance not found"
+  end
+  return state
+end
+
+def check_instance_inservice(client, load_balancer_name, instance_id, region)
+  puts "Checking whether instance #{instance_id} is healthy"
+  state = "unhealthy"
+  loop do
+    state = is_instance_healthy(client, load_balancer_name, instance_id)
+    puts "Instance #{instance_id} state is #{state}"
+    break if state == "healthy"
+    sleep(WAIT_TIME) # 5 seconds
+  end
+  return state
+end
+
+def wait_for_target_group(elb_client, load_balancer_arn)
+  target_group_arn = nil
+  while (target_group_arn = get_lb_target_group_arn(elb_client, load_balancer_arn)) == nil
+    puts "Waiting for target group registration...."
+    sleep(WAIT_TIME)
+  end
+  puts "Target group ARN: #{target_group_arn}"
+  return target_group_arn
+end
+
+region = get_region()
+puts "Region: #{region}"
+elb_client = Aws::ElasticLoadBalancingV2::Client.new(region: region)
+instance_id = get_instance_id()
+puts "Instance ID: #{instance_id}"
+stack_name = get_tag_value(instance_id, "aws:cloudformation:stack-name", region)
+puts "Cloudformation stack name found by tag is:  #{stack_name}"
+
+cf_client = Aws::CloudFormation::Client.new(region: region)
+load_balancer_arn = get_load_balancer_arn(cf_client, stack_name, "ElasticLoadBalancerV2")
+if load_balancer_arn != nil
+  target_group_arn = wait_for_target_group(elb_client, load_balancer_arn)
+  check_instance_inservice(elb_client, target_group_arn, instance_id, region)
+end
+
+# Signal Cloudformation service
+puts "Sending signal to Cloudformation service"
+system("cfn-signal -e 0 --stack $(cat /etc/aws-stackname) --resource ServerGroup")

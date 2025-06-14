@@ -1,0 +1,50 @@
+{
+  "pid": 100331,
+  "version": 1,
+  "site": {
+    "pid": 10000202,
+    "hbEnabled": false,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "tracker3",
+  "memo": "banner placement",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "defaultRtbProfile": {
+    "pid": 10000071,
+    "version": 0,
+    "name": "eventLog",
+    "pubNetReserve": 2,
+    "libraries": [],
+    "bidderFilterAllowlist": false,
+    "useDefaultBlock": false,
+    "includeConsumerId": false,
+    "includeDomainReferences": false,
+    "includeConsumerProfile": false,
+    "screeningLevel": "AllowAll",
+    "useDefaultBidders": true,
+    "auctionType": "EXCHANGE_DEFAULT",
+    "lowReserve": 1,
+    "alterReserve": "ONLY_IF_HIGHER",
+    "defaultReserve": 5,
+    "blockedExternalDataProviderMap": {},
+    "bidderFilterMap": {},
+    "includeGeoData": true,
+    "defaultRtbProfileOwnerCompanyPid": 10225,
+    "siteTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "RealName"
+    }
+  },
+  "mraidAdvancedTracking": false
+}

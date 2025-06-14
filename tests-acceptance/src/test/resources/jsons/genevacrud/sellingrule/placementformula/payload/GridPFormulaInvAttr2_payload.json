@@ -1,0 +1,24 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "operator": "NOT_EQUALS",
+          "ruleData": "Minsk",
+          "attributePid": 4
+        }
+      ]
+    },
+    {
+      "formulaRules": [
+        {
+          "attribute": "PLACEMENT_NAME",
+          "operator": "CONTAINS",
+          "ruleData": "_formula"
+        }
+      ]
+    }
+  ]
+}

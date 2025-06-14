@@ -1,0 +1,13 @@
+{
+  "name": "Mobile_site",
+  "description": "8",
+  "domain": "q1",
+  "url": "https://mobile-site.com",
+  "coppaRestricted": false,
+  "platform": "OTHER",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "MOBILE_WEB"
+}

@@ -1,0 +1,13 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "PLACEMENT_TYPE",
+          "ruleData": "position"
+        }
+      ]
+    }
+  ]
+}

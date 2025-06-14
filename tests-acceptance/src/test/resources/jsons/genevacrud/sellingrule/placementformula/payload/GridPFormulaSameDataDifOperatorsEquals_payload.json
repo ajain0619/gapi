@@ -1,0 +1,19 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "SITE_NAME",
+          "operator": "EQUALS",
+          "ruleData": "DESKTOP new"
+        },
+        {
+          "attribute": "SITE_NAME",
+          "operator": "NOT_EQUALS",
+          "ruleData": "aleksis_site"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Updated_android_ios",
+  "description": "new descki",
+  "domain": "priosAl",
+  "appBundle": "8762",
+  "url": "https://itunes.apple.com/us/artist/jaguarxj8/id8762",
+  "coppaRestricted": true,
+  "platform": "IPAD",
+  "iabCategories": [
+    "IAB6",
+    "IAB7"
+  ],
+  "type": "APPLICATION"
+}

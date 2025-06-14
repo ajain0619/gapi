@@ -1,0 +1,21 @@
+{
+  "id": "8a858a4b013b3b1a2e001a3093090005",
+  "pid": 300,
+  "version": 4,
+  "name": "asdf",
+  "type": "BUYER",
+  "website": "asdf",
+  "adServingEnabled": false,
+  "restrictDrillDown": false,
+  "cpiTrackingEnabled": false,
+  "rtbEnabled": true,
+  "mediationEnabled": true,
+  "rtbRevenueReportEnabled": false,
+  "status": "ACTIVE",
+  "numberOfUsers": 1,
+  "adsourceNames": [],
+  "externalDataProviderNames": [],
+  "test": false,
+  "selfServeAllowed": false,
+  "thirdPartyFraudDetectionEnabled": false
+}

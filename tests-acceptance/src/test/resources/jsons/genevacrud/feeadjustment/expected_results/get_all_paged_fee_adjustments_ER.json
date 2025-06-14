@@ -1,0 +1,39 @@
+{
+  "content": [
+    {
+      "pid": 1,
+      "name": "golden-data-test-fee-adjustment-1",
+      "inclusive": true,
+      "demandFeeAdjustment": 0.1,
+      "version": 0,
+      "enabled": true,
+      "description": "A fee adjustment (#1 of 2) to test geneva-api.",
+      "entityName": "acme bidding, cpi buyer"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 1,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": false,
+  "totalPages": 2,
+  "totalElements": 2,
+  "first": true,
+  "size": 1,
+  "number": 0,
+  "numberOfElements": 1,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "empty": false
+}

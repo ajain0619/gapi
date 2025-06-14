@@ -1,0 +1,32 @@
+{
+  "id": "8a859e0f013c3cfdd09ffdee8c6c0005",
+  "pid": 716,
+  "version": 11,
+  "name": "sriniseller7",
+  "type": "SELLER",
+  "website": "www.sriniseller7.com",
+  "description": "This is a sriniseller7 company",
+  "contactUserPid": 521,
+  "adServingEnabled": false,
+  "restrictDrillDown": true,
+  "cpiTrackingEnabled": false,
+  "rtbEnabled": false,
+  "mediationEnabled": false,
+  "rtbRevenueReportEnabled": false,
+  "status": "ACTIVE",
+  "numberOfUsers": 0,
+  "numberOfRtbTags": 0,
+  "numberOfMediationSites": 0,
+  "test": false,
+  "selfServeAllowed": false,
+  "sellerAttributes": {
+    "rtbFee": 0,
+    "revenueShare": 0,
+    "effectiveDate": 1447427838138,
+    "defaultBiddersAllowList": true,
+    "adFeedbackOptOut": false,
+    "buyerTransparencyOptOut": false,
+    "humanOptOut": false
+  },
+  "thirdPartyFraudDetectionEnabled": false
+}

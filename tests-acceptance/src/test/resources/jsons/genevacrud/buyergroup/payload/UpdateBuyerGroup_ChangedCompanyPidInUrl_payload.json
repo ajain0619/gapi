@@ -1,0 +1,10 @@
+{
+  "pid": 4,
+  "name": "will not succeed",
+  "sfdcLineId": "testsfdcLineId2",
+  "sfdcIoId": "testsfdcIoId2",
+  "currency": "EUR",
+  "billingCountry": "DEU",
+  "billable": true,
+  "version": 0
+}

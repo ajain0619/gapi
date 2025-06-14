@@ -1,0 +1,109 @@
+{
+  "content": [
+    {
+      "dealsSelected": "ALL",
+      "discountDSPs": [
+        {
+          "companyName": "CreateCompany20150917105726538",
+          "companyPid": 10200,
+          "dspSeats": [
+            {
+              "name": "buyerseat1",
+              "pid": 1
+            },
+            {
+              "name": "buyerseat2",
+              "pid": 2
+            }
+          ]
+        }
+      ],
+      "discountDeals": [],
+      "discountDescription": "a test description",
+      "discountName": "golden-data-discount-1",
+      "discountPercent": 5.5,
+      "discountRevenueGroups": [],
+      "discountSellers": [
+        {
+          "name": "adserverSellerCompany1",
+          "pid": 27,
+          "type": {
+            "name": "Publisher and SSP Revenue Share",
+            "pid": 1
+          }
+        },
+        {
+          "name": "adserverSellerCompany2",
+          "pid": 40,
+          "type": {
+            "name": "Publisher and SSP Revenue Share",
+            "pid": 1
+          }
+        }
+      ],
+      "discountStatus": true,
+      "openAuctionEnabled": false,
+      "pid": 1,
+      "version": 1
+    },
+    {
+      "dealsSelected": "ALL",
+      "discountDSPs": [
+        {
+          "companyName": "Buyer2",
+          "companyPid": 10002,
+          "dspSeats": [
+            {
+              "name": "buyerseat4",
+              "pid": 4
+            }
+          ]
+        }
+      ],
+      "discountDeals": [],
+      "discountDescription": "a test description",
+      "discountName": "golden-data-discount-3",
+      "discountPercent": 16.7,
+      "discountRevenueGroups": [],
+      "discountSellers": [
+        {
+          "name": "adserverSellerCompany2",
+          "pid": 40,
+          "type": {
+            "name": "Publisher and SSP Revenue Share",
+            "pid": 1
+          }
+        }
+      ],
+      "discountStatus": true,
+      "openAuctionEnabled": false,
+      "pid": 3,
+      "version": 1
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 2,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 2,
+  "totalPages": 1
+}

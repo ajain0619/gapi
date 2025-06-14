@@ -1,0 +1,19 @@
+{
+  "name": "BidderDefaultEligibleGroup",
+  "version": 0,
+  "publisherPid": 105,
+  "privilegeLevel": "PUBLISHER",
+  "isDefaultEligible": true,
+  "groups": [
+    {
+      "name": "BidderDefaultEligibleGroup",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "data": "4,2",
+      "itemType": "BIDDER",
+      "listType": "WHITELIST",
+      "isIndividualsGroup": false
+    }
+  ]
+}

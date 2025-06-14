@@ -1,0 +1,56 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "SITE_NAME",
+          "operator": "EQUALS",
+          "ruleData": "me.com"
+        },
+        {
+          "attribute": "PLACEMENT_NAME",
+          "operator": "CONTAINS",
+          "ruleData": "1"
+        }
+      ],
+      "inventoryAttributes": [
+        [
+          {
+            "attribute": "INVENTORY_ATTRIBUTE_PID",
+            "operator": "EQUALS",
+            "ruleData": "1"
+          },
+          {
+            "attribute": "INVENTORY_ATTRIBUTE_VALUE",
+            "operator": "EQUALS",
+            "ruleData": "English"
+          }
+        ]
+      ]
+    },
+    {
+      "formulaRules": [
+        {
+          "attribute": "SITE_NAME",
+          "operator": "NOT_CONTAINS",
+          "ruleData": "sdf"
+        },
+        {
+          "attribute": "PLACEMENT_NAME",
+          "operator": "CONTAINS",
+          "ruleData": "2"
+        }
+      ]
+    },
+    {
+      "formulaRules": [
+        {
+          "attribute": "SITE_IAB_CATEGORY",
+          "operator": "CONTAINS",
+          "ruleData": "IAB1,IAB2"
+        }
+      ]
+    }
+  ]
+}

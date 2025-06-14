@@ -1,0 +1,13 @@
+{
+  "name": "a9",
+  "description": "kuskus",
+  "domain": "q1",
+  "appBundle": "311145",
+  "coppaRestricted": false,
+  "platform": "IPAD_IPHONE",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "APPLICATION"
+}

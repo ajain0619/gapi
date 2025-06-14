@@ -1,0 +1,10 @@
+{
+  "pid": 7,
+  "name": "BuyerSeatCucumber33",
+  "enabled": true,
+  "seat": "SeatThirtyThreeId",
+  "buyerGroupPid": 1,
+  "version": 0,
+  "companyPid": 10024,
+  "buyerTransparencyFeedEnabled": false
+}

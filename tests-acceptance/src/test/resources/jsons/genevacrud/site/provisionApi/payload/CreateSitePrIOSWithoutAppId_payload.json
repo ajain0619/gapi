@@ -1,0 +1,13 @@
+{
+  "name": "a5",
+  "description": "provision Api",
+  "domain": "q1",
+  "url": "https://itunes.apple.com/us/artist/r-e-m/id311145",
+  "coppaRestricted": false,
+  "platform": "IPAD_IPHONE",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "APPLICATION"
+}

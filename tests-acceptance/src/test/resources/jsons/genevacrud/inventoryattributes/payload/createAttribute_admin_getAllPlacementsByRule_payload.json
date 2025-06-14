@@ -1,0 +1,24 @@
+{
+  "name": "Video",
+  "description": "Video",
+  "createdBy": 810,
+  "status": "ACTIVE",
+  "attributeValues": [
+    {
+      "value": "SSP",
+      "enabled": true
+    }
+  ],
+  "hasGlobalVisibility": true,
+  "specificPublisherVisibility": [
+    {
+      "publisherPid": 810
+    }
+  ],
+  "assignedLevel": [
+    3
+  ],
+  "lastUpdated": "2020-07-08",
+  "internalOnly": true,
+  "required": false
+}

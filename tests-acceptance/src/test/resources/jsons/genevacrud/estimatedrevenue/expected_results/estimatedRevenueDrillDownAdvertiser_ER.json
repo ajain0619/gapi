@@ -1,0 +1,20 @@
+{
+  "pid": 92,
+  "directCampaign": [
+    {
+      "advertiserId": 8,
+      "advertiserName": "advertiser8",
+      "revenue": 0.03
+    },
+    {
+      "advertiserId": 14,
+      "advertiserName": "ASC1_Advertiser",
+      "revenue": 0.04
+    },
+    {
+      "advertiserId": 8,
+      "advertiserName": "advertiser8",
+      "revenue": 0
+    }
+  ]
+}

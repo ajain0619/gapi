@@ -1,0 +1,11 @@
+{
+  "placementCategory": "MEDIUM_RECTANGLE",
+  "memo": "ciaccone",
+  "name": "ciaccone",
+  "screenLocation": "FOOTER_VISIBLE",
+  "width": 15,
+  "height": 15,
+  "mraidSupport": "YES",
+  "videoSupport": "AND_OR",
+  "interstitial": false
+}

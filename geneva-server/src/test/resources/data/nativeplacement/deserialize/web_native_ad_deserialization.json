@@ -1,0 +1,89 @@
+{
+  "sitePid": 10000209,
+  "name": "native_web_placement 1",
+  "memo": "Native web Placement 1",
+  "mraidSupport": "YES",
+  "videoSupport": "NATIVE",
+  "screenLocation": "UNDEFINED",
+  "mraidAdvancedTracking": true,
+  "status": "ACTIVE",
+  "placementCategory": "NATIVE_V2",
+  "trafficType": "MEDIATION",
+  "nativePlacementExtension": {
+    "context": "SOCIAL",
+    "contextSubType": "USER_GENERATED",
+    "placementType": "IN_FEED",
+    "assetTemplate": "awesomeAssets",
+    "assetSets": [
+      {
+        "rule": "REQ_ALL",
+        "assets": [
+          {
+            "type": "TITLE",
+            "key": "title_41265559-e93d-4e1c-95ea-4392058fb975",
+            "title": {
+              "maxLength": 90
+            }
+          },
+          {
+            "type": "DATA",
+            "key": "data_1e28a2b6-14ad-4c15-957e-53bc3922f01d",
+            "data": {
+              "maxLength": 15,
+              "type": "SPONSORED"
+            }
+          },
+          {
+            "type": "IMAGE",
+            "key": "image_a27c87f4-6081-4f59-b9a2-ce2532eefa7f",
+            "image": {
+              "type": "ICON",
+              "width": null,
+              "widthMinimum": 50,
+              "height": null,
+              "heightMinimum": 50
+            }
+          },
+          {
+            "type": "IMAGE",
+            "key": "image_ba69335a-fa47-4684-836f-4b9686700d85",
+            "image": {
+              "type": "MAIN",
+              "width": null,
+              "widthMinimum": 1200,
+              "height": null,
+              "heightMinimum": 627
+            }
+          },
+          {
+            "type": "VIDEO",
+            "key": "video_f177e60b-3cf5-4fd7-9397-928b0fef1119",
+            "video": {
+              "minDuration": 5,
+              "maxDuration": 30,
+              "protocols": [
+                "VAST_3_0_WRAPPER",
+                "VAST_3_0"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule": "REQ_NONE",
+        "assets": [
+          {
+            "type": "DATA",
+            "key": "data_33fe8746-00a3-4dcb-9426-c101948259a6",
+            "data": {
+              "maxLength": 12,
+              "type": "CTA_TEXT"
+            }
+          }
+        ]
+      }
+    ],
+    "renderingTemplate": "%3Cdiv%20class%3D%22top-story__wrapper%20gel-layout__item%20hp-bp-m-one-third%20top-story--small-image%20hp-ts--other%22%20style%3D%22position%3A%20relative%3B%22%3E%3Ca%20href%3D%22%7Bclick_url%7D%22%20class%3D%22top-story%22%20target%3D%22_blank%22%3E%3Cdiv%20class%3D%22top-story__image-wrapper%22%3E%3Cdiv%20class%3D%22top-story__image%22%20style%3D%22background%3A%20url(%7Bimage%7D)%20center%20center%20%2F%20contain%20no-repeat%20rgb(0%2C%200%2C%200)%3B%22%20data-gemini-imgtype%3D%22default%22%3E%3C%2Fdiv%3E%3Cnoscript%20style%3D%22opacity%3A%200%3B%22%3E%20%3C%2Fnoscript%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22top-story__content%22%3E%3Ch3%20class%3D%22gel-pica-bold%20top-story__title-container%22%3E%3Cspan%20class%3D%22top-story__title%22%20style%3D%22text-overflow%3A%20ellipsis%3B%22%3E%7Btitle%7D%3C%2Fspan%3E%3C%2Fh3%3E%3C%2Fdiv%3E%3Cspan%20class%3D%22gel-minion%20top-story__attr-container%22%20aria-labelledby%3D%22hp-ts-1-collection-latest-sport%22%20style%3D%22opacity%3A%200%3B%22%3E%3Cspan%20class%3D%22%22%20style%3D%22opacity%3A%200%3B%22%3E%3Cspan%20class%3D%22hp-accessibility-label%22%20style%3D%22opacity%3A%200%3B%22%3E%20%3C%2Fspan%3E%3Cspan%20class%3D%22top-story__attr%22%20style%3D%22opacity%3A%200%3B%22%3E%20%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fa%3E%3Cdiv%20style%3D%22right%3A%200px%3B%20top%3A%200px%3B%20position%3A%20absolute%3B%20z-index%3A%202%3B%20font-size%3A%2011px%3B%20color%3A%20%23555%3B%20margin%3A%200%20!important%3B%20padding%3A%200%20!important%3B%20border%3A%200%20!important%3B%22%3E%7Bgemini%7D%3C%2Fdiv%3E%3Cdiv%20style%3D%22right%3A%200px%3B%20bottom%3A%200px%3B%20position%3A%20absolute%3B%20font-size%3A%2011px%3B%20color%3A%20%23777%3B%22%3E%3Cspan%20class%3D%22sponsor-text%22%3ESponsored%3C%2Fspan%3E%20%3Cb%3E%7Bsponsor%7D%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E",
+    "adXPath": "/html/body/div[5]/div[4]"
+  }
+}

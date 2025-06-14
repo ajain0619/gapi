@@ -1,0 +1,19 @@
+{
+  "name": "AV116",
+  "buyer": {
+    "pid": "7069"
+  },
+  "primaryId": "pid3",
+  "primaryName": "pname3",
+  "secondaryId": "sid3",
+  "secondaryName": "sname3",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901",
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

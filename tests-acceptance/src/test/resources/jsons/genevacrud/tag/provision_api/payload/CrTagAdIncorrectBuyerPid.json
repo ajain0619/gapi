@@ -1,0 +1,19 @@
+{
+  "name": "AV79",
+  "buyer": {
+    "pid": "2160"
+  },
+  "primaryId": "apikey",
+  "primaryName": "pname",
+  "secondaryId": "sid",
+  "secondaryName": "sname",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "Username",
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

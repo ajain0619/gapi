@@ -1,0 +1,14 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "PUBLISHER_NAME",
+          "operator": "EQUALS",
+          "ruleData": "transparency_enabled,transparency_disabled"
+        }
+      ]
+    }
+  ]
+}

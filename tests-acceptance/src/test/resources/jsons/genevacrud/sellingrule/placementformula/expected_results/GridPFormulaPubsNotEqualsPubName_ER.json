@@ -1,0 +1,129 @@
+{
+  "content": [
+    {
+      "companyId": 248,
+      "companyName": "MedFTCompany",
+      "sitePid": 612,
+      "siteName": "S7A",
+      "siteType": "MOBILE_WEB",
+      "placementId": 7762,
+      "placementName": "footer",
+      "placementType": "BANNER"
+    },
+    {
+      "companyId": 248,
+      "companyName": "MedFTCompany",
+      "sitePid": 612,
+      "siteName": "S7A",
+      "siteType": "MOBILE_WEB",
+      "placementId": 7775,
+      "placementName": "body",
+      "placementType": "BANNER"
+    },
+    {
+      "companyId": 248,
+      "companyName": "MedFTCompany",
+      "sitePid": 612,
+      "siteName": "S7A",
+      "siteType": "MOBILE_WEB",
+      "placementId": 7788,
+      "placementName": "header",
+      "placementType": "BANNER"
+    },
+    {
+      "companyId": 248,
+      "companyName": "MedFTCompany",
+      "sitePid": 586,
+      "siteName": "S6D",
+      "siteType": "MOBILE_WEB",
+      "placementId": 7801,
+      "placementName": "header",
+      "placementType": "BANNER"
+    },
+    {
+      "companyId": 248,
+      "companyName": "MedFTCompany",
+      "sitePid": 586,
+      "siteName": "S6D",
+      "siteType": "MOBILE_WEB",
+      "placementId": 7814,
+      "placementName": "body",
+      "placementType": "BANNER"
+    },
+    {
+      "companyId": 248,
+      "companyName": "MedFTCompany",
+      "sitePid": 586,
+      "siteName": "S6D",
+      "siteType": "MOBILE_WEB",
+      "placementId": 7827,
+      "placementName": "footer",
+      "placementType": "BANNER"
+    },
+    {
+      "companyId": 248,
+      "companyName": "MedFTCompany",
+      "sitePid": 183,
+      "siteName": "S3F",
+      "siteType": "MOBILE_WEB",
+      "placementId": 8022,
+      "placementName": "footer",
+      "placementType": "BANNER"
+    },
+    {
+      "companyId": 248,
+      "companyName": "MedFTCompany",
+      "sitePid": 183,
+      "siteName": "S3F",
+      "siteType": "MOBILE_WEB",
+      "placementId": 8035,
+      "placementName": "body",
+      "placementType": "BANNER"
+    },
+    {
+      "companyId": 248,
+      "companyName": "MedFTCompany",
+      "sitePid": 183,
+      "siteName": "S3F",
+      "siteType": "MOBILE_WEB",
+      "placementId": 8048,
+      "placementName": "header",
+      "placementType": "BANNER"
+    },
+    {
+      "companyId": 248,
+      "companyName": "MedFTCompany",
+      "sitePid": 274,
+      "siteName": "S1C",
+      "siteType": "MOBILE_WEB",
+      "placementId": 8139,
+      "placementName": "header",
+      "placementType": "BANNER"
+    }
+  ],
+  "pageable": {
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "pageNumber": 0,
+  "pageSize": 10,
+  "offset": 0,
+  "unpaged": false,
+  "paged": true
+  },
+  "last": false,
+  "totalPages": 41,
+  "totalElements": 409,
+  "first": true,
+  "numberOfElements": 10,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "empty": false
+}

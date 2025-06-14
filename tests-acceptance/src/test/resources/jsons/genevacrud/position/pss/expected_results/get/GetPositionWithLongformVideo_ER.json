@@ -1,0 +1,29 @@
+{
+  "pid": 100316,
+  "version": 0,
+  "site":{
+    "pid":10000174
+  },
+  "screenLocation":"FULLSCREEN_VISIBLE",
+  "mraidSupport":"NO",
+  "placementCategory":"INSTREAM_VIDEO",
+  "interstitial": false,
+  "mraidAdvancedTracking":false,
+  "positionAliasName":"SmartYield_updateCases",
+  "videoSupport":"VIDEO",
+  "width":320,
+  "height":480,
+  "adSizeType":"STANDARD",
+  "memo":"smartYield_updateCases",
+  "name":"smartYield_updateCases",
+  "placementVideo": {
+    "pid": 100316,
+    "version": 1,
+    "linearity":"LINEAR",
+    "playerRequired":false,
+    "longform": true,
+    "streamType": "VOD",
+    "playerBrand": "test_player_updated_2",
+    "ssai": "ALL_CLIENT_SIDE"
+  }
+}

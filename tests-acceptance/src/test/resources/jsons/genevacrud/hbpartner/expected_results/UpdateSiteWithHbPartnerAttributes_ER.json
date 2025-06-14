@@ -1,0 +1,47 @@
+{
+  "pid": 10000208,
+  "dcn": "ff808081015e5e616d087077d07e0ay1",
+  "description": "hb_partner_site",
+  "domain": "http://hb_partner_site.com",
+  "name": "hb_partner_site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "https://hb_partner_site.com",
+  "coppaRestricted": true,
+  "iabCategories": [
+    "IAB5"
+  ],
+  "mode": "TEST",
+  "hbEnabled": true,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.2,
+    "rtbFee": 0.1
+  },
+  "hbPartnerAttributes": [
+    {
+      "externalId": "mopub_pub_id_1",
+      "hbPartnerPid": 2
+    }
+  ]
+}

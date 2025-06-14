@@ -1,0 +1,70 @@
+<system>
+  log_level {{ fluentd_log_level }}
+</system>
+
+<source>
+  @type tail
+  path "{{ geneva_server_logs }}/{{ geneva_server_logs_filename }}"
+  pos_file "/var/log/td-agent/{{ fluentd_app_name }}-{{ geneva_server_logs_filename }}.pos"
+  tag {{ fluentd_app_name }}
+  <parse>
+   @type json
+  </parse>
+</source>
+
+<filter {{ fluentd_app_name }}.**>
+  @type record_modifier
+  <record>
+    inst_id "#{ENV['INSTANCE_ID']}"
+    ami_id "#{ENV['AMI_ID']}"
+    environment "#{ENV['ENVIRONMENT']}"
+    platform "{{ fluentd_platform_name }}"
+    application "{{ fluentd_app_name }}"
+    logtype "{{ geneva_server_logs_filename }}"
+  </record>
+</filter>
+
+<match {{ fluentd_app_name }}.**>
+  @type copy
+  <store>
+    @type cloudwatch_logs
+    region "#{ENV['AWS_REGION']}"
+    log_group_name "{{ fluentd_platform_name }}/{{ fluentd_app_name }}"
+    log_stream_name "#{ENV['AWS_STACKNAME']}"
+    auto_create_stream true
+    put_log_events_retry_wait 300
+    put_log_events_retry_limit 10
+    put_log_events_disable_retry_limit false
+  </store>
+  <store>
+    @type s3
+    <instance_profile_credentials>
+    </instance_profile_credentials>
+    s3_bucket "{{ fluentd_s3_consolidatedlogging_bucket }}"
+    s3_region "#{ENV['AWS_REGION']}"
+    store_as "{{ fluentd_s3_store_as }}"
+    acl "{{ fluentd_s3_acl }}"
+    use_server_side_encryption "{{ fluentd_s3_encryption }}"
+    time_slice_format "{{ fluentd_s3_time_slice_format }}"
+    path "incoming/{{ fluentd_platform_name }}/#{ENV['AWS_STACKNAME']}/#{ENV['AWS_REGION']}/%{time_slice}/"
+    s3_object_key_format "%{path}#{ENV['AWS_STACKNAME']}-%{time_slice}_%{hms_slice}.%{file_extension}"
+    check_bucket {{ fluentd_s3_check_bucket | to_json }}
+    check_object {{ fluentd_s3_check_object | to_json }}
+    <format>
+      @type json
+    </format>
+    <buffer tag,time>
+      @type file
+      path /var/log/td-agent/s3
+      timekey {{ fluentd_s3_buffer_timekey }}
+      timekey_wait {{ fluentd_s3_buffer_timekey_wait }}
+      chunk_limit_size {{ fluentd_s3_buffer_chunk_limit_size }}
+    </buffer>
+    <inject>
+      time_key "@timestamp"
+      time_type string
+      time_format {{ fluentd_s3_logstash_timestamp_format }}
+      localtime {{ fluentd_s3_logstash_timestamp_localtime | to_json }}
+    </inject>
+  </store>
+</match>

@@ -1,0 +1,19 @@
+{
+  "id": "ff8080810151510f18db1ad10b9803ee",
+  "pid": 734,
+  "userName": "buyeruser3",
+  "name": "buyer user3 udpated",
+  "email": "1jhdfjgsd2@jdf.ru",
+  "contactNumber": "213213",
+  "title": "Mr",
+  "role": "ROLE_USER",
+  "enabled": true,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 274,
+      "type": "BUYER",
+      "name": "cpi buyer"
+    }
+  ]
+}

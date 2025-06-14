@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 10063,
+      "type": "SELLER"
+    }
+  ],
+  "role": "ROLE_USER",
+  "userName": "selleruser1_V1",
+  "email": "01dfgfsd@ew.ri",
+  "contactNumber": "hds",
+  "name": "hds nexageTestLastName",
+  "title": "hs",
+  "primaryContact": false,
+  "oneCentralUserName": "selleruser1_V1",
+  "firstName": "hds",
+  "lastName": "nexageTestLastName"
+}

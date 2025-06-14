@@ -1,0 +1,76 @@
+{
+  "pid": 10000208,
+  "version": 4,
+  "publisher": {
+    "pid": 10231,
+    "adServingEnabled": false,
+    "restrictDrillDown": false,
+    "test": false,
+    "selfServeAllowed": false,
+    "numberOfUsers": 0
+  },
+  "dcn": "ff8080810163633bdc883bee7d9b0006",
+  "description": "site for deb_rtbprofile_publisher1",
+  "domain": "def.com",
+  "name": "site_for_deb_rtbprofile_publisher1",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "http://def.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB7"
+  ],
+  "positions": [
+    {
+      "pid": 100329,
+      "name": "position_for_rtbprofile_pub1"
+    }
+  ],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "defaultRtbProfile": {
+    "pid": 10000076,
+    "version": 1,
+    "id": "ff80808101636365d80769f8e48e04b4",
+    "pubNetReserve": 2,
+    "libraries": [],
+    "bidderFilterAllowlist": false,
+    "useDefaultBlock": true,
+    "includeConsumerId": true,
+    "includeDomainReferences": true,
+    "includeConsumerProfile": true,
+    "screeningLevel": "AllowAll",
+    "useDefaultBidders": false,
+    "auctionType": "EXCHANGE_DEFAULT",
+    "lowReserve": 0,
+    "alterReserve": "ONLY_IF_HIGHER",
+    "siteTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "RealName"
+    }
+  }
+}

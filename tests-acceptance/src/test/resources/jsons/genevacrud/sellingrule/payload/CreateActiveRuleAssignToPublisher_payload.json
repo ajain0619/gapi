@@ -1,0 +1,30 @@
+{
+  "name": "Active rule for publisher",
+  "description": "test_active_description",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "5"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MATCHED_USER_ID",
+      "data": "demandData1"
+    }
+  ],
+  "assignments": {
+    "publishers": [
+      {
+        "pid": 10225,
+        "name": "transparency_enabled"
+      }
+    ],
+    "sites": []
+  }
+}

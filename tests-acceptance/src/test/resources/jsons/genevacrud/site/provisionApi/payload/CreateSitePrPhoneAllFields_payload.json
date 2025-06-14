@@ -1,0 +1,14 @@
+{
+  "name": "PHONE_site",
+  "description": "8",
+  "domain": "q1",
+  "appBundle": "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890",
+  "url": "play.google.com/store/movies/details/King_Arthur_Legend_of_the_Sword?id=1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890",
+  "coppaRestricted": false,
+  "platform": "ANDROID",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "APPLICATION"
+}

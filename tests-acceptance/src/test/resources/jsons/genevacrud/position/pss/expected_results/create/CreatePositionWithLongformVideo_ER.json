@@ -1,0 +1,25 @@
+{
+  "site":{
+    "pid":10000192
+  },
+  "screenLocation":"FULLSCREEN_VISIBLE",
+  "mraidSupport":"NO",
+  "placementCategory":"INSTREAM_VIDEO",
+  "interstitial": false,
+  "mraidAdvancedTracking":true,
+  "positionAliasName":"CreatePlacementWithLongformVideoAlias",
+  "videoSupport":"VIDEO",
+  "width":1400,
+  "height":400,
+  "adSizeType":"STANDARD",
+  "memo":"CreatePlacementWithLongformVideoAlias",
+  "name":"createplacementwithlongformvideo",
+  "impressionTypeHandling":"BASED_ON_PLACEMENT_CONFIG",
+  "placementVideo": {
+    "linearity":"LINEAR",
+    "playerRequired":false,
+    "longform":true,
+    "streamType":"VOD",
+    "playerBrand":"test_player~2",
+    "ssai":"ALL_SERVER_SIDE"  }
+}

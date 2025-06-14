@@ -1,0 +1,15 @@
+{
+  "pid": 1,
+  "version": 2,
+  "tiers": [],
+  "name": "test1",
+  "memo": "test1",
+  "mraidSupport": "YES",
+  "videoSupport": "NATIVE",
+  "screenLocation": "FOOTER_VISIBLE",
+  "mraidAdvancedTracking": false,
+  "positionAliasName": "test1",
+  "status": "ACTIVE",
+  "placementCategory": "NATIVE_V2",
+  "nativeConfig": "{\"context\":\"SOCIAL\",\"contextSubType\":\"USER_GENERATED\",\"placementType\":\"IN_FEED\",\"assetTemplate\":\"awesomeAssets\",\"assetSets\":[{\"rule\":\"REQ_ALL\",\"assets\":[{\"type\":\"TITLE\",\"key\":\"myTitle\",\"title\":{\"maxLength\":75}}]}]}"
+}

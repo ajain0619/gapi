@@ -1,0 +1,28 @@
+[
+  {
+    "sellerScreenName": "big billboard",
+    "network": "network",
+    "venueTypeId": 10000000,
+    "locationType": "Indoor",
+    "latitude": 1.234,
+    "longitude": 1.234,
+    "country": "US",
+    "state": "NJ",
+    "city": "Newark",
+    "zip": "08515",
+    "address": "123 Fake Street",
+    "bearing": "N",
+    "adTypes": ["Image"],
+    "minAdDuration": 1,
+    "resolution": "1080x1024",
+    "acceptedAdSizes": ["1080x1024"],
+    "aspectRatio": "4:3",
+    "avgDwellTime": 12,
+    "avgImpressionMultiplier": 500,
+    "avgWeeklyImpressions": 5000,
+    "avgDailyImpressions": 34,
+    "avgMonthlyImpressions": 12,
+    "avgCpm": 12,
+    "maxAdDuration": 20
+  }
+]

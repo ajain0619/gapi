@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+  select
+      /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    sum(f.ads_delivered) as adDelivered, sum(f.price_sum) as grossAcquisitionCost, sum(f.revenue) as netAcquisitionCost
+  FROM
+      fact_exchange_wins f
+  WHERE
+      f.start >= :start
+      AND f.start < :stop
+      #if ($request.buyer) AND f.bidder_id in (select id from dim_bidder where company_id=:buyer) #end
+  ]]>
+  </entry>
+  <entry key="dim=site">
+    <![CDATA[
+  select
+      /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    sum(f.ads_delivered) as adDelivered, sum(f.price_sum) as grossAcquisitionCost, sum(f.revenue) as netAcquisitionCost,
+        t.external_name as site, f.site_id as siteId
+        #if ($request.reportUser.isNexageUser()), max(d.name) as siteInternalName #end
+  FROM
+      fact_exchange_wins f
+      INNER JOIN dim_site d ON d.id = f.site_id
+      INNER JOIN dim_tag t ON t.id = f.tag_id and t.site_id = f.site_id
+  WHERE
+      f.start >= :start
+      AND f.start < :stop
+
+      #if ($request.buyer) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+      #if ($request.bidder) AND f.bidder_id = :bidder #end
+      #if ($request.seat) AND f.seat_id = :seat #end
+      #if ($request.deal) AND f.deal_id = :deal #end
+      #if ($request.dealAsNullParam) AND f.deal_id IS NULL #end
+  GROUP BY f.site_id, t.external_name
+  ]]>
+  </entry>
+  <entry key="dim=buyer">
+    <![CDATA[
+  select
+      /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    sum(f.ads_delivered) as adDelivered, sum(f.price_sum) as grossAcquisitionCost, sum(f.revenue) as netAcquisitionCost,
+    dc.id as buyerId, max(dc.name) as buyer
+  FROM
+      fact_exchange_wins f
+      INNER JOIN dim_bidder db ON db.id = f.bidder_id
+      INNER JOIN dim_company dc ON dc.id = db.company_id
+  WHERE
+      f.start >= :start
+      AND f.start < :stop
+
+      #if ($request.bidder) AND f.bidder_id = :bidder #end
+      #if ($request.seat) AND f.seat_id = :seat #end
+      #if ($request.deal) AND f.deal_id = :deal #end
+      #if ($request.dealAsNullParam) AND f.deal_id IS NULL #end
+      #if ($request.site) AND f.site_id = :site #end
+  GROUP by dc.id
+  ]]>
+  </entry>
+  <entry key="dim=bidder">
+    <![CDATA[
+  select
+      /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    sum(f.ads_delivered) as adDelivered, sum(f.price_sum) as grossAcquisitionCost, sum(f.revenue) as netAcquisitionCost,
+    f.bidder_id as bidderId, max(d.name) as bidder
+  FROM
+      fact_exchange_wins f
+      INNER JOIN dim_bidder d ON d.id = f.bidder_id
+  WHERE
+      f.start >= :start
+      AND f.start < :stop
+
+      #if ($request.buyer) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+      #if ($request.seat) AND f.seat_id = :seat #end
+      #if ($request.deal) AND f.deal_id = :deal #end
+      #if ($request.dealAsNullParam) AND f.deal_id IS NULL #end
+      #if ($request.site) AND f.site_id = :site #end
+  GROUP BY f.bidder_id
+  ]]>
+  </entry>
+  <entry key="dim=seat">
+    <![CDATA[
+  select
+      /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    sum(f.ads_delivered) as adDelivered, sum(f.price_sum) as grossAcquisitionCost, sum(f.revenue) as netAcquisitionCost,
+    f.seat_id as seat
+  FROM
+      fact_exchange_wins f
+  WHERE
+      f.start >= :start
+      AND f.start < :stop
+
+      #if ($request.buyer) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+      #if ($request.bidder) AND f.bidder_id = :bidder #end
+      #if ($request.deal) AND f.deal_id = :deal #end
+      #if ($request.dealAsNullParam) AND f.deal_id IS NULL #end
+      #if ($request.site) AND f.site_id = :site #end
+  GROUP BY f.seat_id
+  ]]>
+  </entry>
+  <entry key="dim=deal">
+    <![CDATA[
+  select
+      /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    sum(f.ads_delivered) as adDelivered, sum(f.price_sum) as grossAcquisitionCost, sum(f.revenue) as netAcquisitionCost,
+    f.deal_id as dealID
+  FROM
+      fact_exchange_wins f
+  WHERE
+      f.start >= :start
+      AND f.start < :stop
+
+      #if ($request.buyer) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+      #if ($request.bidder) AND f.bidder_id = :bidder #end
+      #if ($request.seat) AND f.seat_id = :seat #end
+      #if ($request.site) AND f.site_id = :site #end
+  GROUP BY f.deal_id
+  ]]>
+  </entry>
+  <entry key="dim=month">
+    <![CDATA[
+  select
+      /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    sum(f.ads_delivered) as adDelivered, sum(f.price_sum) as grossAcquisitionCost, sum(f.revenue) as netAcquisitionCost,
+    date_trunc('month', f.start) as interval
+  FROM
+      fact_exchange_wins f
+  WHERE
+      f.start >= :start
+      AND f.start < :stop
+
+      #if ($request.buyer) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+      #if ($request.bidder) AND f.bidder_id = :bidder #end
+      #if ($request.seat) AND f.seat_id = :seat #end
+      #if ($request.deal) AND f.deal_id = :deal #end
+      #if ($request.dealAsNullParam) AND f.deal_id IS NULL #end
+      #if ($request.site) AND f.site_id = :site #end
+  GROUP BY date_trunc('month', f.start)
+  ]]>
+  </entry>
+  <entry key="dim=week">
+    <![CDATA[
+  select
+      /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    sum(f.ads_delivered) as adDelivered, sum(f.price_sum) as grossAcquisitionCost, sum(f.revenue) as netAcquisitionCost,
+    greatest(timestamp_trunc(f.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) AS interval
+  FROM
+      fact_exchange_wins f
+  WHERE
+      f.start >= :start
+      AND f.start < :stop
+
+      #if ($request.buyer) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+      #if ($request.bidder) AND f.bidder_id = :bidder #end
+      #if ($request.seat) AND f.seat_id = :seat #end
+      #if ($request.deal) AND f.deal_id = :deal #end
+      #if ($request.dealAsNullParam) AND f.deal_id IS NULL #end
+      #if ($request.site) AND f.site_id = :site #end
+  GROUP BY timestamp_trunc(f.start, 'dy')
+  ]]>
+  </entry>
+  <entry key="dim=day">
+    <![CDATA[
+  select
+      /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    sum(f.ads_delivered) as adDelivered, sum(f.price_sum) as grossAcquisitionCost, sum(f.revenue) as netAcquisitionCost,
+    date_trunc('day', f.start) as interval
+  FROM
+      fact_exchange_wins f
+  WHERE
+      f.start >= :start
+      AND f.start < :stop
+
+      #if ($request.buyer) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+      #if ($request.bidder) AND f.bidder_id = :bidder #end
+      #if ($request.seat) AND f.seat_id = :seat #end
+      #if ($request.deal) AND f.deal_id = :deal #end
+      #if ($request.dealAsNullParam) AND f.deal_id IS NULL #end
+      #if ($request.site) AND f.site_id = :site #end
+  GROUP BY date_trunc('day', f.start)
+  ]]>
+  </entry>
+  <entry key="dim=hour">
+    <![CDATA[
+  select
+      /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    sum(f.ads_delivered) as adDelivered, sum(f.price_sum) as grossAcquisitionCost, sum(f.revenue) as netAcquisitionCost,
+    date_part('hour', f.start) as interval
+  FROM
+      fact_exchange_wins f
+  WHERE
+      f.start >= :start
+      AND f.start < :stop
+
+      #if ($request.buyer) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+      #if ($request.bidder) AND f.bidder_id = :bidder #end
+      #if ($request.seat) AND f.seat_id = :seat #end
+      #if ($request.deal) AND f.deal_id = :deal #end
+      #if ($request.dealAsNullParam) AND f.deal_id IS NULL #end
+      #if ($request.site) AND f.site_id = :site #end
+  GROUP BY date_part('hour', f.start)
+  ]]>
+  </entry>
+</properties>

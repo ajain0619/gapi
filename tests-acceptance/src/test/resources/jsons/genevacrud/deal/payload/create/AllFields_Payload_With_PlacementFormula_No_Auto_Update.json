@@ -1,0 +1,149 @@
+{
+  "description": "allFieldsTest",
+  "dealId": "14466299473087827",
+  "status": "Inactive",
+  "start": "1446613200000",
+  "stop": "1446958799000",
+  "profiles": [
+    {
+      "rtbProfilePid": 10000035,
+      "description": "DealTagTest-PSS-Native-WhitlistManytargeting",
+      "auctionType": 0,
+      "defaultReserve": 1,
+      "pubAlias": 10201,
+      "siteAlias": 10000176,
+      "pubNameAlias": "CRUDPositionTest",
+      "siteNameAlias": "CRUDPosition_Site3",
+      "siteType": "W",
+      "isRealName": "true",
+      "siteId": 10000176,
+      "siteName": "CRUDPosition_Site3",
+      "categories": [
+        "IAB4"
+      ],
+      "countries": [
+        {
+          "pid": 778,
+          "target": "CAN",
+          "targetType": "Keyword",
+          "ruleType": "Country"
+        }
+      ],
+      "platform": "OTHER",
+      "pubId": 10201,
+      "pubName": "CRUDPositionTest",
+      "tagPid": 7363,
+      "videoSupport": "NATIVE",
+      "placementType": "NATIVE_V2",
+      "placementName": "DealTagTest-Native"
+    },
+    {
+      "rtbProfilePid": 10000033,
+      "description": "DealTagTest-PSS-MedRec",
+      "auctionType": 0,
+      "defaultReserve": 2,
+      "pubAlias": 10201,
+      "siteAlias": 10000176,
+      "pubNameAlias": "CRUDPositionTest",
+      "siteNameAlias": "CRUDPosition_Site3",
+      "siteType": "W",
+      "isRealName": "true",
+      "siteId": 10000176,
+      "siteName": "CRUDPosition_Site3",
+      "categories": [
+        "IAB4"
+      ],
+      "countries": [
+      ],
+      "platform": "OTHER",
+      "pubId": 10201,
+      "pubName": "CRUDPositionTest",
+      "tagPid": 7361,
+      "height": 250,
+      "width": 300,
+      "videoSupport": "BANNER",
+      "placementType": "MEDIUM_RECTANGLE",
+      "placementName": "DealTagTest-MedRec"
+    }
+  ],
+  "bidders": [
+    {
+      "bidderPid": 4,
+      "wseat": [
+      ],
+      "adomains": [
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rulePid": 1
+    }
+  ],
+  "placementFormula": {
+    "groupedBy": "OR",
+    "formulaGroups": [
+      {
+        "formulaRules": [
+          {
+            "attribute": "PUBLISHER_NAME",
+            "operator": "CONTAINS",
+            "ruleData": "profile"
+          },
+          {
+            "attribute": "PLACEMENT_NAME",
+            "operator": "CONTAINS",
+            "ruleData": "RTB"
+          },
+          {
+            "attribute": "PLACEMENT_TYPE",
+            "operator": "EQUALS",
+            "ruleData": "BANNER"
+          },
+          {
+            "attribute": "SITE_NAME",
+            "operator": "CONTAINS",
+            "ruleData": "RTB"
+          },
+          {
+            "attribute": "SITE_TYPE",
+            "operator": "EQUALS",
+            "ruleData": "APPLICATION"
+          }
+        ]
+      },
+      {
+        "formulaRules": [
+          {
+            "attribute": "PUBLISHER_NAME",
+            "operator": "CONTAINS",
+            "ruleData": "RTB"
+          },
+          {
+            "attribute": "PLACEMENT_NAME",
+            "operator": "CONTAINS",
+            "ruleData": "position1"
+          },
+          {
+            "attribute": "PLACEMENT_TYPE",
+            "operator": "EQUALS",
+            "ruleData": "BANNER"
+          },
+          {
+            "attribute": "SITE_NAME",
+            "operator": "CONTAINS",
+            "ruleData": "site1"
+          },
+          {
+            "attribute": "SITE_TYPE",
+            "operator": "NOT_EQUALS",
+            "ruleData": "MOBILE_WEB"
+          }
+        ]
+      }
+    ]
+  },
+  "auctionType": "Fixed",
+  "visibility": true,
+  "floor": "200"
+}

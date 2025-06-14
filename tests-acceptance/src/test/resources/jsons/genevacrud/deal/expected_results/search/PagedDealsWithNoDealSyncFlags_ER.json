@@ -1,0 +1,84 @@
+{
+  "content": [
+    {
+      "pid": 128888801,
+      "dealId": "1000088801",
+      "description": "Deal with failed deal sync for Xandr but active for other companies",
+      "currency": "USD",
+      "status": "Inactive",
+      "placementFormulaStatus": "DONE",
+      "visibility": false,
+      "updatedOn": 1664486048000,
+      "version": 1,
+      "companySync": false,
+      "createdBy": 1,
+      "dealCategory": 1
+    },
+    {
+      "pid": 128888802,
+      "dealId": "1000088802",
+      "description": "Deal with active deal syncs for Xandr and DV360",
+      "currency": "USD",
+      "status": "Inactive",
+      "placementFormulaStatus": "DONE",
+      "visibility": false,
+      "updatedOn": 1664486048000,
+      "version": 1,
+      "companySync": true,
+      "createdBy": 1,
+      "dealCategory": 0
+    },
+    {
+      "pid": 128888803,
+      "dealId": "1000088803",
+      "description": "Deal with expired DV360 sync status but active for other companies",
+      "currency": "USD",
+      "status": "Inactive",
+      "placementFormulaStatus": "DONE",
+      "visibility": false,
+      "updatedOn": 1664572448000,
+      "version": 1,
+      "companySync": false,
+      "createdBy": 1,
+      "dealCategory": 1
+    },
+    {
+      "pid": 128888804,
+      "dealId": "1000088804",
+      "description": "Deal with no deal syncs",
+      "currency": "USD",
+      "status": "Inactive",
+      "placementFormulaStatus": "DONE",
+      "visibility": false,
+      "updatedOn": 1664572448000,
+      "version": 1,
+      "createdBy": 1,
+      "dealCategory": 1
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": true,
+      "sorted": false,
+      "unsorted": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalElements": 4,
+  "totalPages": 1,
+  "last": true,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  },
+  "numberOfElements": 4,
+  "first": true,
+  "empty": false
+}

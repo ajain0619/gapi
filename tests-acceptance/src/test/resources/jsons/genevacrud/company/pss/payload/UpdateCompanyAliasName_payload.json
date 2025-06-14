@@ -1,0 +1,43 @@
+{
+  "pid": 10228,
+  "version": 1,
+  "name": "traffic_type",
+  "id": "ff8080810161610163d40558bef00005",
+  "attributes": {
+    "version": 0,
+    "defaultBlock": [],
+    "individualsDefaultBlock": [],
+    "defaultBidderGroups": [],
+    "individualsDefaultBidderGroups": [],
+    "defaultBiddersAllowList": true,
+    "defaultTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "nameAlias": "AliasName"
+    },
+    "defaultTransparencyMgmtEnablement": "DISABLED",
+    "effectiveDate": "1524394271000",
+    "adFeedbackOptOut": false,
+    "buyerTransparencyOptOut": false,
+    "humanOptOut": false
+  },
+  "eligibleBidderGroups": [],
+  "adServingEnabled": false,
+  "restrictDrillDown": false,
+  "cpiTrackingEnabled": false,
+  "rtbEnabled": false,
+  "mediationEnabled": false,
+  "rtbRevenueReportEnabled": true,
+  "status": "ACTIVE",
+  "website": "traffic_type.com",
+  "description": "",
+  "type": "SELLER",
+  "test": false,
+  "selfServeAllowed": true,
+  "payoutEnabled": true,
+  "numberOfRtbTags": 0,
+  "numberOfMediationSites": 0,
+  "numberOfUsers": 0,
+  "hasHeaderBiddingSites": false,
+  "currency": "USD",
+  "thirdPartyFraudDetectionEnabled": false
+}

@@ -1,0 +1,16 @@
+{
+  "userName": "selleruser5",
+  "name": "seller user udpated",
+  "email": "selleruser5@req.ru",
+  "contactNumber": "54223",
+  "title": "Mr",
+  "role": "ROLE_USER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10063
+    }
+  ],
+  "oneCentralUserName": "selleruser5"
+}

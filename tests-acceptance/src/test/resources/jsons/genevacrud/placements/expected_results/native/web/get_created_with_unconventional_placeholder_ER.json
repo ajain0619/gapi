@@ -1,0 +1,85 @@
+{
+  "hbPartnerAttributes": [],
+  "memo": "web_native_position2",
+  "mraidAdvancedTracking": false,
+  "mraidSupport": "YES",
+  "name": "web_native_position2",
+  "nativePlacementExtension": {
+    "context": "SOCIAL",
+    "contextSubType": "USER_GENERATED",
+    "placementType": "IN_FEED",
+    "assetTemplate": "awesomeAssets",
+    "assetSets": [
+      {
+        "rule": "REQ_ALL",
+        "assets": [
+          {
+            "type": "IMAGE",
+            "key": "image",
+            "image": {
+              "type": "MAIN",
+              "widthMinimum": 50,
+              "heightMinimum": 50
+            }
+          },
+          {
+            "type": "IMAGE",
+            "key": "icon",
+            "image": {
+              "type": "ICON",
+              "widthMinimum": 50,
+              "heightMinimum": 50
+            }
+          },
+          {
+            "type": "DATA",
+            "key": "sponsored",
+            "data": {
+              "maxLength": 15,
+              "type": "SPONSORED"
+            }
+          },
+          {
+            "type": "TITLE",
+            "key": "title",
+            "title": {
+              "maxLength": 90
+            }
+          }
+        ]
+      },
+      {
+        "rule": "REQ_NONE",
+        "assets": [
+          {
+            "type": "DATA",
+            "key": "ctatext",
+            "data": {
+              "maxLength": 15,
+              "type": "CTA_TEXT"
+            }
+          },
+          {
+            "type": "DATA",
+            "key": "price",
+            "data": {
+              "maxLength": 15,
+              "type": "PRICE"
+            }
+          }
+        ]
+      }
+    ],
+    "renderingTemplate": "<div id=\\\"native_ad\\\">\\r\\n  <a href=\\\"${image-linkUrl}\\\">\\r\\n\\r\\n    <a href=\\\"${title-linkUrl}\\\">\\r\\n      <h1>${title-value}<\\/h1>\\r\\n    <\\/a>\\r\\n\\r\\n\\r\\n    <a href=\\\"${icon-linkUrl}\\\">\\r\\n      <img alt=\\\"\\\" src=\\\"${icon-sourceUrl}\\\"\\/>\\r\\n      <img alt=\\\"\\\" src=\\\"${icon-sourceUrl}\\\"\\/>\\r\\n    <\\/a>\\r\\n\\r\\n    <a href=\\\"${sponsored-linkUrl}\\\">\\r\\n      <div>${sponsored-value}\\\"<\\/div>\\r\\n    <\\/a>\\r\\n\\r\\n    #if(${ctatext-value})\\r\\n      <b>\\r\\n        <a href=\\\"${ctatext-linkUrl}\\\">${ctatext-value} ${title-value}<\\/a>\\r\\n        <a href=\\\"${ctatext-linkUrl}\\\">${ctatext-value}<\\/a>\\r\\n      <\\/b>\\r\\n    #end\\r\\n\\r\\n    #if(${price-value})\\r\\n      <div>\\r\\n        <a href=\\\"${price-linkUrl}\\\">\\r\\n          ${price-value}\\r\\n        <\\/a>\\r\\n      <\\/div>\\r\\n    #end\\r\\n\\r\\n    <img alt=\\\"\\\" src=\\\"${image-sourceUrl}\\\"\\/>\\r\\n\\r\\n    TEST_PLACEHOLDER\\r\\n  <\\/a>\\r\\n #if(${privacyLink})\\r\\n    ${privacyLink}\\r\\n #end\\r\\n<\\/div>\\r\\n",
+    "adXPath": "/html/body/div[5]/div[4]"
+  },
+  "pid": 100334,
+  "placementCategory": "NATIVE_V2",
+  "positionAliasName": "web_native_position2",
+  "screenLocation": "FOOTER_VISIBLE",
+  "sitePid": 950,
+  "status": "ACTIVE",
+  "tiers": [],
+  "version": 0,
+  "videoSupport": "NATIVE"
+}

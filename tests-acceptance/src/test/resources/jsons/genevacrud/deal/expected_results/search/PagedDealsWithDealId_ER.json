@@ -1,0 +1,28 @@
+{
+  "content": [
+    {
+      "pid": 11,
+      "dealId": "14466299473087827",
+      "description": "allFieldsTest",
+      "start": 1446613200000,
+      "stop": 1446958799000,
+      "status": "Inactive",
+      "auctionType": 3,
+      "dealCategory": 1,
+      "placementFormulaStatus": "DONE"
+    }
+  ],
+  "totalElements": 1,
+  "totalPages": 1,
+  "last": true,
+  "size": 10,
+  "number": 0,
+  "first": true,
+  "numberOfElements": 1,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  }
+}
+

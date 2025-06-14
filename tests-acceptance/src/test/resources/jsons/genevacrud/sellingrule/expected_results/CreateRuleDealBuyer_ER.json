@@ -1,0 +1,32 @@
+{
+  "version": 0,
+  "name": "DealBuyer",
+  "description": "dealDescription",
+  "status": "INACTIVE",
+  "type": "DEAL",
+  "ownerCompanyPid": 10225,
+  "targets": [
+    {
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MATCHED_USER_ID",
+      "data": "deal16"
+    },
+    {
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYER_SEATS",
+      "data": "[{\"buyerCompany\":10200,\"bidders\":[1],\"bidder\":1},{\"buyerCompany\":300,\"bidders\":[2],\"bidder\":2},{\"buyerCompany\":10204,\"bidders\":[3],\"bidder\":3}]"
+    },
+    {
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYERS",
+      "data": "deal15"
+    }
+  ],
+  "assignments": {}
+}

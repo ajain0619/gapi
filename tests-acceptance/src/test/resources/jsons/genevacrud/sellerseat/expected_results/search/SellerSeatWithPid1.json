@@ -1,0 +1,24 @@
+{
+  "pid": 1,
+  "name": "Seller seat 1",
+  "description": "Some desc 1",
+  "status": true,
+  "version": 0,
+  "sellers": [
+    {
+      "pid": 800,
+      "name": "Seller_S11",
+      "type": "SELLER"
+    },
+    {
+      "pid": 801,
+      "name": "Seller_S21",
+      "type": "SELLER"
+    },
+    {
+      "pid": 802,
+      "name": "Seller_S31",
+      "type": "SELLER"
+    }
+  ]
+}

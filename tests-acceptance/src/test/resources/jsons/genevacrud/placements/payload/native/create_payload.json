@@ -1,0 +1,24 @@
+{
+  "hbPartnerAttributes": [
+    {
+      "externalId": "test1",
+      "hbPartnerPid": 37,
+      "type": "NON_DEFAULT"
+    }
+  ],
+  "impressionTypeHandling": "BASED_ON_PLACEMENT_CONFIG",
+  "interstitial": false,
+  "memo": "native-position_[&,(./)]",
+  "mraidAdvancedTracking": true,
+  "mraidSupport": "YES",
+  "placementCategory": "NATIVE_V2",
+  "positionAliasName": "native_position",
+  "screenLocation": "UNDEFINED",
+  "site": {
+    "pid": 950,
+    "platform": "OTHER",
+    "type": "DESKTOP"
+  },
+  "version": 1,
+  "videoSupport": "NATIVE"
+}

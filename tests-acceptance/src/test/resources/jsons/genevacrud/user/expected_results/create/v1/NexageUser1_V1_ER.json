@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 1,
+      "type": "NEXAGE"
+    }
+  ],
+  "role": "ROLE_USER",
+  "userName": "NexageUser1_V1",
+  "email": "01nexageuser1@ex.com",
+  "contactNumber": "123456",
+  "name": "nexage user1",
+  "title": "Mrs",
+  "primaryContact": false,
+  "oneCentralUserName": "NexageUser1_V1",
+  "firstName": "nexage",
+  "lastName": "user1"
+}

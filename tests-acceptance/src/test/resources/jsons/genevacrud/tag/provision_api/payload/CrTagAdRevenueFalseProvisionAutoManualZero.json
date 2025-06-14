@@ -1,0 +1,14 @@
+{
+  "name": "AV2882",
+  "buyer": {
+    "pid": "4252"
+  },
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": false,
+  "rules": [],
+  "tagController": {
+    "autoExpand": false
+  },
+  "primaryId": "maybeYes"
+}

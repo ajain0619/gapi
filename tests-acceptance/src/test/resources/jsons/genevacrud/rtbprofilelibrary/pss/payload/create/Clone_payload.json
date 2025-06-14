@@ -1,0 +1,40 @@
+{
+  "name": "TEST CLONE",
+  "privilegeLevel": "GLOBAL",
+  "listType": 0,
+  "publisherPid": 105,
+  "libraries": [
+    {
+      "pid": 2,
+      "name": "BGR2",
+      "version": 1,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "groups": [
+        {
+          "pid": 3,
+          "name": "BGR2",
+          "version": 0,
+          "publisherPid": 105,
+          "privilegeLevel": "PUBLISHER",
+          "data": "domain1.com,domain2.com,domain3.com",
+          "itemType": "ADOMAIN",
+          "listType": "BLOCKLIST"
+        },
+        {
+          "pid": 4,
+          "name": "BGR2",
+          "version": 0,
+          "publisherPid": 105,
+          "privilegeLevel": "PUBLISHER",
+          "data": "IAB1,IAB3,IAB7-1",
+          "itemType": "CATEGORY",
+          "listType": "BLOCKLIST"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    "ADDITIONAl"
+  ]
+}

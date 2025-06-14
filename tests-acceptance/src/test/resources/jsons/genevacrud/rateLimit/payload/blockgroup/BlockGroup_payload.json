@@ -1,0 +1,29 @@
+{
+  "name": "BlockGroupRateLimit",
+  "version": 0,
+  "publisherPid": 105,
+  "privilegeLevel": "PUBLISHER",
+  "isDefaultEligible": false,
+  "groups": [
+    {
+      "name": "testBlockGroupRateLimit1",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "data": "domain1.com,domain2.com,domain3.com",
+      "itemType": "ADOMAIN",
+      "listType": "BLOCKLIST",
+      "isIndividualsGroup": false
+    },
+    {
+      "name": "testBlockGroupRateLimit2",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "data": "IAB1,IAB3,IAB7-1",
+      "itemType": "CATEGORY",
+      "listType": "BLOCKLIST",
+      "isIndividualsGroup": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "description": "test",
+  "domain": "test.com",
+  "name": "test_platform",
+  "platform": "ANDROID_PHONE_TAB",
+  "status": "ACTIVE",
+  "mode": "TEST",
+  "type": "APPLICATION",
+  "url": "https://test.com",
+  "coppaRestricted": false,
+  "hbEnabled": false,
+  "iabCategories": [
+    "IAB1"
+  ]
+}

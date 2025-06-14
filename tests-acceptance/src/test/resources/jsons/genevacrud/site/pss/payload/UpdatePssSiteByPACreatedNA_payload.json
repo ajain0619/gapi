@@ -1,0 +1,48 @@
+{
+  "pid": 10000208,
+  "version": 0,
+  "publisher": {
+    "pid": 105
+  },
+  "description": "site with all fields deskription",
+  "domain": "mgb6site.com",
+  "name": "mgb6site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "date.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "LIVE",
+  "appBundle": "",
+  "consumerProfileContributed": true,
+  "consumerProfileUsed": true,
+  "ethnicityMap": "afrfs=0,as=1,esp=2,white=3,other=4",
+  "genderMap": "b1=M",
+  "inputDateFormat": "1990",
+  "maritalStatusMap": "soltero=S,casado=M,divorced=D,other=O",
+  "overrideIP": true,
+  "totalTimeout": 1000,
+  "trafficThrottle": 25,
+  "buyerTimeout": 1080,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "rtb1CategoryRollup": "IAB14",
+  "adTruthEnabled": true,
+  "globalAliasName": "zombey",
+  "metadataEnablement": true,
+  "hbEnabled": true,
+  "adScreeningEnabled": false,
+  "reportBatchSize": 8,
+  "reportFrequency": 21000,
+  "rulesUpdateFrequency": 12000,
+  "filterBots": true,
+  "daysFree": 1,
+  "passthruParameters": [
+    "hasta bail"
+  ]
+}

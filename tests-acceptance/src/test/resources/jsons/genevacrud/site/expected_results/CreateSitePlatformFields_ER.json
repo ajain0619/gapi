@@ -1,0 +1,46 @@
+{
+  "adScreeningEnabled": false,
+  "buyerTimeout": 500,
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "daysFree": "2",
+  "description": "description",
+  "domain": "domain",
+  "filterBots": true,
+  "inputDateFormat": "",
+  "type": "APPLICATION",
+  "platform": "ANDROID_PHONE_TAB",
+  "isAdTruthEnabled": false,
+  "live": false,
+  "name": "Platform fields",
+  "overrideIP": false,
+  "reportBatchSize": 10,
+  "reportFrequency": 180000,
+  "rulesUpdateFrequency": 1800000,
+  "status": "ACTIVE",
+  "trafficThrottle": 0,
+  "totalTimeout": 1000,
+  "url": "url",
+  "metadataEnablement": false,
+  "hbEnabled": false,
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "companyPid": 339,
+  "currentDealTerm": {
+    "effectiveDate": 0,
+    "revenueMode": "REV_SHARE",
+    "nexageRevenueShare": "0.00100000",
+    "rtbFee": "0.00100000",
+    "hasDealTermChanged": false
+  },
+  "metadata": {
+  },
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "passthruParameters": [],
+  "iabCategories": [
+    "IAB1"
+  ]
+}

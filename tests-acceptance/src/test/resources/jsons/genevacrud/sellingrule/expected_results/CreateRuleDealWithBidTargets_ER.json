@@ -1,0 +1,29 @@
+{
+  "version": 0,
+  "name": "DealWithBidTargets",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "DEAL",
+  "ownerCompanyPid": 10225,
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "CREATIVE_ID",
+      "data": "bidData4"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "ADVERTISER_BRAND",
+      "data": "bidData5"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    }
+  ],
+  "assignments": {}
+}

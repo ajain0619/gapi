@@ -1,0 +1,20 @@
+#!/bin/sh
+service sia restart
+/usr/sbin/siad &
+
+echo "starting sshdRestart script" >> /tmp/sshdRestart.log
+if [ $(ps -ef | grep -i sia | grep -v grep | wc -l) -lt 1 ]; then
+  echo "SIA is not running" >> /tmp/sshdRestart.log
+  sudo bash /etc/init.d/sia start >> /tmp/sshdRestart.log 2>&1
+  echo "SIA start command has been run. Sleeping 15 seconds to allow time for config" >> /tmp/sshdRestart.log
+  sleep 15
+else
+  echo "SIA is already running. Nothing to do here" >> /tmp/sshdRestart.log
+  fi
+while [ $(grep "SIA processed" /var/log/messages | wc -l) = 0 ]; do
+  echo "SIA not fully up - SIA processed not found. Sleeping 30 seconds" >> /tmp/sshdRestart.log
+  sleep 30
+done
+echo "SIA is fully up! Moving to sshd service restart" >> /tmp/sshdRestart.log
+sudo service sshd restart >> /tmp/sshdRestart.log 2>&1
+echo "sshd restart command complete!" >> /tmp/sshdRestart.log

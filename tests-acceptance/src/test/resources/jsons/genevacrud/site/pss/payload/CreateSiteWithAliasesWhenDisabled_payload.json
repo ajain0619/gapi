@@ -1,0 +1,16 @@
+{
+  "description": "site for testing transparency settings ",
+  "domain": "transparency_disabled.com",
+  "name": "site_with_aliases_when_disabled",
+  "platform": "IPHONE",
+  "status": "ACTIVE",
+  "type": "APPLICATION",
+  "url": "http://transparency_disabled.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "TEST",
+  "hbEnabled": false
+}

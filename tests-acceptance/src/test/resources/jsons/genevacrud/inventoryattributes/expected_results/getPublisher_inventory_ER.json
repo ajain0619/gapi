@@ -1,0 +1,13 @@
+{
+  "pid": 664,
+  "version": 4,
+  "name": "AdFonic",
+  "id": "8a809449012f2ee2fbcc01c46f32001a",
+  "eligibleBidderGroups": [],
+  "adServingEnabled": false,
+  "restrictDrillDown": false,
+  "test": false,
+  "selfServeAllowed": false,
+  "numberOfUsers": 0,
+  "defaultRtbProfilesEnabled": false
+}

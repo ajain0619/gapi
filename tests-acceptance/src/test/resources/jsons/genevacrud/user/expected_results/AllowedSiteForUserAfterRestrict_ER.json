@@ -1,0 +1,15 @@
+[
+  {
+    "id": "8a859e0f013b3b761d5a76a4ba4b0009",
+    "pid": 1184,
+    "url": "www.site1.com",
+    "name": "athens1site1",
+    "type": "MOBILE_WEB",
+    "platform": "OTHER",
+    "status": "ACTIVE",
+    "live": false,
+    "sellerPid": 339,
+    "sellerName": "Athens1",
+    "domain": "site1.com"
+  }
+]

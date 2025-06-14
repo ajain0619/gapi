@@ -1,0 +1,20 @@
+{
+  "pid": 100319,
+  "version": 0,
+  "site": {
+    "pid": 10000174,
+    "hbEnabled": false,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "11copy_1_banner_placement",
+  "memo": "11COPY 1 banner placement",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "status": "ACTIVE"
+}

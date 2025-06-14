@@ -1,0 +1,17 @@
+{
+  "site": {
+    "pid": 10000208,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "interstitial": false,
+  "screenLocation": "FOOTER_VISIBLE",
+  "mraidSupport": "YES",
+  "placementCategory": "MEDIUM_RECTANGLE",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "width": 300,
+  "height": 250,
+  "memo": "medium",
+
+  "name": "medium"
+}

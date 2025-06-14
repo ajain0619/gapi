@@ -1,0 +1,13 @@
+{
+  "name": "a12",
+  "description": "8",
+  "domain": "q1",
+  "appBundle": "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890",
+  "coppaRestricted": false,
+  "platform": "ANDROID",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "APPLICATION"
+}

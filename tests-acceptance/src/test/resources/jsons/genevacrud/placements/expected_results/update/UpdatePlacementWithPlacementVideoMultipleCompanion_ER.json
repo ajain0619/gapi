@@ -1,0 +1,30 @@
+{
+  "pid": 100327,
+  "version": 1,
+  "site":{
+    "pId":10000205,
+    "type": "MOBILE_WEB"
+  },
+  "screenLocation":"FULLSCREEN_VISIBLE",
+  "mraidSupport":"YES",
+  "placementCategory":"INTERSTITIAL",
+  "interstitial": true,
+  "mraidAdvancedTracking":false,
+  "videoSupport":"VIDEO_AND_BANNER",
+  "width":480,
+  "height":320,
+  "adSizeType":"STANDARD",
+  "memo":"interstitialprovision",
+  "name":"interstitialprovision",
+  "placementVideo": {
+    "pid": 100327,
+    "version": 2,
+    "linearity":"LINEAR",
+    "playerRequired":false,
+    "longform": false,
+    "companions": [
+      { "height": 320, "width": 480 },
+      { "height": 320, "width": 480 }
+    ]
+  }
+}

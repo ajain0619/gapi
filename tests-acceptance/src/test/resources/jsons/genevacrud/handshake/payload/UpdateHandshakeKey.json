@@ -1,0 +1,89 @@
+{
+  "pid": 183,
+  "handshakeKey": "dcn2^com.sriniapp1_updateddddddddddd_ddd",
+  "handshakeValue": {
+    "playlistServer": {
+      "name": "orange_updateddd",
+      "baseUrl": "https://medtestupdatedddddddd.nexage.com"
+    },
+    "handshakeBaseUrl": "https://medtestupdateddddddd_ddd.nexage.com",
+    "rptBaseUrl": "https://medtestupdatedddddd.nexage.com",
+    "ttl": 86400000,
+    "rptBatchSize": 5,
+    "rptFreq": 120000,
+    "inlineTmax": 10000,
+    "instlTmax": 30000,
+    "nativeTmax": 20000,
+    "clientAdTmax": 10000,
+    "serverAdTmax": 10000,
+    "exTmax": 10000,
+    "vastSkipOffsetMax": 7500,
+    "vastSkipOffsetMin": 7500,
+    "minInlineRefresh": 20000,
+    "instlExpDur": 3600000,
+    "nativeExpDur": 3600000,
+    "nativeConfig": {
+      "typeDefs": {
+        "100": {
+          "name": "inline_updatedddddddd_ddd",
+          "components": {
+            "title": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "body": {
+              "advertiserRequired": 1,
+              "publisherRequired": 0
+            },
+            "iconImage": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "mainImage": {
+              "advertiserRequired": 1,
+              "publisherRequired": 0
+            },
+            "callToAction": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "rating": {
+              "advertiserRequired": 0,
+              "publisherRequired": 0
+            },
+            "disclaimer": {
+              "advertiserRequired": 0,
+              "publisherRequired": 1
+            }
+          }
+        },
+        "101": {
+          "name": "facebook_updated",
+          "components": {
+            "title": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "iconImage": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "mainImage": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "callToAction": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "disclaimer": {
+              "advertiserRequired": 0,
+              "publisherRequired": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "version": 9
+}

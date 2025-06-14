@@ -1,0 +1,29 @@
+require "yaml"
+require "optparse"
+
+# override-properties.rb -s yml-file-pulled-from-external-source.yml -t yml-file-to-be-overridden.yml
+#
+# Script that will override properties of source file into a target file
+
+options = {}
+OptionParser.new do |opts|
+    opts.banner = "Usage: override-properties.rb [options]"
+    opts.on("-s", "--source source yml file path ", "") { |v| options[:source] = v }
+    opts.on("-t", "--target target yml file path", "") { |v| options[:target] = v }
+end.parse!
+
+source_properties_file_path = options[:source]
+target_properties_file_path = options[:target]
+source_properties = YAML.load(File.read(source_properties_file_path))
+target_properties = YAML.load(File.read(target_properties_file_path))
+
+if !source_properties
+   puts "Looks like there is no properties to add or override"
+   exit
+end
+
+source_properties.each do |key, value|
+   target_properties[key] = source_properties[key]
+end
+
+File.open(target_properties_file_path, "w") { |file| file.write(target_properties.to_yaml) }

@@ -1,0 +1,170 @@
+### spring-boot
+management.endpoints.web.cors.allowed-origins={{ geneva_server_cors_allowed_origins }}
+management.endpoints.web.cors.allowed-methods={{ geneva_server_cors_allowed_methods }}
+management.endpoints.web.cors.allowed-headers={{ geneva_server_cors_allowed_headers }}
+management.endpoints.web.base-path={{ geneva_server_management_endpoints_web_base_path }}
+management.endpoints.web.exposure.include={{ geneva_server_management_endpoints_web_exposure_include }}
+management.endpoints.web.exposure.exclude={{ geneva_server_management_endpoints_web_exposure_exclude }}
+management.info.build.enabled={{ geneva_server_management_info_build_enabled | to_json }}
+management.info.defaults.enabled={{ geneva_server_management_info_defaults_enabled | to_json }}
+management.info.env.enabled={{ geneva_server_management_info_env_enabled | to_json }}
+management.info.git.enabled={{ geneva_server_management_info_git_enabled | to_json }}
+management.info.git.mode={{ geneva_server_management_info_git_mode }}
+management.endpoint.env.enabled={{ geneva_server_management_endpoint_env_enabled | to_json }}
+management.endpoint.beans.enabled={{ geneva_server_management_endpoint_beans_enabled | to_json }}
+management.endpoint.health.enabled={{ geneva_server_management_endpoint_health_enabled | to_json }}
+management.health.db.enabled={{ geneva_server_management_health_db_enabled | to_json }}
+management.health.defaults.enabled={{ geneva_server_management_health_defaults_enabled | to_json }}
+management.health.diskspace.enabled={{ geneva_server_management_health_diskspace_enabled | to_json }}
+spring.main.allow-bean-definition-overriding=true
+spring.banner.location=classpath:banner.txt
+spring.session.max.inactive.timeout={{ geneva_server_spring_session_max_inactive_timeout }}
+server.servlet.context-path=/geneva
+server.servlet.session.timeout=1440
+server.servlet.session.cookie.sameSite={{ geneva_server_servlet_session_cookie_same_site }}
+jetty.session.redis.host={{ geneva_server_redis_host }}
+jetty.session.redis.port={{ geneva_server_redis_port }}
+jetty.session.redis.ssl={{ geneva_server_redis_ssl | to_json }}
+jetty.session.redis.maxInactiveIntervalInSeconds={{ geneva_server_redis_session_max_timeout }}
+
+### core-db
+core.datasource.name=ssp.geneva.api.datasource.core
+core.datasource.driver=com.mysql.cj.jdbc.Driver
+core.datasource.url=jdbc:mysql://{{ geneva_server_core_db_host }}:{{ geneva_server_core_db_port }}/{{ geneva_server_core_db_schema }}?sslMode={{ geneva_server_core_db_ssl_mode }}&enabledTLSProtocols={{ geneva_server_core_db_ssl_enabled_tls_protocols }}&serverTimezone={{ geneva_server_core_db_server_timezone }}&rewriteBatchedStatements={{ geneva_server_core_db_rewrite_batched_statements }}
+core.datasource.username={{ geneva_server_core_db_username }}
+core.datasource.password={{ geneva_server_core_db_password }}
+core.datasource.minpoolsize={{ geneva_server_core_db_min_pool_size }}
+core.datasource.maxpoolsize={{ geneva_server_core_db_max_pool_size }}
+core.datasource.idletimeout={{ geneva_server_core_db_idle }}
+core.datasource.connectionTimeout={{ geneva_server_core_db_connection_timeout }}
+core.datasource.maxLifetime={{ geneva_server_core_db_max_lifetime }}
+core.datasource.testquery=SELECT 1
+
+### dw-db
+dw.datasource.name=ssp.geneva.api.datasource.dw
+dw.datasource.driver=com.vertica.jdbc.Driver
+dw.datasource.url=jdbc:vertica://{{ geneva_server_dw_db_hostname }}:{{ geneva_server_dw_db_port }}/{{ geneva_server_dw_db_schema }}?LoginTimeout={{ geneva_server_dw_db_login_timeout }}&ssl={{ geneva_server_dw_db_ssl | to_json }}&KeyStorePath={{ geneva_server_home }}/conf/keystore.jks&KeyStorePassword={{ geneva_server_ssl_keystore_password }}&TrustStorePath={{ geneva_server_home }}/conf/truststore.jks&TrustStorePassword={{ geneva_server_ssl_truststore_password }}
+dw.datasource.username={{ geneva_server_dw_db_username }}
+dw.datasource.password={{ geneva_server_dw_db_password }}
+dw.datasource.maxpoolsize={{ geneva_server_dw_db_max_pool_size }}
+dw.datasource.minpoolsize={{ geneva_server_dw_db_min_pool_size }}
+dw.datasource.idletimeout={{ geneva_server_dw_db_idle }}
+dw.datasource.connectionTimeout={{ geneva_server_dw_db_connection_timeout }}
+dw.datasource.maxLifetime={{ geneva_server_dw_db_max_lifetime }}
+dw.datasource.testquery=SELECT /*+ kv */ 1 FROM DUAL
+preferredaddressfamily=ipv4
+searchpath={{ geneva_server_dw_db_searchpath }}
+
+### sdk-ckms
+ckms.athens.cert.path={{ geneva_server_ckms_athens_cert_path }}
+ckms.athens.key.path={{ geneva_server_ckms_athens_key_path }}
+ckms.default.keygroups.list={{ geneva_server_ckms_default_keygroups_list }}
+ckms.ykeykey.mock={{ geneva_server_ckms_ykeykey_mock }}
+ckms.ykeykey.environment={{ geneva_server_ckms_ykeykey_environment }}
+ckms.trust.store.password.encoded={{ geneva_server_ckms_trust_store_password_encoded }}
+
+### sdk-dv360-seller
+dv360.seller.endpoint={{ geneva_server_dv360_seller_endpoint }}
+dv360.seller.exchange.id={{ geneva_server_dv360_seller_exchange_id }}
+dv360.seller.credentials={{ geneva_server_dv360_seller_credentials }}
+
+### sdk-xandr
+xandr.service.endpoint={{ geneva_server_xandr_service_endpoint }}
+xandr.service.credentials={{ geneva_server_xandr_service_credentials }}
+xandr.service.credentials.ms.rebroadcast={{ geneva_server_xandr_service_credentials_ms_rebroadcast }}
+xandr.sdk.auth.cache.expiration.ms={{ geneva_server_xandr_sdk_auth_cache_expiration_ms  }}
+
+### sdk-obi
+obi.api.payouts.platform.uri={{ geneva_server_obi_api_payouts_platform_uri }}
+obi.api.payouts.iframe.uri={{ geneva_server_obi_api_payouts_frame_uri }}
+obi.api.payouts.dev.id={{ geneva_server_obi_api_payouts_dev_id }}
+obi.api.payouts.cipher.data={{ geneva_server_obi_api_payouts_cipher_data }}
+obi.api.payouts.hex.result={{ geneva_server_obi_api_payouts_hex_result }}
+obi.api.payouts.merchant={{ geneva_server_obi_api_payouts_merchant }}
+obi.api.payouts.offer.id={{ geneva_server_obi_api_payouts_offer_id }}
+
+### sdk-crs
+crs.sso.clientId={{ geneva_server_crs_sso_client_id }}
+crs.sso.secret={{ geneva_server_crs_sso_secret }}
+crs.sso.secret.encrypted={{ geneva_server_crs_sso_encrypted }}
+ckms.enabled={{ geneva_server_ckms_enabled | to_json }}
+crs.sso.ckms.key.group={{ geneva_server_ckms_key_group }}
+crs.sso.ckms.key.client={{ geneva_server_ckms_key_client }}
+crs.sso.ckms.key.secret={{ geneva_server_ckms_key_secret }}
+
+### sdk-onecentral
+sso.create.onecentral.user={{ geneva_server_create_1c_user | to_json }}
+sso.oneApi.baseURL={{ geneva_server_one_api_base_url }}
+sso.ui.base.endpoint={{ geneva_server_sso_ui_base_endpoint }}
+sso.systemName={{ geneva_server_system_name }}
+sso.roleId={{ geneva_server_role_id }}
+sso.apiUserRoleId={{ geneva_server_api_user_role_id }}
+sso.environment={{ geneva_sdk_onecentral_environment }}
+
+### sdk-messaging
+messaging.environment.prefix={{ messaging_environment_prefix }}
+messaging.retry.attempts={{ messaging_retry_attempts }}
+messaging.store.key={{ messaging_store_key }}
+
+### sdk-notification
+email.service.baseurl={{ email_service_base_url }}
+email.template={{ email_template }}
+email.template.engine.version={{ email_template_engine_version }}
+
+### splunk
+geneva.server.splunk.enabled={{ geneva_server_splunk_enabled | to_json }}
+geneva.server.splunk.admin.password={{ geneva_server_splunk_admin_password }}
+geneva.server.splunk.collector.name={{ geneva_server_splunk_collector_name }}
+geneva.server.splunk.collector.url={{ geneva_server_splunk_collector_url }}
+
+### athenz
+geneva.server.athenz.domain={{ geneva_server_athenz_domain }}
+
+### aws
+geneva.server.aws.account.id={{ geneva_server_aws_account_id }}
+
+### geneva
+sso.oneId.baseURL={{ geneva_server_one_id_base_url }}
+sso.oneId.realm={{ geneva_server_one_id_realm }}
+sso.oneId.scope={{ geneva_server_one_id_scope }}
+sso.oneId.baseApplicationUri={{ geneva_server_one_base_application_uri }}
+sso.b2b.token.refresh.interval={{ geneva_server_sso_b2b_token_refresh_interval }}
+geneva.sso.oidc.client.id={{ geneva_sso_oidc_client_id }}
+geneva.sso.oidc.client.secret={{ geneva_sso_oidc_client_secret }}
+geneva.sso.client.id={{ geneva_sso_client_id }}
+geneva.sso.client.secret={{ geneva_sso_client_secret }}
+springdoc.swagger-ui.enabled={{ geneva_server_swagger_enable | to_json }}
+springdoc.api-docs.enabled={{ geneva_server_swagger_enable | to_json }}
+geneva.common.cache.enabled={{ geneva_server_cache_enable | to_json }}
+ssp.geneva.static.bucket={{ geneva_server_static_bucket }}
+spp.geneva.static.base.url={{ geneva_server_static_base_url }}
+ssp.geneva.data.bucket={{ geneva_server_data_bucket }}
+placementformulaUpdateJob.enable={{ geneva_server_placement_formula_update_job | to_json }}
+geneva.metrics.jmx.enabled={{ geneva_metrics_jmx_enabled | to_json }}
+geneva.metrics.jmx.domain={{ geneva_metrics_jmx_domain }}
+geneva.metrics.datadog.enabled={{ geneva_metrics_datadog_enabled | to_json }}
+geneva.metrics.datadog.period={{ geneva_metrics_datadog_period }}
+geneva.server.login={{ geneva_server_login }}
+geneva.server.create.dbusers={{ geneva_server_create_dbusers | to_json }}
+geneva.server.seller.reportable.kvp.limit={{ geneva_server_seller_reportable_kvp_limit }}
+geneva.server.seller.seat.reportable.kvp.limit={{ geneva_server_seller_seat_reportable_kvp_limit }}
+geneva.server.creative.testing.enabled={{ geneva_server_creative_testing_enabled | to_json }}
+geneva.server.native.placement.gemini.id={{ geneva_server_native_placement_gemini_id }}
+geneva.server.ssp.geneva.queue.placement.syncup.enabled={{ geneva_server_ssp_geneva_queue_placement_syncup_enabled | to_json }}
+geneva.server.ssp.geneva.queue.company.syncup.enabled={{ geneva_server_ssp_geneva_queue_company_syncup_enabled | to_json }}
+geneva.server.ssl.keystore.password={{ geneva_server_ssl_keystore_password }}
+geneva.server.ssl.mysql.cert.pem={{ geneva_server_ssl_mysql_cert_pem }}
+geneva.server.ssl.cert.pem={{ geneva_server_ssl_cert_pem }}
+geneva.server.ssl.key.pem={{ geneva_server_ssl_key_pem }}
+dealsync.dv360.seller.company-pid={{ geneva_server_dealsync_dv360_seller_company_pid }}
+dealsync.dv360.seller.override.discovery.object.status={{ geneva_server_dealsync_dv360_seller_object_status }}
+dealsync.dv360.seller.publisher.name={{ geneva_server_dealsync_dv360_seller_publisher_name }}
+dealsync.dv360.seller.publisher.email={{ geneva_server_dealsync_dv360_seller_publisher_email }}
+video.human.prebid.samplingrate.default={{ video_human_prebid_samplingrate_default }}
+video.human.postbid.samplingrate.default={{ video_human_postbid_samplingrate_default }}
+geneva.server.doohscreen.create.limit={{ geneva_server_doohscreen_create_limit }}
+geneva.server.ugeo.iso2.country.codes.file={{ geneva_server_ugeo_iso2_country_codes_file }}
+geneva.server.ugeo.iso2.state.codes.file={{ geneva_server_ugeo_iso2_state_codes_file }}
+geneva.server.ugeo.zipcodes.file={{ geneva_server_ugeo_zipcodes_file }}
+geneva.server.ugeo.dmas.file={{ geneva_server_ugeo_dmas_file }}
+geneva.server.dooh.screen.restrictions.file={{ geneva_server_dooh_screen_restrictions_file }}

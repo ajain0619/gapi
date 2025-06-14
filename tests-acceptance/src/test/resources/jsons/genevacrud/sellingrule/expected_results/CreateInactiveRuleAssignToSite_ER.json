@@ -1,0 +1,30 @@
+{
+  "name": "Inactive rule for site",
+  "description": "test inactive rule",
+  "status": "INACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "5.00"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MATCHED_USER_ID",
+      "data": "demandData1"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [
+      {
+        "pid": 10000200,
+        "name": "site_for_transparency_enabled"
+      }
+    ]
+  }
+}

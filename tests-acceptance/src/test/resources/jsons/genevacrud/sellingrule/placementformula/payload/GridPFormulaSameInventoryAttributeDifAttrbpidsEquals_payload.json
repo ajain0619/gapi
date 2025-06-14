@@ -1,0 +1,21 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "attributePid": 888,
+          "operator": "EQUALS",
+          "ruleData": "DESKTOP new"
+        },
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "attributePid": 888888,
+          "operator": "EQUALS",
+          "ruleData": "DESKTOP new"
+        }
+      ]
+    }
+  ]
+}

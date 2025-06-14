@@ -1,0 +1,32 @@
+[
+  {
+    "pid": 1,
+    "network": "North America",
+    "version": 1
+  },
+  {
+    "pid": 2,
+    "network": "EMEA",
+    "version": 1
+  },
+  {
+    "pid": 3,
+    "network": "Latin America",
+    "version": 1
+  },
+  {
+    "pid": 4,
+    "network": "North Asia",
+    "version": 1
+  },
+  {
+    "pid": 5,
+    "network": "Southeast Asia",
+    "version": 1
+  },
+  {
+    "pid": 6,
+    "network": "AUNZ",
+    "version": 1
+  }
+]

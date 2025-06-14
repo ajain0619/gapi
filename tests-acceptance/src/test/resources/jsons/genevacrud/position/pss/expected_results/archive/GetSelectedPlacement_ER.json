@@ -1,0 +1,60 @@
+{
+  "pid": 100256,
+  "version": 6,
+  "site": {
+    "pid": 10000179
+  },
+  "name": "PositionArchiving_TestPosition5",
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "interstitial": false,
+  "videoLinearity": "LINEAR",
+  "height": 480,
+  "width": 320,
+  "placementCategory": "INSTREAM_VIDEO",
+  "tags": [
+    {
+      "pid": 7309
+    },
+    {
+      "pid": 7307
+    },
+    {
+      "pid": 7302
+    }
+  ],
+  "tiers": [
+    {
+      "pid": 10308,
+      "version": 0,
+      "level": 1,
+      "orderStrategy": "Dynamic",
+      "position": {
+        "pid": 100256
+      },
+      "tags": [
+        {
+          "pid": 7309
+        }
+      ]
+    },
+    {
+      "pid": 10307,
+      "version": 1,
+      "level": 0,
+      "orderStrategy": "Dynamic",
+      "position": {
+        "pid": 100256
+      },
+      "tags": [
+        {
+          "pid": 7302
+        },
+        {
+          "pid": 7307
+        }
+      ]
+    }
+  ]
+}

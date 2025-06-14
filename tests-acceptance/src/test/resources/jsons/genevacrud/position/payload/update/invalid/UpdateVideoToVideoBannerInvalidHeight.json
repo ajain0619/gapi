@@ -1,0 +1,16 @@
+{
+  "pid": 100246,
+  "version": 2,
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "UpdateCase11",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "mraidAdvancedTracking": true,
+  "videoLinearity": "NON_LINEAR",
+  "placementCategory": "BANNER",
+  "height": 0
+}

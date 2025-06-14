@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName)*/
+        f.adnet_id AS adSourceId
+        ,d.name AS adSource
+        ,SUM(f.revenue) AS totalRevenue
+        ,SUM(f.revenue_gross) AS grossRevenue
+        ,SUM(f.revenue_net) AS netRevenue
+        ,SUM(f.revenue_gross) - SUM(f.revenue_net) AS costOfSales
+        ,SUM(f.ads_requested_adnet) AS adRequests
+        ,SUM(f.ads_served) AS adServed
+        ,SUM(f.ads_clicked) AS adClicks
+        ,SUM(f.ads_delivered) AS adDelivered
+    FROM fact_revenue_adnet_vw_daily f INNER JOIN dim_adnet d ON d.id = f.adnet_id
+    WHERE (f.tag_monetization = 1 OR f.tag_monetization = 0 AND f.revenue > 0)
+        AND f.start >= :start
+        AND f.start < :stop
+    GROUP BY f.adnet_id, d.name
+      ]]>
+  </entry>
+</properties>

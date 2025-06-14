@@ -1,0 +1,211 @@
+{
+  "content": [
+    {
+      "companies": [
+        {
+          "name": "cpi buyer",
+          "pid": 274,
+          "type": "BUYER"
+        }
+      ],
+      "contactNumber": "",
+      "dealAdmin": false,
+      "email": "cpibuyer@nexage.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0f013a3ad6170edc7ec13d0007",
+      "name": "",
+      "oneCentralUserName": "cpibuyer",
+      "pid": 157,
+      "primaryContact": false,
+      "role": "ROLE_ADMIN",
+      "title": "",
+      "userName": "cpibuyer",
+      "version": 1
+    },
+    {
+      "companies": [
+        {
+          "name": "cpi buyer",
+          "pid": 274,
+          "type": "BUYER"
+        }
+      ],
+      "dealAdmin": false,
+      "email": "crudbuyermanager@nexage.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0601525215521c17d519d301cd",
+      "name": "crudbuyermanager",
+      "oneCentralUserName": "crudbuyermanager",
+      "pid": 737,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "title": "",
+      "userName": "crudbuyermanager",
+      "version": 1
+    },
+    {
+      "companies": [
+        {
+          "name": "cpi buyer",
+          "pid": 274,
+          "type": "BUYER"
+        }
+      ],
+      "dealAdmin": false,
+      "email": "crudbuyeruser@nexage.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0601525215521c17d571da01ce",
+      "name": "crudbuyeruser",
+      "oneCentralUserName": "crudbuyeruser",
+      "pid": 738,
+      "primaryContact": false,
+      "role": "ROLE_USER",
+      "title": "",
+      "userName": "crudbuyeruser",
+      "version": 1
+    },
+    {
+      "companies": [
+        {
+          "name": "cpi buyer",
+          "pid": 274,
+          "type": "BUYER"
+        }
+      ],
+      "contactNumber": "7658",
+      "dealAdmin": false,
+      "email": "1fdsfhd@gfdg.ru",
+      "enabled": true,
+      "global": false,
+      "id": "ff8080810151510f18db1ad0f79c03e3",
+      "name": "dffg gfd",
+      "oneCentralUserName": "buyermanager1",
+      "pid": 723,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "title": "gf",
+      "userName": "buyermanager1",
+      "version": 0
+    },
+    {
+      "companies": [
+        {
+          "name": "cpi buyer",
+          "pid": 274,
+          "type": "BUYER"
+        }
+      ],
+      "contactNumber": "8654",
+      "dealAdmin": false,
+      "email": "1jdfjgdjgd@rfa.ru",
+      "enabled": true,
+      "global": false,
+      "id": "ff8080810151510f18db1ad10a7f03ed",
+      "name": "hdfs",
+      "oneCentralUserName": "buyermanager3",
+      "pid": 733,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "title": "hfds",
+      "userName": "buyermanager3",
+      "version": 0
+    },
+    {
+      "companies": [
+        {
+          "name": "cpi buyer",
+          "pid": 274,
+          "type": "BUYER"
+        }
+      ],
+      "contactNumber": "dfsh",
+      "dealAdmin": false,
+      "email": "1yrfas@trsh.ri",
+      "enabled": true,
+      "global": false,
+      "id": "ff8080810151510f18db1ad0f89403e4",
+      "name": "hdfs",
+      "oneCentralUserName": "buyeruser1",
+      "pid": 724,
+      "primaryContact": false,
+      "role": "ROLE_USER",
+      "title": "hdfs",
+      "userName": "buyeruser1",
+      "version": 2
+    },
+    {
+      "companies": [
+        {
+          "name": "cpi buyer",
+          "pid": 274,
+          "type": "BUYER"
+        }
+      ],
+      "contactNumber": "jdc",
+      "dealAdmin": false,
+      "email": "1jhdfjgsd2@jdf.ru",
+      "enabled": true,
+      "global": false,
+      "id": "ff8080810151510f18db1ad10b9803ee",
+      "name": "jd",
+      "oneCentralUserName": "buyeruser3",
+      "pid": 734,
+      "primaryContact": false,
+      "role": "ROLE_USER",
+      "title": "j",
+      "userName": "buyeruser3",
+      "version": 0
+    },
+    {
+      "companies": [
+        {
+          "name": "cpi buyer",
+          "pid": 274,
+          "type": "BUYER"
+        }
+      ],
+      "contactNumber": "res",
+      "dealAdmin": false,
+      "email": "1tgsdazgsdz@3sfrt.ru",
+      "enabled": true,
+      "global": false,
+      "id": "ff8080810151510f18db1ad0f69203e2",
+      "name": "ysdf",
+      "oneCentralUserName": "buyerAdmin1",
+      "pid": 722,
+      "primaryContact": false,
+      "role": "ROLE_ADMIN",
+      "title": "yfsd",
+      "userName": "buyerAdmin1",
+      "version": 0
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 8,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 8,
+  "totalPages": 1
+}

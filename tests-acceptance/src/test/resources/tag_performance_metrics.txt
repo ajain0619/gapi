@@ -1,0 +1,7 @@
+tagPid=7377
+netRevenue=6.0
+served=6
+name=ExchangeUnassigned
+delivered=4
+requests=25
+clicked=5

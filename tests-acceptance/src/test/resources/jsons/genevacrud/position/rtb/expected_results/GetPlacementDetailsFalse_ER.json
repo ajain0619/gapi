@@ -1,0 +1,28 @@
+{
+  "pid": 100330,
+  "version": 1,
+  "site": {
+    "pid": 10000202,
+    "hbEnabled": false
+  },
+  "name": "tracker2",
+  "memo": "banner placement",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "defaultRtbProfile": {
+    "pid": 10000069,
+    "version": 3,
+    "id": "ff808081015d5df26508f55c81210009",
+    "name": "NoMeLlores",
+    "description": "new description",
+    "defaultRtbProfileOwnerCompanyPid": 10225
+  },
+  "mraidAdvancedTracking": false
+}

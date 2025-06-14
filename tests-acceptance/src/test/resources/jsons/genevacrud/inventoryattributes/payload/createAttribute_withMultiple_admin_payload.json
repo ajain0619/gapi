@@ -1,0 +1,36 @@
+{
+  "name": "att4",
+  "description": "att3",
+  "createdBy": 664,
+  "status": "ACTIVE",
+  "attributeValues": [
+    {
+      "value": "attval2",
+      "enabled": true
+    },
+    {
+      "value": "attval3",
+      "enabled": false
+    }
+  ],
+  "internalOnly": false,
+  "hasGlobalVisibility": false,
+  "specificPublisherVisibility": [
+    {
+      "publisherPid": 664
+    },
+    {
+      "publisherPid": 651
+    },
+    {
+      "publisherPid": 638
+    }
+  ],
+  "assignedLevel": [
+    1,
+    2,
+    3
+  ],
+  "required": false,
+  "lastUpdated": "2018-09-01"
+}

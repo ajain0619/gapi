@@ -1,0 +1,42 @@
+{
+  "version": 0,
+  "name": "BMruleWithBidTargets",
+  "description": "description",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10000,
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "WILDCARD_ADVERTISER_DOMAIN",
+      "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "IAB_CATEGORY",
+      "data": "bidData2"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "CREATIVE_ID",
+      "data": "bidData4"
+    }
+  ],
+  "assignments": {
+    "sites": [
+      {
+        "pid": 10000160,
+        "name": "ExchangeFunctionalTest-4"
+      }
+    ]
+  }
+}

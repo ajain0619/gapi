@@ -1,0 +1,38 @@
+<div id="native_ad">
+  <a href="${image_link_url}">
+
+    <a href="${title_link_url}">
+      <h1>${title}</h1>
+    </a>
+
+
+    <a href="${icon_link_url}">
+      <img alt="" src="${icon}"/>
+      <img alt="" src="${icon}"/>
+    </a>
+
+    <a href="${sponsored_link_url}">
+      <div>${sponsored}"</div>
+    </a>
+
+    #if(${ctatext})
+      <b>
+        <a href="${ctatext_link_url}">${ctatext}</a>
+        <a href="${ctatext_link_url}">${ctatext}</a>
+      </b>
+    #end
+
+    #if(${price})
+      <div>
+        <a href="${price_link_url}">
+          ${price}
+        </a>
+      </div>
+    #end
+
+    <img alt="" src="${image}"/>
+
+    TEST_PLACEHOLDER
+  </a>
+  <a href="http://www.google.com" target="_blank" style="text-decoration: none;color: #ffff00;">google</a>
+</div>

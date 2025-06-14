@@ -1,0 +1,67 @@
+{
+  "content": [
+    {
+      "adScreeningEnabled": true,
+      "appBundle": "eventdata2",
+      "buyerTimeout": 500,
+      "companyName": "test_rtb",
+      "companyPid": 10063,
+      "consumerProfileContributed": false,
+      "consumerProfileUsed": false,
+      "coppaRestricted": false,
+      "creationDate": 1389822017000,
+      "daysFree": 0,
+      "dcn": "8a859e0f01434397a17d97d8fed10005",
+      "description": "event_data_site02",
+      "domain": "event_data_site02.com",
+      "filterBots": true,
+      "groupsEnabled": false,
+      "hbEnabled": false,
+      "id": "8a859e0f01434397a17d97d8fed10006",
+      "isAdTruthEnabled": false,
+      "lastUpdate": 1389894833000,
+      "live": true,
+      "metadataEnablement": false,
+      "name": "rtb_event_data_site02",
+      "overrideIP": false,
+      "pId": 10000108,
+      "platform": "IPHONE",
+      "reportBatchSize": 10,
+      "reportFrequency": 180000,
+      "revenueLaunchDate": 1389894833000,
+      "rulesUpdateFrequency": 1800000,
+      "status": "ACTIVE",
+      "statusVal": 1,
+      "totalTimeout": 1000,
+      "trafficThrottle": 0,
+      "type": "APPLICATION",
+      "url": "http://event_data_site02.com",
+      "version": 10
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

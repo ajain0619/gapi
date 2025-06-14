@@ -1,0 +1,13 @@
+{
+  "pid": 100310,
+  "version": 0,
+  "site": {
+    "pid": 10000192
+  },
+  "name": "position1",
+  "mraidSupport": "NO",
+  "videoSupport": "BANNER",
+  "screenLocation": "FOOTER_VISIBLE",
+  "interstitial": false,
+  "placementCategory": "BANNER"
+}

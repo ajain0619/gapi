@@ -1,0 +1,27 @@
+{
+  "name": "testBlockCloneLimitExceed",
+  "privilegeLevel": "PUBLISHER",
+  "listType": 0,
+  "publisherPid": 105,
+  "libraries": [
+    {
+      "pid": 2,
+      "name": "BGR2",
+      "version": 1,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "groups": [
+        {
+          "pid": 3,
+          "name": "BGR2",
+          "version": 0,
+          "publisherPid": 105,
+          "privilegeLevel": "PUBLISHER",
+          "data": "domain1.com,domain2.com,domain3.com",
+          "itemType": "ADOMAIN",
+          "listType": "BLOCKLIST"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "pid": 11,
+  "dealId": "14466299473087828",
+  "description": "allFieldsTest",
+  "start": 1446613200000,
+  "stop": 1446958799000,
+  "floor": 200,
+  "createdBy": 2,
+  "status": "Inactive",
+  "auctionType": "Fixed",
+  "dealCategory": 1,
+  "bidders": [
+    {
+      "wseat": [],
+      "adomains": [],
+      "pid": 2,
+      "bidderPid": 4
+    }
+  ],
+  "profiles": [
+    {
+      "pid": 27,
+      "rtbProfilePid": 10000033,
+      "description": "DealTagTest-PSS-MedRec",
+      "auctionType": 0,
+      "defaultReserve": 2,
+      "pubAlias": "10201",
+      "siteAlias": "10000176",
+      "pubNameAlias": "CRUDPositionTest",
+      "siteNameAlias": "CRUDPosition_Site3",
+      "siteType": "W",
+      "isRealName": "false",
+      "siteId": 10000176,
+      "siteName": "CRUDPosition_Site3",
+      "categories": [
+        "IAB4"
+      ],
+      "countries": [],
+      "platform": "OTHER",
+      "pubId": 10201,
+      "pubName": "CRUDPositionTest",
+      "tagPid": 7361,
+      "tagName": "DealTagTest-PSS-MedRec",
+      "height": 250,
+      "width": 300,
+      "videoSupport": "BANNER",
+      "placementType": "MEDIUM_RECTANGLE",
+      "placementName": "DealTagTest-MedRec",
+      "placementPid": 100283
+    },
+    {
+      "pid": 26,
+      "rtbProfilePid": 10000035,
+      "description": "DealTagTest-PSS-Native-WhitlistManytargeting",
+      "auctionType": 0,
+      "defaultReserve": 1,
+      "pubAlias": "10201",
+      "siteAlias": "10000176",
+      "pubNameAlias": "CRUDPositionTest",
+      "siteNameAlias": "CRUDPosition_Site3",
+      "siteType": "W",
+      "isRealName": "false",
+      "siteId": 10000176,
+      "siteName": "CRUDPosition_Site3",
+      "categories": [
+        "IAB4"
+      ],
+      "countries": [
+        {
+          "pid": 778,
+          "target": "CAN",
+          "targetType": "Keyword",
+          "ruleType": "Country"
+        }
+      ],
+      "platform": "OTHER",
+      "pubId": 10201,
+      "pubName": "CRUDPositionTest",
+      "tagPid": 7363,
+      "tagName": "DealTagTest-PSS-Native-WhitlistManytargeting",
+      "videoSupport": "NATIVE",
+      "placementType": "NATIVE_V2",
+      "placementName": "DealTagTest-Native",
+      "placementPid": 100284
+    }
+  ],
+  "visibility": true,
+  "positions": [],
+  "rules": [
+    {
+      "rulePid": 1
+    }
+  ],
+  "sites": [],
+  "publishers": [],
+  "placementFormula": {
+    "groupedBy": "OR",
+    "formulaGroups": [
+      {
+        "formulaRules": [
+          {
+            "attribute": "PLACEMENT_NAME",
+            "operator": "CONTAINS",
+            "ruleData": "native",
+            "attributePid": null
+          }
+        ]
+      }
+    ]
+  },
+  "autoUpdate": true,
+  "placementFormulaStatus": "NEW"
+}

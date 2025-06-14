@@ -1,0 +1,29 @@
+{
+  "site": {
+    "pid": 10000202
+  },
+  "name": "incorrectRtbFee",
+  "status": "ACTIVE",
+  "ecpmAuto": 0,
+  "ecpmManual": 1,
+  "ecpmProvision": "Manual",
+  "owner": "Publisher",
+  "monetization": true,
+  "selfServeEnablement": "NONE",
+  "importRevenueFlag": false,
+  "type": "Mediation",
+  "buyer": {
+    "pid": 4252
+  },
+  "position": {
+    "pid": 100318
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": [],
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.53,
+    "rtbFee": 1.00
+  }
+}

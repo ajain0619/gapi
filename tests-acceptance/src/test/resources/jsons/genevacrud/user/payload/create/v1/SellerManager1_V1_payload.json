@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 10063,
+      "type": "SELLER"
+    }
+  ],
+  "role": "ROLE_MANAGER",
+  "userName": "sellermanager1_V1",
+  "email": "01hdfsfsa@qw.ru",
+  "contactNumber": "gs5",
+  "name": "gsd nexageTestLastName",
+  "title": "gsd",
+  "primaryContact": false
+}

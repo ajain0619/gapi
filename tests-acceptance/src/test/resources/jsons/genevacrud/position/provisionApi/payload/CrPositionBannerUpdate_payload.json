@@ -1,0 +1,11 @@
+{
+  "placementCategory": "BANNER",
+  "memo": "Tuesday",
+  "name": "tuesday",
+  "screenLocation": "ABOVE_VISIBLE",
+  "width": 199,
+  "height": 87,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "interstitial": false
+}

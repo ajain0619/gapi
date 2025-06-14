@@ -1,0 +1,20 @@
+{
+  "tagPid": 7341,
+  "selfServePosition": 100276,
+  "positions": [
+    {
+      "pid": 100276,
+      "tiers": [
+        {
+          "pid": 10330,
+          "numTags": 2,
+          "level": 0
+        }
+      ],
+      "name": "pss_medrect_clone",
+      "numTiers": 1
+    }
+  ],
+  "numPositions": 1,
+  "undeployTagValid": true
+}

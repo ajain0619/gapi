@@ -1,0 +1,36 @@
+{
+  "pid": 100327,
+  "version": 2,
+  "site": {
+    "pId": 10000205,
+    "type": "MOBILE_WEB"
+  },
+  "name": "interstitialprovision",
+  "memo": "interstitialprovision",
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "mraidAdvancedTracking": false,
+  "videoLinearity": "LINEAR",
+  "adSizeType": "STANDARD",
+  "height": 320,
+  "width": 480,
+  "status": "ACTIVE",
+  "interstitial": true,
+  "placementCategory": "INTERSTITIAL",
+  "trafficType": "MEDIATION",
+  "placementVideo": {
+    "pid": 100327,
+    "version": 2,
+    "linearity": "LINEAR",
+    "longform": false,
+    "companions": [
+      {
+        "pid": 3,
+        "version": 2,
+        "height": 320,
+        "width": 480
+      }
+    ],
+    "playerRequired": false  }
+}

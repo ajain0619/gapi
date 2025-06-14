@@ -1,0 +1,13 @@
+{
+  "pid": 1,
+  "version": 5,
+  "name": "Nexage Inc",
+  "id": "8a858a47012d2d14893c148945e16ad1",
+  "eligibleBidderGroups": [],
+  "adServingEnabled": false,
+  "restrictDrillDown": false,
+  "test": false,
+  "selfServeAllowed": false,
+  "numberOfUsers": 0,
+  "defaultRtbProfilesEnabled": false
+}

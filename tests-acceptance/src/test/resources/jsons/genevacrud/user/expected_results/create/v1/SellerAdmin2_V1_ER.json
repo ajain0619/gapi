@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 391,
+      "type": "SELLER"
+    }
+  ],
+  "role": "ROLE_ADMIN",
+  "userName": "selleradmin2_V1",
+  "email": "01tewagzsd@qwe.ru",
+  "contactNumber": "654",
+  "name": "sd nexageTestLastName",
+  "title": "hs",
+  "primaryContact": false,
+  "oneCentralUserName": "selleradmin2_V1",
+  "firstName": "sd",
+  "lastName": "nexageTestLastName"
+}

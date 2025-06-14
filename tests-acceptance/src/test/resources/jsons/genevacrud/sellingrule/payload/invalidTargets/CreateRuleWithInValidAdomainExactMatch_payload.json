@@ -1,0 +1,26 @@
+{
+  "name": "invalidAdomainExactMatch",
+  "description": "supplyDescription",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+      "data": "[{\"tag_id\":122,\"tag_values\":[\"a.a\"]}]"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [],
+    "positions": []
+  }
+}

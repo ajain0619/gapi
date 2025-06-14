@@ -1,0 +1,10 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "LookMate",
+  "name": "lookmate",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 999,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "interstitial": true
+}

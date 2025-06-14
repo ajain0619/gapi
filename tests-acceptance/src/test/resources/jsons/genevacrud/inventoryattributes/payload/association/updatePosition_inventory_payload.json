@@ -1,0 +1,23 @@
+{
+  "pid": 100329,
+  "version": 0,
+  "site": {
+    "pid": 10000207,
+    "hbEnabled": false,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "nonDefaultPlacementInventory",
+  "memo": "opium",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 150,
+  "width": 250,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "positionAliasName": "toxicity",
+  "mraidAdvancedTracking": false
+}

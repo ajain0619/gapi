@@ -1,0 +1,17 @@
+{
+  "name": "AV998",
+  "buyer": {
+    "pid": 2160
+  },
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "libraries": [],
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

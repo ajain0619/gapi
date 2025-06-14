@@ -1,0 +1,52 @@
+{
+  "content": [
+    {
+      "companies": [
+        {
+          "name": "Seatholder_1",
+          "pid": 20000,
+          "type": "SEATHOLDER"
+        }
+      ],
+      "dealAdmin": false,
+      "email": "seatholder-manager@geneva.com",
+      "enabled": true,
+      "firstName": "Seatholder",
+      "global": false,
+      "id": "ff808094015b5b8b8f448b90a880002",
+      "lastName": "Manager",
+      "name": "Seatholder Manager",
+      "oneCentralUserName": "seatholdermanager",
+      "pid": 1001,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "userName": "seatholder-manager",
+      "version": 1
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

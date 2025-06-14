@@ -1,0 +1,30 @@
+{
+  "pid": 10000031,
+  "rtbProfilePid": 10000031,
+  "description": "Self Service Created Ad Source",
+  "auctionType": 0,
+  "defaultReserve": 3.00000000,
+  "pubAlias": "10201",
+  "siteAlias": "10000176",
+  "pubNameAlias": "CRUDPositionTest",
+  "siteNameAlias": "CRUDPosition_Site3",
+  "siteType": "W",
+  "isRealName": "false",
+  "siteId": 10000176,
+  "siteName": "CRUDPosition_Site3",
+  "categories": [
+    "IAB4"
+  ],
+  "countries": [],
+  "platform": "OTHER",
+  "pubId": 10201,
+  "pubName": "CRUDPositionTest",
+  "tagPid": 7359,
+  "tagName": "DealTagTest-PSS-InterVideo-TagVideoOverride",
+  "height": 320,
+  "width": 480,
+  "videoSupport": "BANNER",
+  "placementType": "INTERSTITIAL",
+  "placementName": "DealTagTest-Inter-Video",
+  "placementPid": 100282
+}

@@ -1,0 +1,446 @@
+[
+  {
+    "id": 18,
+    "name": "ActiveX"
+  },
+  {
+    "id": 19,
+    "name": "Oath Banned Tracker"
+  },
+  {
+    "id": 20,
+    "name": "Oath Unapproved Beacon"
+  },
+  {
+    "id": 21,
+    "name": "Blank"
+  },
+  {
+    "id": 22,
+    "name": "ClickTag"
+  },
+  {
+    "id": 23,
+    "name": "ClickTag Missing"
+  },
+  {
+    "id": 24,
+    "name": "1yr Domain Expiration"
+  },
+  {
+    "id": 25,
+    "name": "Duration 15-30 sec"
+  },
+  {
+    "id": 26,
+    "name": "Duration 30-60 sec"
+  },
+  {
+    "id": 27,
+    "name": "Duration 5-15 sec"
+  },
+  {
+    "id": 28,
+    "name": "Duration Exception"
+  },
+  {
+    "id": 29,
+    "name": "Duration Over 60 sec"
+  },
+  {
+    "id": 30,
+    "name": "Creative Error"
+  },
+  {
+    "id": 31,
+    "name": "Flash"
+  },
+  {
+    "id": 32,
+    "name": "Flash Cookies"
+  },
+  {
+    "id": 33,
+    "name": "XSS Vulnerable Creative"
+  },
+  {
+    "id": 34,
+    "name": "Invalid Video Media File"
+  },
+  {
+    "id": 35,
+    "name": "Invalid HTTP Response"
+  },
+  {
+    "id": 36,
+    "name": "iOS9 Non Compliant Click Through"
+  },
+  {
+    "id": 37,
+    "name": "iOS9 Non Compliant Creative"
+  },
+  {
+    "id": 38,
+    "name": "Causes Javascript Error"
+  },
+  {
+    "id": 39,
+    "name": "Loads Non-standard File Types"
+  },
+  {
+    "id": 40,
+    "name": "Loads Publisher Tag"
+  },
+  {
+    "id": 41,
+    "name": "Mime Type Mismatch"
+  },
+  {
+    "id": 42,
+    "name": "Mobile Eligible"
+  },
+  {
+    "id": 43,
+    "name": "No Audio"
+  },
+  {
+    "id": 44,
+    "name": "No Valid Media Files"
+  },
+  {
+    "id": 45,
+    "name": "Nth Party Serving"
+  },
+  {
+    "id": 46,
+    "name": "Optimized Video"
+  },
+  {
+    "id": 47,
+    "name": "Partially Secure"
+  },
+  {
+    "id": 48,
+    "name": "Periodic Timeout"
+  },
+  {
+    "id": 49,
+    "name": "Potentially Slow Creative"
+  },
+  {
+    "id": 50,
+    "name": "Creative Renders without Flash"
+  },
+  {
+    "id": 51,
+    "name": "Rotating Content"
+  },
+  {
+    "id": 52,
+    "name": "Rotating Landing Page"
+  },
+  {
+    "id": 53,
+    "name": "SAFEe Certified Creative"
+  },
+  {
+    "id": 54,
+    "name": "Static Image Creative"
+  },
+  {
+    "id": 55,
+    "name": "Creative Times Out"
+  },
+  {
+    "id": 56,
+    "name": "Too Many Creative Components"
+  },
+  {
+    "id": 57,
+    "name": "Triggers Invalid Click"
+  },
+  {
+    "id": 58,
+    "name": "VAST Fetch Error"
+  },
+  {
+    "id": 59,
+    "name": "VAST Parse Error"
+  },
+  {
+    "id": 60,
+    "name": "VAST Version 1.0"
+  },
+  {
+    "id": 61,
+    "name": "VAST Version 2.0"
+  },
+  {
+    "id": 62,
+    "name": "VAST Version 3.0"
+  },
+  {
+    "id": 63,
+    "name": "XSS Vulnerable Flash Creative"
+  },
+  {
+    "id": 64,
+    "name": "Young Creative Domain"
+  },
+  {
+    "id": 65,
+    "name": "Polite Download Size > 100KB"
+  },
+  {
+    "id": 66,
+    "name": "Polite Download Size > 200KB"
+  },
+  {
+    "id": 67,
+    "name": "Polite Download Size > 300KB"
+  },
+  {
+    "id": 68,
+    "name": "Polite Download Size > 400KB"
+  },
+  {
+    "id": 69,
+    "name": "Polite Download Size > 500KB"
+  },
+  {
+    "id": 70,
+    "name": "Total Download Size > 100KB"
+  },
+  {
+    "id": 71,
+    "name": "Total Download Size > 200KB"
+  },
+  {
+    "id": 72,
+    "name": "Total Download Size > 300KB"
+  },
+  {
+    "id": 73,
+    "name": "Total Download Size > 400KB"
+  },
+  {
+    "id": 74,
+    "name": "Total Download Size > 500KB"
+  },
+  {
+    "id": 75,
+    "name": "Age Targeting"
+  },
+  {
+    "id": 76,
+    "name": "Alcohol"
+  },
+  {
+    "id": 77,
+    "name": "Alcohol Branding"
+  },
+  {
+    "id": 78,
+    "name": "Astrology"
+  },
+  {
+    "id": 79,
+    "name": "Casinos"
+  },
+  {
+    "id": 80,
+    "name": "Controversial"
+  },
+  {
+    "id": 81,
+    "name": "Credit Repair"
+  },
+  {
+    "id": 82,
+    "name": "Cryptocurrency"
+  },
+  {
+    "id": 83,
+    "name": "Dating Site"
+  },
+  {
+    "id": 84,
+    "name": "Disclaimer"
+  },
+  {
+    "id": 85,
+    "name": "E-Cigarettes"
+  },
+  {
+    "id": 86,
+    "name": "Family Issues"
+  },
+  {
+    "id": 87,
+    "name": "Fireworks or Explosives"
+  },
+  {
+    "id": 88,
+    "name": "Gambling"
+  },
+  {
+    "id": 89,
+    "name": "Get Rich Quick Schemes"
+  },
+  {
+    "id": 90,
+    "name": "Health Food"
+  },
+  {
+    "id": 91,
+    "name": "Health Sevices/Devices"
+  },
+  {
+    "id": 92,
+    "name": "Image Quality"
+  },
+  {
+    "id": 93,
+    "name": "Image Relevance"
+  },
+  {
+    "id": 94,
+    "name": "Immodest Image"
+  },
+  {
+    "id": 95,
+    "name": "Infant Feeding"
+  },
+  {
+    "id": 96,
+    "name": "Lotteries"
+  },
+  {
+    "id": 97,
+    "name": "Misleading or Irrelevant"
+  },
+  {
+    "id": 98,
+    "name": "No Brand"
+  },
+  {
+    "id": 99,
+    "name": "Non-compliant Contest/Sweepstakes"
+  },
+  {
+    "id": 100,
+    "name": "Options & Forex"
+  },
+  {
+    "id": 101,
+    "name": "OTC Drugs"
+  },
+  {
+    "id": 102,
+    "name": "Payday Loans"
+  },
+  {
+    "id": 103,
+    "name": "Political Candidates & Issues"
+  },
+  {
+    "id": 104,
+    "name": "Pork"
+  },
+  {
+    "id": 105,
+    "name": "Price Claim"
+  },
+  {
+    "id": 106,
+    "name": "Religious"
+  },
+  {
+    "id": 107,
+    "name": "Rx Info"
+  },
+  {
+    "id": 108,
+    "name": "Rx Sales"
+  },
+  {
+    "id": 109,
+    "name": "Sexual Health Products"
+  },
+  {
+    "id": 110,
+    "name": "Single Security Investments"
+  },
+  {
+    "id": 111,
+    "name": "Suffering & Violence"
+  },
+  {
+    "id": 112,
+    "name": "Testimonials"
+  },
+  {
+    "id": 113,
+    "name": "Testosterone Products"
+  },
+  {
+    "id": 114,
+    "name": "Tobacco"
+  },
+  {
+    "id": 115,
+    "name": "Unmoderated UGC"
+  },
+  {
+    "id": 116,
+    "name": "Weapons or Explosive"
+  },
+  {
+    "id": 117,
+    "name": "Weight Loss Pills & Supplements"
+  },
+  {
+    "id": 118,
+    "name": "Weight Loss Program"
+  },
+  {
+    "id": 119,
+    "name": "Yahoo Competitors"
+  },
+  {
+    "id": 121,
+    "name": "Oath EU/EEA Approved Vendor"
+  },
+  {
+    "id": 122,
+    "name": "Oath EU/EEA Non-Approved Vendor"
+  },
+  {
+    "id": 123,
+    "name": "GDPR Indeterminate"
+  },
+  {
+    "id": 694,
+    "name": "ADQ ClickBait"
+  },
+  {
+    "id": 695,
+    "name": "ADQ Text Only"
+  },
+  {
+    "id": 696,
+    "name": "ADQ Alcohol"
+  },
+  {
+    "id": 697,
+    "name": "ADQ Blank Creative"
+  },
+  {
+    "id": 698,
+    "name": "ADQ Bad Landing Page Url"
+  },
+  {
+    "id": 699,
+    "name": "Audio Media"
+  }
+]

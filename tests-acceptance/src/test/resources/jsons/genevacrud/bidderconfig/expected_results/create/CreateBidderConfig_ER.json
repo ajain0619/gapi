@@ -1,0 +1,78 @@
+{
+  "adScreeningEnabled": false,
+  "adSizesFilter": [
+    "_0_X_0",
+    "_320_X_50"
+  ],
+  "adSizesFilterMode": false,
+  "allowBridgeIdMatch": false,
+  "allowIdGraphMatch": true,
+  "allowLiveramp": false,
+  "allowConnectId": false,
+  "allowedContentEncoding": "GZIP",
+  "allowedDeviceTypes": [
+    {
+      "deviceTypeId":6
+    },
+    {
+      "deviceTypeId":2
+    }
+  ],
+  "allowedTraffic": "MOBILE_WEB,APPLICATION",
+  "auctionTypeFilter": 0,
+  "bidRequestCpm": 0,
+  "bidRequestUrl": "qwe",
+  "bidderConfigDenyAllowFilterLists": [{
+    "filterList": {
+      "name": "filterList2",
+      "pid": 2,
+      "type": "DOMAIN",
+      "uploadStatus": "READY",
+      "version": 0
+    },
+    "pid": 1,
+    "version": 0
+  }
+  ],
+  "categoriesFilterMode": false,
+  "companyPid": 300,
+  "countryFilterMode": false,
+  "defaultBidCurrency": "USD",
+  "defaultBidUnit": 0,
+  "deviceIdentifiedOnly": false,
+  "devicesFilterMode": false,
+  "domainFilterAllowList": false,
+  "appBundleFilterAllowList": false,
+  "appBundleFilterAllowUnknownApps": true,
+  "domainVerificationAuthLevel": "ALLOW_ALL",
+  "exchangeRegionals": [
+    {
+      "id": "USA",
+      "pid": 1
+    }
+  ],
+  "formatType": "OpenRTBv2",
+  "headerBiddingEnabled": false,
+  "id": "0001",
+  "imprFilter": [],
+  "includeLists": 1,
+  "locationEnabledOnly": false,
+  "name": "USA",
+  "nativeVersion": "1.1",
+  "noticeUrl": "test",
+  "pid": 11,
+  "publishersFilterMode": false,
+  "regionLimits": [],
+  "requestRateFilter": -1,
+  "scriptAllowedFilter": false,
+  "sendDealSizes": false,
+  "sitesFilterMode": false,
+  "subscriptions": [],
+  "trafficStatus": false,
+  "userIdBidRequestType": "UNKNOWN",
+  "userIdPreference": "NO_ID_RESTRICTION",
+  "verificationType": "STANDARD",
+  "version": 0,
+  "smartQpsOutboundEnabled": true,
+  "throttleRate": 0.3
+}

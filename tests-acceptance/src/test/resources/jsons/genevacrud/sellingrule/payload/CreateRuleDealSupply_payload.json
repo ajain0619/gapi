@@ -1,0 +1,77 @@
+{
+  "name": "DealSupply",
+  "description": "dealDescription",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10225,
+  "type": "DEAL",
+  "intendedActions": [
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "TRAFFIC_TYPE",
+      "data": "MOBILE_WEB, APPLICATION, DESKTOP"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "GENDER",
+      "data": "F"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MULTI_AD_SIZE",
+      "data": "1x1"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "REGION",
+      "data": "supplyData3"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "DEMOGRAPHY",
+      "data": "supplyData9"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "STATE",
+      "data": "supplyData4"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "DEVICE_MAKE_MODEL",
+      "data": "[        {          \"make\": \"Apple\",          \"models\": [\"iPhone \"]        }      ]"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "AGE",
+      "data": "18-20"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "CITY",
+      "data": "supplyData5"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUCKET",
+      "data": "bucket1,bucket2"
+    }
+  ]
+}

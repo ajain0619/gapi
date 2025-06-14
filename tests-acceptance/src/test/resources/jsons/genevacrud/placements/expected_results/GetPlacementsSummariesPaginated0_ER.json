@@ -1,0 +1,97 @@
+{
+  "content": [
+    {
+      "pid": 13599,
+      "name": "position3",
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "placementCategory": "BANNER",
+      "adRequested": 0,
+      "adDelivered": 0,
+      "adServed": 0,
+      "sellerRevenue": 0.0,
+      "ecpm": 0.0,
+      "rpm": 0.0,
+      "ctr": 0.0,
+      "fillRate": 0.0,
+      "revenueTrendPercent": 0.0,
+      "sitePid": 950
+    },
+    {
+      "pid": 13612,
+      "name": "default",
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "placementCategory": "BANNER",
+      "adRequested": 0,
+      "adDelivered": 0,
+      "adServed": 0,
+      "sellerRevenue": 0.0,
+      "ecpm": 0.0,
+      "rpm": 0.0,
+      "ctr": 0.0,
+      "fillRate": 0.0,
+      "revenueTrendPercent": 0.0,
+      "sitePid": 950
+    },
+    {
+      "pid": 13625,
+      "name": "body",
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "placementCategory": "BANNER",
+      "adRequested": 0,
+      "adDelivered": 0,
+      "adServed": 0,
+      "sellerRevenue": 0.0,
+      "ecpm": 0.0,
+      "rpm": 0.0,
+      "ctr": 0.0,
+      "fillRate": 0.0,
+      "revenueTrendPercent": 0.0,
+      "sitePid": 950
+    },
+    {
+      "pid": 13638,
+      "name": "header",
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "placementCategory": "BANNER",
+      "adRequested": 0,
+      "adDelivered": 0,
+      "adServed": 0,
+      "sellerRevenue": 0.0,
+      "ecpm": 0.0,
+      "rpm": 0.0,
+      "ctr": 0.0,
+      "fillRate": 0.0,
+      "revenueTrendPercent": 0.0,
+      "sitePid": 950
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 4,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": false,
+  "totalPages": 2,
+  "totalElements": 8,
+  "size": 4,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "first": true,
+  "numberOfElements": 4,
+  "empty": false
+}

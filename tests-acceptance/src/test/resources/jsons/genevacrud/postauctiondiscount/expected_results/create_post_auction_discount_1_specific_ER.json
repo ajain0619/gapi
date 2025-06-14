@@ -1,0 +1,33 @@
+{
+  "pid": 4,
+  "discountName": "test-post-auction-discount-1_duplicate_specific_deals",
+  "discountPercent": 16.0,
+  "dealsSelected": "SPECIFIC",
+  "openAuctionEnabled": false,
+  "discountDescription": "A test on post auction discount.",
+  "discountStatus": true,
+  "version": 0,
+  "discountSellers": [
+    {
+      "pid": 118,
+      "name": "AdserverSellerTest9"
+    }
+  ],
+  "discountDSPs": [
+    {
+      "companyPid": 10200,
+      "dspSeats": [
+        {
+          "pid": 1,
+          "name": "buyerseat1"
+        }
+      ]
+    }
+  ],
+  "discountDeals": [
+    {
+      "pid": 6543,
+      "description": "Test Deal"
+    }
+  ]
+}

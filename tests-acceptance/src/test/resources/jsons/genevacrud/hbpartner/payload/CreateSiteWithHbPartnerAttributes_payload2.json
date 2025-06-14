@@ -1,0 +1,27 @@
+{
+  "dcn": "ff808081015e5e616d087077d07e0ay2",
+  "description": "hb_partner_site",
+  "domain": "http://hb_partner_site.com",
+  "name": "hb_partner_site2",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "mode": "TEST",
+  "url": "https://hb_partner_site.com",
+  "coppaRestricted": true,
+  "hbEnabled": true,
+  "iabCategories": [
+    "IAB5"
+  ],
+  "hbPartnerAttributes": [
+    {
+      "externalId": "",
+      "hbPartnerPid": 1,
+      "type": "DEFAULT"
+    },
+    {
+      "externalId": "mopub_pub_id_1",
+      "hbPartnerPid": 2
+    }
+  ]
+}

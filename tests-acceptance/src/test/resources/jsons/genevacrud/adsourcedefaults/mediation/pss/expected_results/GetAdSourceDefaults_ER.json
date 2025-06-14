@@ -1,0 +1,10 @@
+{
+  "pid": 3,
+  "version": 4,
+  "sellerPid": 105,
+  "adSourcePid": 7008,
+  "username": "7008_username",
+  "password": "7008_pw",
+  "apiToken": "7008_api_token",
+  "apiKey": "7008_api_key"
+}

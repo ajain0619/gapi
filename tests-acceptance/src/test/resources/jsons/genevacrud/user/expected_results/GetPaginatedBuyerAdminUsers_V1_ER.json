@@ -1,0 +1,92 @@
+{
+  "content": [
+    {
+      "contactNumber": "7817654321",
+      "email": "buyer1manager1@athens1buyer1.com",
+      "enabled": true,
+      "id": "8a859e0f013b3b761d5a76c3bcaf0018",
+      "name": "buyer1manager1",
+      "oneCentralUserName": "buyer1manager1",
+      "pid": 235,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "title": "mr",
+      "userName": "buyer1manager1",
+      "companies": [
+        {
+          "pid": 352,
+          "name": "athens1buyer1",
+          "type": "BUYER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "contactNumber": "7817689876",
+      "email": "buyer1user1@nexage.com",
+      "enabled": true,
+      "id": "8a859e0f013b3b761d5a76c6d0e60019",
+      "name": "buyer1user1",
+      "oneCentralUserName": "buyer1user1",
+      "pid": 248,
+      "primaryContact": false,
+      "role": "ROLE_USER",
+      "title": "mr",
+      "userName": "buyer1user1",
+      "companies": [
+        {
+          "pid": 352,
+          "name": "athens1buyer1",
+          "type": "BUYER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "contactNumber": "test4",
+      "email": "test3@mail.com",
+      "enabled": true,
+      "id": "ff808081014f4f92d85ba6e7cbef006b",
+      "name": "test5",
+      "oneCentralUserName": "test1",
+      "pid": 704,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "title": "test6",
+      "userName": "test1",
+      "companies": [
+        {
+          "pid": 352,
+          "name": "athens1buyer1",
+          "type": "BUYER"
+        }
+      ],
+      "dealAdmin": false
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": false,
+      "sorted": true,
+      "empty": false
+    },
+    "pageNumber": 0,
+    "pageSize": 10,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalElements": 3,
+  "totalPages": 1,
+  "last": true,
+  "numberOfElements": 3,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "unsorted": false,
+    "sorted": true,
+    "empty": false
+  },
+  "first": true,
+  "empty": false
+}

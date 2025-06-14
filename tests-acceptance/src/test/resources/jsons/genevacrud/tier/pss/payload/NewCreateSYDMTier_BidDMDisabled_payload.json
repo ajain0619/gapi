@@ -1,0 +1,26 @@
+{
+  "site": {
+    "pid": 10000198
+  },
+  "position": {
+    "pid": 100320
+  },
+  "buyer": {
+    "pid": "7048"
+  },
+  "ecpmAuto": 0,
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "status": "ACTIVE",
+  "selfServeEnablement": "NONE",
+  "owner": "Publisher",
+  "rules": [],
+  "type": "Mediation",
+  "tagController": {
+    "autoExpand": false
+  },
+  "name": "CreateDM_BidDisabled_DMDisabled",
+  "primaryId": "CreateDM_BidDisabled_DMDisabled",
+  "monetization": true
+}

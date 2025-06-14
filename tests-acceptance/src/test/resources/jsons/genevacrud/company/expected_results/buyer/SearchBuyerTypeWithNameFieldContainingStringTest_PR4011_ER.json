@@ -1,0 +1,33 @@
+[
+  {
+    "id": "8a858a23014444db418fdb43c5410003",
+    "pid": 10141,
+    "version": 1,
+    "name": "test_PR4011",
+    "type": "BUYER",
+    "website": "www.test_PR4011.com",
+    "description": "testing",
+    "contactUserPid": 690,
+    "adServingEnabled": false,
+    "dynamicBuyerRegistrationEnabled": false,
+    "brxdBuyerIdEnabledOnBidRequest": false,
+    "restrictDrillDown": false,
+    "cpiTrackingEnabled": true,
+    "rtbEnabled": false,
+    "mediationEnabled": true,
+    "rtbRevenueReportEnabled": false,
+    "status": "ACTIVE",
+    "disableAdFeedback": false,
+  "test": false,
+    "selfServeAllowed": false,
+    "payoutEnabled": false,
+    "thirdPartyFraudDetectionEnabled": false,
+    "defaultRtbProfilesEnabled": false,
+    "currency": "USD",
+    "externalAdVerificationEnabled": false,
+    "fraudDetectionJavascriptEnabled": true,
+    "adsourceNames": [],
+    "externalDataProviderNames": [],
+    "numberOfUsers": 0
+  }
+]

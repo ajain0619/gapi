@@ -1,0 +1,39 @@
+{
+  "dcn": "ff808081015e5e616d087077d07e0az0",
+  "description": "dcn_internal_admin_ok",
+  "domain": "http://dcn_internal.com",
+  "name": "dcn_internal_admin",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "https://dcn_internal.com",
+  "coppaRestricted": true,
+  "iabCategories": [
+    "IAB5"
+  ],
+  "mode": "TEST",
+  "hbEnabled": true,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0
+  }
+}

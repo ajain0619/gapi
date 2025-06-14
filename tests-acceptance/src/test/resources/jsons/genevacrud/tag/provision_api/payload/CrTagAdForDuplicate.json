@@ -1,0 +1,18 @@
+{
+  "name": "AV291",
+  "buyer": {
+    "pid": "4746"
+  },
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "east",
+  "adNetReportPassword": "west",
+  "adNetReportApiKey": "apiKey",
+  "adNetReportApiToken": "apiToken",
+  "tagController": {
+    "autoExpand": false
+  },
+  "primaryId": "apikey"
+}

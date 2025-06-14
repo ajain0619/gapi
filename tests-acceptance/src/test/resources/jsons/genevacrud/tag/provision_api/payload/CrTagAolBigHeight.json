@@ -1,0 +1,22 @@
+{
+  "name": "AV185",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": [],
+  "width": 320,
+  "height": 10000,
+
+  "videoSupport": "VIDEO"
+}

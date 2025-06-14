@@ -1,0 +1,28 @@
+{
+  "pid": 1,
+  "name": "BGR1",
+  "version": 2,
+  "publisherPid": 105,
+  "privilegeLevel": "GLOBAL",
+  "groups": [
+    {
+      "pid": 2,
+      "name": "BGR1",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "GLOBAL",
+      "data": "IAB1,IAB3",
+      "itemType": "CATEGORY",
+      "listType": "BLOCKLIST"
+    },
+    {
+      "name": "BGR42",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "GLOBAL",
+      "data": "qqq,www",
+      "itemType": "ADOMAIN",
+      "listType": "BLOCKLIST"
+    }
+  ]
+}

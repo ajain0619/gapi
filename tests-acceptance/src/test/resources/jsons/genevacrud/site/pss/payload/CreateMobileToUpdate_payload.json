@@ -1,0 +1,13 @@
+{
+  "domain": "mobile_site1.com",
+  "name": "mobile_site1",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "mobile_site1.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE"
+}

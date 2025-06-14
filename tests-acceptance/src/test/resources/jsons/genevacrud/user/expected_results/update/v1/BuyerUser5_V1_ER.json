@@ -1,0 +1,16 @@
+{
+  "userName": "buyeruser5",
+  "name": "buyer user udpated",
+  "email": "buyeruser5@jdf.ru",
+  "contactNumber": "213213",
+  "title": "Mr",
+  "role": "ROLE_USER",
+  "enabled": true,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 274
+    }
+  ],
+  "oneCentralUserName": "buyeruser5"
+}

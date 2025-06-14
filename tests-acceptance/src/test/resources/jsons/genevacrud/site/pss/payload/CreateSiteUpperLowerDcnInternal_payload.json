@@ -1,0 +1,16 @@
+{
+  "dcn": "fK808081015e5F616S087077d07E0aC9",
+  "description": "dcn_internal_upperlower",
+  "domain": "http://dcn_internal.com",
+  "name": "dcn_internal_upper_lower",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "mode": "TEST",
+  "url": "https://dcn_internal.com",
+  "coppaRestricted": true,
+  "hbEnabled": true,
+  "iabCategories": [
+    "IAB5"
+  ]
+}

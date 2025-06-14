@@ -1,0 +1,37 @@
+{
+  "domain": "desktop_site2.com",
+  "name": "desktop_site2",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "DESKTOP",
+  "url": "desktop_site2.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0
+  }
+}

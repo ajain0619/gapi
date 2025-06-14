@@ -1,0 +1,108 @@
+{
+  "pid": 1,
+  "version": 0,
+  "name": "updatedFormula1",
+  "description": "allBMdescription",
+  "status": "ACTIVE",
+  "intendedActions": [
+    {
+      "pid": 1,
+      "version": 0,
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "targets": [
+    {
+      "pid": 1,
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    }
+  ],
+  "ruleFormula": {
+    "pid": 1,
+    "version": 0,
+    "placementFormula": {
+      "groupedBy": "OR",
+      "formulaGroups": [
+        {
+          "formulaRules": [
+            {
+              "attribute": "PUBLISHER_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "crud"
+            },
+            {
+              "attribute": "PLACEMENT_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "tr"
+            },
+            {
+              "attribute": "PLACEMENT_TYPE",
+              "operator": "EQUALS",
+              "ruleData": "BANNER"
+            },
+            {
+              "attribute": "SITE_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "al"
+            },
+            {
+              "attribute": "SITE_TYPE",
+              "operator": "EQUALS",
+              "ruleData": "MOBILE_WEB"
+            }
+          ]
+        },
+        {
+          "formulaRules": [
+            {
+              "attribute": "PLACEMENT_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "_formula"
+            },
+            {
+              "attribute": "PLACEMENT_TYPE",
+              "operator": "EQUALS",
+              "ruleData": "INTERSTITIAL"
+            },
+            {
+              "attribute": "SITE_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "site"
+            },
+            {
+              "attribute": "SITE_TYPE",
+              "operator": "NOT_EQUALS",
+              "ruleData": "APPLICATION"
+            }
+          ]
+        },
+        {
+          "formulaRules": [
+            {
+              "attribute": "PUBLISHER_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "alias"
+            },
+            {
+              "attribute": "PLACEMENT_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "not_matters"
+            },
+            {
+              "attribute": "SITE_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "site"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

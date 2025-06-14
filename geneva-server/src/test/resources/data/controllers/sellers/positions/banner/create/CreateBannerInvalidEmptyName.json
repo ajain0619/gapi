@@ -1,0 +1,11 @@
+{
+  "sitePid": 10000174,
+  "tiers": [],
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "BELOW_VISIBLE",
+  "mraidAdvancedTracking": true,
+  "placementCategory": "BANNER"
+}

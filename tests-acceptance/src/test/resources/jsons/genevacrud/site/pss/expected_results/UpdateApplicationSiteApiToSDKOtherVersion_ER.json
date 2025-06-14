@@ -1,0 +1,60 @@
+{
+  "pid": 10000208,
+  "version": 1,
+  "publisher": {
+    "pid": 10228
+  },
+  "description": "site with all fields deskription",
+  "domain": "mgb6site.com",
+  "name": "api_appl",
+  "platform": "ANDROID",
+  "status": "ACTIVE",
+  "type": "APPLICATION",
+  "url": "https://play.google.com/store/movies/details/King_Arthur_Legend_of_the_Sword?id=MySite",
+  "appBundle": "MySite",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "IAB12",
+  "iabCategories": [
+    "IAB4"
+  ],
+  "positions": [
+    {
+      "pid": 100329,
+      "name": "interstitial",
+      "memo": "interstitial"
+    }
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "trafficThrottle": 55,
+  "adTruthEnabled": false,
+  "globalAliasName": "alias",
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": true,
+    "groups": [
+      "EnBarraquillaMeQuedo"
+    ]
+  },
+  "reportFrequency": 18000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 18000,
+  "filterBots": false,
+  "buyerTimeout": 100,
+  "daysFree": 0,
+  "totalTimeout": 100,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "ethnicityMap": "afr=0,asian=1,hisp=2,wh=3,oth=4",
+  "genderMap": "a1=M",
+  "maritalStatusMap": "single=S,married=M,divorced=D,other=O",
+  "inputDateFormat": "123456789",
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.1,
+    "rtbFee": 0.2
+  }
+}

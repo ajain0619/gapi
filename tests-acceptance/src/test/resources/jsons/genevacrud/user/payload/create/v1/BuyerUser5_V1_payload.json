@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 274
+    }
+  ],
+  "role": "ROLE_USER",
+  "userName": "buyeruser5",
+  "email": "buyeruser5@jdf.ru",
+  "contactNumber": "jdc",
+  "name": "jd jd",
+  "title": "j",
+  "primaryContact": false
+}

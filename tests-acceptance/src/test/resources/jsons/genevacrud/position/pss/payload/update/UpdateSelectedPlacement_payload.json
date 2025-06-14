@@ -1,0 +1,14 @@
+{
+  "pid": 100246,
+  "version": 3,
+  "site": {
+    "pid": 10000174
+  },
+  "name": "CRUDPosition_UpdateCases",
+  "memo": "CRUDPosition_UpdateCases_Updated",
+  "mraidSupport": "NO",
+  "videoSupport": "NATIVE",
+  "screenLocation": "UNDEFINED",
+  "interstitial": false,
+  "placementCategory": "INTERSTITIAL"
+}

@@ -1,0 +1,22 @@
+{
+  "pid": 10000192,
+  "version": 4,
+  "publisher": {
+    "pid": 10201
+  },
+  "dcn": "ff808081015e5e5805905b6311ba0499",
+  "description": "dcn_internal_admin_ok",
+  "domain": "http://dcn_internal.com",
+  "name": "dcn_internal_admin",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "https://dcn_internal.com",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB5"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false
+}

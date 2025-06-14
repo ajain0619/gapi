@@ -1,0 +1,23 @@
+{
+  "content": [
+    {
+      "dealPid": 1,
+      "autoUpdate": false,
+      "placementFormula": {
+        "groupedBy": "OR",
+        "formulaGroups": [
+          {
+            "formulaRules": [
+              {
+                "attribute": "INVENTORY_ATTRIBUTE",
+                "operator": "EQUALS",
+                "ruleData": "dummy11",
+                "attributePid": 11
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

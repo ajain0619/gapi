@@ -1,0 +1,29 @@
+---
+- hosts: localhost
+  become: True
+  become_user: root
+  gather_facts: yes
+  roles:
+    - role: '../roles/geneva-server'
+  tasks:
+    - import_role:
+        name: geneva-server
+        tasks_from: configure-fluentd
+    - import_role:
+        name: geneva-server
+        tasks_from: configure-newrelic-infra
+    - import_role:
+        name: geneva-server
+        tasks_from: configure-newrelic
+    - import_role:
+        name: geneva-server
+        tasks_from: configure-keystore
+    - import_role:
+        name: geneva-server
+        tasks_from: configure
+    - import_role:
+        name: geneva-server
+        tasks_from: configure-sia
+    - import_role:
+        name: geneva-server
+        tasks_from: configure-splunk

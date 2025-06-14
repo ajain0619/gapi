@@ -1,0 +1,81 @@
+{
+  "content": [
+    {
+      "sellerPid": 10227,
+      "sellerName": "Provision",
+      "sites": [
+        {
+          "sitePid": 10000204,
+          "siteName": "FOLK_SITE",
+          "placements": [
+            {
+              "placementPid": 100323,
+              "placementName": "para_ioso",
+              "placementMemo": "para_ioso"
+            },
+            {
+              "placementPid": 100324,
+              "placementName": "nativeprovision",
+              "placementMemo": "nativeprovision"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sellerPid": 10212,
+      "sellerName": "name"
+    },
+    {
+      "sellerPid": 248,
+      "sites": [
+        {
+          "sitePid": 92,
+          "placements": [
+            {
+              "placementPid": 12260
+            },
+            {
+              "placementPid": 12273
+            },
+            {
+              "placementPid": 12286
+            },
+            {
+              "placementPid": 12299
+            },
+            {
+              "placementPid": 12325
+            },
+            {
+              "placementPid": 12338
+            },
+            {
+              "placementPid": 12351
+            }
+          ]
+        },
+        {
+          "sitePid": 105,
+          "placements": [
+            {
+              "placementPid": 10297
+            },
+            {
+              "placementPid": 10310
+            },
+            {
+              "placementPid": 10336
+            },
+            {
+              "placementPid": 10349
+            },
+            {
+              "placementPid": 10362
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

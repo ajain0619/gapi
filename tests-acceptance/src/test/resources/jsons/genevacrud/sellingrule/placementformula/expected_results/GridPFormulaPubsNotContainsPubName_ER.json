@@ -1,0 +1,149 @@
+{
+  "content":[
+    {
+      "companyId": 10201,
+      "companyName": "CRUDPositionTest",
+      "sitePid": 10000177,
+      "siteName": "CRUDPosition_Site4_UpdateCases",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100245,
+      "placementName": "CRUDPosition_UpdateCases",
+      "placementType": "BANNER"
+    },
+    {
+      "companyId": 10201,
+      "companyName": "CRUDPositionTest",
+      "sitePid": 10000174,
+      "siteName": "CRUDPosition_Site1",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100246,
+      "placementName": "CRUDPosition_UpdateCases",
+      "placementMemo": "CRUDPosition_UpdateCases",
+      "placementType": "NATIVE"
+    },
+    {
+      "companyId": 10201,
+      "companyName": "CRUDPositionTest",
+      "sitePid": 10000174,
+      "siteName": "CRUDPosition_Site1",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100247,
+      "placementName": "banner_placement",
+      "placementMemo": "banner placement",
+      "placementType": "BANNER",
+      "height": 50,
+      "width": 300
+    },
+    {
+      "companyId": 10201,
+      "companyName": "CRUDPositionTest",
+      "sitePid": 10000174,
+      "siteName": "CRUDPosition_Site1",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100248,
+      "placementName": "interstitial_placement",
+      "placementMemo": "interstitial placement",
+      "placementType": "INTERSTITIAL",
+      "height": 768,
+      "width": 1024
+    },
+    {
+      "companyId": 10201,
+      "companyName": "CRUDPositionTest",
+      "sitePid": 10000174,
+      "siteName": "CRUDPosition_Site1",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100249,
+      "placementName": "medium_rectangle_placement",
+      "placementMemo": "medium rectangle placement",
+      "placementType": "MEDIUM_RECTANGLE",
+      "height": 250,
+      "width": 300
+    },
+    {
+      "companyId": 10201,
+      "companyName": "CRUDPositionTest",
+      "sitePid": 10000174,
+      "siteName": "CRUDPosition_Site1",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100250,
+      "placementName": "native_placement",
+      "placementMemo": "native placement",
+      "placementType": "NATIVE"
+    },
+    {
+      "companyId": 10201,
+      "companyName": "CRUDPositionTest",
+      "sitePid": 10000174,
+      "siteName": "CRUDPosition_Site1",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100251,
+      "placementName": "instream_video_placement",
+      "placementMemo": "instream video placement",
+      "placementType": "INSTREAM_VIDEO",
+      "height": 1024,
+      "width": 768
+    },
+    {
+      "companyId": 10201,
+      "companyName": "CRUDPositionTest",
+      "sitePid": 10000175,
+      "siteName": "CRUDPosition_Site2",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100269,
+      "placementName": "banner_placement_clone",
+      "placementType": "BANNER",
+      "height": 50,
+      "width": 300
+    },
+    {
+      "companyId": 10201,
+      "companyName": "CRUDPositionTest",
+      "sitePid": 10000175,
+      "siteName": "CRUDPosition_Site2",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100270,
+      "placementName": "interstitial_placement_clone",
+      "placementType": "INTERSTITIAL",
+      "height": 250,
+      "width": 300
+    },
+    {
+      "companyId": 10201,
+      "companyName": "CRUDPositionTest",
+      "sitePid": 10000175,
+      "siteName": "CRUDPosition_Site2",
+      "siteType": "MOBILE_WEB",
+      "placementId": 100271,
+      "placementName": "inStreamVid_placement_clone",
+      "placementType": "INSTREAM_VIDEO",
+      "height": 320,
+      "width": 480
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "pageNumber": 0,
+    "pageSize": 10,
+    "offset": 0,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": false,
+  "totalPages": 5,
+  "totalElements": 42,
+  "first": true,
+  "numberOfElements": 10,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "empty": false
+}

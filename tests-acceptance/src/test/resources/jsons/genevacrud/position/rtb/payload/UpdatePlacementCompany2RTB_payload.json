@@ -1,0 +1,55 @@
+{
+  "pid": 100330,
+  "version": 1,
+  "site": {
+    "pid": 10000202,
+    "hbEnabled": false,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "tracker2",
+  "memo": "banner placement",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "defaultRtbProfile": {
+    "pid": 10000069,
+    "version": 2,
+    "name": "NoMeLlores",
+    "blockedAdCategories": [],
+    "blockedAdvertisers": [],
+    "pubNetReserve": 1.5,
+    "libraries": [],
+    "bidderFilterWhitelist": true,
+    "useDefaultBlock": false,
+    "includeConsumerId": false,
+    "includeDomainReferences": true,
+    "includeConsumerProfile": false,
+    "screeningLevel": "AllowAll",
+    "useDefaultBidders": true,
+    "auctionType": "EXCHANGE_DEFAULT",
+    "lowReserve": 0,
+    "alterReserve": "ONLY_IF_HIGHER",
+    "siteTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "description": "new description",
+    "siteType": "W",
+    "defaultReserve": 1.04,
+    "blockedExternalDataProviderMap": {},
+    "bidderFilterMap": {},
+    "libraryPids": [],
+    "includeGeoData": false,
+    "defaultRtbProfileOwnerCompanyPid": 10225
+  },
+  "mraidAdvancedTracking": false
+}

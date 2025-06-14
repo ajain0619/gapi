@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 10024,
+      "type": "BUYER"
+    }
+  ],
+  "role": "ROLE_USER",
+  "userName": "buyeruser2_V1",
+  "email": "01jdfjdf@erqw.ru",
+  "contactNumber": "df",
+  "name": "jdf nexageTestLastName",
+  "title": "jdf",
+  "primaryContact": false,
+  "oneCentralUserName": "buyeruser2_V1",
+  "firstName": "jdf",
+  "lastName": "nexageTestLastName"
+}

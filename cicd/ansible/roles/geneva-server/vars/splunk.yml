@@ -1,0 +1,5 @@
+geneva_server_splunk_home: /opt/splunkforwarder
+geneva_server_splunk_version: 8.1.1-08187535c166-linux-2.6-x86_64
+splunk_forwarder_lib_path: /etc/splunk/
+splunk_forwarder_lib_file_name: splunk.rpm
+

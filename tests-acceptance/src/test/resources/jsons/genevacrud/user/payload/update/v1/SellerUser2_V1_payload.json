@@ -1,0 +1,20 @@
+{
+  "id": "ff8080810151510f18db1ad1039c03e7",
+  "pid": 727,
+  "version": 0,
+  "userName": "selleruser2",
+  "name": "seller user2 udpated",
+  "email": "1sfhdx@rasd.ru",
+  "contactNumber": "543321",
+  "title": "Mr",
+  "role": "ROLE_USER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 79,
+      "type": "SELLER",
+      "name": "adserverFTGroup5"
+    }
+  ]
+}

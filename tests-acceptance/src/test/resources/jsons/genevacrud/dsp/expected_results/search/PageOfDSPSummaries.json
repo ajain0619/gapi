@@ -1,0 +1,59 @@
+{
+  "content": [
+    {
+      "id": "8a859e0f013a3abdee81c27f6aef0005",
+      "pid": 261,
+      "version": 4,
+      "name": "acme bidding",
+      "type": "BUYER",
+      "website": "www.acme.com",
+    },
+    {
+      "id": "8a809449012f2ee2fbcc01c46f32001a",
+      "pid": 664,
+      "version": 3,
+      "name": "AdFonic",
+      "type": "BUYER",
+      "website": "http://www.adfonic.com",
+      "description": "AdFonic - RTB"
+    },
+    {
+      "id": "ff808081014f4feee094ef16dca1005d",
+      "pid": 10205,
+      "version": 1,
+      "name": "another buyer",
+      "type": "BUYER",
+      "website": "www.qqq.com",
+      "description": "test"
+    },
+    {
+      "id": "8a858a4b013b3b1a2e001a3093090005",
+      "pid": 300,
+      "version": 3,
+      "name": "asdf",
+      "type": "BUYER",
+      "website": "asdf",
+    },
+    {
+      "id": "8a859e0f013b3b761d5a76b589ff000f",
+      "pid": 352,
+      "version": 2,
+      "name": "athens1buyer1",
+      "type": "BUYER",
+      "website": "www.athens1buyer1.com",
+      "description": "This is a buyer company to test access permissions"
+    }
+  ],
+  "totalPages": 6,
+  "totalElements": 29,
+  "last": false,
+  "numberOfElements": 5,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "first": true,
+  "size": 5,
+  "number": 0
+}

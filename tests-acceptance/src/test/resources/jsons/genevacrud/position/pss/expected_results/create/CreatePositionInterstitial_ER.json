@@ -1,0 +1,18 @@
+{
+  "site":{
+    "pid":10000192
+  },
+  "screenLocation":"FULLSCREEN_VISIBLE",
+  "mraidSupport":"YES",
+  "placementCategory":"INTERSTITIAL",
+  "interstitial": true,
+  "mraidAdvancedTracking":true,
+  "positionAliasName":"CreateInterstitialPlacementAlias",
+  "videoSupport":"VIDEO_AND_BANNER",
+  "width":480,
+  "height":320,
+  "adSizeType":"STANDARD",
+  "memo":"CreateInterstitialPlacement",
+  "name":"createinterstitialplacement",
+  "impressionTypeHandling":"BASED_ON_PLACEMENT_CONFIG"
+}

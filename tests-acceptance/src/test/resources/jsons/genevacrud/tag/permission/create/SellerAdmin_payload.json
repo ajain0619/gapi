@@ -1,0 +1,9 @@
+{
+  "userName": "105_SELLER_ADMIN",
+  "name": "105_SELLER_ADMIN",
+  "email": "105_SELLER_ADMIN@nexage.com",
+  "role": "ROLE_ADMIN",
+  "enabled": true,
+  "primaryContact": false,
+  "companyPid": 105
+}

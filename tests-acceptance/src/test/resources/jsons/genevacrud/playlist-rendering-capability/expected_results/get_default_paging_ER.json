@@ -1,0 +1,47 @@
+{
+  "content": [
+    {
+      "displayValue": "MRAID 2.0",
+      "value": "mraid2.0"
+    },
+    {
+      "displayValue": "MRAID 3.0",
+      "value": "mraid3.0"
+    },
+    {
+      "displayValue": "Multi Ad",
+      "value": "multiAd"
+    },
+    {
+      "displayValue": "OpenRTB Native 1.0",
+      "value": "openrtbnative1.0"
+    },
+    {
+      "displayValue": "OpenRTB Native 1.1",
+      "value": "openrtbnative1.1"
+    },
+    {
+      "displayValue": "Restrict Demand Sources",
+      "value": "restrictDemandSources"
+    },
+    {
+      "displayValue": "VAST 2.0",
+      "value": "vast2.0"
+    },
+    {
+      "displayValue": "VAST 3.0",
+      "value": "vast3.0"
+    },
+    {
+      "displayValue": "Verizon Native Protocol 0",
+      "value": "verizonnativeprotocol0"
+    },
+    {
+      "displayValue": "Verizon Native Protocol 1",
+      "value": "verizonnativeprotocol1"
+    }
+  ],
+  "number": 0,
+  "numberOfElements": 10,
+  "size": 10
+}

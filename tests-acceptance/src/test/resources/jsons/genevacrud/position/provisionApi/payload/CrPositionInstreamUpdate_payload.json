@@ -1,0 +1,11 @@
+{
+  "placementCategory": "INSTREAM_VIDEO",
+  "memo": "saturday",
+  "name": "saturday",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 1000,
+  "height": 990,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "interstitial": false
+}

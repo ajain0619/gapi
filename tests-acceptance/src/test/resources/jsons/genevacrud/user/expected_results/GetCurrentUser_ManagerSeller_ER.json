@@ -1,0 +1,50 @@
+{
+  "content": [
+    {
+      "companies": [
+        {
+          "name": "test_rtb",
+          "pid": 10063,
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false,
+      "email": "crudsellermanager@nexage.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0601525215521c17d623f101d0",
+      "name": "crudsellermanager",
+      "oneCentralUserName": "crudsellermanager",
+      "pid": 740,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "userName": "crudsellermanager",
+      "version": 2
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

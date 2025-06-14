@@ -1,0 +1,75 @@
+{
+  "pid": 1,
+  "dealId": "1442225178554269962",
+  "description": "updated",
+  "start": 1442462400000,
+  "stop": 1442721599000,
+  "floor": 100,
+  "createdBy": 2,
+  "status": "Active",
+  "dateCreated": 1442250404000,
+  "auctionType": "None",
+  "bidders": [
+    {
+      "wseat": [
+        "2"
+      ],
+      "adomains": [
+        "www.qqq.com"
+      ],
+      "bidderPid": 1
+    }
+  ],
+  "profiles": [
+    {
+      "pid": 26,
+      "rtbProfilePid": 31002,
+      "auctionType": 0,
+      "defaultReserve": 0,
+      "pubAlias": "1",
+      "siteAlias": "1",
+      "pubNameAlias": "SELLER-2 For Functional Testing",
+      "siteNameAlias": "Site-2 For Functional Testing",
+      "siteType": "W",
+      "isRealName": "false",
+      "siteId": 20001,
+      "siteName": "Exchange Functional Test Site-2",
+      "categories": [],
+      "countries": [],
+      "platform": "OTHER",
+      "pubId": 10000,
+      "pubName": "Seller1",
+      "tagPid": 5566505,
+      "tagName": "testTagDeal101"
+    }
+  ],
+  "visibility": false,
+  "targets": [
+    {
+      "data": "alcatel/*,huawei/*",
+      "ruleType": "POSITIVE",
+      "targetType": "DEVICE_MAKE_MODEL"
+    },
+    {
+      "data": "sdk/6.3.0/6.3.1",
+      "paramName": "foo",
+      "ruleType": "POSITIVE",
+      "targetType": "SDK_VERSION"
+    },
+    {
+      "data": "android/*/2.1,ios/*/*",
+      "ruleType": "POSITIVE",
+      "targetType": "DEVICE_OS_VERSION"
+    },
+    {
+      "data": "chn/*,usa/ma",
+      "ruleType": "POSITIVE",
+      "targetType": "COUNTRY_STATE"
+    },
+    {
+      "data": "male/18/*,female/18/*",
+      "ruleType": "POSITIVE",
+      "targetType": "GENDER_AGE"
+    }
+  ]
+}

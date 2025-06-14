@@ -1,0 +1,21 @@
+{
+  "pid": 105,
+  "version": 2,
+  "name": "adserverSellerTest8Update",
+  "id": "8a858a330137372da0982da27bb70005",
+  "accessKey": "8a858a330137372da0982da27bb70005",
+  "attributes": {
+    "version": 1,
+    "defaultBlock": [
+    ],
+    "individualsDefaultBlock": [
+    ],
+    "defaultBidderGroups": [
+    ],
+    "individualsDefaultBidderGroups": [
+    ],
+    "defaultBiddersAllowList": true
+  },
+  "eligibleBidderGroups": [
+  ]
+}

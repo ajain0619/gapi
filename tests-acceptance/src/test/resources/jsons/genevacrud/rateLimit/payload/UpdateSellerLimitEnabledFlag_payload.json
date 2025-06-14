@@ -1,0 +1,41 @@
+{
+  "id": "8a859e06014f4fd97b68dbd03b3c000a",
+  "pid": 10201,
+  "version": 1,
+  "name": "CRUDPositionTest",
+  "type": "SELLER",
+  "website": "www.nexage.com",
+  "description": "",
+  "adServingEnabled": false,
+  "restrictDrillDown": true,
+  "cpiTrackingEnabled": false,
+  "rtbEnabled": false,
+  "mediationEnabled": false,
+  "rtbRevenueReportEnabled": false,
+  "status": "ACTIVE",
+  "numberOfUsers": 37,
+  "numberOfRtbTags": 37,
+  "numberOfMediationSites": 37,
+  "test": false,
+  "selfServeAllowed": true,
+  "sellerAttributes": {
+    "effectiveDate": 1442501901000,
+    "defaultBlock": [
+    ],
+    "defaultBidderGroups": [
+    ],
+    "defaultBiddersAllowList": true,
+    "hbThrottleEnabled": false,
+    "hbThrottlePercentage": 0,
+    "pfoEnabled": false,
+    "limitEnabled": false,
+    "version": 0,
+    "revenueShare": 0,
+    "rtbFee": 0,
+    "adFeedbackOptOut": false,
+    "buyerTransparencyOptOut": false,
+    "humanOptOut": false
+  },
+  "payoutEnabled": false,
+  "thirdPartyFraudDetectionEnabled": false
+}

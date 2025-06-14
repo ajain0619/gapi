@@ -1,0 +1,11 @@
+[
+  {
+    "pid": 5,
+    "name": "SeatOneName",
+    "seat": "SeatOneId",
+    "enabled": false,
+    "buyerGroupPid": 6,
+    "version": 0,
+    "companyPid": 10024
+  }
+]

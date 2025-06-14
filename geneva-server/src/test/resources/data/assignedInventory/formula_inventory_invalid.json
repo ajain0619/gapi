@@ -1,0 +1,22 @@
+{
+  "content": [
+    {
+      "dealPid": 1,
+      "autoUpdate": false,
+      "placementFormula": {
+        "groupedBy": "OR",
+        "formulaGroups": [
+          {
+            "formulaRules": [
+              {
+                "operator": "EQUALS",
+                "ruleData": "dummy11",
+                "attributePid": 11
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

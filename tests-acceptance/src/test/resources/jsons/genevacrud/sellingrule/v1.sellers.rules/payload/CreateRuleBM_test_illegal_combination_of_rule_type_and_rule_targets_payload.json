@@ -1,0 +1,33 @@
+{
+  "pid": 35,
+  "version": 1,
+  "name": "BMTest",
+  "description": "test",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10000,
+  "type": "DEAL",
+  "intendedActions": [
+    {
+      "pid": 2,
+      "version": 1,
+      "actionType": "FLOOR",
+      "actionData": "1.5"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+      "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]"
+    }
+  ],
+  "assignments": {
+    "positions": [
+      {
+        "pid": 100231,
+        "name": "top"
+      }
+    ]
+  }
+}

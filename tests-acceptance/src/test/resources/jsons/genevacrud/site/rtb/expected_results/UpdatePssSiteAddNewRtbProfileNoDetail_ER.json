@@ -1,0 +1,44 @@
+{
+  "description": "aleksis_site",
+  "domain": "aleksis_site",
+  "name": "aleksis_site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "aleksis_site",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "defaultRtbProfile": {
+    "description": "updatedDescription",
+    "defaultRtbProfileOwnerCompanyPid": 10225,
+    "name": "allNight"
+  },
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.009,
+    "rtbFee": 0.025
+  }
+}

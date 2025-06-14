@@ -1,0 +1,14 @@
+{
+  "name": "Rule without publisher",
+  "description": "some_description",
+  "status": "ACTIVE",
+  "type": "DEAL",
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "CONTENT_SERIES",
+      "data": "{\"excludeTrafficWithoutSeries\" : 1 }"
+    }
+  ]
+}

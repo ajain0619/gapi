@@ -1,0 +1,32 @@
+{
+  "discountName": "test-post-auction-discount-with-nonexistent-revenue-group",
+  "discountPercent": 15.0,
+  "openAuctionEnabled": true,
+  "dealsSelected": "ALL",
+  "discountDescription": "A test on post auction discount with a non-existent revenue group.",
+  "discountStatus": true,
+  "discountRevenueGroups": [
+    {
+      "pid": 9,
+      "type": {
+        "pid": 1
+      }
+    },
+    {
+      "pid": 16,
+      "type": {
+        "pid": 1
+      }
+    }
+  ],
+  "discountDSPs": [
+    {
+      "companyPid": 10200,
+      "dspSeats": [
+        {
+          "pid": 1
+        }
+      ]
+    }
+  ]
+}

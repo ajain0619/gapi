@@ -1,0 +1,19 @@
+{
+  "id": "ff8080810151510f18db1ad105ae03e9",
+  "pid": 729,
+  "userName": "buyermanager2",
+  "name": "buyer manager2 updated",
+  "email": "1reqwtwqa@qwert.ru",
+  "contactNumber": "785132",
+  "title": "Mrs",
+  "role": "ROLE_MANAGER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10004,
+      "type": "BUYER",
+      "name": "Buyer4"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "pid": 1,
+  "version": 2,
+  "sitePid": 220364,
+  "screenLocation": "FOOTER_VISIBLE",
+  "mraidSupport": "YES",
+  "mraidAdvancedTracking": false,
+  "positionAliasName": "test1",
+  "memo": "test1",
+  "name": "test1",
+  "videoSupport": "NATIVE",
+  "placementCategory": "NATIVE_V2",
+  "placementBuyer": {
+    "sectionId": 1123456789,
+    "pid": 12345116,
+    "version": 1
+  },
+  "nativePlacementExtension": {
+    "context": "SOCIAL",
+    "contextSubType": "USER_GENERATED",
+    "placementType": "IN_FEED",
+    "assetTemplate": "awesomeAssets",
+    "assetSets": [
+      {
+        "rule": "REQ_ALL",
+        "assets": [
+          {
+            "key": "myTitle",
+            "type": "TITLE",
+            "title": {
+              "maxLength": 75
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "externalAdVerificationSamplingRate": 30.5
+}

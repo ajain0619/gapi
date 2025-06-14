@@ -1,0 +1,39 @@
+{
+  "pid": 1,
+  "version": 1,
+  "name": "RulePFormulaNotEquals",
+  "description": "description",
+  "status": "ACTIVE",
+  "intendedActions": [
+    {
+      "pid": 1,
+      "version": 0,
+      "actionType": "FLOOR",
+      "actionData": "1.00"
+    }
+  ],
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "targets": [
+    {
+      "pid": 1,
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    }
+  ],
+  "assignments": {
+    "sites": [
+      {
+        "pid": 10000202,
+        "name": "aleksis_site",
+        "publisherAssignment": {
+          "pid": 10225,
+          "name": "transparency_enabled"
+        }
+      }
+    ]
+  }
+}

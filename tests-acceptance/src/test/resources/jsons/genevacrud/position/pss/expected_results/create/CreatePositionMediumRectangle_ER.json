@@ -1,0 +1,17 @@
+{
+  "site":{
+    "pid":10000192
+  },
+  "screenLocation":"HEADER_VISIBLE",
+  "mraidSupport":"YES",
+  "placementCategory":"MEDIUM_RECTANGLE",
+  "interstitial": false,
+  "mraidAdvancedTracking":false,
+  "positionAliasName":"CreatePlacementMediumRectangleAlias",
+  "videoSupport":"BANNER",
+  "width":100,
+  "height":100,
+  "adSizeType":"CUSTOM",
+  "memo":"CreatePlacementMediumRectangle",
+  "name":"createplacementmediumrectangle"
+}

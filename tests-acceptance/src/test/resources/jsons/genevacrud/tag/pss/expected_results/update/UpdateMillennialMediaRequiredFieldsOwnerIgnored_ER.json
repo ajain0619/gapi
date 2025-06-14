@@ -1,0 +1,60 @@
+{
+  "pid": 7296,
+  "version": 5,
+  "site": {
+    "pid": 963
+  },
+  "rtbProfile": {
+    "pid": 10000006,
+    "version": 5,
+    "id": "ff808081014f4feee094f54c81110146",
+    "libraries": [],
+    "bidderFilterWhitelist": true,
+    "useDefaultBlock": true,
+    "includeConsumerId": true,
+    "includeDomainReferences": true,
+    "includeConsumerProfile": true,
+    "screeningLevel": "RequireDomainAndImage",
+    "pubNetReserve": "50.00",
+    "blockedAdCategories": [],
+    "useDefaultBidders": true,
+    "siteTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "nameAlias": "AS8B",
+      "idAlias": "963111"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "nameAlias": "adserverSellerTest8111",
+      "idAlias": "105111"
+    }
+  },
+  "name": "Nexage Exchange-test8x-updated",
+  "ecpmAuto": 0,
+  "ecpmManual": 0,
+  "status": "ACTIVE",
+  "buyer": {
+    "pid": 4668
+  },
+  "position": {
+    "pid": 14730
+  },
+  "primaryId": "ff808081014f4feee094f54c81110146",
+  "primaryName": "",
+  "secondaryId": "",
+  "secondaryName": "",
+  "ecpmProvision": "Auto",
+  "tagType": "RTB",
+  "type": "RTB",
+  "currentDealTerm": {
+    "pid": 10849,
+    "version": 1,
+    "sitePid": 963,
+    "effectiveDate": 1442954675000,
+    "revenueMode": "REV_SHARE",
+    "tagPid": 7296,
+    "hasDealTermChanged": false
+  },
+  "publisherPid": 105,
+  "monetization": true
+}

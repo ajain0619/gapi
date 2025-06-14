@@ -1,0 +1,23 @@
+{
+  "name": "4INFO - newadd",
+  "sitePid": 10000174,
+  "buyerPid": 4512,
+  "status": "ACTIVE",
+  "primaryId": "12",
+  "secondaryId": "",
+  "ecpmProvision": "Auto",
+  "ecpmAuto": 0,
+  "ecpmManual": "0.00",
+  "owner": "Nexage",
+  "clickthroughDisable": false,
+  "currentDealTerm": {
+    "sitePid": 10000174,
+    "revenueMode": "REV_SHARE",
+    "hasDealTermChanged": false
+  },
+  "rules": [],
+  "monetization": true,
+  "returnRawResponse": false,
+  "deployments": [],
+  "importRevenueFlag": null
+}

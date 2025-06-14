@@ -1,0 +1,21 @@
+{
+  "pid": 10000208,
+  "version": 1,
+  "publisher": {
+    "pid": 105
+  },
+  "description": "site with all fields deskription",
+  "domain": "mgb6site.com",
+  "name": "mgb6site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "date.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "LIVE",
+  "appBundle": "",
+  "hbEnabled": true
+}

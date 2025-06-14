@@ -1,0 +1,1370 @@
+[
+  {
+    "code": "ago/*,bdi/*,ben/*,bfa/*,bwa/*,caf/*,civ/*,cmr/*,cod/*,cog/*,com/*,cpv/*,dji/*,dza/*,egy/*,eri/*,esh/*,eth/*,gab/*,gha/*,gin/*,gmb/*,gnb/*,gnq/*,ken/*,lbr/*,lby/*,lso/*,mar/*,mdg/*,mli/*,moz/*,mrt/*,mus/*,mwi/*,myt/*,nam/*,ner/*,nga/*,reu/*,rwa/*,sdn/*,sen/*,shn/*,sle/*,som/*,ssd/*,stp/*,swz/*,syc/*,tcd/*,tgo/*,tun/*,tza/*,uga/*,zaf/*,zmb/*,zwe/*",
+    "name": "Africa",
+    "children": [
+      {
+        "code": "bdi/*,com/*,dji/*,eri/*,eth/*,ken/*,mdg/*,mwi/*,mus/*,myt/*,moz/*,reu/*,rwa/*,syc/*,som/*,ssd/*,uga/*,tza/*,zmb/*,zwe/*",
+        "name": "Eastern Africa",
+        "children": [
+          {
+            "code": "bdi/*",
+            "name": "Burundi"
+          },
+          {
+            "code": "com/*",
+            "name": "Comoros"
+          },
+          {
+            "code": "dji/*",
+            "name": "Djibouti"
+          },
+          {
+            "code": "eri/*",
+            "name": "Eritrea"
+          },
+          {
+            "code": "eth/*",
+            "name": "Ethiopia"
+          },
+          {
+            "code": "ken/*",
+            "name": "Kenya"
+          },
+          {
+            "code": "mdg/*",
+            "name": "Madagascar"
+          },
+          {
+            "code": "mwi/*",
+            "name": "Malawi"
+          },
+          {
+            "code": "mus/*",
+            "name": "Mauritius"
+          },
+          {
+            "code": "myt/*",
+            "name": "Mayotte"
+          },
+          {
+            "code": "moz/*",
+            "name": "Mozambique"
+          },
+          {
+            "code": "reu/*",
+            "name": "Reunion"
+          },
+          {
+            "code": "rwa/*",
+            "name": "Rwanda"
+          },
+          {
+            "code": "syc/*",
+            "name": "Seychelles"
+          },
+          {
+            "code": "som/*",
+            "name": "Somalia"
+          },
+          {
+            "code": "ssd/*",
+            "name": "South Sudan"
+          },
+          {
+            "code": "uga/*",
+            "name": "Uganda"
+          },
+          {
+            "code": "tza/*",
+            "name": "United Republic of Tanzania"
+          },
+          {
+            "code": "zmb/*",
+            "name": "Zambia"
+          },
+          {
+            "code": "zwe/*",
+            "name": "Zimbabwe"
+          }
+        ]
+      },
+      {
+        "code": "ago/*,cmr/*,caf/*,tcd/*,cog/*,cod/*,gnq/*,gab/*,stp/*",
+        "name": "Middle Africa",
+        "children": [
+          {
+            "code": "ago/*",
+            "name": "Angola"
+          },
+          {
+            "code": "cmr/*",
+            "name": "Cameroon"
+          },
+          {
+            "code": "caf/*",
+            "name": "Central African Republic"
+          },
+          {
+            "code": "tcd/*",
+            "name": "Chad"
+          },
+          {
+            "code": "cog/*",
+            "name": "Congo"
+          },
+          {
+            "code": "cod/*",
+            "name": "Democratic Republic of the Congo"
+          },
+          {
+            "code": "gnq/*",
+            "name": "Equatorial Guinea"
+          },
+          {
+            "code": "gab/*",
+            "name": "Gabon"
+          },
+          {
+            "code": "stp/*",
+            "name": "Sao Tome and Principe"
+          }
+        ]
+      },
+      {
+        "code": "dza/*,egy/*,lby/*,mar/*,sdn/*,tun/*,esh/*",
+        "name": "Northern Africa",
+        "children": [
+          {
+            "code": "dza/*",
+            "name": "Algeria"
+          },
+          {
+            "code": "egy/*",
+            "name": "Egypt"
+          },
+          {
+            "code": "lby/*",
+            "name": "Libya"
+          },
+          {
+            "code": "mar/*",
+            "name": "Morocco"
+          },
+          {
+            "code": "sdn/*",
+            "name": "Sudan"
+          },
+          {
+            "code": "tun/*",
+            "name": "Tunisia"
+          },
+          {
+            "code": "esh/*",
+            "name": "Western Sahara"
+          }
+        ]
+      },
+      {
+        "code": "bwa/*,lso/*,nam/*,zaf/*,swz/*",
+        "name": "Southern Africa",
+        "children": [
+          {
+            "code": "bwa/*",
+            "name": "Botswana"
+          },
+          {
+            "code": "lso/*",
+            "name": "Lesotho"
+          },
+          {
+            "code": "nam/*",
+            "name": "Namibia"
+          },
+          {
+            "code": "zaf/*",
+            "name": "South Africa"
+          },
+          {
+            "code": "swz/*",
+            "name": "Swaziland"
+          }
+        ]
+      },
+      {
+        "code": "ben/*,bfa/*,cpv/*,civ/*,gmb/*,gha/*,gin/*,gnb/*,lbr/*,mli/*,mrt/*,ner/*,nga/*,shn/*,sen/*,sle/*,tgo/*",
+        "name": "Western Africa",
+        "children": [
+          {
+            "code": "ben/*",
+            "name": "Benin"
+          },
+          {
+            "code": "bfa/*",
+            "name": "Burkina Faso"
+          },
+          {
+            "code": "cpv/*",
+            "name": "Cabo Verde"
+          },
+          {
+            "code": "civ/*",
+            "name": "Cote d'Ivoire"
+          },
+          {
+            "code": "gmb/*",
+            "name": "Gambia"
+          },
+          {
+            "code": "gha/*",
+            "name": "Ghana"
+          },
+          {
+            "code": "gin/*",
+            "name": "Guinea"
+          },
+          {
+            "code": "gnb/*",
+            "name": "Guinea-Bissau"
+          },
+          {
+            "code": "lbr/*",
+            "name": "Liberia"
+          },
+          {
+            "code": "mli/*",
+            "name": "Mali"
+          },
+          {
+            "code": "mrt/*",
+            "name": "Mauritania"
+          },
+          {
+            "code": "ner/*",
+            "name": "Niger"
+          },
+          {
+            "code": "nga/*",
+            "name": "Nigeria"
+          },
+          {
+            "code": "shn/*",
+            "name": "Saint Helena"
+          },
+          {
+            "code": "sen/*",
+            "name": "Senegal"
+          },
+          {
+            "code": "sle/*",
+            "name": "Sierra Leone"
+          },
+          {
+            "code": "tgo/*",
+            "name": "Togo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "abw/*,aia/*,arg/*,atg/*,bes/*,bhs/*,blm/*,blz/*,bmu/*,bol/*,bra/*,brb/*,can/*,chl/*,col/*,cri/*,cub/*,cuw/*,cym/*,dma/*,dom/*,ecu/*,flk/*,glp/*,grd/*,grl/*,gtm/*,guf/*,guy/*,hnd/*,hti/*,jam/*,kna/*,lca/*,maf/*,mex/*,msr/*,mtq/*,nic/*,pan/*,per/*,pri/*,pry/*,slv/*,spm/*,sur/*,sxm/*,tca/*,tto/*,ury/*,usa/*,vct/*,ven/*,vgb/*,vir/*",
+    "name": "Americas",
+    "children": [
+      {
+        "code": "aia/*,atg/*,abw/*,bhs/*,brb/*,bes/*,vgb/*,cym/*,cub/*,cuw/*,dma/*,dom/*,grd/*,glp/*,hti/*,jam/*,mtq/*,msr/*,pri/*,blm/*,kna/*,lca/*,maf/*,vct/*,sxm/*,tto/*,tca/*,vir/*",
+        "name": "Caribbean",
+        "children": [
+          {
+            "code": "aia/*",
+            "name": "Anguilla"
+          },
+          {
+            "code": "atg/*",
+            "name": "Antigua and Barbuda"
+          },
+          {
+            "code": "abw/*",
+            "name": "Aruba"
+          },
+          {
+            "code": "bhs/*",
+            "name": "Bahamas"
+          },
+          {
+            "code": "brb/*",
+            "name": "Barbados"
+          },
+          {
+            "code": "bes/*",
+            "name": "Bonaire,  Saint Eustatius and Saba"
+          },
+          {
+            "code": "vgb/*",
+            "name": "British Virgin Islands"
+          },
+          {
+            "code": "cym/*",
+            "name": "Cayman Islands"
+          },
+          {
+            "code": "cub/*",
+            "name": "Cuba"
+          },
+          {
+            "code": "cuw/*",
+            "name": "Curacao"
+          },
+          {
+            "code": "dma/*",
+            "name": "Dominica"
+          },
+          {
+            "code": "dom/*",
+            "name": "Dominican Republic"
+          },
+          {
+            "code": "grd/*",
+            "name": "Grenada"
+          },
+          {
+            "code": "glp/*",
+            "name": "Guadeloupe"
+          },
+          {
+            "code": "hti/*",
+            "name": "Haiti"
+          },
+          {
+            "code": "jam/*",
+            "name": "Jamaica"
+          },
+          {
+            "code": "mtq/*",
+            "name": "Martinique"
+          },
+          {
+            "code": "msr/*",
+            "name": "Montserrat"
+          },
+          {
+            "code": "pri/*",
+            "name": "Puerto Rico"
+          },
+          {
+            "code": "blm/*",
+            "name": "Saint-Barthelemy"
+          },
+          {
+            "code": "kna/*",
+            "name": "Saint Kitts and Nevis"
+          },
+          {
+            "code": "lca/*",
+            "name": "Saint Lucia"
+          },
+          {
+            "code": "maf/*",
+            "name": "Saint Martin (French part)"
+          },
+          {
+            "code": "vct/*",
+            "name": "Saint Vincent and the Grenadines"
+          },
+          {
+            "code": "sxm/*",
+            "name": "Sint Maarten (Dutch part)"
+          },
+          {
+            "code": "tto/*",
+            "name": "Trinidad and Tobago"
+          },
+          {
+            "code": "tca/*",
+            "name": "Turks and Caicos Islands"
+          },
+          {
+            "code": "vir/*",
+            "name": "United States Virgin Islands"
+          }
+        ]
+      },
+      {
+        "code": "blz/*,cri/*,slv/*,gtm/*,hnd/*,mex/*,nic/*,pan/*",
+        "name": "Central America",
+        "children": [
+          {
+            "code": "blz/*",
+            "name": "Belize"
+          },
+          {
+            "code": "cri/*",
+            "name": "Costa Rica"
+          },
+          {
+            "code": "slv/*",
+            "name": "El Salvador"
+          },
+          {
+            "code": "gtm/*",
+            "name": "Guatemala"
+          },
+          {
+            "code": "hnd/*",
+            "name": "Honduras"
+          },
+          {
+            "code": "mex/*",
+            "name": "Mexico"
+          },
+          {
+            "code": "nic/*",
+            "name": "Nicaragua"
+          },
+          {
+            "code": "pan/*",
+            "name": "Panama"
+          }
+        ]
+      },
+      {
+        "code": "arg/*,bol/*,bra/*,chl/*,col/*,ecu/*,flk/*,guf/*,guy/*,pry/*,per/*,sur/*,ury/*,ven/*",
+        "name": "South America",
+        "children": [
+          {
+            "code": "arg/*",
+            "name": "Argentina"
+          },
+          {
+            "code": "bol/*",
+            "name": "Bolivia (Plurinational State of)"
+          },
+          {
+            "code": "bra/*",
+            "name": "Brazil"
+          },
+          {
+            "code": "chl/*",
+            "name": "Chile"
+          },
+          {
+            "code": "col/*",
+            "name": "Colombia"
+          },
+          {
+            "code": "ecu/*",
+            "name": "Ecuador"
+          },
+          {
+            "code": "flk/*",
+            "name": "Falkland Islands (Malvinas)"
+          },
+          {
+            "code": "guf/*",
+            "name": "French Guiana"
+          },
+          {
+            "code": "guy/*",
+            "name": "Guyana"
+          },
+          {
+            "code": "pry/*",
+            "name": "Paraguay"
+          },
+          {
+            "code": "per/*",
+            "name": "Peru"
+          },
+          {
+            "code": "sur/*",
+            "name": "Suriname"
+          },
+          {
+            "code": "ury/*",
+            "name": "Uruguay"
+          },
+          {
+            "code": "ven/*",
+            "name": "Venezuela (Bolivarian Republic of)"
+          }
+        ]
+      },
+      {
+        "code": "bmu/*,can/*,grl/*,spm/*,usa/*",
+        "name": "Northern America",
+        "children": [
+          {
+            "code": "bmu/*",
+            "name": "Bermuda"
+          },
+          {
+            "code": "can/*",
+            "name": "Canada"
+          },
+          {
+            "code": "grl/*",
+            "name": "Greenland"
+          },
+          {
+            "code": "spm/*",
+            "name": "Saint Pierre and Miquelon"
+          },
+          {
+            "code": "usa/*",
+            "name": "United States of America",
+            "children": [
+              {
+                "code": "usa/al",
+                "name": "Alabama"
+              },
+              {
+                "code": "usa/ak",
+                "name": "Alaska"
+              },
+              {
+                "code": "usa/as",
+                "name": "American Samoa"
+              },
+              {
+                "code": "usa/az",
+                "name": "Arizona"
+              },
+              {
+                "code": "usa/ar",
+                "name": "Arkansas"
+              },
+              {
+                "code": "usa/ca",
+                "name": "California"
+              },
+              {
+                "code": "usa/co",
+                "name": "Colorado"
+              },
+              {
+                "code": "usa/ct",
+                "name": "Connecticut"
+              },
+              {
+                "code": "usa/de",
+                "name": "Delaware"
+              },
+              {
+                "code": "usa/dc",
+                "name": "District of Columbia"
+              },
+              {
+                "code": "usa/fm",
+                "name": "Federated States of Micronesia"
+              },
+              {
+                "code": "usa/fl",
+                "name": "Florida"
+              },
+              {
+                "code": "usa/ga",
+                "name": "Georgia (USA)"
+              },
+              {
+                "code": "usa/gu",
+                "name": "Guam"
+              },
+              {
+                "code": "usa/hi",
+                "name": "Hawaii"
+              },
+              {
+                "code": "usa/id",
+                "name": "Idaho"
+              },
+              {
+                "code": "usa/il",
+                "name": "Illinois"
+              },
+              {
+                "code": "usa/in",
+                "name": "Indiana"
+              },
+              {
+                "code": "usa/ia",
+                "name": "Iowa"
+              },
+              {
+                "code": "usa/ks",
+                "name": "Kansas"
+              },
+              {
+                "code": "usa/ky",
+                "name": "Kentucky"
+              },
+              {
+                "code": "usa/la",
+                "name": "Louisiana"
+              },
+              {
+                "code": "usa/me",
+                "name": "Maine"
+              },
+              {
+                "code": "usa/mh",
+                "name": "Marshall Islands"
+              },
+              {
+                "code": "usa/md",
+                "name": "Maryland"
+              },
+              {
+                "code": "usa/ma",
+                "name": "Massachusetts"
+              },
+              {
+                "code": "usa/mi",
+                "name": "Michigan"
+              },
+              {
+                "code": "usa/mn",
+                "name": "Minnesota"
+              },
+              {
+                "code": "usa/ms",
+                "name": "Mississippi"
+              },
+              {
+                "code": "usa/mo",
+                "name": "Missouri"
+              },
+              {
+                "code": "usa/mt",
+                "name": "Montana"
+              },
+              {
+                "code": "usa/ne",
+                "name": "Nebraska"
+              },
+              {
+                "code": "usa/nv",
+                "name": "Nevada"
+              },
+              {
+                "code": "usa/nh",
+                "name": "New Hampshire"
+              },
+              {
+                "code": "usa/nj",
+                "name": "New Jersey"
+              },
+              {
+                "code": "usa/nm",
+                "name": "New Mexico"
+              },
+              {
+                "code": "usa/ny",
+                "name": "New York"
+              },
+              {
+                "code": "usa/nc",
+                "name": "North Carolina"
+              },
+              {
+                "code": "usa/nd",
+                "name": "North Dakota"
+              },
+              {
+                "code": "usa/mp",
+                "name": "Northern Mariana Islands"
+              },
+              {
+                "code": "usa/oh",
+                "name": "Ohio"
+              },
+              {
+                "code": "usa/ok",
+                "name": "Oklahoma"
+              },
+              {
+                "code": "usa/or",
+                "name": "Oregon"
+              },
+              {
+                "code": "usa/pw",
+                "name": "Palau"
+              },
+              {
+                "code": "usa/pa",
+                "name": "Pennsylvania"
+              },
+              {
+                "code": "usa/pr",
+                "name": "Puerto Rico"
+              },
+              {
+                "code": "usa/ri",
+                "name": "Rhode Island"
+              },
+              {
+                "code": "usa/sc",
+                "name": "South Carolina"
+              },
+              {
+                "code": "usa/sd",
+                "name": "South Dakota"
+              },
+              {
+                "code": "usa/tn",
+                "name": "Tennessee"
+              },
+              {
+                "code": "usa/tx",
+                "name": "Texas"
+              },
+              {
+                "code": "usa/ut",
+                "name": "Utah"
+              },
+              {
+                "code": "usa/vt",
+                "name": "Vermont"
+              },
+              {
+                "code": "usa/vi",
+                "name": "Virgin Islands"
+              },
+              {
+                "code": "usa/va",
+                "name": "Virginia"
+              },
+              {
+                "code": "usa/wa",
+                "name": "Washington"
+              },
+              {
+                "code": "usa/wv",
+                "name": "West Virginia"
+              },
+              {
+                "code": "usa/wi",
+                "name": "Wisconsin"
+              },
+              {
+                "code": "usa/wy",
+                "name": "Wyoming"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "afg/*,are/*,arm/*,aze/*,bgd/*,bhr/*,brn/*,btn/*,chn/*,cyp/*,geo/*,hkg/*,idn/*,ind/*,irn/*,irq/*,isr/*,jor/*,jpn/*,kaz/*,kgz/*,khm/*,kor/*,kwt/*,lao/*,lbn/*,lka/*,mac/*,mdv/*,mmr/*,mng/*,mys/*,npl/*,omn/*,pak/*,phl/*,prk/*,pse/*,qat/*,sau/*,sgp/*,syr/*,tha/*,tjk/*,tkm/*,tls/*,tur/*,twn/*,uzb/*,vnm/*,yem/*",
+    "name": "Asia",
+    "children": [
+      {
+        "code": "kaz/*,kgz/*,tjk/*,tkm/*,uzb/*",
+        "name": "Central Asia",
+        "children": [
+          {
+            "code": "kaz/*",
+            "name": "Kazakhstan"
+          },
+          {
+            "code": "kgz/*",
+            "name": "Kyrgyzstan"
+          },
+          {
+            "code": "tjk/*",
+            "name": "Tajikistan"
+          },
+          {
+            "code": "tkm/*",
+            "name": "Turkmenistan"
+          },
+          {
+            "code": "uzb/*",
+            "name": "Uzbekistan"
+          }
+        ]
+      },
+      {
+        "code": "chn/*,hkg/*,mac/*,prk/*,jpn/*,mng/*,kor/*,twn/*",
+        "name": "Eastern Asia",
+        "children": [
+          {
+            "code": "chn/*",
+            "name": "China"
+          },
+          {
+            "code": "hkg/*",
+            "name": "China Hong Kong Special Administrative Region"
+          },
+          {
+            "code": "mac/*",
+            "name": "China Macao Special Administrative Region"
+          },
+          {
+            "code": "prk/*",
+            "name": "Democratic People's Republic of Korea"
+          },
+          {
+            "code": "jpn/*",
+            "name": "Japan"
+          },
+          {
+            "code": "mng/*",
+            "name": "Mongolia"
+          },
+          {
+            "code": "kor/*",
+            "name": "Republic of Korea"
+          },
+          {
+            "code": "twn/*",
+            "name": "Taiwan, Province of China"
+          }
+        ]
+      },
+      {
+        "code": "afg/*,bgd/*,btn/*,ind/*,irn/*,mdv/*,npl/*,pak/*,lka/*",
+        "name": "Southern Asia",
+        "children": [
+          {
+            "code": "afg/*",
+            "name": "Afghanistan"
+          },
+          {
+            "code": "bgd/*",
+            "name": "Bangladesh"
+          },
+          {
+            "code": "btn/*",
+            "name": "Bhutan"
+          },
+          {
+            "code": "ind/*",
+            "name": "India"
+          },
+          {
+            "code": "irn/*",
+            "name": "Iran (Islamic Republic of)"
+          },
+          {
+            "code": "mdv/*",
+            "name": "Maldives"
+          },
+          {
+            "code": "npl/*",
+            "name": "Nepal"
+          },
+          {
+            "code": "pak/*",
+            "name": "Pakistan"
+          },
+          {
+            "code": "lka/*",
+            "name": "Sri Lanka"
+          }
+        ]
+      },
+      {
+        "code": "brn/*,khm/*,idn/*,lao/*,mys/*,mmr/*,phl/*,sgp/*,tha/*,tls/*,vnm/*",
+        "name": "South-Eastern Asia",
+        "children": [
+          {
+            "code": "brn/*",
+            "name": "Brunei Darussalam"
+          },
+          {
+            "code": "khm/*",
+            "name": "Cambodia"
+          },
+          {
+            "code": "idn/*",
+            "name": "Indonesia"
+          },
+          {
+            "code": "lao/*",
+            "name": "Lao People's Democratic Republic"
+          },
+          {
+            "code": "mys/*",
+            "name": "Malaysia"
+          },
+          {
+            "code": "mmr/*",
+            "name": "Myanmar"
+          },
+          {
+            "code": "phl/*",
+            "name": "Philippines"
+          },
+          {
+            "code": "sgp/*",
+            "name": "Singapore"
+          },
+          {
+            "code": "tha/*",
+            "name": "Thailand"
+          },
+          {
+            "code": "tls/*",
+            "name": "Timor-Leste"
+          },
+          {
+            "code": "vnm/*",
+            "name": "Viet Nam"
+          }
+        ]
+      },
+      {
+        "code": "arm/*,aze/*,bhr/*,cyp/*,geo/*,irq/*,isr/*,jor/*,kwt/*,lbn/*,omn/*,qat/*,sau/*,pse/*,syr/*,tur/*,are/*,yem/*",
+        "name": "Western Asia",
+        "children": [
+          {
+            "code": "arm/*",
+            "name": "Armenia"
+          },
+          {
+            "code": "aze/*",
+            "name": "Azerbaijan"
+          },
+          {
+            "code": "bhr/*",
+            "name": "Bahrain"
+          },
+          {
+            "code": "cyp/*",
+            "name": "Cyprus"
+          },
+          {
+            "code": "geo/*",
+            "name": "Georgia"
+          },
+          {
+            "code": "irq/*",
+            "name": "Iraq"
+          },
+          {
+            "code": "isr/*",
+            "name": "Israel"
+          },
+          {
+            "code": "jor/*",
+            "name": "Jordan"
+          },
+          {
+            "code": "kwt/*",
+            "name": "Kuwait"
+          },
+          {
+            "code": "lbn/*",
+            "name": "Lebanon"
+          },
+          {
+            "code": "omn/*",
+            "name": "Oman"
+          },
+          {
+            "code": "qat/*",
+            "name": "Qatar"
+          },
+          {
+            "code": "sau/*",
+            "name": "Saudi Arabia"
+          },
+          {
+            "code": "pse/*",
+            "name": "State of Palestine"
+          },
+          {
+            "code": "syr/*",
+            "name": "Syrian Arab Republic"
+          },
+          {
+            "code": "tur/*",
+            "name": "Turkey"
+          },
+          {
+            "code": "are/*",
+            "name": "United Arab Emirates"
+          },
+          {
+            "code": "yem/*",
+            "name": "Yemen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ala/*,alb/*,and/*,aut/*,bel/*,bgr/*,bih/*,blr/*,che/*,chi/*,cze/*,deu/*,dnk/*,esp/*,est/*,fin/*,fra/*,fro/*,gbr/*,ggy/*,gib/*,grc/*,hrv/*,hun/*,imn/*,irl/*,isl/*,ita/*,jey/*,lie/*,ltu/*,lux/*,lva/*,mco/*,mda/*,mkd/*,mlt/*,mne/*,nld/*,nor/*,pol/*,prt/*,rou/*,rus/*,sjm/*,smr/*,srb/*,srk/*,svk/*,svn/*,swe/*,ukr/*,vat/*",
+    "name": "Europe",
+    "children": [
+      {
+        "code": "blr/*,bgr/*,cze/*,hun/*,pol/*,mda/*,rou/*,rus/*,svk/*,ukr/*",
+        "name": "Eastern Europe",
+        "children": [
+          {
+            "code": "blr/*",
+            "name": "Belarus"
+          },
+          {
+            "code": "bgr/*",
+            "name": "Bulgaria"
+          },
+          {
+            "code": "cze/*",
+            "name": "Czech Republic"
+          },
+          {
+            "code": "hun/*",
+            "name": "Hungary"
+          },
+          {
+            "code": "pol/*",
+            "name": "Poland"
+          },
+          {
+            "code": "mda/*",
+            "name": "Republic of Moldova"
+          },
+          {
+            "code": "rou/*",
+            "name": "Romania"
+          },
+          {
+            "code": "rus/*",
+            "name": "Russian Federation"
+          },
+          {
+            "code": "svk/*",
+            "name": "Slovakia"
+          },
+          {
+            "code": "ukr/*",
+            "name": "Ukraine"
+          }
+        ]
+      },
+      {
+        "code": "ala/*,chi/*,dnk/*,est/*,fro/*,fin/*,ggy/*,isl/*,irl/*,imn/*,jey/*,lva/*,ltu/*,nor/*,srk/*,sjm/*,swe/*,gbr/*",
+        "name": "Northern Europe",
+        "children": [
+          {
+            "code": "ala/*",
+            "name": "Aland Islands"
+          },
+          {
+            "code": "chi/*",
+            "name": "Channel Islands"
+          },
+          {
+            "code": "dnk/*",
+            "name": "Denmark"
+          },
+          {
+            "code": "est/*",
+            "name": "Estonia"
+          },
+          {
+            "code": "fro/*",
+            "name": "Faeroe Islands"
+          },
+          {
+            "code": "fin/*",
+            "name": "Finland"
+          },
+          {
+            "code": "ggy/*",
+            "name": "Guernsey"
+          },
+          {
+            "code": "isl/*",
+            "name": "Iceland"
+          },
+          {
+            "code": "irl/*",
+            "name": "Ireland"
+          },
+          {
+            "code": "imn/*",
+            "name": "Isle of Man"
+          },
+          {
+            "code": "jey/*",
+            "name": "Jersey"
+          },
+          {
+            "code": "lva/*",
+            "name": "Latvia"
+          },
+          {
+            "code": "ltu/*",
+            "name": "Lithuania"
+          },
+          {
+            "code": "nor/*",
+            "name": "Norway"
+          },
+          {
+            "code": "srk/*",
+            "name": "Sark"
+          },
+          {
+            "code": "sjm/*",
+            "name": "Svalbard and Jan Mayen Islands"
+          },
+          {
+            "code": "swe/*",
+            "name": "Sweden"
+          },
+          {
+            "code": "gbr/*",
+            "name": "United Kingdom of Great Britain and Northern Ireland"
+          }
+        ]
+      },
+      {
+        "code": "alb/*,and/*,bih/*,hrv/*,gib/*,grc/*,vat/*,ita/*,mlt/*,mne/*,prt/*,smr/*,srb/*,svn/*,esp/*,mkd/*",
+        "name": "Southern Europe",
+        "children": [
+          {
+            "code": "alb/*",
+            "name": "Albania"
+          },
+          {
+            "code": "and/*",
+            "name": "Andorra"
+          },
+          {
+            "code": "bih/*",
+            "name": "Bosnia and Herzegovina"
+          },
+          {
+            "code": "hrv/*",
+            "name": "Croatia"
+          },
+          {
+            "code": "gib/*",
+            "name": "Gibraltar"
+          },
+          {
+            "code": "grc/*",
+            "name": "Greece"
+          },
+          {
+            "code": "vat/*",
+            "name": "Holy See"
+          },
+          {
+            "code": "ita/*",
+            "name": "Italy"
+          },
+          {
+            "code": "mlt/*",
+            "name": "Malta"
+          },
+          {
+            "code": "mne/*",
+            "name": "Montenegro"
+          },
+          {
+            "code": "prt/*",
+            "name": "Portugal"
+          },
+          {
+            "code": "smr/*",
+            "name": "San Marino"
+          },
+          {
+            "code": "srb/*",
+            "name": "Serbia"
+          },
+          {
+            "code": "svn/*",
+            "name": "Slovenia"
+          },
+          {
+            "code": "esp/*",
+            "name": "Spain"
+          },
+          {
+            "code": "mkd/*",
+            "name": "The former Yugoslav Republic of Macedonia"
+          }
+        ]
+      },
+      {
+        "code": "aut/*,bel/*,fra/*,deu/*,lie/*,lux/*,mco/*,nld/*,che/*",
+        "name": "Western Europe",
+        "children": [
+          {
+            "code": "aut/*",
+            "name": "Austria"
+          },
+          {
+            "code": "bel/*",
+            "name": "Belgium"
+          },
+          {
+            "code": "fra/*",
+            "name": "France"
+          },
+          {
+            "code": "deu/*",
+            "name": "Germany"
+          },
+          {
+            "code": "lie/*",
+            "name": "Liechtenstein"
+          },
+          {
+            "code": "lux/*",
+            "name": "Luxembourg"
+          },
+          {
+            "code": "mco/*",
+            "name": "Monaco"
+          },
+          {
+            "code": "nld/*",
+            "name": "Netherlands"
+          },
+          {
+            "code": "che/*",
+            "name": "Switzerland"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "asm/*,aus/*,cok/*,fji/*,fsm/*,gum/*,kir/*,mhl/*,mnp/*,ncl/*,nfk/*,niu/*,nru/*,nzl/*,pcn/*,plw/*,png/*,pyf/*,slb/*,tkl/*,ton/*,tuv/*,vut/*,wlf/*,wsm/*",
+    "name": "Oceania",
+    "children": [
+      {
+        "code": "aus/*,nzl/*,nfk/*",
+        "name": "Australia and New Zealand",
+        "children": [
+          {
+            "code": "aus/*",
+            "name": "Australia"
+          },
+          {
+            "code": "nzl/*",
+            "name": "New Zealand"
+          },
+          {
+            "code": "nfk/*",
+            "name": "Norfolk Island"
+          }
+        ]
+      },
+      {
+        "code": "fji/*,ncl/*,png/*,slb/*,vut/*",
+        "name": "Melanesia",
+        "children": [
+          {
+            "code": "fji/*",
+            "name": "Fiji"
+          },
+          {
+            "code": "ncl/*",
+            "name": "New Caledonia"
+          },
+          {
+            "code": "png/*",
+            "name": "Papua New Guinea"
+          },
+          {
+            "code": "slb/*",
+            "name": "Solomon Islands"
+          },
+          {
+            "code": "vut/*",
+            "name": "Vanuatu"
+          }
+        ]
+      },
+      {
+        "code": "gum/*,kir/*,mhl/*,fsm/*,nru/*,mnp/*,plw/*",
+        "name": "Micronesia",
+        "children": [
+          {
+            "code": "gum/*",
+            "name": "Guam"
+          },
+          {
+            "code": "kir/*",
+            "name": "Kiribati"
+          },
+          {
+            "code": "mhl/*",
+            "name": "Marshall Islands"
+          },
+          {
+            "code": "fsm/*",
+            "name": "Micronesia (Federated States of)"
+          },
+          {
+            "code": "nru/*",
+            "name": "Nauru"
+          },
+          {
+            "code": "mnp/*",
+            "name": "Northern Mariana Islands"
+          },
+          {
+            "code": "plw/*",
+            "name": "Palau"
+          }
+        ]
+      },
+      {
+        "code": "asm/*,cok/*,pyf/*,niu/*,pcn/*,wsm/*,tkl/*,ton/*,tuv/*,wlf/*",
+        "name": "Polynesia",
+        "children": [
+          {
+            "code": "asm/*",
+            "name": "American Samoa"
+          },
+          {
+            "code": "cok/*",
+            "name": "Cook Islands"
+          },
+          {
+            "code": "pyf/*",
+            "name": "French Polynesia"
+          },
+          {
+            "code": "niu/*",
+            "name": "Niue"
+          },
+          {
+            "code": "pcn/*",
+            "name": "Pitcairn"
+          },
+          {
+            "code": "wsm/*",
+            "name": "Samoa"
+          },
+          {
+            "code": "tkl/*",
+            "name": "Tokelau"
+          },
+          {
+            "code": "ton/*",
+            "name": "Tonga"
+          },
+          {
+            "code": "tuv/*",
+            "name": "Tuvalu"
+          },
+          {
+            "code": "wlf/*",
+            "name": "Wallis and Futuna Islands"
+          }
+        ]
+      }
+    ]
+  }
+]

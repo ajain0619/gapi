@@ -1,0 +1,48 @@
+{
+  "name": "BMruleWithBidTargets",
+  "description": "description",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10225,
+  "type": "BID_MANAGEMENT",
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "WILDCARD_ADVERTISER_DOMAIN",
+      "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "IAB_CATEGORY",
+      "data": "bidData2"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "CREATIVE_ID",
+      "data": "bidData4"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "ADVERTISER_BRAND",
+      "data": "bidData5"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [
+      {
+        "pid": 10000202
+      }
+    ],
+    "positions": []
+  }
+}

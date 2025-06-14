@@ -1,0 +1,28 @@
+---
+- name: Include New Relic Infra vars
+  include_vars:
+    file: newrelic-infra.yml
+- name: "Import New Relic Infra GPG key {{ newrelic_infra_gpg_key_path }}"
+  rpm_key:
+    state: present
+    key: "{{ newrelic_infra_gpg_key_path }}"
+- name: Install New Relic Infra yum repository
+  template:
+    src: "newrelic/{{ item }}.j2"
+    dest: "{{ newrelic_infra_repo_path }}/{{ item }}"
+    owner: "root"
+    group: "root"
+    mode: 0644
+  with_items:
+    - "newrelic-infra.repo"
+- name: Install the latest version of New Relic Infra agent
+  yum:
+    name: "{{ newrelic_infra_agent_package }}"
+    disable_gpg_check: yes
+    state: present
+    skip_broken: yes
+- name: Install latest fluent-bit
+  yum:
+    name: "{{ newrelic_fluent_bit }}"
+    disable_gpg_check: yes
+    state: latest

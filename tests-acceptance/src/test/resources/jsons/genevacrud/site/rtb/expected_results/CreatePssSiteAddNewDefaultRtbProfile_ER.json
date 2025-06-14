@@ -1,0 +1,43 @@
+{
+  "description": "new site with new default rtb profile",
+  "domain": "newrtb.com",
+  "name": "new_site_with_new_default_rtbprofile",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "http://newrtb.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB9"
+  ],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "defaultRtbProfile": {
+    "description": "new site rtbprofile for nexage admin",
+    "name": "newProfile"
+  },
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.011
+  }
+}

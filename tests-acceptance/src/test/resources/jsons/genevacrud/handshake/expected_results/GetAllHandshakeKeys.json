@@ -1,0 +1,62 @@
+[
+  {
+    "pid": 1,
+    "handshakeKey": "*"
+  },
+  {
+    "pid": 14,
+    "handshakeKey": "*|com.millennialmedia.adtestapp.v6_0_0"
+  },
+  {
+    "pid": 27,
+    "handshakeKey": "*|com.millennialmedia.TestApp-6-0-0"
+  },
+  {
+    "pid": 40,
+    "handshakeKey": "*|com.millennialmedia.sampleapp"
+  },
+  {
+    "pid": 53,
+    "handshakeKey": "*|com.millennialmedia.SampleApp"
+  },
+  {
+    "pid": 66,
+    "handshakeKey": "*|com.millennialmedia.testapp"
+  },
+  {
+    "pid": 79,
+    "handshakeKey": "*|com.millennialmedia.TestHarness"
+  },
+  {
+    "pid": 92,
+    "handshakeKey": "*|com.millennialmedia.adtestapp.v6_0_0.debug"
+  },
+  {
+    "pid": 105,
+    "handshakeKey": "*|com.audiomack.iphone"
+  },
+  {
+    "pid": 118,
+    "handshakeKey": "*|com.audiomack"
+  },
+  {
+    "pid": 131,
+    "handshakeKey": "*|com.jnj.mocospace.android"
+  },
+  {
+    "pid": 144,
+    "handshakeKey": "*|com.spitfire.Flinch"
+  },
+  {
+    "pid": 157,
+    "handshakeKey": "*|com.iphonease.ledflashlight.button"
+  },
+  {
+    "pid": 170,
+    "handshakeKey": "*|com.ihandysoft.flashlight.led.pro"
+  },
+  {
+    "pid": 183,
+    "handshakeKey": "6.0.0|app.millennialmedia.com"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "name": "TEST DEFAULT",
+  "privilegeLevel": "PUBLISHER",
+  "listType": 0,
+  "publisherPid": 10218,
+  "libraries": [
+    {
+      "pid": 11,
+      "name": "Default Eligible Bidder Group",
+      "version": 2,
+      "publisherPid": 10218,
+      "privilegeLevel": "PUBLISHER",
+      "isDefaultEligible": true,
+      "groups": [
+        {
+          "pid": 15,
+          "name": "Default Eligible Bidder Group",
+          "version": 0,
+          "publisherPid": 10218,
+          "privilegeLevel": "PUBLISHER",
+          "data": "3,4",
+          "itemType": "BIDDER",
+          "listType": "BLOCKLIST"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "pid": 3,
+  "version": 0,
+  "name": "RulePFormulaEquals",
+  "description": "ruleDescription",
+  "status": "INACTIVE",
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "ownerCompanyPid": 10225,
+  "targets": [
+    {
+      "pid": 2,
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYER_SEATS",
+      "data": "[{\"bidder\":1},{\"bidder\":2},{\"bidder\":3}]"
+    },
+    {
+      "pid": 3,
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYERS",
+      "data": "deal15"
+    },
+    {
+      "pid": 1,
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MATCHED_USER_ID",
+      "data": "deal16"
+    }
+  ],
+  "assignments": {
+    "positions": [
+      {
+        "pid": 100318,
+        "name": "transparency_enabled_position",
+        "memo": "transparency_enabled_position",
+        "siteAssignment": {
+          "pid": 10000202,
+          "name": "aleksis_site",
+          "publisherAssignment": {
+            "pid": 10225,
+            "name": "transparency_enabled"
+          }
+        }
+      }
+    ]
+  },
+  "ruleFormula": {
+    "pid": 5,
+    "version": 0,
+    "placementFormula": {
+      "groupedBy": "OR",
+      "formulaGroups": [
+        {
+          "formulaRules": [
+            {
+              "attribute": "PLACEMENT_NAME",
+              "operator": "NOT_CONTAINS",
+              "ruleData": "position"
+            },
+            {
+              "attribute": "PLACEMENT_TYPE",
+              "operator": "NOT_EQUALS",
+              "ruleData": "NATIVE"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

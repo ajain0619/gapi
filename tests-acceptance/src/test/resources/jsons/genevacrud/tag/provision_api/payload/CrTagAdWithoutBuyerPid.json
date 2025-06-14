@@ -1,0 +1,11 @@
+{
+  "name": "AV747",
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "tagController": {
+    "autoExpand": false
+  },
+  "primaryId": "llamarse",
+  "rules": []
+}

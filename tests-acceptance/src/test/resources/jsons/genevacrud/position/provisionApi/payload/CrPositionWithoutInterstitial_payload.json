@@ -1,0 +1,10 @@
+{
+  "placementCategory": "BANNER",
+  "memo": "HaendelSarabande",
+  "name": "haendelsarabande",
+  "screenLocation": "ABOVE_VISIBLE",
+  "width": 199,
+  "height": 87,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER"
+}

@@ -1,0 +1,317 @@
+{
+  "pid": 10228,
+  "summary": {
+    "requests": {
+      "current": 0,
+      "past": 0,
+      "diff": 0,
+      "diffPercent": 0
+    },
+    "served": {
+      "current": 0,
+      "past": 0,
+      "diff": 0,
+      "diffPercent": 0
+    },
+    "delivered": {
+      "current": 0,
+      "past": 0,
+      "diff": 0,
+      "diffPercent": 0
+    },
+    "clicks": {
+      "current": 0,
+      "past": 0,
+      "diff": 0,
+      "diffPercent": 0
+    },
+    "revenue": {
+      "current": 0,
+      "past": 0,
+      "diff": 0,
+      "diffPercent": 0
+    },
+    "fillRate": {
+      "current": 0,
+      "past": 0,
+      "diff": 0,
+      "diffPercent": 0
+    },
+    "ctr": {
+      "current": 0,
+      "past": 0,
+      "diff": 0,
+      "diffPercent": 0
+    },
+    "rpm": {
+      "current": 0,
+      "past": 0,
+      "diff": 0,
+      "diffPercent": 0
+    },
+    "ecpm": {
+      "current": 0,
+      "past": 0,
+      "diff": 0,
+      "diffPercent": 0
+    }
+  },
+  "adsources": [
+    {
+      "requests": 0,
+      "served": 0,
+      "delivered": 0,
+      "revenue": 0,
+      "fillrate": 0,
+      "ctr": 0,
+      "rpm": 0,
+      "ecpm": 0,
+      "revenueTrendPercent": 0,
+      "pid": 7008,
+      "name": "Nexage Exchange for CPI",
+      "type": "Mediation"
+    },
+    {
+      "requests": 0,
+      "served": 0,
+      "delivered": 0,
+      "revenue": 0,
+      "fillrate": 0,
+      "ctr": 0,
+      "rpm": 0,
+      "ecpm": 0,
+      "revenueTrendPercent": 0,
+      "pid": 2160,
+      "name": "AdScreening ad source",
+      "type": "RTB"
+    },
+    {
+      "requests": 0,
+      "served": 0,
+      "delivered": 0,
+      "revenue": 0,
+      "fillrate": 0,
+      "ctr": 0,
+      "rpm": 0,
+      "ecpm": 0,
+      "revenueTrendPercent": 0,
+      "pid": 5734,
+      "name": "Nexage Exchange Integrated",
+      "type": "Mediation"
+    },
+    {
+      "requests": 0,
+      "served": 0,
+      "delivered": 0,
+      "revenue": 0,
+      "fillrate": 0,
+      "ctr": 0,
+      "rpm": 0,
+      "ecpm": 0,
+      "revenueTrendPercent": 0,
+      "pid": 7051,
+      "name": "SY_Exchange_1",
+      "type": "Mediation"
+    },
+    {
+      "requests": 0,
+      "served": 0,
+      "delivered": 0,
+      "revenue": 0,
+      "fillrate": 0,
+      "ctr": 0,
+      "rpm": 0,
+      "ecpm": 0,
+      "revenueTrendPercent": 0,
+      "pid": 4668,
+      "name": "Nexage Exchange",
+      "type": "RTB"
+    }
+  ],
+  "sites": [
+    {
+      "requests": 0,
+      "served": 0,
+      "delivered": 0,
+      "revenue": 0,
+      "fillrate": 0,
+      "ctr": 0,
+      "rpm": 0,
+      "ecpm": 0,
+      "revenueTrendPercent": 0,
+      "pid": 10000207,
+      "name": "traffic_site",
+      "type": "MOBILE_WEB",
+      "platform": "OTHER",
+      "status": "ACTIVE",
+      "mode": "LIVE",
+      "positions": [
+        {
+          "requests": 0,
+          "served": 0,
+          "delivered": 0,
+          "revenue": 0,
+          "fillrate": 0,
+          "ctr": 0,
+          "rpm": 0,
+          "ecpm": 0,
+          "revenueTrendPercent": 0,
+          "pid": 100330,
+          "name": "16012018",
+          "memo": "16012018",
+          "type": "Banner",
+          "placementCategory": "BANNER",
+          "interstitial": false,
+          "trafficType": "SMART_YIELD",
+          "tags": [
+            {
+              "requests": 0,
+              "served": 0,
+              "delivered": 0,
+              "revenue": 0,
+              "fillrate": 0,
+              "ctr": 0,
+              "rpm": 0,
+              "ecpm": 0,
+              "revenueTrendPercent": 0,
+              "pid": 5566604,
+              "name": "juh_Nexage Exchange for CPI",
+              "exchangeTag": false,
+              "type": "Mediation",
+              "adsourceName": "Nexage Exchange for CPI",
+              "ecpmOverride": false,
+              "status": "ACTIVE",
+              "owner": "Publisher",
+              "level": 1,
+              "tierType": "SUPER_AUCTION"
+            },
+            {
+              "requests": 0,
+              "served": 0,
+              "delivered": 0,
+              "revenue": 0,
+              "fillrate": 0,
+              "ctr": 0,
+              "rpm": 0,
+              "ecpm": 0,
+              "revenueTrendPercent": 0,
+              "pid": 5566602,
+              "name": "juh_Nexage Exchange",
+              "exchangeTag": false,
+              "type": "Mediation",
+              "adsourceName": "Nexage Exchange",
+              "ecpmOverride": false,
+              "status": "ACTIVE",
+              "owner": "Publisher",
+              "level": 1,
+              "tierType": "SUPER_AUCTION"
+            },
+            {
+              "requests": 0,
+              "served": 0,
+              "delivered": 0,
+              "revenue": 0,
+              "fillrate": 0,
+              "ctr": 0,
+              "rpm": 0,
+              "ecpm": 0,
+              "revenueTrendPercent": 0,
+              "pid": 5566603,
+              "name": "juh_Nexage Exchange Integrated",
+              "exchangeTag": false,
+              "type": "Mediation",
+              "adsourceName": "Nexage Exchange Integrated",
+              "ecpmOverride": false,
+              "status": "ACTIVE",
+              "owner": "Publisher",
+              "level": 1,
+              "tierType": "SUPER_AUCTION"
+            }
+          ]
+        },
+        {
+          "requests": 0,
+          "served": 0,
+          "delivered": 0,
+          "revenue": 0,
+          "fillrate": 0,
+          "ctr": 0,
+          "rpm": 0,
+          "ecpm": 0,
+          "revenueTrendPercent": 0,
+          "pid": 100329,
+          "name": "15012018",
+          "memo": "15012018",
+          "type": "Banner",
+          "placementCategory": "BANNER",
+          "interstitial": false,
+          "trafficType": "SMART_YIELD",
+          "tags": [
+            {
+              "requests": 0,
+              "served": 0,
+              "delivered": 0,
+              "revenue": 0,
+              "fillrate": 0,
+              "ctr": 0,
+              "rpm": 0,
+              "ecpm": 0,
+              "revenueTrendPercent": 0,
+              "pid": 5566600,
+              "name": "becido_SY_Exchange_1",
+              "exchangeTag": false,
+              "type": "Mediation",
+              "adsourceName": "SY_Exchange_1",
+              "ecpmOverride": false,
+              "status": "ACTIVE",
+              "owner": "Publisher",
+              "level": 1,
+              "tierType": "SUPER_AUCTION"
+            }
+          ]
+        },
+        {
+          "requests": 0,
+          "served": 0,
+          "delivered": 0,
+          "revenue": 0,
+          "fillrate": 0,
+          "ctr": 0,
+          "rpm": 0,
+          "ecpm": 0,
+          "revenueTrendPercent": 0,
+          "pid": 100331,
+          "name": "17012018",
+          "memo": "17012018",
+          "type": "Banner",
+          "placementCategory": "BANNER",
+          "interstitial": false,
+          "trafficType": "MEDIATION",
+          "tags": [
+            {
+              "requests": 0,
+              "served": 0,
+              "delivered": 0,
+              "revenue": 0,
+              "fillrate": 0,
+              "ctr": 0,
+              "rpm": 0,
+              "ecpm": 0,
+              "revenueTrendPercent": 0,
+              "pid": 5566605,
+              "name": "SampleTag",
+              "exchangeTag": true,
+              "floor": 15,
+              "type": "RTB",
+              "adsourceName": "AdScreening ad source",
+              "ecpmOverride": false,
+              "status": "ACTIVE",
+              "owner": "Nexage",
+              "tierType": "WATERFALL"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

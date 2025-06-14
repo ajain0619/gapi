@@ -1,0 +1,14 @@
+{
+  "pid": 100246,
+  "version": 3,
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "UpdateCase",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "NATIVE",
+  "screenLocation": "UNDEFINED",
+  "mraidAdvancedTracking": true,
+  "nativeVersion": 3
+}

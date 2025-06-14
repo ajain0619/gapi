@@ -1,0 +1,38 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "make": {
+          "type": "string"
+        },
+        "models": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "make"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "make": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "make"
+      ]
+    }
+  ]
+}

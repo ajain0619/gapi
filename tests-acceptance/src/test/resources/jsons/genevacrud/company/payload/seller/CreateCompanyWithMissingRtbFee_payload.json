@@ -1,0 +1,38 @@
+{
+  "id": "",
+  "version": 0,
+  "name": "crudName",
+  "type": "SELLER",
+  "website": "www.nexage.com",
+  "description": "testDescription",
+  "accessKey": "",
+  "reportingApiEnabled": false,
+  "adServingEnabled": false,
+  "restrictDrillDown": false,
+  "reportingType": "FULL_ACCESS",
+  "cpiTrackingEnabled": false,
+  "rtbEnabled": false,
+  "mediationEnabled": false,
+  "rtbRevenueReportEnabled": true,
+  "salesforceId": "salesforceid",
+  "status": "ACTIVE",
+  "globalAliasName": "testAliasName",
+  "numberOfUsers": 0,
+  "numberOfRtbTags": 0,
+  "numberOfMediationSites": 0,
+  "externalDataProviderNames": [
+  ],
+  "test": true,
+  "selfServeAllowed": false,
+  "sellerAttributes": {
+    "effectiveDate": 1436795897000,
+    "defaultBiddersAllowList": true,
+    "version": 0,
+    "revenueShare": 0.1200,
+    "rtbFee": "null",
+    "adFeedbackOptOut": false,
+    "buyerTransparencyOptOut": false,
+    "humanOptOut": false
+  },
+  "thirdPartyFraudDetectionEnabled": false
+}

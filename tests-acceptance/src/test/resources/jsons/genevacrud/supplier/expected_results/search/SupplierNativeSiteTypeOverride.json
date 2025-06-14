@@ -1,0 +1,28 @@
+{
+  "pid": 10000034,
+  "rtbProfilePid": 10000034,
+  "description": "DealTagTest-PSS-Native-SiteOverride-ToApp",
+  "auctionType": 0,
+  "defaultReserve": 1.00000000,
+  "pubAlias": "10201",
+  "siteAlias": "10000176",
+  "pubNameAlias": "CRUDPositionTest",
+  "siteNameAlias": "CRUDPosition_Site3",
+  "siteType": "A",
+  "isRealName": "false",
+  "siteId": 10000176,
+  "siteName": "CRUDPosition_Site3",
+  "categories": [
+    "IAB4"
+  ],
+  "countries": [],
+  "platform": "OTHER",
+  "pubId": 10201,
+  "pubName": "CRUDPositionTest",
+  "tagPid": 7362,
+  "tagName": "DealTagTest-PSS-Native-SiteOverride-ToApp",
+  "videoSupport": "NATIVE",
+  "placementType": "NATIVE_V2",
+  "placementName": "DealTagTest-Native",
+  "placementPid": 100284
+}

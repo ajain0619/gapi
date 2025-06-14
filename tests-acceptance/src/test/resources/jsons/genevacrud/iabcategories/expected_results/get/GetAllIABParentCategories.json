@@ -1,0 +1,169 @@
+{
+  "content": [
+    {
+      "pid": 668,
+      "categoryId": 6,
+      "name": "Arts & Entertainment",
+      "rtbId": "IAB1",
+      "crsTags": []
+    },
+    {
+      "pid": 669,
+      "categoryId": 6,
+      "name": "Automotive",
+      "rtbId": "IAB2",
+      "crsTags": []
+    },
+    {
+      "pid": 670,
+      "categoryId": 6,
+      "name": "Business",
+      "rtbId": "IAB3",
+      "crsTags": []
+    },
+    {
+      "pid": 671,
+      "categoryId": 6,
+      "name": "Careers",
+      "rtbId": "IAB4",
+      "crsTags": []
+    },
+    {
+      "pid": 672,
+      "categoryId": 6,
+      "name": "Education",
+      "rtbId": "IAB5",
+      "crsTags": []
+    },
+    {
+      "pid": 673,
+      "categoryId": 6,
+      "name": "Family & Parenting",
+      "rtbId": "IAB6",
+      "crsTags": []
+    },
+    {
+      "pid": 675,
+      "categoryId": 6,
+      "name": "Food & Drink",
+      "rtbId": "IAB8",
+      "crsTags": []
+    },
+    {
+      "pid": 674,
+      "categoryId": 6,
+      "name": "Health & Fitness",
+      "rtbId": "IAB7",
+      "crsTags": []
+    },
+    {
+      "pid": 676,
+      "categoryId": 6,
+      "name": "Hobbies & Interests",
+      "rtbId": "IAB9",
+      "crsTags": []
+    },
+    {
+      "pid": 677,
+      "categoryId": 6,
+      "name": "Home & Garden",
+      "rtbId": "IAB10",
+      "crsTags": []
+    },
+    {
+      "pid": 693,
+      "categoryId": 6,
+      "name": "Illegal Content",
+      "rtbId": "IAB26",
+      "crsTags": []
+    },
+    {
+      "pid": 678,
+      "categoryId": 6,
+      "name": "Law, Gov't & Politics",
+      "rtbId": "IAB11",
+      "crsTags": []
+    },
+    {
+      "pid": 679,
+      "categoryId": 6,
+      "name": "News",
+      "rtbId": "IAB12",
+      "crsTags": []
+    },
+    {
+      "pid": 692,
+      "categoryId": 6,
+      "name": "Non-Standard Content",
+      "rtbId": "IAB25",
+      "crsTags": []
+    },
+    {
+      "pid": 680,
+      "categoryId": 6,
+      "name": "Personal Finance",
+      "rtbId": "IAB13",
+      "crsTags": []
+    },
+    {
+      "pid": 683,
+      "categoryId": 6,
+      "name": "Pets",
+      "rtbId": "IAB16",
+      "crsTags": []
+    },
+    {
+      "pid": 688,
+      "categoryId": 6,
+      "name": "Real Estate",
+      "rtbId": "IAB21",
+      "crsTags": []
+    },
+    {
+      "pid": 690,
+      "categoryId": 6,
+      "name": "Religion & Spirituality",
+      "rtbId": "IAB23",
+      "crsTags": []
+    },
+    {
+      "pid": 682,
+      "categoryId": 6,
+      "name": "Science",
+      "rtbId": "IAB15",
+      "crsTags": []
+    },
+    {
+      "pid": 689,
+      "categoryId": 6,
+      "name": "Shopping",
+      "rtbId": "IAB22",
+      "crsTags": []
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": false,
+      "sorted": true,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 20,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalPages": 2,
+  "totalElements": 26,
+  "last": false,
+  "number": 0,
+  "sort": {
+    "unsorted": false,
+    "sorted": true,
+    "empty": false
+  },
+  "size": 20,
+  "numberOfElements": 20,
+  "first": true,
+  "empty": false
+}

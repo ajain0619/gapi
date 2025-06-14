@@ -1,0 +1,102 @@
+[
+  {
+    "value": 0,
+    "label": "12:00 AM"
+  },
+  {
+    "value": 3600,
+    "label": "01:00 AM"
+  },
+  {
+    "value": 7200,
+    "label": "02:00 AM"
+  },
+  {
+    "value": 10800,
+    "label": "03:00 AM"
+  },
+  {
+    "value": 14400,
+    "label": "04:00 AM"
+  },
+  {
+    "value": 18000,
+    "label": "05:00 AM"
+  },
+  {
+    "value": 21600,
+    "label": "06:00 AM"
+  },
+  {
+    "value": 25200,
+    "label": "07:00 AM"
+  },
+  {
+    "value": 28800,
+    "label": "08:00 AM"
+  },
+  {
+    "value": 32400,
+    "label": "09:00 AM"
+  },
+  {
+    "value": 36000,
+    "label": "10:00 AM"
+  },
+  {
+    "value": 39600,
+    "label": "11:00 AM"
+  },
+  {
+    "value": 43200,
+    "label": "12:00 PM"
+  },
+  {
+    "value": 46800,
+    "label": "01:00 PM"
+  },
+  {
+    "value": 50400,
+    "label": "02:00 PM"
+  },
+  {
+    "value": 54000,
+    "label": "03:00 PM"
+  },
+  {
+    "value": 57600,
+    "label": "04:00 PM"
+  },
+  {
+    "value": 61200,
+    "label": "05:00 PM"
+  },
+  {
+    "value": 64800,
+    "label": "06:00 PM"
+  },
+  {
+    "value": 68400,
+    "label": "07:00 PM"
+  },
+  {
+    "value": 72000,
+    "label": "08:00 PM"
+  },
+  {
+    "value": 75600,
+    "label": "09:00 PM"
+  },
+  {
+    "value": 79200,
+    "label": "10:00 PM"
+  },
+  {
+    "value": 82800,
+    "label": "11:00 PM"
+  },
+  {
+    "value": 86399,
+    "label": "11:59 PM"
+  }
+]

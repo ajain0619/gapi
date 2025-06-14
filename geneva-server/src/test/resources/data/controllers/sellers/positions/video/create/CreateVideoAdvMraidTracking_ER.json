@@ -1,0 +1,14 @@
+{
+  "sitePid": 10000196,
+  "tiers": [],
+  "name": "MRAIDTrackingVideo",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "mraidAdvancedTracking": true,
+  "videoSupport": "VIDEO",
+  "screenLocation": "UNDEFINED",
+  "videoLinearity": "LINEAR",
+  "status": "ACTIVE",
+  "placementCategory": "INSTREAM_VIDEO"
+}

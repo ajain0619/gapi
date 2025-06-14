@@ -1,0 +1,10 @@
+{
+  "name": "TEST",
+  "version": 0,
+  "publisherPid": 105,
+  "privilegeLevel": "PUBLISHER",
+  "itemType": "BIDDER",
+  "listType": "BLOCKLIST",
+  "data": "data_string",
+  "isIndividualsGroup": true
+}

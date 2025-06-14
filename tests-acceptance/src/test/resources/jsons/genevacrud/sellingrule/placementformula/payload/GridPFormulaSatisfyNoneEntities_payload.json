@@ -1,0 +1,29 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "PLACEMENT_NAME",
+          "operator": "CONTAINS",
+          "ruleData": "nothing"
+        },
+        {
+          "attribute": "PLACEMENT_TYPE",
+          "operator": "EQUALS",
+          "ruleData": "BANNER"
+        },
+        {
+          "attribute": "SITE_NAME",
+          "operator": "CONTAINS",
+          "ruleData": "nothing"
+        },
+        {
+          "attribute": "SITE_TYPE",
+          "operator": "EQUALS",
+          "ruleData": "MOBILE_WEB"
+        }
+      ]
+    }
+  ]
+}

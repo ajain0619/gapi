@@ -1,0 +1,29 @@
+{
+  "name": "blockgroup110218",
+  "version": 0,
+  "publisherPid": 10218,
+  "privilegeLevel": "PUBLISHER",
+  "isDefaultEligible": false,
+  "groups": [
+    {
+      "name": "blockgroup110218",
+      "version": 0,
+      "publisherPid": 10218,
+      "privilegeLevel": "PUBLISHER",
+      "data": "IAB2-1",
+      "itemType": "CATEGORY",
+      "listType": "BLOCKLIST",
+      "isIndividualsGroup": false
+    },
+    {
+      "name": "blockgroup210218",
+      "version": 0,
+      "publisherPid": 10218,
+      "privilegeLevel": "PUBLISHER",
+      "data": "IAB2-7",
+      "itemType": "CATEGORY",
+      "listType": "BLOCKLIST",
+      "isIndividualsGroup": false
+    }
+  ]
+}

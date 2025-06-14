@@ -1,0 +1,46 @@
+{
+  "pid":100333,
+  "version":0,
+  "name":"create_placement_with_multibidding",
+  "adSizeType":"STANDARD",
+  "hbPartnerAttributes":[
+    {
+      "externalId":"mopub_pub_id_1",
+      "hbPartnerPid":2,
+      "type":"NON_DEFAULT"
+    }
+  ],
+  "height":400,
+  "impressionTypeHandling":"BASED_ON_PLACEMENT_CONFIG",
+  "interstitial":false,
+  "memo":"CreatePlacementWithMultiBiddingAlias",
+  "mraidAdvancedTracking":true,
+  "mraidSupport":"NO",
+  "placementCategory":"INSTREAM_VIDEO",
+  "positionAliasName":"CreatePlacementWithMultiBiddingAlias",
+  "screenLocation":"FULLSCREEN_VISIBLE",
+  "site":{
+    "adScreeningEnabled":false,
+    "adTruthEnabled":false,
+    "consumerProfileContributed":false,
+    "consumerProfileUsed":false,
+    "coppaRestricted":false,
+    "filterBots":false,
+    "hbEnabled":false,
+    "overrideIP":false,
+    "pid":10000208,
+    "platform":"OTHER",
+    "type":"MOBILE_WEB"
+  },
+  "status":"ACTIVE",
+  "tags":[
+
+  ],
+  "tiers":[
+
+  ],
+  "trafficType":"MEDIATION",
+  "videoLinearity":"LINEAR",
+  "videoSupport":"VIDEO",
+  "width":1400
+}

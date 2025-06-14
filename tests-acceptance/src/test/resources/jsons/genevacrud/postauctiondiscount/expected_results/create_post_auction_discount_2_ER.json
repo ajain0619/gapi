@@ -1,0 +1,28 @@
+{
+  "pid": 5,
+  "discountName": "test-post-auction-discount-2",
+  "discountPercent": 33.3,
+  "dealsSelected": "ALL",
+  "openAuctionEnabled": true,
+  "discountDescription": "A test on post auction discount.",
+  "discountStatus": false,
+  "version": 0,
+  "discountSellers": [
+    {
+      "pid": 14,
+      "name": "MyCompany"
+    }
+  ],
+  "discountDSPs": [
+    {
+      "companyPid": 10200,
+      "companyName":"CreateCompany20150917105726538",
+      "dspSeats": [
+        {
+          "pid": 1,
+          "name": "buyerseat1"
+        }
+      ]
+    }
+  ]
+}

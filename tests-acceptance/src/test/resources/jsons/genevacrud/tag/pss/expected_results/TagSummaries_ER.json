@@ -1,0 +1,75 @@
+{
+  "pid": 313,
+  "sites": [
+    {
+      "requests": 0,
+      "served": 0,
+      "delivered": 0,
+      "revenue": 0,
+      "fillrate": 0,
+      "ctr": 0,
+      "rpm": 0,
+      "ecpm": 0,
+      "revenueTrendPercent": 0,
+      "pid": 1171,
+      "name": "cpi_site",
+      "type": "MOBILE_WEB",
+      "platform": "OTHER",
+      "status": "ACTIVE",
+      "mode": "TEST",
+      "positions": [
+        {
+          "requests": 0,
+          "served": 0,
+          "delivered": 0,
+          "revenue": 0,
+          "fillrate": 0,
+          "ctr": 0,
+          "rpm": 0,
+          "ecpm": 0,
+          "revenueTrendPercent": 0,
+          "pid": 8087,
+          "name": "footer",
+          "type": "Banner",
+          "placementCategory": "BANNER",
+          "interstitial": false,
+          "tags": []
+        },
+        {
+          "requests": 0,
+          "served": 0,
+          "delivered": 0,
+          "revenue": 0,
+          "fillrate": 0,
+          "ctr": 0,
+          "rpm": 0,
+          "ecpm": 0,
+          "revenueTrendPercent": 0,
+          "pid": 8074,
+          "name": "header",
+          "type": "Interstitial",
+          "placementCategory": "INTERSTITIAL",
+          "interstitial": true,
+          "tags": []
+        },
+        {
+          "requests": 0,
+          "served": 0,
+          "delivered": 0,
+          "revenue": 0,
+          "fillrate": 0,
+          "ctr": 0,
+          "rpm": 0,
+          "ecpm": 0,
+          "revenueTrendPercent": 0,
+          "pid": 8061,
+          "name": "body",
+          "type": "Banner",
+          "placementCategory": "BANNER",
+          "interstitial": false,
+          "tags": []
+        }
+      ]
+    }
+  ]
+}

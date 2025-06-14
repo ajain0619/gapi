@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+  select
+        /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+      t.publisher_id as publisherId,
+      c.name as publisherName,
+      sum(t.revenue) as totalRevenue,
+      sum(t.revenue_gross) as grossRevenue,
+      sum(t.revenue_net) as netRevenue,
+      sum(t.revenue_gross) - sum(t.revenue_net) as costOfSales
+  FROM
+      fact_revenue_adnet_vw_daily t
+    INNER JOIN dim_company c ON c.id = t.publisher_id
+  WHERE
+      t.revenue_gross > 0 AND t.tag_owner = 1
+          AND (t.revenue_net <> t.revenue_gross)
+          AND t.start >= :start AND t.start < :stop
+  GROUP BY t.publisher_id, c.name
+  ORDER BY c.name
+  ]]>
+  </entry>
+
+</properties>

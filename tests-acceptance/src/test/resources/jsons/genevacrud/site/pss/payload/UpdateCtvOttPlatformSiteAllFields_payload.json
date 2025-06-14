@@ -1,0 +1,43 @@
+{
+  "pid": 10000208,
+  "version": 0,
+  "publisher": {
+    "pid": 10228
+  },
+  "description": "ctv_ott platform site",
+  "domain": "ctv_ott_site_update.com",
+  "name": "ctv_ott_site_update",
+  "platform": "CTV_OTT",
+  "status": "ACTIVE",
+  "type": "APPLICATION",
+  "url": "ctv_ott_site_update.com",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1",
+    "IAB5",
+    "IAB4",
+    "IAB3"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "buyerTimeout": 1000,
+  "daysFree": 1,
+  "filterBots": true,
+  "adTruthEnabled": true,
+  "reportBatchSize": 10,
+  "globalAliasName": "alias",
+  "metadataEnablement": true,
+  "adScreeningEnabled": false,
+  "reportFrequency": 1000,
+  "rulesUpdateFrequency": 1000,
+  "totalTimeout": 1000,
+  "trafficThrottle": 1,
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.011,
+    "rtbFee": 0.025
+  }
+}

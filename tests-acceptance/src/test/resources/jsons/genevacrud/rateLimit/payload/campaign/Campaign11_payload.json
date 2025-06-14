@@ -1,0 +1,72 @@
+{
+  "pid": null,
+  "sellerId": 105,
+  "advertiserId": 261,
+  "name": "rateLimitCampaign17",
+  "type": "SPONSORSHIP",
+  "model": "CPM",
+  "price": "123",
+  "goal": null,
+  "daily": null,
+  "capHour": 0,
+  "cap24": 0,
+  "capLife": 0,
+  "bias": 0,
+  "start": "1444881600000",
+  "stop": null,
+  "status": "ACTIVE",
+  "impressions": null,
+  "delivered": null,
+  "clicks": null,
+  "clickThroughRate": null,
+  "targets": [],
+  "campaignCreatives": [],
+  "inFlight": false,
+  "advertisersRaw": [
+    {
+      "pid": 79,
+      "sellerId": 105,
+      "name": "Advertiser-test8",
+      "status": "ACTIVE",
+      "externalStatus": 1,
+      "houseAdvertiser": false
+    },
+    {
+      "pid": 261,
+      "sellerId": 105,
+      "name": "HOUSE",
+      "status": "ACTIVE",
+      "externalStatus": 1,
+      "houseAdvertiser": true
+    }
+  ],
+  "creatives": [
+    {
+      "creative": {
+        "pid": null,
+        "name": "rateLimitCampaign1_creative1",
+        "sellerId": null,
+        "advertiserId": null,
+        "adType": "CUSTOM",
+        "height": 12,
+        "width": 12,
+        "banner": null,
+        "landingUrl": null,
+        "trackingUrl": null,
+        "status": "NOT_DELETED",
+        "customMarkup": "132"
+      },
+      "creativeFileReferences": []
+    }
+  ],
+  "campaignTargets": [
+    {
+      "pid": null,
+      "type": "ZONE",
+      "campaignId": null,
+      "rule": "IS_ANY_OF",
+      "filter": "950/custom1a,950/position1,950/header,950/position2,950/position3,950/position1g,963/positioni,963/positiona,963/header,963/position2,963/positionb,963/positionc,963/positiond,963/positione,963/positiong,963/positionh"
+    }
+  ],
+  "positions": null
+}

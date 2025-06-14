@@ -1,0 +1,41 @@
+{
+  "name": "AdMob - Direct SDK Only - TestAdSourceSmartYield",
+  "sitePid": 456,
+  "buyerPid": 5175,
+  "status": "ACTIVE",
+  "primaryId": "1",
+  "primaryName": "",
+  "secondaryId": "",
+  "secondaryName": "",
+  "ecpmProvision": "Auto",
+  "ecpmAuto": 0,
+  "ecpmManual": 0,
+  "owner": "Nexage",
+  "clickthroughDisable": false,
+  "rules": [
+    {
+      "target": "true",
+      "paramName": "",
+      "ruleType": "SmartYield",
+      "targetType": "Keyword"
+    },
+    {
+      "target": "True",
+      "paramName": "",
+      "ruleType": "SmartYield",
+      "targetType": "Regex"
+    },
+    {
+      "target": "any",
+      "paramName": "",
+      "ruleType": "SmartYield",
+      "targetType": "Keyword"
+    }
+  ],
+  "monetization": true,
+  "returnRawResponse": false,
+  "deployments": [],
+  "position": {
+    "pid": 10206
+  }
+}

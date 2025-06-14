@@ -1,0 +1,61 @@
+{
+  "site": {
+    "pid": 10000202
+  },
+  "name": "rtbRevenue",
+  "status": "ACTIVE",
+  "ecpmAuto": 0,
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "owner": "Nexage",
+  "selfServeEnablement": "NONE",
+  "importRevenueFlag": true,
+  "type": "RTB",
+  "buyer": {
+    "pid": 2160
+  },
+  "position": {
+    "pid": 100318
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": [],
+  "rtbProfile": {
+    "blockedAdCategories": [],
+    "blockedAdvertisers": [],
+    "useDefaultBlock": true,
+    "useDefaultBidders": false,
+    "includeDomainReferences": true,
+    "includeConsumerId": true,
+    "includeConsumerProfile": true,
+    "includeGeoData": true,
+    "alterReserve": "ONLY_IF_HIGHER",
+    "pubNetReserve": 1,
+    "pubNetLowReserve": 0.5,
+    "libraries": [],
+    "bidderFilters": [],
+    "bidderFilterWhitelist": false,
+    "auctionType": "EXCHANGE_DEFAULT",
+    "description": "about tags",
+    "blockedAdTypes": "2",
+    "blockedAttributes": "11"
+  },
+  "buyerClass": "class",
+  "urlTemplate": "template",
+  "postTemplate": "post",
+  "getTemplate": "get",
+  "additionalPost": "additionalPost",
+  "additionalGet": "additionalGet",
+  "noAdRegex": "regex",
+  "clickthroughDisable": true,
+  "adSpaceIdTemplate": "idTemplate",
+  "adSpaceNameTemplate": "nameTemplate",
+  "postProcessTemplate": "processTemplate",
+  "httpHeaderTemplate": "headerTemp",
+  "returnRawResponse": true,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.33,
+    "rtbFee": 0.66
+  }
+}

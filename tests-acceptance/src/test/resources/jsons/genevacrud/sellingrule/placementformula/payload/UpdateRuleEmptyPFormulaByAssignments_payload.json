@@ -1,0 +1,43 @@
+{
+  "pid": 4,
+  "version": 0,
+  "name": "RulePFormulaNotEquals",
+  "description": "description",
+  "status": "ACTIVE",
+  "intendedActions": [
+    {
+      "pid": 4,
+      "version": 0,
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "targets": [
+    {
+      "pid": 4,
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    }
+  ],
+  "assignments": {
+    "positions": [
+      {
+        "pid": 100330,
+        "name": "position",
+        "siteAssignment": {
+          "pid": 10000208,
+          "name": "DESKTOP new",
+          "publisherAssignment": {
+            "pid": 10225,
+            "name": "transparency_enabled"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "userName": "sellermanager5",
+  "name": "seller manager updated",
+  "email": "sellermanager5@qwe.ru",
+  "contactNumber": "654321",
+  "title": "Mrs",
+  "role": "ROLE_MANAGER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10063
+    }
+  ],
+  "oneCentralUserName": "sellermanager5"
+}

@@ -1,0 +1,40 @@
+package com.nexage.geneva.util.geneva;
+
+public class JsonField {
+  public static final String NAME = "name";
+  public static final String DESCRIPTION = "description";
+  public static final String PID = "pid";
+  public static final String AD_PID = "adPID";
+  public static final String ADS = "ads";
+  public static final String POSITIONS = "positions";
+  public static final String MEMO = "memo";
+  public static final String USERNAME = "userName";
+  public static final String EMAIL = "email";
+  public static final String STATUS = "status";
+  public static final String REASON = "reason";
+  public static final String CAMPAIGN_ID = "campaignId";
+  public static final String SEAT_ID = "seatId";
+  public static final String SEAT = "seat";
+  public static final String COMPANY_NAME = "companyName";
+  public static final String COMPANY_PID = "companyPid";
+  public static final String TAGS = "tags";
+  public static final String TAG = "tag";
+  public static final String ID = "id";
+  public static final String RTB_PROFILES = "rtbProfiles";
+  public static final String RTB_PROFILE = "rtbProfile";
+  public static final String PRIMARY_ID = "primaryId";
+  public static final String SITES = "sites";
+  public static final String TX_ID = "txId";
+  public static final String ADSOURCES = "adsources";
+  public static final String VERSION = "version";
+  public static final String LAST_UPDATE = "last_update";
+  public static final String SITE = "site";
+  public static final String POSITION = "position";
+  public static final String PUBLISHER_PID = "publisherPid";
+  public static final String INCLUDE_SITE_NAME = "includeSiteName";
+  public static final String AD_SOURCE_PID = "adSourcePid";
+  public static final String RTB_PROFILE_PID = "rtbProfilePid";
+  public static final String PROFILES = "profiles";
+  public static final String CRID_HEADER_FIELD = "cridHeaderField";
+  public static final String LIST_NAME = "listName";
+}

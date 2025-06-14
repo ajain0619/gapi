@@ -1,0 +1,19 @@
+{
+  "pid": 100312,
+  "version": 1,
+  "site":{
+    "pid":10000192
+  },
+  "screenLocation":"FULLSCREEN_VISIBLE",
+  "mraidSupport":"YES",
+  "placementCategory":"INTERSTITIAL",
+  "interstitial": true,
+  "mraidAdvancedTracking":false,
+  "positionAliasName":"position3",
+  "videoSupport":"VIDEO_AND_BANNER",
+  "width":320,
+  "height":480,
+  "adSizeType":"STANDARD",
+  "memo":"position3",
+  "name":"position3"
+}

@@ -1,0 +1,21 @@
+{
+  "description": "requiredFieldsTest",
+  "pid": 17,
+  "dealId": "1446629641836763368",
+  "createdBy": 781,
+  "status": "Active",
+  "start": 1446613200000,
+  "stop": 1452315599000,
+  "profiles": [],
+  "bidders": [],
+  "publishers": [
+    {
+      "publisherPid": 10212
+    }
+  ],
+  "currency": "GBP",
+  "auctionType": "None",
+  "visibility": false,
+  "floor": 100,
+  "placementFormulaStatus": "DONE"
+}

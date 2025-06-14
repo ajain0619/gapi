@@ -1,0 +1,11 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "BrandenburgConcert",
+  "name": "brandenburgconcert",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 9999,
+  "height": "not int(!)1",
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "interstitial": true
+}

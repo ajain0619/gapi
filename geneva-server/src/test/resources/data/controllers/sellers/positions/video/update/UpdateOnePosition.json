@@ -1,0 +1,17 @@
+{
+  "pid": 100310,
+  "version": 0,
+  "sitePid": 10000192,
+  "tiers": [
+    0
+  ],
+  "name": "position1",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "NO",
+  "videoSupport": "BANNER",
+  "screenLocation": "FOOTER_VISIBLE",
+  "mraidAdvancedTracking": true,
+  "status": "ACTIVE",
+  "placementCategory": "BANNER"
+}

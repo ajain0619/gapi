@@ -1,0 +1,147 @@
+geneva_server_cors_allowed_origins: ssp.yahooinc.com,https://cron.ssp.yahooinc.com
+geneva_server_cors_allowed_methods: GET,POST,DELETE,PUT,PATCH,OPTIONS,HEAD
+geneva_server_cors_allowed_headers: Content-Type,X-Requested-With,Accept,Authentication,Cookie,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Access-Control-Allow-Origin,Referrer-Policy,Expect-CT,Strict-Transport-Security
+geneva_server_management_endpoints_web_exposure_include: health,info,env
+geneva_server_management_endpoints_web_exposure_exclude:
+geneva_server_management_endpoints_web_base_path: /actuator
+geneva_server_management_info_build_enabled: true
+geneva_server_management_info_defaults_enabled: true
+geneva_server_management_info_env_enabled: true
+geneva_server_management_info_git_enabled: true
+geneva_server_management_info_git_mode: simple
+geneva_server_management_endpoint_env_enabled: false
+geneva_server_management_endpoint_beans_enabled: false
+geneva_server_management_endpoint_health_enabled: false
+geneva_server_management_health_db_enabled: false
+geneva_server_management_health_defaults_enabled: true
+geneva_server_management_health_diskspace_enabled: true
+geneva_server_ckms_athens_cert_path:
+geneva_server_ckms_athens_key_path:
+geneva_server_ckms_default_keygroups_list:
+geneva_server_ckms_ykeykey_mock: true
+geneva_server_ckms_ykeykey_environment: aws
+geneva_server_obi_api_payouts_platform_uri: https://aol.xbus.prod.services.aol.com/biz/jsonapi
+geneva_server_obi_api_payouts_frame_uri: https://scare.obi.aol.com/?merchant=nexage&target=
+geneva_server_obi_api_payouts_dev_id:
+geneva_server_obi_api_payouts_cipher_data:
+geneva_server_obi_api_payouts_hex_result:
+geneva_server_obi_api_payouts_merchant: nexage
+geneva_server_obi_api_payouts_offer_id: 1004693
+geneva_server_create_1c_user: true
+geneva_server_one_id_base_url: https://id.b2b.yahooinc.com
+geneva_server_one_id_realm: aolcorporate/aolexternals
+geneva_server_one_id_scope: openid,profile,email,address,phone
+geneva_server_one_base_application_uri: https://api.onemobile.aol.com
+geneva_server_sso_ui_base_endpoint: https://onemobile.aol.com
+geneva_server_sso_b2b_token_refresh_interval: 3600000
+geneva_server_one_api_base_url: https://oneapi.aol.com
+geneva_server_system_name: One
+geneva_server_role_id: 19218
+geneva_server_api_user_role_id: 19218
+geneva_sdk_onecentral_environment: prod
+geneva_server_swagger_enable: false
+geneva_server_cache_enable: true
+geneva_server_redis_host: clustercfg.geneva-session-store.duoozh.use1.cache.amazonaws.com
+geneva_server_redis_port: 6379
+geneva_server_redis_ssl: true
+geneva_server_redis_session_max_timeout: 86400
+geneva_server_spring_session_max_inactive_timeout: 86400
+geneva_server_feature_visibility_self_registration: true
+geneva_server_static_bucket: geneva-static-prod-us-east-1
+geneva_server_static_base_url: https://static.onemobile.aol.com
+geneva_server_data_bucket: geneva-data-prod-us-east-1
+geneva_server_core_db_host: prod.coredb.rw.us-east-1.one-mobile-prod.aws.oath.cloud
+geneva_server_core_db_port: 3306
+geneva_server_core_db_schema: core
+geneva_server_core_db_ssl_mode: REQUIRED
+geneva_server_core_db_ssl_enabled_tls_protocols: TLSv1.2
+geneva_server_core_db_server_timezone: America/New_York
+geneva_server_core_db_rewrite_batched_statements: false
+geneva_server_core_db_username:
+geneva_server_core_db_min_pool_size: 10
+geneva_server_core_db_max_pool_size: 10
+geneva_server_core_db_idle: 600000
+geneva_server_core_db_connection_timeout: 30000
+geneva_server_core_db_max_lifetime: 1800000
+geneva_server_dw_db_hostname: mx-ssp-reporting-nlb-private.db.one-mobile-prod.aws.oath.cloud
+geneva_server_dw_db_port: 5433
+geneva_server_dw_db_schema: vertica_osmium
+geneva_server_dw_db_login_timeout: 3000
+geneva_server_dw_db_ssl: true
+geneva_server_dw_db_username: one-mobile.prod:role.geneva-api-cron
+geneva_server_dw_db_min_pool_size: 10
+geneva_server_dw_db_max_pool_size: 10
+geneva_server_dw_db_idle: 600000
+geneva_server_dw_db_connection_timeout: 30000
+geneva_server_dw_db_max_lifetime: 590000
+geneva_server_dw_db_searchpath: datawarehouse
+geneva_server_placement_formula_update_job: true
+geneva_server_crs_sso_client_id:
+geneva_server_crs_sso_secret:
+geneva_server_crs_sso_encrypted: false
+geneva_server_ckms_enabled: false
+geneva_server_ckms_key_group:
+geneva_server_ckms_key_client:
+geneva_server_ckms_key_secret:
+geneva_server_dealsync_dv360_seller_company_pid: 5110
+geneva_server_dealsync_dv360_seller_object_status: DISCOVERY_OBJECT_STATUS_PAUSED
+geneva_server_dealsync_dv360_seller_publisher_name: Yahoo Exchange
+geneva_server_dealsync_dv360_seller_publisher_email: dv360@yahooinc.com
+geneva_server_dv360_seller_credentials:
+geneva_server_dv360_seller_endpoint: https://dv360seller.googleapis.com/v1beta1
+geneva_server_dv360_seller_exchange_id: 6001
+geneva_server_xandr_service_endpoint: http://127.0.0.1:8090
+geneva_server_xandr_service_credentials: >
+  {
+  "username": "user",
+  "password": "pass"
+  }
+geneva_server_xandr_service_credentials_ms_rebroadcast: >
+  {
+  "username": "user2",
+  "password": "pass2"
+  }
+geneva_server_xandr_sdk_auth_cache_expiration_ms: 60000
+geneva_metrics_jmx_enabled: true
+geneva_metrics_jmx_domain: ssp.geneva.api
+geneva_metrics_datadog_enabled: true
+geneva_metrics_datadog_period: 60
+geneva_server_login: oauth2
+geneva_server_create_dbusers: false
+geneva_server_seller_reportable_kvp_limit: 15
+geneva_server_seller_seat_reportable_kvp_limit: 10
+geneva_server_creative_testing_enabled: false
+geneva_server_feature_visibility_hb_partners: true
+geneva_server_feature_visibility_experiments: true
+geneva_server_servlet_session_cookie_same_site: Lax
+geneva_server_native_placement_gemini_id: 42927
+geneva_server_ssp_geneva_queue_placement_syncup_enabled: false
+geneva_server_ssp_geneva_queue_company_syncup_enabled: false
+geneva_server_ssl_keystore_password:
+geneva_server_ssl_cert_for_custom_athenz_service_role: true
+geneva_server_ssl_mysql_cert_pem: /var/lib/sia/certs/one-mobile.prod.geneva-api.cert.pem
+geneva_server_ssl_cert_pem: /var/lib/sia/certs/one-mobile.prod:role.geneva-api-cron.cert.pem
+geneva_server_ssl_key_pem: /var/lib/sia/keys/one-mobile.prod.geneva-api.key.pem
+geneva_server_splunk_enabled: false
+geneva_server_splunk_admin_password:
+geneva_server_splunk_collector_name: splunk-collector.one-mobile-prod
+geneva_server_splunk_collector_url: splunk-collector.one-mobile-prod.aws.oath.cloud:9998
+geneva_server_athenz_domain: one-mobile.prod
+geneva_server_aws_account_id: 697206947197
+messaging_environment_prefix: geneva-messaging-cron
+messaging_retry_attempts: 3
+messaging_store_key: messagesStore
+video_human_prebid_samplingrate_default: 5
+video_human_postbid_samplingrate_default: 60
+geneva_server_doohscreen_create_limit: 20000
+geneva_server_ugeo_cities_file: /ugeo/us_ca/cities.csv
+geneva_server_ugeo_iso2_country_codes_file: /ugeo/us_ca/iso2_country_codes.csv
+geneva_server_ugeo_iso2_state_codes_file: /ugeo/us_ca/iso2_state_codes.csv
+geneva_server_ugeo_zipcodes_file: /ugeo/us_ca/zipcodes.csv
+geneva_server_ugeo_dmas_file: /ugeo/us_ca/dmas.csv
+geneva_server_dooh_screen_restrictions_file: /dooh-restrictions.csv
+email_service_base_url: https://uat-us-east-1-notification-center.one-mobile-dev.aws.oath.cloud
+email_template: ad-review-notification-email-template.ftl
+email_template_engine_version: 2.3.31
+geneva_sso_client_id:
+geneva_sso_client_secret:

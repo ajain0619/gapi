@@ -1,0 +1,47 @@
+{
+  "pid": 10000211,
+  "version": 0,
+  "publisher": {
+    "pid": 105
+  },
+  "description": "site with all fields deskription",
+  "domain": "mgbPssite.com",
+  "name": "mgbPssite",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "pss.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "trafficThrottle": 55,
+  "adTruthEnabled": false,
+  "globalAliasName": "alias",
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": true,
+    "groups": [
+      "EnBarraquillaMeQuedo"
+    ]
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": false,
+  "buyerTimeout": 100,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "ethnicityMap": "afr=0,asian=1,hisp=2,wh=3,oth=4",
+  "genderMap": "a1=M",
+  "maritalStatusMap": "single=S,married=M,divorced=D,other=O",
+  "inputDateFormat": "123456789"
+}

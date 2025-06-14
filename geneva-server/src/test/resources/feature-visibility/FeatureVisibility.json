@@ -1,0 +1,68 @@
+{
+  "menu": {
+    "dashboard": {
+      "visible": true
+    },
+    "insertionOrders": {
+      "visible": true
+    },
+    "reports": {
+      "visible": true
+    },
+    "adQuality": {
+      "visible": true,
+      "adScreening": {
+        "visible": true
+      }
+    },
+    "adScreeningTopLevel": {
+      "visible": true
+    },
+    "rtbConfiguration": {
+      "visible": true
+    },
+    "companies": {
+      "visible": true,
+      "buyers": {
+        "visible": true
+      },
+      "sellers": {
+        "visible": true
+      },
+      "seatHolders": {
+        "visible": true
+      },
+      "partners": {
+        "visible": true
+      },
+      "hbPartners": {
+        "visible": true
+      }
+    },
+    "users": {
+      "visible": true
+    },
+    "campaigns": {
+      "visible": true
+    },
+    "experiments": {
+      "visible": true
+    },
+    "deals": {
+      "visible": true
+    },
+    "pssPayouts": {
+      "visible": true
+    }
+  },
+  "loginAccess": {
+    "NEXAGE": true,
+    "SELLER": true,
+    "BUYER": true,
+    "SEATHOLDER": true
+  },
+  "selfRegistration": {
+    "oneCentralUserCreation": false
+  },
+  "dashboardSummaryCaching": true
+}

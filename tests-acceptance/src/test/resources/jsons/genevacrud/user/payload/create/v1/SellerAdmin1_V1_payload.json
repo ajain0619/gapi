@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 10063,
+      "type": "SELLER"
+    }
+  ],
+  "role": "ROLE_ADMIN",
+  "userName": "selleradmin1_V1",
+  "email": "01gfxdhxdfh@q.ru",
+  "contactNumber": "jfg",
+  "name": "f nexageTestLastName",
+  "title": "jhf",
+  "primaryContact": false
+}

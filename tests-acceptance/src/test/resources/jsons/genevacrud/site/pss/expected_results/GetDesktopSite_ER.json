@@ -1,0 +1,25 @@
+{
+  "pid": 10000208,
+  "version": 1,
+  "publisher": {
+    "pid": 10228
+  },
+  "dcn": "customId",
+  "description": "desktop",
+  "domain": "desktop_site1.com",
+  "name": "desktop_site1",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "DESKTOP",
+  "url": "desktop_site1.com",
+  "appBundle": "",
+  "coppaRestricted": true,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0
+  }
+}

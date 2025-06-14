@@ -1,0 +1,11 @@
+{
+  "placementCategory": "MEDIUM_RECTANGLE",
+  "memo": "validator",
+  "name": "validator",
+  "screenLocation": "FOOTER_VISIBLE",
+  "width": 400,
+  "height": 250,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "interstitial": false
+}

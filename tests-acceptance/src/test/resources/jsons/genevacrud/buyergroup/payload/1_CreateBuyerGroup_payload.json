@@ -1,0 +1,8 @@
+{
+  "name": "BuyerGroupCucumber",
+  "sfdcLineId": "testsfdcLineId",
+  "sfdcIoId": "testsfdcIoId",
+  "currency": "USD",
+  "billingCountry": "USA",
+  "billable": false
+}

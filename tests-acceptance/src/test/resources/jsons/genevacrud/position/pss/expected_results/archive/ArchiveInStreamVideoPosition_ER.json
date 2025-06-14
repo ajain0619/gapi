@@ -1,0 +1,35 @@
+{
+  "coppaRestricted": false,
+  "dcn": "8a859e060151515bed725fadca9800e3",
+  "description": "aol.com",
+  "domain": "aol.com",
+  "iabCategories": [
+    "IAB5"
+  ],
+  "mode": "TEST",
+  "name": "PositionArchiving_TestSite",
+  "pid": 10000179,
+  "platform": "ANDROID_TAB",
+  "positions": [
+    {
+      "name": "PositionArchiving_TestPosition3",
+      "pid": 100254
+    },
+    {
+      "name": "PositionArchiving_TestPosition2",
+      "pid": 100253
+    },
+    {
+      "name": "PositionArchiving_TestPosition1",
+      "pid": 100252
+    }
+  ],
+  "publisher": {
+    "pid": 10208
+  },
+  "rtb1CategoryRollup": "",
+  "status": "ACTIVE",
+  "type": "APPLICATION",
+  "url": "aol.com",
+  "version": 25
+}

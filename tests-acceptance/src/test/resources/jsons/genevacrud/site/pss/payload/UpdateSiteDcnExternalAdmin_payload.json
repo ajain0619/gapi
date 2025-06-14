@@ -1,0 +1,77 @@
+{
+  "pid": 963,
+  "version": 65,
+  "publisher": {
+    "pid": 105
+  },
+  "dcn": "8a858a330137372da0982da3ffc50195",
+  "description": "test site for adserver functional test group 8",
+  "domain": "www.test8domain.com",
+  "name": "AS8B",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "www.test8.com",
+  "coppaRestricted": false,
+  "iabCategories": [],
+  "positions": [
+    {
+      "pid": 14730,
+      "name": "position1"
+    },
+    {
+      "pid": 14678,
+      "name": "positionc"
+    },
+    {
+      "pid": 14717,
+      "name": "header"
+    },
+    {
+      "pid": 14691,
+      "name": "positionb"
+    },
+    {
+      "pid": 14626,
+      "name": "positione"
+    },
+    {
+      "pid": 14756,
+      "name": "position2"
+    },
+    {
+      "pid": 14665,
+      "name": "positiond"
+    },
+    {
+      "pid": 14782,
+      "name": "positiong"
+    },
+    {
+      "pid": 14652,
+      "name": "footer"
+    },
+    {
+      "pid": 14639,
+      "name": "positionf"
+    },
+    {
+      "pid": 14704,
+      "name": "positiona"
+    },
+    {
+      "pid": 14743,
+      "name": "positionh"
+    },
+    {
+      "pid": 14795,
+      "name": "positioni"
+    },
+    {
+      "pid": 14769,
+      "name": "body"
+    }
+  ],
+  "mode": "TEST",
+  "hbEnabled": false
+}

@@ -1,0 +1,13 @@
+{
+  "contactNumber": "123456",
+  "role": "ROLE_MANAGER",
+  "userName": "NexageManager5",
+  "email": "01nexagemanager95@ex.com",
+  "name": "nexage manager5",
+  "primaryContact": false,
+  "sellerSeat": {
+    "pid": 1
+  },
+  "global": false,
+  "enabled": true
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 2,
+  "status": "ACTIVE",
+  "version": 0,
+  "keyOnRequest": "test",
+  "value": "test",
+  "valueType": "STRING",
+  "sellerId": 10225,
+  "reportable": false,
+  "keyName": "Key 1"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+  <context:annotation-config/>
+
+  <context:component-scan base-package="com.ssp.geneva.server.report.report.impl.finance.financemetricsbysite,
+                                        com.ssp.geneva.server.report.report.impl.seller.rtbrevenueperformance,
+                                        com.ssp.geneva.server.report.report.impl.buyer.bidderperformance"/>
+
+  <bean id="applicationProperties"
+        class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+    <property name="singleton" value="true"/>
+    <property name="ignoreResourceNotFound" value="true"/>
+  </bean>
+
+  <bean id="dwNamedJdbcTemplate" class="org.mockito.Mockito"
+        factory-method="mock">
+    <constructor-arg
+      value="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"/>
+  </bean>
+
+  <bean id="coreNamedJdbcTemplate" class="org.mockito.Mockito"
+        factory-method="mock">
+    <constructor-arg
+      value="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"/>
+  </bean>
+
+  <util:properties id="financeMetricsBySiteQueries"
+                   location="classpath:/sql/report/financeMetricsBySiteQueries.xml"/>
+
+  <util:properties id="rtbRevenuePerformanceQueries"
+                   location="classpath:/sql/report/rtbRevenuePerformanceQueries.xml"/>
+
+  <util:properties id="bidderPerformanceQueries"
+                   location="classpath:/sql/report/bidderPerformanceQueries.xml"/>
+
+  <bean id="phoneCastConfigService" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="com.nexage.admin.core.phonecast.impl.PhoneCastConfigServiceImpl"/>
+  </bean>
+
+  <bean id="countryService" class="org.mockito.Mockito"
+        factory-method="mock">
+    <constructor-arg
+      value="com.nexage.countryservice.CountryService"/>
+  </bean>
+
+  <bean id="directDealRepository" class="org.mockito.Mockito"
+        factory-method="mock">
+    <constructor-arg
+      value="com.nexage.admin.core.repository.DirectDealRepository"/>
+  </bean>
+
+  <bean id="ruleRepository" class="org.mockito.Mockito"
+        factory-method="mock">
+    <constructor-arg
+      value="com.nexage.admin.core.repository.RuleRepository"/>
+  </bean>
+
+  <bean id="siteRepository" class="org.mockito.Mockito"
+        factory-method="mock">
+    <constructor-arg
+      value="com.nexage.admin.core.repository.SiteRepository"/>
+  </bean>
+
+  <bean id="ruleFormulaPositionViewRepository" class="org.mockito.Mockito"
+        factory-method="mock">
+    <constructor-arg
+      value="com.nexage.admin.core.repository.RuleFormulaPositionViewRepository"/>
+  </bean>
+
+  <bean id="restrictedAccessUtil" class="org.mockito.Mockito"
+        factory-method="mock">
+    <constructor-arg
+      value="com.ssp.geneva.server.report.report.util.RestrictedAccessUtil"/>
+  </bean>
+
+</beans>

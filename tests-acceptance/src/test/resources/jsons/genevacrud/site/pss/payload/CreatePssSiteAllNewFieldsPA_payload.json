@@ -1,0 +1,48 @@
+{
+  "publisher": {
+    "pid": 10228
+  },
+  "description": "site with all fields deskription",
+  "domain": "mgbPssite.com",
+  "name": "mgbPssite",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "pss.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "LIVE",
+  "appBundle": "",
+  "consumerProfileContributed": true,
+  "consumerProfileUsed": true,
+  "ethnicityMap": "afr=0,asian=1,hisp=2,wh=3,oth=4",
+  "genderMap": "a1=M",
+  "inputDateFormat": "MuyCriminal",
+  "maritalStatusMap": "single=S,married=M,divorced=D,other=O",
+  "overrideIP": true,
+  "totalTimeout": 10,
+  "trafficThrottle": 100,
+  "buyerTimeout": 1000,
+  "impressionGroup": {
+    "enabled": true,
+    "groups": [
+      "EvaEva"
+    ]
+  },
+  "rtb1CategoryRollup": "IAB12",
+  "adTruthEnabled": true,
+  "globalAliasName": "alias",
+  "metadataEnablement": true,
+  "hbEnabled": false,
+  "adScreeningEnabled": false,
+  "reportBatchSize": 100,
+  "reportFrequency": 19000,
+  "rulesUpdateFrequency": 19000,
+  "filterBots": false,
+  "daysFree": 15,
+  "passthruParameters": [
+    "Baby"
+  ]
+}

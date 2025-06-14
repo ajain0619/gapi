@@ -1,0 +1,45 @@
+{
+  "pid": 11,
+  "description": "DesktopDeskription",
+  "dealId": "13021645789",
+  "status": "Active",
+  "start": 1518498000001,
+  "stop": 1518670799001,
+  "profiles": [
+    {
+      "pid": 26,
+      "rtbProfilePid": 10000070,
+      "description": "Updated description",
+      "auctionType": 0,
+      "defaultReserve": 1.02,
+      "siteType": "D",
+      "isRealName": "true",
+      "siteId": 10000208,
+      "siteName": "desktop_site1",
+      "categories": [
+        "IAB1"
+      ],
+      "countries": [],
+      "platform": "OTHER",
+      "pubId": 10228,
+      "pubName": "banner",
+      "tagPid": 5566599,
+      "tagName": "tag1",
+      "videoSupport": "BANNER",
+      "placementType": "BANNER",
+      "placementName": "ban1",
+      "placementPid": 100329
+    }
+  ],
+  "bidders": [],
+  "rules": [
+    {
+      "pid": 1,
+      "rulePid": 1
+    }
+  ],
+  "auctionType": "None",
+  "visibility": true,
+  "targets": [],
+  "floor": null
+}

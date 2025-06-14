@@ -1,0 +1,43 @@
+{
+  "content": [
+    {
+      "name": "Inventory Attribute3",
+      "pid": 3,
+      "status": "INACTIVE",
+      "hasGlobalVisibility": false,
+      "assignedLevel": [
+        2
+      ],
+      "lastUpdated": "2019-02-08",
+      "inventoryAttributeValueCount": 1,
+      "inventoryAttributeValueCountActive": 0,
+      "internalOnly": false,
+      "required": false
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 20,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": true,
+  "totalElements": 1,
+  "totalPages": 1,
+  "first": true,
+  "size": 20,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "numberOfElements": 1,
+  "number": 0,
+  "empty": false
+}

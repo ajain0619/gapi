@@ -1,0 +1,16 @@
+{
+  "name": "AV30",
+  "buyer": {
+    "pid": "7068"
+  },
+  "ecpmManual": 15,
+  "ecpmProvision": "Manual",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "heyUser",
+  "adNetReportPassword": "heyPassword",
+  "tagController": {
+    "autoExpand": false
+  },
+  "primaryId": "0611544"
+}

@@ -1,0 +1,101 @@
+{
+  "adScreeningEnabled": false,
+  "adTruthEnabled": false,
+  "buyerTimeout": 500,
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "coppaRestricted": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0,
+    "rtbFee": 0
+  },
+  "daysFree": 0,
+  "dcn": "8a859e06014f4fd97b68dbd0de1d000b",
+  "defaultPositions": [
+    ""
+  ],
+  "description": "test",
+  "domain": "test",
+  "filterBots": true,
+  "hbEnabled": false,
+  "hbPartnerAttributes": [
+    {
+      "externalId": "ex-id-1",
+      "hbPartnerPid": 2,
+      "type": "DEFAULT"
+    },
+    {
+      "externalId": "ex-id-2",
+      "hbPartnerPid": 3,
+      "type": "NON_DEFAULT"
+    }
+  ],
+  "iabCategories": [
+    "IAB2"
+  ],
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "metadataEnablement": false,
+  "mode": "TEST",
+  "name": "CRUDPosition_Site1",
+  "overrideIP": false,
+  "passthruParameters": [],
+  "pid": 10000174,
+  "platform": "OTHER",
+  "positions": [
+    {
+      "memo": "interstitial placement",
+      "name": "interstitial_placement",
+      "pid": 100248
+    },
+    {
+      "memo": "native placement",
+      "name": "native_placement",
+      "pid": 100250
+    },
+    {
+      "name": "smartYield_updateCases",
+      "pid": 100316
+    },
+    {
+      "memo": "banner placement",
+      "name": "banner_placement",
+      "pid": 100247
+    },
+    {
+      "memo": "instream video placement",
+      "name": "instream_video_placement",
+      "pid": 100251
+    },
+    {
+      "memo": "CRUDPosition_UpdateCases",
+      "name": "CRUDPosition_UpdateCases",
+      "pid": 100246
+    },
+    {
+      "memo": "medium rectangle placement",
+      "name": "medium_rectangle_placement",
+      "pid": 100249
+    }
+  ],
+  "publisher": {
+    "adServingEnabled": false,
+    "defaultRtbProfilesEnabled": false,
+    "numberOfUsers": 0,
+    "pid": 10201,
+    "restrictDrillDown": false,
+    "selfServeAllowed": false,
+    "test": false
+  },
+  "reportBatchSize": 10,
+  "reportFrequency": 180000,
+  "rtb1CategoryRollup": "",
+  "rulesUpdateFrequency": 1800000,
+  "status": "ACTIVE",
+  "totalTimeout": 1000,
+  "trafficThrottle": 0,
+  "type": "MOBILE_WEB",
+  "url": "test"
+}

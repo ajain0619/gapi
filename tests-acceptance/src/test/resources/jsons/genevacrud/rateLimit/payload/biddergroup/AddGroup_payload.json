@@ -1,0 +1,27 @@
+{
+  "pid": 5,
+  "name": "BGN1",
+  "version": 0,
+  "publisherPid": 105,
+  "privilegeLevel": "PUBLISHER",
+  "groups": [
+    {
+      "name": "BGN11",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "data": "4,2",
+      "itemType": "BIDDER",
+      "listType": "WHITELIST"
+    },
+    {
+      "name": "BGN111",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUBLISHER",
+      "data": "domain1.com,domain2.com",
+      "itemType": "BIDDER",
+      "listType": "WHITELIST"
+    }
+  ]
+}

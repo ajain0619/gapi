@@ -1,0 +1,50 @@
+{
+  "pid": 10000209,
+  "version": 0,
+  "publisher": {
+    "pid": 10228
+  },
+  "description": "site with only new required fields deskription",
+  "domain": "mgb8site.com",
+  "name": "mgb8site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "date.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "LIVE",
+  "appBundle": "",
+  "consumerProfileContributed": true,
+  "consumerProfileUsed": true,
+  "overrideIP": true,
+  "totalTimeout": 1000,
+  "trafficThrottle": 65,
+  "buyerTimeout": 1000,
+  "impressionGroup": {
+    "enabled": true,
+    "groups": [
+      "elmas"
+    ]
+  },
+  "rtb1CategoryRollup": "IAB1",
+  "adTruthEnabled": true,
+  "globalAliasName": "admas",
+  "metadataEnablement": true,
+  "hbEnabled": true,
+  "adScreeningEnabled": false,
+  "reportBatchSize": 9,
+  "reportFrequency": 16000,
+  "rulesUpdateFrequency": 16000,
+  "filterBots": true,
+  "daysFree": 5,
+  "passthruParameters": [
+    "landmas"
+  ],
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.001,
+    "rtbFee": 0.05
+  }
+}

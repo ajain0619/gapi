@@ -1,0 +1,13 @@
+{
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "DefaultTrafficTypeNativeTest",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "NATIVE",
+  "screenLocation": "UNDEFINED",
+  "mraidAdvancedTracking": true,
+  "status": "ACTIVE",
+  "placementCategory": "INTERSTITIAL"
+}

@@ -1,0 +1,11 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "toesztonamdaragoe",
+  "name": "toesztonamdaragoe",
+  "screenLocation": "HEADER_VISIBLE",
+  "width": 9999,
+  "height": 9999,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "interstitial": true
+}

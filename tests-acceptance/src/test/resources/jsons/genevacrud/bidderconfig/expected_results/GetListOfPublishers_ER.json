@@ -1,0 +1,274 @@
+[
+  {
+    "pid": 10212,
+    "name": "Seller PR-8826"
+  },
+  {
+    "pid": 651,
+    "name": "Burst Media"
+  },
+  {
+    "pid": 157,
+    "name": "ASC4_ClickAndDisplay"
+  },
+  {
+    "pid": 27,
+    "name": "adserverSellerCompany1"
+  },
+  {
+    "pid": 40,
+    "name": "adserverSellerCompany2"
+  },
+  {
+    "pid": 79,
+    "name": "adserverFTGroup5"
+  },
+  {
+    "pid": 105,
+    "name": "adserverSellerTest8"
+  },
+  {
+    "pid": 131,
+    "name": "adserverFTGroup12"
+  },
+  {
+    "pid": 92,
+    "name": "adserverSellerTest7"
+  },
+  {
+    "pid": 53,
+    "name": "adserverSellerTest3"
+  },
+  {
+    "pid": 66,
+    "name": "ASC1_BasicAdServe"
+  },
+  {
+    "pid": 14,
+    "name": "MyCompany"
+  },
+  {
+    "pid": 144,
+    "name": "ASFT10_company"
+  },
+  {
+    "pid": 118,
+    "name": "AdserverSellerTest9"
+  },
+  {
+    "pid": 10201,
+    "name": "CRUDPositionTest"
+  },
+  {
+    "pid": 10202,
+    "name": "Rinky",
+    "globalAliasName": ""
+  },
+  {
+    "pid": 10203,
+    "name": "CreateCompany20150918134548296",
+    "globalAliasName": "testAliasName"
+  },
+  {
+    "pid": 10208,
+    "name": "PositionArchiving_TestCompany1"
+  },
+  {
+    "pid": 10209,
+    "name": "PositionArchiving_TestCompany2"
+  },
+  {
+    "pid": 10210,
+    "name": "auto-tag-generation-company"
+  },
+  {
+    "pid": 170,
+    "name": "throw_away_company"
+  },
+  {
+    "pid": 183,
+    "name": "ASC11_GuaranteedPacing"
+  },
+  {
+    "pid": 196,
+    "name": "throw_away_company2"
+  },
+  {
+    "pid": 209,
+    "name": "ASFT9_CustomTargeting"
+  },
+  {
+    "pid": 222,
+    "name": "reverse_geocoding_company"
+  },
+  {
+    "pid": 235,
+    "name": "CPICorporation"
+  },
+  {
+    "pid": 248,
+    "name": "MedFTCompany"
+  },
+  {
+    "pid": 287,
+    "name": "PRSTest2"
+  },
+  {
+    "pid": 313,
+    "name": "cpi_seller"
+  },
+  {
+    "pid": 339,
+    "name": "Athens1"
+  },
+  {
+    "pid": 391,
+    "name": "SellerToTestRtbReport1"
+  },
+  {
+    "pid": 404,
+    "name": "SellerToTestRtbReport2"
+  },
+  {
+    "pid": 456,
+    "name": "Rovio"
+  },
+  {
+    "pid": 495,
+    "name": "111 PRS"
+  },
+  {
+    "pid": 469,
+    "name": "111 DJG Seller"
+  },
+  {
+    "pid": 482,
+    "name": "222 DJG"
+  },
+  {
+    "pid": 508,
+    "name": "PRS 222"
+  },
+  {
+    "pid": 521,
+    "name": "222prs"
+  },
+  {
+    "pid": 534,
+    "name": "sriniseller"
+  },
+  {
+    "pid": 547,
+    "name": "sriniseller2"
+  },
+  {
+    "pid": 560,
+    "name": "sriniseller3"
+  },
+  {
+    "pid": 573,
+    "name": "Gil's seller"
+  },
+  {
+    "pid": 586,
+    "name": "Gil's seller 2"
+  },
+  {
+    "pid": 612,
+    "name": "112 DJG Seller"
+  },
+  {
+    "pid": 625,
+    "name": "Gil Seller Co."
+  },
+  {
+    "pid": 677,
+    "name": "sriniseller4"
+  },
+  {
+    "pid": 690,
+    "name": "A test Seller"
+  },
+  {
+    "pid": 703,
+    "name": "ESPN Mobile"
+  },
+  {
+    "pid": 716,
+    "name": "sriniseller7"
+  },
+  {
+    "pid": 729,
+    "name": "seller8"
+  },
+  {
+    "pid": 755,
+    "name": "A New Seller - Eddie"
+  },
+  {
+    "pid": 768,
+    "name": "A new Seller"
+  },
+  {
+    "pid": 781,
+    "name": "tagtest 1"
+  },
+  {
+    "pid": 10011,
+    "name": "sellerdealterm"
+  },
+  {
+    "pid": 10037,
+    "name": "CPI Corp with Ad Serving"
+  },
+  {
+    "pid": 10050,
+    "name": "AdTruth Test Company"
+  },
+  {
+    "pid": 10063,
+    "name": "test_rtb"
+  },
+  {
+    "pid": 10076,
+    "name": "PRELDTest"
+  },
+  {
+    "pid": 10128,
+    "name": "velocity template seller"
+  },
+  {
+    "pid": 10167,
+    "name": "viewable_display_seller"
+  },
+  {
+    "pid": 10206,
+    "name": "alias test",
+    "globalAliasName": "alias name"
+  },
+  {
+    "pid": 10207,
+    "name": "AliasSiteTestSeller"
+  },
+  {
+    "pid": 10213,
+    "name": "TagArchive_TestCompany"
+  },
+  {
+    "pid": 10214,
+    "name": "TestSellerPosArchive",
+    "globalAliasName": "alternatename"
+  },
+  {
+    "pid": 10032,
+    "name": "dfp_test_seller"
+  },
+  {
+    "pid": 10038,
+    "name": "event_data_seller"
+  },
+  {
+    "pid": 10000,
+    "name": "Seller1"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "pid": 1,
+  "version": 0,
+  "name": "Rule without publisher",
+  "description": "some_description",
+  "status": "ACTIVE",
+  "type": "DEAL",
+  "assignments": {},
+  "targets": [
+    {
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424926,\"name\":\"Papua New Guinea (PG)\"},{\"woeid\":23424916,\"name\":\"New Zealand (NZ)\"},{\"woeid\":23424903,\"name\":\"New Caledonia (NC)\"}]}"
+    },
+    {
+      "version": 0,
+      "targetType": "CONTENT_CHANNEL",
+      "matchType":"INCLUDE_LIST",
+      "status":"ACTIVE",
+      "data": "{\"channels\": [\"CNN\" ,\"HBO\" ,\"Discovery\" ], \"excludeTrafficWithoutChannel\" : 1 }"
+    },
+    {
+      "version": 0,
+      "targetType": "CONTENT_SERIES",
+      "matchType":"INCLUDE_LIST",
+      "status":"ACTIVE",
+      "data": "{\"series\": [\"Game of Thrones\" ,\"My Home 2\" ,\"Breaking Bad @ 2\"], \"excludeTrafficWithoutSeries\" : 1 }"
+    },
+    {
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "CONTENT_RATING",
+      "data": "{\"ratings\": [\"PG-13\"], \"excludeTrafficWithoutRating\" :1 }"
+    },
+    {
+      "version": 0,
+      "targetType": "CONTENT_GENRE",
+      "matchType": "INCLUDE_LIST",
+      "status": "ACTIVE",
+      "data": "{\"genres\": [\"Action\"], \"excludeTrafficWithoutGenre\" :1 }"
+    },
+    {
+      "version": 0,
+      "targetType": "CONTENT_LIVESTREAM",
+      "matchType": "INCLUDE_LIST",
+      "status": "ACTIVE",
+      "data": "{\"livestream\": [\"LIVE\"], \"excludeTrafficWithoutLivestream\" :1 }"
+    },
+    {
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "CONTENT_LANGUAGE",
+      "data": "{\"languages\": [\"de\", \"ab\", \"km\", \"mn\"], \"excludeTrafficWithoutLanguage\" :1 }"
+    }
+  ]
+}

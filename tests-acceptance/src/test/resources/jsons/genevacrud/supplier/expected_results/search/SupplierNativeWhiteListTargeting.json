@@ -1,0 +1,35 @@
+{
+  "pid": 10000035,
+  "rtbProfilePid": 10000035,
+  "description": "DealTagTest-PSS-Native-WhitlistManytargeting",
+  "auctionType": 0,
+  "defaultReserve": 1.00000000,
+  "pubAlias": "10201",
+  "siteAlias": "10000176",
+  "pubNameAlias": "CRUDPositionTest",
+  "siteNameAlias": "CRUDPosition_Site3",
+  "siteType": "W",
+  "isRealName": "false",
+  "siteId": 10000176,
+  "siteName": "CRUDPosition_Site3",
+  "categories": [
+    "IAB4"
+  ],
+  "countries": [
+    {
+      "pid": 778,
+      "target": "CAN",
+      "targetType": "Keyword",
+      "ruleType": "Country"
+    }
+  ],
+  "platform": "OTHER",
+  "pubId": 10201,
+  "pubName": "CRUDPositionTest",
+  "tagPid": 7363,
+  "tagName": "DealTagTest-PSS-Native-WhitlistManytargeting",
+  "videoSupport": "NATIVE",
+  "placementType": "NATIVE_V2",
+  "placementName": "DealTagTest-Native",
+  "placementPid": 100284
+}

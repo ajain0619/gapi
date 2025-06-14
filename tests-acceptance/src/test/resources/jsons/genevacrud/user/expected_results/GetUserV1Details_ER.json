@@ -1,0 +1,47 @@
+{
+  "content": [
+    {
+      "userName": "admin1c",
+      "name": "admin1c",
+      "email": "admin1c@nexage.com",
+      "contactNumber": "7827657876",
+      "title": "mr",
+      "role": "ROLE_ADMIN",
+      "enabled": true,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 1,
+          "name": "Nexage Inc",
+          "type": "NEXAGE"
+        }
+      ],
+      "dealAdmin": false
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": true,
+  "totalElements": 1,
+  "totalPages": 1,
+  "first": true,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "numberOfElements": 1,
+  "empty": false
+}

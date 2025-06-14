@@ -1,0 +1,18 @@
+{
+  "site": {
+    "pid": 10000202,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "interstitial": false,
+  "screenLocation": "ABOVE_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "width": 300,
+  "height": 50,
+  "memo": "special_formula",
+  "name": "special_formula",
+  "placementCategory": "BANNER",
+  "positionAliasName": "formula",
+  "mraidAdvancedTracking": true
+}

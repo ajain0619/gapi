@@ -1,0 +1,23 @@
+{
+  "pid": 3,
+  "version": 0,
+  "name": "Sir Lancelot 1234",
+  "description": "The Brave Knight 2",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "sellerSeatPid": 2,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+      "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]"
+    }
+  ]
+}

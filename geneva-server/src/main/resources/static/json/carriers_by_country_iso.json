@@ -1,0 +1,5382 @@
+[
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "489",
+        "name": "SETAR"
+      }
+    ],
+    "countryName": "Aruba",
+    "countryCode": "ABW"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "52",
+        "name": "AWCC"
+      },
+      {
+        "pid": "197",
+        "name": "ETISALAT"
+      },
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "467",
+        "name": "ROSHAN"
+      }
+    ],
+    "countryName": "Afghanistan",
+    "countryCode": "AFG"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "364",
+        "name": "MOVICEL"
+      },
+      {
+        "pid": "624",
+        "name": "UNITEL"
+      }
+    ],
+    "countryName": "Angola",
+    "countryCode": "AGO"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "86",
+        "name": "CABLE & WIRELESS"
+      },
+      {
+        "pid": "663",
+        "name": "WEBLINKS"
+      }
+    ],
+    "countryName": "Anguilla",
+    "countryCode": "AIA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "34",
+        "name": "AMC"
+      },
+      {
+        "pid": "172",
+        "name": "EAGLE MOBILE"
+      },
+      {
+        "pid": "443",
+        "name": "PLUS"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Albania",
+    "countryCode": "ALB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "345",
+        "name": "MOBILAND"
+      }
+    ],
+    "countryName": "Andorra",
+    "countryCode": "AND"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "170",
+        "name": "DU"
+      },
+      {
+        "pid": "197",
+        "name": "ETISALAT"
+      }
+    ],
+    "countryName": "United Arab Emirates",
+    "countryCode": "ARE"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "245",
+        "name": "HUTCHISON"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      },
+      {
+        "pid": "394",
+        "name": "NEXTEL"
+      },
+      {
+        "pid": "436",
+        "name": "PERSONAL"
+      }
+    ],
+    "countryName": "Argentina",
+    "countryCode": "ARG"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "66",
+        "name": "BEELINE"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "651",
+        "name": "VIVACELL-MTS"
+      }
+    ],
+    "countryName": "Armenia",
+    "countryCode": "ARM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "73",
+        "name": "BLUESKY"
+      }
+    ],
+    "countryName": "American Samoa",
+    "countryCode": "ASM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "42",
+        "name": "APUA"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "304",
+        "name": "LIME"
+      }
+    ],
+    "countryName": "Antigua and Barbuda",
+    "countryCode": "ATG"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "2",
+        "name": "3"
+      },
+      {
+        "pid": "12",
+        "name": "ADVANCE"
+      },
+      {
+        "pid": "136",
+        "name": "CRAZY JOHN'S"
+      },
+      {
+        "pid": "224",
+        "name": "GLOBALSTAR"
+      },
+      {
+        "pid": "422",
+        "name": "OPTUS"
+      },
+      {
+        "pid": "458",
+        "name": "RAILCORP"
+      },
+      {
+        "pid": "516",
+        "name": "SOUL"
+      },
+      {
+        "pid": "577",
+        "name": "TELSTRA"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Australia",
+    "countryCode": "AUS"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "2",
+        "name": "3"
+      },
+      {
+        "pid": "9",
+        "name": "A1"
+      },
+      {
+        "pid": "59",
+        "name": "BARABLU"
+      },
+      {
+        "pid": "76",
+        "name": "BOB"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "460",
+        "name": "RAILWAYS"
+      },
+      {
+        "pid": "555",
+        "name": "TELE.RING"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      },
+      {
+        "pid": "680",
+        "name": "YESSS"
+      }
+    ],
+    "countryName": "Austria",
+    "countryCode": "AUT"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "54",
+        "name": "AZERCELL"
+      },
+      {
+        "pid": "57",
+        "name": "BAKCELL"
+      },
+      {
+        "pid": "214",
+        "name": "FONEX"
+      },
+      {
+        "pid": "379",
+        "name": "NAR MOBILE"
+      }
+    ],
+    "countryName": "Azerbaijan",
+    "countryCode": "AZE"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "17",
+        "name": "AFRICELL"
+      },
+      {
+        "pid": "175",
+        "name": "ECONET"
+      },
+      {
+        "pid": "415",
+        "name": "ONATEL"
+      },
+      {
+        "pid": "506",
+        "name": "SMART"
+      },
+      {
+        "pid": "612",
+        "name": "U-COM"
+      },
+      {
+        "pid": "624",
+        "name": "UNITEL"
+      }
+    ],
+    "countryName": "Burundi",
+    "countryCode": "BDI"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "60",
+        "name": "BASE"
+      },
+      {
+        "pid": "356",
+        "name": "MOBISTAR"
+      },
+      {
+        "pid": "451",
+        "name": "PROXIMUS"
+      }
+    ],
+    "countryName": "Belgium",
+    "countryCode": "BEL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "64",
+        "name": "BBCOM"
+      },
+      {
+        "pid": "223",
+        "name": "GLO"
+      },
+      {
+        "pid": "297",
+        "name": "LIBERCOM"
+      },
+      {
+        "pid": "362",
+        "name": "MOOV"
+      },
+      {
+        "pid": "376",
+        "name": "MTN"
+      }
+    ],
+    "countryName": "Benin",
+    "countryCode": "BEN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "559",
+        "name": "TELECEL"
+      },
+      {
+        "pid": "575",
+        "name": "TELMOB"
+      },
+      {
+        "pid": "684",
+        "name": "ZAIN"
+      }
+    ],
+    "countryName": "Burkina Faso",
+    "countryCode": "BFA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "58",
+        "name": "BANGLALINK"
+      },
+      {
+        "pid": "117",
+        "name": "CITYCELL"
+      },
+      {
+        "pid": "231",
+        "name": "GRAMEENPHONE"
+      },
+      {
+        "pid": "464",
+        "name": "ROBI"
+      },
+      {
+        "pid": "567",
+        "name": "TELETALK"
+      }
+    ],
+    "countryName": "Bangladesh",
+    "countryCode": "BGD"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "226",
+        "name": "GLOBUL"
+      },
+      {
+        "pid": "374",
+        "name": "M-TEL"
+      },
+      {
+        "pid": "652",
+        "name": "VIVACOM"
+      }
+    ],
+    "countryName": "Bulgaria",
+    "countryCode": "BGR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "61",
+        "name": "BATELCO"
+      },
+      {
+        "pid": "650",
+        "name": "VIVA"
+      },
+      {
+        "pid": "684",
+        "name": "ZAIN"
+      }
+    ],
+    "countryName": "Bahrain",
+    "countryCode": "BHR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "61",
+        "name": "BATELCO"
+      }
+    ],
+    "countryName": "Bahamas",
+    "countryCode": "BHS"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "71",
+        "name": "BH MOBILE"
+      },
+      {
+        "pid": "243",
+        "name": "HT-ERONET"
+      },
+      {
+        "pid": "314",
+        "name": "M:TEL CG"
+      }
+    ],
+    "countryName": "Bosnia and Herzegovina",
+    "countryCode": "BIH"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "68",
+        "name": "BELCEL"
+      },
+      {
+        "pid": "302",
+        "name": "LIFE:)"
+      },
+      {
+        "pid": "377",
+        "name": "MTS"
+      },
+      {
+        "pid": "631",
+        "name": "VELCOM"
+      }
+    ],
+    "countryName": "Belarus",
+    "countryCode": "BLR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "506",
+        "name": "SMART"
+      }
+    ],
+    "countryName": "Belize",
+    "countryCode": "BLZ"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "99",
+        "name": "CELLULAR ONE"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "352",
+        "name": "MOBILITY"
+      }
+    ],
+    "countryName": "Bermuda",
+    "countryCode": "BMU"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "188",
+        "name": "ENTEL"
+      },
+      {
+        "pid": "404",
+        "name": "NUEVATEL"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      }
+    ],
+    "countryName": "Bolivia",
+    "countryCode": "BOL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "140",
+        "name": "CTBC CELULAR"
+      },
+      {
+        "pid": "394",
+        "name": "NEXTEL"
+      },
+      {
+        "pid": "408",
+        "name": "OI / BRASIL TELECOM"
+      },
+      {
+        "pid": "488",
+        "name": "SERCOMTEL"
+      },
+      {
+        "pid": "583",
+        "name": "TIM"
+      },
+      {
+        "pid": "653",
+        "name": "VIVO"
+      }
+    ],
+    "countryName": "Brazil",
+    "countryCode": "BRA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "304",
+        "name": "LIME"
+      },
+      {
+        "pid": "525",
+        "name": "SUNBEACH"
+      }
+    ],
+    "countryName": "Barbados",
+    "countryCode": "BRB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "75",
+        "name": "B-MOBILE"
+      },
+      {
+        "pid": "167",
+        "name": "DSTCOM"
+      },
+      {
+        "pid": "274",
+        "name": "JABATAN TELEKOM"
+      }
+    ],
+    "countryName": "Brunei Darussalam",
+    "countryCode": "BRN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "75",
+        "name": "B-MOBILE"
+      },
+      {
+        "pid": "543",
+        "name": "TASHICELL"
+      }
+    ],
+    "countryName": "Bhutan",
+    "countryCode": "BTN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "83",
+        "name": "BTC MOBILE"
+      },
+      {
+        "pid": "320",
+        "name": "MASCOM"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      }
+    ],
+    "countryName": "Botswana",
+    "countryCode": "BWA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "143",
+        "name": "CTP"
+      },
+      {
+        "pid": "382",
+        "name": "NATIONLINK"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "559",
+        "name": "TELECEL"
+      }
+    ],
+    "countryName": "Central African Republic",
+    "countryCode": "CAF"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "69",
+        "name": "BELL"
+      },
+      {
+        "pid": "163",
+        "name": "DMTS"
+      },
+      {
+        "pid": "174",
+        "name": "EASTLINK"
+      },
+      {
+        "pid": "209",
+        "name": "FIDO"
+      },
+      {
+        "pid": "210",
+        "name": "FIRST CELLULAR"
+      },
+      {
+        "pid": "224",
+        "name": "GLOBALSTAR"
+      },
+      {
+        "pid": "249",
+        "name": "ICE"
+      },
+      {
+        "pid": "324",
+        "name": "MB TEL MOBILITY"
+      },
+      {
+        "pid": "349",
+        "name": "MOBILICITY"
+      },
+      {
+        "pid": "369",
+        "name": "MT&T MOBILITY"
+      },
+      {
+        "pid": "377",
+        "name": "MTS"
+      },
+      {
+        "pid": "393",
+        "name": "NEW TEL MOBILITY"
+      },
+      {
+        "pid": "465",
+        "name": "ROGERS WIRELESS"
+      },
+      {
+        "pid": "481",
+        "name": "SASKTEL"
+      },
+      {
+        "pid": "545",
+        "name": "TBAY"
+      },
+      {
+        "pid": "578",
+        "name": "TELUS"
+      },
+      {
+        "pid": "638",
+        "name": "VIDEOTRON"
+      },
+      {
+        "pid": "671",
+        "name": "WIND MOBILE"
+      }
+    ],
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "6",
+        "name": "3G MOBILE"
+      },
+      {
+        "pid": "65",
+        "name": "BEBBICELL"
+      },
+      {
+        "pid": "255",
+        "name": "IN&PHONE"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "483",
+        "name": "SBB"
+      },
+      {
+        "pid": "527",
+        "name": "SUNRISE"
+      },
+      {
+        "pid": "531",
+        "name": "SWISSCOM"
+      },
+      {
+        "pid": "557",
+        "name": "TELE2"
+      },
+      {
+        "pid": "591",
+        "name": "TOGEWANET"
+      }
+    ],
+    "countryName": "Switzerland",
+    "countryCode": "CHE"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "188",
+        "name": "ENTEL"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      },
+      {
+        "pid": "394",
+        "name": "NEXTEL"
+      },
+      {
+        "pid": "658",
+        "name": "VTR MOVIL"
+      },
+      {
+        "pid": "669",
+        "name": "WILL"
+      }
+    ],
+    "countryName": "Chile",
+    "countryCode": "CHL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "106",
+        "name": "CHINA MOBILE"
+      },
+      {
+        "pid": "108",
+        "name": "CHINA TELECOM"
+      },
+      {
+        "pid": "109",
+        "name": "CHINA TIETONG"
+      },
+      {
+        "pid": "110",
+        "name": "CHINA UNICOM"
+      }
+    ],
+    "countryName": "China",
+    "countryCode": "CHN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "289",
+        "name": "KOZ"
+      },
+      {
+        "pid": "362",
+        "name": "MOOV"
+      },
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "425",
+        "name": "ORICEL"
+      }
+    ],
+    "countryName": "Cote d'Ivoire",
+    "countryCode": "CIV"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      }
+    ],
+    "countryName": "Cameroon",
+    "countryCode": "CMR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "92",
+        "name": "CCT BOATPHONE"
+      },
+      {
+        "pid": "97",
+        "name": "CELLCO"
+      },
+      {
+        "pid": "298",
+        "name": "LIBERTIS TELECOM"
+      },
+      {
+        "pid": "475",
+        "name": "SAIT TELECOM"
+      },
+      {
+        "pid": "528",
+        "name": "SUPERCELL"
+      },
+      {
+        "pid": "654",
+        "name": "VODACOM"
+      },
+      {
+        "pid": "684",
+        "name": "ZAIN"
+      }
+    ],
+    "countryName": "Congo, the Democratic Republic of the",
+    "countryCode": "COD"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "660",
+        "name": "WARID TELECOM"
+      }
+    ],
+    "countryName": "Congo",
+    "countryCode": "COG"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "560",
+        "name": "TELECOM COOK"
+      }
+    ],
+    "countryName": "Cook Islands",
+    "countryCode": "COK"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "123",
+        "name": "COLOMBIA TELECOM"
+      },
+      {
+        "pid": "126",
+        "name": "COMCEL"
+      },
+      {
+        "pid": "176",
+        "name": "EDATEL"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      }
+    ],
+    "countryName": "Colombia",
+    "countryCode": "COL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "244",
+        "name": "HURI-SNPT"
+      }
+    ],
+    "countryName": "Comoros",
+    "countryCode": "COM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "147",
+        "name": "CVMOVEL"
+      },
+      {
+        "pid": "595",
+        "name": "T-PLUS"
+      }
+    ],
+    "countryName": "Cape Verde",
+    "countryCode": "CPV"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "249",
+        "name": "ICE"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      }
+    ],
+    "countryName": "Costa Rica",
+    "countryCode": "CRI"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "145",
+        "name": "CUBACEL"
+      }
+    ],
+    "countryName": "Cuba",
+    "countryCode": "CUB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "304",
+        "name": "LIME"
+      }
+    ],
+    "countryName": "Cayman Islands",
+    "countryCode": "CYM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "446",
+        "name": "PRIMETEL"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Cyprus",
+    "countryCode": "CYP"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "406",
+        "name": "O2"
+      },
+      {
+        "pid": "426",
+        "name": "OSNO TELECOM"
+      },
+      {
+        "pid": "460",
+        "name": "RAILWAYS"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      },
+      {
+        "pid": "598",
+        "name": "TRAVEL TELEKOM"
+      },
+      {
+        "pid": "610",
+        "name": "U:FON"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Czech Republic",
+    "countryCode": "CZE"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "20",
+        "name": "AIRDATA"
+      },
+      {
+        "pid": "44",
+        "name": "ARCOR"
+      },
+      {
+        "pid": "152",
+        "name": "DB TELEMATIK"
+      },
+      {
+        "pid": "153",
+        "name": "DEBITEL"
+      },
+      {
+        "pid": "190",
+        "name": "E-PLUS"
+      },
+      {
+        "pid": "313",
+        "name": "LYCAMOBILE"
+      },
+      {
+        "pid": "380",
+        "name": "NASH TECHNOLOGIES"
+      },
+      {
+        "pid": "406",
+        "name": "O2"
+      },
+      {
+        "pid": "496",
+        "name": "SIEMENS"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Germany",
+    "countryCode": "DEU"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "201",
+        "name": "EVATIS"
+      }
+    ],
+    "countryName": "Djibouti",
+    "countryCode": "DJI"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "86",
+        "name": "CABLE & WIRELESS"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      }
+    ],
+    "countryName": "Dominica",
+    "countryCode": "DMA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "2",
+        "name": "3"
+      },
+      {
+        "pid": "40",
+        "name": "APS KBUS"
+      },
+      {
+        "pid": "59",
+        "name": "BARABLU"
+      },
+      {
+        "pid": "150",
+        "name": "DANSK"
+      },
+      {
+        "pid": "191",
+        "name": "ERICSSON"
+      },
+      {
+        "pid": "313",
+        "name": "LYCAMOBILE"
+      },
+      {
+        "pid": "337",
+        "name": "MIGWAY AS"
+      },
+      {
+        "pid": "549",
+        "name": "TDC"
+      },
+      {
+        "pid": "564",
+        "name": "TELENOR"
+      },
+      {
+        "pid": "570",
+        "name": "TELIA"
+      }
+    ],
+    "countryName": "Denmark",
+    "countryCode": "DNK"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "600",
+        "name": "TRICOM"
+      },
+      {
+        "pid": "650",
+        "name": "VIVA"
+      }
+    ],
+    "countryName": "Dominican Republic",
+    "countryCode": "DOM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "49",
+        "name": "ATM MOBILIS"
+      },
+      {
+        "pid": "161",
+        "name": "DJEZZY"
+      },
+      {
+        "pid": "661",
+        "name": "WATANIYA"
+      }
+    ],
+    "countryName": "Algeria",
+    "countryCode": "DZA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "29",
+        "name": "ALEGRO"
+      },
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      }
+    ],
+    "countryName": "Ecuador",
+    "countryCode": "ECU"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "197",
+        "name": "ETISALAT"
+      },
+      {
+        "pid": "354",
+        "name": "MOBINIL"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Egypt",
+    "countryCode": "EGY"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "192",
+        "name": "ERITEL"
+      }
+    ],
+    "countryName": "Eritrea",
+    "countryCode": "ERI"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "59",
+        "name": "BARABLU"
+      },
+      {
+        "pid": "82",
+        "name": "BT"
+      },
+      {
+        "pid": "158",
+        "name": "DIGIMOBILE"
+      },
+      {
+        "pid": "190",
+        "name": "E-PLUS"
+      },
+      {
+        "pid": "193",
+        "name": "EROSKI"
+      },
+      {
+        "pid": "200",
+        "name": "EUSKALTEL"
+      },
+      {
+        "pid": "215",
+        "name": "FONYOU"
+      },
+      {
+        "pid": "277",
+        "name": "JAZZTEL"
+      },
+      {
+        "pid": "313",
+        "name": "LYCAMOBILE"
+      },
+      {
+        "pid": "347",
+        "name": "MOBILE R"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      },
+      {
+        "pid": "418",
+        "name": "ONO"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "558",
+        "name": "TELECABLE"
+      },
+      {
+        "pid": "587",
+        "name": "TME"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      },
+      {
+        "pid": "681",
+        "name": "YOIGO"
+      }
+    ],
+    "countryName": "Spain",
+    "countryCode": "ESP"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "45",
+        "name": "AS BRAVOCOM MOBIIL"
+      },
+      {
+        "pid": "180",
+        "name": "ELISA"
+      },
+      {
+        "pid": "184",
+        "name": "EMT"
+      },
+      {
+        "pid": "428",
+        "name": "OY TOP CONNECT"
+      },
+      {
+        "pid": "449",
+        "name": "PROGROUP HOLDING"
+      },
+      {
+        "pid": "553",
+        "name": "TELE 2"
+      }
+    ],
+    "countryName": "Estonia",
+    "countryCode": "EST"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "376",
+        "name": "MTN"
+      }
+    ],
+    "countryName": "Ethiopia",
+    "countryCode": "ETH"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "38",
+        "name": "AMT"
+      },
+      {
+        "pid": "164",
+        "name": "DNA"
+      },
+      {
+        "pid": "180",
+        "name": "ELISA"
+      },
+      {
+        "pid": "395",
+        "name": "NOKIA"
+      },
+      {
+        "pid": "477",
+        "name": "SAMK"
+      },
+      {
+        "pid": "482",
+        "name": "SAUNALAHTI"
+      },
+      {
+        "pid": "514",
+        "name": "SONERA"
+      },
+      {
+        "pid": "549",
+        "name": "TDC"
+      },
+      {
+        "pid": "602",
+        "name": "TRUPHONE"
+      },
+      {
+        "pid": "648",
+        "name": "VIRVE"
+      }
+    ],
+    "countryName": "Finland",
+    "countryCode": "FIN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Fiji",
+    "countryCode": "FJI"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "78",
+        "name": "BOUYGUES"
+      },
+      {
+        "pid": "216",
+        "name": "FREE MOBILE"
+      },
+      {
+        "pid": "224",
+        "name": "GLOBALSTAR"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "492",
+        "name": "SFR"
+      },
+      {
+        "pid": "597",
+        "name": "TRANSATEL MOBILE"
+      }
+    ],
+    "countryName": "France",
+    "countryCode": "FRA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "208",
+        "name": "FAROESE TELECOM"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Faroe Islands",
+    "countryCode": "FRO"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "218",
+        "name": "FSM EMMANUEL"
+      }
+    ],
+    "countryName": "Micronesia, Federated States of",
+    "countryCode": "FSM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "55",
+        "name": "AZUR"
+      },
+      {
+        "pid": "298",
+        "name": "LIBERTIS TELECOM"
+      },
+      {
+        "pid": "362",
+        "name": "MOOV"
+      }
+    ],
+    "countryName": "Gabon",
+    "countryCode": "GAB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "2",
+        "name": "3"
+      },
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "24",
+        "name": "AIRWAVE"
+      },
+      {
+        "pid": "82",
+        "name": "BT"
+      },
+      {
+        "pid": "86",
+        "name": "CABLE & WIRELESS"
+      },
+      {
+        "pid": "120",
+        "name": "CLOUD9"
+      },
+      {
+        "pid": "124",
+        "name": "COLT MOBILE"
+      },
+      {
+        "pid": "202",
+        "name": "EVERYTHING EVERYWHERE"
+      },
+      {
+        "pid": "212",
+        "name": "FLEXTEL"
+      },
+      {
+        "pid": "213",
+        "name": "FMS SOLUTIONS"
+      },
+      {
+        "pid": "232",
+        "name": "GREENFONE"
+      },
+      {
+        "pid": "237",
+        "name": "HAY SYSTEMS"
+      },
+      {
+        "pid": "245",
+        "name": "HUTCHISON"
+      },
+      {
+        "pid": "260",
+        "name": "INTERNET COMPUTER BUREAU"
+      },
+      {
+        "pid": "279",
+        "name": "JSC INGENIUM"
+      },
+      {
+        "pid": "280",
+        "name": "JT-WAVE"
+      },
+      {
+        "pid": "319",
+        "name": "MANX TELECOM"
+      },
+      {
+        "pid": "378",
+        "name": "MUNDIO MOBILE"
+      },
+      {
+        "pid": "392",
+        "name": "NETWORK RAIL"
+      },
+      {
+        "pid": "406",
+        "name": "O2"
+      },
+      {
+        "pid": "417",
+        "name": "ONEPHONE"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "447",
+        "name": "PRIVATE MOBILE NETWORKS"
+      },
+      {
+        "pid": "459",
+        "name": "RAILTRACK"
+      },
+      {
+        "pid": "468",
+        "name": "ROUTOMESSAGING"
+      },
+      {
+        "pid": "533",
+        "name": "SYNECTIV"
+      },
+      {
+        "pid": "540",
+        "name": "TALK TALK"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      },
+      {
+        "pid": "602",
+        "name": "TRUPHONE"
+      },
+      {
+        "pid": "614",
+        "name": "UK BROADBAND"
+      },
+      {
+        "pid": "630",
+        "name": "VECTONE MOBILE"
+      },
+      {
+        "pid": "647",
+        "name": "VIRGIN MOBILE"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "United Kingdom",
+    "countryCode": "GBR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "37",
+        "name": "A-MOBILE"
+      },
+      {
+        "pid": "43",
+        "name": "AQUAFON"
+      },
+      {
+        "pid": "66",
+        "name": "BEELINE"
+      },
+      {
+        "pid": "221",
+        "name": "GEOCELL"
+      },
+      {
+        "pid": "317",
+        "name": "MAGTICOM"
+      },
+      {
+        "pid": "330",
+        "name": "MEGAFON"
+      },
+      {
+        "pid": "497",
+        "name": "SILKNET"
+      }
+    ],
+    "countryName": "Georgia",
+    "countryCode": "GEO"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "205",
+        "name": "EXPRESSO"
+      },
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Ghana",
+    "countryCode": "GHA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "144",
+        "name": "CTS MOBILE"
+      },
+      {
+        "pid": "222",
+        "name": "GIBTEL"
+      }
+    ],
+    "countryName": "Gibraltar",
+    "countryCode": "GIB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "98",
+        "name": "CELLCOM"
+      },
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "515",
+        "name": "SOTELGUI"
+      },
+      {
+        "pid": "559",
+        "name": "TELECEL"
+      }
+    ],
+    "countryName": "Guinea",
+    "countryCode": "GIN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "151",
+        "name": "DAUPHIN"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "427",
+        "name": "OUTREMER"
+      },
+      {
+        "pid": "550",
+        "name": "TELCEL"
+      }
+    ],
+    "countryName": "Guadeloupe",
+    "countryCode": "GLP"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "17",
+        "name": "AFRICELL"
+      },
+      {
+        "pid": "127",
+        "name": "COMIUM"
+      },
+      {
+        "pid": "220",
+        "name": "GAMCEL"
+      },
+      {
+        "pid": "455",
+        "name": "QCELL"
+      }
+    ],
+    "countryName": "Gambia",
+    "countryCode": "GMB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      }
+    ],
+    "countryName": "Guinea-Bissau",
+    "countryCode": "GNB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "624",
+        "name": "UNITEL"
+      }
+    ],
+    "countryName": "Equatorial Guinea",
+    "countryCode": "GNQ"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "135",
+        "name": "COSMOTE"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      },
+      {
+        "pid": "670",
+        "name": "WIND"
+      }
+    ],
+    "countryName": "Greece",
+    "countryCode": "GRC"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "86",
+        "name": "CABLE & WIRELESS"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      }
+    ],
+    "countryName": "Grenada",
+    "countryCode": "GRD"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "554",
+        "name": "TELE GREENLAND"
+      }
+    ],
+    "countryName": "Greenland",
+    "countryCode": "GRL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "126",
+        "name": "COMCEL"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      }
+    ],
+    "countryName": "Guatemala",
+    "countryCode": "GTM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "165",
+        "name": "DOCOMO"
+      },
+      {
+        "pid": "235",
+        "name": "GUAM TELEPHONE"
+      },
+      {
+        "pid": "246",
+        "name": "I CAN_GSM"
+      },
+      {
+        "pid": "271",
+        "name": "IT&E WIRELESS"
+      },
+      {
+        "pid": "368",
+        "name": "MPULSE"
+      }
+    ],
+    "countryName": "Guam",
+    "countryCode": "GUM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "234",
+        "name": "GT&T CELLINK PLUS"
+      }
+    ],
+    "countryName": "Guyana",
+    "countryCode": "GUY"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "2",
+        "name": "3"
+      },
+      {
+        "pid": "3",
+        "name": "1O1O AND ONE2FREE"
+      },
+      {
+        "pid": "107",
+        "name": "CHINA MOTION TELECOM"
+      },
+      {
+        "pid": "110",
+        "name": "CHINA UNICOM"
+      },
+      {
+        "pid": "121",
+        "name": "CMCC HK"
+      },
+      {
+        "pid": "138",
+        "name": "CSL LIMITED"
+      },
+      {
+        "pid": "245",
+        "name": "HUTCHISON"
+      },
+      {
+        "pid": "424",
+        "name": "ORANGE KENYA"
+      },
+      {
+        "pid": "432",
+        "name": "PCCW MOBILE (CDMA)"
+      },
+      {
+        "pid": "508",
+        "name": "SMARTONE"
+      }
+    ],
+    "countryName": "Hong Kong",
+    "countryCode": "HKG"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "241",
+        "name": "HONDUTEL"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      }
+    ],
+    "countryName": "Honduras",
+    "countryCode": "HND"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "557",
+        "name": "TELE2"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      },
+      {
+        "pid": "645",
+        "name": "VIP"
+      }
+    ],
+    "countryName": "Croatia",
+    "countryCode": "HRV"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "381",
+        "name": "NATCOM"
+      },
+      {
+        "pid": "644",
+        "name": "VIOLA"
+      }
+    ],
+    "countryName": "Haiti",
+    "countryCode": "HTI"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "564",
+        "name": "TELENOR"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Hungary",
+    "countryCode": "HUN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "2",
+        "name": "3"
+      },
+      {
+        "pid": "53",
+        "name": "AXIS"
+      },
+      {
+        "pid": "104",
+        "name": "CERIA"
+      },
+      {
+        "pid": "194",
+        "name": "ESIA"
+      },
+      {
+        "pid": "217",
+        "name": "FREN/HEPI"
+      },
+      {
+        "pid": "257",
+        "name": "INDOSAT"
+      },
+      {
+        "pid": "452",
+        "name": "PSN"
+      },
+      {
+        "pid": "506",
+        "name": "SMART"
+      },
+      {
+        "pid": "571",
+        "name": "TELKOMFLEXI"
+      },
+      {
+        "pid": "572",
+        "name": "TELKOMMOBILE"
+      },
+      {
+        "pid": "573",
+        "name": "TELKOMSEL"
+      },
+      {
+        "pid": "675",
+        "name": "XL"
+      }
+    ],
+    "countryName": "Indonesia",
+    "countryCode": "IDN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "19",
+        "name": "AIRCEL"
+      },
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "81",
+        "name": "BSNL MOBILE"
+      },
+      {
+        "pid": "160",
+        "name": "DISHNET WIRELESS"
+      },
+      {
+        "pid": "166",
+        "name": "DOLPHIN"
+      },
+      {
+        "pid": "197",
+        "name": "ETISALAT"
+      },
+      {
+        "pid": "253",
+        "name": "IDEA"
+      },
+      {
+        "pid": "310",
+        "name": "LOOP MOBILE"
+      },
+      {
+        "pid": "461",
+        "name": "RELIANCE"
+      },
+      {
+        "pid": "469",
+        "name": "S TEL"
+      },
+      {
+        "pid": "544",
+        "name": "TATA"
+      },
+      {
+        "pid": "621",
+        "name": "UNINOR"
+      },
+      {
+        "pid": "637",
+        "name": "VIDEOCON DATACOM"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "India",
+    "countryCode": "IND"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "2",
+        "name": "3"
+      },
+      {
+        "pid": "10",
+        "name": "ACCESS TELECOM"
+      },
+      {
+        "pid": "119",
+        "name": "CLEVER COMMUNICATIONS"
+      },
+      {
+        "pid": "177",
+        "name": "EIRCOM"
+      },
+      {
+        "pid": "303",
+        "name": "LIFFEY TELECOM"
+      },
+      {
+        "pid": "406",
+        "name": "O2"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Ireland",
+    "countryCode": "IRL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "263",
+        "name": "IRANCELL"
+      },
+      {
+        "pid": "264",
+        "name": "IRAPHONE"
+      },
+      {
+        "pid": "267",
+        "name": "IR-MCI"
+      },
+      {
+        "pid": "372",
+        "name": "MTCE"
+      },
+      {
+        "pid": "539",
+        "name": "TALIYA"
+      },
+      {
+        "pid": "548",
+        "name": "TCI"
+      },
+      {
+        "pid": "585",
+        "name": "TKC"
+      }
+    ],
+    "countryName": "Iran, Islamic Republic of",
+    "countryCode": "IRN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "46",
+        "name": "ASIA CELL"
+      },
+      {
+        "pid": "287",
+        "name": "KOREK"
+      },
+      {
+        "pid": "358",
+        "name": "MOBITEL"
+      },
+      {
+        "pid": "413",
+        "name": "OMNNEA"
+      },
+      {
+        "pid": "479",
+        "name": "SANATEL"
+      },
+      {
+        "pid": "684",
+        "name": "ZAIN"
+      }
+    ],
+    "countryName": "Iraq",
+    "countryCode": "IRQ"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "251",
+        "name": "ICECELL"
+      },
+      {
+        "pid": "400",
+        "name": "NOVA"
+      },
+      {
+        "pid": "419",
+        "name": "ON-WAVES"
+      },
+      {
+        "pid": "498",
+        "name": "SIMINN"
+      },
+      {
+        "pid": "538",
+        "name": "TAL"
+      },
+      {
+        "pid": "641",
+        "name": "VIKING"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Iceland",
+    "countryCode": "ISL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "98",
+        "name": "CELLCOM"
+      },
+      {
+        "pid": "339",
+        "name": "MIRS"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "433",
+        "name": "PELEPHONE"
+      }
+    ],
+    "countryName": "Israel",
+    "countryCode": "ISR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "5",
+        "name": "3 ITALIA"
+      },
+      {
+        "pid": "462",
+        "name": "RFI"
+      },
+      {
+        "pid": "583",
+        "name": "TIM"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      },
+      {
+        "pid": "670",
+        "name": "WIND"
+      }
+    ],
+    "countryName": "Italy",
+    "countryCode": "ITA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "304",
+        "name": "LIME"
+      }
+    ],
+    "countryName": "Jamaica",
+    "countryCode": "JAM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "616",
+        "name": "UMNIAH"
+      },
+      {
+        "pid": "676",
+        "name": "XPRESS TELECOM"
+      },
+      {
+        "pid": "684",
+        "name": "ZAIN"
+      }
+    ],
+    "countryName": "Jordan",
+    "countryCode": "JOR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "50",
+        "name": "AU"
+      },
+      {
+        "pid": "183",
+        "name": "EMOBILE"
+      },
+      {
+        "pid": "284",
+        "name": "KDDI"
+      },
+      {
+        "pid": "403",
+        "name": "NTT DOCOMO"
+      },
+      {
+        "pid": "409",
+        "name": "OKINAWA CELLULAR"
+      },
+      {
+        "pid": "511",
+        "name": "SOFTBANK"
+      }
+    ],
+    "countryName": "Japan",
+    "countryCode": "JPN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "66",
+        "name": "BEELINE"
+      },
+      {
+        "pid": "149",
+        "name": "DALACOM"
+      },
+      {
+        "pid": "282",
+        "name": "KAZAKHTELECOM"
+      },
+      {
+        "pid": "283",
+        "name": "KCELL"
+      },
+      {
+        "pid": "348",
+        "name": "MOBILE TELECOM"
+      }
+    ],
+    "countryName": "Kazakhstan",
+    "countryCode": "KAZ"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "473",
+        "name": "SAFARICOM"
+      },
+      {
+        "pid": "683",
+        "name": "YU"
+      }
+    ],
+    "countryName": "Kenya",
+    "countryCode": "KEN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "66",
+        "name": "BEELINE"
+      },
+      {
+        "pid": "214",
+        "name": "FONEX"
+      },
+      {
+        "pid": "329",
+        "name": "MEGACOM"
+      },
+      {
+        "pid": "405",
+        "name": "O!"
+      }
+    ],
+    "countryName": "Kyrgyzstan",
+    "countryCode": "KGZ"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "66",
+        "name": "BEELINE"
+      },
+      {
+        "pid": "204",
+        "name": "EXCELL"
+      },
+      {
+        "pid": "238",
+        "name": "HELLO"
+      },
+      {
+        "pid": "332",
+        "name": "METFONE"
+      },
+      {
+        "pid": "334",
+        "name": "MFONE"
+      },
+      {
+        "pid": "358",
+        "name": "MOBITEL"
+      },
+      {
+        "pid": "454",
+        "name": "QB"
+      },
+      {
+        "pid": "470",
+        "name": "S TELECOM"
+      },
+      {
+        "pid": "507",
+        "name": "SMART MOBILE"
+      },
+      {
+        "pid": "521",
+        "name": "STAR-CELL"
+      }
+    ],
+    "countryName": "Cambodia",
+    "countryCode": "KHM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "286",
+        "name": "KIRIBATI FRIGATE"
+      }
+    ],
+    "countryName": "Kiribati",
+    "countryCode": "KIR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "112",
+        "name": "CHIPPIE"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "304",
+        "name": "LIME"
+      }
+    ],
+    "countryName": "Saint Kitts and Nevis",
+    "countryCode": "KNA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "291",
+        "name": "KT"
+      },
+      {
+        "pid": "295",
+        "name": "LGT"
+      },
+      {
+        "pid": "502",
+        "name": "SKT"
+      }
+    ],
+    "countryName": "Korea, Republic of",
+    "countryCode": "KOR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "650",
+        "name": "VIVA"
+      },
+      {
+        "pid": "661",
+        "name": "WATANIYA"
+      },
+      {
+        "pid": "684",
+        "name": "ZAIN"
+      }
+    ],
+    "countryName": "Kuwait",
+    "countryCode": "KWT"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "199",
+        "name": "ETL"
+      },
+      {
+        "pid": "311",
+        "name": "LTC"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      },
+      {
+        "pid": "624",
+        "name": "UNITEL"
+      }
+    ],
+    "countryName": "Lao People's Democratic Republic",
+    "countryCode": "LAO"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "30",
+        "name": "ALFA"
+      },
+      {
+        "pid": "373",
+        "name": "MTC-TOUCH"
+      },
+      {
+        "pid": "407",
+        "name": "OGERO MOBILE"
+      }
+    ],
+    "countryName": "Lebanon",
+    "countryCode": "LBN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "98",
+        "name": "CELLCOM"
+      },
+      {
+        "pid": "127",
+        "name": "COMIUM"
+      },
+      {
+        "pid": "296",
+        "name": "LIBERCELL"
+      },
+      {
+        "pid": "299",
+        "name": "LIBTELCO"
+      },
+      {
+        "pid": "308",
+        "name": "LONESTAR CELL"
+      }
+    ],
+    "countryName": "Liberia",
+    "countryCode": "LBR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "31",
+        "name": "AL-JEEL PHONE"
+      },
+      {
+        "pid": "236",
+        "name": "HATEF LIBYA"
+      },
+      {
+        "pid": "300",
+        "name": "LIBYA PHONE"
+      },
+      {
+        "pid": "301",
+        "name": "LIBYANA"
+      },
+      {
+        "pid": "316",
+        "name": "MADAR"
+      }
+    ],
+    "countryName": "Libyan Arab Jamahiriya",
+    "countryCode": "LBY"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "86",
+        "name": "CABLE & WIRELESS"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      }
+    ],
+    "countryName": "Saint Lucia",
+    "countryCode": "LCA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "33",
+        "name": "ALPMOBILE"
+      },
+      {
+        "pid": "146",
+        "name": "CUBIC TELECOM"
+      },
+      {
+        "pid": "211",
+        "name": "FL1"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "531",
+        "name": "SWISSCOM"
+      }
+    ],
+    "countryName": "Liechtenstein",
+    "countryCode": "LIE"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "155",
+        "name": "DIALOG"
+      },
+      {
+        "pid": "197",
+        "name": "ETISALAT"
+      },
+      {
+        "pid": "245",
+        "name": "HUTCHISON"
+      },
+      {
+        "pid": "358",
+        "name": "MOBITEL"
+      }
+    ],
+    "countryName": "Sri Lanka",
+    "countryCode": "LKA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "175",
+        "name": "ECONET"
+      },
+      {
+        "pid": "654",
+        "name": "VODACOM"
+      }
+    ],
+    "countryName": "Lesotho",
+    "countryCode": "LSO"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "72",
+        "name": "BITE"
+      },
+      {
+        "pid": "306",
+        "name": "LITRAIL"
+      },
+      {
+        "pid": "326",
+        "name": "MEDIAFON"
+      },
+      {
+        "pid": "412",
+        "name": "OMNITEL"
+      },
+      {
+        "pid": "553",
+        "name": "TELE 2"
+      }
+    ],
+    "countryName": "Lithuania",
+    "countryCode": "LTU"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "312",
+        "name": "LUXGSM"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "542",
+        "name": "TANGO"
+      }
+    ],
+    "countryName": "Luxembourg",
+    "countryCode": "LUX"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "72",
+        "name": "BITE"
+      },
+      {
+        "pid": "87",
+        "name": "CAMEL MOBILE"
+      },
+      {
+        "pid": "273",
+        "name": "IZZI"
+      },
+      {
+        "pid": "307",
+        "name": "LMT"
+      },
+      {
+        "pid": "377",
+        "name": "MTS"
+      },
+      {
+        "pid": "557",
+        "name": "TELE2"
+      },
+      {
+        "pid": "599",
+        "name": "TRIATEL"
+      }
+    ],
+    "countryName": "Latvia",
+    "countryCode": "LVA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "2",
+        "name": "3"
+      },
+      {
+        "pid": "108",
+        "name": "CHINA TELECOM"
+      },
+      {
+        "pid": "142",
+        "name": "CTM"
+      },
+      {
+        "pid": "508",
+        "name": "SMARTONE"
+      }
+    ],
+    "countryName": "Macao",
+    "countryCode": "MAC"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "248",
+        "name": "IAM"
+      },
+      {
+        "pid": "262",
+        "name": "INWI"
+      },
+      {
+        "pid": "328",
+        "name": "MEDITEL"
+      }
+    ],
+    "countryName": "Morocco",
+    "countryCode": "MAR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "361",
+        "name": "MONACO TELECOM"
+      }
+    ],
+    "countryName": "Monaco",
+    "countryCode": "MCO"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "360",
+        "name": "MOLDCELL"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "623",
+        "name": "UNITE"
+      }
+    ],
+    "countryName": "Moldova, Republic of",
+    "countryCode": "MDA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "472",
+        "name": "SACEL"
+      },
+      {
+        "pid": "574",
+        "name": "TELMA"
+      }
+    ],
+    "countryName": "Madagascar",
+    "countryCode": "MDG"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "154",
+        "name": "DHIRAAGU"
+      },
+      {
+        "pid": "661",
+        "name": "WATANIYA"
+      }
+    ],
+    "countryName": "Maldives",
+    "countryCode": "MDV"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "272",
+        "name": "IUSACELL / UNEFON"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      },
+      {
+        "pid": "394",
+        "name": "NEXTEL"
+      },
+      {
+        "pid": "550",
+        "name": "TELCEL"
+      }
+    ],
+    "countryName": "Mexico",
+    "countryCode": "MEX"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "416",
+        "name": "ONE"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      },
+      {
+        "pid": "646",
+        "name": "VIP MK"
+      }
+    ],
+    "countryName": "Macedonia, the former Yugoslav Republic of",
+    "countryCode": "MKD"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "318",
+        "name": "MALITEL"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      }
+    ],
+    "countryName": "Mali",
+    "countryCode": "MLI"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "227",
+        "name": "GO"
+      },
+      {
+        "pid": "331",
+        "name": "MELITA"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Malta",
+    "countryCode": "MLT"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "367",
+        "name": "MPT"
+      }
+    ],
+    "countryName": "Myanmar",
+    "countryCode": "MMR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "314",
+        "name": "M:TEL CG"
+      },
+      {
+        "pid": "564",
+        "name": "TELENOR"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      }
+    ],
+    "countryName": "Montenegro",
+    "countryCode": "MNE"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "219",
+        "name": "G.MOBILE"
+      },
+      {
+        "pid": "343",
+        "name": "MOBICOM"
+      },
+      {
+        "pid": "505",
+        "name": "SKYTEL"
+      },
+      {
+        "pid": "624",
+        "name": "UNITEL"
+      }
+    ],
+    "countryName": "Mongolia",
+    "countryCode": "MNG"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "325",
+        "name": "MCEL"
+      },
+      {
+        "pid": "654",
+        "name": "VODACOM"
+      }
+    ],
+    "countryName": "Mozambique",
+    "countryCode": "MOZ"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "111",
+        "name": "CHINGUITEL"
+      },
+      {
+        "pid": "321",
+        "name": "MATTEL"
+      },
+      {
+        "pid": "322",
+        "name": "MAURITEL"
+      }
+    ],
+    "countryName": "Mauritania",
+    "countryCode": "MRT"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "86",
+        "name": "CABLE & WIRELESS"
+      }
+    ],
+    "countryName": "Montserrat",
+    "countryCode": "MSR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "185",
+        "name": "EMTEL"
+      },
+      {
+        "pid": "375",
+        "name": "MTML"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      }
+    ],
+    "countryName": "Mauritius",
+    "countryCode": "MUS"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "590",
+        "name": "TNM"
+      }
+    ],
+    "countryName": "Malawi",
+    "countryCode": "MWI"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "94",
+        "name": "CELCOM"
+      },
+      {
+        "pid": "156",
+        "name": "DIGI"
+      },
+      {
+        "pid": "178",
+        "name": "ELECTCOMS WIRELESS"
+      },
+      {
+        "pid": "323",
+        "name": "MAXIS"
+      },
+      {
+        "pid": "563",
+        "name": "TELEKOM MALAYSIA"
+      },
+      {
+        "pid": "609",
+        "name": "U MOBILE"
+      },
+      {
+        "pid": "679",
+        "name": "YES"
+      }
+    ],
+    "countryName": "Malaysia",
+    "countryCode": "MYS"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "294",
+        "name": "LEO"
+      },
+      {
+        "pid": "371",
+        "name": "MTC"
+      },
+      {
+        "pid": "532",
+        "name": "SWITCH"
+      }
+    ],
+    "countryName": "Namibia",
+    "countryCode": "NAM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "351",
+        "name": "MOBILIS"
+      }
+    ],
+    "countryName": "New Caledonia",
+    "countryCode": "NCL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "474",
+        "name": "SAHELCOM"
+      },
+      {
+        "pid": "559",
+        "name": "TELECEL"
+      }
+    ],
+    "countryName": "Niger",
+    "countryCode": "NER"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "397",
+        "name": "NORFOLK TELECOM"
+      }
+    ],
+    "countryName": "Norfolk Island",
+    "countryCode": "NFK"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "197",
+        "name": "ETISALAT"
+      },
+      {
+        "pid": "223",
+        "name": "GLO"
+      },
+      {
+        "pid": "374",
+        "name": "M-TEL"
+      },
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "649",
+        "name": "VISAFONE"
+      }
+    ],
+    "countryName": "Nigeria",
+    "countryCode": "NGA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      }
+    ],
+    "countryName": "Nicaragua",
+    "countryCode": "NIC"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "561",
+        "name": "TELECOM NIUE"
+      }
+    ],
+    "countryName": "Niue",
+    "countryCode": "NIU"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "8",
+        "name": "6GMOBILE"
+      },
+      {
+        "pid": "47",
+        "name": "ASPIDER"
+      },
+      {
+        "pid": "63",
+        "name": "BAYOS"
+      },
+      {
+        "pid": "80",
+        "name": "BREEZZ"
+      },
+      {
+        "pid": "89",
+        "name": "CAPX"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "179",
+        "name": "ELEPHANT TALK"
+      },
+      {
+        "pid": "259",
+        "name": "INTERCITY"
+      },
+      {
+        "pid": "290",
+        "name": "KPN"
+      },
+      {
+        "pid": "293",
+        "name": "LANCELOT"
+      },
+      {
+        "pid": "313",
+        "name": "LYCAMOBILE"
+      },
+      {
+        "pid": "338",
+        "name": "MIO"
+      },
+      {
+        "pid": "341",
+        "name": "MIXE"
+      },
+      {
+        "pid": "378",
+        "name": "MUNDIO MOBILE"
+      },
+      {
+        "pid": "448",
+        "name": "PRIVATE MOBILITY"
+      },
+      {
+        "pid": "450",
+        "name": "PRORAIL"
+      },
+      {
+        "pid": "457",
+        "name": "RADIOACCESS"
+      },
+      {
+        "pid": "518",
+        "name": "SPEAKUP"
+      },
+      {
+        "pid": "551",
+        "name": "TELCELL"
+      },
+      {
+        "pid": "557",
+        "name": "TELE2"
+      },
+      {
+        "pid": "562",
+        "name": "TELEENA"
+      },
+      {
+        "pid": "569",
+        "name": "TELFORT"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      },
+      {
+        "pid": "617",
+        "name": "UNICA"
+      },
+      {
+        "pid": "620",
+        "name": "UNIFY GROUP HOLDING"
+      },
+      {
+        "pid": "625",
+        "name": "UPC"
+      },
+      {
+        "pid": "629",
+        "name": "UTS"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      },
+      {
+        "pid": "656",
+        "name": "VOICEWORKS"
+      },
+      {
+        "pid": "686",
+        "name": "ZIGGO"
+      }
+    ],
+    "countryName": "Netherlands",
+    "countryCode": "NLD"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "125",
+        "name": "COM4"
+      },
+      {
+        "pid": "249",
+        "name": "ICE"
+      },
+      {
+        "pid": "278",
+        "name": "JERNBANEVERKET"
+      },
+      {
+        "pid": "313",
+        "name": "LYCAMOBILE"
+      },
+      {
+        "pid": "388",
+        "name": "NETCOM"
+      },
+      {
+        "pid": "391",
+        "name": "NETWORK NORWAY"
+      },
+      {
+        "pid": "535",
+        "name": "SYSTEMNET"
+      },
+      {
+        "pid": "549",
+        "name": "TDC"
+      },
+      {
+        "pid": "557",
+        "name": "TELE2"
+      },
+      {
+        "pid": "564",
+        "name": "TELENOR"
+      },
+      {
+        "pid": "568",
+        "name": "TELETOPIA"
+      },
+      {
+        "pid": "632",
+        "name": "VENTELO"
+      }
+    ],
+    "countryName": "Norway",
+    "countryCode": "NOR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "386",
+        "name": "NCELL"
+      },
+      {
+        "pid": "401",
+        "name": "NT MOBILE"
+      },
+      {
+        "pid": "503",
+        "name": "SKY/C-PHONE"
+      },
+      {
+        "pid": "506",
+        "name": "SMART"
+      }
+    ],
+    "countryName": "Nepal",
+    "countryCode": "NPL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      }
+    ],
+    "countryName": "Nauru",
+    "countryCode": "NRU"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "4",
+        "name": "2DEGREES"
+      },
+      {
+        "pid": "552",
+        "name": "TELCOM"
+      },
+      {
+        "pid": "577",
+        "name": "TELSTRA"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      },
+      {
+        "pid": "673",
+        "name": "WOOSH"
+      },
+      {
+        "pid": "677",
+        "name": "XT MOBILE NETWORK"
+      }
+    ],
+    "countryName": "New Zealand",
+    "countryCode": "NZL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "384",
+        "name": "NAWRAS"
+      },
+      {
+        "pid": "411",
+        "name": "OMAN MOBILE"
+      }
+    ],
+    "countryName": "Oman",
+    "countryCode": "OMN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "106",
+        "name": "CHINA MOBILE"
+      },
+      {
+        "pid": "350",
+        "name": "MOBILINK"
+      },
+      {
+        "pid": "564",
+        "name": "TELENOR"
+      },
+      {
+        "pid": "613",
+        "name": "UFONE"
+      },
+      {
+        "pid": "659",
+        "name": "WARID"
+      }
+    ],
+    "countryName": "Pakistan",
+    "countryCode": "PAK"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "86",
+        "name": "CABLE & WIRELESS"
+      },
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      }
+    ],
+    "countryName": "Panama",
+    "countryCode": "PAN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      },
+      {
+        "pid": "394",
+        "name": "NEXTEL"
+      }
+    ],
+    "countryName": "Peru",
+    "countryCode": "PER"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "225",
+        "name": "GLOBE"
+      },
+      {
+        "pid": "268",
+        "name": "ISLACOM"
+      },
+      {
+        "pid": "394",
+        "name": "NEXTEL"
+      },
+      {
+        "pid": "442",
+        "name": "PLDT"
+      },
+      {
+        "pid": "506",
+        "name": "SMART"
+      },
+      {
+        "pid": "524",
+        "name": "SUN"
+      }
+    ],
+    "countryName": "Philippines",
+    "countryCode": "PHL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "430",
+        "name": "PALAU MOBILE"
+      },
+      {
+        "pid": "444",
+        "name": "PNCC"
+      }
+    ],
+    "countryName": "Palau",
+    "countryCode": "PLW"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "75",
+        "name": "B-MOBILE"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      }
+    ],
+    "countryName": "Papua New Guinea",
+    "countryCode": "PNG"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "15",
+        "name": "AERO2"
+      },
+      {
+        "pid": "103",
+        "name": "CENTERNET"
+      },
+      {
+        "pid": "148",
+        "name": "CYFROWY POLSAT"
+      },
+      {
+        "pid": "195",
+        "name": "E-TELKO"
+      },
+      {
+        "pid": "359",
+        "name": "MOBYLAND"
+      },
+      {
+        "pid": "389",
+        "name": "NETIA"
+      },
+      {
+        "pid": "396",
+        "name": "NORDISK POLSKA"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "441",
+        "name": "PLAY"
+      },
+      {
+        "pid": "443",
+        "name": "PLUS"
+      },
+      {
+        "pid": "460",
+        "name": "RAILWAYS"
+      },
+      {
+        "pid": "490",
+        "name": "SFERIA"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      }
+    ],
+    "countryName": "Poland",
+    "countryCode": "POL"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "420",
+        "name": "OPEN MOBILE"
+      }
+    ],
+    "countryName": "Puerto Rico",
+    "countryCode": "PRI"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "288",
+        "name": "KORYOLINK"
+      },
+      {
+        "pid": "526",
+        "name": "SUNNET"
+      }
+    ],
+    "countryName": "Korea, Democratic People's Republic of",
+    "countryCode": "PRK"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "421",
+        "name": "OPTIMUS"
+      },
+      {
+        "pid": "588",
+        "name": "TMN"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Portugal",
+    "countryCode": "PRT"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "133",
+        "name": "COPACO"
+      },
+      {
+        "pid": "436",
+        "name": "PERSONAL"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      },
+      {
+        "pid": "657",
+        "name": "VOX"
+      }
+    ],
+    "countryName": "Paraguay",
+    "countryCode": "PRY"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "276",
+        "name": "JAWWAL"
+      },
+      {
+        "pid": "661",
+        "name": "WATANIYA"
+      }
+    ],
+    "countryName": "Palestinian Territory, Occupied",
+    "countryCode": "PSE"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "643",
+        "name": "VINI"
+      }
+    ],
+    "countryName": "French Polynesia",
+    "countryCode": "PYF"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "456",
+        "name": "QTEL"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Qatar",
+    "countryCode": "QAT"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "427",
+        "name": "OUTREMER"
+      },
+      {
+        "pid": "492",
+        "name": "SFR"
+      }
+    ],
+    "countryName": "Reunion",
+    "countryCode": "REU"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "135",
+        "name": "COSMOTE"
+      },
+      {
+        "pid": "156",
+        "name": "DIGI"
+      },
+      {
+        "pid": "187",
+        "name": "ENIGMA-SYSTEM"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "466",
+        "name": "ROMTELECOM"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Romania",
+    "countryCode": "ROU"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "62",
+        "name": "BAYKALWESTCOM"
+      },
+      {
+        "pid": "66",
+        "name": "BEELINE"
+      },
+      {
+        "pid": "198",
+        "name": "ETK"
+      },
+      {
+        "pid": "256",
+        "name": "INDIGO"
+      },
+      {
+        "pid": "330",
+        "name": "MEGAFON"
+      },
+      {
+        "pid": "343",
+        "name": "MOBICOM"
+      },
+      {
+        "pid": "363",
+        "name": "MOTIV"
+      },
+      {
+        "pid": "377",
+        "name": "MTS"
+      },
+      {
+        "pid": "385",
+        "name": "NCC"
+      },
+      {
+        "pid": "402",
+        "name": "NTC"
+      },
+      {
+        "pid": "495",
+        "name": "SIBCHALLENGE"
+      },
+      {
+        "pid": "504",
+        "name": "SKYLINK"
+      },
+      {
+        "pid": "509",
+        "name": "SMARTS"
+      },
+      {
+        "pid": "541",
+        "name": "TAMBOV"
+      },
+      {
+        "pid": "557",
+        "name": "TELE2"
+      },
+      {
+        "pid": "627",
+        "name": "UTEL"
+      },
+      {
+        "pid": "682",
+        "name": "YOTA"
+      }
+    ],
+    "countryName": "Russian Federation",
+    "countryCode": "RUS"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      }
+    ],
+    "countryName": "Rwanda",
+    "countryCode": "RWA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "27",
+        "name": "AL JAWAL"
+      },
+      {
+        "pid": "353",
+        "name": "MOBILY"
+      },
+      {
+        "pid": "684",
+        "name": "ZAIN"
+      }
+    ],
+    "countryName": "Saudi Arabia",
+    "countryCode": "SAU"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "523",
+        "name": "SUDANI ONE"
+      },
+      {
+        "pid": "651",
+        "name": "VIVACELL-MTS"
+      },
+      {
+        "pid": "684",
+        "name": "ZAIN"
+      }
+    ],
+    "countryName": "Sudan",
+    "countryCode": "SDN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "205",
+        "name": "EXPRESSO"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      }
+    ],
+    "countryName": "Senegal",
+    "countryCode": "SEN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "169",
+        "name": "DTRN"
+      },
+      {
+        "pid": "315",
+        "name": "M1"
+      },
+      {
+        "pid": "500",
+        "name": "SINGTEL"
+      },
+      {
+        "pid": "501",
+        "name": "SINGTEL-G18"
+      },
+      {
+        "pid": "522",
+        "name": "STARHUB"
+      }
+    ],
+    "countryName": "Singapore",
+    "countryCode": "SGP"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "79",
+        "name": "BREEZE"
+      }
+    ],
+    "countryName": "Solomon Islands",
+    "countryCode": "SLB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "17",
+        "name": "AFRICELL"
+      },
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "127",
+        "name": "COMIUM"
+      },
+      {
+        "pid": "358",
+        "name": "MOBITEL"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      }
+    ],
+    "countryName": "Sierra Leone",
+    "countryCode": "SLE"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "141",
+        "name": "CTE TELECOM PERSONAL"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      }
+    ],
+    "countryName": "El Salvador",
+    "countryCode": "SLV"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "445",
+        "name": "PRIMA"
+      }
+    ],
+    "countryName": "San Marino",
+    "countryCode": "SMR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "229",
+        "name": "GOLIS"
+      },
+      {
+        "pid": "242",
+        "name": "HORMUUD"
+      },
+      {
+        "pid": "382",
+        "name": "NATIONLINK"
+      },
+      {
+        "pid": "512",
+        "name": "SOMAFONE"
+      },
+      {
+        "pid": "513",
+        "name": "SOMTEL"
+      },
+      {
+        "pid": "552",
+        "name": "TELCOM"
+      },
+      {
+        "pid": "565",
+        "name": "TELESOM"
+      }
+    ],
+    "countryName": "Somalia",
+    "countryCode": "SOM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "36",
+        "name": "AMERIS"
+      }
+    ],
+    "countryName": "Saint Pierre and Miquelon",
+    "countryCode": "SPM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "370",
+        "name": "MT:S"
+      },
+      {
+        "pid": "564",
+        "name": "TELENOR"
+      },
+      {
+        "pid": "645",
+        "name": "VIP"
+      }
+    ],
+    "countryName": "Serbia",
+    "countryCode": "SRB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "139",
+        "name": "CSTMOVEL"
+      }
+    ],
+    "countryName": "Sao Tome and Principe",
+    "countryCode": "STP"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "566",
+        "name": "TELESUR"
+      },
+      {
+        "pid": "622",
+        "name": "UNIQA"
+      }
+    ],
+    "countryName": "Suriname",
+    "countryCode": "SUR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "406",
+        "name": "O2"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      },
+      {
+        "pid": "619",
+        "name": "UNIENT"
+      },
+      {
+        "pid": "687",
+        "name": "ZSR"
+      }
+    ],
+    "countryName": "Slovakia",
+    "countryCode": "SVK"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "358",
+        "name": "MOBITEL"
+      },
+      {
+        "pid": "494",
+        "name": "SI.MOBIL"
+      },
+      {
+        "pid": "536",
+        "name": "T-2"
+      },
+      {
+        "pid": "608",
+        "name": "TUSMOBIL"
+      }
+    ],
+    "countryName": "Slovenia",
+    "countryCode": "SVN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "2",
+        "name": "3"
+      },
+      {
+        "pid": "7",
+        "name": "42IT"
+      },
+      {
+        "pid": "59",
+        "name": "BARABLU"
+      },
+      {
+        "pid": "67",
+        "name": "BEEPSPEND"
+      },
+      {
+        "pid": "159",
+        "name": "DIGITEL"
+      },
+      {
+        "pid": "162",
+        "name": "DJUICE"
+      },
+      {
+        "pid": "230",
+        "name": "GOTANET"
+      },
+      {
+        "pid": "250",
+        "name": "ICE.NET"
+      },
+      {
+        "pid": "305",
+        "name": "LINDHOLMEN SCIENCE PARK"
+      },
+      {
+        "pid": "346",
+        "name": "MOBILE ARTS"
+      },
+      {
+        "pid": "355",
+        "name": "MOBISIR"
+      },
+      {
+        "pid": "529",
+        "name": "SWEDEN 2G"
+      },
+      {
+        "pid": "530",
+        "name": "SWEDEN 3G"
+      },
+      {
+        "pid": "549",
+        "name": "TDC"
+      },
+      {
+        "pid": "557",
+        "name": "TELE2"
+      },
+      {
+        "pid": "564",
+        "name": "TELENOR"
+      },
+      {
+        "pid": "570",
+        "name": "TELIA"
+      },
+      {
+        "pid": "632",
+        "name": "VENTELO"
+      },
+      {
+        "pid": "672",
+        "name": "WIRELESS MAINGATE NORDIC"
+      }
+    ],
+    "countryName": "Sweden",
+    "countryCode": "SWE"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "376",
+        "name": "MTN"
+      }
+    ],
+    "countryName": "Swaziland",
+    "countryCode": "SWZ"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "86",
+        "name": "CABLE & WIRELESS"
+      },
+      {
+        "pid": "327",
+        "name": "MEDIATECH"
+      }
+    ],
+    "countryName": "Seychelles",
+    "countryCode": "SYC"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "534",
+        "name": "SYRIATEL"
+      }
+    ],
+    "countryName": "Syrian Arab Republic",
+    "countryCode": "SYR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "86",
+        "name": "CABLE & WIRELESS"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "269",
+        "name": "ISLANDCOM"
+      }
+    ],
+    "countryName": "Turks and Caicos Islands",
+    "countryCode": "TCA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "476",
+        "name": "SALAM"
+      },
+      {
+        "pid": "547",
+        "name": "TCHAD MOBILE"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      }
+    ],
+    "countryName": "Chad",
+    "countryCode": "TCD"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "362",
+        "name": "MOOV"
+      },
+      {
+        "pid": "592",
+        "name": "TOGO CELL"
+      }
+    ],
+    "countryName": "Togo",
+    "countryCode": "TGO"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "25",
+        "name": "AIS"
+      },
+      {
+        "pid": "26",
+        "name": "AIS GSM 1800"
+      },
+      {
+        "pid": "91",
+        "name": "CAT CDMA"
+      },
+      {
+        "pid": "168",
+        "name": "DTAC"
+      },
+      {
+        "pid": "594",
+        "name": "TOT 3G"
+      },
+      {
+        "pid": "601",
+        "name": "TRUE MOVE"
+      },
+      {
+        "pid": "662",
+        "name": "WCS IQ"
+      }
+    ],
+    "countryName": "Thailand",
+    "countryCode": "THA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "56",
+        "name": "BABILON-M"
+      },
+      {
+        "pid": "66",
+        "name": "BEELINE"
+      },
+      {
+        "pid": "342",
+        "name": "MLT"
+      },
+      {
+        "pid": "546",
+        "name": "TCELL"
+      }
+    ],
+    "countryName": "Tajikistan",
+    "countryCode": "TJK"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "377",
+        "name": "MTS"
+      },
+      {
+        "pid": "586",
+        "name": "TM-CELL"
+      }
+    ],
+    "countryName": "Turkmenistan",
+    "countryCode": "TKM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "584",
+        "name": "TIMOR TELECOM"
+      }
+    ],
+    "countryName": "Timor-Leste",
+    "countryCode": "TLS"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "493",
+        "name": "SHORELINE COMMUNICATION"
+      },
+      {
+        "pid": "593",
+        "name": "TONGA COMMUNICATIONS"
+      }
+    ],
+    "countryName": "Tonga",
+    "countryCode": "TON"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "74",
+        "name": "BMOBILE"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      }
+    ],
+    "countryName": "Trinidad and Tobago",
+    "countryCode": "TTO"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "604",
+        "name": "TUNICELL"
+      },
+      {
+        "pid": "605",
+        "name": "TUNISIANA"
+      }
+    ],
+    "countryName": "Tunisia",
+    "countryCode": "TUN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "51",
+        "name": "AVEA"
+      },
+      {
+        "pid": "607",
+        "name": "TURKCELL"
+      },
+      {
+        "pid": "655",
+        "name": "VODAFONE"
+      }
+    ],
+    "countryName": "Turkey",
+    "countryCode": "TUR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "603",
+        "name": "TTCL MOBILE"
+      }
+    ],
+    "countryName": "Tuvalu",
+    "countryCode": "TUV"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "41",
+        "name": "APTG"
+      },
+      {
+        "pid": "114",
+        "name": "CHUNGHWA LDM"
+      },
+      {
+        "pid": "115",
+        "name": "CHUNGWA"
+      },
+      {
+        "pid": "206",
+        "name": "FAREASTONE"
+      },
+      {
+        "pid": "285",
+        "name": "KG TELECOM"
+      },
+      {
+        "pid": "357",
+        "name": "MOBITAI"
+      },
+      {
+        "pid": "537",
+        "name": "TAIWAN MOBILE"
+      },
+      {
+        "pid": "596",
+        "name": "TRANSASIA"
+      },
+      {
+        "pid": "606",
+        "name": "TUNTEX"
+      },
+      {
+        "pid": "636",
+        "name": "VIBO"
+      }
+    ],
+    "countryName": "Taiwan, Province of China",
+    "countryCode": "TWN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "70",
+        "name": "BENSON ONLINE"
+      },
+      {
+        "pid": "480",
+        "name": "SASATEL"
+      },
+      {
+        "pid": "510",
+        "name": "SMILE"
+      },
+      {
+        "pid": "582",
+        "name": "TIGO"
+      },
+      {
+        "pid": "603",
+        "name": "TTCL MOBILE"
+      },
+      {
+        "pid": "624",
+        "name": "UNITEL"
+      },
+      {
+        "pid": "654",
+        "name": "VODACOM"
+      },
+      {
+        "pid": "685",
+        "name": "ZANTEL"
+      }
+    ],
+    "countryName": "Tanzania, United Republic of",
+    "countryCode": "TZA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "423",
+        "name": "ORANGE"
+      },
+      {
+        "pid": "628",
+        "name": "UTL"
+      },
+      {
+        "pid": "660",
+        "name": "WARID TELECOM"
+      }
+    ],
+    "countryName": "Uganda",
+    "countryCode": "UGA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "66",
+        "name": "BEELINE"
+      },
+      {
+        "pid": "93",
+        "name": "CDMA UKRAINE"
+      },
+      {
+        "pid": "228",
+        "name": "GOLDEN TELECOM"
+      },
+      {
+        "pid": "270",
+        "name": "IT"
+      },
+      {
+        "pid": "292",
+        "name": "KYIVSTAR"
+      },
+      {
+        "pid": "302",
+        "name": "LIFE:)"
+      },
+      {
+        "pid": "377",
+        "name": "MTS"
+      },
+      {
+        "pid": "434",
+        "name": "PEOPLENET"
+      },
+      {
+        "pid": "615",
+        "name": "UKRTELECOM"
+      }
+    ],
+    "countryName": "Ukraine",
+    "countryCode": "UKR"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "39",
+        "name": "ANTEL"
+      },
+      {
+        "pid": "118",
+        "name": "CLARO"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      }
+    ],
+    "countryName": "Uruguay",
+    "countryCode": "URY"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "13",
+        "name": "ADVANTAGE"
+      },
+      {
+        "pid": "14",
+        "name": "AERIS"
+      },
+      {
+        "pid": "18",
+        "name": "AIRADIGM"
+      },
+      {
+        "pid": "21",
+        "name": "AIRLINK PCS"
+      },
+      {
+        "pid": "22",
+        "name": "AIRPEAK"
+      },
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "28",
+        "name": "ALASKA DIGITEL"
+      },
+      {
+        "pid": "32",
+        "name": "ALLTEL"
+      },
+      {
+        "pid": "35",
+        "name": "AMERILINK PCS"
+      },
+      {
+        "pid": "48",
+        "name": "AT&T"
+      },
+      {
+        "pid": "84",
+        "name": "BUG TUSSEL WIRELESS"
+      },
+      {
+        "pid": "85",
+        "name": "C SPIRE WIRELESS"
+      },
+      {
+        "pid": "88",
+        "name": "CAPROCK"
+      },
+      {
+        "pid": "90",
+        "name": "CAROLINA PHONE"
+      },
+      {
+        "pid": "96",
+        "name": "CELL ONE AMARILLO"
+      },
+      {
+        "pid": "99",
+        "name": "CELLULAR ONE"
+      },
+      {
+        "pid": "100",
+        "name": "CELLULAR ONE OF EAST TEXAS"
+      },
+      {
+        "pid": "101",
+        "name": "CELLULAR PROPERTIES"
+      },
+      {
+        "pid": "102",
+        "name": "CENTENNIAL"
+      },
+      {
+        "pid": "105",
+        "name": "CHARITON VALLEY"
+      },
+      {
+        "pid": "113",
+        "name": "CHOICE PHONE"
+      },
+      {
+        "pid": "116",
+        "name": "CINCINNATI BELL"
+      },
+      {
+        "pid": "122",
+        "name": "COLEMAN COUNTY TELECOM"
+      },
+      {
+        "pid": "128",
+        "name": "COMMNET WIRELESS"
+      },
+      {
+        "pid": "129",
+        "name": "CONCHO"
+      },
+      {
+        "pid": "130",
+        "name": "CONESTOGA"
+      },
+      {
+        "pid": "131",
+        "name": "CONSOLIDATED TELECOM"
+      },
+      {
+        "pid": "132",
+        "name": "CONVEY"
+      },
+      {
+        "pid": "134",
+        "name": "CORR"
+      },
+      {
+        "pid": "137",
+        "name": "CRICKET"
+      },
+      {
+        "pid": "171",
+        "name": "DUTCH HARBOR"
+      },
+      {
+        "pid": "173",
+        "name": "EASTERBROOKE"
+      },
+      {
+        "pid": "182",
+        "name": "EMERY TELCOM WIRELESS"
+      },
+      {
+        "pid": "186",
+        "name": "ENDLESS MOUNTAINS WIRELESS"
+      },
+      {
+        "pid": "189",
+        "name": "EPIC TOUCH"
+      },
+      {
+        "pid": "207",
+        "name": "FARMERS CELLULAR"
+      },
+      {
+        "pid": "210",
+        "name": "FIRST CELLULAR"
+      },
+      {
+        "pid": "224",
+        "name": "GLOBALSTAR"
+      },
+      {
+        "pid": "239",
+        "name": "HIGH PLAINS WIRELESS"
+      },
+      {
+        "pid": "240",
+        "name": "HIGHLAND CELLULAR"
+      },
+      {
+        "pid": "246",
+        "name": "I CAN_GSM"
+      },
+      {
+        "pid": "247",
+        "name": "I WIRELESS"
+      },
+      {
+        "pid": "256",
+        "name": "INDIGO"
+      },
+      {
+        "pid": "266",
+        "name": "IRIS WIRELESS"
+      },
+      {
+        "pid": "275",
+        "name": "JASPER"
+      },
+      {
+        "pid": "309",
+        "name": "LONG LINES WIRELESS"
+      },
+      {
+        "pid": "333",
+        "name": "METROPCS"
+      },
+      {
+        "pid": "335",
+        "name": "MID-RIVERS WIRELESS"
+      },
+      {
+        "pid": "336",
+        "name": "MID-TEX CELLULAR"
+      },
+      {
+        "pid": "340",
+        "name": "MISSOURI RSA5"
+      },
+      {
+        "pid": "394",
+        "name": "NEXTEL"
+      },
+      {
+        "pid": "398",
+        "name": "NORTH SITE"
+      },
+      {
+        "pid": "399",
+        "name": "NORTHSTAR"
+      },
+      {
+        "pid": "410",
+        "name": "OKLAHOMA WESTERN"
+      },
+      {
+        "pid": "429",
+        "name": "PACE"
+      },
+      {
+        "pid": "431",
+        "name": "PANHANDLE"
+      },
+      {
+        "pid": "437",
+        "name": "PETROCOM"
+      },
+      {
+        "pid": "438",
+        "name": "PINE CELLULAR"
+      },
+      {
+        "pid": "439",
+        "name": "PINPOINT"
+      },
+      {
+        "pid": "440",
+        "name": "PLATEAU WIRELESS"
+      },
+      {
+        "pid": "453",
+        "name": "PTI PACIFICA"
+      },
+      {
+        "pid": "484",
+        "name": "SEAMOBILE"
+      },
+      {
+        "pid": "499",
+        "name": "SIMMETRY"
+      },
+      {
+        "pid": "517",
+        "name": "SOUTHERN COMMUNICATIONS"
+      },
+      {
+        "pid": "519",
+        "name": "SPRINT"
+      },
+      {
+        "pid": "520",
+        "name": "SPROCKET"
+      },
+      {
+        "pid": "576",
+        "name": "TELNA MOBILE"
+      },
+      {
+        "pid": "579",
+        "name": "TESTING"
+      },
+      {
+        "pid": "589",
+        "name": "T-MOBILE"
+      },
+      {
+        "pid": "602",
+        "name": "TRUPHONE"
+      },
+      {
+        "pid": "618",
+        "name": "UNICEL"
+      },
+      {
+        "pid": "626",
+        "name": "US CELLULAR"
+      },
+      {
+        "pid": "633",
+        "name": "VERISIGN"
+      },
+      {
+        "pid": "634",
+        "name": "VERIZON"
+      },
+      {
+        "pid": "635",
+        "name": "VIAERO"
+      },
+      {
+        "pid": "647",
+        "name": "VIRGIN MOBILE"
+      },
+      {
+        "pid": "664",
+        "name": "WEST CENTRAL"
+      },
+      {
+        "pid": "665",
+        "name": "WEST VIRGINIA WIRELESS"
+      },
+      {
+        "pid": "666",
+        "name": "WESTLINK"
+      },
+      {
+        "pid": "667",
+        "name": "WIKES CELLULAR"
+      },
+      {
+        "pid": "668",
+        "name": "WILKES CELLULAR"
+      },
+      {
+        "pid": "674",
+        "name": "XIT WIRELESS"
+      }
+    ],
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "66",
+        "name": "BEELINE"
+      },
+      {
+        "pid": "377",
+        "name": "MTS"
+      },
+      {
+        "pid": "435",
+        "name": "PERFECTUM MOBILE"
+      },
+      {
+        "pid": "611",
+        "name": "UCELL"
+      }
+    ],
+    "countryName": "Uzbekistan",
+    "countryCode": "UZB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "48",
+        "name": "AT&T"
+      },
+      {
+        "pid": "86",
+        "name": "CABLE & WIRELESS"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      }
+    ],
+    "countryName": "Saint Vincent and the Grenadines",
+    "countryCode": "VCT"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "159",
+        "name": "DIGITEL"
+      },
+      {
+        "pid": "365",
+        "name": "MOVILNET"
+      },
+      {
+        "pid": "366",
+        "name": "MOVISTAR"
+      }
+    ],
+    "countryName": "Venezuela, Bolivarian Republic of",
+    "countryCode": "VEN"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "92",
+        "name": "CCT BOATPHONE"
+      },
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "304",
+        "name": "LIME"
+      }
+    ],
+    "countryName": "Virgin Islands, British",
+    "countryCode": "VGB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "66",
+        "name": "BEELINE"
+      },
+      {
+        "pid": "203",
+        "name": "EVNTELECOM"
+      },
+      {
+        "pid": "344",
+        "name": "MOBIFONE"
+      },
+      {
+        "pid": "491",
+        "name": "S-FONE"
+      },
+      {
+        "pid": "639",
+        "name": "VIETNAMOBILE"
+      },
+      {
+        "pid": "640",
+        "name": "VIETTEL MOBILE"
+      },
+      {
+        "pid": "642",
+        "name": "VINAPHONE"
+      }
+    ],
+    "countryName": "Viet Nam",
+    "countryCode": "VNM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "510",
+        "name": "SMILE"
+      }
+    ],
+    "countryName": "Vanuatu",
+    "countryCode": "VUT"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "157",
+        "name": "DIGICEL"
+      },
+      {
+        "pid": "478",
+        "name": "SAMOATEL"
+      }
+    ],
+    "countryName": "Samoa",
+    "countryCode": "WSM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "471",
+        "name": "SABAFON"
+      },
+      {
+        "pid": "624",
+        "name": "UNITEL"
+      },
+      {
+        "pid": "678",
+        "name": "YEMEN MOBILE"
+      }
+    ],
+    "countryName": "Yemen",
+    "countryCode": "YEM"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "77",
+        "name": "BOKAMOSO CONSORTIUM"
+      },
+      {
+        "pid": "95",
+        "name": "CELL C"
+      },
+      {
+        "pid": "254",
+        "name": "ILIZWI TELECOMMUNICATIONS"
+      },
+      {
+        "pid": "281",
+        "name": "KARABO TELECOMS"
+      },
+      {
+        "pid": "376",
+        "name": "MTN"
+      },
+      {
+        "pid": "387",
+        "name": "NEOTEL"
+      },
+      {
+        "pid": "487",
+        "name": "SENTECH"
+      },
+      {
+        "pid": "580",
+        "name": "THINTA THINTA"
+      },
+      {
+        "pid": "654",
+        "name": "VODACOM"
+      }
+    ],
+    "countryName": "South Africa",
+    "countryCode": "ZAF"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "23",
+        "name": "AIRTEL"
+      },
+      {
+        "pid": "376",
+        "name": "MTN"
+      }
+    ],
+    "countryName": "Zambia",
+    "countryCode": "ZMB"
+  },
+  {
+    "carriers": [
+      {
+        "pid": "175",
+        "name": "ECONET"
+      },
+      {
+        "pid": "390",
+        "name": "NET-ONE"
+      },
+      {
+        "pid": "559",
+        "name": "TELECEL"
+      }
+    ],
+    "countryName": "Zimbabwe",
+    "countryCode": "ZWE"
+  }
+]

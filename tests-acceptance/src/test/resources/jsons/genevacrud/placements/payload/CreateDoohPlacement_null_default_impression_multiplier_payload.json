@@ -1,0 +1,20 @@
+{
+  "site": {
+    "pId": 10000208,
+    "type": "DOOH",
+    "platform": "OTHER"
+  },
+  "screenLocation": "FOOTER_VISIBLE",
+  "mraidSupport": "YES",
+  "placementCategory": "BANNER",
+  "interstitial": false,
+  "mraidAdvancedTracking": false,
+  "dooh": {
+  },
+  "videoSupport": "BANNER",
+  "width": 100,
+  "height": 100,
+  "adSizeType": "CUSTOM",
+  "memo": "testbannercreationdoohnulldefimpmul",
+  "name": "testbannercreationdoohnulldefimpmul"
+}

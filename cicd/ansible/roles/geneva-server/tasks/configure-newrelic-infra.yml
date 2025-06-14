@@ -1,0 +1,16 @@
+---
+- name: Register environment
+  shell: cat /etc/environment
+  register: app_environment
+- debug: msg="{{ app_environment }}"
+- name: Include New Relic Infra vars
+  include_vars:
+    file: newrelic-infra.yml
+- name: Configure New Relic Infra agent configuration
+  template:
+    dest: "{{ newrelic_infra_lib_path }}/{{ item }}"
+    mode: 0664
+    owner: root
+    src: "newrelic/{{ item }}.j2"
+  with_items:
+    - "newrelic-infra.yml"

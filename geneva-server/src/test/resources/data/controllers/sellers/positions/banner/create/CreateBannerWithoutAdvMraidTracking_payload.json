@@ -1,0 +1,13 @@
+{
+  "sitePid": 10000196,
+  "tiers": [],
+  "name": "MRAIDTrackingBannerWithoutTracking",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "mraidAdvancedTracking": false,
+  "videoSupport": "BANNER",
+  "screenLocation": "BELOW_VISIBLE",
+  "status": "ACTIVE",
+  "placementCategory": "BANNER"
+}

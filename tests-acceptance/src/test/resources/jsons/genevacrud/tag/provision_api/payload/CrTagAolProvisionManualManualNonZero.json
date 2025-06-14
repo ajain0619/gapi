@@ -1,0 +1,18 @@
+{
+  "name": "AV26",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Manual",
+  "ecpmManual": 10,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

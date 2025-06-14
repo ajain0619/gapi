@@ -1,0 +1,11 @@
+{
+  "placementCategory": "INSTREAM_VIDEO",
+  "memo": "borntobewild",
+  "name": "borntobewild",
+  "screenLocation": "HEADER_VISIBLE",
+  "width": 1000,
+  "height": 990,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "interstitial": false
+}

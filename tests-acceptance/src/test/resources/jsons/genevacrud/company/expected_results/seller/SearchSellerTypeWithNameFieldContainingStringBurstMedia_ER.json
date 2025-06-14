@@ -1,0 +1,33 @@
+[
+  {
+    "id": "8a809449013231fdcdc3f854294e2659",
+    "pid": 651,
+    "version": 3,
+    "name": "Burst Media",
+    "type": "SELLER",
+    "website": "http://www.burstmedia.com/",
+    "description": "Online media company representing independent web publishers",
+    "contactUserPid": 469,
+    "adServingEnabled": false,
+    "dynamicBuyerRegistrationEnabled": false,
+    "brxdBuyerIdEnabledOnBidRequest": false,
+    "restrictDrillDown": false,
+    "cpiTrackingEnabled": false,
+    "rtbEnabled": false,
+    "mediationEnabled": false,
+    "rtbRevenueReportEnabled": false,
+    "status": "ACTIVE",
+    "disableAdFeedback": false,
+  "test": false,
+    "selfServeAllowed": false,
+    "payoutEnabled": false,
+    "thirdPartyFraudDetectionEnabled": false,
+    "defaultRtbProfilesEnabled": false,
+    "currency": "USD",
+    "externalAdVerificationEnabled": false,
+    "fraudDetectionJavascriptEnabled": true,
+    "adsourceNames": [],
+    "externalDataProviderNames": [],
+    "numberOfUsers": 0
+  }
+]

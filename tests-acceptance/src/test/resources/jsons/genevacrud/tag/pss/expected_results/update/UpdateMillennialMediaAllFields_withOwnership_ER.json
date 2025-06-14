@@ -1,0 +1,110 @@
+{
+  "pid": 7297,
+  "version": 7,
+  "site": {
+    "pid": 963
+  },
+  "rtbProfile": {
+    "pid": 10000007,
+    "version": 5,
+    "id": "ff80808101505005279b134b24f90040",
+    "blockedAdCategories": [
+      "IAB2"
+    ],
+    "blockedAdvertisers": [
+      "domainb.com"
+    ],
+    "libraries": [
+      {
+        "pid": 2,
+        "name": "BGR2",
+        "version": 2,
+        "publisherPid": 105,
+        "privilegeLevel": "PUBLISHER",
+        "groups": [
+          {
+            "pid": 4,
+            "name": "BGR2",
+            "version": 1,
+            "publisherPid": 105,
+            "privilegeLevel": "PUBLISHER",
+            "data": "IAB1,IAB3,IAB7-1",
+            "itemType": "CATEGORY",
+            "listType": "BLOCKLIST"
+          },
+          {
+            "pid": 3,
+            "name": "BGR2",
+            "version": 1,
+            "publisherPid": 105,
+            "privilegeLevel": "PUBLISHER",
+            "data": "domain1.com,domain2.com,domain3.com",
+            "itemType": "ADOMAIN",
+            "listType": "BLOCKLIST"
+          }
+        ]
+      }
+    ],
+    "bidderFilters": [
+      2
+    ],
+    "bidderFilterWhitelist": false,
+    "useDefaultBlock": true,
+    "includeConsumerId": true,
+    "includeDomainReferences": true,
+    "includeConsumerProfile": false,
+    "screeningLevel": "RequireDomainAndImage",
+    "pubNetReserve": "45.00",
+    "useDefaultBidders": true,
+    "siteTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "nameAlias": "AS8B123",
+      "idAlias": "96311123"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "nameAlias": "adserverSellerTest811123",
+      "idAlias": "105111213"
+    }
+  },
+  "name": "Nexage Exchange - test8y",
+  "ecpmAuto": 0,
+  "ecpmManual": 417.36,
+  "owner": "Nexage",
+  "status": "ACTIVE",
+  "buyer": {
+    "pid": 4668
+  },
+  "position": {
+    "pid": 14730
+  },
+  "primaryId": "ff80808101505005279b134b24f90040",
+  "primaryName": "",
+  "secondaryId": "",
+  "secondaryName": "",
+  "ecpmProvision": "Manual",
+  "tagType": "RTB",
+  "rules": [
+    {
+      "targetType": "NegKeyword",
+      "ruleType": "Country",
+      "data": "ASM,AUS,COK,FJI,FSM,GUM,KIR,MHL,MNP,NCL,NFK,NIU,NRU,NZL,PCN,PLW,PNG,PYF,SLB,TKL,TON,TUV,VUT,WLF,WSM"
+    }
+  ],
+  "monetization": true,
+  "type": "RTB",
+  "currentDealTerm": {
+    "pid": 10853,
+    "version": 1,
+    "sitePid": 963,
+    "effectiveDate": 1443457903000,
+    "revenueMode": "REV_SHARE",
+    "tagPid": 7297,
+    "nexageRevenueShare": 0.223,
+    "rtbFee": 0.025,
+    "hasDealTermChanged": false
+  },
+  "publisherPid": 105,
+  "width": 480,
+  "height": 75
+}

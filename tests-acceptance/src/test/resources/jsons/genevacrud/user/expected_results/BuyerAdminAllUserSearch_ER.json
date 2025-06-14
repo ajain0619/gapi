@@ -1,0 +1,98 @@
+{
+  "content": [
+    {
+      "companies": [
+        {
+          "name": "athens1buyer1",
+          "pid": 352,
+          "type": "BUYER"
+        }
+      ],
+      "contactNumber": "7817654321",
+      "dealAdmin": false,
+      "email": "buyer1manager1@athens1buyer1.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0f013b3b761d5a76c3bcaf0018",
+      "name": "buyer1manager1",
+      "oneCentralUserName": "buyer1manager1",
+      "pid": 235,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "title": "mr",
+      "userName": "buyer1manager1",
+      "version": 2
+    },
+    {
+      "companies": [
+        {
+          "name": "athens1buyer1",
+          "pid": 352,
+          "type": "BUYER"
+        }
+      ],
+      "contactNumber": "7817689876",
+      "dealAdmin": false,
+      "email": "buyer1user1@nexage.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0f013b3b761d5a76c6d0e60019",
+      "name": "buyer1user1",
+      "oneCentralUserName": "buyer1user1",
+      "pid": 248,
+      "primaryContact": false,
+      "role": "ROLE_USER",
+      "title": "mr",
+      "userName": "buyer1user1",
+      "version": 1
+    },
+    {
+      "companies": [
+        {
+          "name": "athens1buyer1",
+          "pid": 352,
+          "type": "BUYER"
+        }
+      ],
+      "contactNumber": "test4",
+      "dealAdmin": false,
+      "email": "test3@mail.com",
+      "enabled": true,
+      "global": false,
+      "id": "ff808081014f4f92d85ba6e7cbef006b",
+      "name": "test5",
+      "oneCentralUserName": "test1",
+      "pid": 704,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "title": "test6",
+      "userName": "test1",
+      "version": 0
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 3,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 200,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 200,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 3,
+  "totalPages": 1
+}

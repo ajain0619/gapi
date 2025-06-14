@@ -1,0 +1,30 @@
+{
+  "auctionType":"FloorPrice",
+  "bidders":[],
+  "createdBy":781,
+  "currency":"USD",
+  "dealId":"1622170524642691520",
+  "description":"UpdateDealAssociatedWithSellerTest",
+  "pid":13,
+  "positions":[],
+  "priorityType":"OPEN",
+  "profiles":[],
+  "publishers":[
+    {
+      "publisherPid":10213
+    },
+    {
+      "publisherPid":10214
+    }
+  ],
+  "rules":[
+    {
+      "rulePid":66113
+    }
+  ],
+  "sites":[],
+  "start":1622088000000,
+  "status":"Active",
+  "visibility":true,
+  "dealCategory": 3
+}

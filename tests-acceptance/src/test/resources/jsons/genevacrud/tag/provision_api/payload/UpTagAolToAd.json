@@ -1,0 +1,20 @@
+{
+  "name": "b1",
+  "buyer": {
+    "pid": "7054"
+  },
+  "primaryId": "pid151",
+  "primaryName": "pname151",
+  "secondaryId": "sid151",
+  "secondaryName": "sname151",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "east",
+  "adNetReportPassword": "west",
+  "tagController": {
+    "autoExpand": false
+  },
+  "version": 0
+}

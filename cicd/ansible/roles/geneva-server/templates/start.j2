@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+
+ENVIRONMENT=$(cat /etc/environment)
+REGION=$(curl --silent http://169.254.169.254/latest/dynamic/instance-identity/document | jq -r .region)
+GENEVA_SSM_SOURCE_VARS={{ geneva_server_home }}/conf/geneva-server-vars.yml
+FINAL_GENEVA_SERVER_VARS=/etc/ansible/roles/geneva-server/vars/geneva.yml
+COMPONENT=$(cat /etc/component)
+
+get_geneva_server_property_file() {
+  PROPERTY_NAME=$1
+  DESTINATION=$2
+  echo "Pulling property file $PROPERTY_NAME"
+  aws ssm get-parameter --name "$PROPERTY_NAME" --with-decryption --output text \
+    --query "Parameter.Value" \
+    --region "$REGION" | base64 --decode > $DESTINATION
+}
+
+echo "Pulling external properties for ENV=$ENVIRONMENT"
+
+if [ "$COMPONENT" = "" ]; then
+  COMPONENT=geneva-server
+fi
+
+echo "Component set: $COMPONENT"
+
+get_geneva_server_property_file $COMPONENT-$ENVIRONMENT $GENEVA_SSM_SOURCE_VARS
+
+# The final YAML file is composed of:
+# Default-file (template) + geneva-ENV.yml + [values from SSM 'if' present]
+
+# For PRs the $ENVIRONMENT is the git hash so we default to dev
+if [ ! -f "/etc/ansible/roles/geneva-server/vars/geneva-$ENVIRONMENT.yml" ]; then
+    ENVIRONMENT=dev
+fi
+
+GENEVA_SERVERS_ENV_VARS=/etc/ansible/roles/geneva-server/vars/geneva-$ENVIRONMENT.yml
+
+# Rename the env file to the final file read by the playbook
+mv $GENEVA_SERVERS_ENV_VARS $FINAL_GENEVA_SERVER_VARS
+
+# Override / add extra properties coming from the external source (SSM / CKMS)
+ruby {{ geneva_server_home }}/bin/override-properties.rb -s $GENEVA_SSM_SOURCE_VARS -t $FINAL_GENEVA_SERVER_VARS
+
+ansible-playbook /etc/ansible/playbooks/instance.yml
+
+# Grab Some of the Dynamic Properties
+KEYSTOREPASSWORD=$(grep 'geneva_server_ssl_keystore_password:' $FINAL_GENEVA_SERVER_VARS | tail -n1 | awk '{ print $2}')
+KEYSTORECERTPATH=$(grep 'geneva_server_ssl_cert_pem:' $FINAL_GENEVA_SERVER_VARS | tail -n1 | awk '{ print $2}')
+KEYSTOREKEYPATH=$(grep 'geneva_server_ssl_key_pem:' $FINAL_GENEVA_SERVER_VARS | tail -n1 | awk '{ print $2}')
+SPLUNKENABLED=$(grep 'geneva_server_splunk_enabled:' $FINAL_GENEVA_SERVER_VARS | tail -n1 | awk '{ print $2}')
+KEYSTOREMYSQLCERTPATH=$(grep 'geneva_server_ssl_mysql_cert_pem:' $FINAL_GENEVA_SERVER_VARS | tail -n1 | awk '{ print $2}')
+
+
+if [ "$ENVIRONMENT" = 'prod' ]; then
+  JAVA_OPTS="-Xmx24G -Xms24G"
+else
+  JAVA_OPTS="-Xmx12G -Xms12G"
+fi
+
+SPRING_PROFILES=aws,metrics,secure
+
+if [ "$ENVIRONMENT" = 'dev' ]; then
+  SPRING_PROFILES=${SPRING_PROFILES},e2e-test
+fi
+
+if [ "$ENVIRONMENT" = 'uat' ] || [ "$ENVIRONMENT" = 'perf' ] || [ "$ENVIRONMENT" = 'prod' ] || [ "$ENVIRONMENT" = 'ext' ] || [ "$ENVIRONMENT" = 'cron' ]; then
+  SPRING_PROFILES=${SPRING_PROFILES},tracing
+  echo "New relic integration is enabled. Adding agent details."
+  JAVA_OPTS+=" -javaagent:{{ newrelic_agent_lib_path }}/{{ newrelic_agent_lib_file_name }} "
+  JAVA_OPTS+=" -Dnewrelic.environment=$ENVIRONMENT "
+fi
+
+{{ geneva_server_home }}/bin/configure-keystore $KEYSTOREPASSWORD $KEYSTORECERTPATH $KEYSTOREKEYPATH $KEYSTOREMYSQLCERTPATH
+
+if [ $SPLUNKENABLED = true ]; then
+  {{ geneva_server_home }}/bin/splunk_config.sh
+fi
+
+/bin/java \
+   $JAVA_OPTS \
+  --add-exports jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED \
+  --add-exports jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED \
+  --add-exports jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED \
+  --add-exports jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED \
+  --add-exports jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED \
+  --add-opens java.base/java.lang=ALL-UNNAMED \
+  -Dcom.sun.management.jmxremote \
+  -Dcom.sun.management.jmxremote.port=7777 \
+  -Dcom.sun.management.jmxremote.authenticate=false \
+  -Dcom.sun.management.jmxremote.ssl=false \
+  -Djavax.net.ssl.trustStore={{ geneva_server_home }}/conf/cacerts \
+  -Djavax.net.ssl.trustStorePassword={{ geneva_server_ssl_truststore_password }} \
+  -Dspring.config.location=file:{{ geneva_server_home }}/conf/application.properties \
+  -Dgeneva.features=file:{{ geneva_server_home }}/conf/FeatureVisibility.json \
+  -Dlog4j.configurationFile={{ geneva_server_home }}/conf/log4j2.xml \
+  -Dspring.profiles.active=$SPRING_PROFILES \
+  -Dhibernate.session.events.log.LOG_QUERIES_SLOWER_THAN_MS={{ geneva_server_hibernate_slow_sql_timeout_ms }} \
+  -jar {{ geneva_server_home }}/bin/geneva-server.jar

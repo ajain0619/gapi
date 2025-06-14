@@ -1,0 +1,17 @@
+{
+  "site": {
+    "pid": 10000174,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "interstitial": false,
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "width": 768,
+  "height": 1024,
+  "memo": "instream video placement",
+  "name": "Position6_instream_video",
+  "placementCategory": "INSTREAM_VIDEO",
+  "longform": true
+}

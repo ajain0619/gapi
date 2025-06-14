@@ -1,0 +1,11 @@
+{
+  "pid": 4,
+  "name": "BuyerGroupCucumber2",
+  "sfdcLineId": "testsfdcLineId2",
+  "sfdcIoId": "testsfdcIoId2",
+  "currency": "EUR",
+  "billingCountry": "DEU",
+  "billable": true,
+  "version": 0,
+  "companyPid": 10024
+}

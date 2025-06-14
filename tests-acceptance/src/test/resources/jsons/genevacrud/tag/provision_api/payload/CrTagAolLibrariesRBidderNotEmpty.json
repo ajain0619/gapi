@@ -1,0 +1,49 @@
+{
+  "name": "AV305",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": true,
+    "rtbProfileBidders": [
+      {
+        "seatWhitelist": [
+          "1"
+        ],
+        "bidderPid": 3
+      }
+    ],
+    "libraries": [
+      {
+        "pid": 14,
+        "name": "group",
+        "version": 1,
+        "publisherPid": 10227,
+        "privilegeLevel": "PUBLISHER",
+        "isDefaultEligible": false,
+        "groups": [
+          {
+            "pid": 18,
+            "name": "group",
+            "version": 0,
+            "publisherPid": 10227,
+            "privilegeLevel": "PUBLISHER",
+            "data": "3",
+            "itemType": "BIDDER",
+            "listType": "WHITELIST",
+            "isIndividualsGroup": false
+          }
+        ]
+      }
+    ],
+    "useDefaultBidders": false
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

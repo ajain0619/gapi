@@ -1,0 +1,39 @@
+{
+  "content": [
+    {
+      "id": null,
+      "auctionRunHashId": "-9027528480977354317",
+      "bidderId": 13809,
+      "bidderUrl": "https://web-oao.ssp.yahoo.com/admax/adServe.do?dcn=2k969d89013333d9dbe1dce95685114m",
+      "requestPayload": "{\"bidderId\":13809,\"url\":\"https://reserved.v.ssp.yahoo.com/reserved?ext_id=SSPMigration\",\"auction\":\"n7d09415c18041b7b5d3ooo5cc9e9d6b\",\"id\":\"b7d09415c18041b7b5d3iii5cc9e9d6n\"}",
+      "responsePayload": "{\"bidderId\":13809,\"url\":\"null\",\"auction\":\"o7d09415c18041b7b5d3vvv5cc9e9d6j\",\"id\":\"p8d09415c18041b7b5d3uuu5cc9e9d6k\",\"cur\":\"EUR\"}",
+      "responseCode": 200,
+      "dealIds": null
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 50,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalPages": 1,
+  "totalElements": 50,
+  "last": true,
+  "size": 50,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "numberOfElements": 1,
+  "first": true,
+  "empty": false
+}

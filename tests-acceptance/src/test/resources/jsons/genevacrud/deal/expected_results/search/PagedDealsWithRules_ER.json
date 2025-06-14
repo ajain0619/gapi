@@ -1,0 +1,97 @@
+{
+  "content": [
+    {
+      "auctionType": 3,
+      "createdBy": 781,
+      "currency": "USD",
+      "dealCategory": 1,
+      "dealId": "14466299473087827",
+      "description": "allFieldsTest",
+      "floor": 200,
+      "pid": 11,
+      "placementFormulaStatus": "DONE",
+      "priorityType": "OPEN",
+      "start": 1446613200000,
+      "status": "Inactive",
+      "stop": 1446958799000,
+      "version": 0,
+      "visibility": true
+    },
+    {
+      "auctionType": 3,
+      "createdBy": 781,
+      "currency": "USD",
+      "dealCategory": 1,
+      "dealId": "14466299473087828",
+      "description": "allFieldsTest",
+      "floor": 200,
+      "pid": 12,
+      "placementFormulaStatus": "NEW",
+      "priorityType": "OPEN",
+      "start": 1446613200000,
+      "status": "Inactive",
+      "stop": 1446958799000,
+      "version": 0,
+      "visibility": true
+    },
+    {
+      "auctionType": 3,
+      "createdBy": 781,
+      "currency": "USD",
+      "dealCategory": 1,
+      "dealId": "14466299473087829",
+      "description": "allFieldsTest2",
+      "floor": 200,
+      "pid": 13,
+      "placementFormulaStatus": "NEW",
+      "priorityType": "OPEN",
+      "start": 1446613200000,
+      "status": "Inactive",
+      "stop": 1446958799000,
+      "version": 0,
+      "visibility": true
+    },
+    {
+      "auctionType": 3,
+      "createdBy": 781,
+      "currency": "USD",
+      "dealCategory": 1,
+      "dealId": "11234567",
+      "description": "placement formula Domain attribute",
+      "floor": 200,
+      "pid": 15,
+      "placementFormulaStatus": "NEW",
+      "priorityType": "OPEN",
+      "start": 1446613200000,
+      "status": "Inactive",
+      "stop": 1446958799000,
+      "version": 0,
+      "visibility": true
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 4,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": true,
+      "sorted": false,
+      "unsorted": true
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  },
+  "totalElements": 4,
+  "totalPages": 1
+}

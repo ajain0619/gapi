@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <RollingFile name="rollingFile"
+                 fileName="{{ geneva_server_logs }}/{{ geneva_server_logs_filename }}"
+                 ignoreExceptions="false"
+                 filePattern="{{ geneva_server_logs_filename_pattern }}">
+      <JsonLayout complete="false" compact="true" eventEol="true" properties="true">
+        <KeyValuePair key="requestId" value="${ctx:requestId}"/>
+        <KeyValuePair key="userName" value="${ctx:userName}"/>
+      </JsonLayout>
+      <Policies>
+        <OnStartupTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="500MB"/>
+      </Policies>
+      <DefaultRolloverStrategy max="4"/>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Logger name="com.nexage" additivity="false" level="{{ geneva_server_logs_logger_level_com_nexage }}">
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Logger name="com.ssp.geneva" additivity="false" level="{{ geneva_server_logs_logger_level_com_ssp_geneva }}">
+          <AppenderRef ref="rollingFile"/>
+        </Logger>
+    <Logger name="com.nexage.dw.report" additivity="false" level="{{ geneva_server_logs_logger_level_com_nexage_dw_report }}">
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Logger name="org.springframework" additivity="false" level="{{ geneva_server_logs_logger_level_org_springframework }}">
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Logger name="org.springframework.data" additivity="false" level="{{ geneva_server_logs_logger_level_org_springframework_data }}">
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Logger name="org.springframework.security" additivity="false" level="{{ geneva_server_logs_logger_level_org_springframework_security }}">
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Logger name="org.hibernate" additivity="false" level="{{ geneva_server_logs_logger_level_org_hibernate }}">
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Logger name="org.hibernate.SQL_SLOW" additivity="false" level="{{ geneva_server_logs_logger_level_org_hibernate_slow_sql }}">
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Logger name="org.hibernate.sql" additivity="false" level="{{ geneva_server_logs_logger_level_org_hibernate_sql }}">
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Root level="{{ geneva_server_logs_root_level }}">
+      <AppenderRef ref="rollingFile"/>
+    </Root>
+  </Loggers>
+</Configuration>

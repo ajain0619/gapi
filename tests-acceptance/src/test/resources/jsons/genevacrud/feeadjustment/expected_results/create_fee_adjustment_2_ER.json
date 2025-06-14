@@ -1,0 +1,25 @@
+{
+  "pid": 6,
+  "name": "test-fee-adjustment-2",
+  "inclusive": true,
+  "demandFeeAdjustment": 0.2,
+  "version": 0,
+  "enabled": true,
+  "description": "A test fee adjustment.",
+  "feeAdjustmentSellers": [
+    {
+      "sellerPid": 27,
+      "sellerName": "adserverSellerCompany1"
+    }
+  ],
+  "feeAdjustmentBuyers": [
+    {
+      "buyerPid": 274,
+      "buyerName": "cpi buyer"
+    },
+    {
+      "buyerPid": 261,
+      "buyerName": "acme bidding"
+    }
+  ]
+}

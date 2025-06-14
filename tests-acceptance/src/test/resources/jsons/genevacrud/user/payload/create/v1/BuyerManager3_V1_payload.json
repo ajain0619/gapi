@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 274,
+      "type": "BUYER"
+    }
+  ],
+  "role": "ROLE_MANAGER",
+  "userName": "buyermanager3_V1",
+  "email": "01jdfjgdjgd@rfa.ru",
+  "contactNumber": "8654",
+  "name": "hdfs nexageTestLastName",
+  "title": "hfds",
+  "primaryContact": false
+}

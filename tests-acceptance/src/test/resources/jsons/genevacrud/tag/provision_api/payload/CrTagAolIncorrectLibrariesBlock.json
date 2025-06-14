@@ -1,0 +1,84 @@
+{
+  "name": "AV309",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "libraries": [
+      {
+        "pid": 17,
+        "name": "new2",
+        "version": 1,
+        "publisherPid": 10090010,
+        "privilegeLevel": "PUBLISHER",
+        "isDefaultEligible": false,
+        "groups": [
+          {
+            "pid": 22,
+            "name": "new2",
+            "version": 0,
+            "publisherPid": 10090010,
+            "privilegeLevel": "PUBLISHER",
+            "data": "",
+            "itemType": "ADOMAIN",
+            "listType": "BLOCKLIST",
+            "isIndividualsGroup": false
+          },
+          {
+            "pid": 23,
+            "name": "new2",
+            "version": 0,
+            "publisherPid": 10090010,
+            "privilegeLevel": "PUBLISHER",
+            "data": "IAB1",
+            "itemType": "CATEGORY",
+            "listType": "BLOCKLIST",
+            "isIndividualsGroup": false
+          }
+        ]
+      },
+      {
+        "pid": 16,
+        "name": "new1",
+        "version": 1,
+        "publisherPid": 10090010,
+        "privilegeLevel": "PUBLISHER",
+        "isDefaultEligible": false,
+        "groups": [
+          {
+            "pid": 21,
+            "name": "new1",
+            "version": 0,
+            "publisherPid": 10090010,
+            "privilegeLevel": "PUBLISHER",
+            "data": "IAB1",
+            "itemType": "CATEGORY",
+            "listType": "BLOCKLIST",
+            "isIndividualsGroup": false
+          },
+          {
+            "pid": 20,
+            "name": "new1",
+            "version": 0,
+            "publisherPid": 10090010,
+            "privilegeLevel": "PUBLISHER",
+            "data": "",
+            "itemType": "ADOMAIN",
+            "listType": "WHITELIST",
+            "isIndividualsGroup": false
+          }
+        ]
+      }
+    ],
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

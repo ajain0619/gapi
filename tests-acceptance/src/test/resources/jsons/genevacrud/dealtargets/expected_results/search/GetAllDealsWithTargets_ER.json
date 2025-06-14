@@ -1,0 +1,662 @@
+[
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "Fixed",
+    "bidders": [
+
+    ],
+    "createdBy": 2,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1442225178554269962",
+    "description": "1) Deal with all feature enabled",
+    "floor": 1000,
+    "pacingEnabled": false,
+    "pid": 1,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1442314800000,
+    "status": "Active",
+    "stop": 1443697199000,
+    "targets": [
+
+    ],
+    "visibility": true
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "None",
+    "bidders": [
+
+    ],
+    "createdBy": 2,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1442225207489410042",
+    "description": "Deal with all feature disabled",
+    "pacingEnabled": false,
+    "pid": 2,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1442314800000,
+    "status": "Active",
+    "stop": 1458298799000,
+    "targets": [
+
+    ],
+    "visibility": false
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "None",
+    "bidders": [
+
+    ],
+    "createdBy": 2,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "144222524111424355",
+    "description": "Deal with end never",
+    "floor": 1000,
+    "pacingEnabled": false,
+    "pid": 3,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1447160400000,
+    "status": "Active",
+    "targets": [
+
+    ],
+    "visibility": false
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "None",
+    "bidders": [
+
+    ],
+    "createdBy": 2,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1442225265641702149",
+    "description": "Enabled deal",
+    "pacingEnabled": false,
+    "pid": 4,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1442228400000,
+    "status": "Active",
+    "stop": 1455886799000,
+    "targets": [
+
+    ],
+    "visibility": false
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "None",
+    "bidders": [
+
+    ],
+    "createdBy": 2,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1442225289467393435",
+    "description": "Disabled deal",
+    "pacingEnabled": false,
+    "pid": 5,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1444820400000,
+    "status": "Inactive",
+    "stop": 1463137199000,
+    "targets": [
+
+    ],
+    "visibility": true
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "Fixed",
+    "bidders": [
+
+    ],
+    "createdBy": 2,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1442225326900112319",
+    "description": "Deal with 3 suppliers",
+    "floor": 1000,
+    "pacingEnabled": false,
+    "pid": 6,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1442228400000,
+    "status": "Active",
+    "targets": [
+
+    ],
+    "visibility": false
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "Fixed",
+    "bidders": [
+      {
+        "adomains": [
+
+        ],
+        "bidderPid": 1,
+        "pid": 1,
+        "wseat": [
+          "2121212121"
+        ]
+      }
+    ],
+    "createdBy": 2,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1457031635254364732",
+    "description": "ArchivedTagTest-EnabledDeal",
+    "floor": 1,
+    "pacingEnabled": false,
+    "pid": 7,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1456981200000,
+    "status": "Active",
+    "targets": [
+      {
+        "data": "chn/*,usa/ma",
+        "ruleType": "POSITIVE",
+        "targetType": "COUNTRY_STATE"
+      },
+      {
+        "data": "male/18/*,female/18/*",
+        "ruleType": "POSITIVE",
+        "targetType": "GENDER_AGE"
+      },
+      {
+        "data": "sdk/6.3.0/6.3.1",
+        "paramName": "foo",
+        "ruleType": "POSITIVE",
+        "targetType": "SDK_VERSION"
+      },
+      {
+        "data": "alcatel/*,huawei/*",
+        "ruleType": "POSITIVE",
+        "targetType": "DEVICE_MAKE_MODEL"
+      },
+      {
+        "data": "android/*/2.1,ios/*/*",
+        "ruleType": "POSITIVE",
+        "targetType": "DEVICE_OS_VERSION"
+      }
+    ],
+    "visibility": true
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "None",
+    "bidders": [
+
+    ],
+    "createdBy": 2,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1457031762001880712",
+    "description": "ArchivedTagTest-DisabledDeal",
+    "pacingEnabled": false,
+    "pid": 8,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1456981200000,
+    "status": "Inactive",
+    "targets": [
+
+    ],
+    "visibility": true
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "None",
+    "bidders": [
+
+    ],
+    "createdBy": 2,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1457031857582262189",
+    "description": "ArchivedTagTest-FutureDeal",
+    "pacingEnabled": false,
+    "pid": 9,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1457326800000,
+    "status": "Active",
+    "stop": 1457413199000,
+    "targets": [
+
+    ],
+    "visibility": false
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "None",
+    "bidders": [
+
+    ],
+    "createdBy": 2,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1457031911582269943",
+    "description": "ArchivedTagTest-ExpiredDeal",
+    "pacingEnabled": false,
+    "pid": 10,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1456981200000,
+    "status": "Active",
+    "stop": 1457067599000,
+    "targets": [
+
+    ],
+    "visibility": false
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "None",
+    "bidders": [
+
+    ],
+    "createdBy": 781,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1446629641836763650",
+    "description": "requiredFieldsTest",
+    "floor": 100,
+    "pid": 11,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1446613200000,
+    "status": "Inactive",
+    "stop": 1452315599000,
+    "targets": [
+      {
+        "data": "alcatel/*,huawei/*",
+        "ruleType": "POSITIVE",
+        "targetType": "DEVICE_MAKE_MODEL"
+      },
+      {
+        "data": "chn/*,usa/ma",
+        "ruleType": "POSITIVE",
+        "targetType": "COUNTRY_STATE"
+      },
+      {
+        "data": "sdk/6.3.0/6.3.1",
+        "paramName": "foo",
+        "ruleType": "POSITIVE",
+        "targetType": "SDK_VERSION"
+      },
+      {
+        "data": "android/*/2.1,ios/*/*",
+        "ruleType": "POSITIVE",
+        "targetType": "DEVICE_OS_VERSION"
+      },
+      {
+        "data": "male/18/*,female/18/*",
+        "ruleType": "POSITIVE",
+        "targetType": "GENDER_AGE"
+      }
+    ],
+    "visibility": false
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "None",
+    "bidders": [
+
+    ],
+    "createdBy": 781,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1446629641836763651",
+    "description": "DuplicateTargetsTest",
+    "floor": 100,
+    "pid": 12,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1446613200000,
+    "status": "Inactive",
+    "stop": 1452315599000,
+    "targets": [
+      {
+        "data": "android/*/2.1,ios/6.0/*",
+        "ruleType": "POSITIVE",
+        "targetType": "DEVICE_OS_VERSION"
+      },
+      {
+        "data": "chn/*,usa",
+        "ruleType": "POSITIVE",
+        "targetType": "COUNTRY_STATE"
+      },
+      {
+        "data": "alcatel/*,huawei/*",
+        "ruleType": "POSITIVE",
+        "targetType": "DEVICE_MAKE_MODEL"
+      },
+      {
+        "data": "huawei/honor8",
+        "ruleType": "NEGATIVE",
+        "targetType": "DEVICE_MAKE_MODEL"
+      },
+      {
+        "data": "male/1/13,female/1/16",
+        "ruleType": "NEGATIVE",
+        "targetType": "GENDER_AGE"
+      },
+      {
+        "data": "jpn/*,usa/ma",
+        "ruleType": "NEGATIVE",
+        "targetType": "COUNTRY_STATE"
+      },
+      {
+        "data": "android/*/2.1,ios/10.0/*",
+        "ruleType": "NEGATIVE",
+        "targetType": "DEVICE_OS_VERSION"
+      },
+      {
+        "data": "google/*",
+        "ruleType": "POSITIVE",
+        "targetType": "DEVICE_MAKE_MODEL"
+      },
+      {
+        "data": "male/18/*,female/18/*",
+        "ruleType": "POSITIVE",
+        "targetType": "GENDER_AGE"
+      },
+      {
+        "data": "jpn/*,kor",
+        "ruleType": "POSITIVE",
+        "targetType": "COUNTRY_STATE"
+      },
+      {
+        "data": "sdk/6.3.0/6.3.1",
+        "paramName": "foo",
+        "ruleType": "POSITIVE",
+        "targetType": "SDK_VERSION"
+      }
+    ],
+    "visibility": false
+  },
+  {
+    "allBidders": false,
+    "allSellers": false,
+    "auctionType": "None",
+    "bidders": [
+
+    ],
+    "createdBy": 781,
+    "currency": "USD",
+    "dealCategory": 1,
+    "dealId": "1446629641836763652",
+    "description": "Deal with empty targets",
+    "floor": 100,
+    "pid": 13,
+    "placementFormulaStatus": "DONE",
+    "positions": [
+
+    ],
+    "priorityType": "OPEN",
+    "profiles": [
+
+    ],
+    "publishers": [
+
+    ],
+    "rules": [
+
+    ],
+    "sellers": [
+
+    ],
+    "sites": [
+
+    ],
+    "start": 1446613200000,
+    "status": "Inactive",
+    "stop": 1452315599000,
+    "targets": [
+
+    ],
+    "visibility": false
+  }
+]

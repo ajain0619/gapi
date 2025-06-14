@@ -1,0 +1,18 @@
+{
+  "name": "AV897",
+  "buyer": {
+    "pid": 5136
+  },
+  "ecpmProvision": "Manual",
+  "ecpmManual": 10,
+  "importRevenueFlag": false,
+  "primaryId": "piddarn",
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": [],
+  "width": 320,
+  "height": 480,
+
+  "videoSupport": "VIDEO"
+}

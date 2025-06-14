@@ -1,0 +1,15 @@
+fluentd_log_level: info
+fluentd_platform_name: geneva-platform
+fluentd_app_name: geneva-api
+fluentd_s3_consolidatedlogging_bucket: "ads-splunk-log-intake-bucket-502743749862"
+fluentd_s3_acl: bucket-owner-full-control
+fluentd_s3_store_as: gzip
+fluentd_s3_encryption: AES256
+fluentd_s3_time_slice_format: "%Y.%m.%d"
+fluentd_s3_check_bucket: false
+fluentd_s3_check_object: false
+fluentd_s3_buffer_timekey: 15m
+fluentd_s3_buffer_timekey_wait: 600s
+fluentd_s3_buffer_chunk_limit_size: 20MB
+fluentd_s3_logstash_timestamp_format: "%Y-%m-%dT%H:%M:%S.%3NZ"
+fluentd_s3_logstash_timestamp_localtime: false

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName)*/
+        c.id AS publisherId,
+        f.site_id AS siteId,
+        d.name AS site,
+        c.name AS publisher,
+        IFNULL(p.name, 'Direct') AS hbPartnerName,
+        SUM(f.revenue) AS totalRevenue,
+        SUM(f.revenue_gross) AS grossRevenue,
+        SUM(CASE adnet_id IN (:exchangeIds) WHEN TRUE THEN f.revenue_gross ELSE 0 END) AS grossRevenueRtb,
+        SUM(CASE adnet_id NOT IN (:exchangeIds) WHEN TRUE THEN f.revenue_gross ELSE 0 END) AS grossRevenueMediation,
+        SUM(f.revenue_net) AS netRevenue,
+        SUM(CASE adnet_id IN (:exchangeIds) WHEN TRUE THEN f.revenue_net ELSE 0 END) AS netRevenueRtb,
+        SUM(CASE adnet_id NOT IN (:exchangeIds) WHEN TRUE THEN f.revenue_net ELSE 0 END) AS netRevenueMediation,
+        SUM(f.revenue_gross - f.revenue_net) AS costOfSales,
+        SUM(CASE adnet_id IN (:exchangeIds) WHEN TRUE THEN f.revenue_gross - f.revenue_net ELSE 0 END) AS costOfSalesRtb,
+        SUM(CASE adnet_id NOT IN (:exchangeIds) WHEN TRUE THEN f.revenue_gross - f.revenue_net ELSE 0 END) AS costOfSalesMediation,
+        SUM(f.ads_requested_site) AS adRequests,
+        SUM(f.ads_served) AS adServed,
+        SUM(f.ads_clicked) AS adClicks,
+        SUM(f.ads_delivered) AS adDelivered
+    FROM fact_revenue_adnet_vw_daily f
+    INNER JOIN dim_site d ON d.id = f.site_id
+    INNER JOIN dim_company c ON c.id = d.company_id
+    LEFT JOIN dim_hb_partner p ON p.pid = f.hb_partner_pid
+    WHERE f.start >= :start
+        AND f.start < :stop
+        AND (f.tag_monetization = 1 OR f.tag_monetization = - 1)
+    GROUP BY f.site_id, c.id,p.name, d.name, c.name
+      ]]>
+  </entry>
+</properties>

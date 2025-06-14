@@ -1,0 +1,24 @@
+{
+  "pid": 8853850346169520000,
+  "version": 1,
+  "name": "hAn9hj7G9ZZ1o3i2xNZX87yzfbK4qSyT",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "mraidAdvancedTracking": true,
+  "videoLinearity": "LINEAR",
+  "status": "ACTIVE",
+  "trafficType": "MEDIATION",
+  "placementVideo": {
+    "pid": 1,
+    "version": 1,
+    "linearity": "LINEAR",
+    "playerRequired": true,
+    "playerHeight": 320,
+    "playerWidth": 480,
+    "longform": true,
+    "multiImpressionBid": false,
+    "competitiveSeparation": false,
+    "streamType": "VOD",
+    "playerBrand": "test_player_brand",
+    "ssai": "UNKNOWN"
+  }
+}

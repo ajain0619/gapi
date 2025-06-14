@@ -1,0 +1,38 @@
+[
+  {
+    "pid": 60997,
+    "rtbProfilePid": 60997,
+    "description": "Private Exchange (Videology). Video - UK",
+    "auctionType": 0,
+    "defaultReserve": 12.83,
+    "lowReserve": 10.0,
+    "pubAlias": 1263,
+    "siteAlias": 24298,
+    "pubNameAlias": "Rovio",
+    "siteNameAlias": "Rovio Games - Android - Interstitial",
+    "siteType": "A",
+    "isRealName": "false",
+    "siteId": 24298,
+    "siteName": "Rovio-00-Private Exchange - Android - Interstitial",
+    "pubId": 1263,
+    "pubName": "Rovio",
+    "tagPid": 635610,
+    "categories": [
+      "IAB6"
+    ],
+    "countries": [
+      {
+        "pid": 763,
+        "target": "usa",
+        "targetType": "Keyword",
+        "ruleType": "Country"
+      }
+    ],
+    "platform": "IPHONE",
+    "videoSupport": "VIDEO",
+    "height": 300,
+    "width": 250,
+    "placementType": "INSTREAM_VIDEO",
+    "placementName": "position1"
+  }
+]

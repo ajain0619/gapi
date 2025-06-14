@@ -1,0 +1,36 @@
+{
+  "qwe": 123,
+  "asd": 555,
+  "pid": 3394,
+  "version": 5,
+  "site": {
+    "pid": 963
+  },
+  "name": "Nexage-Adserver - test8d - updated",
+  "ecpmAuto": 0,
+  "ecpmManual": 555,
+  "owner": "Publisher",
+  "status": "ACTIVE",
+  "buyer": {
+    "pid": 5669
+  },
+  "position": {
+    "pid": 14730
+  },
+  "primaryId": "test8d",
+  "primaryName": "8d",
+  "ecpmProvision": "Manual",
+  "tagType": "Mediation",
+  "type": "Mediation",
+  "publisherPid": 105,
+  "adNetReportUserName": "qwe",
+  "adNetReportPassword": "asd",
+  "rules": [
+    {
+      "targetType": "Keyword",
+      "ruleType": "Country",
+      "data": "AGO,BDI,BEN,BFA,BWA,CAF,CIV,CMR,COD,COG,COM,CPV,DJI,DZA,EGY,ERI,ESH,ETH,GAB,GHA,GIN,GMB,GNB,GNQ,KEN,LBR,LBY,LSO,MAR,MDG,MLI,MOZ,MRT,MUS,MWI,MYT,NAM,NER,NGA,REU,RWA,SDN,SEN,SHN,SLE,SOM,SSD,STP,SWZ,SYC,TCD,TGO,TUN,TZA,UGA,ZAF,ZMB,ZWE"
+    }
+  ],
+  "monetization": true
+}

@@ -1,0 +1,15 @@
+{
+  "pid": 100246,
+  "version": 3,
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "UpdateCase123",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "UNDEFINED",
+  "mraidAdvancedTracking": true,
+  "placementCategory": "BANNER",
+  "width": 0
+}

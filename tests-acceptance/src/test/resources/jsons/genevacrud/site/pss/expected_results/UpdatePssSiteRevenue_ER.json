@@ -1,0 +1,50 @@
+{
+  "publisher": {
+    "pid": 105
+  },
+  "description": "updated site for revenue",
+  "domain": "domain.com",
+  "name": "revenueSite",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "revaloriuse.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB2"
+  ],
+  "mode": "LIVE",
+  "appBundle": "",
+  "consumerProfileContributed": true,
+  "consumerProfileUsed": true,
+  "ethnicityMap": "afr=0,asian=1,hisp=2,wh=3,oth=4",
+  "genderMap": "a1=M",
+  "inputDateFormat": "123456780",
+  "maritalStatusMap": "single=S,married=M,divorced=D,other=O",
+  "overrideIP": false,
+  "totalTimeout": 90,
+  "trafficThrottle": 55,
+  "buyerTimeout": 100,
+  "impressionGroup": {
+    "enabled": true,
+    "groups": [
+      "EnBarraquillaMeQuedo"
+    ]
+  },
+  "rtb1CategoryRollup": "IAB2",
+  "adTruthEnabled": false,
+  "globalAliasName": "globAliN",
+  "metadataEnablement": false,
+  "hbEnabled": true,
+  "adScreeningEnabled": false,
+  "reportBatchSize": 2,
+  "reportFrequency": 15000,
+  "rulesUpdateFrequency": 15000,
+  "filterBots": false,
+  "daysFree": 0,
+  "passthruParameters": [],
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.13,
+    "rtbFee": 0.12
+  }
+}

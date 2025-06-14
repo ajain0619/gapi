@@ -1,0 +1,30 @@
+{
+  "pid": 10000028,
+  "rtbProfilePid": 10000028,
+  "description": "DealTagTest-PSS-InstreamVideo",
+  "auctionType": 2,
+  "defaultReserve": 1.00000000,
+  "pubAlias": "10201",
+  "siteAlias": "10000176",
+  "pubNameAlias": "CRUDPositionTest",
+  "siteNameAlias": "CRUDPosition_Site3",
+  "siteType": "W",
+  "isRealName": "false",
+  "siteId": 10000176,
+  "siteName": "CRUDPosition_Site3",
+  "categories": [
+    "IAB4"
+  ],
+  "countries": [],
+  "platform": "OTHER",
+  "pubId": 10201,
+  "pubName": "CRUDPositionTest",
+  "tagPid": 7356,
+  "tagName": "DealTagTest-PSS-InstreamVideo",
+  "height": 320,
+  "width": 480,
+  "videoSupport": "VIDEO",
+  "placementType": "INSTREAM_VIDEO",
+  "placementName": "DealTagTest-InstreamVideo",
+  "placementPid": 100285
+}

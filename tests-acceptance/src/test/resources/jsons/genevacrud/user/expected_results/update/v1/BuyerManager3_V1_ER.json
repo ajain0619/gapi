@@ -1,0 +1,19 @@
+{
+  "id": "ff8080810151510f18db1ad10a7f03ed",
+  "pid": 733,
+  "userName": "buyermanager3",
+  "name": "buyer manager3 updated",
+  "email": "1jdfjgdjgd@rfa.ru",
+  "contactNumber": "8654213",
+  "title": "Mr",
+  "role": "ROLE_MANAGER",
+  "enabled": true,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 274,
+      "type": "BUYER",
+      "name": "cpi buyer"
+    }
+  ]
+}

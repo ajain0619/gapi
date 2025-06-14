@@ -1,0 +1,10 @@
+{
+  "placementCategory": "MEDIUM_RECTANGLE",
+  "memo": "behavelikeclark",
+  "name": "behavelikeclark",
+  "screenLocation": "FOOTER_VISIBLE",
+  "width": 300,
+  "height": 250,
+  "mraidSupport": "YES",
+  "interstitial": false
+}

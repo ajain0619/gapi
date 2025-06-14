@@ -1,0 +1,26 @@
+{
+  "pid": 7,
+  "name": "BPruleWithBidTargets",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "1.00"
+    }
+  ],
+  "targets": [
+    {
+      "pid": 84,
+      "version": 1,
+      "status": "INACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "REGION",
+      "data": "white"
+    }
+  ],
+  "assignments": {
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "site": {
+    "pid": 10000207
+  },
+  "name": "paganini",
+  "status": "ACTIVE",
+  "ecpmAuto": 0,
+  "ecpmManual": 1,
+  "ecpmProvision": "Manual",
+  "owner": "Publisher",
+  "primaryId": "ad",
+  "monetization": true,
+  "selfServeEnablement": "NONE",
+  "importRevenueFlag": false,
+  "type": "Mediation",
+  "buyer": {
+    "pid": 4252
+  },
+  "position": {
+    "pid": 100329
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

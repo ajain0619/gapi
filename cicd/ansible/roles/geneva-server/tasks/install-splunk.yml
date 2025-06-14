@@ -1,0 +1,19 @@
+- name: Include Splunk vars
+  include_vars:
+    file: splunk.yml
+- name: Create Splunk dir
+  file:
+    path: "{{ splunk_forwarder_lib_path }}"
+    state: directory
+    owner: "{{ geneva_server_app_user }}"
+    group: "{{ geneva_server_app_group }}"
+    mode: 0755
+- name: Download Splunk Forwarder
+  get_url:
+    url: "https://artifactory.ouroath.com/artifactory/vendor_rpms/splunk/rhel/7Server/x86_64/release/Packages/splunkforwarder-{{ geneva_server_splunk_version }}.rpm"
+    dest: "{{ splunk_forwarder_lib_path }}/{{ splunk_forwarder_lib_file_name }}"
+    mode: 0440
+- name: Install Splunk
+  yum:
+    name: "{{ splunk_forwarder_lib_path }}/{{ splunk_forwarder_lib_file_name }}"
+    state: present

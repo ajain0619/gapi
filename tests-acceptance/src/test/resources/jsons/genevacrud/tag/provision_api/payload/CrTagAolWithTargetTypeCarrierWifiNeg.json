@@ -1,0 +1,39 @@
+{
+  "name": "AV68",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": [
+    {
+      "targetType": "Keyword",
+      "ruleType": "DeviceMakeModel",
+      "data": "Alcatel/*"
+    },
+    {
+      "targetType": "NegKeyword",
+      "ruleType": "OsVersion",
+      "data": "iOS/*/*"
+    },
+    {
+      "targetType": "NegKeyword",
+      "ruleType": "CarrierWifi",
+      "data": "WIFI"
+    },
+    {
+      "targetType": "Keyword",
+      "ruleType": "Country",
+      "data": "USA"
+    }
+  ]
+}

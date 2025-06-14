@@ -1,0 +1,28 @@
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+    </Console>
+    <RollingFile name="rollingFile" fileName="target/tests-acceptance.log"
+      ignoreExceptions="false" filePattern="target/tests-acceptance.%i.log">
+      <PatternLayout>
+        <Pattern>%-5p %d{yyyy-MM-dd HH:mm:ss} %c{1}:%L - [%m]%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <OnStartupTriggeringPolicy />
+        <SizeBasedTriggeringPolicy size="25MB" />
+      </Policies>
+      <DefaultRolloverStrategy max="4" />
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Logger name="com.nexage" additivity="false" level="INFO">
+      <AppenderRef ref="Console" />
+      <AppenderRef ref="rollingFile"/>
+    </Logger>
+    <Root level="ERROR">
+      <AppenderRef ref="Console" />
+      <AppenderRef ref="rollingFile" />
+    </Root>
+  </Loggers>
+</Configuration>

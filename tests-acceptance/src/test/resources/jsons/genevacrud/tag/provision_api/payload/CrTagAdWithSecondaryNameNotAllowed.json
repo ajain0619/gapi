@@ -1,0 +1,19 @@
+{
+  "name": "AV99",
+  "buyer": {
+    "pid": "4252"
+  },
+  "primaryId": "pid",
+  "secondaryName": "sname",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "Username",
+  "adNetReportPassword": "Password",
+  "adNetReportApiKey": "08112017",
+  "adNetReportApiToken": "08112018",
+  "tagController": {
+    "autoExpand": false
+  }
+}

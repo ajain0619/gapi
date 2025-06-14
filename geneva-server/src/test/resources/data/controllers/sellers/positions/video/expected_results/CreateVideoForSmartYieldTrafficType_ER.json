@@ -1,0 +1,17 @@
+{
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "SmartYieldTrafficTypeVideoTest_Linear",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO",
+  "screenLocation": "UNDEFINED",
+  "mraidAdvancedTracking": true,
+  "videoLinearity": "LINEAR",
+  "height": 1000,
+  "width": 2000,
+  "status": "ACTIVE",
+  "placementCategory": "INSTREAM_VIDEO",
+  "trafficType": "SMART_YIELD"
+}

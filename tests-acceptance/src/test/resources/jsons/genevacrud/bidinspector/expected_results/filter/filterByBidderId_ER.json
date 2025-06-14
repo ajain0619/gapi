@@ -1,0 +1,46 @@
+{
+  "content": [
+    {
+      "appBundleId": 789,
+      "appBundleName": null,
+      "auctionRunHashId": "45670",
+      "bidCount": "3",
+      "bidderId": 13807,
+      "dealId": "P678",
+      "hbPartnerPid": 7899,
+      "placementId": 678,
+      "recordTime": "2019-03-11 15:34:10",
+      "requestPayload": "{\"bidderId\":13807,\"url\":\"https://reserved.v.ssp.yahoo.com/reserved?ext_id=SSPMigration\",\"auction\":\"e7d09415c18041b7b5d3ccc5cc9e9d6d\",\"id\":\"e7d09415c18041b7b5d3ccc5cc9e9d6d\"}",
+      "requestUrl": "https://web-oao.ssp.yahoo.com/admax/adServe.do?dcn=8a969d89017777d9dbe1dce95685004f",
+      "responsePayload": "{\"bidderId\":13807,\"url\":\"null\",\"auction\":\"e7d09415c18041b7b5d3ccc5cc9e9d6d\",\"id\":\"e7d09415c18041b7b5d3ccc5cc9e9d6d\",\"cur\":\"USD\"}",
+      "seatId": "abc900",
+      "sellerId": 67,
+      "siteId": 458
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

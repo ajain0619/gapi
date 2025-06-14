@@ -1,0 +1,11 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "monday",
+  "name": "monday",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 500,
+  "height": 400,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "interstitial": true
+}

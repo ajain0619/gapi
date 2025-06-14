@@ -1,0 +1,17 @@
+{
+  "name": "AV291",
+  "buyer": {
+    "pid": "4252"
+  },
+  "adNetReportUserName": "username",
+  "adNetReportPassword": "password",
+  "adNetReportApiKey": "12324",
+  "adNetReportApiToken": "243",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "tagController": {
+    "autoExpand": false
+  },
+  "primaryId": "piztes"
+}

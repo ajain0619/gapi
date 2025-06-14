@@ -1,0 +1,272 @@
+{
+  "content": [
+    {
+      "id": "8a859e0f013a3abdee81c27f6aef0005",
+      "pid": 261,
+      "version": 4,
+      "name": "acme bidding",
+      "type": "BUYER",
+      "website": "www.acme.com",
+    },
+    {
+      "id": "8a809449012f2ee2fbcc01c46f32001a",
+      "pid": 664,
+      "version": 3,
+      "name": "AdFonic",
+      "type": "BUYER",
+      "website": "http://www.adfonic.com",
+      "description": "AdFonic - RTB"
+    },
+    {
+      "id": "ff808081014f4feee094ef16dca1005d",
+      "pid": 10205,
+      "version": 1,
+      "name": "another buyer",
+      "type": "BUYER",
+      "website": "www.qqq.com",
+      "description": "test"
+    },
+    {
+      "id": "8a858a4b013b3b1a2e001a3093090005",
+      "pid": 300,
+      "version": 3,
+      "name": "asdf",
+      "type": "BUYER",
+      "website": "asdf",
+    },
+    {
+      "id": "8a859e0f013b3b761d5a76b589ff000f",
+      "pid": 352,
+      "version": 2,
+      "name": "athens1buyer1",
+      "type": "BUYER",
+      "website": "www.athens1buyer1.com",
+      "description": "This is a buyer company to test access permissions"
+    },
+    {
+      "id": "8a859e0f013b3b761d5a76b93aae0012",
+      "pid": 365,
+      "version": 3,
+      "name": "athens1buyer2",
+      "type": "BUYER",
+      "website": "www.athens1buyer2.com",
+      "description": "This is buyer2  created for access permissions testing"
+    },
+    {
+      "id": "BUYER-1",
+      "pid": 10001,
+      "version": 1,
+      "name": "Buyer1",
+      "type": "BUYER",
+      "website": "www.buyer1.com",
+      "description": "Test Buyer 1"
+    },
+    {
+      "id": "BUYER-2",
+      "pid": 10002,
+      "version": 1,
+      "name": "Buyer2",
+      "type": "BUYER",
+      "website": "www.buyer2.com",
+      "description": "Test Buyer 2"
+    },
+    {
+      "id": "BUYER-3",
+      "pid": 10003,
+      "version": 1,
+      "name": "Buyer3",
+      "type": "BUYER",
+      "website": "www.buyer3.com",
+      "description": "Test Buyer 3"
+    },
+    {
+      "id": "BUYER-4",
+      "pid": 10004,
+      "version": 1,
+      "name": "Buyer4",
+      "type": "BUYER",
+      "website": "www.buyer4.com",
+      "description": "Test Buyer 4"
+    },
+    {
+      "id": "BUYER-5",
+      "pid": 10005,
+      "version": 1,
+      "name": "Buyer5",
+      "type": "BUYER",
+      "website": "www.buyer5.com",
+      "description": "Test Buyer 5"
+    },
+    {
+      "id": "BUYER-6",
+      "pid": 10006,
+      "version": 1,
+      "name": "Buyer6",
+      "type": "BUYER",
+      "website": "www.buyer6.com",
+      "description": "Test Buyer 6"
+    },
+    {
+      "id": "8a859e0f013b3b6bd74e6c5b88250005",
+      "pid": 326,
+      "version": 1,
+      "name": "consolidated bidding",
+      "type": "BUYER",
+      "website": "http://www.conbid.com",
+      "description": "test creating company"
+    },
+    {
+      "id": "8a859e0f013a3ad6170edc7e563f0005",
+      "pid": 274,
+      "version": 7,
+      "name": "cpi buyer",
+      "type": "BUYER",
+      "website": "http://www.nexage.com",
+    },
+    {
+      "id": "8a859e06014f4fd97b68dbce88400007",
+      "pid": 10200,
+      "version": 1,
+      "name": "CreateCompany20150917105726538",
+      "type": "BUYER",
+      "website": "aa",
+      "description": "ddd"
+    },
+    {
+      "id": "8a809449012f2f35efa846b08a1c04b6",
+      "pid": 638,
+      "version": 4,
+      "name": "DataXu",
+      "type": "BUYER",
+      "website": "http://dataxu.com",
+    },
+    {
+      "id": "8a859e06015a5aa61078aaac5c1c06a1",
+      "pid": 10222,
+      "version": 1,
+      "name": "debtestbuyer",
+      "type": "BUYER",
+      "website": "debtestbuyer.com",
+      "description": ""
+    },
+    {
+      "id": "8a859e0f01414113c21713d588370003",
+      "pid": 10024,
+      "version": 0,
+      "name": "MedFTBuyer",
+      "type": "BUYER",
+      "website": "MedFTBuyer",
+      "description": "Umbrella for FT adnets"
+    },
+    {
+      "id": "8a859e06015252869e448a64ad03007b",
+      "pid": 10211,
+      "version": 0,
+      "name": "Nexage Buyer",
+      "type": "BUYER",
+      "website": "buyer.com",
+      "description": ""
+    },
+    {
+      "id": "8a859e0f014343c00115c0fc8f6f000c",
+      "pid": 10102,
+      "version": 1,
+      "name": "pr_buyer_test",
+      "type": "BUYER",
+      "website": "prbuyer.com",
+      "description": "for ELD agenda and source FT"
+    },
+    {
+      "id": "8a859e0f013c3c07937a211d8f200005",
+      "pid": 378,
+      "version": 4,
+      "name": "RTB Buyer 1",
+      "type": "BUYER",
+      "website": "http://www.rtbbuyer1.com/",
+      "description": "This company is used for testing rtb reports"
+    },
+    {
+      "id": "8a859e0f013c3c2170bd25b13fb80005",
+      "pid": 417,
+      "version": 2,
+      "name": "RTB Buyer 2",
+      "type": "BUYER",
+      "website": "http://www.rtbbuyer2.com/",
+      "description": "RTB Buyer 2"
+    },
+    {
+      "id": "8a859e0f013c3c3964873b23dc610005",
+      "pid": 430,
+      "version": 0,
+      "name": "rtb_integration_buyer",
+      "type": "BUYER",
+      "website": "http://rtb_integration_buyer.com",
+      "description": "rtb_integration_buyer"
+    },
+    {
+      "id": "8a859e0f013d3d031e05039633320008",
+      "pid": 742,
+      "version": 1,
+      "name": "srinibuyer",
+      "type": "BUYER",
+      "website": "www.srinibuyer.com",
+      "description": "This is a srini buyer"
+    },
+    {
+      "id": "ff808081016261fe1521016469cb0005",
+      "pid": 10230,
+      "version": 1,
+      "name": "test",
+      "type": "BUYER",
+      "website": "test",
+      "description": ""
+    },
+    {
+      "description": "A Test API Buyer Company",
+      "id": "ff8081810142427b6ca17b712a1f0004",
+      "name": "Test API Buyer Company",
+      "pid": 10234,
+      "type": "BUYER",
+      "version": 1,
+      "website": "http://www.crudapibuyer.com"
+    },
+    {
+      "id": "ff808081014f4feee094ef1664b5005b",
+      "pid": 10204,
+      "version": 1,
+      "name": "testBuyer",
+      "type": "BUYER",
+      "website": "www.yyy.com",
+      "description": "test"
+    },
+    {
+      "id": "8a858a23014444db418fdb43c5410003",
+      "pid": 10141,
+      "version": 1,
+      "name": "test_PR4011",
+      "type": "BUYER",
+      "website": "www.test_PR4011.com",
+      "description": "testing"
+    },
+    {
+      "id": "8a859e0f014444d6c7ced6c982d70003",
+      "pid": 10115,
+      "version": 1,
+      "name": "velocity template buyer test",
+      "type": "BUYER",
+      "website": "velocitybuyer.com",
+    }
+  ],
+  "totalPages": 1,
+  "totalElements": 29,
+  "last": true,
+  "numberOfElements": 29,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "first": true,
+  "size": 1000,
+  "number": 0
+}

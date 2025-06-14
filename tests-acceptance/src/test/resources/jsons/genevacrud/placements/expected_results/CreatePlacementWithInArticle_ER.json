@@ -1,0 +1,27 @@
+{
+  "site": {
+    "pId": 10000192,
+    "type": "MOBILE_WEB"
+  },
+  "name": "createplacementwithinarticle",
+  "memo": "CreatePlacementWithInArticleAlias",
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "screenLocation": "UNKNOWN",
+  "mraidAdvancedTracking": true,
+  "videoLinearity": "LINEAR",
+  "positionAliasName": "CreatePlacementWithInArticleAlias",
+  "height": 400,
+  "width": 1400,
+  "status": "ACTIVE",
+  "interstitial": false,
+  "placementCategory": "IN_ARTICLE",
+  "trafficType": "MEDIATION",
+  "impressionTypeHandling": "BASED_ON_PLACEMENT_CONFIG",
+  "placementVideo": {
+    "linearity": "LINEAR",
+    "playerRequired": true,
+    "playerHeight": 100,
+    "playerWidth": 100,
+    "longform": false  }
+}

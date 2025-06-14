@@ -1,0 +1,29 @@
+{
+  "allBidders": false,
+  "allSellers": false,
+  "auctionType": "FloorPrice",
+  "bidders": [],
+  "currency": "USD",
+  "dealId": "InventoryDeal",
+  "description": "Inventory Test Deal",
+  "positions": [],
+  "priorityType": "OPEN",
+  "profiles": [],
+  "publishers": [],
+  "rules": [
+    {
+      "rulePid": 1
+    }
+  ],
+  "sellers": [],
+  "sites": [
+    {
+      "pid": 4,
+      "sitePid": 10000184
+    }
+  ],
+  "start": 1582693200000,
+  "status": "Active",
+  "visibility": false,
+  "placementFormulaStatus": "DONE"
+}

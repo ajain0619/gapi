@@ -1,0 +1,12 @@
+[Unit]
+Description=geneva-server
+After=syslog.target network.target cloud-init-local.service cloud-init.service cloud-final.service
+
+[Service]
+TimeoutStartSec=600
+ExecStart={{ geneva_server_home }}/bin/start
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

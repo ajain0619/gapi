@@ -1,0 +1,12 @@
+newrelic_infra_license_key: '6ca51ca8124e1a287ceb70f3e0f9bdd2FFFFNRAL'
+newrelic_infra_lib_path: /etc
+newrelic_infra_repo_path: /etc/yum.repos.d
+newrelic_infra_repo_baseurl: "https://download.newrelic.com/infrastructure_agent/linux/yum/el/7/$basearch"
+newrelic_infra_repo_gpg_check: "1"
+newrelic_infra_gpg_key_path: "https://download.newrelic.com/infrastructure_agent/gpg/newrelic-infra.gpg"
+newrelic_infra_gpg_check: "1"
+newrelic_infra_agent_package: newrelic-infra
+newrelic_fluent_bit: fluent-bit
+newrelic_infra_custom_attributes_namespace: ssp
+newrelic_infra_custom_attributes_service: geneva-api
+newrelic_infra_custom_attributes_platform: geneva-platform

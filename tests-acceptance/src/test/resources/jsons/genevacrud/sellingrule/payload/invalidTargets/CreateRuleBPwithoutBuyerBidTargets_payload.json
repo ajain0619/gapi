@@ -1,0 +1,41 @@
+{
+  "name": "withoutBuyerBidTargets",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "REGION",
+      "data": "supplyData1"
+    }
+  ],
+  "assignments": {
+    "publishers": [
+      {
+        "pid": 10225,
+        "name": "transparency_enabled"
+      }
+    ],
+    "sites": [
+      {
+        "pid": 10000202,
+        "name": "aleksis_site"
+      }
+    ],
+    "positions": [
+      {
+        "pid": 100318,
+        "name": "transparency_enabled_position"
+      }
+    ]
+  }
+}

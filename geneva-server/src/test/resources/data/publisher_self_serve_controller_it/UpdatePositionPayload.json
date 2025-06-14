@@ -1,0 +1,32 @@
+{
+  "pid": 100329,
+  "version": 0,
+  "site": {
+    "pid": 10000207,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER",
+    "coppaRestricted":false,
+    "hbEnabled":false,
+    "adTruthEnabled":false,
+    "adScreeningEnabled":false,
+    "filterBots":false,
+    "consumerProfileContributed":false,
+    "consumerProfileUsed":false,
+    "overrideIP":false
+  },
+  "name": "nonDefaultPlacement",
+  "memo": "opium",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 150,
+  "width": 250,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "positionAliasName": "toxicity",
+  "mraidAdvancedTracking": false,
+  "longform": false,
+  "impressionTypeHandling": "BASED_ON_PLACEMENT_CONFIG"
+}

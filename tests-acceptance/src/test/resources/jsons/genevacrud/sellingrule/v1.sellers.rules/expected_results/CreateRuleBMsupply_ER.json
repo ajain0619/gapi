@@ -1,0 +1,66 @@
+{
+  "version": 0,
+  "name": "BMruleWithSupplyTargets",
+  "description": "supplyBMdescription",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10000,
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "assignments": {
+    "publishers": [
+      {
+        "pid": 10000,
+        "name": "Seller1"
+      }
+    ]
+  },
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "REGION",
+      "data": "supplyData3"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "STATE",
+      "data": "supplyData4"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "CITY",
+      "data": "supplyData5"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "GENDER",
+      "data": "F"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "AGE",
+      "data": "18-20"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "AD_SIZE",
+      "data": "1x1"
+    }
+  ]
+}

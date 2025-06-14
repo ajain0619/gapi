@@ -1,0 +1,26 @@
+{
+  "name": "AV011",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 35,
+    "blockedAdCategories": [
+      "IAB1"
+    ],
+    "blockedAdvertisers": [
+      "tut.by"
+    ],
+    "libraries": [],
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "version": 0,
+  "rules": []
+}

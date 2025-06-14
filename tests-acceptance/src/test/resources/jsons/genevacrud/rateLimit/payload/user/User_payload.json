@@ -1,0 +1,18 @@
+{
+  "companies": [
+    {
+      "pid": 105,
+      "type": "SELLER"
+    }
+  ],
+  "enabled": true,
+  "role": "ROLE_ADMIN",
+  "userName": "rateLimitUser1",
+  "email": "01gfxdhxdfh@q.ru",
+  "contactNumber": "jfg",
+  "name": "f",
+  "title": "jhf",
+  "primaryContact": false,
+  "firstName": "first-name",
+  "lastName": "last-name"
+}

@@ -1,0 +1,50 @@
+{
+  "pid": 10000174,
+  "version": 10,
+  "publisher": {
+    "pid": 10201
+  },
+  "description": "test",
+  "domain": "test.com",
+  "name": "CRUDPosition_Site1_update",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "www.test.com",
+  "coppaRestricted": true,
+  "hbEnabled": true,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "positions": [
+    {
+      "pid": 100246,
+      "name": "CRUDPosition_UpdateCases"
+    },
+    {
+      "pid": 100247,
+      "name": "banner_placement"
+    },
+    {
+      "pid": 100248,
+      "name": "interstitial_placement"
+    },
+    {
+      "pid": 100249,
+      "name": "medium_rectangle_placement"
+    },
+    {
+      "pid": 100250,
+      "name": "native_placement"
+    },
+    {
+      "pid": 100251,
+      "name": "instream_video_placement"
+    },
+    {
+      "pid": 100316,
+      "name": "smartYield_updateCases"
+    }
+  ],
+  "mode": "TEST"
+}

@@ -1,0 +1,24 @@
+{
+  "pid": 10000210,
+  "version": 0,
+  "publisher": {
+    "pid": 10228
+  },
+  "description": "site with only new required fields deskription",
+  "domain": "mgb8site.com",
+  "name": "mgb81site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "date.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "LIVE",
+  "appBundle": "",
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.001,
+    "rtbFee": 0.05
+  }
+}

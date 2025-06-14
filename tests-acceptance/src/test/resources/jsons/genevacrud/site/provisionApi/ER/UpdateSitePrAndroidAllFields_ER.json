@@ -1,0 +1,14 @@
+{
+  "name": "Updated_to_android",
+  "description": "andr",
+  "url": "https://play.google.com/store/movies/details/King_Arthur_Legend_of_the_Sword?id=ZiegMySite",
+  "domain": "newJukie",
+  "appBundle": "ZiegMySite",
+  "coppaRestricted": true,
+  "platform": "ANDROID_PHONE_TAB",
+  "iabCategories": [
+    "IAB1",
+    "IAB3"
+  ],
+  "type": "APPLICATION"
+}

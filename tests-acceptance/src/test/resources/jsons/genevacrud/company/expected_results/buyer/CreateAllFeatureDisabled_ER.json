@@ -1,0 +1,14 @@
+{
+  "type": "BUYER",
+  "name": "test name",
+  "website": "www.requered.com",
+  "description": "",
+  "salesforceId": "",
+  "cpiTrackingEnabled": false,
+  "rtbEnabled": false,
+  "mediationEnabled": true,
+  "rtbRevenueReportEnabled": false,
+  "status": "ACTIVE",
+  "currency": "USD",
+  "thirdPartyFraudDetectionEnabled": false
+}

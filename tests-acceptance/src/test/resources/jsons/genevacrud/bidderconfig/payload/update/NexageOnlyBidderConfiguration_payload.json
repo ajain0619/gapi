@@ -1,0 +1,60 @@
+{
+  "adScreeningEnabled": false,
+  "adSizesFilter": [],
+  "adSizesFilterMode": false,
+  "allowBridgeIdMatch": false,
+  "allowIdGraphMatch": true,
+  "allowLiveramp": false,
+  "allowConnectId": false,
+  "allowedDeviceTypes": [],
+  "allowedTraffic": "APPLICATION,MOBILE_WEB",
+  "auctionTypeFilter": 1,
+  "bidRequestCpm": "5",
+  "bidRequestUrl": "qwe",
+  "bidderConfigDenyAllowFilterLists": [],
+  "categoriesFilterMode": false,
+  "companyPid": 300,
+  "countryFilter": "BDI,COM,DJI,ERI,ETH,KEN,MDG,MWI,MUS,MYT,MOZ,REU,RWA,SYC,SOM,SSD,UGA,TZA,ZMB,ZWE,AGO,CMR,CAF,TCD,COG,COD,GNQ,GAB,STP,DZA,EGY,LBY,MAR,SDN,TUN,ESH,BWA,LSO,NAM,ZAF,SWZ,BEN,BFA,CPV,CIV,GMB,GHA,GIN,GNB,LBR,MLI,MRT,NER,NGA,SHN,SEN,SLE,TGO",
+  "countryFilterMode": false,
+  "defaultBidCurrency": "USD",
+  "defaultBidUnit": 0,
+  "deviceIdentifiedOnly": true,
+  "devicesFilterMode": false,
+  "domainFilterAllowList": false,
+  "domainFilterAllowUnknownUrls": true,
+  "domainVerificationAuthLevel": "ALLOW_ALL",
+  "exchangeRegionals": [
+    {
+      "pid": 2,
+      "id": "APAC"
+    }
+  ],
+  "formatType": "OpenRTBv2_2",
+  "id": "8a859e06014f4fd97b68dbce90c10009",
+  "imprFilter": [],
+  "includeLists": 0,
+  "locationEnabledOnly": true,
+  "name": "USA4",
+  "noticeUrl": "test",
+  "pid": 2,
+  "publishersFilter": "469",
+  "publishersFilterMode": false,
+  "regionLimits": [
+    {
+      "pid": 1,
+      "version": 0,
+      "name": "testtest",
+      "countriesFilter": "AIA,ATG,ABW,BHS,BRB,BES,VGB,CYM,CUB,CUW,DMA,DOM,GRD,GLP,HTI,JAM,MTQ,MSR,PRI,BLM,KNA,LCA,MAF,VCT,SXM,TTO,TCA,VIR",
+      "requestRate": 4
+    }
+  ],
+  "requestRateFilter": -1,
+  "scriptAllowedFilter": false,
+  "sendDealSizes": false,
+  "sitesFilter": "261,274,820",
+  "sitesFilterMode": false,
+  "subscriptions": [],
+  "trafficStatus": false,
+  "verificationType": "TRUSTED",
+  "version": 10
+}

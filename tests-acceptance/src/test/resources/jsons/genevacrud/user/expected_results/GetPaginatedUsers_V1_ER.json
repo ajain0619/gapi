@@ -1,0 +1,251 @@
+{
+  "content": [
+    {
+      "id": "ff808081015e5e52386b52d41e030007",
+      "pid": 779,
+      "version": 1,
+      "userName": "medft04@yahoo.com",
+      "oneCentralUserName": "medft04@yahoo.com",
+      "email": "medft04@yahoo.com",
+      "role": "ROLE_USER",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 248,
+          "name": "MedFTCompany",
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "id": "402836ed0152528f426e8f7102f20059",
+      "pid": 741,
+      "version": 0,
+      "userName": "auto-tag",
+      "oneCentralUserName": "auto-tag",
+      "name": "",
+      "email": "auto@gmail.com",
+      "role": "ROLE_ADMIN",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 10210,
+          "name": "auto-tag-generation-company",
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "id": "8a858a090137377a311f7a33e18b0006",
+      "pid": 66,
+      "version": 0,
+      "userName": "asc4",
+      "oneCentralUserName": "asc4",
+      "name": "",
+      "email": "asc4@nexage.com",
+      "contactNumber": "",
+      "title": "",
+      "role": "ROLE_ADMIN",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 157,
+          "name": "ASC4_ClickAndDisplay",
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "id": "8a858a23014444db418fdb44607d0004",
+      "pid": 690,
+      "version": 0,
+      "userName": "test_PR4011",
+      "oneCentralUserName": "test_PR4011",
+      "name": "",
+      "email": "test_PR4011@nexage.com",
+      "contactNumber": "",
+      "title": "",
+      "role": "ROLE_ADMIN",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 10141,
+          "name": "test_PR4011",
+          "type": "BUYER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "id": "8a858a29013636f4f4b9f4f924940006",
+      "pid": 40,
+      "version": 0,
+      "userName": "Group5",
+      "oneCentralUserName": "Group5",
+      "name": "",
+      "email": "paul.senn@nexage.com",
+      "contactNumber": "",
+      "title": "",
+      "role": "ROLE_ADMIN",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 79,
+          "name": "adserverFTGroup5",
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "id": "8a858a3d01373775b4bd75b6fc340006",
+      "pid": 53,
+      "version": 0,
+      "userName": "aslt12",
+      "oneCentralUserName": "aslt12",
+      "name": "",
+      "email": "aslt12@foo.com",
+      "contactNumber": "",
+      "title": "",
+      "role": "ROLE_ADMIN",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 131,
+          "name": "adserverFTGroup12",
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "id": "8a858a62013636f0ad65f0b1b2370006",
+      "pid": 27,
+      "version": 0,
+      "userName": "ASC1_user",
+      "oneCentralUserName": "ASC1_user",
+      "name": "",
+      "email": "asc1@a.com",
+      "contactNumber": "",
+      "title": "",
+      "role": "ROLE_ADMIN",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 66,
+          "name": "ASC1_BasicAdServe",
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "id": "8a858ae10136365590c055939ee60007",
+      "pid": 14,
+      "version": 0,
+      "userName": "foo",
+      "oneCentralUserName": "foo",
+      "name": "",
+      "email": "foo@foo.com",
+      "contactNumber": "",
+      "title": "",
+      "role": "ROLE_ADMIN",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 14,
+          "name": "MyCompany",
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "id": "8a859e060150505a3a8b5d9cf80f000d",
+      "pid": 712,
+      "version": 1,
+      "userName": "crudPositionUser",
+      "oneCentralUserName": "crudPositionUser",
+      "name": "",
+      "email": "crudPositionUser@nexage.com",
+      "contactNumber": "",
+      "role": "ROLE_USER",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 10201,
+          "name": "CRUDPositionTest",
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false
+    },
+    {
+      "id": "8a859e060150505a3a8b5d9d5958000e",
+      "pid": 713,
+      "version": 0,
+      "userName": "crudPositionManager",
+      "oneCentralUserName": "crudPositionManager",
+      "name": "",
+      "email": "crudPositionManager@nexage.com",
+      "role": "ROLE_MANAGER",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 10201,
+          "name": "CRUDPositionTest",
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": false,
+      "sorted": true,
+      "empty": false
+    },
+    "pageNumber": 0,
+    "pageSize": 10,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalElements": 137,
+  "totalPages": 14,
+  "last": false,
+  "numberOfElements": 10,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "unsorted": false,
+    "sorted": true,
+    "empty": false
+  },
+  "first": true,
+  "empty": false
+}

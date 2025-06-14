@@ -1,0 +1,37 @@
+{
+  "content": [
+    {
+      "sellerName": "Provision",
+      "sellerPid": 10227,
+      "sites": [
+        {
+          "pid":3,
+          "siteName": "FOLK_SITE",
+          "sitePid": 10000204
+        }
+      ]
+    },
+    {
+      "pid":3,
+      "sellerName": "Seller PR-8826",
+      "sellerPid": 10212
+    },
+    {
+      "sellerName": "MedFTCompany",
+      "sellerPid": 248,
+      "sites": [
+        {
+          "pid":1,
+          "siteName": "S41",
+          "sitePid": 105
+        },
+        {
+          "pid":2,
+          "siteName": "S9B",
+          "sitePid": 92
+        }
+      ]
+    }
+  ],
+  "size": 3
+}

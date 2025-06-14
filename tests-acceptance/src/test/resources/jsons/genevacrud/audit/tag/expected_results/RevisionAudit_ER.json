@@ -1,0 +1,60 @@
+{
+  "delta": {
+    "Tag": {
+      "name": [
+        "Nexage Exchange - Nexage-Adserver - test8z",
+        "Nexage Exchange - Nexage-Adserver - test8z-updated"
+      ],
+      "pid": [
+        "13664",
+        "13664"
+      ],
+      "rules": [
+        {
+          "paramName": [
+            null,
+            ""
+          ],
+          "pid": [
+            null,
+            "778"
+          ],
+          "ruleType": [
+            null,
+            "ISPCarrier"
+          ],
+          "target": [
+            null,
+            "qwe"
+          ],
+          "targetType": [
+            null,
+            "NegKeyword"
+          ]
+        },
+        {
+          "paramName": [
+            "",
+            null
+          ],
+          "pid": [
+            "762",
+            null
+          ],
+          "ruleType": [
+            "ISPCarrier",
+            null
+          ],
+          "target": [
+            "qwe",
+            null
+          ],
+          "targetType": [
+            "NegKeyword",
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# Script to get the env variables setup for td-agent to load
+# before starting the service.
+#
+
+INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
+AMI_ID=$(curl -s http://169.254.169.254/latest/meta-data/ami-id)
+AWS_REGION=$(curl -s http://169.254.169.254/latest/dynamic/instance-identity/document|grep region|awk -F\" '{print $4}')
+AWS_STACKNAME=$(curl -s http://169.254.169.254/latest/user-data|grep "/etc/aws-stackname"|awk -F\" '{print $2}')
+ENVIRONMENT=$(curl -s http://169.254.169.254/latest/user-data|grep "/etc/environment"|awk -F\" '{print $2}')
+
+echo "====== Instance specific data ======"
+echo instance id    : ${INSTANCE_ID}
+echo ami id         : ${AMI_ID}
+echo region         : ${AWS_REGION}
+echo stackname      : ${AWS_STACKNAME}
+echo environment    : ${ENVIRONMENT}
+
+echo "======= Expose ami id, aws region and instance id to td-agent ======="
+AGENT_CONFIG=/etc/sysconfig/td-agent
+
+cat << EOF > ${AGENT_CONFIG}
+INSTANCE_ID     ='${INSTANCE_ID}'
+AMI_ID          ='${AMI_ID}'
+AWS_REGION      ='${AWS_REGION}'
+AWS_STACKNAME   ='${AWS_STACKNAME}'
+ENVIRONMENT     ='${ENVIRONMENT}'
+EOF

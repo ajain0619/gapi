@@ -1,0 +1,21 @@
+{
+  "id": "ff8080810151510f18db1ad0f79c03e3",
+  "pid": 723,
+  "version": 0,
+  "userName": "buyermanager1",
+  "name": "buyer manager1 updated",
+  "email": "01fdsfhd@gfdg.ru",
+  "contactNumber": "7658111",
+  "dealAdmin": false,
+  "title": "Mr",
+  "role": "ROLE_MANAGER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 274,
+      "type": "BUYER",
+      "name": "cpi buyer"
+    }
+  ]
+}

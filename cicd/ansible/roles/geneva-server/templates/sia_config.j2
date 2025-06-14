@@ -1,0 +1,16 @@
+{
+ "version": "1.0.0",
+ "service": "geneva-api",
+ "accounts": [
+   {
+     "domain": "{{ geneva_server_athenz_domain }}",
+     "account": "{{ geneva_server_aws_account_id }}",
+     "roles": {
+       {% if geneva_server_ssl_cert_for_custom_athenz_service_role %}
+       "{{ geneva_server_dw_db_username }}": {},
+       {% endif %}
+       "{{ geneva_server_athenz_domain }}:role.splunk-forwarder": {}
+     }
+   }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "site": {
+    "pid": 10000200
+  },
+  "interstitial": false,
+  "screenLocation": "ABOVE_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "width": 300,
+  "height": 50,
+  "memo": "special_formula",
+  "name": "deals_position",
+  "placementCategory": "BANNER",
+  "positionAliasName": "deals_placement",
+  "mraidAdvancedTracking": true
+}

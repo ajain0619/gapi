@@ -1,0 +1,91 @@
+{
+  "dcn": "8a859e0f013b3b761d5a76a823f7000b",
+  "id": "8a859e0f013b3b761d5a76a823f7000c",
+  "pid": 1197,
+  "version": 1,
+  "buyerTimeout": 500,
+  "consumerProfileContributed": true,
+  "consumerProfileUsed": true,
+  "daysFree": 0,
+  "description": "This is site2 in athens1 company",
+  "domain": "site2.com",
+  "filterBots": true,
+  "inputDateFormat": "yyyyMMdd",
+  "type": "MOBILE_WEB",
+  "live": false,
+  "name": "athens1site2",
+  "overrideIP": false,
+  "platform": "OTHER",
+  "reportBatchSize": 180000,
+  "reportFrequency": 180000,
+  "rulesUpdateFrequency": 1800000,
+  "status": "ACTIVE",
+  "isAdTruthEnabled": false,
+  "trafficThrottle": 0,
+  "totalTimeout": 500,
+  "url": "www.site2.com",
+  "coppaRestricted": false,
+  "metadataEnablement": false,
+  "companyPid": 339,
+  "currentDealTerm": {
+    "pid": 9374,
+    "version": 1,
+    "sitePid": 1197,
+    "revenueMode": "REV_SHARE",
+    "rtbFee": 0.0000,
+    "hasDealTermChanged": false
+  },
+  "metadata": {
+  },
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "iabCategories": [],
+  "positions": [
+    {
+      "pid": 8620,
+      "version": 1,
+      "sitePid": 1197,
+      "tiers": [],
+      "name": "header",
+      "isDefault": false,
+      "isInterstitial": false,
+      "mraidSupport": "YES",
+      "videoSupport": "BANNER",
+      "screenLocation": "UNDEFINED",
+      "mraidAdvancedTracking": true
+    },
+    {
+      "pid": 8607,
+      "version": 1,
+      "sitePid": 1197,
+      "tiers": [],
+      "name": "footer",
+      "isDefault": false,
+      "isInterstitial": false,
+      "mraidSupport": "YES",
+      "videoSupport": "BANNER",
+      "screenLocation": "UNDEFINED",
+      "mraidAdvancedTracking": true
+    },
+    {
+      "pid": 8594,
+      "version": 1,
+      "sitePid": 1197,
+      "tiers": [],
+      "name": "body",
+      "isDefault": false,
+      "isInterstitial": false,
+      "mraidSupport": "YES",
+      "videoSupport": "BANNER",
+      "screenLocation": "UNDEFINED",
+      "mraidAdvancedTracking": true
+    }
+  ],
+  "tags": [],
+  "rtbProfiles": [
+  ]
+}

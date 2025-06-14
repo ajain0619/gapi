@@ -1,0 +1,15 @@
+{
+  "pid": 1234545,
+  "type": "BUYER",
+  "name": "PssBuyerDisappointment",
+  "website": "a1.com",
+  "description": "ddd",
+  "salesforceId": "sss",
+  "cpiTrackingEnabled": true,
+  "rtbEnabled": true,
+  "mediationEnabled": true,
+  "rtbRevenueReportEnabled": false,
+  "cpiConversionNoticeUrl": "aaa",
+  "status": "ACTIVE",
+  "thirdPartyFraudDetectionEnabled": false
+}

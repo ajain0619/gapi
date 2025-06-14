@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ff808081016262af69dcaf82f4750013",
+    "pid": 9,
+    "version": 2,
+    "bidRequestCpm": 0E-8,
+    "defaultBidCurrency": "USD",
+    "defaultBidUnit": 0,
+    "categoriesFilterMode": false,
+    "countryFilterMode": false,
+    "devicesFilterMode": false,
+    "publishersFilterMode": false,
+    "sitesFilterMode": false,
+    "adSizesFilter": [],
+    "adSizesFilterMode": false,
+    "requestRateFilter": -1,
+    "scriptAllowedFilter": false,
+    "includeLists": 2,
+    "formatType": "OpenRTBv2",
+    "trafficStatus": false,
+    "companyPid": 100002,
+    "subscriptions": [],
+    "locationEnabledOnly": false,
+    "deviceIdentifiedOnly": false,
+    "privateAttributes": [],
+    "exchangeRegionals": [
+      {
+        "pid": 1,
+        "id": "USA"
+      }
+    ],
+    "name": "USA",
+    "allowedTraffic": "MOBILE_WEB,APPLICATION,DESKTOP,DOOH,WEBSITE",
+    "verificationType": "STANDARD",
+    "regionLimits": [],
+    "nativeVersions": [],
+    "imprFilter": [],
+    "userIdPreference": "NO_ID_RESTRICTION",
+    "headerBiddingEnabled": false,
+    "auctionTypeFilter": 0
+  }
+]

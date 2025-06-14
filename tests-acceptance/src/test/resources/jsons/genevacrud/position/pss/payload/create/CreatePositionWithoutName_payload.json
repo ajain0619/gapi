@@ -1,0 +1,17 @@
+{
+  "site":{
+    "pid":10000192,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "screenLocation":"FOOTER_VISIBLE",
+  "mraidSupport":"YES",
+  "placementCategory":"BANNER",
+  "interstitial": false,
+  "mraidAdvancedTracking":false,
+  "videoSupport":"BANNER",
+  "width":100,
+  "height":100,
+  "adSizeType":"CUSTOM",
+  "memo":"TestGeneratedName"
+}

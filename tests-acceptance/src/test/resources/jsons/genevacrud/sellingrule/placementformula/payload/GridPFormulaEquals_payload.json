@@ -1,0 +1,34 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "PUBLISHER_NAME",
+          "operator": "EQUALS",
+          "ruleData": "transparency_enabled"
+        },
+        {
+          "attribute": "PLACEMENT_NAME",
+          "operator": "EQUALS",
+          "ruleData": "transparency_enabled_position"
+        },
+        {
+          "attribute": "PLACEMENT_TYPE",
+          "operator": "EQUALS",
+          "ruleData": "BANNER"
+        },
+        {
+          "attribute": "SITE_NAME",
+          "operator": "EQUALS",
+          "ruleData": "aleksis_site"
+        },
+        {
+          "attribute": "SITE_TYPE",
+          "operator": "EQUALS",
+          "ruleData": "MOBILE_WEB"
+        }
+      ]
+    }
+  ]
+}

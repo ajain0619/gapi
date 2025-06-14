@@ -1,0 +1,20 @@
+{
+  "pid": 100312,
+  "version": 0,
+  "site": {
+    "pid": 10000192,
+    "hbEnabled": false
+  },
+  "name": "position3",
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "interstitial": true,
+  "videoLinearity": "LINEAR",
+  "height": 480,
+  "width": 320,
+  "placementCategory": "INTERSTITIAL",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "hbPartnerAttributes": []
+}

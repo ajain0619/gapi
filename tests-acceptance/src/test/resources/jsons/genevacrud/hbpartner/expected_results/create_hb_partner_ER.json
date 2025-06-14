@@ -1,0 +1,14 @@
+{
+  "id": "xyz123",
+  "name": "test_hbpartner",
+  "partnerHandler": "amazon",
+  "status": "ACTIVE",
+  "version": 0,
+  "description": "my test hb partner",
+  "feeType": "PERCENTAGE",
+  "fee": 0.14,
+  "formattedDefaultTypeEnabled": true,
+  "multiImpressionBid": true,
+  "fillMaxDuration": false,
+  "maxAdsPerPod": 5
+}

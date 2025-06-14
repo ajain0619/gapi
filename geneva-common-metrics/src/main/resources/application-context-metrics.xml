@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:metrics="http://www.ryantenney.com/schema/metrics"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.ryantenney.com/schema/metrics
+           http://www.ryantenney.com/schema/metrics/metrics.xsd">
+
+  <metrics:metric-registry id="metricRegistry"/>
+  <metrics:annotation-driven metric-registry="metricRegistry"/>
+
+</beans>

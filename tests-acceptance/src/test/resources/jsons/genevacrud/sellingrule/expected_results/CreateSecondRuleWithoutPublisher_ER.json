@@ -1,0 +1,9 @@
+{
+  "pid": 2,
+  "version": 0,
+  "name": "Second rule without publisher",
+  "description": "some_description",
+  "status": "ACTIVE",
+  "type": "DEAL",
+  "assignments": {}
+}

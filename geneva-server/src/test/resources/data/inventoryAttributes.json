@@ -1,0 +1,28 @@
+{
+  "name": "nameTest",
+  "description": "string",
+  "prefix": "publisherNameTest",
+  "createdBy": 1000,
+  "status": "ACTIVE",
+  "attributeValues": [
+    {
+      "value": "string",
+      "enabled": true
+    }
+  ],
+  "internalOnly": false,
+  "hasGlobalVisibility": true,
+  "specificPublisherVisibility": [
+    {
+      "name": "string",
+      "publisherPid": 1200
+    }
+  ],
+  "assignedLevel": [
+    1,
+    2,
+    3
+  ],
+  "required": false,
+  "lastUpdated": "2018-09-01"
+}

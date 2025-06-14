@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Exchange Functional Test Site-1",
+    "pid": 20000,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Seller1"
+  },
+  {
+    "name": "Exchange Functional Test Site-2",
+    "pid": 20001,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Seller1"
+  },
+  {
+    "name": "Exchange Functional Test Site-3",
+    "pid": 20002,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Seller1"
+  },
+  {
+    "name": "Gogii-textPlus-Android",
+    "pid": 20003,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Seller1"
+  },
+  {
+    "name": "ExchangeFunctionalTest-4",
+    "pid": 10000160,
+    "type": "SITE",
+    "status": "ACTIVE",
+    "company": "Seller1"
+  }
+]

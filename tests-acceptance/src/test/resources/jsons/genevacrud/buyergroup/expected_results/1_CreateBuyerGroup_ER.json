@@ -1,0 +1,11 @@
+{
+  "pid": 3,
+  "name": "BuyerGroupCucumber",
+  "sfdcLineId": "testsfdcLineId",
+  "sfdcIoId": "testsfdcIoId",
+  "currency": "USD",
+  "billingCountry": "USA",
+  "billable": false,
+  "version": 0,
+  "companyPid": 10024
+}

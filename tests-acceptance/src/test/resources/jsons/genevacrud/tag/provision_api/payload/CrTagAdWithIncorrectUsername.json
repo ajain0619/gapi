@@ -1,0 +1,19 @@
+{
+  "name": "AV117",
+  "buyer": {
+    "pid": "7069"
+  },
+  "primaryId": "pid9",
+  "primaryName": "pname9",
+  "secondaryId": "sid9",
+  "secondaryName": "sname9",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": " 1",
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

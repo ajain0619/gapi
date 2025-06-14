@@ -1,0 +1,40 @@
+{
+  "pid": 35,
+  "version": 3,
+  "name": "BMTest",
+  "description": "test",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10000,
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "pid": 2,
+      "version": 3,
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "pid": 16,
+      "version": 0,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+      "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MATCHED_USER_ID",
+      "data": "buyerData2"
+    }
+  ],
+  "assignments": {
+    "positions": [
+      {
+        "pid": 100231
+      }
+    ]
+  }
+}

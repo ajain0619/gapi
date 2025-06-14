@@ -1,0 +1,15 @@
+{
+  "description": "dcn_external_null",
+  "domain": "http://dcn_external.com",
+  "name": "dcn_external_null",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "mode": "TEST",
+  "url": "https://dcn_external.com",
+  "coppaRestricted": true,
+  "hbEnabled": true,
+  "iabCategories": [
+    "IAB5"
+  ]
+}

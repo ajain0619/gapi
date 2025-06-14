@@ -1,0 +1,50 @@
+{
+  "content": [
+    {
+      "companies": [
+        {
+          "name": "Nexage Inc",
+          "pid": 1,
+          "type": "NEXAGE"
+        }
+      ],
+      "dealAdmin": false,
+      "email": "crudnexagemanageryield@ex.com",
+      "enabled": true,
+      "global": false,
+      "id": "ff808094015b5b8b8f448b90a7700009",
+      "name": "Nexage Manager Yield",
+      "oneCentralUserName": "crudnexagemanageryield",
+      "pid": 771,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER_YIELD",
+      "userName": "crudnexagemanageryield",
+      "version": 3
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

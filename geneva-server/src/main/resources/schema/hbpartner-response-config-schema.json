@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "oneOf": [
+    {
+      "properties": {
+        "priceMacro": {
+          "type": "string"
+        },
+        "deliveryTrackingUrl": {
+          "type": "string",
+          "enum": [
+            "burl",
+            "adm",
+            "nurl"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}

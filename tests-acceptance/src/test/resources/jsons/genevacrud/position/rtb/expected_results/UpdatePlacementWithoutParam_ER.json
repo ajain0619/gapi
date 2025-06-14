@@ -1,0 +1,27 @@
+{
+  "pid": 100329,
+  "version": 1,
+  "site": {
+    "pid": 10000202,
+    "hbEnabled": false
+  },
+  "name": "tracker3",
+  "memo": "banner placement",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "defaultRtbProfile": {
+    "pid": 10000070,
+    "version": 1,
+    "name": "timeGoesBy",
+    "description": "intentionallyChanged",
+    "defaultRtbProfileOwnerCompanyPid": 10225
+  },
+  "mraidAdvancedTracking": false
+}

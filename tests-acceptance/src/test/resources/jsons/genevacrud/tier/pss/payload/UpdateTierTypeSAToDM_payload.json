@@ -1,0 +1,12 @@
+{
+  "pid": 10353,
+  "version": 1,
+  "level": 1,
+  "orderStrategy": "Dynamic",
+  "tierType": "SY_DECISION_MAKER",
+  "tags": [
+    {
+      "pid": 5566591
+    }
+  ]
+}

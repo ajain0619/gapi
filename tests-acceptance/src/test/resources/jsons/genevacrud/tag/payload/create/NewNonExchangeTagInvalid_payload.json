@@ -1,0 +1,19 @@
+{
+  "name": "123",
+  "status": null,
+  "primaryName": "",
+  "secondaryId": "",
+  "secondaryName": "",
+  "ecpmProvision": "Auto",
+  "ecpmAuto": 0,
+  "ecpmManual": 0,
+  "clickthroughDisable": false,
+  "currentDealTerm": {
+    "revenueMode": "REV_SHARE",
+    "hasDealTermChanged": false
+  },
+  "rules": [],
+  "monetization": false,
+  "returnRawResponse": false,
+  "deployments": []
+}

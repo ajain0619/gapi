@@ -1,0 +1,26 @@
+{
+  "name": "RuleBMWithInvalidGenderTarget",
+  "description": "Bid management rule with a gender target including both female and male",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10225,
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "2.0"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "GENDER",
+      "data": "F,M"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [],
+    "positions": []
+  }
+}

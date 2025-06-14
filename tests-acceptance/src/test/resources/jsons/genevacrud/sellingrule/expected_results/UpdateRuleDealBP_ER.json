@@ -1,0 +1,34 @@
+{
+  "pid": 1,
+  "version": 1,
+  "name": "DealSupply",
+  "description": "desc",
+  "status": "INACTIVE",
+  "intendedActions": [
+    {
+      "pid": 1,
+      "version": 0,
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "targets": [
+    {
+      "pid": 6,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "IAB_CATEGORY",
+      "data": "bidData2"
+    },
+    {
+      "pid": 3,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "REGION",
+      "data": "supplyData3"
+    }
+  ],
+  "assignments": {}
+}

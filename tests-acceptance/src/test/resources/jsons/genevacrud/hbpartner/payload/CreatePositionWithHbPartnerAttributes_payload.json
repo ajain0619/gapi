@@ -1,0 +1,24 @@
+{
+  "site": {
+    "pid": 10000208,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "memo": "banner",
+  "name": "banner_hb_partner",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "FOOTER_VISIBLE",
+  "interstitial": false,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "mraidAdvancedTracking": false,
+  "status": "ACTIVE",
+  "hbPartnerAttributes": [
+    {
+      "externalId": "mopub_pub_id_1",
+      "hbPartnerPid": 2,
+      "type": "NON_DEFAULT"
+    }
+  ]
+}

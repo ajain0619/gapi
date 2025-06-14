@@ -1,0 +1,20 @@
+{
+  "pid": 100326,
+  "version": 0,
+  "site":{
+    "pid":10000205,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "screenLocation":"FULLSCREEN_VISIBLE",
+  "mraidSupport":"NO",
+  "placementCategory":"INSTREAM_VIDEO",
+  "interstitial": false,
+  "mraidAdvancedTracking":false,
+  "videoSupport":"VIDEO",
+  "width":480,
+  "height":320,
+  "adSizeType":"STANDARD",
+  "memo":"instreamprovision",
+  "name":"instreamprovision"
+}

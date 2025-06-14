@@ -1,0 +1,16 @@
+---
+- name: Include New Relic vars
+  include_vars:
+    file: newrelic.yml
+- name: Create New Relic dir
+  file:
+    path: "{{ newrelic_agent_lib_path }}"
+    state: directory
+    owner: "{{ geneva_server_app_user }}"
+    group: "{{ geneva_server_app_group }}"
+    mode: 0755
+- name: Download New Relic Agent
+  get_url:
+    url: "https://artifactory.ouroath.com/artifactory/maven-org/com/newrelic/agent/java/newrelic-agent/{{ newrelic_agent_version }}/newrelic-agent-{{ newrelic_agent_version }}.jar"
+    dest: "{{ newrelic_agent_lib_path }}/{{ newrelic_agent_lib_file_name }}"
+    mode: 0440

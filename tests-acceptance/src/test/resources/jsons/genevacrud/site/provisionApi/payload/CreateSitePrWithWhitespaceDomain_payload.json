@@ -1,0 +1,13 @@
+{
+  "name": "a54",
+  "description": "8",
+  "domain": "  ",
+  "url": "https://mobile-site.com",
+  "coppaRestricted": false,
+  "platform": "OTHER",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "MOBILE_WEB"
+}

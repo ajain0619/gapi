@@ -1,0 +1,213 @@
+[
+  {
+    "site": [
+      {
+        "sitePid": 950,
+        "sitealias": 9501,
+        "siteNameAlias": "AS8A1",
+        "siteName": "AS8A",
+        "siteType": "A",
+        "status": "ACTIVE",
+        "mode": "TEST",
+        "positions": [
+          {
+            "pid": 13664,
+            "positionName": "custom1a",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": [
+              {
+                "tagPid": 7295,
+                "tagname": "Nexage Exchange - Nexage-Adserver - test8z",
+                "filterBiddersAllowlist": false,
+                "belongsToRTBGroup": false
+              }
+            ]
+          },
+          {
+            "pid": 13690,
+            "positionName": "position2",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 13599,
+            "positionName": "position3",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 13625,
+            "positionName": "body",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 13651,
+            "positionName": "position1",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 13677,
+            "positionName": "footer",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 13612,
+            "positionName": "default",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 13638,
+            "positionName": "header",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "sitePid": 963,
+        "sitealias": 96311123,
+        "siteNameAlias": "AS8B123",
+        "siteName": "AS8B",
+        "siteType": "A",
+        "status": "ACTIVE",
+        "mode": "TEST",
+        "positions": [
+          {
+            "pid": 14730,
+            "positionName": "position1",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": [
+              {
+                "tagPid": 7296,
+                "tagname": "Nexage Exchange - test8x",
+                "filterBiddersAllowlist": false,
+                "belongsToRTBGroup": false
+              },
+              {
+                "tagPid": 7333,
+                "tagname": "ExchangeTagWithTargeting",
+                "filterBiddersAllowlist": false,
+                "belongsToRTBGroup": false
+              },
+              {
+                "tagPid": 7297,
+                "tagname": "Nexage Exchange - test8y",
+                "filterBiddersAllowlist": true,
+                "tierPid": 10321,
+                "tierLevel": 3,
+                "tierType": "WATERFALL",
+                "belongsToRTBGroup": true
+              }
+            ]
+          },
+          {
+            "pid": 14639,
+            "positionName": "positionf",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14756,
+            "positionName": "position2",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14665,
+            "positionName": "positiond",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14782,
+            "positionName": "positiong",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14691,
+            "positionName": "positionb",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14717,
+            "positionName": "header",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14626,
+            "positionName": "positione",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14743,
+            "positionName": "positionh",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14652,
+            "positionName": "footer",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14769,
+            "positionName": "body",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14678,
+            "positionName": "positionc",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14795,
+            "positionName": "positioni",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          },
+          {
+            "pid": 14704,
+            "positionName": "positiona",
+            "placementType": 0,
+            "trafficType": "MEDIATION",
+            "tags": []
+          }
+        ]
+      }
+    ],
+    "publisherPid": 105,
+    "publisherName": "adserverSellerTest8"
+  }
+]

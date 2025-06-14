@@ -1,0 +1,70 @@
+{
+  "dcn": "8a859e06015b5afd663b010801830374",
+  "id": "8a859e06015b5afd663b010801830375",
+  "pid": 10000197,
+  "version": 1,
+  "adScreeningEnabled": false,
+  "buyerTimeout": 500,
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "daysFree": 0,
+  "description": "application site for testing advanced mraid tracking",
+  "domain": "mraid.com",
+  "filterBots": true,
+  "type": "APPLICATION",
+  "live": false,
+  "name": "debmraidsiteapplication",
+  "overrideIP": false,
+  "platform": "OTHER",
+  "reportBatchSize": 10,
+  "reportFrequency": 180000,
+  "rulesUpdateFrequency": 1800000,
+  "status": "ACTIVE",
+  "isAdTruthEnabled": false,
+  "trafficThrottle": 0,
+  "totalTimeout": 5000,
+  "url": "debmraid.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "metadataEnablement": false,
+  "hbEnabled": false,
+  "companyPid": 10224,
+  "currentDealTerm": {
+    "pid": 10921,
+    "version": 0,
+    "sitePid": 10000197,
+    "effectiveDate": 1490370763000,
+    "revenueMode": "REV_SHARE",
+    "nexageRevenueShare": 0.01,
+    "rtbFee": 0.02,
+    "hasDealTermChanged": false
+  },
+  "metadata": {
+  },
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "iabCategories": [
+    "IAB4"
+  ],
+  "positions": [
+    {
+      "sitePid": 10000197,
+      "tiers": [],
+      "name": "MRAIDTrackingBanner1",
+      "isDefault": false,
+      "isInterstitial": false,
+      "mraidSupport": "YES",
+      "mraidAdvancedTracking": true,
+      "videoSupport": "BANNER",
+      "screenLocation": "BELOW_VISIBLE",
+      "status": "ACTIVE",
+      "placementCategory": "BANNER"
+    }
+  ],
+  "tags": [],
+  "rtbProfiles": []
+}

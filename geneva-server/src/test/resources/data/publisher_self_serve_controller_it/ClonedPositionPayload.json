@@ -1,0 +1,45 @@
+{
+  "pid": 100330,
+  "version": 0,
+  "site": {
+    "pid": 10000207,
+    "coppaRestricted":false,
+    "hbEnabled":false,
+    "adTruthEnabled":false,
+    "adScreeningEnabled":false,
+    "filterBots":false,
+    "consumerProfileContributed":false,
+    "consumerProfileUsed":false,
+    "overrideIP":false
+  },
+  "name": "123456788",
+  "memo": "VenkateshVp",
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "interstitial": false,
+  "videoLinearity": "LINEAR",
+  "height": 480,
+  "width": 320,
+  "longform": true,
+  "placementCategory": "INSTREAM_VIDEO",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "mraidAdvancedTracking": true,
+  "hbPartnerAttributes": [],
+  "adSizeType": "STANDARD",
+  "placementVideo": {
+    "pid": 100332,
+    "version": 0,
+    "linearity": "LINEAR",
+    "companions": [
+      { "height": 320, "width": 480 },
+      { "height": 320, "width": 480 }
+    ],
+    "playerRequired": false,
+    "longform": false,
+    "multiImpressionBid": false,
+    "competitiveSeparation": false
+  },
+  "impressionTypeHandling": "BASED_ON_PLACEMENT_CONFIG"
+}

@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE
+            f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+            #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+            #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+            #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+            #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+            #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+  ]]>
+  </entry>
+
+  <entry key="dim=site">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            f.site_id AS siteId,
+            d.name AS site
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        INNER JOIN dim_site d ON d.id = f.site_id
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY f.site_id, d.name
+  ]]>
+  </entry>
+
+  <entry key="dim=position">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            f.zone AS position
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY f.zone
+  ]]>
+  </entry>
+
+  <entry key="dim=adsource">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            f.adnet_id AS adSourceId,
+            d.name AS adSource
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        INNER JOIN dim_adnet d ON d.id = f.adnet_id
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY f.adnet_id, d.name
+  ]]>
+  </entry>
+
+  <entry key="dim=tag">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            f.tag_id AS adTagId,
+            d.name AS adTag
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        INNER JOIN dim_tag d ON d.id = f.tag_id
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY f.tag_id, d.name
+  ]]>
+  </entry>
+
+  <entry key="dim=country">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            f.country
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY f.country
+  ]]>
+  </entry>
+
+  <entry key="dim=make">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            f.device_make AS deviceMake
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY f.device_make
+  ]]>
+  </entry>
+
+  <entry key="dim=model">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            f.device_model AS deviceModel
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY f.device_model
+  ]]>
+  </entry>
+
+  <entry key="dim=os">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            f.device_os AS deviceOS
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY f.device_os
+  ]]>
+  </entry>
+
+  <entry key="dim=osver">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            f.device_osv AS deviceOSVersion
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY f.device_osv
+  ]]>
+  </entry>
+
+  <entry key="dim=carrier">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            f.carrier
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY f.carrier
+  ]]>
+  </entry>
+
+  <entry key="dim=day">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            DATE_TRUNC('day', f.start) AS interval
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY DATE_TRUNC('day', f.start)
+  ]]>
+  </entry>
+
+  <entry key="dim=week">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            greatest(timestamp_trunc(f.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) AS interval
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY timestamp_trunc(f.start, 'dy')
+  ]]>
+  </entry>
+
+  <entry key="dim=month">
+    <![CDATA[
+        SELECT
+            /* $reportUser.userName */
+            /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+            #if ($isOutboundRequest)
+                SUM(f.ads_requested) AS adRequests,
+            #else
+                (SUM(f.ads_requested) - COALESCE(SUM(f.ads_bots), 0) - COALESCE(SUM(f.ads_fraud), 0) - COALESCE(SUM(f.ads_throttled), 0)) AS adRequests,
+                COALESCE(SUM(f.ads_bots), 0) AS bots,
+                COALESCE(SUM(f.ads_fraud), 0) AS frauds,
+            #end
+            SUM(f.ads_served) AS adServed,
+            SUM(f.ads_displayed) AS adDelivered,
+            SUM(f.ads_clicked) AS adClicks,
+            DATE_TRUNC('month', f.start) AS interval
+        FROM
+            #if ($isOutboundRequest)
+                fact_traffic_targeted_adnet f
+            #else
+                fact_traffic_targeted_site f
+            #end
+        WHERE f.start >= :start AND f.start < :stop
+        #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id = :adsource #end
+        #if(!$StringUtils.isEmpty($carrier)) AND f.carrier = :carrier #end
+        #if($siteIds && !$siteIds.isEmpty())
+            AND f.site_id IN (:siteIds) ## Sites restriction is present
+        #elseif($siteIds && $siteIds.isEmpty())
+            AND 1 = 0 ## No sites are allowed
+        #end
+        #if(!$StringUtils.isEmpty($country)) AND f.country = :country #end
+        #if(!$StringUtils.isEmpty($make)) AND f.device_make = :make #end
+        #if(!$StringUtils.isEmpty($model)) AND f.device_model = :model #end
+        #if(!$StringUtils.isEmpty($os)) AND f.device_os = :os #end
+        #if(!$StringUtils.isEmpty($osver)) AND f.device_osv = :osver #end
+        #if(!$StringUtils.isEmpty($position)) AND f.zone = :position #end
+        #if(!$StringUtils.isEmpty($site)) AND f.site_id = :site #end
+        #if(!$StringUtils.isEmpty($tag)) AND f.tag_id = :tag #end
+        GROUP BY DATE_TRUNC('month', f.start)
+  ]]>
+  </entry>
+
+</properties>

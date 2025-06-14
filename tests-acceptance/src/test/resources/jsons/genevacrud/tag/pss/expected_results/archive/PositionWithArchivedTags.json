@@ -1,0 +1,15 @@
+{
+  "pid": 100289,
+  "version": 7,
+  "site": {
+    "pid": 10000184
+  },
+  "name": "Banner",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 320,
+  "placementCategory": "BANNER"
+}

@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 261,
+      "type": "BUYER"
+    }
+  ],
+  "role": "ROLE_ADMIN",
+  "userName": "rtbbuyer1admin",
+  "email": "abc123@company.com",
+  "name": "",
+  "primaryContact": false
+}

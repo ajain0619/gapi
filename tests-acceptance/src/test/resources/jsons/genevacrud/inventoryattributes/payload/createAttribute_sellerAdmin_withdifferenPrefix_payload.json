@@ -1,0 +1,33 @@
+{
+  "name": "att6",
+  "prefix": "test",
+  "description": "att3",
+  "createdBy": 105,
+  "status": "ACTIVE",
+  "attributeValues": [
+    {
+      "value": "attval1",
+      "enabled": true
+    }
+  ],
+  "internalOnly": false,
+  "hasGlobalVisibility": false,
+  "specificPublisherVisibility": [
+    {
+      "publisherPid": 664
+    },
+    {
+      "publisherPid": 651
+    },
+    {
+      "publisherPid": 638
+    }
+  ],
+  "assignedLevel": [
+    1,
+    2,
+    3
+  ],
+  "required": false,
+  "lastUpdated": "2018-09-01"
+}

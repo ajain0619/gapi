@@ -1,0 +1,16 @@
+{
+  "pid": 100,
+  "name": "my attr",
+  "description": "attribute",
+  "status": "ACTIVE",
+  "prefix": "pref",
+  "internalOnly": false,
+  "hasGlobalVisibility": true,
+  "assignedLevel": [
+    1,
+    2,
+    3
+  ],
+  "required": true,
+  "createdBy": 1
+}

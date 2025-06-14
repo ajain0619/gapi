@@ -1,0 +1,22 @@
+{
+  "name": "AV75",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true,
+    "blockedAdCategories": [
+      "IAB1",
+      "IAB1-1"
+    ]
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

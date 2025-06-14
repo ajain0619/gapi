@@ -1,0 +1,37 @@
+{
+  "pid": 100248,
+  "version": 1,
+  "site": {
+    "pid": 10000174,
+    "platform": "OTHER",
+    "type": "MOBILE_WEB",
+    "hbEnabled": false
+  },
+  "name": "interstitial_placement_hb_partner_clone",
+  "memo": "interstitial_placement_hb_partner_clone",
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "interstitial": true,
+
+  "videoLinearity": "LINEAR",
+  "height": 768,
+  "width": 1024,
+  "placementCategory": "INTERSTITIAL",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "mraidAdvancedTracking": true,
+  "hbPartnerAttributes": [
+    {
+      "externalId": "ex-id-1",
+      "hbPartnerPid": 2,
+      "type": "NON_DEFAULT"
+    }
+  ],
+  "placementVideo": {
+    "linearity": "LINEAR",
+    "companions": [],
+    "playerRequired": false,
+    "longform": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 274,
+      "type": "BUYER"
+    }
+  ],
+  "role": "ROLE_MANAGER",
+  "userName": "buyermanager1_V1",
+  "email": "01fdsfhd@gfdg.ru",
+  "contactNumber": "7658",
+  "name": "dffg gfd",
+  "title": "gf",
+  "primaryContact": false,
+  "oneCentralUserName": "buyermanager1_V1",
+  "firstName": "dffg",
+  "lastName": "gfd"
+}

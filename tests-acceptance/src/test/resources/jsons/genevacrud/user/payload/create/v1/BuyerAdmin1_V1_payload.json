@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 274,
+      "type": "BUYER"
+    }
+  ],
+  "role": "ROLE_ADMIN",
+  "userName": "buyerAdmin1_V1",
+  "email": "01tgsdazgsdz@3sfrt.ru",
+  "contactNumber": "res",
+  "name": "ysdf nexageTestLastName",
+  "title": "yfsd",
+  "primaryContact": false
+}

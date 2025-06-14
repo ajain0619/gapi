@@ -1,0 +1,65 @@
+[
+  {
+    "pid": 2056,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "OS",
+    "rule": "IS_ANY_OF",
+    "filter": "iOS/7.0,iOS/7.1,Android/4.3,Android/4.4,Nokia OS,REX,Linux,PalmOS,VRTXmc",
+    "name": "OS Targets"
+  },
+  {
+    "pid": 2057,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/header",
+    "name": "Position Targets"
+  },
+  {
+    "pid": 2058,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "CUSTOM",
+    "rule": "IS_ANY_OF",
+    "filter": "key1=value1",
+    "name": "custom1"
+  },
+  {
+    "pid": 2059,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "COUNTRY",
+    "rule": "IS_NOT_ANY_OF",
+    "filter": "KAZ,KGZ,TJK,TKM,UZB,CHN,HKG,MAC,PRK,JPN,MNG,KOR,TWN,AFG,BGD,BTN,IND,IRN,MDV,NPL,PAK,LKA,BRN,KHM,IDN,LAO,MYS,MMR,PHL,SGP,THA,TLS,VNM,ARM,AZE,BHR,CYP,GEO,IRQ,ISR,JOR,KWT,LBN,OMN,QAT,SAU,PSE,SYR,TUR,ARE,YEM",
+    "name": "Country Targets"
+  },
+  {
+    "pid": 2060,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "CARRIER",
+    "rule": "IS_NOT_ANY_OF",
+    "filter": "ATM MOBILIS,DJEZZY,WATANIYA,BLUESKY,WIFI",
+    "name": "Carrier Targets"
+  },
+  {
+    "pid": 2061,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "CUSTOM",
+    "rule": "IS_NOT_ANY_OF",
+    "filter": "key3~value3",
+    "name": "custom2"
+  },
+  {
+    "pid": 2062,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "DEVICE",
+    "rule": "IS_ANY_OF",
+    "filter": "Apple/iPhone,Huawei/*,Sony Ericsson/*",
+    "name": "Device Targets"
+  }
+]

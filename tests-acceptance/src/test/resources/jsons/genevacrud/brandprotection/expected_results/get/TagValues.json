@@ -1,0 +1,806 @@
+[
+  {
+    "brandProtectionTagPid": 120,
+    "name": "5min Media",
+    "pid": 1,
+    "value": "5min Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Acxiom",
+    "pid": 2,
+    "value": "Acxiom"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Ad Decisive",
+    "pid": 3,
+    "value": "Ad Decisive"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Ad Magnet",
+    "pid": 4,
+    "value": "Ad Magnet"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "ad4game",
+    "pid": 5,
+    "value": "ad4game"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AdAction",
+    "pid": 6,
+    "value": "AdAction"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AdBuyer",
+    "pid": 7,
+    "value": "AdBuyer"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AdBuyer.com",
+    "pid": 8,
+    "value": "AdBuyer.com"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "adk2",
+    "pid": 9,
+    "value": "adk2"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AdKeeper",
+    "pid": 10,
+    "value": "AdKeeper"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AdMedia",
+    "pid": 11,
+    "value": "AdMedia"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AdMeld",
+    "pid": 12,
+    "value": "AdMeld"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Adobe Tag Container",
+    "pid": 13,
+    "value": "Adobe Tag Container"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Adobe Test & Target",
+    "pid": 14,
+    "value": "Adobe Test & Target"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Adorika",
+    "pid": 15,
+    "value": "Adorika"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AdoTube",
+    "pid": 16,
+    "value": "AdoTube"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AdPlan",
+    "pid": 17,
+    "value": "AdPlan"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Adsame",
+    "pid": 18,
+    "value": "Adsame"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AdSame Networks Technology",
+    "pid": 19,
+    "value": "AdSame Networks Technology"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AdScale",
+    "pid": 20,
+    "value": "AdScale"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Adsfactor",
+    "pid": 21,
+    "value": "Adsfactor"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "adXion",
+    "pid": 22,
+    "value": "adXion"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "ADZ",
+    "pid": 23,
+    "value": "ADZ"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Affinity",
+    "pid": 24,
+    "value": "Affinity"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Alexa Metrics",
+    "pid": 25,
+    "value": "Alexa Metrics"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "AliveChat",
+    "pid": 26,
+    "value": "AliveChat"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Audience Amplify",
+    "pid": 27,
+    "value": "Audience Amplify"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Avazu Network",
+    "pid": 28,
+    "value": "Avazu Network"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Banner Connect",
+    "pid": 29,
+    "value": "Banner Connect"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Baynote Observer",
+    "pid": 30,
+    "value": "Baynote Observer"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Big Mobile",
+    "pid": 31,
+    "value": "Big Mobile"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Bizo",
+    "pid": 32,
+    "value": "Bizo"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Brandscreen",
+    "pid": 33,
+    "value": "Brandscreen"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Cedexis Radar",
+    "pid": 34,
+    "value": "Cedexis Radar"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Centro",
+    "pid": 35,
+    "value": "Centro"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Chaordic",
+    "pid": 36,
+    "value": "Chaordic"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "ChoiceStream",
+    "pid": 37,
+    "value": "ChoiceStream"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Clickbooth",
+    "pid": 38,
+    "value": "Clickbooth"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "ClickForce",
+    "pid": 39,
+    "value": "ClickForce"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Clove Network",
+    "pid": 40,
+    "value": "Clove Network"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Commission Junction",
+    "pid": 41,
+    "value": "Commission Junction"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "ConvertMedia",
+    "pid": 42,
+    "value": "ConvertMedia"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "CPX Interactive",
+    "pid": 43,
+    "value": "CPX Interactive"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Cross Pixel Media",
+    "pid": 44,
+    "value": "Cross Pixel Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Dataium",
+    "pid": 45,
+    "value": "Dataium"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Dedicated Media",
+    "pid": 46,
+    "value": "Dedicated Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Deli Ads",
+    "pid": 47,
+    "value": "Deli Ads"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "dgMatix",
+    "pid": 48,
+    "value": "dgMatix"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "DirectTrack",
+    "pid": 49,
+    "value": "DirectTrack"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Eloqua",
+    "pid": 50,
+    "value": "Eloqua"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Encore Metrics",
+    "pid": 51,
+    "value": "Encore Metrics"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Epom",
+    "pid": 52,
+    "value": "Epom"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "EQ Advertising",
+    "pid": 53,
+    "value": "EQ Advertising"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "ExoClick",
+    "pid": 54,
+    "value": "ExoClick"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Facebook Connect",
+    "pid": 55,
+    "value": "Facebook Connect"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Facebook Social Plugins",
+    "pid": 56,
+    "value": "Facebook Social Plugins"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Glam Media",
+    "pid": 57,
+    "value": "Glam Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Google 1",
+    "pid": 58,
+    "value": "Google 1"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Google Analytics",
+    "pid": 59,
+    "value": "Google Analytics"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Google Tag Manager",
+    "pid": 60,
+    "value": "Google Tag Manager"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Gravity Insights",
+    "pid": 61,
+    "value": "Gravity Insights"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Hi-Media Performance",
+    "pid": 62,
+    "value": "Hi-Media Performance"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "HIRO",
+    "pid": 63,
+    "value": "HIRO"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "impAct",
+    "pid": 64,
+    "value": "impAct"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Intent IQ",
+    "pid": 65,
+    "value": "Intent IQ"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Intent Media",
+    "pid": 66,
+    "value": "Intent Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Intergi",
+    "pid": 67,
+    "value": "Intergi"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "iPerceptions",
+    "pid": 68,
+    "value": "iPerceptions"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "iPromote",
+    "pid": 69,
+    "value": "iPromote"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Jumptap",
+    "pid": 70,
+    "value": "Jumptap"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Kitara Media",
+    "pid": 71,
+    "value": "Kitara Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Knowledge Networks",
+    "pid": 72,
+    "value": "Knowledge Networks"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Lexity",
+    "pid": 73,
+    "value": "Lexity"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "LifeStreet Media",
+    "pid": 74,
+    "value": "LifeStreet Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Ligatus",
+    "pid": 75,
+    "value": "Ligatus"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Lijit",
+    "pid": 76,
+    "value": "Lijit"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "LivePerson",
+    "pid": 77,
+    "value": "LivePerson"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "LiveRail",
+    "pid": 78,
+    "value": "LiveRail"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "LongTail Video Analytics",
+    "pid": 79,
+    "value": "LongTail Video Analytics"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Mark & Mini",
+    "pid": 80,
+    "value": "Mark & Mini"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Matomy Market",
+    "pid": 81,
+    "value": "Matomy Market"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "MaxMind",
+    "pid": 82,
+    "value": "MaxMind"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "mediaFORGE",
+    "pid": 83,
+    "value": "mediaFORGE"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Metrigo",
+    "pid": 84,
+    "value": "Metrigo"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Mindset Media",
+    "pid": 85,
+    "value": "Mindset Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Mirando",
+    "pid": 86,
+    "value": "Mirando"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "MixPanel",
+    "pid": 87,
+    "value": "MixPanel"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Monster Advertising",
+    "pid": 88,
+    "value": "Monster Advertising"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "NetAffiliation",
+    "pid": 89,
+    "value": "NetAffiliation"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "New Relic",
+    "pid": 90,
+    "value": "New Relic"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Optim.al",
+    "pid": 91,
+    "value": "Optim.al"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Optimal Inc.",
+    "pid": 92,
+    "value": "Optimal Inc."
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Optimax Media Delivery",
+    "pid": 93,
+    "value": "Optimax Media Delivery"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Ozone Media",
+    "pid": 94,
+    "value": "Ozone Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Piwik Analytics",
+    "pid": 95,
+    "value": "Piwik Analytics"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "ProvenPixel",
+    "pid": 96,
+    "value": "ProvenPixel"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "PubGears",
+    "pid": 97,
+    "value": "PubGears"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Quigo AdSonar",
+    "pid": 98,
+    "value": "Quigo AdSonar"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "RealVu",
+    "pid": 99,
+    "value": "RealVu"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Redux Media",
+    "pid": 100,
+    "value": "Redux Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Refined Labs",
+    "pid": 101,
+    "value": "Refined Labs"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Reklamport",
+    "pid": 102,
+    "value": "Reklamport"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Ro2.biz",
+    "pid": 103,
+    "value": "Ro2.biz"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Scupio",
+    "pid": 104,
+    "value": "Scupio"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Segmint",
+    "pid": 105,
+    "value": "Segmint"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Sekindo",
+    "pid": 106,
+    "value": "Sekindo"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "ShareASale",
+    "pid": 107,
+    "value": "ShareASale"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "ShareThis",
+    "pid": 108,
+    "value": "ShareThis"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "SkimLinks",
+    "pid": 109,
+    "value": "SkimLinks"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Sociocast",
+    "pid": 110,
+    "value": "Sociocast"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Sociomantic",
+    "pid": 111,
+    "value": "Sociomantic"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Spider.Ad",
+    "pid": 112,
+    "value": "Spider.Ad"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Statcounter",
+    "pid": 113,
+    "value": "Statcounter"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Steel House Media",
+    "pid": 114,
+    "value": "Steel House Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "SundaySky",
+    "pid": 115,
+    "value": "SundaySky"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Switch Concepts",
+    "pid": 116,
+    "value": "Switch Concepts"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Tealium",
+    "pid": 117,
+    "value": "Tealium"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Technorati Media",
+    "pid": 118,
+    "value": "Technorati Media"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "ToneFuse",
+    "pid": 119,
+    "value": "ToneFuse"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "TriggIt",
+    "pid": 120,
+    "value": "TriggIt"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Twitter Advertising",
+    "pid": 121,
+    "value": "Twitter Advertising"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Twitter Button",
+    "pid": 122,
+    "value": "Twitter Button"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Tynt",
+    "pid": 123,
+    "value": "Tynt"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Typekit by Adobe",
+    "pid": 124,
+    "value": "Typekit by Adobe"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Unknown Advertisers",
+    "pid": 125,
+    "value": "Unknown Advertisers"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Veruta",
+    "pid": 126,
+    "value": "Veruta"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Visual Revenue",
+    "pid": 127,
+    "value": "Visual Revenue"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "VisualDNA",
+    "pid": 128,
+    "value": "VisualDNA"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Vizury",
+    "pid": 129,
+    "value": "Vizury"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Webtrekk",
+    "pid": 130,
+    "value": "Webtrekk"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Yashi",
+    "pid": 131,
+    "value": "Yashi"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Yieldlab",
+    "pid": 132,
+    "value": "Yieldlab"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Zanox",
+    "pid": 133,
+    "value": "Zanox"
+  },
+  {
+    "brandProtectionTagPid": 120,
+    "name": "Zenovia",
+    "pid": 134,
+    "value": "Zenovia"
+  }
+]

@@ -1,0 +1,101 @@
+# alias: <METRICS_TYPE>.ssp.geneva.api.<COMPONENT>.<RESOURCE_PATH>.<REQUEST_TYPE>.<ATTRIBUTE>
+# Example: jmx.ssp.geneva.api.web.v1.sellers.GET.count
+# Example: jmx.ssp.geneva.api.ds.dw.usage.count
+init_config:
+instances:
+  - host: localhost
+    port: {{ datadog_jmx_port }}
+    conf:
+      - include:
+          bean: ssp.geneva.api:name=com.nexage.app.web.SellerDTOController.findAll
+          attribute:
+            Count:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.GET.count
+              metric_type: counter
+            99thPercentile:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.GET.time.99thPercentile
+              metric_type: gauge
+      - include:
+          bean: ssp.geneva.api:name=com.nexage.app.web.SellerDTOController.findSummary
+          attribute:
+            Count:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.summaries.GET.count
+              metric_type: counter
+            99thPercentile:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.summaries.GET.time.99thPercentile
+              metric_type: gauge
+      - include:
+          bean: ssp.geneva.api:name=com.nexage.app.web.SiteDTOController.getSites
+          attribute:
+            Count:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.sites.GET.count
+              metric_type: counter
+            99thPercentile:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.sites.GET.time.99thPercentile
+              metric_type: gauge
+      - include:
+          bean: ssp.geneva.api:name=com.nexage.app.web.SiteDTOController.getSitesSummary
+          attribute:
+            Count:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.sites.summaries.GET.count
+              metric_type: counter
+            99thPercentile:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.sites.summaries.GET.time.99thPercentile
+              metric_type: gauge
+      - include:
+          bean: ssp.geneva.api:name=com.nexage.app.web.placement.PlacementDTOController.getPlacements
+          attribute:
+            Count:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.sites.placements.GET.count
+              metric_type: counter
+            99thPercentile:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.sites.placements.GET.time.99thPercentile
+              metric_type: gauge
+      - include:
+          bean: ssp.geneva.api:name=com.nexage.app.web.placement.PlacementSummaryDTOController.getPlacements
+          attribute:
+            Count:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.sites.placements.summaries.GET.count
+              metric_type: counter
+            99thPercentile:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.sites.placements.summaries.GET.time.99thPercentile
+              metric_type: gauge
+      - include:
+          bean: ssp.geneva.api:name=com.nexage.app.web.placement.PlacementSummaryDTOController.getPlacementsSummaryWithoutSitePid
+          attribute:
+            Count:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.placements.summaries.GET.count
+              metric_type: counter
+            99thPercentile:
+              alias: jmx.ssp.geneva.api.web.v1.sellers.placements.summaries.GET.time.99thPercentile
+              metric_type: gauge
+      - include:
+          bean: ssp.geneva.api:name=ssp.geneva.api.datasource.core.pool.ActiveConnections
+          attribute:
+            Value:
+              alias: jmx.ssp.geneva.api.ds.core.activeConnections.value
+              metric_type: counter
+      - include:
+          bean: ssp.geneva.api:name=ssp.geneva.api.datasource.core.pool.Usage
+          attribute:
+            Count:
+              alias: jmx.ssp.geneva.api.ds.core.usage.count
+              metric_type: counter
+            99thPercentile:
+              alias: jmx.ssp.geneva.api.ds.core.usage.time.99thPercentile
+              metric_type: gauge
+      - include:
+          bean: ssp.geneva.api:name=ssp.geneva.api.datasource.dw.pool.ActiveConnections
+          attribute:
+            Value:
+              alias: jmx.ssp.geneva.api.ds.dw.activeConnections.value
+              metric_type: counter
+      - include:
+          bean: ssp.geneva.api:name=ssp.geneva.api.datasource.dw.pool.Usage
+          attribute:
+            Count:
+              alias: jmx.ssp.geneva.api.ds.dw.usage.count
+              metric_type: counter
+            99thPercentile:
+              alias: jmx.ssp.geneva.api.ds.dw.usage.time.99thPercentile
+              metric_type: gauge

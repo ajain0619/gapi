@@ -1,0 +1,50 @@
+{
+  "pid": 100330,
+  "version": 0,
+  "site": {
+    "pid": 10000207,
+    "coppaRestricted":false,
+    "hbEnabled":false,
+    "adTruthEnabled":false,
+    "adScreeningEnabled":false,
+    "filterBots":false,
+    "consumerProfileContributed":false,
+    "consumerProfileUsed":false,
+    "overrideIP":false
+  },
+  "name": "123456788",
+  "memo": "SrikarVp",
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "interstitial": false,
+  "videoLinearity": "LINEAR",
+  "height": 480,
+  "width": 320,
+  "placementCategory": "INSTREAM_VIDEO",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "mraidAdvancedTracking": true,
+  "hbPartnerAttributes": [
+    {
+      "externalId": "mopub_pub_id_1",
+      "hbPartnerPid": 2,
+      "type": "NON_DEFAULT"
+    }
+  ],
+  "adSizeType": "STANDARD",
+  "longform": false,
+  "placementVideo": {
+    "pid": 100332,
+    "version": 0,
+    "linearity": "LINEAR",
+    "playerRequired": false,
+    "longform": true,
+    "multiImpressionBid": true,
+    "competitiveSeparation": true,
+    "streamType": "VOD",
+    "playerBrand": "test_player_detailed",
+    "ssai": "UNKNOWN"
+  },
+  "impressionTypeHandling": "BASED_ON_PLACEMENT_CONFIG"
+}

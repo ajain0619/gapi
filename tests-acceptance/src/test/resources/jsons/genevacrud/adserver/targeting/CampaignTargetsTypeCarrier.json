@@ -1,0 +1,11 @@
+[
+  {
+    "pid": 2060,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "CARRIER",
+    "rule": "IS_NOT_ANY_OF",
+    "filter": "ATM MOBILIS,DJEZZY,WATANIYA,BLUESKY,WIFI",
+    "name": "Carrier Targets"
+  }
+]

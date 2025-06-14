@@ -1,0 +1,68 @@
+{
+  "publisher": {
+    "pid": 10226,
+    "adServingEnabled": false,
+    "restrictDrillDown": false,
+    "test": false,
+    "selfServeAllowed": false,
+    "numberOfUsers": 0
+  },
+  "description": "site for  rtbprofile_publisher1 to test switching_default_rtbprofile",
+  "domain": "rtbprofileswitch.com",
+  "name": "new_site_for_switching_default_rtbprofile_pub1",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "http://rtbprofileswitch.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB4"
+  ],
+  "positions": [
+    {
+      "pid": 100332,
+      "name": "rtbprofile_pub2_position"
+    }
+  ],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "globalAliasName": "",
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "defaultRtbProfile": {
+    "pid": 10000068,
+    "version": 1,
+    "id": "ff808081015d5df26508f55b1a2c0007",
+    "name": "existingProfile",
+    "pubNetReserve": 1.00,
+    "libraries": [],
+    "bidderFilterAllowlist": false,
+    "useDefaultBlock": true,
+    "includeConsumerId": true,
+    "includeDomainReferences": false,
+    "includeConsumerProfile": true,
+    "screeningLevel": "AllowAll",
+    "useDefaultBidders": false,
+    "auctionType": "EXCHANGE_DEFAULT",
+    "alterReserve": "ONLY_IF_HIGHER"
+  }
+}

@@ -1,0 +1,1132 @@
+[
+  {
+    "code": "2",
+    "name": "Africa",
+    "children": [
+      {
+        "code": "14",
+        "name": "Eastern Africa",
+        "children": [
+          {
+            "code": "108",
+            "name": "Burundi"
+          },
+          {
+            "code": "174",
+            "name": "Comoros"
+          },
+          {
+            "code": "262",
+            "name": "Djibouti"
+          },
+          {
+            "code": "232",
+            "name": "Eritrea"
+          },
+          {
+            "code": "231",
+            "name": "Ethiopia"
+          },
+          {
+            "code": "404",
+            "name": "Kenya"
+          },
+          {
+            "code": "450",
+            "name": "Madagascar"
+          },
+          {
+            "code": "454",
+            "name": "Malawi"
+          },
+          {
+            "code": "480",
+            "name": "Mauritius"
+          },
+          {
+            "code": "175",
+            "name": "Mayotte"
+          },
+          {
+            "code": "508",
+            "name": "Mozambique"
+          },
+          {
+            "code": "638",
+            "name": "Reunion"
+          },
+          {
+            "code": "646",
+            "name": "Rwanda"
+          },
+          {
+            "code": "690",
+            "name": "Seychelles"
+          },
+          {
+            "code": "706",
+            "name": "Somalia"
+          },
+          {
+            "code": "728",
+            "name": "South Sudan"
+          },
+          {
+            "code": "800",
+            "name": "Uganda"
+          },
+          {
+            "code": "834",
+            "name": "United Republic of Tanzania"
+          },
+          {
+            "code": "894",
+            "name": "Zambia"
+          },
+          {
+            "code": "716",
+            "name": "Zimbabwe"
+          }
+        ]
+      },
+      {
+        "code": "17",
+        "name": "Middle Africa",
+        "children": [
+          {
+            "code": "24",
+            "name": "Angola"
+          },
+          {
+            "code": "120",
+            "name": "Cameroon"
+          },
+          {
+            "code": "140",
+            "name": "Central African Republic"
+          },
+          {
+            "code": "148",
+            "name": "Chad"
+          },
+          {
+            "code": "178",
+            "name": "Congo"
+          },
+          {
+            "code": "180",
+            "name": "Democratic Republic of the Congo"
+          },
+          {
+            "code": "226",
+            "name": "Equatorial Guinea"
+          },
+          {
+            "code": "266",
+            "name": "Gabon"
+          },
+          {
+            "code": "678",
+            "name": "Sao Tome and Principe"
+          }
+        ]
+      },
+      {
+        "code": "15",
+        "name": "Northern Africa",
+        "children": [
+          {
+            "code": "12",
+            "name": "Algeria"
+          },
+          {
+            "code": "818",
+            "name": "Egypt"
+          },
+          {
+            "code": "434",
+            "name": "Libya"
+          },
+          {
+            "code": "504",
+            "name": "Morocco"
+          },
+          {
+            "code": "729",
+            "name": "Sudan"
+          },
+          {
+            "code": "788",
+            "name": "Tunisia"
+          },
+          {
+            "code": "732",
+            "name": "Western Sahara"
+          }
+        ]
+      },
+      {
+        "code": "18",
+        "name": "Southern Africa",
+        "children": [
+          {
+            "code": "72",
+            "name": "Botswana"
+          },
+          {
+            "code": "426",
+            "name": "Lesotho"
+          },
+          {
+            "code": "516",
+            "name": "Namibia"
+          },
+          {
+            "code": "710",
+            "name": "South Africa"
+          },
+          {
+            "code": "748",
+            "name": "Swaziland"
+          }
+        ]
+      },
+      {
+        "code": "11",
+        "name": "Western Africa",
+        "children": [
+          {
+            "code": "204",
+            "name": "Benin"
+          },
+          {
+            "code": "854",
+            "name": "Burkina Faso"
+          },
+          {
+            "code": "132",
+            "name": "Cabo Verde"
+          },
+          {
+            "code": "384",
+            "name": "Cote d'Ivoire"
+          },
+          {
+            "code": "270",
+            "name": "Gambia"
+          },
+          {
+            "code": "288",
+            "name": "Ghana"
+          },
+          {
+            "code": "324",
+            "name": "Guinea"
+          },
+          {
+            "code": "624",
+            "name": "Guinea-Bissau"
+          },
+          {
+            "code": "430",
+            "name": "Liberia"
+          },
+          {
+            "code": "466",
+            "name": "Mali"
+          },
+          {
+            "code": "478",
+            "name": "Mauritania"
+          },
+          {
+            "code": "562",
+            "name": "Niger"
+          },
+          {
+            "code": "566",
+            "name": "Nigeria"
+          },
+          {
+            "code": "654",
+            "name": "Saint Helena"
+          },
+          {
+            "code": "686",
+            "name": "Senegal"
+          },
+          {
+            "code": "694",
+            "name": "Sierra Leone"
+          },
+          {
+            "code": "768",
+            "name": "Togo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "19",
+    "name": "Americas",
+    "children": [
+      {
+        "code": "29",
+        "name": "Caribbean",
+        "children": [
+          {
+            "code": "660",
+            "name": "Anguilla"
+          },
+          {
+            "code": "28",
+            "name": "Antigua and Barbuda"
+          },
+          {
+            "code": "533",
+            "name": "Aruba"
+          },
+          {
+            "code": "44",
+            "name": "Bahamas"
+          },
+          {
+            "code": "52",
+            "name": "Barbados"
+          },
+          {
+            "code": "535",
+            "name": "Bonaire,  Saint Eustatius and Saba"
+          },
+          {
+            "code": "92",
+            "name": "British Virgin Islands"
+          },
+          {
+            "code": "136",
+            "name": "Cayman Islands"
+          },
+          {
+            "code": "192",
+            "name": "Cuba"
+          },
+          {
+            "code": "531",
+            "name": "Curacao"
+          },
+          {
+            "code": "212",
+            "name": "Dominica"
+          },
+          {
+            "code": "214",
+            "name": "Dominican Republic"
+          },
+          {
+            "code": "308",
+            "name": "Grenada"
+          },
+          {
+            "code": "312",
+            "name": "Guadeloupe"
+          },
+          {
+            "code": "332",
+            "name": "Haiti"
+          },
+          {
+            "code": "388",
+            "name": "Jamaica"
+          },
+          {
+            "code": "474",
+            "name": "Martinique"
+          },
+          {
+            "code": "500",
+            "name": "Montserrat"
+          },
+          {
+            "code": "630",
+            "name": "Puerto Rico"
+          },
+          {
+            "code": "652",
+            "name": "Saint-Barthelemy"
+          },
+          {
+            "code": "659",
+            "name": "Saint Kitts and Nevis"
+          },
+          {
+            "code": "662",
+            "name": "Saint Lucia"
+          },
+          {
+            "code": "663",
+            "name": "Saint Martin (French part)"
+          },
+          {
+            "code": "670",
+            "name": "Saint Vincent and the Grenadines"
+          },
+          {
+            "code": "534",
+            "name": "Sint Maarten (Dutch part)"
+          },
+          {
+            "code": "780",
+            "name": "Trinidad and Tobago"
+          },
+          {
+            "code": "796",
+            "name": "Turks and Caicos Islands"
+          },
+          {
+            "code": "850",
+            "name": "United States Virgin Islands"
+          }
+        ]
+      },
+      {
+        "code": "13",
+        "name": "Central America",
+        "children": [
+          {
+            "code": "84",
+            "name": "Belize"
+          },
+          {
+            "code": "188",
+            "name": "Costa Rica"
+          },
+          {
+            "code": "222",
+            "name": "El Salvador"
+          },
+          {
+            "code": "320",
+            "name": "Guatemala"
+          },
+          {
+            "code": "340",
+            "name": "Honduras"
+          },
+          {
+            "code": "484",
+            "name": "Mexico"
+          },
+          {
+            "code": "558",
+            "name": "Nicaragua"
+          },
+          {
+            "code": "591",
+            "name": "Panama"
+          }
+        ]
+      },
+      {
+        "code": "5",
+        "name": "South America",
+        "children": [
+          {
+            "code": "32",
+            "name": "Argentina"
+          },
+          {
+            "code": "68",
+            "name": "Bolivia (Plurinational State of)"
+          },
+          {
+            "code": "76",
+            "name": "Brazil"
+          },
+          {
+            "code": "152",
+            "name": "Chile"
+          },
+          {
+            "code": "170",
+            "name": "Colombia"
+          },
+          {
+            "code": "218",
+            "name": "Ecuador"
+          },
+          {
+            "code": "238",
+            "name": "Falkland Islands (Malvinas)"
+          },
+          {
+            "code": "254",
+            "name": "French Guiana"
+          },
+          {
+            "code": "328",
+            "name": "Guyana"
+          },
+          {
+            "code": "600",
+            "name": "Paraguay"
+          },
+          {
+            "code": "604",
+            "name": "Peru"
+          },
+          {
+            "code": "740",
+            "name": "Suriname"
+          },
+          {
+            "code": "858",
+            "name": "Uruguay"
+          },
+          {
+            "code": "862",
+            "name": "Venezuela (Bolivarian Republic of)"
+          }
+        ]
+      },
+      {
+        "code": "21",
+        "name": "Northern America",
+        "children": [
+          {
+            "code": "60",
+            "name": "Bermuda"
+          },
+          {
+            "code": "124",
+            "name": "Canada"
+          },
+          {
+            "code": "304",
+            "name": "Greenland"
+          },
+          {
+            "code": "666",
+            "name": "Saint Pierre and Miquelon"
+          },
+          {
+            "code": "840",
+            "name": "United States of America"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "142",
+    "name": "Asia",
+    "children": [
+      {
+        "code": "143",
+        "name": "Central Asia",
+        "children": [
+          {
+            "code": "398",
+            "name": "Kazakhstan"
+          },
+          {
+            "code": "417",
+            "name": "Kyrgyzstan"
+          },
+          {
+            "code": "762",
+            "name": "Tajikistan"
+          },
+          {
+            "code": "795",
+            "name": "Turkmenistan"
+          },
+          {
+            "code": "860",
+            "name": "Uzbekistan"
+          }
+        ]
+      },
+      {
+        "code": "30",
+        "name": "Eastern Asia",
+        "children": [
+          {
+            "code": "156",
+            "name": "China"
+          },
+          {
+            "code": "344",
+            "name": "China Hong Kong Special Administrative Region"
+          },
+          {
+            "code": "446",
+            "name": "China Macao Special Administrative Region"
+          },
+          {
+            "code": "408",
+            "name": "Democratic People's Republic of Korea"
+          },
+          {
+            "code": "392",
+            "name": "Japan"
+          },
+          {
+            "code": "496",
+            "name": "Mongolia"
+          },
+          {
+            "code": "410",
+            "name": "Republic of Korea"
+          },
+          {
+            "code": "158",
+            "name": "Taiwan, Province of China"
+          }
+        ]
+      },
+      {
+        "code": "34",
+        "name": "Southern Asia",
+        "children": [
+          {
+            "code": "4",
+            "name": "Afghanistan"
+          },
+          {
+            "code": "50",
+            "name": "Bangladesh"
+          },
+          {
+            "code": "64",
+            "name": "Bhutan"
+          },
+          {
+            "code": "356",
+            "name": "India"
+          },
+          {
+            "code": "364",
+            "name": "Iran (Islamic Republic of)"
+          },
+          {
+            "code": "462",
+            "name": "Maldives"
+          },
+          {
+            "code": "524",
+            "name": "Nepal"
+          },
+          {
+            "code": "586",
+            "name": "Pakistan"
+          },
+          {
+            "code": "144",
+            "name": "Sri Lanka"
+          }
+        ]
+      },
+      {
+        "code": "35",
+        "name": "South-Eastern Asia",
+        "children": [
+          {
+            "code": "96",
+            "name": "Brunei Darussalam"
+          },
+          {
+            "code": "116",
+            "name": "Cambodia"
+          },
+          {
+            "code": "360",
+            "name": "Indonesia"
+          },
+          {
+            "code": "418",
+            "name": "Lao People's Democratic Republic"
+          },
+          {
+            "code": "458",
+            "name": "Malaysia"
+          },
+          {
+            "code": "104",
+            "name": "Myanmar"
+          },
+          {
+            "code": "608",
+            "name": "Philippines"
+          },
+          {
+            "code": "702",
+            "name": "Singapore"
+          },
+          {
+            "code": "764",
+            "name": "Thailand"
+          },
+          {
+            "code": "626",
+            "name": "Timor-Leste"
+          },
+          {
+            "code": "704",
+            "name": "Viet Nam"
+          }
+        ]
+      },
+      {
+        "code": "145",
+        "name": "Western Asia",
+        "children": [
+          {
+            "code": "51",
+            "name": "Armenia"
+          },
+          {
+            "code": "31",
+            "name": "Azerbaijan"
+          },
+          {
+            "code": "48",
+            "name": "Bahrain"
+          },
+          {
+            "code": "196",
+            "name": "Cyprus"
+          },
+          {
+            "code": "268",
+            "name": "Georgia"
+          },
+          {
+            "code": "368",
+            "name": "Iraq"
+          },
+          {
+            "code": "376",
+            "name": "Israel"
+          },
+          {
+            "code": "400",
+            "name": "Jordan"
+          },
+          {
+            "code": "414",
+            "name": "Kuwait"
+          },
+          {
+            "code": "422",
+            "name": "Lebanon"
+          },
+          {
+            "code": "512",
+            "name": "Oman"
+          },
+          {
+            "code": "634",
+            "name": "Qatar"
+          },
+          {
+            "code": "682",
+            "name": "Saudi Arabia"
+          },
+          {
+            "code": "275",
+            "name": "State of Palestine"
+          },
+          {
+            "code": "760",
+            "name": "Syrian Arab Republic"
+          },
+          {
+            "code": "792",
+            "name": "Turkey"
+          },
+          {
+            "code": "784",
+            "name": "United Arab Emirates"
+          },
+          {
+            "code": "887",
+            "name": "Yemen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "150",
+    "name": "Europe",
+    "children": [
+      {
+        "code": "151",
+        "name": "Eastern Europe",
+        "children": [
+          {
+            "code": "112",
+            "name": "Belarus"
+          },
+          {
+            "code": "100",
+            "name": "Bulgaria"
+          },
+          {
+            "code": "203",
+            "name": "Czech Republic"
+          },
+          {
+            "code": "348",
+            "name": "Hungary"
+          },
+          {
+            "code": "616",
+            "name": "Poland"
+          },
+          {
+            "code": "498",
+            "name": "Republic of Moldova"
+          },
+          {
+            "code": "642",
+            "name": "Romania"
+          },
+          {
+            "code": "643",
+            "name": "Russian Federation"
+          },
+          {
+            "code": "703",
+            "name": "Slovakia"
+          },
+          {
+            "code": "804",
+            "name": "Ukraine"
+          }
+        ]
+      },
+      {
+        "code": "154",
+        "name": "Northern Europe",
+        "children": [
+          {
+            "code": "248",
+            "name": "Aland Islands"
+          },
+          {
+            "code": "830",
+            "name": "Channel Islands"
+          },
+          {
+            "code": "208",
+            "name": "Denmark"
+          },
+          {
+            "code": "233",
+            "name": "Estonia"
+          },
+          {
+            "code": "234",
+            "name": "Faeroe Islands"
+          },
+          {
+            "code": "246",
+            "name": "Finland"
+          },
+          {
+            "code": "831",
+            "name": "Guernsey"
+          },
+          {
+            "code": "352",
+            "name": "Iceland"
+          },
+          {
+            "code": "372",
+            "name": "Ireland"
+          },
+          {
+            "code": "833",
+            "name": "Isle of Man"
+          },
+          {
+            "code": "832",
+            "name": "Jersey"
+          },
+          {
+            "code": "428",
+            "name": "Latvia"
+          },
+          {
+            "code": "440",
+            "name": "Lithuania"
+          },
+          {
+            "code": "578",
+            "name": "Norway"
+          },
+          {
+            "code": "680",
+            "name": "Sark"
+          },
+          {
+            "code": "744",
+            "name": "Svalbard and Jan Mayen Islands"
+          },
+          {
+            "code": "752",
+            "name": "Sweden"
+          },
+          {
+            "code": "826",
+            "name": "United Kingdom of Great Britain and Northern Ireland"
+          }
+        ]
+      },
+      {
+        "code": "39",
+        "name": "Southern Europe",
+        "children": [
+          {
+            "code": "8",
+            "name": "Albania"
+          },
+          {
+            "code": "20",
+            "name": "Andorra"
+          },
+          {
+            "code": "70",
+            "name": "Bosnia and Herzegovina"
+          },
+          {
+            "code": "191",
+            "name": "Croatia"
+          },
+          {
+            "code": "292",
+            "name": "Gibraltar"
+          },
+          {
+            "code": "300",
+            "name": "Greece"
+          },
+          {
+            "code": "336",
+            "name": "Holy See"
+          },
+          {
+            "code": "380",
+            "name": "Italy"
+          },
+          {
+            "code": "470",
+            "name": "Malta"
+          },
+          {
+            "code": "499",
+            "name": "Montenegro"
+          },
+          {
+            "code": "620",
+            "name": "Portugal"
+          },
+          {
+            "code": "674",
+            "name": "San Marino"
+          },
+          {
+            "code": "688",
+            "name": "Serbia"
+          },
+          {
+            "code": "705",
+            "name": "Slovenia"
+          },
+          {
+            "code": "724",
+            "name": "Spain"
+          },
+          {
+            "code": "807",
+            "name": "The former Yugoslav Republic of Macedonia"
+          }
+        ]
+      },
+      {
+        "code": "155",
+        "name": "Western Europe",
+        "children": [
+          {
+            "code": "40",
+            "name": "Austria"
+          },
+          {
+            "code": "56",
+            "name": "Belgium"
+          },
+          {
+            "code": "250",
+            "name": "France"
+          },
+          {
+            "code": "276",
+            "name": "Germany"
+          },
+          {
+            "code": "438",
+            "name": "Liechtenstein"
+          },
+          {
+            "code": "442",
+            "name": "Luxembourg"
+          },
+          {
+            "code": "492",
+            "name": "Monaco"
+          },
+          {
+            "code": "528",
+            "name": "Netherlands"
+          },
+          {
+            "code": "756",
+            "name": "Switzerland"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "code": "9",
+    "name": "Oceania",
+    "children": [
+      {
+        "code": "53",
+        "name": "Australia and New Zealand",
+        "children": [
+          {
+            "code": "36",
+            "name": "Australia"
+          },
+          {
+            "code": "554",
+            "name": "New Zealand"
+          },
+          {
+            "code": "574",
+            "name": "Norfolk Island"
+          }
+        ]
+      },
+      {
+        "code": "54",
+        "name": "Melanesia",
+        "children": [
+          {
+            "code": "242",
+            "name": "Fiji"
+          },
+          {
+            "code": "540",
+            "name": "New Caledonia"
+          },
+          {
+            "code": "598",
+            "name": "Papua New Guinea"
+          },
+          {
+            "code": "90",
+            "name": "Solomon Islands"
+          },
+          {
+            "code": "548",
+            "name": "Vanuatu"
+          }
+        ]
+      },
+      {
+        "code": "57",
+        "name": "Micronesia",
+        "children": [
+          {
+            "code": "316",
+            "name": "Guam"
+          },
+          {
+            "code": "296",
+            "name": "Kiribati"
+          },
+          {
+            "code": "584",
+            "name": "Marshall Islands"
+          },
+          {
+            "code": "583",
+            "name": "Micronesia (Federated States of)"
+          },
+          {
+            "code": "520",
+            "name": "Nauru"
+          },
+          {
+            "code": "580",
+            "name": "Northern Mariana Islands"
+          },
+          {
+            "code": "585",
+            "name": "Palau"
+          }
+        ]
+      },
+      {
+        "code": "61",
+        "name": "Polynesia",
+        "children": [
+          {
+            "code": "16",
+            "name": "American Samoa"
+          },
+          {
+            "code": "184",
+            "name": "Cook Islands"
+          },
+          {
+            "code": "258",
+            "name": "French Polynesia"
+          },
+          {
+            "code": "570",
+            "name": "Niue"
+          },
+          {
+            "code": "612",
+            "name": "Pitcairn"
+          },
+          {
+            "code": "882",
+            "name": "Samoa"
+          },
+          {
+            "code": "772",
+            "name": "Tokelau"
+          },
+          {
+            "code": "776",
+            "name": "Tonga"
+          },
+          {
+            "code": "798",
+            "name": "Tuvalu"
+          },
+          {
+            "code": "876",
+            "name": "Wallis and Futuna Islands"
+          }
+        ]
+      }
+    ]
+  }
+]

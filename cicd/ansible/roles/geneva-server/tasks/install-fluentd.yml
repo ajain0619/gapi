@@ -1,0 +1,9 @@
+---
+- name: Install fluentd td-agent client script
+  template:
+    dest: "/etc/td-agent/{{ item }}"
+    mode: 0775
+    owner: root
+    src: "fluentd/{{ item }}.j2"
+  with_items:
+    - "fluentd_client_configure.sh"

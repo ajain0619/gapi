@@ -1,0 +1,28 @@
+{
+  "name": "RuleBPWithNonexistingSeatInBuyerSeatTargetData",
+  "description": "Brand protection rule with a non-existing seat in data for buyer seat target",
+  "status": "ACTIVE",
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "BUYER_SEATS",
+      "data": "[{\"buyerCompany\":10200,\"bidders\":[1],\"bidder\":1,\"seats\":[\"non-existing-seat\"]}]"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    }
+  ],
+  "assignments": {}
+}

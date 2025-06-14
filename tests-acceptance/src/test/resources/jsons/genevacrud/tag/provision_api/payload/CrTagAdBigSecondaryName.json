@@ -1,0 +1,19 @@
+{
+  "name": "AV95",
+  "buyer": {
+    "pid": "7069"
+  },
+  "primaryId": "apikey",
+  "primaryName": "pname",
+  "secondaryId": "sid",
+  "secondaryName": "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123451",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "Username",
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

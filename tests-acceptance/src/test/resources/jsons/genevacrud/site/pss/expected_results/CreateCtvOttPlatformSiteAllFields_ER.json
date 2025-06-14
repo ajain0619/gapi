@@ -1,0 +1,40 @@
+{
+  "dcn": "8a858a330137372da0982da362770006",
+  "description": "ctv_ott platform site",
+  "domain": "ctv_ott_site.com",
+  "name": "ctv_ott_site",
+  "platform": "CTV_OTT",
+  "status": "ACTIVE",
+  "type": "APPLICATION",
+  "url": "ctv_ott_site.com",
+  "appBundle": "",
+  "coppaRestricted": true,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0
+  }
+}

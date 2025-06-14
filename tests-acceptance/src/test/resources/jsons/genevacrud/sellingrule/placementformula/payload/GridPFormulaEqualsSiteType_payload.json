@@ -1,0 +1,14 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "SITE_TYPE",
+          "operator": "EQUALS",
+          "ruleData": "MOBILE_WEB, DESKTOP"
+        }
+      ]
+    }
+  ]
+}

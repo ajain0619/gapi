@@ -1,0 +1,19 @@
+{
+  "site":{
+    "pid":10000192,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "screenLocation":"UNKNOWN",
+  "mraidSupport":"NO",
+  "placementCategory":"IN_FEED",
+  "interstitial": false,
+  "mraidAdvancedTracking":true,
+  "positionAliasName":"CreatePlacementInFeedAlias",
+  "videoSupport":"VIDEO",
+  "width":1400,
+  "height":400,
+  "adSizeType":"STANDARD",
+  "memo":"CreatePlacementInFeed",
+  "name":"createplacementinfeed"
+}

@@ -1,0 +1,5 @@
+#! /bin/bash
+
+docker run -v $PWD:/workspace docker.ouroath.com:4443/ssp/cloud-config:latest
+
+cd .. && ./pre-test.sh

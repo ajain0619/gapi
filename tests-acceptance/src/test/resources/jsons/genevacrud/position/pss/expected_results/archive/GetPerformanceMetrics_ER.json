@@ -1,0 +1,32 @@
+{
+  "performanceMetrics": [
+    {
+      "tagPid": 7302,
+      "tagName": "AdFonic - PositionArchiving_TestTag1",
+      "requests": 29,
+      "revenue": 0E-8,
+      "served": 2,
+      "delivered": 2,
+      "clicks": 0
+    },
+    {
+      "tagPid": 7307,
+      "tagName": "AdFonic - PositionArchiving_TestTag6",
+      "requests": 0,
+      "revenue": 0E-8,
+      "served": 0,
+      "delivered": 0,
+      "clicks": 0
+    },
+    {
+      "tagPid": 7309,
+      "tagName": "AdFonic - PositionArchiving_TestTag8",
+      "requests": 0,
+      "revenue": 0E-8,
+      "served": 0,
+      "delivered": 0,
+      "clicks": 0
+    }
+  ],
+  "txId": "1ea9d89d3aa5784ce971fe0bcfc2080c"
+}

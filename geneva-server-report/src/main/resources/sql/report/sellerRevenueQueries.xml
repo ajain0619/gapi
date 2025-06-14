@@ -1,0 +1,1527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+            #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        UNION ALL
+        SELECT
+            #if(!$StringUtils.isEmpty($adsource) || !$StringUtils.isEmpty($tag) || !$StringUtils.isEmpty($adSourceTypeId))
+                SUM(f.ads_requested_adnet)
+            #else
+                SUM(f.ads_requested_site)
+            #end AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+            #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+    ) AS t
+    ]]>
+  </entry>
+
+  <entry key="dim=seller">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       ,t.publisher_id sellerId
+       ,d.name seller
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,f.publisher_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.publisher_id
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.publisher_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.publisher_id
+        UNION ALL
+        SELECT
+            #if(!$StringUtils.isEmpty($adsource) || !$StringUtils.isEmpty($tag) || !$StringUtils.isEmpty($adSourceTypeId))
+                SUM(f.ads_requested_adnet)
+            #else
+                SUM(f.ads_requested_site)
+            #end AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.publisher_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.publisher_id
+    ) AS t
+    INNER JOIN dim_company d ON d.id = t.publisher_id
+    GROUP BY t.publisher_id, d.name
+    ]]>
+  </entry>
+
+  <entry key="dim=site">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       ,d.type AS siteType
+       ,d2.name AS seller
+       ,t.site_id AS siteId
+       ,d.name AS site
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,f.site_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.site_id
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.site_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.site_id
+        UNION ALL
+        SELECT
+            #if(!$StringUtils.isEmpty($adsource) || !$StringUtils.isEmpty($tag) || !$StringUtils.isEmpty($adSourceTypeId))
+                SUM(f.ads_requested_adnet)
+            #else
+                SUM(f.ads_requested_site)
+            #end AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.site_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.site_id
+    ) AS t
+    INNER JOIN dim_site d ON d.id = t.site_id
+    INNER JOIN dim_company d2 ON d2.id = d.company_id
+    GROUP BY d.type, t.site_id, d.name, d2.name
+    ]]>
+  </entry>
+
+  <entry key="dim=tag">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       ,d1.name AS site
+       ,d1.type AS siteType
+       ,d2.name AS seller
+       ,d3.name AS position
+       ,d3.placement_type AS placementType
+       ,d4.name AS buyer
+       ,t.tag_id AS adTagId
+       ,d.name AS adTag
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,f.tag_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.tag_id
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.tag_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.tag_id
+        UNION ALL
+        SELECT SUM(f.ads_requested_adnet) AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.tag_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.tag_id
+    ) AS t
+    INNER JOIN dim_tag d ON d.id = t.tag_id
+    INNER JOIN dim_site d1 ON d1.id = d.site_id
+    INNER JOIN dim_company d2 ON d2.id = d1.company_id
+    LEFT JOIN dim_position d3 ON d3.id = d.position_id
+    INNER JOIN dim_adnet d4 ON d4.id = d.adnet_id
+    GROUP BY d1.name, d1.type, d2.name, d3.name,d3.placement_type, d4.name, t.tag_id, d.name
+    ]]>
+  </entry>
+  <entry key="dim=adsource">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       ,t.adnet_id AS adSourceId
+       ,d.name AS adSource
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,f.adnet_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.adnet_id
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.adnet_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.adnet_id
+        UNION ALL
+        SELECT SUM(f.ads_requested_adnet) AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.adnet_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.adnet_id
+    ) AS t
+    INNER JOIN dim_adnet d ON d.id = t.adnet_id
+    GROUP BY t.adnet_id, d.name
+    ]]>
+  </entry>
+
+  <entry key="dim=country">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       ,t.country
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,f.country
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.country
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.country
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.country
+        UNION ALL
+        SELECT
+            #if(!$StringUtils.isEmpty($adsource) || !$StringUtils.isEmpty($tag) || !$StringUtils.isEmpty($adSourceTypeId))
+                SUM(f.ads_requested_adnet)
+            #else
+                SUM(f.ads_requested_site)
+            #end AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.country
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.country
+    ) AS t
+    GROUP BY t.country
+    ORDER BY t.country
+    ]]>
+  </entry>
+
+  <entry key="dim=position">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       ,d.name AS position
+       ,d.placement_type AS placementType
+       ,d.memo AS positionMemo
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,f.zone
+            ,f.site_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.zone, f.site_id
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.zone
+            ,f.site_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.zone, f.site_id
+        UNION ALL
+        SELECT
+           #if(!$StringUtils.isEmpty($adsource) || !$StringUtils.isEmpty($tag) || !$StringUtils.isEmpty($adSourceTypeId))
+                SUM(f.ads_requested_adnet)
+            #else
+                SUM(f.ads_requested_site)
+            #end AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.zone
+            ,f.site_id
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.zone, f.site_id
+    ) AS t
+    INNER JOIN dim_position AS d ON d.site_id = t.site_id and d.name=t.zone
+    GROUP BY d.name, d.placement_type, d.memo
+    ORDER BY d.name
+    ]]>
+  </entry>
+
+  <entry key="dim=adSourceTypeId">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       ,t.source_type AS adSourceTypeId
+       ,d.name AS sourceType
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,f.source_type
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.source_type
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.source_type
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.source_type
+        UNION ALL
+        SELECT SUM(f.ads_requested_adnet) AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,f.source_type
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY f.source_type
+    ) AS t
+    INNER JOIN dim_ad_source_type d ON d.id = t.source_type
+    GROUP BY t.source_type, d.name
+    ]]>
+  </entry>
+
+  <entry key="dim=day">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       ,t.interval
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,date_trunc('day', f.start) as interval
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY date_trunc('day', f.start)
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,date_trunc('day', f.start) as interval
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY date_trunc('day', f.start)
+        UNION ALL
+        SELECT
+            #if(!$StringUtils.isEmpty($adsource) || !$StringUtils.isEmpty($tag) || !$StringUtils.isEmpty($adSourceTypeId))
+                SUM(f.ads_requested_adnet)
+            #else
+                SUM(f.ads_requested_site)
+            #end AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,date_trunc('day', f.start) as interval
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY date_trunc('day', f.start)
+    ) AS t
+    GROUP BY t.interval
+    ORDER BY t.interval
+    ]]>
+  </entry>
+
+  <entry key="dim=week">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       ,t.interval
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,greatest(timestamp_trunc(f.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) AS interval
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY timestamp_trunc(f.start, 'dy')
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,greatest(timestamp_trunc(f.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) AS interval
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY timestamp_trunc(f.start, 'dy')
+        UNION ALL
+        SELECT
+            #if(!$StringUtils.isEmpty($adsource) || !$StringUtils.isEmpty($tag) || !$StringUtils.isEmpty($adSourceTypeId))
+                SUM(f.ads_requested_adnet)
+            #else
+                SUM(f.ads_requested_site)
+            #end AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,greatest(timestamp_trunc(f.start, 'dy'), to_date(:start, 'YYYY-MM-DD')) AS interval
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY timestamp_trunc(f.start, 'dy')
+    ) AS t
+    GROUP BY t.interval
+    ORDER BY t.interval
+    ]]>
+  </entry>
+
+  <entry key="dim=month">
+    <![CDATA[
+     SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       ,t.interval
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,date_trunc('month', f.start) AS interval
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY date_trunc('month', f.start)
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,date_trunc('month', f.start) AS interval
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY date_trunc('month', f.start)
+        UNION ALL
+        SELECT
+            #if(!$StringUtils.isEmpty($adsource) || !$StringUtils.isEmpty($tag) || !$StringUtils.isEmpty($adSourceTypeId))
+                SUM(f.ads_requested_adnet)
+            #else
+                SUM(f.ads_requested_site)
+            #end AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,date_trunc('month', f.start) AS interval
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY date_trunc('month', f.start)
+    ) AS t
+    GROUP BY t.interval
+    ORDER BY t.interval
+    ]]>
+  </entry>
+  <entry key="dim=headerBidding">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+       /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+       SUM(t.requests) AS adRequests
+       ,SUM(t.served) AS adServed
+       ,SUM(t.delivered) AS adDelivered
+       ,SUM(t.clicked) AS adClicks
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 100 * SUM(t.served) / SUM(t.requests) end, 100) AS fillRate
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 100 * SUM(t.clicked) / SUM(t.delivered) end, 100) AS ctr
+       ,SUM(t.platformRevenue) AS revenue
+       ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.delivered) end, 100) AS cpm
+       ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.platformRevenue) / SUM(t.requests) end, 100) AS rpm
+       #if($reportUser.isNexageUser())
+           ,SUM(t.totalRevenue) AS totalRevenue
+           ,LEAST(case SUM(t.delivered) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.delivered) end, 100) AS totalEcpm
+           ,LEAST(case SUM(t.requests) when 0 then 0 else 1000 * SUM(t.totalRevenue) / SUM(t.requests) end, 100) AS totalRpm
+           ,SUM(t.mmRevenue) AS mmRevenue
+       #end
+       , (CASE WHEN t.headerBidding=0 THEN 'Waterfall' ELSE 'Header Bidding' END) AS headerBidding,
+       t.headerBidding AS hbId
+    FROM(
+        SELECT 0 AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,SUM(f.revenue) - SUM(f.revenue_net) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,SUM(f.revenue) AS totalRevenue
+                ,SUM(f.revenue_net) AS mmRevenue
+            #end
+            ,CASE WHEN f.hb_type IS NULL OR f.hb_type=-1 THEN 0 ELSE 1 END AS headerBidding
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 )
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY headerBidding
+        UNION ALL
+        SELECT 0 AS requests
+            ,SUM(f.ads_served) AS served
+            ,SUM(f.ads_delivered) AS delivered
+            ,SUM(f.ads_clicked) AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,CASE WHEN f.hb_type IS NULL OR f.hb_type=-1 THEN 0 ELSE 1 END AS headerBidding
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+        GROUP BY headerBidding
+        UNION ALL
+        SELECT
+            #if(!$StringUtils.isEmpty($adsource) || !$StringUtils.isEmpty($tag) || !$StringUtils.isEmpty($adSourceTypeId))
+                SUM(f.ads_requested_adnet)
+            #else
+                SUM(f.ads_requested_site)
+            #end AS requests
+            ,0 AS served
+            ,0 AS delivered
+            ,0 AS clicked
+            ,CAST(0 AS DECIMAL(18, 8)) AS platformRevenue
+            #if($reportUser.isNexageUser())
+                ,CAST(0 AS DECIMAL(18, 8)) AS totalRevenue
+                ,CAST(0 AS DECIMAL(18, 8)) AS mmRevenue
+            #end
+            ,CASE WHEN f.hb_type IS NULL OR f.hb_type=-1 THEN 0 ELSE 1 END AS headerBidding
+        FROM fact_revenue_adnet_vw_daily f
+        WHERE (f.tag_monetization = 1 OR f.tag_monetization = -1)
+            AND f.start >= :start AND f.start < :stop
+            #if(!$StringUtils.isEmpty($seller)) AND f.publisher_id=:seller #end
+            #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+            #if(!$StringUtils.isEmpty($adsource)) AND f.adnet_id=:adsource #end
+            #if(!$StringUtils.isEmpty($tag)) AND f.tag_id=:tag #end
+            #if(!$StringUtils.isEmpty($country)) AND f.country=:country #end
+            #if(!$StringUtils.isEmpty($position)) AND f.zone=:position #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($adSourceTypeId)) AND f.source_type=:adSourceTypeId #end
+           #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+                AND (f.hb_type IS NULL OR f.hb_type=-1)
+            #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+                AND f.hb_type>=0
+            #end
+            GROUP BY headerBidding
+    ) AS t
+    GROUP BY headerBidding, hbId
+    ORDER BY headerBidding
+    ]]>
+  </entry>
+</properties>

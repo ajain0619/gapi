@@ -1,0 +1,13 @@
+- name: "Create sia_config"
+  template:
+    dest: "/etc/sia/{{ item }}"
+    group: root
+    mode: 0755
+    owner: root
+    src: "{{ item }}.j2"
+  with_items:
+    - "sia_config"
+- name: "Restart sia service"
+  service:
+    name: sia
+    state: restarted

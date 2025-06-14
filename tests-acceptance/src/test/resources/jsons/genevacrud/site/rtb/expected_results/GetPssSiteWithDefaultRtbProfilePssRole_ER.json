@@ -1,0 +1,64 @@
+{
+  "pid": 10000176,
+  "version": 76,
+  "publisher": {
+    "pid": 10201,
+    "adServingEnabled": false,
+    "restrictDrillDown": false,
+    "test": false,
+    "selfServeAllowed": false,
+    "numberOfUsers": 0
+  },
+  "dcn": "8a859e06014f4fd97b68dbd1bf0c000f",
+  "description": "test",
+  "domain": "test",
+  "name": "CRUDPosition_Site3",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "test",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB4"
+  ],
+  "positions": [
+    {
+      "pid": 100284,
+      "name": "DealTagTest-Native",
+      "memo": "DealTagTest-Native"
+    },
+    {
+      "pid": 100281,
+      "name": "DealTagTest-Inter-Static",
+      "memo": "DealTagTest-Inter-Static"
+    },
+    {
+      "pid": 100282,
+      "name": "DealTagTest-Inter-Video",
+      "memo": "DealTagTest-Inter-Video"
+    },
+    {
+      "pid": 100283,
+      "name": "DealTagTest-MedRec",
+      "memo": "DealTagTest-MedRec"
+    },
+    {
+      "pid": 100285,
+      "name": "DealTagTest-InstreamVideo",
+      "memo": "DealTagTest-InstreamVideo"
+    },
+    {
+      "pid": 100279,
+      "name": "DealTagTest-Banner",
+      "memo": "DealTagTest-Banner"
+    },
+    {
+      "pid": 100280,
+      "name": "DealTagTest-Inter-Both",
+      "memo": "DealTagTest-Inter-Both"
+    }
+  ],
+  "mode": "TEST",
+  "hbEnabled": false
+}

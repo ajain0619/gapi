@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 1,
+      "type": "NEXAGE"
+    }
+  ],
+  "role": "ROLE_ADMIN",
+  "userName": "nexageadmin2",
+  "email": "01sdfhd@q.tt",
+  "contactNumber": "5423",
+  "name": "yersdf nexageTestLastName",
+  "title": "tqt",
+  "primaryContact": false
+}

@@ -1,0 +1,43 @@
+{
+  "description": "site for testing transparency settings",
+  "domain": "transparency_disabled.com",
+  "name": "site_for_transparency_disabled",
+  "platform": "IPHONE",
+  "status": "ACTIVE",
+  "type": "APPLICATION",
+  "url": "http://transparency_disabled.com",
+  "coppaRestricted": false,
+  "iabCategories": [],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "defaultRtbProfile": {
+    "pid": 10000068,
+    "id": "ff808081015d5df26508f55b1a2c0007",
+    "description": "Self Service Created Ad Source",
+    "name": "existingProfile"
+  },
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.004,
+    "rtbFee": 0.026
+  }
+}

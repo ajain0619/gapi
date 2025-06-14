@@ -1,0 +1,14 @@
+{
+  "tagUpdateInfo": [
+    {
+      "tagName": "Update1_tag_transparency_enabled",
+      "previousGrossFloor": 1.09,
+      "newGrossFloor": 7.94
+    },
+    {
+      "tagName": "Update2_tag_transparency_enabled",
+      "previousGrossFloor": 1.04,
+      "newGrossFloor": 20
+    }
+  ]
+}

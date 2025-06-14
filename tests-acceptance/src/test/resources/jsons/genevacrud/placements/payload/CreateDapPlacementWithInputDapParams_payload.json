@@ -1,0 +1,32 @@
+{
+  "site": {
+    "pId": 10000192,
+    "type": "MOBILE_WEB",
+    "platform":"OTHER"
+  },
+  "name": "o2_dap_placement_1",
+  "memo": "o2_dap_placement_1",
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "mraidAdvancedTracking": false,
+  "status": "ACTIVE",
+  "interstitial": false,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "positionAliasName":"test_dap_position1",
+  "placementVideo": {
+    "playerRequired": true,
+    "linearity": "LINEAR",
+    "companions": [
+      { "height": 320, "width": 480 },
+      { "height": 320, "width": 480 }
+    ],
+    "longform": false,
+    "videoPlacementType": "IN_ARTICLE",
+    "dapPlayerType":"O2"
+  },
+  "width":300,
+  "adSizeType": "DYNAMIC",
+  "height":250
+}

@@ -1,0 +1,29 @@
+{
+  "pid": 1,
+  "name": "golden-data-test-fee-adjustment-1",
+  "inclusive": true,
+  "demandFeeAdjustment": 0.1,
+  "version": 0,
+  "enabled": true,
+  "description": "A fee adjustment (#1 of 2) to test geneva-api.",
+  "feeAdjustmentSellers": [
+    {
+      "sellerPid": 40,
+      "sellerName": "adserverSellerCompany2"
+    },
+    {
+      "sellerPid": 27,
+      "sellerName": "adserverSellerCompany1"
+    }
+  ],
+  "feeAdjustmentBuyers": [
+    {
+      "buyerPid": 274,
+      "buyerName": "cpi buyer"
+    },
+    {
+      "buyerPid": 261,
+      "buyerName": "acme bidding"
+    }
+  ]
+}

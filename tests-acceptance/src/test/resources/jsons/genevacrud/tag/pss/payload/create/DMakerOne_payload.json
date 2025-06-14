@@ -1,0 +1,17 @@
+{
+  "site": {
+    "pid": 10000207,
+    "hbEnabled": false
+  },
+  "name": "SY_Exchange_1",
+  "buyer": {
+    "pid": 7051,
+    "primaryIdRequired": false,
+    "primaryNameRequired": false,
+    "secondaryIdRequired": false,
+    "secondaryNameRequired": false
+  },
+  "position": {
+    "pid": 100329
+  }
+}

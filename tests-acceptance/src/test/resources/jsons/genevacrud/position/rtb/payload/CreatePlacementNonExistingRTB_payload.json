@@ -1,0 +1,54 @@
+{
+  "site": {
+    "pid": 10000202,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "interstitial": false,
+  "screenLocation": "ABOVE_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "width": 300,
+  "height": 50,
+  "memo": "plac_non_existing_rtb",
+  "name": "plac_non_existing_rtb",
+  "placementCategory": "BANNER",
+  "defaultRtbProfile": {
+    "pid": 1000000000000000,
+    "version": 0,
+    "name": "cafe",
+    "id": "a1c1a1b1d1",
+    "pubNetReserve": 1,
+    "libraries": [],
+    "bidderFilterAllowlist": false,
+    "useDefaultBlock": true,
+    "includeConsumerId": true,
+    "includeDomainReferences": false,
+    "includeConsumerProfile": true,
+    "screeningLevel": "AllowAll",
+    "useDefaultBidders": false,
+    "auctionType": "EXCHANGE_DEFAULT",
+    "alterReserve": "OFF",
+    "siteTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "idAlias": "10000195",
+      "nameAlias": "defaultSite"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "idAlias": "10218",
+      "nameAlias": "defaultBidder"
+    },
+    "description": "Self Service Created Ad Source",
+    "siteType": "W",
+    "defaultReserve": 1.02,
+    "creationDate": 1488832682000,
+    "lastUpdate": 1488832682000,
+    "blockedExternalDataProviderMap": {},
+    "bidderFilterMap": {},
+    "libraryPids": [],
+    "includeGeoData": true,
+    "bidderFilters": [],
+    "blockedAdCategories": []
+  }
+}

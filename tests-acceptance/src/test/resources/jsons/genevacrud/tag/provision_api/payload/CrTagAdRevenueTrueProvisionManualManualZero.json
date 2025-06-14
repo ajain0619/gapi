@@ -1,0 +1,16 @@
+{
+  "name": "AV31",
+  "buyer": {
+    "pid": "7068"
+  },
+  "ecpmManual": 0,
+  "ecpmProvision": "Manual",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "east",
+  "adNetReportPassword": "west",
+  "tagController": {
+    "autoExpand": false
+  },
+  "primaryId": "06111544"
+}

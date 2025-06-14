@@ -1,0 +1,92 @@
+{
+  "content": [
+    {
+      "pid": 688,
+      "categoryId": 6,
+      "name": "Real Estate",
+      "rtbId": "IAB21",
+      "crsTags": []
+    },
+    {
+      "pid": 672,
+      "categoryId": 6,
+      "name": "Education",
+      "rtbId": "IAB5",
+      "crsTags": []
+    },
+    {
+      "pid": 676,
+      "categoryId": 6,
+      "name": "Hobbies & Interests",
+      "rtbId": "IAB9",
+      "crsTags": []
+    },
+    {
+      "pid": 674,
+      "categoryId": 6,
+      "name": "Health & Fitness",
+      "rtbId": "IAB7",
+      "crsTags": []
+    },
+    {
+      "pid": 669,
+      "categoryId": 6,
+      "name": "Automotive",
+      "rtbId": "IAB2",
+      "crsTags": []
+    },
+    {
+      "pid": 685,
+      "categoryId": 6,
+      "name": "Style & Fashion",
+      "rtbId": "IAB18",
+      "crsTags": []
+    },
+    {
+      "pid": 668,
+      "categoryId": 6,
+      "name": "Arts & Entertainment",
+      "rtbId": "IAB1",
+      "crsTags": []
+    },
+    {
+      "pid": 684,
+      "categoryId": 6,
+      "name": "Sports",
+      "rtbId": "IAB17",
+      "crsTags": []
+    },
+    {
+      "pid": 686,
+      "categoryId": 6,
+      "name": "Technology & Computing",
+      "rtbId": "IAB19",
+      "crsTags": []
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": false,
+      "sorted": true,
+      "empty": false
+    },
+    "offset": 0,
+    "pageSize": 20,
+    "pageNumber": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 1,
+  "totalElements": 9,
+  "last": true,
+  "number": 0,
+  "sort": {
+    "unsorted": false,
+    "sorted": true,
+    "empty": false
+  },
+  "size": 20,
+  "numberOfElements": 9,
+  "first": true,
+  "empty": false
+}

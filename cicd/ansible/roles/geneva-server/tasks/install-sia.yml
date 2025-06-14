@@ -1,0 +1,7 @@
+- name: "Create sia directory"
+  file:
+    path: /etc/sia
+    state: directory
+    owner: "{{ geneva_server_app_user }}"
+    group: "{{ geneva_server_app_group }}"
+    mode: 0755

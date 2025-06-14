@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 274
+    }
+  ],
+  "role": "ROLE_MANAGER",
+  "userName": "buyermanager5",
+  "email": "buyermanager5@rfa.ru",
+  "contactNumber": "8654",
+  "name": "hdfs hdfs",
+  "title": "hfds",
+  "primaryContact": false
+}

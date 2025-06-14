@@ -1,0 +1,14 @@
+{
+  "type": "BUYER",
+  "website": "www.requered.com",
+  "description": "",
+  "salesforceId": "",
+  "cpiTrackingEnabled": false,
+  "reportingApiEnabled": false,
+  "secretKey": "",
+  "rtbEnabled": false,
+  "mediationEnabled": true,
+  "rtbRevenueReportEnabled": false,
+  "status": "ACTIVE",
+  "thirdPartyFraudDetectionEnabled": false
+}

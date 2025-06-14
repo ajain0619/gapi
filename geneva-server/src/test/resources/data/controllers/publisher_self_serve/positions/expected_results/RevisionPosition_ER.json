@@ -1,0 +1,30 @@
+{
+  "delta": {
+    "Position": {
+      "pid": [
+        "100318",
+        "100318"
+      ],
+      "name": [
+        "transparency_enabled_position",
+        "name_updated"
+      ],
+      "memo": [
+        "transparency_enabled_position",
+        "name_updated"
+      ],
+      "mraidAdvancedTracking": [
+        "false",
+        "true"
+      ],
+      "height": [
+        null,
+        "75"
+      ],
+      "width": [
+        null,
+        "480"
+      ]
+    }
+  }
+}

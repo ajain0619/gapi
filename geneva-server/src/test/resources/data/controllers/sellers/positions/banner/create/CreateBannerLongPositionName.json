@@ -1,0 +1,13 @@
+{
+  "sitePid": 10000174,
+  "name": "CRUDPosition_Banner_LoooooooooooooooooooooooooooooooooongPositionName",
+  "tiers": [],
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "UNDEFINED",
+  "mraidAdvancedTracking": true,
+  "videoLinearity": "LINEAR",
+  "placementCategory": "BANNER"
+}

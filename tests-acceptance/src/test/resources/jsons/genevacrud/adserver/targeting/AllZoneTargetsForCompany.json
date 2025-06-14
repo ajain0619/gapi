@@ -1,0 +1,83 @@
+[
+  {
+    "pid": 1,
+    "sellerId": 27,
+    "campaignId": 1,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/positiona,846/positionc,859/positiona,859/positionb",
+    "name": null
+  },
+  {
+    "pid": 14,
+    "sellerId": 27,
+    "campaignId": 2,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/positionb,846/positionc",
+    "name": null
+  },
+  {
+    "pid": 27,
+    "sellerId": 27,
+    "campaignId": 3,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/positiond",
+    "name": null
+  },
+  {
+    "pid": 40,
+    "sellerId": 27,
+    "campaignId": 4,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/positiond",
+    "name": null
+  },
+  {
+    "pid": 53,
+    "sellerId": 27,
+    "campaignId": 5,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/positiond",
+    "name": null
+  },
+  {
+    "pid": 66,
+    "sellerId": 27,
+    "campaignId": 6,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/positione",
+    "name": null
+  },
+  {
+    "pid": 79,
+    "sellerId": 27,
+    "campaignId": 7,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/positione",
+    "name": null
+  },
+  {
+    "pid": 92,
+    "sellerId": 27,
+    "campaignId": 8,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "885/positiona,885/positionb,885/positionc",
+    "name": null
+  },
+  {
+    "pid": 2057,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/header",
+    "name": "Position Targets"
+  }
+]

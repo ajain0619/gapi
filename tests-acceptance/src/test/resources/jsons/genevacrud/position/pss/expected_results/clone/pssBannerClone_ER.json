@@ -1,0 +1,17 @@
+{
+  "pid": 100274,
+  "version": 0,
+  "site": {
+    "pid": 10000175
+  },
+  "name": "pss_banner_clone",
+  "memo": "pss_banner_clone",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "FOOTER_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION"
+}

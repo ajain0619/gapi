@@ -1,0 +1,39 @@
+{
+  "site": {
+    "pid": 10000202
+  },
+  "name": "JohnnyColon",
+  "status": "ACTIVE",
+  "ecpmAuto": 0,
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "owner": "Publisher",
+  "selfServeEnablement": "NONE",
+  "importRevenueFlag": true,
+  "type": "RTB",
+  "buyer": {
+    "pid": 2160
+  },
+  "position": {
+    "pid": 100318
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": [],
+  "rtbProfile": {
+    "blockedAdCategories": [],
+    "blockedAdvertisers": [],
+    "useDefaultBlock": true,
+    "useDefaultBidders": false,
+    "includeDomainReferences": true,
+    "includeConsumerId": true,
+    "includeConsumerProfile": true,
+    "alterReserve": "ONLY_IF_HIGHER",
+    "pubNetReserve": 1,
+    "libraries": [],
+    "bidderFilters": [],
+    "bidderFilterWhitelist": false,
+    "auctionType": "EXCHANGE_DEFAULT"
+  }
+}

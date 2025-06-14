@@ -1,0 +1,9 @@
+{
+  "pid": 1,
+  "name": "test-fee-adjustment-1-updated-again",
+  "inclusive": true,
+  "demandFeeAdjustment": 0.111,
+  "version": 1,
+  "enabled": true,
+  "description": "A test fee adjustment updated again."
+}

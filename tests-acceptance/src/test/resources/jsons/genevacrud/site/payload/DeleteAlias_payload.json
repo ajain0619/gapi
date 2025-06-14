@@ -1,0 +1,58 @@
+{
+  "dcn": "qqq",
+  "id": "ff80808101505005279b14ac7d5900ce",
+  "pid": 10000178,
+  "version": 1,
+  "adScreeningEnabled": false,
+  "buyerTimeout": 500,
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "daysFree": 0,
+  "description": "desc",
+  "domain": "www",
+  "filterBots": true,
+  "type": "MOBILE_WEB",
+  "live": false,
+  "name": "AliasTestSite",
+  "overrideIP": false,
+  "platform": "OTHER",
+  "reportBatchSize": 10,
+  "reportFrequency": 180000,
+  "rulesUpdateFrequency": 1800000,
+  "status": "ACTIVE",
+  "isAdTruthEnabled": false,
+  "trafficThrottle": 0,
+  "totalTimeout": 1000,
+  "url": "uuu",
+  "coppaRestricted": true,
+  "rtb1CategoryRollup": "",
+  "globalAliasName": "",
+  "metadataEnablement": false,
+  "companyPid": 10207,
+  "currentDealTerm": {
+    "pid": 10854,
+    "version": 0,
+    "sitePid": 10000178,
+    "effectiveDate": 1443455860000,
+    "revenueMode": "REV_SHARE",
+    "nexageRevenueShare": 0.002,
+    "rtbFee": 0.004,
+    "hasDealTermChanged": false
+  },
+  "metadata": {
+  },
+  "impressionGroup": {
+    "enabled": true,
+    "groups": [
+      "o"
+    ]
+  },
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "iabCategories": [
+    "IAB1"
+  ],
+  "positions": [],
+  "tags": [],
+  "rtbProfiles": []
+}

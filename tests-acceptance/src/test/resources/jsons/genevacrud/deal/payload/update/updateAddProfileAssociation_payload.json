@@ -1,0 +1,31 @@
+{
+  "pid": 1,
+  "dealId": "1442225178554269962",
+  "description": "1) Deal with all feature enabled",
+  "start": 1442314800000,
+  "stop": 1443697199000,
+  "floor": 1000,
+  "createdBy": 2,
+  "status": "Active",
+  "dateCreated": 1442250404000,
+  "auctionType": "Fixed",
+  "bidders": [],
+  "profiles": [
+    {
+      "rtbProfilePid": 10000008,
+      "auctionType": 1,
+      "defaultReserve": 222,
+      "pubAlias": 105,
+      "siteAlias": 950,
+      "pubNameAlias": "adserverSellerTest8",
+      "siteNameAlias": "AS8A",
+      "siteType": "W",
+      "isRealName": "true",
+      "siteId": 950,
+      "siteName": "AS8A",
+      "pubId": 105,
+      "pubName": "adserverSellerTest8"
+    }
+  ],
+  "visibility": true
+}

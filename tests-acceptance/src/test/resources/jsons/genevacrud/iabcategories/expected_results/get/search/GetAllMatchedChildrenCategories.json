@@ -1,0 +1,45 @@
+{
+  "content": [
+    {
+      "pid": 257,
+      "categoryId": 6,
+      "name": "Arts & Entertainment Other",
+      "rtbId": "NEX1-101",
+      "crsTags": [],
+      "parentTagPid": 668
+    },
+    {
+      "pid": 252,
+      "categoryId": 6,
+      "name": "Fine Art",
+      "rtbId": "IAB1-3",
+      "crsTags": [],
+      "parentTagPid": 668
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": false,
+      "sorted": true,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 20,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalPages": 1,
+  "totalElements": 2,
+  "last": true,
+  "number": 0,
+  "sort": {
+    "unsorted": false,
+    "sorted": true,
+    "empty": false
+  },
+  "size": 20,
+  "numberOfElements": 2,
+  "first": true,
+  "empty": false
+}

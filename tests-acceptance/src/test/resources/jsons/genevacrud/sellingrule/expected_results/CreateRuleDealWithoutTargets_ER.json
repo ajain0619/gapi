@@ -1,0 +1,9 @@
+{
+  "version": 0,
+  "name": "DealRuleWithoutTargets",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "DEAL",
+  "ownerCompanyPid": 10225,
+  "assignments": {}
+}

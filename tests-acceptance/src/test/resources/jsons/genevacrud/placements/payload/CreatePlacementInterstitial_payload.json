@@ -1,0 +1,24 @@
+{
+  "site": {
+    "pId": 10000192,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "mraidSupport": "YES",
+  "placementCategory": "INTERSTITIAL",
+  "interstitial": true,
+  "mraidAdvancedTracking": true,
+  "positionAliasName": "CreateInterstitialPlacementAlias",
+  "placementVideo": {
+    "linearity": "LINEAR",
+    "longform": false,
+    "playerRequired": false
+  },
+  "videoSupport": "VIDEO_AND_BANNER",
+  "width": 480,
+  "height": 320,
+  "adSizeType": "STANDARD",
+  "memo": "CreateInterstitialPlacement",
+  "name": "createinterstitialplacement"
+}

@@ -1,0 +1,19 @@
+{
+  "pid": 100316,
+  "version": 1,
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "smartYield_updateCases",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "mraidAdvancedTracking": true,
+  "videoLinearity": "LINEAR",
+  "height": 480,
+  "width": 320,
+  "status": "ACTIVE",
+  "placementCategory": "INSTREAM_VIDEO",
+  "trafficType": "MEDIATION"
+}

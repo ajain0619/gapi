@@ -1,0 +1,41 @@
+{
+  "content": [
+    {
+      "pid": 1,
+      "value": "Assignable Value 3",
+      "version": 0,
+      "enabled": true
+    },
+    {
+      "enabled": true,
+      "pid": 5,
+      "value": "some value",
+      "version": 0
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": true,
+      "sorted": false,
+      "empty": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 20,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalElements": 2,
+  "totalPages": 1,
+  "last": true,
+  "size": 20,
+  "numberOfElements": 2,
+  "sort": {
+    "unsorted": true,
+    "sorted": false,
+    "empty": true
+  },
+  "number": 0,
+  "first": true,
+  "empty": false
+}

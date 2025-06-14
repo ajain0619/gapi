@@ -1,0 +1,21 @@
+{
+  "pid": 100327,
+  "version": 0,
+  "site":{
+    "pid":10000205,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "screenLocation":"FULLSCREEN_VISIBLE",
+  "mraidSupport":"YES",
+  "placementCategory":"INTERSTITIAL",
+  "interstitial": true,
+  "mraidAdvancedTracking":false,
+  "positionAliasName":"interstitialprovision",
+  "videoSupport":"BANNER",
+  "width":320,
+  "height":480,
+  "adSizeType":"STANDARD",
+  "memo":"interstitialprovision",
+  "name":"interstitialprovision"
+}

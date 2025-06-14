@@ -1,0 +1,19 @@
+{
+  "description": "Some desc 1",
+  "name": "Seller seat 1",
+  "pid": 6,
+  "status": true,
+  "version": 0,
+  "sellers": [
+    {
+      "pid": 10000,
+      "name": "Seller1",
+      "type": "SELLER"
+    },
+    {
+      "pid": 10228,
+      "name": "traffic_type",
+      "type": "SELLER"
+    }
+  ]
+}

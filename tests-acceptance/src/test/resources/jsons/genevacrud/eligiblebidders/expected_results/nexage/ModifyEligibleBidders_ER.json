@@ -1,0 +1,66 @@
+{
+  "adServingEnabled": false,
+  "attributes": {
+    "adFeedbackOptOut": false,
+    "buyerTransparencyOptOut": false,
+    "creativeSuccessRateThresholdOptOut": false,
+    "customDealFloorEnabled": false,
+    "defaultBidderGroups": [
+
+    ],
+    "defaultBiddersAllowList": false,
+    "defaultBlock": [
+
+    ],
+    "defaultTransparencyMgmtEnablement": "DISABLED",
+    "defaultTransparencySettings": {
+
+    },
+    "dynamicFloorEnabled": false,
+    "enableCtvSelling": false,
+    "individualsDefaultBidderGroups": [
+
+    ],
+    "individualsDefaultBlock": [
+
+    ],
+    "rawResponse": false,
+    "revenueShare": 0.014,
+    "reviewStatusBlock": "ALLOW_ALL",
+    "secureStatusBlock": "ALLOW_ALL",
+    "version": 0
+  },
+  "currency": "USD",
+  "defaultRtbProfilesEnabled": false,
+  "eligibleBidderGroups": [
+    {
+      "bidderGroups": [
+        {
+          "pid": 5
+        }
+      ],
+      "pid": 4,
+      "version": 0
+    },
+    {
+      "bidderGroups": [
+        {
+          "pid": 6
+        }
+      ],
+      "pid": 5,
+      "version": 0
+    }
+  ],
+  "hbPartnerAttributes": [
+
+  ],
+  "id": "8a859e06015353cad7f2ccfbc7c20277",
+  "name": "debpublisher",
+  "numberOfUsers": 0,
+  "pid": 10216,
+  "restrictDrillDown": false,
+  "selfServeAllowed": false,
+  "test": false,
+  "version": 1
+}

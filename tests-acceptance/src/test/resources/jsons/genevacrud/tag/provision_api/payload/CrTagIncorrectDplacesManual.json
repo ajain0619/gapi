@@ -1,0 +1,14 @@
+{
+  "name": "AV24",
+  "buyer": {
+    "pid": 4252
+  },
+  "ecpmProvision": "Manual",
+  "ecpmManual": 10.051,
+  "importRevenueFlag": false,
+  "primaryId": "15",
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

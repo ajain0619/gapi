@@ -1,0 +1,156 @@
+{
+  "pid": 1002,
+  "sellerId": 105,
+  "advertiserId": 261,
+  "externalId": "8a859e0f013838ed6160fcf50871009a",
+  "name": "ASC8_CampaignForCustomTargeting",
+  "type": "REMNANT",
+  "model": "CPM",
+  "price": "12",
+  "goal": null,
+  "daily": null,
+  "capHour": 0,
+  "cap24": 0,
+  "capLife": 0,
+  "bias": 0,
+  "start": 1344274691000,
+  "stop": null,
+  "startAdjusted": "2012-08-06T13:38:11-04:00",
+  "stopAdjusted": null,
+  "status": "ACTIVE",
+  "impressions": 0,
+  "delivered": 0,
+  "clicks": 0,
+  "clickThroughRate": 0,
+  "campaignCreatives": [],
+  "inFlight": true,
+  "deployable": true,
+  "advertiserName": "HOUSE",
+  "purgeable": false,
+  "campaignTargets": [
+    {
+      "pid": null,
+      "type": "CARRIER",
+      "campaignId": 1002,
+      "rule": "IS_ANY_OF",
+      "filter": "WIFI"
+    },
+    {
+      "pid": 1509,
+      "type": "ZONE",
+      "campaignId": 1002,
+      "rule": "IS_ANY_OF",
+      "filter": "950/custom1a"
+    },
+    {
+      "pid": 1470,
+      "type": "CUSTOM",
+      "campaignId": 1002,
+      "rule": "IS_ANY_OF",
+      "filter": "ukeywords~sports,eyes=blue,ua~Mozilla,ua~iPhone",
+      "name": "CustomGroup1"
+    }
+  ],
+  "creatives": [
+    {
+      "creative": {
+        "pid": 1444,
+        "sellerId": 105,
+        "advertiserId": 261,
+        "name": "ASC4_CreativeForCustom1",
+        "adType": "SMARTPHONE",
+        "height": 50,
+        "width": 320,
+        "banner": "http://n0e143.nexage.com/105/261/1444_320x50.jpg",
+        "landingUrl": "http://n0e142.nexage.com:8080/408da661a2c34f5cb5d1c578d5d748d2.html",
+        "trackingUrl": "http://www.nexage.com",
+        "status": "DELETED",
+        "templateId": 1,
+        "customMarkup": null,
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    },
+    {
+      "creative": {
+        "sellerId": 105,
+        "advertiserId": 261,
+        "name": "creativeLimit1",
+        "adType": "CUSTOM",
+        "height": 50,
+        "width": 300,
+        "banner": "http://n0e143.nexage.com/105/261/1444_320x50.jpg",
+        "landingUrl": "http://n0e142.nexage.com:8080/408da661a2c34f5cb5d1c578d5d748d2.html",
+        "trackingUrl": "http://www.nexage.com",
+        "status": "NOT_DELETED",
+        "templateId": 1,
+        "customMarkup": "m1",
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    },
+    {
+      "creative": {
+        "sellerId": 105,
+        "advertiserId": 261,
+        "name": "creativeLimit2",
+        "adType": "CUSTOM",
+        "height": 50,
+        "width": 300,
+        "banner": "http://n0e143.nexage.com/105/261/1444_320x50.jpg",
+        "landingUrl": "http://n0e142.nexage.com:8080/408da661a2c34f5cb5d1c578d5d748d2.html",
+        "trackingUrl": "http://www.nexage.com",
+        "status": "NOT_DELETED",
+        "templateId": 1,
+        "customMarkup": "m1",
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    },
+    {
+      "creative": {
+        "sellerId": 105,
+        "advertiserId": 261,
+        "name": "creativeLimit3",
+        "adType": "CUSTOM",
+        "height": 50,
+        "width": 300,
+        "banner": "http://n0e143.nexage.com/105/261/1444_320x50.jpg",
+        "landingUrl": "http://n0e142.nexage.com:8080/408da661a2c34f5cb5d1c578d5d748d2.html",
+        "trackingUrl": "http://www.nexage.com",
+        "status": "NOT_DELETED",
+        "templateId": 1,
+        "customMarkup": "m1",
+        "externalStatus": 0
+      },
+      "creativeFileReferences": []
+    }
+  ],
+  "advertisersRaw": [
+    {
+      "pid": 79,
+      "sellerId": 105,
+      "name": "Advertiser-test8",
+      "status": "ACTIVE",
+      "externalStatus": 1,
+      "houseAdvertiser": false
+    },
+    {
+      "pid": 261,
+      "sellerId": 105,
+      "name": "HOUSE",
+      "status": "ACTIVE",
+      "externalStatus": 1,
+      "houseAdvertiser": true
+    },
+    {
+      "pid": 577,
+      "sellerId": 105,
+      "name": "nina2015101620143363120151016201433631",
+      "status": "ACTIVE",
+      "externalStatus": 1,
+      "houseAdvertiser": false
+    }
+  ],
+  "positions": null
+}

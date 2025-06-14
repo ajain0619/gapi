@@ -1,0 +1,13 @@
+{
+  "domain": "website_site2.com",
+  "name": "website_site2",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "WEBSITE",
+  "url": "website_site2.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE"
+}

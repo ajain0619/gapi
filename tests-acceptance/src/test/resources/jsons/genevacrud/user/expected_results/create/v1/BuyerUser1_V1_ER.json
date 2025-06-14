@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 274,
+      "type": "BUYER"
+    }
+  ],
+  "role": "ROLE_USER",
+  "userName": "buyeruser1_V1",
+  "email": "01yrfas@trsh.ri",
+  "contactNumber": "dfsh",
+  "name": "hdfs nexageTestLastName",
+  "title": "hdfs",
+  "primaryContact": false,
+  "oneCentralUserName": "buyeruser1_V1",
+  "firstName": "hdfs",
+  "lastName": "nexageTestLastName"
+}

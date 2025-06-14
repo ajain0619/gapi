@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 469,
+      "type": "BUYER"
+    }
+  ],
+  "role": "ROLE_USER",
+  "userName": "buyeradmin2",
+  "email": "sdds@gmai.com",
+  "contactNumber": "213213",
+  "name": "buyera admin2 duplicate email",
+  "title": "Mr",
+  "primaryContact": false
+}

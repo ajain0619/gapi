@@ -1,0 +1,24 @@
+[
+  {
+    "height": 50,
+    "placementId": 100329,
+    "placementMemo": "special_formula",
+    "placementName": "special_formula",
+    "placementType": "BANNER",
+    "siteName": "aleksis_site",
+    "sitePid": 10000202,
+    "siteType": "MOBILE_WEB",
+    "width": 300
+  },
+  {
+    "height": 5,
+    "placementId": 100330,
+    "placementMemo": "position",
+    "placementName": "position",
+    "placementType": "INTERSTITIAL",
+    "siteName": "DESKTOP new",
+    "sitePid": 10000208,
+    "siteType": "DESKTOP",
+    "width": 1
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "ecpmAuto": 0,
+    "ecpmManual": 0,
+    "ecpmProvision": "Auto",
+    "owner": "Publisher",
+    "status": "ACTIVE",
+    "buyer": {
+      "pid": 4668,
+      "primaryIdRequired": false,
+      "primaryNameRequired": false,
+      "secondaryIdRequired": false,
+      "secondaryNameRequired": false
+    },
+    "position": {
+      "pid": 100330
+    },
+    "primaryId": "456",
+    "importRevenueFlag": true,
+    "name": "juh_Nexage Exchange"
+  },
+  {
+    "ecpmAuto": 0,
+    "ecpmManual": 0,
+    "ecpmProvision": "Auto",
+    "owner": "Publisher",
+    "status": "ACTIVE",
+    "buyer": {
+      "pid": 5734,
+      "primaryIdRequired": false,
+      "primaryNameRequired": false,
+      "secondaryIdRequired": false,
+      "secondaryNameRequired": false
+    },
+    "position": {
+      "pid": 100330
+    },
+    "primaryId": "443",
+    "importRevenueFlag": true,
+    "name": "juh_Nexage Exchange Integrated"
+  },
+  {
+    "ecpmAuto": 0,
+    "ecpmManual": 0,
+    "ecpmProvision": "Auto",
+    "owner": "Publisher",
+    "status": "ACTIVE",
+    "buyer": {
+      "pid": 7008,
+      "primaryIdRequired": false,
+      "primaryNameRequired": false,
+      "secondaryIdRequired": false,
+      "secondaryNameRequired": false
+    },
+    "position": {
+      "pid": 100330
+    },
+    "primaryId": "678",
+    "importRevenueFlag": true,
+    "name": "juh_Nexage Exchange for CPI"
+  }
+]

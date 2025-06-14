@@ -1,0 +1,19 @@
+{
+  "name": "AV90",
+  "buyer": {
+    "pid": "7069"
+  },
+  "primaryId": "apikey",
+  "primaryName": "pname",
+  "secondaryId": "",
+  "secondaryName": "sname",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "Username",
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

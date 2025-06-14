@@ -1,0 +1,18 @@
+{
+  "name": "AV4",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "tagController": {
+    "autoExpand": false
+  },
+  "rtbProfile": {
+    "alterReserve": "OFF",
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "rules": []
+}

@@ -1,0 +1,135 @@
+{
+  "pid": 10000175,
+  "version": 53,
+  "publisher": {
+    "pid": 10201,
+    "adServingEnabled": false,
+    "restrictDrillDown": false,
+    "test": false,
+    "selfServeAllowed": false,
+    "numberOfUsers": 0
+  },
+  "dcn": "8a859e06014f4fd97b68dbd150df000d",
+  "description": "test",
+  "domain": "test",
+  "name": "CRUDPosition_Site2",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "test",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB6"
+  ],
+  "positions": [
+    {
+      "pid": 100275,
+      "name": "pss_interstitial_clone",
+      "memo": "pss_interstitial_clone"
+    },
+    {
+      "pid": 100273,
+      "name": "medRect_placement_clone"
+    },
+    {
+      "pid": 100302,
+      "name": "Inter_withMediationTag"
+    },
+    {
+      "pid": 100301,
+      "name": "Banner_withMediationTag"
+    },
+    {
+      "pid": 100277,
+      "name": "pss_instream_clone",
+      "memo": "pss_inStream_clone"
+    },
+    {
+      "pid": 100270,
+      "name": "interstitial_placement_clone"
+    },
+    {
+      "pid": 100271,
+      "name": "inStreamVid_placement_clone"
+    },
+    {
+      "pid": 100274,
+      "name": "pss_banner_clone",
+      "memo": "pss_banner_clone"
+    },
+    {
+      "pid": 100276,
+      "name": "pss_medrect_clone",
+      "memo": "pss_medRect_clone"
+    },
+    {
+      "pid": 100269,
+      "name": "banner_placement_clone"
+    },
+    {
+      "pid": 100272,
+      "name": "native_placement_clone"
+    },
+    {
+      "pid": 100300,
+      "name": "TestMediationTagFields1"
+    }
+  ],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 1000,
+  "defaultPositions": [
+    ""
+  ],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "defaultRtbProfile": {
+    "pid": 10000012,
+    "version": 0,
+    "name": "quePaso",
+    "id": "8ac2863f015252eacfa5ebda258c0152",
+    "blockedAdvertisers": [
+      "aa.com"
+    ],
+    "pubNetReserve": 5,
+    "libraries": [],
+    "bidderFilterAllowlist": false,
+    "useDefaultBlock": true,
+    "includeConsumerId": true,
+    "includeDomainReferences": true,
+    "includeConsumerProfile": true,
+    "screeningLevel": "AllowAll",
+    "useDefaultBidders": true,
+    "auctionType": "FIRST_PRICE",
+    "lowReserve": 3.03,
+    "pubNetLowReserve": 3,
+    "alterReserve": "OFF",
+    "siteTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "nameAlias": "CRUDPosition_Site2",
+      "idAlias": "10000175"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "nameAlias": "CRUDPositionTest",
+      "idAlias": "10201"
+    }
+  }
+}

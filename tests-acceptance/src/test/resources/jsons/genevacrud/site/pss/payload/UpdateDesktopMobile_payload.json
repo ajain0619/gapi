@@ -1,0 +1,24 @@
+{
+  "pid": 10000209,
+  "version": 1,
+  "publisher": {
+    "pid": 10229
+  },
+  "description": "mobile",
+  "domain": "mobile_site2.com",
+  "name": "mobile_site11",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "mobile_site2.com",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1",
+    "IAB5",
+    "IAB4",
+    "IAB3"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false
+}

@@ -1,0 +1,30 @@
+{
+  "pid": 100247,
+  "version": 0,
+  "site": {
+    "pId": 10000174,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "banner_placement",
+  "memo": "banner placement updated",
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "screenLocation": "FOOTER_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "adSizeType": "STANDARD",
+  "trafficType": "MEDIATION",
+  "positionAliasName": "nolose",
+  "mraidAdvancedTracking": false,
+  "placementVideo": {
+    "linearity":"LINEAR",
+    "playerRequired":false,
+    "longform": false,
+    "companions": [
+      { "height": 320, "width": 480 }
+    ]
+  }
+}

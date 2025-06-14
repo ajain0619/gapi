@@ -1,0 +1,24 @@
+---
+- name: Register environment
+  shell: cat /etc/environment
+  register: app_environment
+- debug: msg="{{ app_environment }}"
+- name: Include fluentd vars
+  include_vars:
+    file: fluentd.yml
+- name: Include prod fluentd vars
+  include_vars:
+    file: fluentd-prod.yml
+  when: (app_environment.stdout == "beta" or app_environment.stdout == "prod" or app_environment.stdout == "ext" or app_environment.stdout == "cron")
+- name: Configure fluentd td-agent logs
+  template:
+    dest: "/etc/td-agent/config.d/{{ item }}"
+    mode: 0664
+    owner: root
+    src: "fluentd/{{ item }}.j2"
+  with_items:
+    - "fluentd-geneva-server.conf"
+- name: reload service td-agent, in all cases
+  service:
+    name: td-agent
+    state: restarted

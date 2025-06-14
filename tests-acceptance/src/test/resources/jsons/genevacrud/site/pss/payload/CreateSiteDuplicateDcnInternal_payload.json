@@ -1,0 +1,16 @@
+{
+  "dcn": "b4e02ff924554e5c9c6d4567d067d1bd",
+  "description": "dcn_internal_dupl",
+  "domain": "http://dcn_internal.com",
+  "name": "dcn_internal_dupl",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "mode": "TEST",
+  "url": "https://dcn_internal.com",
+  "coppaRestricted": true,
+  "hbEnabled": true,
+  "iabCategories": [
+    "IAB5"
+  ]
+}

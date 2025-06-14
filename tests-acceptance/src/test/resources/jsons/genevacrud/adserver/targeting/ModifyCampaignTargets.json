@@ -1,0 +1,47 @@
+[
+  {
+    "pid": 2056,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "OS",
+    "rule": "IS_ANY_OF",
+    "filter": "iOS/*,RIM,Windows,Linux,BREW,WebOS,Nucleusplus,PalmOS,VRTXmc",
+    "name": "OS Targets"
+  },
+  {
+    "pid": 2057,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "ZONE",
+    "rule": "IS_ANY_OF",
+    "filter": "846/header,846/header",
+    "name": "Position Targets"
+  },
+  {
+    "pid": 2059,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "COUNTRY",
+    "rule": "IS_ANY_OF",
+    "filter": "BLR,BGR,CZE,HUN,POL,MDA,ROU,RUS,SVK,UKR,ALA,CHI,DNK,EST,FRO,FIN,GGY,ISL,IRL,IMN,JEY,LVA,LTU,NOR,SRK,SJM,SWE,GBR,ALB,AND,BIH,HRV,GIB,GRC,VAT,ITA,MLT,MNE,PRT,SMR,SRB,SVN,ESP,MKD,AUT,BEL,FRA,DEU,LIE,LUX,MCO,NLD,CHE",
+    "name": "Country Targets"
+  },
+  {
+    "pid": 2062,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "DEVICE",
+    "rule": "IS_ANY_OF",
+    "filter": "Apple/iPad",
+    "name": "Device Targets"
+  },
+  {
+    "pid": 2063,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "CUSTOM",
+    "rule": "IS_ANY_OF",
+    "filter": "key1=value1",
+    "name": "custom_renamed"
+  }
+]

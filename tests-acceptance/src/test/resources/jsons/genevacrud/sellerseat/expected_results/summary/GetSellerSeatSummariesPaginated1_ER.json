@@ -1,0 +1,41 @@
+{
+  "content": [
+    {
+      "defaultRtbProfilesEnabled": true,
+      "id": "SELLER-S31",
+      "name": "Seller_S31",
+      "pid": 802
+    },
+    {
+      "defaultRtbProfilesEnabled": true,
+      "id": "12344321abcdeffedcba",
+      "name": "Cooler Screens",
+      "pid": 10235
+    }
+  ],
+  "empty": false,
+  "first": false,
+  "last": true,
+  "number": 1,
+  "numberOfElements": 2,
+  "pageable": {
+    "offset": 4,
+    "pageNumber": 1,
+    "pageSize": 4,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 4,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 6,
+  "totalPages": 2
+}

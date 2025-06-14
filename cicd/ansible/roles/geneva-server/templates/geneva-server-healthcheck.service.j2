@@ -1,0 +1,12 @@
+[Unit]
+Description=geneva-server-healthcheck
+After=syslog.target network.target cloud-init-local.service cloud-init.service cloud-final.service geneva-server.service
+
+[Service]
+TimeoutStartSec=600
+ExecStart={{ geneva_server_home }}/bin/healthcheck
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

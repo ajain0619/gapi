@@ -1,0 +1,11 @@
+{
+  "placementCategory": "BANNER",
+  "memo": "CelloSuites",
+  "name": "cellosuites",
+  "screenLocation": "ABOVE_VISIBLE",
+  "width": 0,
+  "height": 87,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "interstitial": false
+}

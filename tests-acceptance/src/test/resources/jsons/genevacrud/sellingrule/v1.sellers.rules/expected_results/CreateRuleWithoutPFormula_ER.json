@@ -1,0 +1,18 @@
+{
+  "assignments": {},
+  "description": "ruleBMWithoutPFormulaDesc",
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST",
+      "pid": 3,
+      "version": 0
+    }
+  ],
+  "name": "BMruleWithoutPFormula",
+  "ownerCompanyPid": 10000,
+  "pid": 36,
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "version": 0
+}

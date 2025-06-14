@@ -1,0 +1,30 @@
+{
+  "name": "BMTest",
+  "description": "test",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10000,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+      "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]"
+    }
+  ],
+  "assignments": {
+    "positions": [
+      {
+        "pid": 100231,
+        "name": "top"
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,77 @@
+{
+  "content": [
+    {
+      "companyId": 10225,
+      "companyName": "transparency_enabled",
+      "placementId": 100318,
+      "placementMemo": "transparency_enabled_position",
+      "placementName": "transparency_enabled_position",
+      "placementType": "BANNER",
+      "siteName": "aleksis_site",
+      "sitePid": 10000202,
+      "siteType": "MOBILE_WEB"
+    },
+    {
+      "companyId": 10226,
+      "companyName": "transparency_disabled",
+      "placementId": 100319,
+      "placementMemo": "transparency_disabled_position",
+      "placementName": "transparency_disabled_position",
+      "placementType": "BANNER",
+      "siteName": "aleksis_site_disabled",
+      "sitePid": 10000203,
+      "siteType": "MOBILE_WEB"
+    },
+    {
+      "companyId": 10225,
+      "companyName": "transparency_enabled",
+      "height": 50,
+      "placementId": 100329,
+      "placementMemo": "special_formula",
+      "placementName": "special_formula",
+      "placementType": "BANNER",
+      "siteName": "aleksis_site",
+      "sitePid": 10000202,
+      "siteType": "MOBILE_WEB",
+      "width": 300
+    },
+    {
+      "companyId": 10225,
+      "companyName": "transparency_enabled",
+      "height": 5,
+      "placementId": 100330,
+      "placementMemo": "position",
+      "placementName": "position",
+      "placementType": "INTERSTITIAL",
+      "siteName": "DESKTOP new",
+      "sitePid": 10000208,
+      "siteType": "DESKTOP",
+      "width": 1
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "pageNumber": 0,
+    "pageSize": 10,
+    "offset": 0,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 4,
+  "first": true,
+  "numberOfElements": 4,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "empty": false
+}

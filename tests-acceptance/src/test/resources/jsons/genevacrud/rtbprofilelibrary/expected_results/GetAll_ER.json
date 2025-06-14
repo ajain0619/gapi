@@ -1,0 +1,340 @@
+[
+  {
+    "pid": 1,
+    "name": "BGR1",
+    "version": 1,
+    "publisherPid": 105,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 2,
+        "name": "BGR1",
+        "version": 0,
+        "publisherPid": 105,
+        "privilegeLevel": "PUBLISHER",
+        "data": "IAB1,IAB3",
+        "itemType": "CATEGORY",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": true
+      },
+      {
+        "pid": 1,
+        "name": "BGR1",
+        "version": 0,
+        "publisherPid": 105,
+        "privilegeLevel": "PUBLISHER",
+        "data": "domain1.com,domain2.com",
+        "itemType": "ADOMAIN",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  },
+  {
+    "pid": 2,
+    "name": "BGR2",
+    "version": 1,
+    "publisherPid": 105,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 3,
+        "name": "BGR2",
+        "version": 0,
+        "publisherPid": 105,
+        "privilegeLevel": "PUBLISHER",
+        "data": "domain1.com,domain2.com,domain3.com",
+        "itemType": "ADOMAIN",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": false
+      },
+      {
+        "pid": 4,
+        "name": "BGR2",
+        "version": 0,
+        "publisherPid": 105,
+        "privilegeLevel": "PUBLISHER",
+        "data": "IAB1,IAB3,IAB7-1",
+        "itemType": "CATEGORY",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  },
+  {
+    "pid": 3,
+    "name": "BGN1",
+    "version": 1,
+    "publisherPid": 105,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 5,
+        "name": "BGN1",
+        "version": 0,
+        "publisherPid": 105,
+        "privilegeLevel": "PUBLISHER",
+        "data": "4,2",
+        "itemType": "BIDDER",
+        "listType": "WHITELIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  },
+  {
+    "pid": 4,
+    "name": "BGN2",
+    "version": 1,
+    "publisherPid": 105,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 6,
+        "name": "BGN2",
+        "version": 0,
+        "publisherPid": 105,
+        "privilegeLevel": "PUBLISHER",
+        "data": "4,2,3",
+        "itemType": "BIDDER",
+        "listType": "WHITELIST",
+        "isIndividualsGroup": true
+      }
+    ]
+  },
+  {
+    "pid": 5,
+    "name": "Block_default",
+    "version": 1,
+    "publisherPid": 10217,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 7,
+        "name": "Block_default",
+        "version": 0,
+        "publisherPid": 10217,
+        "privilegeLevel": "PUBLISHER",
+        "data": "a1.com,a2.com",
+        "itemType": "ADOMAIN",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": false
+      },
+      {
+        "pid": 8,
+        "name": "Block_default",
+        "version": 0,
+        "publisherPid": 10217,
+        "privilegeLevel": "PUBLISHER",
+        "data": "IAB1,IAB2",
+        "itemType": "CATEGORY",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  },
+  {
+    "pid": 6,
+    "name": "Block_nondefault",
+    "version": 1,
+    "publisherPid": 10217,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 9,
+        "name": "Block_nondefault",
+        "version": 0,
+        "publisherPid": 10217,
+        "privilegeLevel": "PUBLISHER",
+        "data": "IAB3,IAB4",
+        "itemType": "CATEGORY",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": false
+      },
+      {
+        "pid": 10,
+        "name": "Block_nondefault",
+        "version": 0,
+        "publisherPid": 10217,
+        "privilegeLevel": "PUBLISHER",
+        "data": "b1.com,b2.com",
+        "itemType": "ADOMAIN",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  },
+  {
+    "pid": 7,
+    "name": "Exchange Default group",
+    "version": 1,
+    "publisherPid": 10217,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 11,
+        "name": "Exchange Default group",
+        "version": 0,
+        "publisherPid": 10217,
+        "privilegeLevel": "PUBLISHER",
+        "data": "",
+        "itemType": "BIDDER",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": true
+      }
+    ]
+  },
+  {
+    "pid": 8,
+    "name": "Bidder_default",
+    "version": 1,
+    "publisherPid": 10217,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 12,
+        "name": "Bidder_default",
+        "version": 0,
+        "publisherPid": 10217,
+        "privilegeLevel": "PUBLISHER",
+        "data": "3,4",
+        "itemType": "BIDDER",
+        "listType": "WHITELIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  },
+  {
+    "pid": 9,
+    "name": "Bidder_nondefault",
+    "version": 1,
+    "publisherPid": 10217,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 13,
+        "name": "Bidder_nondefault",
+        "version": 0,
+        "publisherPid": 10217,
+        "privilegeLevel": "PUBLISHER",
+        "data": "1,2",
+        "itemType": "BIDDER",
+        "listType": "WHITELIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  },
+  {
+    "pid": 10,
+    "name": "Exchange Default group",
+    "version": 1,
+    "publisherPid": 10217,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 14,
+        "name": "Exchange Default group",
+        "version": 0,
+        "publisherPid": 10217,
+        "privilegeLevel": "PUBLISHER",
+        "data": "",
+        "itemType": "BIDDER",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": true
+      }
+    ]
+  },
+  {
+    "pid": 11,
+    "name": "Default Eligible Bidder Group",
+    "version": 2,
+    "publisherPid": 10218,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": true,
+    "groups": [
+      {
+        "pid": 15,
+        "name": "Default Eligible Bidder Group",
+        "version": 0,
+        "publisherPid": 10218,
+        "privilegeLevel": "PUBLISHER",
+        "data": "3,4",
+        "itemType": "BIDDER",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  },
+  {
+    "pid": 12,
+    "name": "BDGRP1",
+    "version": 1,
+    "publisherPid": 10218,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 16,
+        "name": "BDGRP1",
+        "version": 0,
+        "publisherPid": 10218,
+        "privilegeLevel": "PUBLISHER",
+        "data": "1,2",
+        "itemType": "BIDDER",
+        "listType": "WHITELIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  },
+  {
+    "pid": 13,
+    "name": "defaultBlockGroup1",
+    "version": 1,
+    "publisherPid": 10218,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": false,
+    "groups": [
+      {
+        "pid": 17,
+        "name": "defaultBlockGroup1",
+        "version": 0,
+        "publisherPid": 10218,
+        "privilegeLevel": "PUBLISHER",
+        "data": "IAB1-2,IAB1-7",
+        "itemType": "CATEGORY",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  },
+  {
+    "pid": 14,
+    "name": "Default Eligible Bidder Group",
+    "version": 1,
+    "publisherPid": 248,
+    "privilegeLevel": "PUBLISHER",
+    "isDefaultEligible": true,
+    "groups": [
+      {
+        "pid": 18,
+        "name": "Default Eligible Bidder Group",
+        "version": 0,
+        "publisherPid": 248,
+        "privilegeLevel": "PUBLISHER",
+        "data": "",
+        "itemType": "BIDDER",
+        "listType": "BLOCKLIST",
+        "isIndividualsGroup": false
+      }
+    ]
+  }
+]

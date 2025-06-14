@@ -1,0 +1,21 @@
+{
+  "pid": 1,
+  "dealId": "1442225178554269962",
+  "description": "updated",
+  "start": "1442462400000",
+  "stop": "1442721599000",
+  "floor": 100.0,
+  "createdBy": 2,
+  "status": "Active",
+  "dateCreated": 1442250404000,
+  "auctionType": "None",
+  "bidders": [],
+  "profiles": [],
+  "publishers": [],
+  "sites": [
+    {
+      "sitePid": 10000176
+    }
+  ],
+  "positions": []
+}

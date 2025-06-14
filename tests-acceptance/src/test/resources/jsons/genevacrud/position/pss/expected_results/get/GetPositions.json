@@ -1,0 +1,173 @@
+[
+  {
+    "pid": 100246,
+    "version": 4,
+    "site": {
+      "pid": 10000174,
+      "platform": "OTHER",
+      "type": "MOBILE_WEB",
+      "hbEnabled": false
+    },
+    "name": "CRUDPosition_UpdateCases",
+    "memo": "CRUDPosition_UpdateCases",
+    "mraidSupport": "NO",
+    "videoSupport": "NATIVE",
+    "screenLocation": "UNDEFINED",
+    "interstitial": false,
+    "placementCategory": "NATIVE_V2",
+    "trafficType": "MEDIATION",
+    "status": "ACTIVE",
+    "mraidAdvancedTracking": true,
+    "hbPartnerAttributes": []
+  },
+  {
+    "pid": 100247,
+    "version": 0,
+    "site": {
+      "pid": 10000174,
+      "platform": "OTHER",
+      "type": "MOBILE_WEB",
+      "hbEnabled": false
+    },
+    "name": "banner_placement",
+    "memo": "banner placement",
+    "mraidSupport": "YES",
+    "videoSupport": "BANNER",
+    "screenLocation": "ABOVE_VISIBLE",
+    "interstitial": false,
+    "height": 50,
+    "width": 300,
+    "placementCategory": "BANNER",
+    "trafficType": "MEDIATION",
+    "status": "ACTIVE",
+    "mraidAdvancedTracking": true,
+    "hbPartnerAttributes": []
+  },
+  {
+    "pid": 100249,
+    "version": 0,
+    "site": {
+      "pid": 10000174,
+      "platform": "OTHER",
+      "type": "MOBILE_WEB",
+      "hbEnabled": false
+    },
+    "name": "medium_rectangle_placement",
+    "memo": "medium rectangle placement",
+    "mraidSupport": "YES",
+    "videoSupport": "BANNER",
+    "screenLocation": "BELOW_VISIBLE",
+    "interstitial": false,
+    "height": 250,
+    "width": 300,
+    "placementCategory": "MEDIUM_RECTANGLE",
+    "trafficType": "MEDIATION",
+    "status": "ACTIVE",
+    "mraidAdvancedTracking": true,
+    "hbPartnerAttributes": [
+      {
+        "externalId": "ex-id-2",
+        "hbPartnerPid": 2,
+        "type": "NON_DEFAULT"
+      }
+    ]
+  },
+  {
+    "pid": 100250,
+    "version": 0,
+    "site": {
+      "pid": 10000174,
+      "platform": "OTHER",
+      "type": "MOBILE_WEB",
+      "hbEnabled": false
+    },
+    "name": "native_placement",
+    "memo": "native placement",
+    "mraidSupport": "NO",
+    "videoSupport": "NATIVE",
+    "screenLocation": "UNDEFINED",
+    "interstitial": false,
+    "placementCategory": "NATIVE_V2",
+    "trafficType": "MEDIATION",
+    "status": "ACTIVE",
+    "mraidAdvancedTracking": true,
+    "hbPartnerAttributes": []
+  },
+  {
+    "pid": 100251,
+    "version": 1,
+    "site": {
+      "pid": 10000174,
+      "platform": "OTHER",
+      "type": "MOBILE_WEB",
+      "hbEnabled": false
+    },
+    "name": "instream_video_placement",
+    "memo": "instream video placement",
+    "mraidSupport": "NO",
+    "videoSupport": "VIDEO",
+    "screenLocation": "FULLSCREEN_VISIBLE",
+    "interstitial": false,
+    "videoLinearity": "LINEAR",
+    "height": 1024,
+    "width": 768,
+    "placementCategory": "INSTREAM_VIDEO",
+    "trafficType": "MEDIATION",
+    "status": "ACTIVE",
+    "mraidAdvancedTracking": true,
+    "hbPartnerAttributes": []
+  },
+  {
+    "pid": 100248,
+    "version": 1,
+    "site": {
+      "pid": 10000174,
+      "platform": "OTHER",
+      "type": "MOBILE_WEB",
+      "hbEnabled": false
+    },
+    "name": "interstitial_placement",
+    "memo": "interstitial placement",
+    "mraidSupport": "YES",
+    "videoSupport": "VIDEO_AND_BANNER",
+    "screenLocation": "FULLSCREEN_VISIBLE",
+    "interstitial": true,
+    "videoLinearity": "LINEAR",
+    "height": 768,
+    "width": 1024,
+    "placementCategory": "INTERSTITIAL",
+    "trafficType": "MEDIATION",
+    "status": "ACTIVE",
+    "mraidAdvancedTracking": true,
+    "hbPartnerAttributes": [
+      {
+        "externalId": "ex-id-1",
+        "hbPartnerPid": 2,
+        "type": "DEFAULT"
+      }
+    ]
+  },
+  {
+    "pid": 100316,
+    "version": 0,
+    "site": {
+      "pid": 10000174,
+      "platform": "OTHER",
+      "type": "MOBILE_WEB",
+      "hbEnabled": false
+    },
+    "name": "smartYield_updateCases",
+    "mraidSupport": "NO",
+    "videoSupport": "VIDEO",
+    "screenLocation": "FULLSCREEN_VISIBLE",
+    "interstitial": false,
+    "videoLinearity": "LINEAR",
+    "height": 480,
+    "width": 320,
+    "placementCategory": "INSTREAM_VIDEO",
+    "trafficType": "MEDIATION",
+    "status": "ACTIVE",
+    "mraidAdvancedTracking": true,
+    "hbPartnerAttributes": []
+  }
+]

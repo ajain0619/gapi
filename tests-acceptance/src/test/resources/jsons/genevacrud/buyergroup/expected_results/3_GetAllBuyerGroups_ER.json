@@ -1,0 +1,24 @@
+[
+  {
+    "pid": 3,
+    "name": "BuyerGroupCucumber_updated",
+    "sfdcLineId": "testsfdcLineId_updated",
+    "sfdcIoId": "testsfdcIoId_updated",
+    "currency": "YEN",
+    "billingCountry": "JPN",
+    "billable": true,
+    "version": 1,
+    "companyPid": 10024
+  },
+  {
+    "pid": 4,
+    "name": "BuyerGroupCucumber2",
+    "sfdcLineId": "testsfdcLineId2",
+    "sfdcIoId": "testsfdcIoId2",
+    "currency": "EUR",
+    "billingCountry": "DEU",
+    "billable": true,
+    "version": 0,
+    "companyPid": 10024
+  }
+]

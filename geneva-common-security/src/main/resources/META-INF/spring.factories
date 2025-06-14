@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.ssp.geneva.common.security.config.GenevaSecurityAutoConfiguration

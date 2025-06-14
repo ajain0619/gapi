@@ -1,0 +1,37 @@
+{
+  "dealsSelected": "ALL",
+  "discountDSPs": [
+    {
+      "companyName": "CreateCompany20150917105726538",
+      "companyPid": 10200,
+      "dspSeats": [
+        {
+          "name": "buyerseat1",
+          "pid": 1
+        }
+      ]
+    }
+  ],
+  "discountDeals": [],
+  "discountDescription": "A test on post auction discount with revenue groups.",
+  "discountName": "test-post-auction-discount-with-revenue-groups",
+  "discountPercent": 15,
+  "discountRevenueGroups": [
+    {
+      "pid": 6,
+      "type": {
+        "pid": 1
+      }
+    },
+    {
+      "pid": 15,
+      "type": {
+        "pid": 2
+      }
+    }
+  ],
+  "discountSellers": [],
+  "discountStatus": true,
+  "openAuctionEnabled": true,
+  "version": 0
+}

@@ -1,0 +1,13 @@
+{
+  "domain": "desktop_site",
+  "name": "DESKTOP new",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "DESKTOP",
+  "url": "desktop_site2.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE"
+}

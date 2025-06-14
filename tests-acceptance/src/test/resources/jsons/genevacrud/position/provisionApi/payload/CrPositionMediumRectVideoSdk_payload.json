@@ -1,0 +1,11 @@
+{
+  "placementCategory": "MEDIUM_RECTANGLE",
+  "memo": "hombre",
+  "name": "hombre",
+  "screenLocation": "FOOTER_VISIBLE",
+  "width": 300,
+  "height": 250,
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO",
+  "interstitial": false
+}

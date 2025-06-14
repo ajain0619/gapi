@@ -1,0 +1,24 @@
+{
+  "name": "AV1514",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "rules": [
+    {
+      "targetType": "Keyword",
+      "ruleType": "DeviceMakeModel",
+      "data": "Apple/*,Apple/iPod Touch"
+    }
+  ],
+  "tagController": {
+    "autoExpand": false
+  }
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "pid": 950,
+    "version": 84,
+    "publisher": {
+      "pid": 105
+    },
+    "dcn": "8a858a330137372da0982da362880006",
+    "description": "test site A for Adserver functional test group 8",
+    "domain": "www.test8domain.com",
+    "name": "AS8A",
+    "platform": "OTHER",
+    "status": "ACTIVE",
+    "type": "MOBILE_WEB",
+    "url": "www.test8.com",
+    "coppaRestricted": false,
+    "iabCategories": [],
+    "positions": [
+      {
+        "pid": 13638,
+        "name": "header"
+      },
+      {
+        "pid": 13625,
+        "name": "body"
+      },
+      {
+        "pid": 13599,
+        "name": "position3"
+      },
+      {
+        "pid": 13677,
+        "name": "footer"
+      },
+      {
+        "pid": 13664,
+        "name": "custom1a"
+      },
+      {
+        "pid": 13651,
+        "name": "position1"
+      },
+      {
+        "pid": 13612,
+        "name": "default"
+      },
+      {
+        "pid": 13690,
+        "name": "position2"
+      }
+    ],
+    "mode": "TEST"
+  },
+  {
+    "pid": 963,
+    "version": 60,
+    "publisher": {
+      "pid": 105
+    },
+    "dcn": "8a858a330137372da0982da3ffc50009",
+    "description": "test site for adserver functional test group 8",
+    "domain": "www.test8domain.com",
+    "name": "AS8B",
+    "platform": "OTHER",
+    "status": "ACTIVE",
+    "type": "MOBILE_WEB",
+    "url": "www.test8.com",
+    "coppaRestricted": false,
+    "iabCategories": [],
+    "positions": [
+      {
+        "pid": 14652,
+        "name": "footer"
+      },
+      {
+        "pid": 14665,
+        "name": "positiond"
+      },
+      {
+        "pid": 14626,
+        "name": "positione"
+      },
+      {
+        "pid": 14704,
+        "name": "positiona"
+      },
+      {
+        "pid": 14756,
+        "name": "position2"
+      },
+      {
+        "pid": 14795,
+        "name": "positioni"
+      },
+      {
+        "pid": 14717,
+        "name": "header"
+      },
+      {
+        "pid": 14769,
+        "name": "body"
+      },
+      {
+        "pid": 14782,
+        "name": "positiong"
+      },
+      {
+        "pid": 14730,
+        "name": "position1"
+      },
+      {
+        "pid": 14691,
+        "name": "positionb"
+      },
+      {
+        "pid": 14639,
+        "name": "positionf"
+      },
+      {
+        "pid": 14743,
+        "name": "positionh"
+      },
+      {
+        "pid": 14678,
+        "name": "positionc"
+      }
+    ],
+    "mode": "TEST"
+  }
+]

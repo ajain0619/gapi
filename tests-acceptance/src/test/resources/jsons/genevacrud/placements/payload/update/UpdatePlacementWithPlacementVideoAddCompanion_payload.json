@@ -1,0 +1,32 @@
+{
+  "pid": 100316,
+  "version": 1,
+  "site":{
+    "pId":10000174,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "screenLocation":"FULLSCREEN_VISIBLE",
+  "mraidSupport":"NO",
+  "placementCategory":"INSTREAM_VIDEO",
+  "interstitial": false,
+  "mraidAdvancedTracking":false,
+  "positionAliasName":"smartyield_updatecases",
+  "videoSupport":"VIDEO",
+  "width":1400,
+  "height":400,
+  "adSizeType":"STANDARD",
+  "memo":"smartyield_updatecases",
+  "name":"smartyield_updatecases",
+  "placementVideo": {
+    "pid": 100316,
+    "version": 2,
+    "linearity":"LINEAR",
+    "playerRequired":false,
+    "longform": false,
+    "companions": [
+      { "height": 320, "width": 480 },
+      { "height": 320, "width": 480 }
+    ]
+  }
+}

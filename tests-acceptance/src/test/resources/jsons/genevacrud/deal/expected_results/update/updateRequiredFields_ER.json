@@ -1,0 +1,37 @@
+{
+  "pid": 1,
+  "dealId": "1442225178554269962",
+  "description": "replaced",
+  "start": 1442548800000,
+  "stop": 1442721599000,
+  "floor": 500,
+  "createdBy": 2,
+  "status": "Active",
+  "dateCreated": 1442250404000,
+  "auctionType": "Fixed",
+  "bidders": [],
+  "sites": [],
+  "profiles": [
+    {
+      "pid": 1,
+      "rtbProfilePid": 30002,
+      "auctionType": 1,
+      "defaultReserve": 25,
+      "pubAlias": "1",
+      "siteAlias": "1",
+      "pubNameAlias": "SELLER-A2 For Functional Testing",
+      "siteNameAlias": "Site-A2 For Functional Testing",
+      "siteType": "W",
+      "isRealName": "false",
+      "siteId": 20000,
+      "siteName": "Exchange Functional Test Site-1",
+      "pubId": 10000,
+      "pubName": "Seller1",
+      "platform": "OTHER",
+      "categories": [],
+      "countries": []
+    }
+  ],
+  "visibility": true,
+  "placementFormulaStatus": "DONE"
+}

@@ -1,0 +1,25 @@
+{
+  "site":{
+    "pId":10000192,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "screenLocation":"UNKNOWN",
+  "mraidSupport":"NO",
+  "placementCategory":"IN_FEED",
+  "interstitial": false,
+  "mraidAdvancedTracking":true,
+  "positionAliasName":"CreatePlacementWithInFeedAlias",
+  "videoSupport":"VIDEO",
+  "width":1400,
+  "height":400,
+  "memo":"CreatePlacementWithInFeedAlias",
+  "name":"createplacementwithinfeed",
+  "placementVideo": {
+    "linearity":"LINEAR",
+    "playerRequired":true,
+    "longform":false,
+    "playerHeight":100,
+    "playerWidth":100
+  }
+}

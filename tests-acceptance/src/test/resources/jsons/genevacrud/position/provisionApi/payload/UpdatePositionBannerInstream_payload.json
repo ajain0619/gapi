@@ -1,0 +1,12 @@
+{
+  "placementCategory": "INSTREAM_VIDEO",
+  "memo": "gotMeOnMyKnees",
+  "name": "gotmeonmyknees",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 1000,
+  "height": 990,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO",
+  "interstitial": false,
+  "version": 0
+}

@@ -1,0 +1,13 @@
+{
+  "name": "AV2",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

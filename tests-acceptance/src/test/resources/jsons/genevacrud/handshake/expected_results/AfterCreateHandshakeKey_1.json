@@ -1,0 +1,88 @@
+{
+  "handshakeKey": "testdc^com.sriniapp",
+  "handshakeValue": {
+    "clientAdTmax": 10000,
+    "exTmax": 10000,
+    "handshakeBaseUrl": "https://medtest.nexage.com",
+    "inlineTmax": 10000,
+    "instlExpDur": 3600000,
+    "instlTmax": 30000,
+    "minInlineRefresh": 20000,
+    "nativeConfig": {
+      "typeDefs": {
+        "100": {
+          "components": {
+            "body": {
+              "advertiserRequired": 1,
+              "publisherRequired": 0
+            },
+            "callToAction": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "disclaimer": {
+              "advertiserRequired": 0,
+              "publisherRequired": 1
+            },
+            "iconImage": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "mainImage": {
+              "advertiserRequired": 1,
+              "publisherRequired": 0
+            },
+            "rating": {
+              "advertiserRequired": 0,
+              "publisherRequired": 0
+            },
+            "title": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            }
+          },
+          "name": "inline"
+        },
+        "101": {
+          "components": {
+            "callToAction": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "disclaimer": {
+              "advertiserRequired": 0,
+              "publisherRequired": 1
+            },
+            "iconImage": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "mainImage": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            },
+            "title": {
+              "advertiserRequired": 1,
+              "publisherRequired": 1
+            }
+          },
+          "name": "facebook"
+        }
+      }
+    },
+    "nativeExpDur": 3600000,
+    "nativeTmax": 20000,
+    "playlistServer": {
+      "baseUrl": "https://medtest.nexage.com",
+      "name": "orange"
+    },
+    "rptBaseUrl": "https://medtest.nexage.com",
+    "rptBatchSize": 5,
+    "rptFreq": 120000,
+    "serverAdTmax": 10000,
+    "ttl": 86400000,
+    "vastSkipOffsetMax": 7500,
+    "vastSkipOffsetMin": 7500
+  },
+  "version": 0
+}

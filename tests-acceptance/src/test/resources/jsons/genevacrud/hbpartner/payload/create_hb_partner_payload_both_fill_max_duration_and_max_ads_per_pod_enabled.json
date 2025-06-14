@@ -1,0 +1,13 @@
+{
+  "name": "test_hbpartner_invalid",
+  "status": "ACTIVE",
+  "id": "xyz123",
+  "description": "my test hb partner invalid",
+  "feeType": "PERCENTAGE",
+  "fee": 0.14,
+  "partnerHandler": "amazon",
+  "formattedDefaultTypeEnabled": true,
+  "multiImpressionBid": true,
+  "fillMaxDuration": true,
+  "maxAdsPerPod": 8
+}

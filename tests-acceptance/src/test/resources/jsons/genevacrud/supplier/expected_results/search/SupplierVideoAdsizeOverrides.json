@@ -1,0 +1,40 @@
+{
+  "pid": 10000039,
+  "rtbProfilePid": 10000039,
+  "description": "DealsTagTest-Site2-CountyVideoOverrides",
+  "auctionType": 0,
+  "defaultReserve": 1.00000000,
+  "pubAlias": "10201",
+  "siteAlias": "10000183",
+  "pubNameAlias": "CRUDPositionTest",
+  "siteNameAlias": "DealTagTestSite1-App-ImpressionGroups",
+  "siteType": "A",
+  "isRealName": "false",
+  "siteId": 10000183,
+  "siteName": "DealTagTestSite1-App-ImpressionGroups",
+  "categories": [
+    "IAB5-1",
+    "IAB5-2",
+    "IAB17-2",
+    "IAB17-1"
+  ],
+  "countries": [
+    {
+      "pid": 785,
+      "target": "BDI,COM,DJI,ERI,ETH,KEN,MDG,MWI,MUS,MYT,MOZ,REU,RWA,SYC,SOM,SSD,UGA,TZA,ZMB,ZWE",
+      "targetType": "Keyword",
+      "ruleType": "Country"
+    }
+  ],
+  "platform": "BLACKBERRY",
+  "pubId": 10201,
+  "pubName": "CRUDPositionTest",
+  "tagPid": 7367,
+  "tagName": "DealsTagTest-CountyVideoOverrides",
+  "height": 1024,
+  "width": 768,
+  "videoSupport": "VIDEO_AND_BANNER",
+  "placementType": "INTERSTITIAL",
+  "placementName": "Pos2-inter-video",
+  "placementPid": 100287
+}

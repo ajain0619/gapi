@@ -1,0 +1,59 @@
+{
+  "content": [
+    {
+      "id": null,
+      "auctionRunHashId": "45670",
+      "bidderId": 14991,
+      "bidderUrl": "https://web-oao.ssp.yahoo.com/admax/adServe.do?dcn=2k969d89013333d9dbe1dce95685114m",
+      "requestPayload": "{\"bidderId\":14991,\"url\":\"https://reserved.v.ssp.yahoo.com/reserved?ext_id=SSPMigration\",\"auction\":\"m7d09415c18041b7b5d3nnn5cc9e9d6k\",\"id\":\"k7d09415c18041b7b5d3ttt5cc9e9d6m\"}",
+      "responsePayload": "{\"bidderId\":14991,\"url\":\"null\",\"auction\":\"l7d09415c18041b7b5d3bbb5cc9e9d6t\",\"id\":\"j8d09415c18041b7b5d3nnn5cc9e9d6t\",\"cur\":\"USD\"}",
+      "responseCode": 400,
+      "dealIds": null
+    },
+    {
+      "id": null,
+      "auctionRunHashId": "45670",
+      "bidderId": 13891,
+      "bidderUrl": "https://web-oao.ssp.yahoo.com/admax/adServe.do?dcn=9b969d89018888d9dbe1dce95685114l",
+      "requestPayload": "{\"bidderId\":13891,\"url\":\"https://reserved.v.ssp.yahoo.com/reserved?ext_id=SSPMigration\",\"auction\":\"f7d09415c18041b7b5d3bbb5cc9e9d7f\",\"id\":\"l7d09415c18041b7b5d3bbb5cc9e9d6k\"}",
+      "responsePayload": "{\"bidderId\":13891,\"url\":\"null\",\"auction\":\"j7d09415c18041b7b5d3nnn5cc9e9d6k\",\"id\":\"k8d09415c18041b7b5d3mmm5cc9e9d6f\",\"cur\":\"USD\"}",
+      "responseCode": 200,
+      "dealIds": null
+    },
+    {
+      "id": null,
+      "auctionRunHashId": "45670",
+      "bidderId": 13807,
+      "bidderUrl": "https://web-oao.ssp.yahoo.com/admax/adServe.do?dcn=8a969d89017777d9dbe1dce95685004f",
+      "requestPayload": "{\"bidderId\":13807,\"url\":\"https://reserved.v.ssp.yahoo.com/reserved?ext_id=SSPMigration\",\"auction\":\"e7d09415c18041b7b5d3ccc5cc9e9d6d\",\"id\":\"e7d09415c18041b7b5d3ccc5cc9e9d6d\"}",
+      "responsePayload": "{\"bidderId\":13807,\"url\":\"null\",\"auction\":\"e7d09415c18041b7b5d3ccc5cc9e9d6d\",\"id\":\"e7d09415c18041b7b5d3ccc5cc9e9d6d\",\"cur\":\"USD\"}",
+      "responseCode": 200,
+      "dealIds": null
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 50,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalPages": 1,
+  "totalElements": 50,
+  "last": true,
+  "size": 50,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "numberOfElements": 3,
+  "first": true,
+  "empty": false
+}

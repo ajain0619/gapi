@@ -1,0 +1,31 @@
+{
+  "pid": 10000209,
+  "version": 3,
+  "publisher": {
+    "pid": 10229
+  },
+  "description": "desktop",
+  "domain": "desktop_site2.com",
+  "name": "desktop_site2",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "DESKTOP",
+  "url": "desktop_site2.com",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1",
+    "IAB5",
+    "IAB4",
+    "IAB3"
+  ],
+  "positions": [
+    {
+      "pid": 100318,
+      "name": "transparency_enabled_position",
+      "memo": "transparency_enabled_position"
+    }
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false
+}

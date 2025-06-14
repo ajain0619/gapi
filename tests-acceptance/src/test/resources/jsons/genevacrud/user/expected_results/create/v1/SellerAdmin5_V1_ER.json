@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 10063,
+      "type": "SELLER"
+    }
+  ],
+  "role": "ROLE_ADMIN",
+  "userName": "selleradmin5",
+  "email": "selleradmin5@qwe.ru",
+  "contactNumber": "654",
+  "name": "sd sd",
+  "title": "hs",
+  "primaryContact": false,
+  "oneCentralUserName": "selleradmin5",
+  "firstName": "sd",
+  "lastName": "sd"
+}

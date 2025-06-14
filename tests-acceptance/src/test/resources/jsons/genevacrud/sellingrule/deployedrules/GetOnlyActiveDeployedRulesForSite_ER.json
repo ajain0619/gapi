@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Active rule for site",
+    "description": "test active rule",
+    "status": "ACTIVE",
+    "type": "BRAND_PROTECTION",
+    "ownerCompanyPid": 10225
+  }
+]

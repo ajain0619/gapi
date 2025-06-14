@@ -1,0 +1,17 @@
+{
+  "coppaRestricted": false,
+  "description": "new site with new default rtb profile",
+  "domain": "newrtb.com",
+  "hbEnabled": false,
+  "iabCategories": [
+    "IAB9"
+  ],
+  "mode": "TEST",
+  "name": "site2",
+  "pid": 10000208,
+  "platform": "OTHER",
+  "rtb1CategoryRollup": "",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "http://newrtb.com"
+}

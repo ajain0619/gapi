@@ -1,0 +1,37 @@
+{
+  "pid": 10000026,
+  "rtbProfilePid": 10000026,
+  "description": "DealTagTest-PSS-TargetingAdsizeOverrides1-Inter",
+  "auctionType": 0,
+  "defaultReserve": 1.00000000,
+  "pubAlias": "10201",
+  "siteAlias": "10000176",
+  "pubNameAlias": "CRUDPositionTest",
+  "siteNameAlias": "CRUDPosition_Site3",
+  "siteType": "W",
+  "isRealName": "false",
+  "siteId": 10000176,
+  "siteName": "CRUDPosition_Site3",
+  "categories": [
+    "IAB4"
+  ],
+  "countries": [
+    {
+      "pid": 787,
+      "target": "FJI,NCL,ABW,AIA,ARG,ATG,BES,BHS,BLM,BLZ,BMU,BOL,BRA,BRB,CAN,CHL,COL,CRI,CUB,CUW,CYM,DMA,DOM,ECU,FLK,GLP,GRD,GRL,GTM,GUF,GUY,HND,HTI,JAM,KNA,LCA,MAF,MEX,MSR,MTQ,NIC,PAN,PER,PRI,PRY,SLV,SPM,SUR,SXM,TCA,TTO,URY,USA,VCT,VEN,VGB,VIR",
+      "targetType": "NegKeyword",
+      "ruleType": "Country"
+    }
+  ],
+  "platform": "OTHER",
+  "pubId": 10201,
+  "pubName": "CRUDPositionTest",
+  "tagPid": 7354,
+  "tagName": "DealTagTest-PSS-TargetingAdsizeOverrides1-Inter",
+  "height": 250,
+  "width": 200,
+  "videoSupport": "VIDEO",
+  "placementType": "INTERSTITIAL",
+  "placementName": "DealTagTest-Inter-Both",
+  "placementPid": 100280
+}

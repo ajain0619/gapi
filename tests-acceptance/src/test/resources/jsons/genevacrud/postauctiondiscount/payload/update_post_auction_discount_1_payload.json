@@ -1,0 +1,38 @@
+{
+  "pid": 1,
+  "discountName": "golden-data-discount-1-update",
+  "discountStatus": true,
+  "discountPercent": 10.0,
+  "discountDescription": "a test description",
+  "openAuctionEnabled": true,
+  "dealsSelected": "ALL",
+  "version": 1,
+  "discountSellers": [
+    {
+      "pid": 40,
+      "name": "adserverSellerCompany2",
+      "type": {
+        "pid": 1
+      }
+    },
+    {
+      "pid": 105,
+      "name": "adserverSellerTest8",
+      "type": {
+        "pid": 1
+      }
+    }
+  ],
+  "discountDSPs": [
+    {
+      "companyPid": 10200,
+      "companyName": "CreateCompany20150917105726538",
+      "dspSeats": [
+        {
+          "pid": 1,
+          "name": "buyerseat1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "buyer": {
+      "pid": "7051"
+    },
+    "name": "Buyer_Only"
+  },
+  {
+    "site": {
+      "pid": 10000198
+    },
+    "buyer": {
+      "pid": "7008"
+    },
+    "name": "Buyer_Site"
+  },
+  {
+    "site": {
+      "pid": 10000198
+    },
+    "position": {
+      "pid": 100320
+    },
+    "buyer": {
+      "pid": "7048"
+    },
+    "name": "Buyer_Site_Position"
+  }
+]

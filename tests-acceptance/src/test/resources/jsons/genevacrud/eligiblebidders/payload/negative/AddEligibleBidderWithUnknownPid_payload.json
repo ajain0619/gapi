@@ -1,0 +1,26 @@
+{
+  "pid": 10216,
+  "version": 1,
+  "name": "debpublisher",
+  "id": "8a859e06015353cad7f2ccfbc7c20277",
+  "accessKey": "8a859e06015353cad7f2ccfbc7c20277",
+  "secretKey": "hwiujygrhm7tpai92aukawcdi",
+  "attributes": {
+    "version": 0,
+    "defaultBlock": [],
+    "defaultBidderGroups": [],
+    "defaultBiddersAllowList": false
+  },
+  "eligibleBidders": [
+    {
+      "siteType": [
+        "IOS"
+      ],
+      "bidders": [
+        {
+          "pid": 1111
+        }
+      ]
+    }
+  ]
+}

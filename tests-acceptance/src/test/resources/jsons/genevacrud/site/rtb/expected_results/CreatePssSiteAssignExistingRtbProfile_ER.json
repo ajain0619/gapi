@@ -1,0 +1,46 @@
+{
+  "description": "new site with existing rtb profle",
+  "domain": "existingrtb.com",
+  "name": "new_site_with_existing_rtbprofile",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "http://existingrtb.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB9"
+  ],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "defaultRtbProfile": {
+    "pid": 10000068,
+    "id": "ff808081015d5df26508f55b1a2c0007",
+    "description": "Self Service Created Default RTB Profile",
+    "defaultRtbProfileOwnerCompanyPid": 10226,
+    "name": "existingProfile"
+  },
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.005
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Updated_ios_desktop",
+  "description": "8",
+  "domain": "q1",
+  "url": "https://desktop-site.com",
+  "coppaRestricted": false,
+  "platform": "OTHER",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "DESKTOP",
+  "version": 0
+}

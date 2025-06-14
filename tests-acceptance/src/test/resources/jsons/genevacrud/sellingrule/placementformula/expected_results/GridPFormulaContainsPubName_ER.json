@@ -1,0 +1,24 @@
+[
+  {
+    "companyId": 10225,
+    "companyName": "transparency_enabled",
+    "sitePid": 10000202,
+    "siteName": "aleksis_site",
+    "siteType": "MOBILE_WEB",
+    "placementId": 100318,
+    "placementName": "transparency_enabled_position",
+    "placementMemo": "transparency_enabled_position",
+    "placementType": "BANNER"
+  },
+  {
+    "companyId": 10226,
+    "companyName": "transparency_disabled",
+    "sitePid": 10000203,
+    "siteName": "aleksis_site_disabled",
+    "siteType": "MOBILE_WEB",
+    "placementId": 100319,
+    "placementName": "transparency_disabled_position",
+    "placementMemo": "transparency_disabled_position",
+    "placementType": "BANNER"
+  }
+]

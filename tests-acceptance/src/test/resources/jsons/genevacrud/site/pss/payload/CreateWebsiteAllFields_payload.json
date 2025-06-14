@@ -1,0 +1,16 @@
+{
+  "description": "website",
+  "domain": "website_site1.com",
+  "name": "website_site1",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "WEBSITE",
+  "url": "website_site1.com",
+  "coppaRestricted": true,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE",
+  "appBundle": "",
+  "dcn": "customId"
+}

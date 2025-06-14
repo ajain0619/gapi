@@ -1,0 +1,16 @@
+{
+  "name": "AV2231",
+  "buyer": {
+    "pid": "7060"
+  },
+  "primaryId": "pid",
+  "primaryName": "name",
+  "secondaryName": "sname",
+  "ecpmManual": 15,
+  "ecpmProvision": "Manual",
+  "importRevenueFlag": false,
+  "rules": [],
+  "tagController": {
+    "autoExpand": false
+  }
+}

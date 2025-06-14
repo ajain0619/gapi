@@ -1,0 +1,36 @@
+{
+  "site": {
+    "pid": 10000202,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "interstitial": false,
+  "screenLocation": "ABOVE_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "width": 300,
+  "height": 50,
+  "memo": "banner placement",
+  "name": "tracker3",
+  "placementCategory": "BANNER",
+  "mraidAdvancedTracking": false,
+  "defaultRtbProfile": {
+    "name": "Evgeniya",
+    "blockedAdCategories": [],
+    "blockedAdvertisers": [],
+    "useDefaultBlock": true,
+    "useDefaultBidders": false,
+    "includeDomainReferences": true,
+    "includeConsumerId": true,
+    "includeConsumerProfile": true,
+    "alterReserve": "ONLY_IF_HIGHER",
+    "pubNetReserve": 1,
+    "libraries": [],
+    "bidderFilters": [],
+    "bidderFilterAllowlist": true,
+    "bidderFilterWhitelist": false,
+    "auctionType": "EXCHANGE_DEFAULT",
+    "includeGeoData": false,
+    "screeningLevel": "AllowAll"
+  }
+}

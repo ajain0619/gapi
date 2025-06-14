@@ -1,0 +1,70 @@
+{
+  "pid": 100331,
+  "version": 0,
+  "mraidSupport": "YES",
+  "mraidAdvancedTracking": true,
+  "memo": "xdefects_651_memo",
+  "name": "xdefects_651_name",
+  "videoSupport": "NATIVE",
+  "placementCategory": "NATIVE_V2",
+  "screenLocation": "UNDEFINED",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "hbPartnerAttributes": [
+    {
+      "externalId": "xdefects-651-external-placement-id",
+      "hbPartnerPid": 3,
+      "type": "NON_DEFAULT"
+    }
+  ],
+  "nativePlacementExtension": {
+    "assetTemplate": "0",
+    "context": "CONTENT",
+    "contextSubType": "GENERAL_OR_MIXED",
+    "placementType": "IN_CONTENT",
+    "assetSets": [
+      {
+        "rule": "REQ_ALL",
+        "assets": [
+          {
+            "key": "title",
+            "type": "TITLE",
+            "title": {
+              "maxLength": 140
+            }
+          },
+          {
+            "key": "mainImage",
+            "type": "IMAGE",
+            "image": {
+              "widthMinimum": 1200,
+              "heightMinimum": 627,
+              "type": "MAIN"
+            }
+          },
+          {
+            "key": "sponsoredData",
+            "type": "DATA",
+            "data": {
+              "maxLength": 15,
+              "type": "SPONSORED"
+            }
+          }
+        ]
+      },
+      {
+        "rule": "REQ_NONE",
+        "assets": [
+          {
+            "key": "ctaData",
+            "type": "DATA",
+            "data": {
+              "maxLength": 12,
+              "type": "CTA_TEXT"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

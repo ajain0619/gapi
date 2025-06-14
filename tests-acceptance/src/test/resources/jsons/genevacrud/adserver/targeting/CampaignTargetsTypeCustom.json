@@ -1,0 +1,20 @@
+[
+  {
+    "pid": 2058,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "CUSTOM",
+    "rule": "IS_ANY_OF",
+    "filter": "key1=value1",
+    "name": "custom1"
+  },
+  {
+    "pid": 2061,
+    "sellerId": 27,
+    "campaignId": 1120,
+    "type": "CUSTOM",
+    "rule": "IS_NOT_ANY_OF",
+    "filter": "key3~value3",
+    "name": "custom2"
+  }
+]

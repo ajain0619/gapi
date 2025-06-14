@@ -1,0 +1,31 @@
+{
+  "pid": 10000040,
+  "rtbProfilePid": 10000040,
+  "description": "DealsTagTest-Site2-SiteTypeOverride",
+  "auctionType": 0,
+  "defaultReserve": 1.00000000,
+  "pubAlias": "10201",
+  "siteAlias": "10000183",
+  "pubNameAlias": "CRUDPositionTest",
+  "siteNameAlias": "DealTagTestSite1-App-ImpressionGroups",
+  "siteType": "W",
+  "isRealName": "false",
+  "siteId": 10000183,
+  "siteName": "DealTagTestSite1-App-ImpressionGroups",
+  "categories": [
+    "IAB5-1",
+    "IAB5-2",
+    "IAB17-2",
+    "IAB17-1"
+  ],
+  "countries": [],
+  "platform": "BLACKBERRY",
+  "pubId": 10201,
+  "pubName": "CRUDPositionTest",
+  "tagPid": 7368,
+  "tagName": "DealsTagTest-Site2-SiteTypeOverride",
+  "videoSupport": "NATIVE",
+  "placementType": "NATIVE_V2",
+  "placementName": "Pos3-native",
+  "placementPid": 100288
+}

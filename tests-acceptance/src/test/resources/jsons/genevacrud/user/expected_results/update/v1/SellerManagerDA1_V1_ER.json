@@ -1,0 +1,21 @@
+{
+  "id": "ff8080810151510f18db1ad0f43003e0",
+  "pid": 720,
+  "userName": "sellermanager1",
+  "name": "seller manager1 updated",
+  "email": "01hdfsfsa@qw.ru",
+  "contactNumber": "12321323",
+  "dealAdmin": true,
+  "title": "Ms",
+  "role": "ROLE_ADMIN",
+  "enabled": true,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10063,
+      "type": "SELLER",
+      "name": "test_rtb"
+    }
+  ],
+  "oneCentralUserName": "sellermanager1"
+}

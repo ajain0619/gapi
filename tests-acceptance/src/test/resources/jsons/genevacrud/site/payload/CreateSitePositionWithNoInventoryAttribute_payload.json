@@ -1,0 +1,19 @@
+{
+  "site": {
+    "pid": 1842,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "interstitial": false,
+  "screenLocation": "FOOTER_VISIBLE",
+  "mraidSupport": "YES",
+  "placementCategory": "BANNER",
+  "mraidAdvancedTracking": false,
+  "adSizeType": 1,
+  "height": 50,
+  "videoSupport": "BANNER",
+  "width": 300,
+  "hbPartnerAttributes": [],
+  "memo": "test_placement_2",
+  "name": "test_placement_2"
+}

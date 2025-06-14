@@ -1,0 +1,20 @@
+{
+  "id": "ff8080810151510f18db1ad0f69203e2",
+  "pid": 722,
+  "version": 1,
+  "userName": "buyeradmin5",
+  "name": "buyer admin updated V1",
+  "email": "buyeradmin5@eraw.ru",
+  "contactNumber": "123213",
+  "title": "Mr",
+  "role": "ROLE_ADMIN",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 274,
+      "type": "BUYER",
+      "name": "cpi buyer"
+    }
+  ]
+}

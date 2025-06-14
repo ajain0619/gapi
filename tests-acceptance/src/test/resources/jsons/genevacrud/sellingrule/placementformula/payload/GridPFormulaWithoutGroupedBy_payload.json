@@ -1,0 +1,13 @@
+{
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "PLACEMENT_NAME",
+          "operator": "CONTAINS",
+          "ruleData": "position"
+        }
+      ]
+    }
+  ]
+}

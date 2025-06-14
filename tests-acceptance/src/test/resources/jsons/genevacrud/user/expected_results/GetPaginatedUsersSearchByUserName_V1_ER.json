@@ -1,0 +1,50 @@
+{
+  "content": [
+    {
+      "id": "8a859e060150505a3a8b5d9d5958000e",
+      "pid": 713,
+      "version": 0,
+      "userName": "crudPositionManager",
+      "oneCentralUserName": "crudPositionManager",
+      "name": "",
+      "email": "crudPositionManager@nexage.com",
+      "role": "ROLE_MANAGER",
+      "enabled": true,
+      "global": false,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 10201,
+          "name": "CRUDPositionTest",
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": false,
+      "sorted": true,
+      "empty": false
+    },
+    "pageNumber": 0,
+    "pageSize": 10,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalElements": 1,
+  "totalPages": 1,
+  "last": true,
+  "numberOfElements": 1,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "unsorted": false,
+    "sorted": true,
+    "empty": false
+  },
+  "first": true,
+  "empty": false
+}

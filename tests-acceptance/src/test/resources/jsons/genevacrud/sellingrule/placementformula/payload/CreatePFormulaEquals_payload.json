@@ -1,0 +1,52 @@
+{
+  "name": "RulePFormulaEquals",
+  "description": "description",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10225,
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "1"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    }
+  ],
+  "ruleFormula": {
+    "placementFormula": {
+      "groupedBy": "OR",
+      "formulaGroups": [
+        {
+          "formulaRules": [
+            {
+              "attribute": "SITE_NAME",
+              "operator": "EQUALS",
+              "ruleData": "aleksis"
+            },
+            {
+              "attribute": "SITE_TYPE",
+              "operator": "EQUALS",
+              "ruleData": "MOBILE_WEB"
+            }
+          ]
+        },
+        {
+          "formulaRules": [
+            {
+              "attribute": "INVENTORY_ATTRIBUTE",
+              "attributePid": 888,
+              "operator": "EQUALS",
+              "ruleData": "aleksisxxdummyxx"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

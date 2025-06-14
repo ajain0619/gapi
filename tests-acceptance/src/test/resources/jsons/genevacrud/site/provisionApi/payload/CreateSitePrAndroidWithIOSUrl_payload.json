@@ -1,0 +1,14 @@
+{
+  "name": "a61",
+  "description": "8",
+  "domain": "q1",
+  "appBundle": "311145",
+  "url": "https://itunes.apple.com/us/artist/r-e-m/id311145",
+  "coppaRestricted": false,
+  "platform": "ANDROID_TAB",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "APPLICATION"
+}

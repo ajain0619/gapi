@@ -1,0 +1,51 @@
+{
+  "pid": 5,
+  "version": 0,
+  "name": "BPruleWithAllTargets",
+  "description": "brprotectionNewDescription",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "pid": 49,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "CREATIVE_ID",
+      "data": "brprotectionData4"
+    },
+    {
+      "pid": 44,
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "ADVERTISER_BRAND",
+      "data": "brprotectionData5"
+    }
+  ],
+  "assignments": {
+    "publishers": [
+      {
+        "pid": 10225,
+        "name": "transparency_enabled"
+      }
+    ],
+    "sites": [
+      {
+        "pid": 10000200,
+        "name": "site_for_transparency_enabled"
+      }
+    ],
+    "positions": [
+      {
+        "pid": 100318,
+        "name": "transparency_enabled_position"
+      }
+    ]
+  }
+}

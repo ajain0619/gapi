@@ -1,0 +1,21 @@
+{
+  "pid": 100329,
+  "version": 0,
+  "site": {
+    "pid": 10000208,
+    "hbEnabled": false,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "banner_hb_partner",
+  "memo": "banner",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "FOOTER_VISIBLE",
+  "interstitial": false,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "mraidAdvancedTracking": false,
+  "hbPartnerAttributes": []
+}

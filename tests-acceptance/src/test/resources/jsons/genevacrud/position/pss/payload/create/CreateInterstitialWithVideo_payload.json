@@ -1,0 +1,17 @@
+{
+  "site": {
+    "pid": 10000208,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "interstitial": true,
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "mraidSupport": "YES",
+  "placementCategory": "INTERSTITIAL",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "width": 320,
+  "height": 480,
+  "memo": "interstitial",
+
+  "name": "interstitial"
+}

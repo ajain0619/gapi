@@ -1,0 +1,18 @@
+{
+  "description": "Some desc 1 unknown sellers",
+  "name": "Seller seat 1",
+  "status": true,
+  "version": 0,
+  "sellers": [
+    {
+      "pid": 9999,
+      "name": "Seller1_unknown",
+      "type": "SELLER"
+    },
+    {
+      "pid": 919191,
+      "name": "traffic_type_unknown",
+      "type": "SELLER"
+    }
+  ]
+}

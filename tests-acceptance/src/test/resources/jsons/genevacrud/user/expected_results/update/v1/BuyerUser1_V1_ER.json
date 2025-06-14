@@ -1,0 +1,20 @@
+{
+  "id": "ff8080810151510f18db1ad0f89403e4",
+  "pid": 724,
+  "userName": "buyeruser1",
+  "name": "buyer user1 updated",
+  "email": "01yrfas@trsh.ri",
+  "contactNumber": "2132132",
+  "title": "Mr",
+  "role": "ROLE_USER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 274,
+      "type": "BUYER",
+      "name": "cpi buyer"
+    }
+  ],
+  "oneCentralUserName": "buyeruser1"
+}

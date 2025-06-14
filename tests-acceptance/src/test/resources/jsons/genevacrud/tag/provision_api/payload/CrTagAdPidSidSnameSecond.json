@@ -1,0 +1,16 @@
+{
+  "name": "AV3241",
+  "buyer": {
+    "pid": "7056"
+  },
+  "primaryId": "pid17",
+  "secondaryId": "sid17",
+  "secondaryName": "sname17",
+  "ecpmManual": 15,
+  "ecpmProvision": "Manual",
+  "importRevenueFlag": false,
+  "rules": [],
+  "tagController": {
+    "autoExpand": false
+  }
+}

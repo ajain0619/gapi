@@ -1,0 +1,58 @@
+{
+  "description": "requiredFieldsTest",
+  "pid": null,
+  "dealId": "1446629641836763369",
+  "createdBy": null,
+  "status": "Inactive",
+  "start": 1446613200000,
+  "stop": 1452315599000,
+  "profiles": [
+    {
+      "pid": 10000007,
+      "rtbProfilePid": 10000007,
+      "description": "Description value",
+      "auctionType": 2,
+      "defaultReserve": 256.00000000,
+      "lowFloor": 125.00000000,
+      "pubAlias": "105111213",
+      "siteAlias": "96311123",
+      "pubNameAlias": "adserverSellerTest811123",
+      "siteNameAlias": "AS8B123",
+      "siteType": "A",
+      "isRealName": "false",
+      "siteId": 963,
+      "siteName": "AS8B",
+      "categories": [
+      ],
+      "countries": [
+        {
+          "pid": 756,
+          "target": "ABW,AIA,ARG,ATG,BES,BHS,BLM,BLZ,BMU,BOL,BRA,BRB,CAN,CHL,COL,CRI,CUB,CUW,CYM,DMA,DOM,ECU,FLK,GLP,GRD,GRL,GTM,GUF,GUY,HND,HTI,JAM,KNA,LCA,MAF,MEX,MSR,MTQ,NIC,PAN,PER,PRI,PRY,SLV,SPM,SUR,SXM,TCA,TTO,URY,USA,VCT,VEN,VGB,VIR",
+          "targetType": "Keyword",
+          "ruleType": "Country"
+        }
+      ],
+      "platform": "OTHER",
+      "pubId": 105,
+      "pubName": "adserverSellerTest8",
+      "tagPid": 7297,
+      "videoSupport": "BANNER",
+      "placementType": "BANNER",
+      "placementName": "position1"
+    }
+  ],
+  "bidders": [],
+  "publishers": [
+    {
+      "publisherPid": 10201
+    },
+    {
+      "publisherPid": 10202
+    }
+  ],
+  "currency": "EUR",
+  "auctionType": "None",
+  "visibility": false,
+  "floor": 100,
+  "placementFormulaStatus": "DONE"
+}

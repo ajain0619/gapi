@@ -1,0 +1,25 @@
+{
+  "name": "VA015",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "blockedAdCategories": [
+      "IAB1"
+    ],
+    "blockedAdvertisers": [
+      "tut.by"
+    ],
+    "libraries": [],
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

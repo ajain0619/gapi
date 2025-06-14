@@ -1,0 +1,47 @@
+{
+  "content": [
+    {
+      "userName": "adminbuyer1",
+      "name": "buyer1",
+      "email": "adminbuyer1@athens1buyer1.com",
+      "contactNumber": "7815468716",
+      "title": "Mr",
+      "role": "ROLE_ADMIN",
+      "enabled": true,
+      "primaryContact": false,
+      "companies": [
+        {
+          "pid": 352,
+          "name": "athens1buyer1",
+          "type": "BUYER"
+        }
+      ],
+      "dealAdmin": false
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": true,
+  "totalElements": 1,
+  "totalPages": 1,
+  "first": true,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "numberOfElements": 1,
+  "empty": false
+}

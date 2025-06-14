@@ -1,0 +1,1793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:mvc="http://www.springframework.org/schema/mvc"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.springframework.org/schema/beans"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+  <!-- Root Context: defines shared resources visible to all other web components -->
+  <!-- only scanning jpa models  -->
+  <context:component-scan
+    base-package="com.nexage.app.web, com.nexage.app.exception, com.nexage.app.util, com.nexage.app.security, com.nexage.admin.core.specification">
+    <context:exclude-filter expression="com.nexage.app.web.GenevaHealthServiceController"
+                            type="assignable"/>
+    <context:exclude-filter expression="com.nexage.app.web.DealCacheController" type="assignable"/>
+    <context:exclude-filter expression="com.nexage.app.web.report.ReportControllerV2"
+                            type="assignable"/>
+    <context:exclude-filter expression="com.nexage.app.web.placement.PlacementDTOController"
+                            type="assignable"/>
+    <context:exclude-filter expression="com.nexage.app.web.placement.NativePlacementDTOController"
+                            type="assignable"/>
+    <context:exclude-filter expression="com.ssp.geneva.common.security.filter.FilterChainExceptionHandlerFilter"
+                            type="assignable"/>
+  </context:component-scan>
+  <context:annotation-config/>
+
+  <bean id="applicationProperties"
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="location" value="classpath:application.properties"/>
+  </bean>
+
+  <bean class="org.springframework.data.web.SortHandlerMethodArgumentResolver"
+        id="sortResolver"/>
+  <bean class="org.springframework.data.web.PageableHandlerMethodArgumentResolver"
+        id="pageableResolver">
+    <constructor-arg ref="sortResolver"/>
+  </bean>
+
+  <mvc:annotation-driven>
+    <mvc:message-converters>
+      <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"
+            id="jacksonMessageConverter"/>
+    </mvc:message-converters>
+    <mvc:argument-resolvers>
+      <ref bean="sortResolver"/>
+      <ref bean="pageableResolver"/>
+    </mvc:argument-resolvers>
+  </mvc:annotation-driven>
+
+  <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"
+        id="jsonConverter">
+    <property name="objectMapper" ref="objectMapper"/>
+  </bean>
+
+  <bean class="com.nexage.app.util.CustomObjectMapper" id="objectMapper"/>
+  <bean class="com.nexage.app.mapper.rule.RuleTargetDataConverter" id="ruleTargetDataConverter"/>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerDealService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerDealService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerDealService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="inventoryAttributeDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerInventoryAttributeDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerInventoryAttributeDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.context.support.ResourceBundleMessageSource" id="messageSource"
+        p:basenames="messages" p:fallbackToSystemLocale="false"/>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sysConfigUtil">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.ssp.geneva.common.settings.util.SysConfigUtil"/>
+      </bean>
+    </property>
+    <property name="proxyTargetClass" value="true"/>
+  </bean>
+
+  <bean id="customViewLayerObjectMapper" class="com.nexage.app.util.CustomViewLayerObjectMapper"/>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="companyService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.CompanyService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.CompanyService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="exchangeService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.ExchangeService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.ExchangeService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="exchangeCompanyService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.ExchangeCompanyService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.ExchangeCompanyService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="searchService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SearchService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SearchService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerSiteService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerSiteService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerSiteService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerPositionService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerPositionService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerPositionService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerTagService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerTagService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerTagService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerSummaryDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerSummaryDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerSummaryDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="siteService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SiteService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SiteService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sitesSummaryDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SitesSummaryDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SitesSummaryDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="siteRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.SiteRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="ruleDeployedCompanyRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.RuleDeployedCompanyRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="positionRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.PositionRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="companyRuleRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.CompanyRuleRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="ruleDeployedPositionRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.RuleDeployedPositionRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="userRestrictedSiteRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.UserRestrictedSiteRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="userRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.UserRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="placementSummaryDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.PlacementSummaryDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PlacementSummaryDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="insertionOrderService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.InsertionOrderService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.InsertionOrderService</value>
+    </property>
+  </bean>
+
+  <bean id="externalPubSiteService" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.ExternalPubSiteService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.ExternalPubSiteService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="brandProtectionService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.BrandProtectionService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.BrandProtectionService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="creativeService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.CreativeService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.CreativeService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="dashboardService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.DashboardService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.DashboardService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="userService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.UserService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.UserService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="userDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.user.UserDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.user.UserDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="buyerService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.BuyerService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.BuyerService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="bidderConfigDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.BidderConfigDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.BidderConfigDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="reportingService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.ReportingService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.ReportingService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="seatHolderService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.ReportingService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SeatHolderService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="auditService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.AuditService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.AuditService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.core.io.ClassPathResource" id="menuVisibilityResource">
+    <constructor-arg index="0" value="testMenuVisibility.json"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="bdrAdvService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.BDRAdvertiserService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.BDRAdvertiserService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="publisherService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.PublisherService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PublisherService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="campaignService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.CampaignService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.CampaignService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="campaignCreativeService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.CampaignCreativeService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.CampaignCreativeService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="directDealService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.DirectDealService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.DirectDealService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="dealService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.DealService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.DealService</value>
+    </property>
+  </bean>
+
+  <bean id="dealDTOService" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.DealDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.DealDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="publisherSelfService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.PublisherSelfService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PublisherSelfService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="rtbProfileService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.RTBProfileService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.RTBProfileService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="internalPublisherCrudService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.publisher.InternalPublisherCrudService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.publisher.InternalPublisherCrudService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="externalPublisherCrudService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.publisher.ExternalPublisherCrudService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.publisher.ExternalPublisherCrudService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="limitService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.LimitService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.LimitService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerLimitService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerLimitService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerLimitService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="rtbProfileLibraryService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.RtbProfileLibraryService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.RtbProfileLibraryService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="rtbProfileLibraryRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.RTBProfileLibraryRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="nexageRtbProfileLibraryService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.NexageRtbProfileLibraryService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.NexageRtbProfileLibraryService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="nexageRtbProfileGroupService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.NexageRtbProfileGroupService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.NexageRtbProfileGroupService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="publisherMetricsService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.PubSelfServeMetricsService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PubSelfServeMetricsService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="pubSelfServeSummaryService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.PubSelfServeSummaryService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PubSelfServeSummaryService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="buyerAssistantService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.BuyerAssistantService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.BuyerAssistantService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sdkHandshakeService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SdkHandshakeService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SdkHandshakeService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="currencyService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.CurrencyService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.CurrencyService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="dwNamedJdbcTemplate">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="coreNamedJdbcTemplate">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="userContext">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.security.UserContext"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.security.UserContext</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="roleHierarchy">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="org.springframework.security.access.hierarchicalroles.RoleHierarchy"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.mockito.Mockito" factory-method="mock" id="s2sTemplate">
+    <constructor-arg value="org.springframework.security.oauth2.client.OAuth2RestTemplate"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="transparencyService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.TransparencyService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.TransparencyService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"
+        id="beanValidator"/>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="regionService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.RegionService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.RegionService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="publisherRuleService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.PublisherRuleService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces" value="com.nexage.app.services.PublisherRuleService"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="formulaInventoryService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.FormulaInventoryService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces" value="com.nexage.app.services.FormulaInventoryService"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerRuleService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.sellingrule.SellerRuleService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces" value="com.nexage.app.services.sellingrule.SellerRuleService"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerRuleAPIServiceImpl">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.sellingrule.SellerRuleService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces" value="com.nexage.app.services.sellingrule.SellerRuleService"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="buyerGroupRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.BuyerGroupRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.BuyerGroupRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="ruleTargetRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.RuleTargetRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="geoSegmentService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.GeoSegmentService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.GeoSegmentService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="placementRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.PositionRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PlacementsService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="placementValidMemoRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.PositionRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PlacementValidMemoDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="companyRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.CompanyRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.CompanyRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="regionRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.RegionRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.RegionRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="rtbProfileGroupRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.RtbProfileGroupRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.RtbProfileGroupRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="sellerCreativeContentService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerCreativeContentService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerCreativeContentService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="bidderConfigRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.BidderConfigRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.BidderConfigRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="ruleIntendedActionRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.RuleIntendedActionRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="ruleRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.RuleRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="ruleFormulaPositionViewRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="com.nexage.admin.core.repository.RuleFormulaPositionViewRepository"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="dspDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.DspDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.DspDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="hbPartnerService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.HbPartnerService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.HbPartnerService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="feeAdjustmentService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.FeeAdjustmentService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.FeeAdjustmentService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" name="postAuctionDiscountService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.PostAuctionDiscountService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PostAuctionDiscountService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="buyerGroupDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.BuyerGroupDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.BuyerGroupDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="doohScreenService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.DoohScreenService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.DoohScreenService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="hbPartnerRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.HbPartnerRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.HbPartnerRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="feeAdjustmentRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.FeeAdjustmentRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.FeeAdjustmentRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="postAuctionDiscountRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.PostAuctionDiscountRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.PostAuctionDiscountRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="bidderDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.DealBidderDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.DealBidderDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="ruleDSPBiddersService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.RuleDSPService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.RuleDSPService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="filterListService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.filter.FilterListService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.filter.FilterListService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="filterListRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.FilterListRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.filter.FilterListService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="domainRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.DomainRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.DomainRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="tagSummaryDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.TagDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.TagDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="filterListDomainDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.filter.FilterListDomainDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.filter.FilterListDomainDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="filterListDomainRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.FilterListDomainRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.filter.FilterListDomainDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="filterListAppBundleDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.filter.FilterListAppBundleDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.filter.FilterListAppBundleDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="filterListAppBundleRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.FilterListAppBundleRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.filter.FilterListAppBundleDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerSeatService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerSeatService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerSeatService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerSeatRuleService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerSeatRuleService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces" value="com.nexage.app.services.SellerSeatRuleService"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="crsService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.CrsService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.CrsService</value>
+    </property>
+  </bean>
+
+  <bean id="openIDConnectConfigHandler" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="com.ssp.geneva.common.security.oauth2.oidc.OpenIdFileSystemCredentialsConfig"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.ssp.geneva.common.security.oauth2.oidc.OpenIdCredentialsConfigHandler</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerSeatSummaryService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerSeatSummaryService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerSeatSummaryService</value>
+    </property>
+  </bean>
+
+  <bean class="com.nexage.app.services.validation.RevenueShareUpdateValidator"
+        id="revenueShareUpdateValidator"/>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="buyerCreativeRegistrationDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.BuyerCreativeRegistrationDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.BuyerCreativeRegistrationDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="com.nexage.app.util.validator.placement.nativeads.template.TemplateEngineFacade"
+        id="templateEngineFacade"/>
+
+  <bean id="coreJdbcTemplate" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="org.springframework.jdbc.core.JdbcTemplate"/>
+  </bean>
+
+  <bean id="dwJdbcTemplate" class="org.mockito.Mockito" factory-method="mock">
+    <constructor-arg value="org.springframework.jdbc.core.JdbcTemplate"/>
+  </bean>
+
+  <bean class="com.nexage.app.services.health.CoreDatabaseHealthService"
+        id="coreDatabaseHealthService">
+    <constructor-arg index="0" name="coreJdbcTemplate" ref="coreJdbcTemplate"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="sellerInventoryAttributeService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerInventoryAttributeValueService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces"
+              value="com.nexage.app.services.SellerInventoryAttributeValueService"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="inventoryAttributeRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.InventoryAttributeRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces"
+              value="com.nexage.admin.core.repository.InventoryAttributeRepository"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="inventoryAttributeValueRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="com.nexage.admin.core.repository.InventoryAttributeValueRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces"
+              value="com.nexage.admin.core.repository.InventoryAttributeValueRepository"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="RTBProfileDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.RTBProfileDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces"
+              value="com.nexage.app.services.RTBProfileDTOService"/>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="defaultRTBProfileRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.RTBProfileRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces"
+              value="com.nexage.admin.core.repository.RTBProfileRepository"/>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerAttributesRepo">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.SellerAttributesRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.SellerAttributesRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerAttributesDTOService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.SellerAttributesDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SellerAttributesDTOService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="dealRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.DirectDealRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.DirectDealRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="dealSiteRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.DealSiteRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.DealSiteRepository</value>
+    </property>
+  </bean>
+
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="dealPositionRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.DealPositionRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.DealPositionRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="dealPublisherRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.DealPublisherRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.DealPublisherRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="specificAssignedInventoryService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="com.nexage.app.services.deal.impl.SpecificAssignedInventoryDTOServiceImpl"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.deal.DealSpecificAssignedInventoryService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="formulaAssignedInventoryService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="com.nexage.app.services.deal.impl.FormulaAssignedInventoryDTOServiceImpl"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.deal.DealFormulaAssignedInventoryService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="adSourceService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.impl.AdSourceServiceImpl"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.AdSourceService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="tokenService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.impl.TokenServiceImpl"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.TokenService</value>
+    </property>
+  </bean>
+  <bean id="deviceTypeService" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.DeviceTypeService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.DeviceTypeService</value>
+    </property>
+  </bean>
+  <bean id="contentRatingService" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.ContentRatingService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.ContentRatingService</value>
+    </property>
+  </bean>
+  <bean id="contentGenreService" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.ContentGenreService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.ContentGenreService</value>
+    </property>
+  </bean>
+  <bean id="isoLanguageService" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.IsoLanguageService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.IsoLanguageService</value>
+    </property>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="userAuthorizationService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="com.ssp.geneva.common.security.service.UserAuthorizationServiceImpl"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.ssp.geneva.common.security.service.UserAuthorizationService</value>
+    </property>
+  </bean>
+  <bean id="deviceOsService" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.DeviceOsService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.DeviceOsService</value>
+    </property>
+  </bean>
+  <bean id="playlistRenderingCapabilityDTOService"
+        class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.PlaylistRenderingCapabilityDTOService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PlaylistRenderingCapabilityDTOService</value>
+    </property>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="deviceTypeRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.DeviceTypeRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.DeviceTypeRepository</value>
+    </property>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="deviceOsRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.DeviceOsRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.DeviceOsRepository</value>
+    </property>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="contentRatingRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.ContentRatingRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.ContentRatingRepository</value>
+    </property>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="contentGenreRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.ContentGenreRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.ContentGenreRepository</value>
+    </property>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="isoLanguageRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.IsoLanguageRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.IsoLanguageRepository</value>
+    </property>
+  </bean>
+
+  <bean class="com.nexage.app.services.impl.BeanValidationServiceImpl"
+        id="beanValidationService"/>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="ruleDeployedSiteRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.RuleDeployedSiteRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.RuleDeployedSiteRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="tagRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.TagRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.TagRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="brandProtectionTagRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.BrandProtectionTagRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.BrandProtectionTagRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="playlistRenderingCapabilityRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.PlaylistRenderingCapabilityRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.PlaylistRenderingCapabilityRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="publisherBidderSelfService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.PublisherBidderSelfService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PublisherBidderSelfService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="rtbProfileLibrarySellerLimitService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.RtbProfileLibrarySellerLimitService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.RtbProfileLibrarySellerLimitService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="publisherRtbProfileLibrarySelfService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.PublisherRtbProfileLibrarySelfService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.PublisherRtbProfileLibrarySelfService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sellerAttributesRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.SellerAttributesRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.SellerAttributesRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="dealInventoryRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.DealInventoryRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.DealInventoryRepository</value>
+    </property>
+  </bean>
+
+  <bean id="exceptionLogger" class="com.ssp.geneva.common.error.exception.logger.ExceptionLogger">
+    <constructor-arg name="sysConfigUtil">
+      <null/>
+    </constructor-arg>
+    <constructor-arg name="properties">
+      <props/>
+    </constructor-arg>
+  </bean>
+
+  <bean id="messageHandler" class="com.ssp.geneva.common.error.handler.MessageHandler">
+    <constructor-arg index="0" ref="messageSource"/>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="entitlementService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.impl.EntitlementServiceImpl"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.EntitlementService</value>
+    </property>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="dealInventoriesService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="com.nexage.app.services.deal.impl.DealInventoriesServiceImpl"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.deal.DealInventoriesService</value>
+    </property>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="sessionService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.impl.SessionServiceImpl"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.SessionService</value>
+    </property>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="siteViewRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="com.nexage.admin.core.repository.SiteViewRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.SiteViewRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="buyerSeatViewRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="com.nexage.admin.core.repository.PostAuctionDiscountDspSeatViewRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.PostAuctionDiscountDspSeatViewRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean"
+        id="companyViewRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg
+          value="com.nexage.admin.core.repository.CompanyViewRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.CompanyViewRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="directDealViewRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.DirectDealViewRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.DirectDealViewRepository</value>
+    </property>
+  </bean>
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="positionViewRepository">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.admin.core.repository.PositionViewRepository"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.admin.core.repository.PositionViewRepository</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="bidService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.ssp.geneva.server.bidinspector.services.BidService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.ssp.geneva.server.bidinspector.services.BidService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="inventoryMdmIdService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.InventoryMdmIdService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.InventoryMdmIdService</value>
+    </property>
+  </bean>
+
+  <bean id="identityProviderService" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.IdentityProviderService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.IdentityProviderService</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="exchangeRateService">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.ExchangeRateService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.ExchangeRateService</value>
+    </property>
+  </bean>
+
+  <bean id="revenueGroupService" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target">
+      <bean class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.nexage.app.services.RevenueGroupService"/>
+      </bean>
+    </property>
+    <property name="proxyInterfaces">
+      <value>com.nexage.app.services.RevenueGroupService</value>
+    </property>
+  </bean>
+</beans>

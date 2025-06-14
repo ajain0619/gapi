@@ -1,0 +1,33 @@
+{
+  "pid": 1,
+  "version": 0,
+  "name": "BMruleWithAllTargets",
+  "description": "description",
+  "status": "INACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "15"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "AD_SIZE",
+      "data": "1x1"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [],
+    "positions": [
+      {
+        "pid": 100328,
+        "name": "mediumprovision"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "placementCategory": "BANNER",
+  "memo": "extraHe",
+  "name": "extrahe",
+  "screenLocation": "BELOW_VISIBLE",
+  "width": 9999,
+  "height": 10000,
+  "mraidSupport": "NO",
+  "videoSupport": "BANNER",
+  "interstitial": false
+}

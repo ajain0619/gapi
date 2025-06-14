@@ -1,0 +1,11 @@
+{
+  "pid": 1,
+  "name": "buyergroup1",
+  "sfdcLineId": "12345",
+  "sfdcIoId": "67890",
+  "currency": "USD",
+  "billingCountry": "USA",
+  "billable": true,
+  "version": 0,
+  "companyPid": 10200
+}

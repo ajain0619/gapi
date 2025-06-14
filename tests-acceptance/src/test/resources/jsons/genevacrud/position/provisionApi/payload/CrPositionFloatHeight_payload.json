@@ -1,0 +1,10 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "DonJuan",
+  "name": "donjuan",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 9999,
+  "height": 1.22,
+  "mraidSupport": "NO",
+  "interstitial": true
+}

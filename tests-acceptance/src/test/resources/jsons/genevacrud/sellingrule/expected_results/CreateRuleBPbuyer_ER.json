@@ -1,0 +1,48 @@
+{
+  "version": 0,
+  "name": "BPruleWithBuyerTargets",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYERS",
+      "data": "buyerData1"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "MATCHED_USER_ID",
+      "data": "buyerData2"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "BUYER_SEATS",
+      "data": "[{\"buyerCompany\":10200,\"bidders\":[1],\"bidder\":1},{\"buyerCompany\":300,\"bidders\":[2],\"bidder\":2},{\"buyerCompany\":10204,\"bidders\":[3],\"bidder\":3}]"
+    }
+  ],
+  "assignments": {
+    "publishers": [
+      {
+        "pid": 10225,
+        "name": "transparency_enabled"
+      }
+    ],
+    "sites": [
+      {
+        "pid": 10000202,
+        "name": "aleksis_site"
+      }
+    ]
+  }
+}

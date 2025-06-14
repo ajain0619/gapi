@@ -1,0 +1,18 @@
+{
+  "name": "AV81",
+  "buyer": {
+    "pid": "7069"
+  },
+  "primaryId": "apikey",
+  "secondaryId": "sid",
+  "secondaryName": "sname",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "Username",
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

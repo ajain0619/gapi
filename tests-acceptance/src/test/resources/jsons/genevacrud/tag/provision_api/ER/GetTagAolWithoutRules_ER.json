@@ -1,0 +1,22 @@
+{
+  "name": "updateAol",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "blockedAdCategories": [
+      "IAB1"
+    ],
+    "blockedAdvertisers": [
+      "tut.by"
+    ],
+    "libraries": []
+  },
+  "tagController": {
+    "autoExpand": false
+  }
+}

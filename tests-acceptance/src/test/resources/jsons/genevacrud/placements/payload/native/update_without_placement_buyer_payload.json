@@ -1,0 +1,33 @@
+{
+  "memo": "without_buyer_updated",
+  "mraidAdvancedTracking": false,
+  "mraidSupport": "YES",
+  "name": "without_buyer",
+  "nativePlacementExtension": {
+    "context": "SOCIAL",
+    "contextSubType": "USER_GENERATED",
+    "placementType": "IN_FEED",
+    "assetTemplate": "awesomeAssets",
+    "assetSets": [
+      {
+        "rule": "REQ_ALL",
+        "assets": [
+          {
+            "key": "myTitle",
+            "type": "TITLE",
+            "title": {
+              "maxLength": 22
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pid": 100330,
+  "placementCategory": "NATIVE_V2",
+  "positionAliasName": "without_buyer",
+  "screenLocation": "FOOTER_VISIBLE",
+  "sitePid": 950,
+  "version": 0,
+  "videoSupport": "NATIVE"
+}

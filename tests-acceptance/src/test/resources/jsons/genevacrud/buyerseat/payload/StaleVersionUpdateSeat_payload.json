@@ -1,0 +1,9 @@
+{
+  "pid": 5,
+  "name": "SeatThreeName_MovedGroup-anotherUpdate",
+  "seat": "SeatThreeId",
+  "enabled": false,
+  "buyerGroupPid": 4,
+  "version": 0,
+  "buyerTransparencyFeedEnabled": false
+}

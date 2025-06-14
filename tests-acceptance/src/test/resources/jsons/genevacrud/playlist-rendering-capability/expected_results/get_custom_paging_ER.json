@@ -1,0 +1,27 @@
+{
+  "content": [
+    {
+      "displayValue": "Restrict Demand Sources",
+      "value": "restrictDemandSources"
+    },
+    {
+      "displayValue": "VAST 2.0",
+      "value": "vast2.0"
+    },
+    {
+      "displayValue": "VAST 3.0",
+      "value": "vast3.0"
+    },
+    {
+      "displayValue": "Verizon Native Protocol 0",
+      "value": "verizonnativeprotocol0"
+    },
+    {
+      "displayValue": "Verizon Native Protocol 1",
+      "value": "verizonnativeprotocol1"
+    }
+  ],
+  "number": 1,
+  "numberOfElements": 5,
+  "size": 5
+}

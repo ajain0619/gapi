@@ -1,0 +1,17 @@
+{
+  "id": "ff8080810151510f18db1ad0f32a03df",
+  "pid": 719,
+  "version": 1,
+  "userName": "selleradmin5",
+  "name": "seller admin updated again",
+  "email": "selleradmin5@qwe.ru",
+  "contactNumber": "123",
+  "title": "mr",
+  "role": "ROLE_ADMIN",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10063
+    }
+  ]}

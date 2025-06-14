@@ -1,0 +1,16 @@
+{
+  "pid": 1,
+  "id": "abc123",
+  "name": "google_partner_test",
+  "status": "INACTIVE",
+  "version": 0,
+  "description": "test google partner",
+  "feeType": "PERCENTAGE",
+  "fee": 0.13,
+  "partnerHandler": "appNexus",
+  "responseConfig": "{\"deliveryTrackingUrl\": \"adm\"}",
+  "formattedDefaultTypeEnabled": false,
+  "multiImpressionBid": true,
+  "fillMaxDuration": false,
+  "maxAdsPerPod": 9
+}

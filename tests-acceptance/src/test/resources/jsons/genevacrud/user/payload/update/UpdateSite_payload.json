@@ -1,0 +1,36 @@
+{
+  "pid": 1171,
+  "version": 7,
+  "publisher": {
+    "pid": 313
+  },
+  "dcn": "8a859e0f013b3b3eb10c43cbfb380006",
+  "description": "cpi_site_new",
+  "domain": "cpi_site",
+  "name": "cpi_site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "http://cpi_site.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB5",
+    "IAB2"
+  ],
+  "positions": [
+    {
+      "pid": 8087,
+      "name": "footer"
+    },
+    {
+      "pid": 8061,
+      "name": "body"
+    },
+    {
+      "pid": 8074,
+      "name": "header"
+    }
+  ],
+  "mode": "TEST",
+  "hbEnabled": true
+}

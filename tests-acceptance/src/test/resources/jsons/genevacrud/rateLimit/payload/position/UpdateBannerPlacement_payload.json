@@ -1,0 +1,18 @@
+{
+  "pid": 100247,
+  "version": 0,
+  "site": {
+    "pid": 10000174,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "banner_placement",
+  "memo": "banner placement updated",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "FOOTER_VISIBLE",
+  "interstitial": false,
+  "height": 75,
+  "width": 480,
+  "placementCategory": "BANNER"
+}

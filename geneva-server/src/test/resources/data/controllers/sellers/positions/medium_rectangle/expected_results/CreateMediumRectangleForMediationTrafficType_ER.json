@@ -1,0 +1,16 @@
+{
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "MediaitionTrafficTypeMediumRectangleTest",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "BELOW_VISIBLE",
+  "mraidAdvancedTracking": false,
+  "height": 250,
+  "width": 300,
+  "status": "ACTIVE",
+  "placementCategory": "MEDIUM_RECTANGLE",
+  "trafficType": "MEDIATION"
+}

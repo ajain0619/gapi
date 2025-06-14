@@ -1,0 +1,11 @@
+{
+  "placementCategory": "BANNER",
+  "memo": "SweetJulia",
+  "name": "sweetjulia",
+  "screenLocation": "ABOVE_VISIBLE",
+  "width": "not int(!)1",
+  "height": 87,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "interstitial": false
+}

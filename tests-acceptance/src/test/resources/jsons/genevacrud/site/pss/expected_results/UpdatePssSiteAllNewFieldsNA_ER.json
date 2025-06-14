@@ -1,0 +1,53 @@
+{
+  "pid": 10000208,
+  "version": 1,
+  "publisher": {
+    "pid": 10228
+  },
+  "description": "site with all fields deskription",
+  "domain": "mgb6site.com",
+  "name": "mgb6site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "date.com",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "IAB11",
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": true,
+  "trafficThrottle": 99,
+  "adTruthEnabled": true,
+  "globalAliasName": "aliaz",
+  "metadataEnablement": true,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 17000,
+  "reportBatchSize": 9,
+  "rulesUpdateFrequency": 17000,
+  "filterBots": true,
+  "buyerTimeout": 10,
+  "daysFree": 1,
+  "totalTimeout": 1000,
+  "defaultPositions": [],
+  "passthruParameters": [
+    ""
+  ],
+  "consumerProfileContributed": true,
+  "consumerProfileUsed": true,
+  "overrideIP": true,
+  "ethnicityMap": "afro=0,asiano=1,hisp=2,whe=3,othrt=4",
+  "genderMap": "a1=M1",
+  "maritalStatusMap": "single=S1,married=M1,divorced=D,other=O",
+  "inputDateFormat": "123",
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.001,
+    "rtbFee": 0.05
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "pid": 100330,
+  "version": 0,
+  "site": {
+    "pid": 10000208,
+    "hbEnabled": false,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "position",
+  "memo": "position",
+  "mraidSupport": "YES",
+  "videoSupport": "VIDEO",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "videoLinearity": "LINEAR",
+  "height": 5,
+  "width": 1,
+  "placementCategory": "INTERSTITIAL",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "positionAliasName": "position",
+  "mraidAdvancedTracking": false
+}

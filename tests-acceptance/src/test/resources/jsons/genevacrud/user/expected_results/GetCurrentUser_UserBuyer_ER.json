@@ -1,0 +1,51 @@
+{
+  "content": [
+    {
+      "companies": [
+        {
+          "name": "cpi buyer",
+          "pid": 274,
+          "type": "BUYER"
+        }
+      ],
+      "dealAdmin": false,
+      "email": "crudbuyeruser@nexage.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0601525215521c17d571da01ce",
+      "name": "crudbuyeruser",
+      "oneCentralUserName": "crudbuyeruser",
+      "pid": 738,
+      "primaryContact": false,
+      "role": "ROLE_USER",
+      "title": "",
+      "userName": "crudbuyeruser",
+      "version": 2
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

@@ -1,0 +1,29 @@
+{
+  "site": {
+    "pid": 10000174,
+    "platform": "OTHER",
+    "type": "MOBILE_WEB"
+  },
+  "interstitial": false,
+  "screenLocation": "ABOVE_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "width": 300,
+  "height": 50,
+  "memo": "banner placement",
+  "name": "banner_placement_1",
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "positionAliasName": "bebem",
+  "mraidAdvancedTracking": true,
+  "hbPartnerAttributes" : [ {
+    "hbPartnerPid" : 6,
+    "type" : "DEFAULT_BANNER"
+  }, {
+    "hbPartnerPid" : 116,
+    "type" : "DEFAULT_BANNER"
+  }, {
+    "hbPartnerPid" : 8,
+    "type" : "NON_DEFAULT"
+  } ]
+}

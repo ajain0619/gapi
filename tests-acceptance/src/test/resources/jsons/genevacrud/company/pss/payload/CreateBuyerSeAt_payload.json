@@ -1,0 +1,40 @@
+{
+  "pid": 1234545,
+  "attributes": {
+    "version": 0,
+    "defaultBlock": [],
+    "defaultBidderGroups": [],
+    "defaultBiddersAllowList": false,
+    "defaultTransparencySettings": {
+      "transparencyMode": "Aliases",
+      "nameAlias": "status200",
+      "idAlias": "124"
+    },
+    "defaultTransparencyMgmtEnablement": "DISABLED",
+    "hbThrottleEnabled": true,
+    "hbThrottlePercentage": 5,
+    "pfoEnabled": false,
+    "siteLimit": 10,
+    "positionsPerSiteLimit": 3,
+    "tagsPerPositionLimit": 3,
+    "campaignsLimit": 5,
+    "creativesPerCampaignLimit": 4,
+    "bidderLibrariesLimit": "1",
+    "blockLibrariesLimit": "1",
+    "userLimit": 1,
+    "limitEnabled": true,
+    "hbPricePreference": 5,
+    "superAuctionEnabled": true
+  },
+  "type": "BUYER",
+  "name": "BuyerWithSellerAttr",
+  "website": "a1.com",
+  "description": "ddd",
+  "salesforceId": "sss",
+  "cpiTrackingEnabled": true,
+  "rtbEnabled": true,
+  "mediationEnabled": true,
+  "rtbRevenueReportEnabled": false,
+  "cpiConversionNoticeUrl": "aaa",
+  "status": "ACTIVE"
+}

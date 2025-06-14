@@ -1,0 +1,44 @@
+{
+  "pid": 10000208,
+  "version": 2,
+  "publisher": {
+    "pid": 10228
+  },
+  "dcn": "customId",
+  "description": "desktop",
+  "domain": "desktop_site11.com",
+  "name": "desktop_site11",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "DESKTOP",
+  "url": "desktop_site11.com",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1",
+    "IAB4",
+    "IAB5",
+    "IAB3"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "buyerTimeout": 1000,
+  "daysFree": 1,
+  "filterBots": true,
+  "adTruthEnabled": true,
+  "reportBatchSize": 10,
+  "globalAliasName": "alias",
+  "metadataEnablement": true,
+  "adScreeningEnabled": false,
+  "reportFrequency": 1000,
+  "rulesUpdateFrequency": 1000,
+  "totalTimeout": 1000,
+  "trafficThrottle": 1,
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.011,
+    "rtbFee": 0.025
+  }
+}

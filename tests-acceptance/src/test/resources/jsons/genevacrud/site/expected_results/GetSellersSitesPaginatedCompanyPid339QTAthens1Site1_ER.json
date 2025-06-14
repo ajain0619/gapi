@@ -1,0 +1,51 @@
+{
+  "content": [
+    {
+      "dcn": "8a859e0f013b3b761d5a76a4ba460008",
+      "id": "8a859e0f013b3b761d5a76a4ba4b0009",
+      "pId": 1184,
+      "version": 1,
+      "adScreeningEnabled": false,
+      "groupsEnabled": false,
+      "buyerTimeout": 500,
+      "consumerProfileContributed": true,
+      "consumerProfileUsed": true,
+      "creationDate": 1354905205000,
+      "lastUpdate": 1363362902000,
+      "daysFree": 0,
+      "description": "THis is site1 in athens1 company",
+      "domain": "site1.com",
+      "filterBots": true,
+      "inputDateFormat": "yyyyMMdd",
+      "type": "MOBILE_WEB",
+      "live": false,
+      "name": "athens1site1",
+      "overrideIP": false,
+      "platform": "OTHER",
+      "reportBatchSize": 180000,
+      "reportFrequency": 180000,
+      "rulesUpdateFrequency": 1800000,
+      "status": "ACTIVE",
+      "statusVal": 1,
+      "trafficThrottle": 0,
+      "totalTimeout": 500,
+      "url": "www.site1.com",
+      "coppaRestricted": false,
+      "metadataEnablement": false,
+      "hbEnabled": false,
+      "companyPid": 339
+    }
+  ],
+  "last": true,
+  "totalElements": 1,
+  "totalPages": 1,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  },
+  "first": true,
+  "numberOfElements": 1,
+  "size": 10,
+  "number": 0
+}

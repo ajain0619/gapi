@@ -1,0 +1,39 @@
+{
+  "delta": {
+    "Position": {
+      "name": [
+        "banner_placement",
+        "banner_placement"
+      ],
+      "nativeVersion": [
+        "1.0",
+        null
+      ],
+      "pid": [
+        "100247",
+        "100247"
+      ],
+      "placementCategory": [
+        "INTERSTITIAL",
+        "INSTREAM_VIDEO"
+      ],
+      "videoLinearity": [
+        null,
+        "LINEAR"
+      ],
+        null,
+        "200"
+      ],
+        null,
+        "1,2"
+      ],
+        null,
+        "100"
+      ],
+      "videoSupport": [
+        "NATIVE",
+        "VIDEO"
+      ]
+    }
+  }
+}

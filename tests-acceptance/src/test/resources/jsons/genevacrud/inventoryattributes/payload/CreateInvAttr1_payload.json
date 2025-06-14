@@ -1,0 +1,26 @@
+{
+  "name": "Minsk",
+  "description": "CreatedByThoseWhoLeaving",
+  "createdBy": 10225,
+  "status": "ACTIVE",
+  "attributeValues": [
+    {
+      "value": "Minsk",
+      "enabled": true
+    }
+  ],
+  "internalOnly": false,
+  "hasGlobalVisibility": false,
+  "specificPublisherVisibility": [
+    {
+      "publisherPid": 10225
+    }
+  ],
+  "assignedLevel": [
+    1,
+    2,
+    3
+  ],
+  "required": false,
+  "lastUpdated": "2018-10-09"
+}

@@ -1,0 +1,373 @@
+---
+version: 4
+shared:
+  environment:
+    ACCOUNT: one-mobile.dev
+    REGION: us-east-1
+    ROLE: cd.deploy
+    BASTION_HOST: bastion.us-east-1.one-mobile-dev.aws.oath.cloud
+    BASTION_PORT: 2222
+    COMPONENT: geneva-api
+    CLOUD_CONFIG_REPO: git@git.ouryahoo.com:SSP/cloud-config.git
+    CLOUD_CONFIG_VERSION: master
+    ARTIFACTORY_SSP_RELEASE_URL: https://artifactory.ouroath.com/artifactory/ssp-release
+    GENEVA_DEPLOY_CHANNEL: ssp-geneva-deploy
+    PIPELINE_START_FROM: geneva-api
+    RELEASE_QUEUE_ID: prod-ui-api-systems
+    RQ_KICKOFF_PIPELINE: 1041913
+    CKMS_GROUP: ssp.cicd
+    CKMS_KEY: rq.kickoff.token
+    SD_COVERAGE_PLUGIN_ENABLED: false
+  settings:
+    slack:
+      channels:
+        - ssp-geneva-builds
+      statuses:
+        - FAILURE
+annotations:
+  screwdriver.cd/chainPR: true
+  get-aws-credentials: &get-aws-credentials |
+    mkdir -p ~/.aws && aws-builder-creds -k /sd/tokens/key -c /sd/tokens/cert -d $ACCOUNT -r $ROLE -z zts.athenz.ouroath.com > ~/.aws/credentials
+  init-pipeline-secret: &init-pipeline-secret |
+    aws ssm get-parameter --name geneva-api-pipeline-secrets --query "Parameter.Value" --with-decryption --output text --region $REGION | base64 --decode > /tmp/geneva-api-pipeline-secrets
+    chmod 755 /tmp/geneva-api-pipeline-secrets
+    . /tmp/geneva-api-pipeline-secrets
+  version-common: &version-common
+    environment:
+      SEMVER_TASK: get
+    template: adtech-cicd/simple-semantic-version@stable
+  build-common: &build-common
+    environment:
+      SD_COVERAGE_PLUGIN_ENABLED: true
+      ENABLE_MAVEN_OWASP_CHECK: false
+    template: adtech-cicd/simple-java17@stable
+    steps:
+      - premvn-build: |
+          sd-cmd exec docker/install@latest
+          sudo chmod 666 /var/run/docker.sock
+          ls -la /var/run/docker.sock
+      - mvn-build: |
+          VERSION=$(meta get version)
+          SHADED_ARTIFACT_URL="$ARTIFACTORY_SSP_RELEASE_URL/com/ssp/geneva/geneva-server/$VERSION/geneva-server-$VERSION-shaded.jar"
+
+          echo "Artifact: $SHADED_ARTIFACT_URL"
+
+          if curl --head --fail --silent $SHADED_ARTIFACT_URL > /dev/null;
+          then
+            echo "Artifact is already in Artifactory. Skipping build."
+          else
+            mvn --settings .mvn/settings.xml clean spotless:check deploy -Pscrewdriver -B -Drevision=$VERSION -Dexists.failIfExists=false -Dexists.repository=$ARTIFACTORY_SSP_RELEASE_URL
+          fi
+  annotate-high-cpu: &annotate-high-cpu
+    annotations:
+      screwdriver.cd/cpu: HIGH
+      screwdriver.cd/ram: HIGH
+      screwdriver.cd/dockerCpu: HIGH
+      screwdriver.cd/dockerRam: HIGH
+  pre-packer-build: &pre-packer-build |
+    git clone --branch $CLOUD_CONFIG_VERSION $CLOUD_CONFIG_REPO
+    source cloud-config/packer/ami.sh
+  build-ami-common: &build-ami-common
+    environment:
+      PACKER_CONFIG_PATH: cloud-config/packer/service-ami.json
+    template: adtech-cicd/simple-ami@stable
+    steps:
+      - pre-packer-build: *pre-packer-build
+  distribute-common: &distribute-common
+    environment:
+      REGION: us-east-1
+    template: adtech-cicd/simple-deployment-distribute@stable
+  setup-artifactory-creds: &setup-artifactory-creds |
+    export ARTIFACTORY_TOKEN=$(aws ssm get-parameter --region $REGION --name ssp-artifactory-token --with-decryption --query "Parameter.Value" --output text)
+  create-cloudformation-common: &create-cloudformation-common
+    environment:
+      FORCE: true
+      IF_PR_SKIP_ACCOUNTS: one-mobile.prod
+    template: adtech-cicd/simple-deployment-create@stable
+    steps:
+      - get-artifactory-credentials: *setup-artifactory-creds
+  geneva-api-dependencies-common: &geneva-api-dependencies-common
+    image: docker.ouroath.com:4443/ssp/geneva-api-dependency-deployer:2.7.0
+  launch-geneva-api-dependencies-common: &launch-geneva-api-dependencies-common
+    <<: *geneva-api-dependencies-common
+    steps:
+      - get-aws-credentials: *get-aws-credentials
+      - init-pipeline-secret: *init-pipeline-secret
+      - create-instance: |
+          VERSION=$(meta get version)
+          USER_DATA="$(./generate-user-data.sh $VERSION)"
+          export DBCORE_USERNAME=root
+          export DBCORE_PASSWORD=mysql
+          export DBCORE_DATABASE=core
+          echo "User data: $USER_DATA"
+          if [ -z $SD_PULL_REQUEST ]; then
+            manage-dependencies create $ENVIRONMENT $USER_DATA
+          else
+            manage-dependencies create $VERSION $USER_DATA
+          fi
+      - tunnel-config: |
+          cat <<EOF >> /root/.ssh/config
+          Host *
+            StrictHostKeyChecking=no
+            UserKnownHostsFile=/dev/null
+            AddressFamily inet
+            ExitOnForwardFailure yes
+          EOF
+      - wait-dbs-available: |
+          BASTION_PRIVATE_IP=$(aws ec2 describe-instances --output text --region $REGION --filter "Name=instance-state-name,Values=running" "Name=tag:Name,Values=bastion-infra-instance" --query "Reservations[*].Instances[*].NetworkInterfaces[0].PrivateIpAddress")
+          export DBCORE_USERNAME=root
+          export DBCORE_PASSWORD=mysql
+          if [ -z $SD_PULL_REQUEST ]; then
+            SSH_USER="screwdriver:$SD_PIPELINE_ID"
+          else
+            SSH_USER="screwdriver:${SD_PIPELINE_ID}pr"
+          fi
+          wait-until-dependencies-available --ssh-user $SSH_USER --target-ip $(cat /etc/dependencies-ip) --bastion-private-ip $BASTION_PRIVATE_IP
+      - inject-ui-smoke-test-data: |
+          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -J $SSH_USER@$BASTION_HOST:$BASTION_PORT $SSH_USER@$BASTION_PRIVATE_IP -f -N -M -S /tmp/session1 -L 3306:$(cat /etc/dependencies-ip):3306
+          mysql -h127.0.0.1 -P3306 -u$DBCORE_USERNAME -p$DBCORE_PASSWORD -D$DBCORE_DATABASE -f < tests-acceptance/src/test/resources/data/db_core.sql
+          mysql -h127.0.0.1 -P3306 -u$DBCORE_USERNAME -p$DBCORE_PASSWORD -D$DBCORE_DATABASE -f < cicd/data/coredb/qa/geneva_ui_smoke.sql
+          ssh -S /tmp/session1 -O exit $BASTION_PRIVATE_IP
+
+  owasp-check: &owasp-check
+    template: adtech-cicd/simple-java17@stable
+    steps:
+      - mvn-build: |
+          VERSION=$(meta get version)
+          mvn --settings .mvn/settings.xml clean verify -Powasp -DskipTests -Drevision=$VERSION
+          if [ -d target/owasp ]; then
+              mkdir -p $SD_ARTIFACTS_DIR/owasp/ || true
+              cp -v -R target/owasp/ $SD_ARTIFACTS_DIR/ || true
+          fi
+
+cache:
+   pipeline:
+      - ~/.m2
+      - /root/.m2
+      - /home/screwdrv/.m2
+      - /home/screwdrv/.m2/repository
+
+jobs:
+  # PR build flow
+  version-pr:
+    requires: [ ~pr ]
+    <<: *version-common
+  build-pr:
+    requires: [ version-pr ]
+    <<: *annotate-high-cpu
+    <<: *build-common
+  build-ami-pr:
+    <<: *annotate-high-cpu
+    requires: [ build-pr ]
+    <<: *build-ami-common
+  distribute-pr:
+    requires: [ build-ami-pr ]
+    <<: *distribute-common
+  create-cloudformation-pr:
+    requires: [ distribute-pr ]
+    <<: *create-cloudformation-common
+  build-test-image:
+    requires: [ build-pr ]
+    environment:
+      DOCKER_ORG: ssp
+      DOCKER_NAME: geneva-api-tests-acceptance
+      PUSH_PR: true
+      DOCKER_BUILD_ARGS: "--file tests-acceptance/Dockerfile"
+    template: adtech-cicd/simple-docker@stable
+    steps:
+      - pre-build: |
+          echo "Fetching golden-data" && ./pre-test.sh
+  launch-geneva-api-dependencies-pr:
+    requires: [ build-test-image ]
+    environment:
+      ENVIRONMENT: dev
+    <<: *launch-geneva-api-dependencies-common
+  deploy-pr:
+    requires: [ create-cloudformation-pr, launch-geneva-api-dependencies-pr ]
+    environment:
+      ACCOUNT: one-mobile.dev
+      ENVIRONMENT: dev
+      FORCE: true
+    template: adtech-cicd/simple-deployment-execute@stable
+    steps:
+      - post-deploy: |
+          if [ -z $SD_PULL_REQUEST ]; then
+            echo "Master branch doesn't remove stack"
+          else
+            VERSION=$(meta get version)
+          fi
+  run-acceptance-tests:
+    annotations:
+      screwdriver.cd/timeout: 180
+    requires: [ deploy-pr ]
+    image: docker.ouroath.com:4443/adtech-cicd/ops:stable
+    steps:
+      - get-aws-credentials: *get-aws-credentials
+      - init: |
+          export GENEVA_DEPENDENCIES_IP=$(aws ec2 describe-instances --region $REGION --filters "Name=tag:Name,Values=geneva-api-dependencies" "Name=tag:corp:Environment,Values=$(meta get version)" "Name=instance-state-name,Values=running" --query "Reservations[0].Instances[0].NetworkInterfaces[*].PrivateIpAddress" --output text)
+          if [ -z $SD_PULL_REQUEST ]; then
+            export SSH_USER="screwdriver:$SD_PIPELINE_ID"
+          else
+            export SSH_USER="screwdriver:${SD_PIPELINE_ID}pr"
+          fi
+          export VERSION=$(meta get version)
+          cat <<EOF >> /root/.ssh/config
+          Host *
+            StrictHostKeyChecking=no
+            UserKnownHostsFile=/dev/null
+            AddressFamily inet
+            ExitOnForwardFailure yes
+          EOF
+      - test-config: |
+          cd tests-acceptance && scripts/screwdriver/set-params.sh $VERSION $REGION && cd ..
+          echo "Copying test configuration"
+          scp -v -o "ProxyJump $SSH_USER@$BASTION_HOST:$BASTION_PORT" -o "User=$SSH_USER" tests-acceptance/src/test/resources/properties/$VERSION.properties $GENEVA_DEPENDENCIES_IP:/tmp
+      - healthcheck: |
+          VERSION=$(meta get version)
+          tests-acceptance/scripts/screwdriver/healthcheck.sh $VERSION
+      - run-tests: |
+          ssh -J $SSH_USER@$BASTION_HOST:$BASTION_PORT $SSH_USER@$GENEVA_DEPENDENCIES_IP "docker run --net=host -v /tmp:/tmp -v /tmp/$VERSION.properties:/workspace-sd/tests-acceptance/src/test/resources/properties/$VERSION.properties docker.ouroath.com:4443/ssp/geneva-api-tests-acceptance:$VERSION /bin/bash -c \"cd /workspace-sd/tests-acceptance && ./run-tests.sh $VERSION\" && cat /tmp/success"
+      - teardown-upload-test-results: |
+          scp -v -r -o "ProxyJump $SSH_USER@$BASTION_HOST:$BASTION_PORT" -o "User=$SSH_USER"  $GENEVA_DEPENDENCIES_IP:/tmp/tests-results /tmp
+          mkdir -p ~/.aws && aws-builder-creds -k /sd/tokens/key -c /sd/tokens/cert -d $ACCOUNT -r $ROLE -z zts.athenz.ouroath.com > ~/.aws/credentials
+          cd tests-acceptance && scripts/screwdriver/test-results-upload.sh $SD_PULL_REQUEST $VERSION $REGION $SD_ARTIFACTS_DIR
+  terminate-dependencies:
+    requires: [ run-acceptance-tests ]
+    <<: *geneva-api-dependencies-common
+    steps:
+      - get-aws-credentials: *get-aws-credentials
+      - init-pipeline-secret: *init-pipeline-secret
+      - delete-dependencies: |
+          VERSION=$(meta get version)
+          manage-dependencies delete $VERSION hard
+      - delete-stack: |
+          aws cloudformation delete-stack --stack-name geneva-api-$VERSION --region $REGION
+  # master build flow
+  version:
+    requires: [ ~commit ]
+    environment:
+      SEMVER_TASK: tag
+    template: adtech-cicd/simple-semantic-version@stable
+  build:
+    <<: *annotate-high-cpu
+    requires: [ version ]
+    <<: *build-common
+  owasp:
+    requires: [ version ]
+    <<: *annotate-high-cpu
+    <<: *owasp-check
+  build-ami:
+    <<: *annotate-high-cpu
+    requires: [ build ]
+    <<: *build-ami-common
+  distribute:
+    requires: [ build-ami ]
+    <<: *distribute-common
+  launch-dependencies-qa:
+    requires: [ build-ami ]
+    environment:
+      ENVIRONMENT: qa
+    <<: *launch-geneva-api-dependencies-common
+  create-cloudformation:
+    requires: [ distribute ]
+    <<: *create-cloudformation-common
+  deploy-qa:
+    requires: [ create-cloudformation, launch-dependencies-qa ]
+    environment:
+      ACCOUNT: one-mobile.dev
+      REGION: us-east-1
+      ENVIRONMENT: qa
+    template: adtech-cicd/simple-deployment-execute@stable
+  run-ui-smoketests:
+    requires: [ deploy-qa ]
+    template: ssp/sd-geneva-ui-smoke-tests@latest
+    environment:
+      COMPONENT: geneva-api
+  terminate-stale-dependencies-qa:
+    requires: [ deploy-qa ]
+    <<: *geneva-api-dependencies-common
+    environment:
+      ENVIRONMENT: qa
+    steps:
+      - get-aws-credentials: *get-aws-credentials
+      - init-pipeline-secret: *init-pipeline-secret
+      - delete-dependencies: |
+          manage-dependencies delete $ENVIRONMENT soft
+  deploy-uat:
+    requires: [ run-ui-smoketests ]
+    environment:
+      ACCOUNT: one-mobile.dev
+      REGION: us-east-1
+      ENVIRONMENT: uat
+    template: adtech-cicd/simple-deployment-execute@stable
+  deploy-perf:
+    requires: [ run-ui-smoketests ]
+    environment:
+      ACCOUNT: one-mobile.dev
+      REGION: us-east-1
+      ENVIRONMENT: perf
+    template: adtech-cicd/simple-deployment-execute@stable
+  deploy-beta:
+    requires: [ deploy-uat ]
+    environment:
+      ACCOUNT: one-mobile.dev
+      REGION: us-east-1
+      ENVIRONMENT: beta
+    template: adtech-cicd/simple-deployment-execute@stable
+    steps:
+      - pre-deploy: |
+          export ACCOUNT=one-mobile.prod
+  schedule-release-prod:
+    requires: [ deploy-beta ]
+    environment:
+      ACCOUNT: one-mobile.prod
+      ENVIRONMENT: prod
+      SCHEDULE: true
+    template: adtech-cicd/simple-deployment-execute@stable
+  schedule-release-ext:
+    requires: [ schedule-release-prod ]
+    environment:
+      ACCOUNT: one-mobile.prod
+      ENVIRONMENT: ext
+      SCHEDULE: true
+    template: adtech-cicd/simple-deployment-execute@stable
+  schedule-release-cron:
+    requires: [ schedule-release-ext ]
+    environment:
+      ACCOUNT: one-mobile.prod
+      ENVIRONMENT: cron
+      SCHEDULE: true
+    template: adtech-cicd/simple-deployment-execute@stable
+  deploy-release-management:
+    requires: [ ~sd@1013199:trigger-geneva-api-deploy ]
+    environment:
+      ACCOUNT: one-mobile.dev
+    template: adtech-cicd/simple-deployment-execute@stable
+    steps:
+      - pre-deploy: |
+          export ACCOUNT=$(meta get account --external sd@1013199:trigger-geneva-api-deploy)
+          export REGION=$(meta get region --external sd@1013199:trigger-geneva-api-deploy)
+          export ENVIRONMENT=$(meta get environment --external sd@1013199:trigger-geneva-api-deploy)
+          export VERSION=$(meta get version --external sd@1013199:trigger-geneva-api-deploy)
+  deploy:
+    requires: [ ~sd@1041913:geneva-api ]
+    environment:
+      ACCOUNT: one-mobile.prod
+    template: adtech-cicd/simple-deployment-execute@stable
+    steps:
+      - pre-deploy: |
+          export ACCOUNT=$(meta get Parameters --external sd@1041913:geneva-api | jq -r '."Account"')
+          export ENVIRONMENT=$(meta get Parameters --external sd@1041913:geneva-api | jq -r '."Environment"')
+          export REGION=$(meta get Parameters --external sd@1041913:geneva-api | jq -r '."Region"')
+          export ID=$(meta get ID --external sd@1041913:geneva-api)
+          export VERSION=$(meta get Version  --external sd@1041913:geneva-api)
+          export RESPONSIBLE_DEV=$(meta get ResponsibleDev --external sd@1041913:geneva-api)
+      - teardown-post-deploy: |
+          STATE="DEPLOYED"
+          if [ "$SD_STEP_EXIT_CODE" != "0" ] ; then
+            STATE="FAILED"
+          fi
+          sd-cmd exec adtech-cicd/rq-cli@stable release update \
+            --id "$ID" \
+            --state "$STATE" \
+            --responsible-dev "$RESPONSIBLE_DEV"

@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "sellerPid": 10227,
+      "sellerName": "Provision",
+      "sites": [
+        {
+          "sitePid": 10000204,
+          "siteName": "FOLK_SITE"
+        }
+      ]
+    },
+    {
+      "sellerPid": 10212,
+      "sellerName": "name"
+    },
+    {
+      "sellerPid": 248,
+      "sites": [
+        {
+          "sitePid": 92
+        },
+        {
+          "sitePid": 105
+        }
+      ]
+    }
+  ]
+}

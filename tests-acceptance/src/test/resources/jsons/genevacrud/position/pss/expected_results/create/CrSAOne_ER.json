@@ -1,0 +1,15 @@
+{
+  "pid": 100329,
+  "version": 0,
+  "site": {
+    "pid": 10000207
+  },
+  "interstitial": false,
+  "screenLocation": "FOOTER_VISIBLE",
+  "mraidSupport": "YES",
+  "placementCategory": "BANNER",
+  "videoSupport": "BANNER",
+  "memo": "15012018",
+  "name": "15012018",
+  "trafficType": "SMART_YIELD"
+}

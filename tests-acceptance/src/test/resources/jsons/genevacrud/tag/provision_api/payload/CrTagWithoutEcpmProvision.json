@@ -1,0 +1,15 @@
+{
+  "name": "AV21",
+  "buyer": {
+    "pid": 4252
+  },
+  "ecpmManual": "0",
+  "importRevenueFlag": "false",
+  "primaryId": "535",
+  "tagController": {
+    "autoExpand": false
+  },
+  "videoSupport": "BANNER",
+  "rules": [
+  ]
+}

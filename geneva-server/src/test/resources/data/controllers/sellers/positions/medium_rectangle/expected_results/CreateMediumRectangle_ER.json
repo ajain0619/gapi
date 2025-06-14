@@ -1,0 +1,15 @@
+{
+  "sitePid": 10000174,
+  "tiers": [],
+  "name": "MediumRectangleTest",
+  "isDefault": false,
+  "isInterstitial": false,
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "BELOW_VISIBLE",
+  "mraidAdvancedTracking": true,
+  "height": 250,
+  "width": 300,
+  "status": "ACTIVE",
+  "placementCategory": "MEDIUM_RECTANGLE"
+}

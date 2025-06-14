@@ -1,0 +1,11 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "andereLiga",
+  "name": "andereliga",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "width": 9999,
+  "height": 9999,
+  "mraidSupport": "NO",
+  "videoSupport": "BANNER",
+  "interstitial": true
+}

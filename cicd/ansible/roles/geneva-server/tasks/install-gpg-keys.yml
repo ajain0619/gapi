@@ -1,0 +1,7 @@
+#- name: "Datadog | Import GPG keys {{ datadog_repo_signing_keys }}"
+#  rpm_key:
+#    state: present
+#    key: "{{ item }}"
+#  with_items: "{{ datadog_repo_signing_keys }}"
+#  when: "{{ (datadog_major_version == 5) | ternary(True, False) }}"
+#  ignore_errors: "{{ ansible_check_mode }}"

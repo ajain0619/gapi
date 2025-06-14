@@ -1,0 +1,10 @@
+{
+  "name": "TEST",
+  "version": 0,
+  "publisherPid": 105,
+  "privilegeLevel": "PUBLISHER",
+  "data": "foo1.com,foo2.com",
+  "itemType": "BIDDER",
+  "listType": "BLOCKLIST",
+  "isIndividualsGroup": true
+}

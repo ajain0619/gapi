@@ -1,0 +1,14 @@
+{
+  "name": "a60",
+  "description": "8",
+  "domain": "q1",
+  "appBundle": "B_cQmFm1S5s",
+  "url": "https://play.google.com/store/movies/details/King_Arthur_Legend_of_the_Sword?",
+  "coppaRestricted": false,
+  "platform": "ANDROID_TAB",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "APPLICATION"
+}

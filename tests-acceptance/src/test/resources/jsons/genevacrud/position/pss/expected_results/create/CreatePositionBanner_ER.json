@@ -1,0 +1,16 @@
+{
+  "site":{
+    "pid":10000192
+  },
+  "screenLocation":"FOOTER_VISIBLE",
+  "mraidSupport":"YES",
+  "placementCategory":"BANNER",
+  "interstitial": false,
+  "mraidAdvancedTracking":false,
+  "videoSupport":"BANNER",
+  "width":100,
+  "height":100,
+  "adSizeType":"CUSTOM",
+  "memo":"TestBannerCreation",
+  "name":"testpositionbannercreation"
+}

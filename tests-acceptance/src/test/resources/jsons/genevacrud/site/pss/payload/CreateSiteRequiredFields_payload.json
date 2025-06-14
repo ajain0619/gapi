@@ -1,0 +1,14 @@
+{
+  "description": "test",
+  "domain": "test.com",
+  "name": "test",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "mode": "TEST",
+  "type": "MOBILE_WEB",
+  "url": "https://test.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1"
+  ]
+}

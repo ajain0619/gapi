@@ -1,0 +1,14 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "SITE_NAME",
+          "operator": "NOT_EQUALS",
+          "ruleData": "aleksis%"
+        }
+      ]
+    }
+  ]
+}

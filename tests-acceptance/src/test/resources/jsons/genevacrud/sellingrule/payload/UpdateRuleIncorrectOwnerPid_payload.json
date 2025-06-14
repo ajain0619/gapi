@@ -1,0 +1,21 @@
+{
+  "pid": 1,
+  "version": 0,
+  "name": "BMruleWithAllTargets",
+  "description": "description",
+  "status": "INACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10226,
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "15"
+    }
+  ],
+  "targets": [],
+  "assignments": {
+    "publishers": [],
+    "sites": [],
+    "positions": []
+  }
+}

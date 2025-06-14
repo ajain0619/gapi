@@ -1,0 +1,29 @@
+{
+  "pid": 10000202,
+  "version": 5,
+  "publisher": {
+    "pid": 10225
+  },
+  "dcn": "ff808081015d5df1ecc8f21eb7260999",
+  "description": "aleksis_site",
+  "domain": "aleksis_site",
+  "name": "aleksis_site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "aleksis_site",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "positions": [
+    {
+      "pid": 100318,
+      "name": "transparency_enabled_position",
+      "memo": "transparency_enabled_position"
+    }
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false
+}

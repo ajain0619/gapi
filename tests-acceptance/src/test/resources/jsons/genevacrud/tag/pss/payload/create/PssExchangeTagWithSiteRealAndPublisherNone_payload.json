@@ -1,0 +1,44 @@
+{
+  "site": {
+    "pid": 10000202
+  },
+  "position": {
+    "pid": 100318
+  },
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmAuto": 0,
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "status": "ACTIVE",
+  "selfServeEnablement": "NONE",
+  "owner": "Publisher",
+  "rules": [],
+  "rtbProfile": {
+    "blockedAdCategories": [],
+    "blockedAdvertisers": [],
+    "bidderFilterWhitelist": false,
+    "bidderFilters": [],
+    "useDefaultBidders": true,
+    "useDefaultBlock": true,
+    "includeDomainReferences": true,
+    "includeConsumerId": true,
+    "includeConsumerProfile": true,
+    "alterReserve": "OFF",
+    "pubNetReserve": "1",
+    "libraries": [],
+    "siteTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "None"
+    }
+  },
+  "type": "RTB",
+  "tagController": {
+    "autoExpand": false
+  },
+  "name": "Zureks6_tag_transparency_enabled"
+}

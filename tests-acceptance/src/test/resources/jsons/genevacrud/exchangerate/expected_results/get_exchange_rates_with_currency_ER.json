@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "checkDate": 1665613848000,
+      "currency": "EUR",
+      "forexId": 2,
+      "rate": 0.98040266
+    },
+    {
+      "checkDate": 1665632666000,
+      "currency": "EUR",
+      "forexId": 1,
+      "rate": 0.97040266
+    }
+  ],
+  "last": true,
+  "totalElements": 2,
+  "totalPages": 1,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "first": true,
+  "numberOfElements": 2,
+  "empty": false
+}

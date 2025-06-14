@@ -1,0 +1,16 @@
+{
+  "site": {
+    "pid": 10000175,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "interstitial": false,
+  "screenLocation": "ABOVE_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "width": 300,
+  "height": 50,
+  "memo": "banner placement",
+  "name": "NewSite_Position5_instream_video",
+  "placementCategory": "BANNER"
+}

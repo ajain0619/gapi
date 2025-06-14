@@ -1,0 +1,10 @@
+{
+  "pid": 3,
+  "name": "SeatOneName_updated",
+  "seat": "SeatOneId",
+  "enabled": true,
+  "buyerGroupPid": 3,
+  "version": 1,
+  "companyPid": 10024,
+  "buyerTransparencyFeedEnabled": false
+}

@@ -1,0 +1,5110 @@
+[
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Audio Ad (Autoplay)",
+    "pid": 1,
+    "rtbId": "1"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Audio Ad (User initiated)",
+    "pid": 2,
+    "rtbId": "2"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Expandable (Automatic)",
+    "pid": 3,
+    "rtbId": "3"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Expandable (User Initiated - Click)",
+    "pid": 4,
+    "rtbId": "4"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Expandable (User Initiated - Rollover)",
+    "pid": 5,
+    "rtbId": "5"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "In-Banner Video Ad (Autoplay)",
+    "pid": 6,
+    "rtbId": "6"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "In-Banner Video Ad (User Initiated)",
+    "pid": 7,
+    "rtbId": "7"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Pop (e.g., Over, Under or upon Exit)",
+    "pid": 8,
+    "rtbId": "8"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Provocative or Suggestive Imagery",
+    "pid": 9,
+    "rtbId": "9"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Shaky, Flashing, Flickering, Extreme Animation, Smileys",
+    "pid": 10,
+    "rtbId": "10"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Surveys",
+    "pid": 11,
+    "rtbId": "11"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Text Only",
+    "pid": 12,
+    "rtbId": "12"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "User Interactive (e.g., Embedded Games)",
+    "pid": 13,
+    "rtbId": "13"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Windows Dialog or Alert Style",
+    "pid": 14,
+    "rtbId": "14"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Has Audio On/Off Button",
+    "pid": 15,
+    "rtbId": "15"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Ad can be skipped (e.g., skip button on preroll video)",
+    "pid": 16,
+    "rtbId": "16"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": false,
+    "name": "Adobe Flash",
+    "pid": 17,
+    "rtbId": "17"
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "ActiveX",
+    "pid": 18
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Oath Banned Tracker",
+    "pid": 19
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Oath Unapproved Beacon",
+    "pid": 20
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Blank",
+    "pid": 21
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "ClickTag",
+    "pid": 22
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "ClickTag Missing",
+    "pid": 23
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "1yr Domain Expiration",
+    "pid": 24
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Duration 15-30 sec",
+    "pid": 25
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Duration 30-60 sec",
+    "pid": 26
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Duration 5-15 sec",
+    "pid": 27
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Duration Exception",
+    "pid": 28
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Duration Over 60 sec",
+    "pid": 29
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Creative Error",
+    "pid": 30
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Flash",
+    "pid": 31
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Flash Cookies",
+    "pid": 32
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "XSS Vulnerable Creative",
+    "pid": 33
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Invalid Video Media File",
+    "pid": 34
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Invalid HTTP Response",
+    "pid": 35
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "iOS9 Non Compliant Click Through",
+    "pid": 36
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "iOS9 Non Compliant Creative",
+    "pid": 37
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Causes Javascript Error",
+    "pid": 38
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Loads Non-standard File Types",
+    "pid": 39
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Loads Publisher Tag",
+    "pid": 40
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Mime Type Mismatch",
+    "pid": 41
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Mobile Eligible",
+    "pid": 42
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "No Audio",
+    "pid": 43
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "No Valid Media Files",
+    "pid": 44
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Nth Party Serving",
+    "pid": 45
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Optimized Video",
+    "pid": 46
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Partially Secure",
+    "pid": 47
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Periodic Timeout",
+    "pid": 48
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Potentially Slow Creative",
+    "pid": 49
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Creative Renders without Flash",
+    "pid": 50
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Rotating Content",
+    "pid": 51
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Rotating Landing Page",
+    "pid": 52
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "SAFEe Certified Creative",
+    "pid": 53
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Static Image Creative",
+    "pid": 54
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Creative Times Out",
+    "pid": 55
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Too Many Creative Components",
+    "pid": 56
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Triggers Invalid Click",
+    "pid": 57
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "VAST Fetch Error",
+    "pid": 58
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "VAST Parse Error",
+    "pid": 59
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "VAST Version 1.0",
+    "pid": 60
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "VAST Version 2.0",
+    "pid": 61
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "VAST Version 3.0",
+    "pid": 62
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "XSS Vulnerable Flash Creative",
+    "pid": 63
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Young Creative Domain",
+    "pid": 64
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Polite Download Size > 100KB",
+    "pid": 65
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Polite Download Size > 200KB",
+    "pid": 66
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Polite Download Size > 300KB",
+    "pid": 67
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Polite Download Size > 400KB",
+    "pid": 68
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Polite Download Size > 500KB",
+    "pid": 69
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Total Download Size > 100KB",
+    "pid": 70
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Total Download Size > 200KB",
+    "pid": 71
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Total Download Size > 300KB",
+    "pid": 72
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Total Download Size > 400KB",
+    "pid": 73
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Total Download Size > 500KB",
+    "pid": 74
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Age Targeting",
+    "pid": 75
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Alcohol",
+    "pid": 76
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Alcohol Branding",
+    "pid": 77
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Astrology",
+    "pid": 78
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Casinos",
+    "pid": 79
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Controversial",
+    "pid": 80
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Credit Repair",
+    "pid": 81
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Cryptocurrency",
+    "pid": 82
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Dating Site",
+    "pid": 83
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Disclaimer",
+    "pid": 84
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "E-Cigarettes",
+    "pid": 85
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Family Issues",
+    "pid": 86
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Fireworks or Explosives",
+    "pid": 87
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Gambling",
+    "pid": 88
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Get Rich Quick Schemes",
+    "pid": 89
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Health Food",
+    "pid": 90
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Health Sevices/Devices",
+    "pid": 91
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Image Quality",
+    "pid": 92
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Image Relevance",
+    "pid": 93
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Immodest Image",
+    "pid": 94
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Infant Feeding",
+    "pid": 95
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Lotteries",
+    "pid": 96
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Misleading or Irrelevant",
+    "pid": 97
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "No Brand",
+    "pid": 98
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Non-compliant Contest/Sweepstakes",
+    "pid": 99
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Options & Forex",
+    "pid": 100
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "OTC Drugs",
+    "pid": 101
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Payday Loans",
+    "pid": 102
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Political Candidates & Issues",
+    "pid": 103
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Pork",
+    "pid": 104
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Price Claim",
+    "pid": 105
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Religious",
+    "pid": 106
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Rx Info",
+    "pid": 107
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Rx Sales",
+    "pid": 108
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Sexual Health Products",
+    "pid": 109
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Single Security Investments",
+    "pid": 110
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Suffering & Violence",
+    "pid": 111
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Testimonials",
+    "pid": 112
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Testosterone Products",
+    "pid": 113
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Tobacco",
+    "pid": 114
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Unmoderated UGC",
+    "pid": 115
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Weapons or Explosive",
+    "pid": 116
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Weight Loss Pills & Supplements",
+    "pid": 117
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Weight Loss Program",
+    "pid": 118
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Yahoo Competitors",
+    "pid": 119
+  },
+  {
+    "categoryPid": 3,
+    "freeTextTag": true,
+    "name": "WebBeacon",
+    "pid": 120
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "GDPR Compliant",
+    "pid": 121
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "GDPR Non Compliant",
+    "pid": 122
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "GDPR Indeterminate",
+    "pid": 123
+  },
+  {
+    "categoryPid": 5,
+    "freeTextTag": true,
+    "name": "Advertiser Domain",
+    "pid": 124
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Albanian",
+    "pid": 125
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Breton",
+    "pid": 126
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Buginese",
+    "pid": 127
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Bulgarian",
+    "pid": 128
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Burmese",
+    "pid": 129
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Byelorussian",
+    "pid": 130
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Cambodian",
+    "pid": 131
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Catalan",
+    "pid": 132
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Cherokee",
+    "pid": 133
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Chinese Simplified",
+    "pid": 134
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Chinese Traditional",
+    "pid": 135
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Coptic",
+    "pid": 136
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Corsican",
+    "pid": 137
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Croatian",
+    "pid": 138
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Czech",
+    "pid": 139
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Danish",
+    "pid": 140
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Divehi",
+    "pid": 141
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Dutch",
+    "pid": 142
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "English",
+    "pid": 143
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Esperanto",
+    "pid": 144
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Estonian",
+    "pid": 145
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Faroese",
+    "pid": 146
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Fiji",
+    "pid": 147
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Finnish",
+    "pid": 148
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "French",
+    "pid": 149
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Frisian",
+    "pid": 150
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Galician",
+    "pid": 151
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Georgian",
+    "pid": 152
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "German",
+    "pid": 153
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Gothic",
+    "pid": 154
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Greek",
+    "pid": 155
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Greenlandic",
+    "pid": 156
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Guarani",
+    "pid": 157
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Gujarati",
+    "pid": 158
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Hausa",
+    "pid": 159
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Hebrew",
+    "pid": 160
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Hindi",
+    "pid": 161
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Hungarian",
+    "pid": 162
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Icelandic",
+    "pid": 163
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Indonesian",
+    "pid": 164
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Interlingua",
+    "pid": 165
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Interlingue",
+    "pid": 166
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Inuktitut",
+    "pid": 167
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Inupiak",
+    "pid": 168
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Irish",
+    "pid": 169
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Italian",
+    "pid": 170
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Japanese",
+    "pid": 171
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Javanese",
+    "pid": 172
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Kannada",
+    "pid": 173
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Kashmiri",
+    "pid": 174
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Kazakh",
+    "pid": 175
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Kinyarwanda",
+    "pid": 176
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Kirghiz",
+    "pid": 177
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Kirundi",
+    "pid": 178
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Korean",
+    "pid": 179
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Kurdish",
+    "pid": 180
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Laothian",
+    "pid": 181
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Latin",
+    "pid": 182
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Latvian",
+    "pid": 183
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Lingala",
+    "pid": 184
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Lithuanian",
+    "pid": 185
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Macedonian",
+    "pid": 186
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Malagasy",
+    "pid": 187
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Malay",
+    "pid": 188
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Malayalam",
+    "pid": 189
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Maltese",
+    "pid": 190
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Manipuri",
+    "pid": 191
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Maori",
+    "pid": 192
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Marathi",
+    "pid": 193
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Moldavian",
+    "pid": 194
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Mongolian",
+    "pid": 195
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Munda",
+    "pid": 196
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Nauru",
+    "pid": 197
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Nepali",
+    "pid": 198
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Norwegian Bokmal",
+    "pid": 199
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Norwegian Nynorsk",
+    "pid": 200
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Occitan",
+    "pid": 201
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Oriya",
+    "pid": 202
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Oromo",
+    "pid": 203
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Pashto",
+    "pid": 204
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Persian",
+    "pid": 205
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Polish",
+    "pid": 206
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Portuguese",
+    "pid": 207
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Rhaeto Romance",
+    "pid": 208
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Russian",
+    "pid": 209
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Samoan",
+    "pid": 210
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Sangho",
+    "pid": 211
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Sanskrit",
+    "pid": 212
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Scots Gaelic",
+    "pid": 213
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Serbian",
+    "pid": 214
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Serbo Croatian",
+    "pid": 215
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Sesotho",
+    "pid": 216
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Setswana",
+    "pid": 217
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Shona",
+    "pid": 218
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Sichuan Yi",
+    "pid": 219
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Sindhi",
+    "pid": 220
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Sinhalese",
+    "pid": 221
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Siswati",
+    "pid": 222
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Slovak",
+    "pid": 223
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Slovenian",
+    "pid": 224
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Somali",
+    "pid": 225
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Spanish",
+    "pid": 226
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Sundanese",
+    "pid": 227
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Swahili",
+    "pid": 228
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Swedish",
+    "pid": 229
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Syriac",
+    "pid": 230
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Tagalog",
+    "pid": 231
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Tajik",
+    "pid": 232
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Tamil",
+    "pid": 233
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Tatar",
+    "pid": 234
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Telugu",
+    "pid": 235
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Thai",
+    "pid": 236
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Tibetan",
+    "pid": 237
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Tigrinya",
+    "pid": 238
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Tonga",
+    "pid": 239
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Tsonga",
+    "pid": 240
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Turkish",
+    "pid": 241
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Turkmen",
+    "pid": 242
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Twi",
+    "pid": 243
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Ugaritic",
+    "pid": 244
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Uighur",
+    "pid": 245
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Ukrainian",
+    "pid": 246
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Urdu",
+    "pid": 247
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Uzbek",
+    "pid": 248
+  },
+  {
+    "categoryPid": 4,
+    "freeTextTag": false,
+    "name": "Abkhazian",
+    "pid": 249
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Books & Literature",
+    "parentTagPid": 668,
+    "pid": 250,
+    "rtbId": "IAB1-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Celebrity Fan/Gossip",
+    "parentTagPid": 668,
+    "pid": 251,
+    "rtbId": "IAB1-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Fine Art",
+    "parentTagPid": 668,
+    "pid": 252,
+    "rtbId": "IAB1-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Humor",
+    "parentTagPid": 668,
+    "pid": 253,
+    "rtbId": "IAB1-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Movies",
+    "parentTagPid": 668,
+    "pid": 254,
+    "rtbId": "IAB1-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Music",
+    "parentTagPid": 668,
+    "pid": 255,
+    "rtbId": "IAB1-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Television",
+    "parentTagPid": 668,
+    "pid": 256,
+    "rtbId": "IAB1-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Arts & Entertainment Other",
+    "parentTagPid": 668,
+    "pid": 257,
+    "rtbId": "NEX1-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Auto Parts",
+    "parentTagPid": 669,
+    "pid": 258,
+    "rtbId": "IAB2-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Auto Repair",
+    "parentTagPid": 669,
+    "pid": 259,
+    "rtbId": "IAB2-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Buying/Selling Cars",
+    "parentTagPid": 669,
+    "pid": 260,
+    "rtbId": "IAB2-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Car Culture",
+    "parentTagPid": 669,
+    "pid": 261,
+    "rtbId": "IAB2-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Certified Pre-Owned",
+    "parentTagPid": 669,
+    "pid": 262,
+    "rtbId": "IAB2-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Convertible",
+    "parentTagPid": 669,
+    "pid": 263,
+    "rtbId": "IAB2-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Coupe",
+    "parentTagPid": 669,
+    "pid": 264,
+    "rtbId": "IAB2-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Crossover",
+    "parentTagPid": 669,
+    "pid": 265,
+    "rtbId": "IAB2-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Diesel",
+    "parentTagPid": 669,
+    "pid": 266,
+    "rtbId": "IAB2-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Electric Vehicle",
+    "parentTagPid": 669,
+    "pid": 267,
+    "rtbId": "IAB2-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Hatchback",
+    "parentTagPid": 669,
+    "pid": 268,
+    "rtbId": "IAB2-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Hybrid",
+    "parentTagPid": 669,
+    "pid": 269,
+    "rtbId": "IAB2-12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Luxury",
+    "parentTagPid": 669,
+    "pid": 270,
+    "rtbId": "IAB2-13"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "MiniVan",
+    "parentTagPid": 669,
+    "pid": 271,
+    "rtbId": "IAB2-14"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Motorcycles",
+    "parentTagPid": 669,
+    "pid": 272,
+    "rtbId": "IAB2-15"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Off-Road Vehicles",
+    "parentTagPid": 669,
+    "pid": 273,
+    "rtbId": "IAB2-16"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Performance Vehicles",
+    "parentTagPid": 669,
+    "pid": 274,
+    "rtbId": "IAB2-17"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Pickup",
+    "parentTagPid": 669,
+    "pid": 275,
+    "rtbId": "IAB2-18"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Road-Side Assistance",
+    "parentTagPid": 669,
+    "pid": 276,
+    "rtbId": "IAB2-19"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Sedan",
+    "parentTagPid": 669,
+    "pid": 277,
+    "rtbId": "IAB2-20"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Trucks & Accessories",
+    "parentTagPid": 669,
+    "pid": 278,
+    "rtbId": "IAB2-21"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Vintage Cars",
+    "parentTagPid": 669,
+    "pid": 279,
+    "rtbId": "IAB2-22"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Wagon",
+    "parentTagPid": 669,
+    "pid": 280,
+    "rtbId": "IAB2-23"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Automotive-General",
+    "parentTagPid": 669,
+    "pid": 281,
+    "rtbId": "NEX2-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Automotive Other",
+    "parentTagPid": 669,
+    "pid": 282,
+    "rtbId": "NEX2-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Advertising",
+    "parentTagPid": 670,
+    "pid": 283,
+    "rtbId": "IAB3-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Agriculture",
+    "parentTagPid": 670,
+    "pid": 284,
+    "rtbId": "IAB3-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Biotech/Biomedical",
+    "parentTagPid": 670,
+    "pid": 285,
+    "rtbId": "IAB3-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Business Software",
+    "parentTagPid": 670,
+    "pid": 286,
+    "rtbId": "IAB3-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Construction",
+    "parentTagPid": 670,
+    "pid": 287,
+    "rtbId": "IAB3-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Forestry",
+    "parentTagPid": 670,
+    "pid": 288,
+    "rtbId": "IAB3-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Government",
+    "parentTagPid": 670,
+    "pid": 289,
+    "rtbId": "IAB3-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Green Solutions",
+    "parentTagPid": 670,
+    "pid": 290,
+    "rtbId": "IAB3-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Human Resources",
+    "parentTagPid": 670,
+    "pid": 291,
+    "rtbId": "IAB3-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Logistics",
+    "parentTagPid": 670,
+    "pid": 292,
+    "rtbId": "IAB3-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Marketing",
+    "parentTagPid": 670,
+    "pid": 293,
+    "rtbId": "IAB3-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Metals",
+    "parentTagPid": 670,
+    "pid": 294,
+    "rtbId": "IAB3-12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Gas/Energy",
+    "parentTagPid": 670,
+    "pid": 295,
+    "rtbId": "NEX3-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Business Other",
+    "parentTagPid": 670,
+    "pid": 296,
+    "rtbId": "NEX3-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Career Planning",
+    "parentTagPid": 671,
+    "pid": 297,
+    "rtbId": "IAB4-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "College",
+    "parentTagPid": 671,
+    "pid": 298,
+    "rtbId": "IAB4-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Financial Aid",
+    "parentTagPid": 671,
+    "pid": 299,
+    "rtbId": "IAB4-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Job Fairs",
+    "parentTagPid": 671,
+    "pid": 300,
+    "rtbId": "IAB4-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Job Search",
+    "parentTagPid": 671,
+    "pid": 301,
+    "rtbId": "IAB4-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Resume Writing/Advice",
+    "parentTagPid": 671,
+    "pid": 302,
+    "rtbId": "IAB4-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Nursing",
+    "parentTagPid": 671,
+    "pid": 303,
+    "rtbId": "IAB4-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Scholarships",
+    "parentTagPid": 671,
+    "pid": 304,
+    "rtbId": "IAB4-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Telecommuting",
+    "parentTagPid": 671,
+    "pid": 305,
+    "rtbId": "IAB4-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "U.S. Military",
+    "parentTagPid": 671,
+    "pid": 306,
+    "rtbId": "IAB4-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Career Advice",
+    "parentTagPid": 671,
+    "pid": 307,
+    "rtbId": "IAB4-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Careers Other",
+    "parentTagPid": 671,
+    "pid": 308,
+    "rtbId": "NEX4-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "7-12 Education",
+    "parentTagPid": 672,
+    "pid": 309,
+    "rtbId": "IAB5-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Adult Education",
+    "parentTagPid": 672,
+    "pid": 310,
+    "rtbId": "IAB5-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Art History",
+    "parentTagPid": 672,
+    "pid": 311,
+    "rtbId": "IAB5-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "College Administration",
+    "parentTagPid": 672,
+    "pid": 312,
+    "rtbId": "IAB5-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "College Life",
+    "parentTagPid": 672,
+    "pid": 313,
+    "rtbId": "IAB5-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Distance Learning",
+    "parentTagPid": 672,
+    "pid": 314,
+    "rtbId": "IAB5-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "English as a 2nd Language",
+    "parentTagPid": 672,
+    "pid": 315,
+    "rtbId": "IAB5-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Language Learning",
+    "parentTagPid": 672,
+    "pid": 316,
+    "rtbId": "IAB5-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Graduate School",
+    "parentTagPid": 672,
+    "pid": 317,
+    "rtbId": "IAB5-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Homeschooling",
+    "parentTagPid": 672,
+    "pid": 318,
+    "rtbId": "IAB5-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Homework/Study Tips",
+    "parentTagPid": 672,
+    "pid": 319,
+    "rtbId": "IAB5-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "K-6 Educators",
+    "parentTagPid": 672,
+    "pid": 320,
+    "rtbId": "IAB5-12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Private School",
+    "parentTagPid": 672,
+    "pid": 321,
+    "rtbId": "IAB5-13"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Special Education",
+    "parentTagPid": 672,
+    "pid": 322,
+    "rtbId": "IAB5-14"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Studying Business",
+    "parentTagPid": 672,
+    "pid": 323,
+    "rtbId": "IAB5-15"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Higher Education",
+    "parentTagPid": 672,
+    "pid": 324,
+    "rtbId": "NEX5-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Education Other",
+    "parentTagPid": 672,
+    "pid": 325,
+    "rtbId": "NEX5-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Adoption",
+    "parentTagPid": 673,
+    "pid": 326,
+    "rtbId": "IAB6-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Babies & Toddlers",
+    "parentTagPid": 673,
+    "pid": 327,
+    "rtbId": "IAB6-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Daycare/Pre School",
+    "parentTagPid": 673,
+    "pid": 328,
+    "rtbId": "IAB6-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Family Internet",
+    "parentTagPid": 673,
+    "pid": 329,
+    "rtbId": "IAB6-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Parenting - K-6 Kids",
+    "parentTagPid": 673,
+    "pid": 330,
+    "rtbId": "IAB6-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Parenting teens",
+    "parentTagPid": 673,
+    "pid": 331,
+    "rtbId": "IAB6-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Pregnancy",
+    "parentTagPid": 673,
+    "pid": 332,
+    "rtbId": "IAB6-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Special Needs Kids",
+    "parentTagPid": 673,
+    "pid": 333,
+    "rtbId": "IAB6-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Eldercare",
+    "parentTagPid": 673,
+    "pid": 334,
+    "rtbId": "IAB6-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Family & Parenting Other",
+    "parentTagPid": 673,
+    "pid": 335,
+    "rtbId": "NEX6-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Exercise",
+    "parentTagPid": 674,
+    "pid": 336,
+    "rtbId": "IAB7-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "A.D.D.",
+    "parentTagPid": 674,
+    "pid": 337,
+    "rtbId": "IAB7-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "AIDS/HIV",
+    "parentTagPid": 674,
+    "pid": 338,
+    "rtbId": "IAB7-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Allergies",
+    "parentTagPid": 674,
+    "pid": 339,
+    "rtbId": "IAB7-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Alternative Medicine",
+    "parentTagPid": 674,
+    "pid": 340,
+    "rtbId": "IAB7-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Arthritis",
+    "parentTagPid": 674,
+    "pid": 341,
+    "rtbId": "IAB7-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Asthma",
+    "parentTagPid": 674,
+    "pid": 342,
+    "rtbId": "IAB7-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Autism/PDD",
+    "parentTagPid": 674,
+    "pid": 343,
+    "rtbId": "IAB7-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Bipolar Disorder",
+    "parentTagPid": 674,
+    "pid": 344,
+    "rtbId": "IAB7-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Brain Tumor",
+    "parentTagPid": 674,
+    "pid": 345,
+    "rtbId": "IAB7-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cancer",
+    "parentTagPid": 674,
+    "pid": 346,
+    "rtbId": "IAB7-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cholesterol",
+    "parentTagPid": 674,
+    "pid": 347,
+    "rtbId": "IAB7-12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Chronic Fatigue Syndrome",
+    "parentTagPid": 674,
+    "pid": 348,
+    "rtbId": "IAB7-13"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Chronic Pain",
+    "parentTagPid": 674,
+    "pid": 349,
+    "rtbId": "IAB7-14"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cold & Flu",
+    "parentTagPid": 674,
+    "pid": 350,
+    "rtbId": "IAB7-15"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Deafness",
+    "parentTagPid": 674,
+    "pid": 351,
+    "rtbId": "IAB7-16"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Dental Care",
+    "parentTagPid": 674,
+    "pid": 352,
+    "rtbId": "IAB7-17"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Depression",
+    "parentTagPid": 674,
+    "pid": 353,
+    "rtbId": "IAB7-18"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Dermatology",
+    "parentTagPid": 674,
+    "pid": 354,
+    "rtbId": "IAB7-19"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Diabetes",
+    "parentTagPid": 674,
+    "pid": 355,
+    "rtbId": "IAB7-20"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Epilepsy",
+    "parentTagPid": 674,
+    "pid": 356,
+    "rtbId": "IAB7-21"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "GERD/Acid Reflux",
+    "parentTagPid": 674,
+    "pid": 357,
+    "rtbId": "IAB7-22"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Headaches/Migraines",
+    "parentTagPid": 674,
+    "pid": 358,
+    "rtbId": "IAB7-23"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Heart Disease",
+    "parentTagPid": 674,
+    "pid": 359,
+    "rtbId": "IAB7-24"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Herbs for Health",
+    "parentTagPid": 674,
+    "pid": 360,
+    "rtbId": "IAB7-25"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Holistic Healing",
+    "parentTagPid": 674,
+    "pid": 361,
+    "rtbId": "IAB7-26"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "IBS/Crohn's Disease",
+    "parentTagPid": 674,
+    "pid": 362,
+    "rtbId": "IAB7-27"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Incest/Abuse Support",
+    "parentTagPid": 674,
+    "pid": 363,
+    "rtbId": "IAB7-28"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Incontinence",
+    "parentTagPid": 674,
+    "pid": 364,
+    "rtbId": "IAB7-29"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Infertility",
+    "parentTagPid": 674,
+    "pid": 365,
+    "rtbId": "IAB7-30"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Men's Health",
+    "parentTagPid": 674,
+    "pid": 366,
+    "rtbId": "IAB7-31"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Nutrition",
+    "parentTagPid": 674,
+    "pid": 367,
+    "rtbId": "IAB7-32"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Orthopedics",
+    "parentTagPid": 674,
+    "pid": 368,
+    "rtbId": "IAB7-33"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Panic/Anxiety Disorders",
+    "parentTagPid": 674,
+    "pid": 369,
+    "rtbId": "IAB7-34"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Pediatrics",
+    "parentTagPid": 674,
+    "pid": 370,
+    "rtbId": "IAB7-35"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Physical Therapy",
+    "parentTagPid": 674,
+    "pid": 371,
+    "rtbId": "IAB7-36"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Psychology/Psychiatry",
+    "parentTagPid": 674,
+    "pid": 372,
+    "rtbId": "IAB7-37"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Senior Health",
+    "parentTagPid": 674,
+    "pid": 373,
+    "rtbId": "IAB7-38"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Sexuality",
+    "parentTagPid": 674,
+    "pid": 374,
+    "rtbId": "IAB7-39"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Sleep Disorders",
+    "parentTagPid": 674,
+    "pid": 375,
+    "rtbId": "IAB7-40"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Smoking Cessation",
+    "parentTagPid": 674,
+    "pid": 376,
+    "rtbId": "IAB7-41"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Substance Abuse",
+    "parentTagPid": 674,
+    "pid": 377,
+    "rtbId": "IAB7-42"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Thyroid Disease",
+    "parentTagPid": 674,
+    "pid": 378,
+    "rtbId": "IAB7-43"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Weight Loss",
+    "parentTagPid": 674,
+    "pid": 379,
+    "rtbId": "IAB7-44"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Women's Health",
+    "parentTagPid": 674,
+    "pid": 380,
+    "rtbId": "IAB7-45"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Tobacco",
+    "parentTagPid": 674,
+    "pid": 381,
+    "rtbId": "NEX7-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Consumer Packaged Goods (CPG)",
+    "parentTagPid": 674,
+    "pid": 382,
+    "rtbId": "NEX7-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Health & Fitness Other",
+    "parentTagPid": 674,
+    "pid": 383,
+    "rtbId": "NEX7-103"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "American Cuisine",
+    "parentTagPid": 675,
+    "pid": 384,
+    "rtbId": "IAB8-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Barbecues & Grilling",
+    "parentTagPid": 675,
+    "pid": 385,
+    "rtbId": "IAB8-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cajun/Creole",
+    "parentTagPid": 675,
+    "pid": 386,
+    "rtbId": "IAB8-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Chinese Cuisine",
+    "parentTagPid": 675,
+    "pid": 387,
+    "rtbId": "IAB8-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cocktails/Beer",
+    "parentTagPid": 675,
+    "pid": 388,
+    "rtbId": "IAB8-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Coffee/Tea",
+    "parentTagPid": 675,
+    "pid": 389,
+    "rtbId": "IAB8-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cuisine-Specific",
+    "parentTagPid": 675,
+    "pid": 390,
+    "rtbId": "IAB8-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Desserts & Baking",
+    "parentTagPid": 675,
+    "pid": 391,
+    "rtbId": "IAB8-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Dining Out",
+    "parentTagPid": 675,
+    "pid": 392,
+    "rtbId": "IAB8-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Food Allergies",
+    "parentTagPid": 675,
+    "pid": 393,
+    "rtbId": "IAB8-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "French Cuisine",
+    "parentTagPid": 675,
+    "pid": 394,
+    "rtbId": "IAB8-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Health/Lowfat Cooking",
+    "parentTagPid": 675,
+    "pid": 395,
+    "rtbId": "IAB8-12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Italian Cuisine",
+    "parentTagPid": 675,
+    "pid": 396,
+    "rtbId": "IAB8-13"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Japanese Cuisine",
+    "parentTagPid": 675,
+    "pid": 397,
+    "rtbId": "IAB8-14"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Mexican Cuisine",
+    "parentTagPid": 675,
+    "pid": 398,
+    "rtbId": "IAB8-15"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Vegan",
+    "parentTagPid": 675,
+    "pid": 399,
+    "rtbId": "IAB8-16"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Vegetarian",
+    "parentTagPid": 675,
+    "pid": 400,
+    "rtbId": "IAB8-17"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Wine",
+    "parentTagPid": 675,
+    "pid": 401,
+    "rtbId": "IAB8-18"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Liquor",
+    "parentTagPid": 675,
+    "pid": 402,
+    "rtbId": "NEX8-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Quick Serve Restaurant (QSR)",
+    "parentTagPid": 675,
+    "pid": 403,
+    "rtbId": "NEX8-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Food & Drink Other",
+    "parentTagPid": 675,
+    "pid": 404,
+    "rtbId": "NEX8-103"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Art/Technology",
+    "parentTagPid": 676,
+    "pid": 405,
+    "rtbId": "IAB9-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Arts & Crafts",
+    "parentTagPid": 676,
+    "pid": 406,
+    "rtbId": "IAB9-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Beadwork",
+    "parentTagPid": 676,
+    "pid": 407,
+    "rtbId": "IAB9-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Birdwatching",
+    "parentTagPid": 676,
+    "pid": 408,
+    "rtbId": "IAB9-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Board Games/Puzzles",
+    "parentTagPid": 676,
+    "pid": 409,
+    "rtbId": "IAB9-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Candle & Soap Making",
+    "parentTagPid": 676,
+    "pid": 410,
+    "rtbId": "IAB9-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Card Games",
+    "parentTagPid": 676,
+    "pid": 411,
+    "rtbId": "IAB9-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Chess",
+    "parentTagPid": 676,
+    "pid": 412,
+    "rtbId": "IAB9-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cigars",
+    "parentTagPid": 676,
+    "pid": 413,
+    "rtbId": "IAB9-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Collecting",
+    "parentTagPid": 676,
+    "pid": 414,
+    "rtbId": "IAB9-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Comic Books",
+    "parentTagPid": 676,
+    "pid": 415,
+    "rtbId": "IAB9-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Drawing/Sketching",
+    "parentTagPid": 676,
+    "pid": 416,
+    "rtbId": "IAB9-12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Freelance Writing",
+    "parentTagPid": 676,
+    "pid": 417,
+    "rtbId": "IAB9-13"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Genealogy",
+    "parentTagPid": 676,
+    "pid": 418,
+    "rtbId": "IAB9-14"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Getting Published",
+    "parentTagPid": 676,
+    "pid": 419,
+    "rtbId": "IAB9-15"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Guitar",
+    "parentTagPid": 676,
+    "pid": 420,
+    "rtbId": "IAB9-16"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Home Recording",
+    "parentTagPid": 676,
+    "pid": 421,
+    "rtbId": "IAB9-17"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Investors & Patents",
+    "parentTagPid": 676,
+    "pid": 422,
+    "rtbId": "IAB9-18"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Jewelry Making",
+    "parentTagPid": 676,
+    "pid": 423,
+    "rtbId": "IAB9-19"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Magic & Illusion",
+    "parentTagPid": 676,
+    "pid": 424,
+    "rtbId": "IAB9-20"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Needlework",
+    "parentTagPid": 676,
+    "pid": 425,
+    "rtbId": "IAB9-21"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Painting",
+    "parentTagPid": 676,
+    "pid": 426,
+    "rtbId": "IAB9-22"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Photography",
+    "parentTagPid": 676,
+    "pid": 427,
+    "rtbId": "IAB9-23"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Radio",
+    "parentTagPid": 676,
+    "pid": 428,
+    "rtbId": "IAB9-24"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Roleplaying Games",
+    "parentTagPid": 676,
+    "pid": 429,
+    "rtbId": "IAB9-25"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Sci-Fi & Fantasy",
+    "parentTagPid": 676,
+    "pid": 430,
+    "rtbId": "IAB9-26"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Scrapbooking",
+    "parentTagPid": 676,
+    "pid": 431,
+    "rtbId": "IAB9-27"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Screenwriting",
+    "parentTagPid": 676,
+    "pid": 432,
+    "rtbId": "IAB9-28"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Stamps & Coins",
+    "parentTagPid": 676,
+    "pid": 433,
+    "rtbId": "IAB9-29"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Video & Computer Games",
+    "parentTagPid": 676,
+    "pid": 434,
+    "rtbId": "IAB9-30"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Woodworking",
+    "parentTagPid": 676,
+    "pid": 435,
+    "rtbId": "IAB9-31"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Action/Adventure Games",
+    "parentTagPid": 676,
+    "pid": 436,
+    "rtbId": "NEX9-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Bingo Games",
+    "parentTagPid": 676,
+    "pid": 437,
+    "rtbId": "NEX9-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Sports Games",
+    "parentTagPid": 676,
+    "pid": 438,
+    "rtbId": "NEX9-103"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Content Downloads & Subscriptions",
+    "parentTagPid": 676,
+    "pid": 439,
+    "rtbId": "NEX9-104"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Casino Games",
+    "parentTagPid": 676,
+    "pid": 440,
+    "rtbId": "NEX9-105"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Mature Games",
+    "parentTagPid": 676,
+    "pid": 441,
+    "rtbId": "NEX9-106"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Surveys & Quizzes",
+    "parentTagPid": 676,
+    "pid": 442,
+    "rtbId": "NEX9-107"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Hobbies & Interests Other",
+    "parentTagPid": 676,
+    "pid": 443,
+    "rtbId": "NEX9-108"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Gambling",
+    "parentTagPid": 676,
+    "pid": 444,
+    "rtbId": "NEX9-109"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Appliances",
+    "parentTagPid": 677,
+    "pid": 445,
+    "rtbId": "IAB10-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Entertaining",
+    "parentTagPid": 677,
+    "pid": 446,
+    "rtbId": "IAB10-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Environmental Safety",
+    "parentTagPid": 677,
+    "pid": 447,
+    "rtbId": "IAB10-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Gardening",
+    "parentTagPid": 677,
+    "pid": 448,
+    "rtbId": "IAB10-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Home Repair",
+    "parentTagPid": 677,
+    "pid": 449,
+    "rtbId": "IAB10-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Home Theater",
+    "parentTagPid": 677,
+    "pid": 450,
+    "rtbId": "IAB10-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Interior Decorating",
+    "parentTagPid": 677,
+    "pid": 451,
+    "rtbId": "IAB10-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Landscaping",
+    "parentTagPid": 677,
+    "pid": 452,
+    "rtbId": "IAB10-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Remodeling & Construction",
+    "parentTagPid": 677,
+    "pid": 453,
+    "rtbId": "IAB10-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Home & Garden Other",
+    "parentTagPid": 677,
+    "pid": 454,
+    "rtbId": "NEX10-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Immigration",
+    "parentTagPid": 678,
+    "pid": 455,
+    "rtbId": "IAB11-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Legal Issues",
+    "parentTagPid": 678,
+    "pid": 456,
+    "rtbId": "IAB11-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "U.S. Government Resources",
+    "parentTagPid": 678,
+    "pid": 457,
+    "rtbId": "IAB11-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Politics",
+    "parentTagPid": 678,
+    "pid": 458,
+    "rtbId": "IAB11-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Commentary",
+    "parentTagPid": 678,
+    "pid": 459,
+    "rtbId": "IAB11-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Election",
+    "parentTagPid": 678,
+    "pid": 460,
+    "rtbId": "NEX11-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Law, Gov't & Politics Other",
+    "parentTagPid": 678,
+    "pid": 461,
+    "rtbId": "NEX11-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "International News",
+    "parentTagPid": 679,
+    "pid": 462,
+    "rtbId": "IAB12-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "National News",
+    "parentTagPid": 679,
+    "pid": 463,
+    "rtbId": "IAB12-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Local News",
+    "parentTagPid": 679,
+    "pid": 464,
+    "rtbId": "IAB12-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Newspapers",
+    "parentTagPid": 679,
+    "pid": 465,
+    "rtbId": "NEX12-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "News Other",
+    "parentTagPid": 679,
+    "pid": 466,
+    "rtbId": "NEX12-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Beginning Investing",
+    "parentTagPid": 680,
+    "pid": 467,
+    "rtbId": "IAB13-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Credit/Debt & Loans",
+    "parentTagPid": 680,
+    "pid": 468,
+    "rtbId": "IAB13-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Financial News",
+    "parentTagPid": 680,
+    "pid": 469,
+    "rtbId": "IAB13-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Financial Planning",
+    "parentTagPid": 680,
+    "pid": 470,
+    "rtbId": "IAB13-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Hedge Fund",
+    "parentTagPid": 680,
+    "pid": 471,
+    "rtbId": "IAB13-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Insurance",
+    "parentTagPid": 680,
+    "pid": 472,
+    "rtbId": "IAB13-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Investing",
+    "parentTagPid": 680,
+    "pid": 473,
+    "rtbId": "IAB13-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Mutual Funds",
+    "parentTagPid": 680,
+    "pid": 474,
+    "rtbId": "IAB13-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Options",
+    "parentTagPid": 680,
+    "pid": 475,
+    "rtbId": "IAB13-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Retirement Planning",
+    "parentTagPid": 680,
+    "pid": 476,
+    "rtbId": "IAB13-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Stocks",
+    "parentTagPid": 680,
+    "pid": 477,
+    "rtbId": "IAB13-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Tax Planning",
+    "parentTagPid": 680,
+    "pid": 478,
+    "rtbId": "IAB13-12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Banking",
+    "parentTagPid": 680,
+    "pid": 479,
+    "rtbId": "NEX13-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Personal Finance Other",
+    "parentTagPid": 680,
+    "pid": 480,
+    "rtbId": "NEX13-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Dating",
+    "parentTagPid": 681,
+    "pid": 481,
+    "rtbId": "IAB14-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Divorce Support",
+    "parentTagPid": 681,
+    "pid": 482,
+    "rtbId": "IAB14-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Gay Life",
+    "parentTagPid": 681,
+    "pid": 483,
+    "rtbId": "IAB14-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Marriage",
+    "parentTagPid": 681,
+    "pid": 484,
+    "rtbId": "IAB14-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Senior Living",
+    "parentTagPid": 681,
+    "pid": 485,
+    "rtbId": "IAB14-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Teens",
+    "parentTagPid": 681,
+    "pid": 486,
+    "rtbId": "IAB14-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Weddings",
+    "parentTagPid": 681,
+    "pid": 487,
+    "rtbId": "IAB14-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Ethnic Specific",
+    "parentTagPid": 681,
+    "pid": 488,
+    "rtbId": "IAB14-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Social Networking & Messaging Apps",
+    "parentTagPid": 681,
+    "pid": 489,
+    "rtbId": "NEX14-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Society Other",
+    "parentTagPid": 681,
+    "pid": 490,
+    "rtbId": "NEX14-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Astrology",
+    "parentTagPid": 682,
+    "pid": 491,
+    "rtbId": "IAB15-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Biology",
+    "parentTagPid": 682,
+    "pid": 492,
+    "rtbId": "IAB15-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Chemistry",
+    "parentTagPid": 682,
+    "pid": 493,
+    "rtbId": "IAB15-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Geology",
+    "parentTagPid": 682,
+    "pid": 494,
+    "rtbId": "IAB15-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Paranormal Phenomena",
+    "parentTagPid": 682,
+    "pid": 495,
+    "rtbId": "IAB15-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Physics",
+    "parentTagPid": 682,
+    "pid": 496,
+    "rtbId": "IAB15-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Space/Astronomy",
+    "parentTagPid": 682,
+    "pid": 497,
+    "rtbId": "IAB15-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Geography",
+    "parentTagPid": 682,
+    "pid": 498,
+    "rtbId": "IAB15-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Botany",
+    "parentTagPid": 682,
+    "pid": 499,
+    "rtbId": "IAB15-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Weather",
+    "parentTagPid": 682,
+    "pid": 500,
+    "rtbId": "IAB15-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Science Other",
+    "parentTagPid": 682,
+    "pid": 501,
+    "rtbId": "NEX15-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Aquariums",
+    "parentTagPid": 683,
+    "pid": 502,
+    "rtbId": "IAB16-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Birds",
+    "parentTagPid": 683,
+    "pid": 503,
+    "rtbId": "IAB16-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cats",
+    "parentTagPid": 683,
+    "pid": 504,
+    "rtbId": "IAB16-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Dogs",
+    "parentTagPid": 683,
+    "pid": 505,
+    "rtbId": "IAB16-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Large Animals",
+    "parentTagPid": 683,
+    "pid": 506,
+    "rtbId": "IAB16-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Reptiles",
+    "parentTagPid": 683,
+    "pid": 507,
+    "rtbId": "IAB16-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Veterinary Medicine",
+    "parentTagPid": 683,
+    "pid": 508,
+    "rtbId": "IAB16-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Pets Other",
+    "parentTagPid": 683,
+    "pid": 509,
+    "rtbId": "NEX16-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Auto Racing",
+    "parentTagPid": 684,
+    "pid": 510,
+    "rtbId": "IAB17-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Baseball",
+    "parentTagPid": 684,
+    "pid": 511,
+    "rtbId": "IAB17-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Bicycling",
+    "parentTagPid": 684,
+    "pid": 512,
+    "rtbId": "IAB17-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Bodybuilding",
+    "parentTagPid": 684,
+    "pid": 513,
+    "rtbId": "IAB17-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Boxing",
+    "parentTagPid": 684,
+    "pid": 514,
+    "rtbId": "IAB17-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Canoeing/Kayaking",
+    "parentTagPid": 684,
+    "pid": 515,
+    "rtbId": "IAB17-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cheerleading",
+    "parentTagPid": 684,
+    "pid": 516,
+    "rtbId": "IAB17-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Climbing",
+    "parentTagPid": 684,
+    "pid": 517,
+    "rtbId": "IAB17-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cricket",
+    "parentTagPid": 684,
+    "pid": 518,
+    "rtbId": "IAB17-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Figure Skating",
+    "parentTagPid": 684,
+    "pid": 519,
+    "rtbId": "IAB17-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Fly Fishing",
+    "parentTagPid": 684,
+    "pid": 520,
+    "rtbId": "IAB17-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Football",
+    "parentTagPid": 684,
+    "pid": 521,
+    "rtbId": "IAB17-12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Freshwater Fishing",
+    "parentTagPid": 684,
+    "pid": 522,
+    "rtbId": "IAB17-13"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Game & Fish",
+    "parentTagPid": 684,
+    "pid": 523,
+    "rtbId": "IAB17-14"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Golf",
+    "parentTagPid": 684,
+    "pid": 524,
+    "rtbId": "IAB17-15"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Horse Racing",
+    "parentTagPid": 684,
+    "pid": 525,
+    "rtbId": "IAB17-16"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Horses",
+    "parentTagPid": 684,
+    "pid": 526,
+    "rtbId": "IAB17-17"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Hunting/Shooting",
+    "parentTagPid": 684,
+    "pid": 527,
+    "rtbId": "IAB17-18"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Inline Skating",
+    "parentTagPid": 684,
+    "pid": 528,
+    "rtbId": "IAB17-19"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Martial Arts",
+    "parentTagPid": 684,
+    "pid": 529,
+    "rtbId": "IAB17-20"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Mountain Biking",
+    "parentTagPid": 684,
+    "pid": 530,
+    "rtbId": "IAB17-21"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "NASCAR Racing",
+    "parentTagPid": 684,
+    "pid": 531,
+    "rtbId": "IAB17-22"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Olympics",
+    "parentTagPid": 684,
+    "pid": 532,
+    "rtbId": "IAB17-23"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Paintball",
+    "parentTagPid": 684,
+    "pid": 533,
+    "rtbId": "IAB17-24"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Power & Motorcycles",
+    "parentTagPid": 684,
+    "pid": 534,
+    "rtbId": "IAB17-25"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Pro Basketball",
+    "parentTagPid": 684,
+    "pid": 535,
+    "rtbId": "IAB17-26"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Pro Ice Hockey",
+    "parentTagPid": 684,
+    "pid": 536,
+    "rtbId": "IAB17-27"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Rodeo",
+    "parentTagPid": 684,
+    "pid": 537,
+    "rtbId": "IAB17-28"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Rugby",
+    "parentTagPid": 684,
+    "pid": 538,
+    "rtbId": "IAB17-29"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Running/Jogging",
+    "parentTagPid": 684,
+    "pid": 539,
+    "rtbId": "IAB17-30"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Sailing",
+    "parentTagPid": 684,
+    "pid": 540,
+    "rtbId": "IAB17-31"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Saltwater Fishing",
+    "parentTagPid": 684,
+    "pid": 541,
+    "rtbId": "IAB17-32"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Scuba Diving",
+    "parentTagPid": 684,
+    "pid": 542,
+    "rtbId": "IAB17-33"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Skateboarding",
+    "parentTagPid": 684,
+    "pid": 543,
+    "rtbId": "IAB17-34"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Skiing",
+    "parentTagPid": 684,
+    "pid": 544,
+    "rtbId": "IAB17-35"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Snowboarding",
+    "parentTagPid": 684,
+    "pid": 545,
+    "rtbId": "IAB17-36"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Surfing/Bodyboarding",
+    "parentTagPid": 684,
+    "pid": 546,
+    "rtbId": "IAB17-37"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Swimming",
+    "parentTagPid": 684,
+    "pid": 547,
+    "rtbId": "IAB17-38"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Table Tennis/Ping-Pong",
+    "parentTagPid": 684,
+    "pid": 548,
+    "rtbId": "IAB17-39"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Tennis",
+    "parentTagPid": 684,
+    "pid": 549,
+    "rtbId": "IAB17-40"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Volleyball",
+    "parentTagPid": 684,
+    "pid": 550,
+    "rtbId": "IAB17-41"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Walking",
+    "parentTagPid": 684,
+    "pid": 551,
+    "rtbId": "IAB17-42"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Waterski/Wakeboard",
+    "parentTagPid": 684,
+    "pid": 552,
+    "rtbId": "IAB17-43"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "World Soccer",
+    "parentTagPid": 684,
+    "pid": 553,
+    "rtbId": "IAB17-44"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Sports Other",
+    "parentTagPid": 684,
+    "pid": 554,
+    "rtbId": "NEX17-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Beauty",
+    "parentTagPid": 685,
+    "pid": 555,
+    "rtbId": "IAB18-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Body Art",
+    "parentTagPid": 685,
+    "pid": 556,
+    "rtbId": "IAB18-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Fashion",
+    "parentTagPid": 685,
+    "pid": 557,
+    "rtbId": "IAB18-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Jewelry",
+    "parentTagPid": 685,
+    "pid": 558,
+    "rtbId": "IAB18-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Clothing",
+    "parentTagPid": 685,
+    "pid": 559,
+    "rtbId": "IAB18-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Accessories",
+    "parentTagPid": 685,
+    "pid": 560,
+    "rtbId": "IAB18-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Style & Fashion Other",
+    "parentTagPid": 685,
+    "pid": 561,
+    "rtbId": "NEX18-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "3-D Graphics",
+    "parentTagPid": 686,
+    "pid": 562,
+    "rtbId": "IAB19-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Animation",
+    "parentTagPid": 686,
+    "pid": 563,
+    "rtbId": "IAB19-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Antivirus Software",
+    "parentTagPid": 686,
+    "pid": 564,
+    "rtbId": "IAB19-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "C/C++",
+    "parentTagPid": 686,
+    "pid": 565,
+    "rtbId": "IAB19-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cameras & Camcorders",
+    "parentTagPid": 686,
+    "pid": 566,
+    "rtbId": "IAB19-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cell Phones",
+    "parentTagPid": 686,
+    "pid": 567,
+    "rtbId": "IAB19-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Computer Certification",
+    "parentTagPid": 686,
+    "pid": 568,
+    "rtbId": "IAB19-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Computer Networking",
+    "parentTagPid": 686,
+    "pid": 569,
+    "rtbId": "IAB19-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Computer Peripherals",
+    "parentTagPid": 686,
+    "pid": 570,
+    "rtbId": "IAB19-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Computer Reviews",
+    "parentTagPid": 686,
+    "pid": 571,
+    "rtbId": "IAB19-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Data Centers",
+    "parentTagPid": 686,
+    "pid": 572,
+    "rtbId": "IAB19-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Databases",
+    "parentTagPid": 686,
+    "pid": 573,
+    "rtbId": "IAB19-12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Desktop Publishing",
+    "parentTagPid": 686,
+    "pid": 574,
+    "rtbId": "IAB19-13"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Desktop Video",
+    "parentTagPid": 686,
+    "pid": 575,
+    "rtbId": "IAB19-14"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Email",
+    "parentTagPid": 686,
+    "pid": 576,
+    "rtbId": "IAB19-15"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Graphics Software",
+    "parentTagPid": 686,
+    "pid": 577,
+    "rtbId": "IAB19-16"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Home Video/DVD",
+    "parentTagPid": 686,
+    "pid": 578,
+    "rtbId": "IAB19-17"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Internet Technology",
+    "parentTagPid": 686,
+    "pid": 579,
+    "rtbId": "IAB19-18"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Java",
+    "parentTagPid": 686,
+    "pid": 580,
+    "rtbId": "IAB19-19"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "JavaScript",
+    "parentTagPid": 686,
+    "pid": 581,
+    "rtbId": "IAB19-20"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Mac Support",
+    "parentTagPid": 686,
+    "pid": 582,
+    "rtbId": "IAB19-21"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "MP3/MIDI",
+    "parentTagPid": 686,
+    "pid": 583,
+    "rtbId": "IAB19-22"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Net Conferencing",
+    "parentTagPid": 686,
+    "pid": 584,
+    "rtbId": "IAB19-23"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Net for Beginners",
+    "parentTagPid": 686,
+    "pid": 585,
+    "rtbId": "IAB19-24"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Network Security",
+    "parentTagPid": 686,
+    "pid": 586,
+    "rtbId": "IAB19-25"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Palmtops/PDAs",
+    "parentTagPid": 686,
+    "pid": 587,
+    "rtbId": "IAB19-26"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "PC Support",
+    "parentTagPid": 686,
+    "pid": 588,
+    "rtbId": "IAB19-27"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Portable",
+    "parentTagPid": 686,
+    "pid": 589,
+    "rtbId": "IAB19-28"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Entertainment",
+    "parentTagPid": 686,
+    "pid": 590,
+    "rtbId": "IAB19-29"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Shareware/Freeware",
+    "parentTagPid": 686,
+    "pid": 591,
+    "rtbId": "IAB19-30"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Unix",
+    "parentTagPid": 686,
+    "pid": 592,
+    "rtbId": "IAB19-31"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Visual Basic",
+    "parentTagPid": 686,
+    "pid": 593,
+    "rtbId": "IAB19-32"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Web Clip Art",
+    "parentTagPid": 686,
+    "pid": 594,
+    "rtbId": "IAB19-33"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Web Design/HTML",
+    "parentTagPid": 686,
+    "pid": 595,
+    "rtbId": "IAB19-34"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Web Search",
+    "parentTagPid": 686,
+    "pid": 596,
+    "rtbId": "IAB19-35"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Windows",
+    "parentTagPid": 686,
+    "pid": 597,
+    "rtbId": "IAB19-36"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Wireless Providers",
+    "parentTagPid": 686,
+    "pid": 598,
+    "rtbId": "NEX19-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Telecom/Cable Providers",
+    "parentTagPid": 686,
+    "pid": 599,
+    "rtbId": "NEX19-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Technology & Computing Other",
+    "parentTagPid": 686,
+    "pid": 600,
+    "rtbId": "NEX19-103"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Bidder House Ad",
+    "parentTagPid": 686,
+    "pid": 601,
+    "rtbId": "NEX19-104"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Adventure Travel",
+    "parentTagPid": 687,
+    "pid": 602,
+    "rtbId": "IAB20-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Africa",
+    "parentTagPid": 687,
+    "pid": 603,
+    "rtbId": "IAB20-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Air Travel",
+    "parentTagPid": 687,
+    "pid": 604,
+    "rtbId": "IAB20-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Australia & New Zealand",
+    "parentTagPid": 687,
+    "pid": 605,
+    "rtbId": "IAB20-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Bed & Breakfasts",
+    "parentTagPid": 687,
+    "pid": 606,
+    "rtbId": "IAB20-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Budget Travel",
+    "parentTagPid": 687,
+    "pid": 607,
+    "rtbId": "IAB20-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Business Travel",
+    "parentTagPid": 687,
+    "pid": 608,
+    "rtbId": "IAB20-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "By US Locale",
+    "parentTagPid": 687,
+    "pid": 609,
+    "rtbId": "IAB20-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Camping",
+    "parentTagPid": 687,
+    "pid": 610,
+    "rtbId": "IAB20-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Canada",
+    "parentTagPid": 687,
+    "pid": 611,
+    "rtbId": "IAB20-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Caribbean",
+    "parentTagPid": 687,
+    "pid": 612,
+    "rtbId": "IAB20-11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Cruises",
+    "parentTagPid": 687,
+    "pid": 613,
+    "rtbId": "IAB20-12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Eastern Europe",
+    "parentTagPid": 687,
+    "pid": 614,
+    "rtbId": "IAB20-13"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Europe",
+    "parentTagPid": 687,
+    "pid": 615,
+    "rtbId": "IAB20-14"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "France",
+    "parentTagPid": 687,
+    "pid": 616,
+    "rtbId": "IAB20-15"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Greece",
+    "parentTagPid": 687,
+    "pid": 617,
+    "rtbId": "IAB20-16"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Honeymoons/Getaways",
+    "parentTagPid": 687,
+    "pid": 618,
+    "rtbId": "IAB20-17"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Hotels",
+    "parentTagPid": 687,
+    "pid": 619,
+    "rtbId": "IAB20-18"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Italy",
+    "parentTagPid": 687,
+    "pid": 620,
+    "rtbId": "IAB20-19"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Japan",
+    "parentTagPid": 687,
+    "pid": 621,
+    "rtbId": "IAB20-20"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Mexico & Central America",
+    "parentTagPid": 687,
+    "pid": 622,
+    "rtbId": "IAB20-21"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "National Parks",
+    "parentTagPid": 687,
+    "pid": 623,
+    "rtbId": "IAB20-22"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "South America",
+    "parentTagPid": 687,
+    "pid": 624,
+    "rtbId": "IAB20-23"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Spas",
+    "parentTagPid": 687,
+    "pid": 625,
+    "rtbId": "IAB20-24"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Theme Parks",
+    "parentTagPid": 687,
+    "pid": 626,
+    "rtbId": "IAB20-25"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Traveling with Kids",
+    "parentTagPid": 687,
+    "pid": 627,
+    "rtbId": "IAB20-26"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "United Kingdom",
+    "parentTagPid": 687,
+    "pid": 628,
+    "rtbId": "IAB20-27"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Resort & Casino",
+    "parentTagPid": 687,
+    "pid": 629,
+    "rtbId": "NEX20-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Navigation",
+    "parentTagPid": 687,
+    "pid": 630,
+    "rtbId": "NEX20-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Travel Other",
+    "parentTagPid": 687,
+    "pid": 631,
+    "rtbId": "NEX20-103"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Apartments",
+    "parentTagPid": 688,
+    "pid": 632,
+    "rtbId": "IAB21-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Architects",
+    "parentTagPid": 688,
+    "pid": 633,
+    "rtbId": "IAB21-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Buying/Selling Homes",
+    "parentTagPid": 688,
+    "pid": 634,
+    "rtbId": "IAB21-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Real Estate Other",
+    "parentTagPid": 688,
+    "pid": 635,
+    "rtbId": "NEX21-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Contests & Freebies",
+    "parentTagPid": 689,
+    "pid": 636,
+    "rtbId": "IAB22-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Couponing",
+    "parentTagPid": 689,
+    "pid": 637,
+    "rtbId": "IAB22-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Comparison",
+    "parentTagPid": 689,
+    "pid": 638,
+    "rtbId": "IAB22-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Engines",
+    "parentTagPid": 689,
+    "pid": 639,
+    "rtbId": "IAB22-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Stores & Distribution Channels",
+    "parentTagPid": 689,
+    "pid": 640,
+    "rtbId": "NEX22-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Shopping Other",
+    "parentTagPid": 689,
+    "pid": 641,
+    "rtbId": "NEX22-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Alternative Religions",
+    "parentTagPid": 690,
+    "pid": 642,
+    "rtbId": "IAB23-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Atheism/Agnosticism",
+    "parentTagPid": 690,
+    "pid": 643,
+    "rtbId": "IAB23-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Buddhism",
+    "parentTagPid": 690,
+    "pid": 644,
+    "rtbId": "IAB23-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Catholicism",
+    "parentTagPid": 690,
+    "pid": 645,
+    "rtbId": "IAB23-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Christianity",
+    "parentTagPid": 690,
+    "pid": 646,
+    "rtbId": "IAB23-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Hinduism",
+    "parentTagPid": 690,
+    "pid": 647,
+    "rtbId": "IAB23-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Islam",
+    "parentTagPid": 690,
+    "pid": 648,
+    "rtbId": "IAB23-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Judaism",
+    "parentTagPid": 690,
+    "pid": 649,
+    "rtbId": "IAB23-8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Latter-Day Saints",
+    "parentTagPid": 690,
+    "pid": 650,
+    "rtbId": "IAB23-9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Pagan/Wiccan",
+    "parentTagPid": 690,
+    "pid": 651,
+    "rtbId": "IAB23-10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Religion & Spirituality Other",
+    "parentTagPid": 690,
+    "pid": 652,
+    "rtbId": "NEX23-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Uncategorized",
+    "parentTagPid": 691,
+    "pid": 653,
+    "rtbId": "IAB24-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Unmoderated UGC",
+    "parentTagPid": 692,
+    "pid": 654,
+    "rtbId": "IAB25-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Extreme Graphic/Explicit Violence",
+    "parentTagPid": 692,
+    "pid": 655,
+    "rtbId": "IAB25-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Pornography",
+    "parentTagPid": 692,
+    "pid": 656,
+    "rtbId": "IAB25-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Profane Content",
+    "parentTagPid": 692,
+    "pid": 657,
+    "rtbId": "IAB25-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Hate Content",
+    "parentTagPid": 692,
+    "pid": 658,
+    "rtbId": "IAB25-5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Under Construction",
+    "parentTagPid": 692,
+    "pid": 659,
+    "rtbId": "IAB25-6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Incentivized",
+    "parentTagPid": 692,
+    "pid": 660,
+    "rtbId": "IAB25-7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Advertiser Unknown",
+    "parentTagPid": 692,
+    "pid": 661,
+    "rtbId": "NEX25-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Non-Standard Content Other",
+    "parentTagPid": 692,
+    "pid": 662,
+    "rtbId": "NEX25-102"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Illegal Content",
+    "parentTagPid": 693,
+    "pid": 663,
+    "rtbId": "IAB26-1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Warez",
+    "parentTagPid": 693,
+    "pid": 664,
+    "rtbId": "IAB26-2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Spyware/Malware",
+    "parentTagPid": 693,
+    "pid": 665,
+    "rtbId": "IAB26-3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Copyright Infringement",
+    "parentTagPid": 693,
+    "pid": 666,
+    "rtbId": "IAB26-4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Illegal Content Other",
+    "parentTagPid": 693,
+    "pid": 667,
+    "rtbId": "NEX26-101"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Arts & Entertainment",
+    "pid": 668,
+    "rtbId": "IAB1"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Automotive",
+    "pid": 669,
+    "rtbId": "IAB2"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Business",
+    "pid": 670,
+    "rtbId": "IAB3"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Careers",
+    "pid": 671,
+    "rtbId": "IAB4"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Education",
+    "pid": 672,
+    "rtbId": "IAB5"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Family & Parenting",
+    "pid": 673,
+    "rtbId": "IAB6"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Health & Fitness",
+    "pid": 674,
+    "rtbId": "IAB7"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Food & Drink",
+    "pid": 675,
+    "rtbId": "IAB8"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Hobbies & Interests",
+    "pid": 676,
+    "rtbId": "IAB9"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Home & Garden",
+    "pid": 677,
+    "rtbId": "IAB10"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Law, Gov't & Politics",
+    "pid": 678,
+    "rtbId": "IAB11"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "News",
+    "pid": 679,
+    "rtbId": "IAB12"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Personal Finance",
+    "pid": 680,
+    "rtbId": "IAB13"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Society",
+    "pid": 681,
+    "rtbId": "IAB14"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Science",
+    "pid": 682,
+    "rtbId": "IAB15"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Pets",
+    "pid": 683,
+    "rtbId": "IAB16"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Sports",
+    "pid": 684,
+    "rtbId": "IAB17"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Style & Fashion",
+    "pid": 685,
+    "rtbId": "IAB18"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Technology & Computing",
+    "pid": 686,
+    "rtbId": "IAB19"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Travel",
+    "pid": 687,
+    "rtbId": "IAB20"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Real Estate",
+    "pid": 688,
+    "rtbId": "IAB21"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Shopping",
+    "pid": 689,
+    "rtbId": "IAB22"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Religion & Spirituality",
+    "pid": 690,
+    "rtbId": "IAB23"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Uncategorized",
+    "pid": 691,
+    "rtbId": "IAB24"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Non-Standard Content",
+    "pid": 692,
+    "rtbId": "IAB25"
+  },
+  {
+    "categoryPid": 6,
+    "freeTextTag": false,
+    "name": "Illegal Content",
+    "pid": 693,
+    "rtbId": "IAB26"
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "ADQ_CLICKBAIT",
+    "pid": 694
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "ADQ_TEXTONLY",
+    "pid": 695
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "ADQ_ALCOHOL",
+    "pid": 696
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "ADQ_BLANK_CREATIVE",
+    "pid": 697
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "ADQ_BAD_LANDING_PAGEURL",
+    "pid": 698
+  },
+  {
+    "categoryPid": 2,
+    "freeTextTag": false,
+    "name": "Audio_media",
+    "pid": 699
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": true,
+    "name": "tagName1",
+    "pid": 700,
+    "rtbId": "2"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": true,
+    "name": "tagName2",
+    "pid": 701,
+    "rtbId": "2"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": true,
+    "name": "tagName3",
+    "pid": 702,
+    "rtbId": "2"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": true,
+    "name": "tagName4",
+    "pid": 703,
+    "rtbId": "2"
+  },
+  {
+    "categoryPid": 1,
+    "freeTextTag": true,
+    "name": "tagName5",
+    "pid": 704,
+    "rtbId": "2"
+  }
+]

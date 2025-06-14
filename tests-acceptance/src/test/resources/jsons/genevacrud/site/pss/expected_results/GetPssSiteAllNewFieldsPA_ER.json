@@ -1,0 +1,20 @@
+{
+  "pid": 10000211,
+  "version": 1,
+  "publisher": {
+    "pid": 105
+  },
+  "description": "site with all fields deskription",
+  "domain": "mgbPssite.com",
+  "name": "mgbPssite",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "pss.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false
+}

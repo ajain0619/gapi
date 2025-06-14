@@ -1,0 +1,22 @@
+- name: Configure Geneva Logs
+  template:
+    dest: "/srv/apps/geneva-server/conf/{{ item }}"
+    group: root
+    mode: 0644
+    owner: root
+    src: "{{ item }}.j2"
+  with_items:
+    - "log4j2.xml"
+- name: Include Geneva Server instance vars
+  include_vars:
+    file: geneva.yml
+- name: "Configure Geneva Properties"
+  template:
+    dest: "/srv/apps/geneva-server/conf/{{ item }}"
+    group: root
+    mode: 0644
+    owner: root
+    src: "{{ item }}.j2"
+  with_items:
+    - "application.properties"
+    - "FeatureVisibility.json"

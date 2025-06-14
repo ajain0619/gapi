@@ -1,0 +1,9 @@
+{
+  "pid": 1,
+  "version": 0,
+  "name": "Rule without publisher",
+  "description": "some_description",
+  "status": "INACTIVE",
+  "type": "DEAL",
+  "assignments": {}
+}

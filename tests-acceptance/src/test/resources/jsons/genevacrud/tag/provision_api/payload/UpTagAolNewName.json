@@ -1,0 +1,27 @@
+{
+  "name": "b11",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pid": 10000070,
+    "pubNetReserve": 35,
+    "blockedAdCategories": [
+      "IAB1"
+    ],
+    "blockedAdvertisers": [
+      "tut.by"
+    ],
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "pid": 6,
+    "autoExpand": false
+  },
+  "version": 0,
+  "rules": []
+}

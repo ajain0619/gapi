@@ -1,0 +1,29 @@
+{
+  "pid": 10000200,
+  "version": 1,
+  "publisher": {
+    "pid": 10225
+  },
+  "dcn": "ff808081015d5d7a1d357b0ac86a0012",
+  "description": "site for testing transparency settings ",
+  "domain": "transparency_enabled.com",
+  "name": "site_for_transparency_enabled",
+  "platform": "IPHONE",
+  "status": "ACTIVE",
+  "type": "APPLICATION",
+  "url": "http://transparency_enabled.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "siteTransparencySettings": {
+    "transparencyMode": "Aliases"
+  },
+  "publisherTransparencySettings": {
+    "transparencyMode": "Aliases",
+    "nameAlias": "pub_alias_name"
+  }
+}

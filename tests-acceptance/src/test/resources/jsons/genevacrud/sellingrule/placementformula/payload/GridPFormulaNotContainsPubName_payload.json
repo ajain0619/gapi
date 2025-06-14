@@ -1,0 +1,14 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "PUBLISHER_NAME",
+          "operator": "NOT_CONTAINS",
+          "ruleData": "company"
+        }
+      ]
+    }
+  ]
+}

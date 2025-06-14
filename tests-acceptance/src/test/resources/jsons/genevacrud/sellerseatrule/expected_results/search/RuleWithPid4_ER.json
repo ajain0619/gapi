@@ -1,0 +1,26 @@
+{
+  "pid": 4,
+  "description": "The Not-Quite-So-Brave-as-Sir-Lancelot Knight",
+  "intendedActions": [
+    {
+      "actionData": "BLOCKLIST",
+      "actionType": "FILTER",
+      "version": 0
+    }
+  ],
+  "name": "Sir Robin 5678",
+  "sellerSeatPid": 2,
+  "status": "ACTIVE",
+  "targets": [
+    {
+      "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]",
+      "matchType": "EXCLUDE_LIST",
+      "pid": 9,
+      "status": "ACTIVE",
+      "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+      "version": 0
+    }
+  ],
+  "type": "BRAND_PROTECTION",
+  "version": 0
+}

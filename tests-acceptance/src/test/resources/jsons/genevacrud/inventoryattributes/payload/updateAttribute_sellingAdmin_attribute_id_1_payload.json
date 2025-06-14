@@ -1,0 +1,39 @@
+{
+  "name": "att5",
+  "description": "att3updated",
+  "prefix": "test",
+  "createdBy": 105,
+  "attributePid": 1,
+  "status": "INACTIVE",
+  "attributeValues": [
+    {
+      "pid": 1,
+      "value": "attval1",
+      "version": 2,
+      "enabled": true
+    }
+  ],
+  "hasGlobalVisibility": false,
+  "specificPublisherVisibility": [
+    {
+      "name": "DataXu",
+      "publisherPid": 638
+    },
+    {
+      "name": "Burst Media",
+      "publisherPid": 651
+    },
+    {
+      "name": "AdFonic",
+      "publisherPid": 664
+    }
+  ],
+  "assignedLevel": [
+    1,
+    2,
+    3
+  ],
+  "version": 0,
+  "required": false,
+  "internalOnly": false
+}

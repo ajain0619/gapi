@@ -1,0 +1,62 @@
+{
+  "name": "AV303",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 15,
+    "bidderFilterWhitelist": false,
+    "libraries": [
+      {
+        "pid": 15,
+        "name": "guyer",
+        "version": 1,
+        "publisherPid": 10227,
+        "privilegeLevel": "PUBLISHER",
+        "isDefaultEligible": false,
+        "groups": [
+          {
+            "pid": 19,
+            "name": "guyer",
+            "version": 0,
+            "publisherPid": 10227,
+            "privilegeLevel": "PUBLISHER",
+            "data": "",
+            "itemType": "BIDDER",
+            "listType": "BLOCKLIST",
+            "isIndividualsGroup": false
+          }
+        ]
+      },
+      {
+        "pid": 14,
+        "name": "group",
+        "version": 1,
+        "publisherPid": 10227,
+        "privilegeLevel": "PUBLISHER",
+        "isDefaultEligible": false,
+        "groups": [
+          {
+            "pid": 18,
+            "name": "group",
+            "version": 0,
+            "publisherPid": 10227,
+            "privilegeLevel": "PUBLISHER",
+            "data": "3",
+            "itemType": "BIDDER",
+            "listType": "WHITELIST",
+            "isIndividualsGroup": false
+          }
+        ]
+      }
+    ],
+    "useDefaultBidders": true
+  },
+  "tagController": {
+    "autoExpand": false
+  },
+  "rules": []
+}

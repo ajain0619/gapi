@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 79,
+      "type": "SELLER"
+    }
+  ],
+  "role": "ROLE_USER",
+  "userName": "selleruser2_V1",
+  "email": "01sfhdx@rasd.ru",
+  "contactNumber": "543",
+  "name": "yhr nexageTestLastName",
+  "title": "tr",
+  "primaryContact": false
+}

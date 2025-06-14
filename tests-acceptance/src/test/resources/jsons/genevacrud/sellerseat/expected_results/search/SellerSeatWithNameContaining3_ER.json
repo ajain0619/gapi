@@ -1,0 +1,50 @@
+{
+  "content": [
+    {
+      "pid": 3,
+      "name": "Seller seat 3",
+      "status": false,
+      "version": 0,
+      "updatedOn": 1570454794000,
+      "sellers": [
+        {
+          "pid": 99998,
+          "name": "Seller_S33_1",
+          "type": "SELLER",
+          "adStrictApproval": false
+        },
+        {
+          "pid": 10234,
+          "name": "Test API Buyer Company",
+          "type": "BUYER",
+          "adStrictApproval": false
+        }
+      ]
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 1000,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalElements": 1,
+  "totalPages": 1,
+  "last": true,
+  "size": 1000,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "numberOfElements": 1,
+  "first": true,
+  "empty": false
+}

@@ -1,0 +1,23 @@
+{
+  "site": {
+    "pId": 10000192,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "mraidSupport": "NO",
+  "placementCategory": "INSTREAM_VIDEO",
+  "interstitial": false,
+  "mraidAdvancedTracking": true,
+  "positionAliasName": "CreateVideoPlacementOnlyInPlacementVideoAlias",
+  "videoSupport": "VIDEO",
+  "placementVideo": {
+    "linearity":"LINEAR",
+    "playerRequired":false,
+    "longform":false  },
+  "width": 1400,
+  "height": 400,
+  "adSizeType": "STANDARD",
+  "memo": "CreateVideoPlacementOnlyInPlacementVideo",
+  "name": "createvideoplacementonlyinplacementvideo"
+}

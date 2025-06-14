@@ -1,0 +1,20 @@
+{
+  "name": "test-fee-adjustment-1",
+  "inclusive": true,
+  "demandFeeAdjustment": 0.1,
+  "enabled": true,
+  "description": "A test fee adjustment.",
+  "feeAdjustmentSellers": [
+    {
+      "sellerPid": 27
+    },
+    {
+      "sellerPid": 40
+    }
+  ],
+  "feeAdjustmentBuyers": [
+    {
+      "buyerPid": 261
+    }
+  ]
+}

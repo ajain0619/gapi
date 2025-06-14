@@ -1,0 +1,23 @@
+{
+  "content": [
+    {
+      "dealPid": 1,
+      "autoUpdate": false,
+      "placementFormula": {
+        "groupedBy": "OR",
+        "formulaGroups": [
+          {
+            "formulaRules": [
+              {
+                "attribute": "DOMAIN",
+                "operator": "EQUALS",
+                "ruleData": "{\"pid\":1,\"fileName\":\"domains.csv\",\"fileType\":\"DOMAIN\"}",
+                "attributePid": 11
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

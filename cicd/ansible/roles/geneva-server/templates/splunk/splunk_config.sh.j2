@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+sudo yum-config-manager --add-repo https://artifactory.ouroath.com/artifactory/public-cloud/public-cloud-noarch.repo
+sudo yum install -y pcp-splunk-config
+{{ geneva_server_home}}/bin/sshdReset.sh
+
+# Disable splunk
+# {{ geneva_server_splunk_home }}/bin/splunk start --accept-license --answer-yes --no-prompt
+# /opt/pcp/setup.sh forwarder

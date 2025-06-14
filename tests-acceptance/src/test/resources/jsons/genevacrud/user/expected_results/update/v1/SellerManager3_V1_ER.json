@@ -1,0 +1,19 @@
+{
+  "id": "ff8080810151510f18db1ad1082d03eb",
+  "pid": 731,
+  "userName": "sellermanager3",
+  "name": "seller manager3 updated",
+  "email": "1jdffgd@rea.ru",
+  "contactNumber": "654321",
+  "title": "Mrs",
+  "role": "ROLE_MANAGER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10063,
+      "type": "SELLER",
+      "name": "test_rtb"
+    }
+  ]
+}

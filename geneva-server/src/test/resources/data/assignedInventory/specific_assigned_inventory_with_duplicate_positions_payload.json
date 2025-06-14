@@ -1,0 +1,27 @@
+{
+  "content": [
+    {
+      "sellerPid": 10227,
+      "sellerName": "Provision",
+      "sites": [
+        {
+          "sitePid": 10000204,
+          "siteName": "FOLK_SITE",
+          "placements": [
+            {
+              "pid": 1,
+              "placementPid": 100323,
+              "placementName": "para_ioso",
+              "placementMemo": "para_ioso"
+            },
+            {
+              "placementPid": 100323,
+              "placementName": "para_ioso",
+              "placementMemo": "para_ioso"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

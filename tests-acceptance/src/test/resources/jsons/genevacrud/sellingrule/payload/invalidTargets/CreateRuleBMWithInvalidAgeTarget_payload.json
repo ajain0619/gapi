@@ -1,0 +1,26 @@
+{
+  "name": "RuleBMWithInvalidAgeTarget",
+  "description": "Bid management rule with a invalid age target 22-52",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10225,
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "2.0"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "INCLUDE_LIST",
+      "targetType": "AGE",
+      "data": "22-52"
+    }
+  ],
+  "assignments": {
+    "publishers": [],
+    "sites": [],
+    "positions": []
+  }
+}

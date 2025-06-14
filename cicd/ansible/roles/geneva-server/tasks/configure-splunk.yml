@@ -1,0 +1,24 @@
+- name: Include Splunk vars
+  include_vars:
+    file: splunk.yml
+- name: "Configure Splunk User"
+  template:
+    dest: "{{ geneva_server_splunk_home }}/etc/system/local/{{ item }}"
+    group: root
+    mode: 0755
+    owner: root
+    src: "splunk/{{ item }}.j2"
+  with_items:
+    - "user-seed.conf"
+    - "inputs.conf"
+    - "outputs.conf"
+- name: "Splunk Start Script"
+  template:
+    dest: "{{ geneva_server_home}}/bin/{{ item }}"
+    group: root
+    mode: 0755
+    owner: root
+    src: "splunk/{{ item }}.j2"
+  with_items:
+    - "splunk_config.sh"
+    - "sshdReset.sh"

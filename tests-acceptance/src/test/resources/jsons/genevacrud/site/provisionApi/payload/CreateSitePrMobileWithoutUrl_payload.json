@@ -1,0 +1,12 @@
+{
+  "name": "a50",
+  "description": "8",
+  "domain": "q1",
+  "coppaRestricted": false,
+  "platform": "OTHER",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "MOBILE_WEB"
+}

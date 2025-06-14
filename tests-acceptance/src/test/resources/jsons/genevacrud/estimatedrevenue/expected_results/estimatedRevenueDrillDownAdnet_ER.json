@@ -1,0 +1,15 @@
+{
+  "pid": 92,
+  "mediation": [
+    {
+      "buyerId": 222,
+      "buyerName": "reverse_geocoding_company",
+      "revenue": 0.08
+    },
+    {
+      "buyerId": 248,
+      "buyerName": "MedFTCompany",
+      "revenue": 0.04
+    }
+  ]
+}

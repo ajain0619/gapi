@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <util:properties id="sellerRevenueQueries"
+                   location="classpath:/sql/report/sellerRevenueQueries.xml"/>
+  <util:properties id="rtbBidderARQueries" location="classpath:/sql/report/rtbBidderARQueries.xml"/>
+  <util:properties id="publisherSettlementQueries"
+                   location="classpath:/sql/report/publisherSettlementQueries.xml"/>
+  <util:properties id="bidderPerformanceQueries"
+                   location="classpath:/sql/report/bidderPerformanceQueries.xml"/>
+  <util:properties id="bidderSpendQueries" location="classpath:/sql/report/bidderSpendQueries.xml"/>
+  <util:properties id="analyticsBySiteQueries"
+                   location="classpath:/sql/report/analyticsBySiteQueries.xml"/>
+  <util:properties id="trafficQueries" location="classpath:/sql/report/trafficQueries.xml"/>
+  <util:properties id="rxPerformanceQueries"
+                   location="classpath:/sql/report/rxPerformanceQueries.xml"/>
+  <util:properties id="adServerQueries" location="classpath:/sql/report/adServerQueries.xml"/>
+  <util:properties id="impressionGroupsQueries"
+                   location="classpath:/sql/report/impressionGroupsQueries.xml"/>
+  <util:properties id="mediationAndRTBRevenueQueries"
+                   location="classpath:/sql/report/mediationAndRTBRevenueQueries.xml"/>
+  <util:properties id="adServingRevenueQueries"
+                   location="classpath:/sql/report/adServingRevenueQueries.xml"/>
+  <util:properties id="financeMetricsByAdSourceQueries"
+                   location="classpath:/sql/report/financeMetricsByAdSourceQueries.xml"/>
+  <util:properties id="financeMetricsBySiteQueries"
+                   location="classpath:/sql/report/financeMetricsBySiteQueries.xml"/>
+  <util:properties id="rtbRevenuePerformanceQueries"
+                   location="classpath:/sql/report/rtbRevenuePerformanceQueries.xml"/>
+  <util:properties id="rtbSiteDistributionQueries"
+                   location="classpath:/sql/report/rtbSiteDistributionQueries.xml"/>
+  <util:properties id="subscriptionDataUsageQueries"
+                   location="classpath:/sql/report/subscriptionDataUsageQueries.xml"/>
+
+</beans>

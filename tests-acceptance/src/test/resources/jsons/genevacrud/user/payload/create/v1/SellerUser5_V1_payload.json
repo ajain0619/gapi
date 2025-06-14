@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "companies": [
+    {
+      "pid": 10063
+    }
+  ],
+  "role": "ROLE_USER",
+  "userName": "selleruser5",
+  "email": "selleruser5@req.ru",
+  "contactNumber": "hdf",
+  "name": "hgdf hgdf",
+  "title": "hgdf",
+  "primaryContact": false
+}

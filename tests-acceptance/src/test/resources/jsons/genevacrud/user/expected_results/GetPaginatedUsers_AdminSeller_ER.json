@@ -1,0 +1,186 @@
+{
+  "content": [
+    {
+      "companies": [
+        {
+          "name": "test_rtb",
+          "pid": 10063,
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false,
+      "email": "crudsellermanager@nexage.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0601525215521c17d623f101d0",
+      "name": "crudsellermanager",
+      "oneCentralUserName": "crudsellermanager",
+      "pid": 740,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "userName": "crudsellermanager",
+      "version": 1
+    },
+    {
+      "companies": [
+        {
+          "name": "test_rtb",
+          "pid": 10063,
+          "type": "SELLER"
+        }
+      ],
+      "dealAdmin": false,
+      "email": "crudselleruser@nexage.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0601525215521c17d5cb0001cf",
+      "name": "crudselleruser",
+      "oneCentralUserName": "crudselleruser",
+      "pid": 739,
+      "primaryContact": false,
+      "role": "ROLE_USER",
+      "userName": "crudselleruser",
+      "version": 1
+    },
+    {
+      "companies": [
+        {
+          "name": "test_rtb",
+          "pid": 10063,
+          "type": "SELLER"
+        }
+      ],
+      "contactNumber": "jfg",
+      "dealAdmin": false,
+      "email": "1gfxdhxdfh@q.ru",
+      "enabled": true,
+      "global": false,
+      "id": "ff8080810151510f18db1ad0f32a03df",
+      "name": "f",
+      "oneCentralUserName": "selleradmin1",
+      "pid": 719,
+      "primaryContact": false,
+      "role": "ROLE_ADMIN",
+      "title": "jhf",
+      "userName": "selleradmin1",
+      "version": 0
+    },
+    {
+      "companies": [
+        {
+          "name": "test_rtb",
+          "pid": 10063,
+          "type": "SELLER"
+        }
+      ],
+      "contactNumber": "gs5",
+      "dealAdmin": false,
+      "email": "1hdfsfsa@qw.ru",
+      "enabled": true,
+      "global": false,
+      "id": "ff8080810151510f18db1ad0f43003e0",
+      "name": "gsd",
+      "oneCentralUserName": "sellermanager1",
+      "pid": 720,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "title": "gsd",
+      "userName": "sellermanager1",
+      "version": 0
+    },
+    {
+      "companies": [
+        {
+          "name": "test_rtb",
+          "pid": 10063,
+          "type": "SELLER"
+        }
+      ],
+      "contactNumber": "hds",
+      "dealAdmin": false,
+      "email": "1dfgfsd@ew.ri",
+      "enabled": true,
+      "global": false,
+      "id": "ff8080810151510f18db1ad0f58703e1",
+      "name": "hds",
+      "oneCentralUserName": "selleruser1",
+      "pid": 721,
+      "primaryContact": false,
+      "role": "ROLE_USER",
+      "title": "hs",
+      "userName": "selleruser1",
+      "version": 0
+    },
+    {
+      "companies": [
+        {
+          "name": "test_rtb",
+          "pid": 10063,
+          "type": "SELLER"
+        }
+      ],
+      "contactNumber": "hdf",
+      "dealAdmin": false,
+      "email": "1hgdfh@req.ru",
+      "enabled": true,
+      "global": false,
+      "id": "ff8080810151510f18db1ad1098403ec",
+      "name": "hgdf",
+      "oneCentralUserName": "selleruser3",
+      "pid": 732,
+      "primaryContact": false,
+      "role": "ROLE_USER",
+      "title": "hgdf",
+      "userName": "selleruser3",
+      "version": 0
+    },
+    {
+      "companies": [
+        {
+          "name": "test_rtb",
+          "pid": 10063,
+          "type": "SELLER"
+        }
+      ],
+      "contactNumber": "654",
+      "dealAdmin": false,
+      "email": "1jdffgd@rea.ru",
+      "enabled": true,
+      "global": false,
+      "id": "ff8080810151510f18db1ad1082d03eb",
+      "name": "jhfkhdf",
+      "oneCentralUserName": "sellermanager3",
+      "pid": 731,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "title": "mr",
+      "userName": "sellermanager3",
+      "version": 0
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 7,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 7,
+  "totalPages": 1
+}

@@ -1,0 +1,17 @@
+{
+  "name": "AV97",
+  "buyer": {
+    "pid": "5136"
+  },
+  "primaryName": "pname",
+  "primaryId": "pid",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "Username",
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

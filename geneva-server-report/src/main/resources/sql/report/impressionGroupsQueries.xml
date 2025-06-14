@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+  SELECT
+      /* $reportUser.userName */ /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+      SUM(t.site_ads_served) AS siteAdServes, SUM(t.requests) AS  adRequests, SUM(t.served) AS adServed, SUM(t.clicks) AS adClicks, SUM(t.delivered) AS adDelivered
+      #if ($reportUser.isNexageUser())
+            , SUM(t.total_revenue) as totalRevenue, SUM(t.mm_revenue) as mmRevenue
+        #end
+        , SUM(t.revenue) as revenue
+  FROM
+      (SELECT
+          0 as site_ads_served,
+          (SUM(f1.ads_requested) - SUM(f1.ads_bots) - SUM(f1.ads_throttled)) AS requests,
+          0 as served, 0 as clicks, 0 as delivered, 0 as total_revenue, 0 as mm_revenue, 0 as revenue
+        FROM
+            fact_traffic_site f1
+        WHERE
+            f1.start >= :start
+            AND f1.start < :stop
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f1.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f1.site_id = :site #end
+            #if ($request.group) AND f1.group = :group #end
+        UNION ALL
+        SELECT
+            0 as site_ads_served, 0 as requests, SUM(f2.ads_served) as served, SUM(f2.ads_clicked) as clicks, SUM(f2.ads_displayed) as delivered,
+            0 as total_revenue, 0 as mm_revenue, 0 as revenue
+        FROM
+            fact_traffic_adnet f2
+        WHERE
+            f2.start >= :start
+            AND f2.start < :stop
+            AND f2.tag_id IN (SELECT id from dim_tag where monetization = 1)
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f2.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f2.site_id = :site #end
+            #if(!$StringUtils.isEmpty($group)) AND f2.group = :group #end
+        UNION ALL
+        SELECT
+            sum(f3.ads_served) as site_ads_served, 0 as requests, 0 as served, 0 as clicks, 0 as delivered,
+            cast(sum(f3.revenue) as decimal(16,8)) as total_revenue, cast(sum(f3.revenue_net) as decimal(16,8)) as mm_revenue,
+            cast(sum(f3.revenue) - sum(f3.revenue_net) as decimal(16,8)) as revenue
+        FROM
+            fact_revenue_adnet_vw_daily f3
+        WHERE
+            f3.start >= :start
+            AND f3.start < :stop
+            AND f3.tag_monetization = 1
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f3.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+            #if(!$StringUtils.isEmpty($site)) AND f3.site_id = :site #end
+        LIMIT 10000
+        ) AS  t
+  ]]>
+  </entry>
+  <entry key="dim=site">
+    <![CDATA[
+    SELECT
+      /* $reportUser.userName */ /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+      SUM(t.site_ads_served) AS siteAdServes, SUM(t.requests) AS  adRequests, SUM(t.served) AS adServed, SUM(t.clicks) AS adClicks, SUM(t.delivered) AS adDelivered,
+      SUM(t.revenue) as revenue,
+      t.site_id as siteId, d.name as site
+      #if ($reportUser.isNexageUser())
+            , SUM(t.mm_revenue) as mmRevenue, SUM(t.total_revenue) as totalRevenue
+        #end
+  FROM
+      (SELECT
+          0 as site_ads_served,
+          (SUM(f1.ads_requested) - SUM(f1.ads_bots) - SUM(f1.ads_throttled)) AS requests,
+          0 as served, 0 as clicks, 0 as delivered, 0 as total_revenue, 0 as mm_revenue, 0 as revenue,
+          f1.site_id as site_id
+        FROM
+            fact_traffic_site f1
+        WHERE
+            f1.start >= :start
+            AND f1.start < :stop
+            #if ($request.group) AND f1.group = :group #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f1.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            f1.site_id
+        UNION ALL
+        SELECT
+            0 as site_ads_served, 0 as requests, SUM(f2.ads_served) as served, SUM(f2.ads_clicked) as clicks, SUM(f2.ads_displayed) as delivered,
+            0 as total_revenue, 0 as mm_revenue, 0 as revenue,
+            f2.site_id as site_id
+        FROM
+            fact_traffic_adnet f2
+        WHERE
+            f2.start >= :start
+            AND f2.start < :stop
+            AND f2.tag_id IN (SELECT id from dim_tag where monetization = 1)
+            #if ($request.group) AND f2.group = :group #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f2.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            f2.site_id
+        UNION ALL
+        SELECT
+            sum(f3.ads_served) as site_ads_served, 0 as requests, 0 as served, 0 as clicks, 0 as delivered,
+            cast(sum(f3.revenue) as decimal(16,8)) as total_revenue, cast(sum(f3.revenue_net) as decimal(16,8)) as mm_revenue,
+            cast(sum(f3.revenue) - sum(f3.revenue_net) as decimal(16,8)) as revenue,
+            f3.site_id as site_id
+        FROM
+            fact_revenue_adnet_vw_daily f3
+        WHERE
+            f3.start >= :start
+            AND f3.start < :stop
+            AND f3.tag_monetization = 1
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f3.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            f3.site_id
+        ) AS  t
+        INNER JOIN dim_site d ON d.id = t.site_id
+    GROUP BY
+        t.site_id, d.name
+  ]]>
+  </entry>
+  <entry key="dim=group">
+    <![CDATA[
+    SELECT
+      /* $reportUser.userName */ /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+      SUM(t.site_ads_served) AS siteAdServes, SUM(t.requests) AS  adRequests, SUM(t.served) AS adServed, SUM(t.clicks) AS adClicks, SUM(t.delivered) AS adDelivered,
+      SUM(t.revenue) as revenue,
+      t.group as 'group'
+      #if ($reportUser.isNexageUser())
+            , SUM(t.mm_revenue) as mmRevenue, SUM(t.total_revenue) as totalRevenue
+        #end
+  FROM
+      (SELECT
+          0 as site_ads_served,
+          (SUM(f1.ads_requested) - SUM(f1.ads_bots) - SUM(f1.ads_throttled)) AS requests,
+          0 as served, 0 as clicks, 0 as delivered, 0 as total_revenue, 0 as mm_revenue, 0 as revenue,
+          f1.group as 'group'
+        FROM
+            fact_traffic_site f1
+        WHERE
+            f1.start >= :start
+            AND f1.start < :stop
+            #if ($request.site) AND f1.site_id = :site #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f1.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            f1.group
+        UNION ALL
+        SELECT
+            0 as site_ads_served, 0 as requests, SUM(f2.ads_served) as served, SUM(f2.ads_clicked) as clicks, SUM(f2.ads_displayed) as delivered,
+            0 as total_revenue, 0 as mm_revenue, 0 as revenue,
+            f2.group as 'group'
+        FROM
+            fact_traffic_adnet f2
+        WHERE
+            f2.start >= :start
+            AND f2.start < :stop
+            AND f2.tag_id IN (SELECT id from dim_tag where monetization = 1)
+            #if ($request.site) AND f2.site_id = :site #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f2.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            f2.group
+        UNION ALL
+        SELECT
+            sum(f3.ads_served) as site_ads_served, 0 as requests, 0 as served, 0 as clicks, 0 as delivered,
+            cast(sum(f3.revenue) as decimal(16,8)) as total_revenue, cast(sum(f3.revenue_net) as decimal(16,8)) as mm_revenue,
+            cast(sum(f3.revenue) - sum(f3.revenue_net) as decimal(16,8)) as revenue,
+            null as 'group'
+        FROM
+            fact_revenue_adnet_vw_daily f3
+        WHERE
+            f3.start >= :start
+            AND f3.start < :stop
+            AND f3.tag_monetization = 1
+            #if ($request.site) AND f3.site_id = :site #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f3.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        ) AS  t
+    GROUP BY
+        t.group
+  ]]>
+  </entry>
+  <entry key="dim=month">
+    <![CDATA[
+    SELECT
+      /* $reportUser.userName */ /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+      SUM(t.site_ads_served) AS siteAdServes, SUM(t.requests) AS  adRequests, SUM(t.served) AS adServed, SUM(t.clicks) AS adClicks, SUM(t.delivered) AS adDelivered,
+      SUM(t.revenue) as revenue,
+      date_trunc('month', t.start) as interval
+      #if ($reportUser.isNexageUser())
+            , SUM(t.mm_revenue) as mmRevenue, SUM(t.total_revenue) as totalRevenue
+        #end
+  FROM
+      (SELECT
+          0 as site_ads_served,
+          (SUM(f1.ads_requested) - SUM(f1.ads_bots) - SUM(f1.ads_throttled)) AS requests,
+          0 as served, 0 as clicks, 0 as delivered, 0 as total_revenue, 0 as mm_revenue, 0 as revenue,
+          date_trunc('month', f1.start) as start
+        FROM
+            fact_traffic_site f1
+        WHERE
+            f1.start >= :start
+            AND f1.start < :stop
+            #if ($request.site) AND f1.site_id = :site #end
+            #if ($request.group) AND f1.group = :group #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f1.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            date_trunc('month', f1.start)
+        UNION ALL
+        SELECT
+            0 as site_ads_served, 0 as requests, SUM(f2.ads_served) as served, SUM(f2.ads_clicked) as clicks, SUM(f2.ads_displayed) as delivered,
+            0 as total_revenue, 0 as mm_revenue, 0 as revenue,
+            date_trunc('month', f2.start) as start
+        FROM
+            fact_traffic_adnet f2
+        WHERE
+            f2.start >= :start
+            AND f2.start < :stop
+            AND f2.tag_id IN (SELECT id from dim_tag where monetization = 1)
+            #if ($request.site) AND f2.site_id = :site #end
+            #if ($request.group) AND f2.group = :group #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f2.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            date_trunc('month', f2.start)
+        UNION ALL
+        SELECT
+            sum(f3.ads_served) as site_ads_served, 0 as requests, 0 as served, 0 as clicks, 0 as delivered,
+            cast(sum(f3.revenue) as decimal(16,8)) as total_revenue, cast(sum(f3.revenue_net) as decimal(16,8)) as mm_revenue,
+            cast(sum(f3.revenue) - sum(f3.revenue_net) as decimal(16,8)) as revenue,
+            date_trunc('month', f3.start) as start
+        FROM
+            fact_revenue_adnet_vw_daily f3
+        WHERE
+            f3.start >= :start
+            AND f3.start < :stop
+            AND f3.tag_monetization = 1
+            #if ($request.site) AND f3.site_id = :site #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f3.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            date_trunc('month', f3.start)
+        ) AS  t
+    GROUP BY
+        date_trunc('month', t.start)
+  ]]>
+  </entry>
+  <entry key="dim=week">
+    <![CDATA[
+    SELECT
+      /* $reportUser.userName */ /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+      SUM(t.site_ads_served) AS siteAdServes, SUM(t.requests) AS  adRequests, SUM(t.served) AS adServed, SUM(t.clicks) AS adClicks, SUM(t.delivered) AS adDelivered,
+      SUM(t.revenue) as revenue,
+      greatest(timestamp_trunc(t.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) AS interval
+      #if ($reportUser.isNexageUser())
+            , SUM(t.mm_revenue) as mmRevenue, SUM(t.total_revenue) as totalRevenue
+        #end
+  FROM
+      (SELECT
+          0 as site_ads_served,
+          (SUM(f1.ads_requested) - SUM(f1.ads_bots) - SUM(f1.ads_throttled)) AS requests,
+          0 as served, 0 as clicks, 0 as delivered, 0 as total_revenue, 0 as mm_revenue, 0 as revenue,
+          greatest(timestamp_trunc(f1.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) as start
+        FROM
+            fact_traffic_site f1
+        WHERE
+            f1.start >= :start
+            AND f1.start < :stop
+            #if ($request.site) AND f1.site_id = :site #end
+            #if ($request.group) AND f1.group = :group #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f1.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            timestamp_trunc(f1.start, 'dy')
+        UNION ALL
+        SELECT
+            0 as site_ads_served, 0 as requests, SUM(f2.ads_served) as served, SUM(f2.ads_clicked) as clicks, SUM(f2.ads_displayed) as delivered,
+            0 as total_revenue, 0 as mm_revenue, 0 as revenue,
+            greatest(timestamp_trunc(f2.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) as start
+        FROM
+            fact_traffic_adnet f2
+        WHERE
+            f2.start >= :start
+            AND f2.start < :stop
+            AND f2.tag_id IN (SELECT id from dim_tag where monetization = 1)
+            #if ($request.site) AND f2.site_id = :site #end
+            #if ($request.group) AND f2.group = :group #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f2.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            timestamp_trunc(f2.start, 'dy')
+        UNION ALL
+        SELECT
+            sum(f3.ads_served) as site_ads_served, 0 as requests, 0 as served, 0 as clicks, 0 as delivered,
+            cast(sum(f3.revenue) as decimal(16,8)) as total_revenue, cast(sum(f3.revenue_net) as decimal(16,8)) as mm_revenue,
+            cast(sum(f3.revenue) - sum(f3.revenue_net) as decimal(16,8)) as revenue,
+            greatest(timestamp_trunc(f3.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) as start
+        FROM
+            fact_revenue_adnet_vw_daily f3
+        WHERE
+            f3.start >= :start
+            AND f3.start < :stop
+            AND f3.tag_monetization = 1
+            #if ($request.site) AND f3.site_id = :site #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f3.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            timestamp_trunc(f3.start, 'dy')
+        ) AS  t
+    GROUP BY
+        timestamp_trunc(t.start, 'dy')
+  ]]>
+  </entry>
+  <entry key="dim=day">
+    <![CDATA[
+    SELECT
+      /* $reportUser.userName */ /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+      SUM(t.site_ads_served) AS siteAdServes, SUM(t.requests) AS  adRequests, SUM(t.served) AS adServed, SUM(t.clicks) AS adClicks, SUM(t.delivered) AS adDelivered,
+      SUM(t.revenue) as revenue,
+      date_trunc('day', t.start) as interval
+      #if ($reportUser.isNexageUser())
+            , SUM(t.mm_revenue) as mmRevenue, SUM(t.total_revenue) as totalRevenue
+        #end
+  FROM
+      (SELECT
+          0 as site_ads_served,
+          (SUM(f1.ads_requested) - SUM(f1.ads_bots) - SUM(f1.ads_throttled)) AS requests,
+          0 as served, 0 as clicks, 0 as delivered, 0 as total_revenue, 0 as mm_revenue, 0 as revenue,
+          date_trunc('day', f1.start) as start
+        FROM
+            fact_traffic_site f1
+        WHERE
+            f1.start >= :start
+            AND f1.start < :stop
+            #if ($request.site) AND f1.site_id = :site #end
+            #if ($request.group) AND f1.group = :group #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f1.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            date_trunc('day', f1.start)
+        UNION ALL
+        SELECT
+            0 as site_ads_served, 0 as requests, SUM(f2.ads_served) as served, SUM(f2.ads_clicked) as clicks, SUM(f2.ads_displayed) as delivered,
+            0 as total_revenue, 0 as mm_revenue, 0 as revenue,
+            date_trunc('day', f2.start) as start
+        FROM
+            fact_traffic_adnet f2
+        WHERE
+            f2.start >= :start
+            AND f2.start < :stop
+            AND f2.tag_id IN (SELECT id from dim_tag where monetization = 1)
+            #if ($request.site) AND f2.site_id = :site #end
+            #if ($request.group) AND f2.group = :group #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f2.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            date_trunc('day', f2.start)
+        UNION ALL
+        SELECT
+            sum(f3.ads_served) as site_ads_served, 0 as requests, 0 as served, 0 as clicks, 0 as delivered,
+            cast(sum(f3.revenue) as decimal(16,8)) as total_revenue, cast(sum(f3.revenue_net) as decimal(16,8)) as mm_revenue,
+            cast(sum(f3.revenue) - sum(f3.revenue_net) as decimal(16,8)) as revenue,
+            date_trunc('day', f3.start) as start
+        FROM
+            fact_revenue_adnet_vw_daily f3
+        WHERE
+            f3.start >= :start
+            AND f3.start < :stop
+            AND f3.tag_monetization = 1
+            #if ($request.site) AND f3.site_id = :site #end
+            #if($siteIds && !$siteIds.isEmpty())
+                AND f3.site_id IN (:siteIds) ## Sites restriction is present
+            #elseif($siteIds && $siteIds.isEmpty())
+                AND 1 = 0 ## No sites are allowed
+            #end
+        GROUP BY
+            date_trunc('day', f3.start)
+        ) AS  t
+    GROUP BY
+        date_trunc('day', t.start)
+  ]]>
+  </entry>
+</properties>

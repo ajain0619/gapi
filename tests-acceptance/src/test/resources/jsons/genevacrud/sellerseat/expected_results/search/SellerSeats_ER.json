@@ -1,0 +1,139 @@
+{
+  "content": [
+    {
+      "description": "Some desc 1",
+      "name": "Seller seat 1",
+      "pid": 1,
+      "sellers": [
+        {
+          "adStrictApproval": false,
+          "name": "Cooler Screens",
+          "pid": 10235,
+          "type": "SELLER"
+        },
+        {
+          "adStrictApproval": false,
+          "name": "Seller_S21",
+          "pid": 801,
+          "type": "SELLER"
+        },
+        {
+          "adStrictApproval": false,
+          "name": "MedFTCompany",
+          "pid": 248,
+          "type": "SELLER"
+        },
+        {
+          "adStrictApproval": false,
+          "name": "Rovio",
+          "pid": 456,
+          "type": "SELLER"
+        },
+        {
+          "adStrictApproval": false,
+          "name": "Seller_S11",
+          "pid": 800,
+          "type": "SELLER"
+        },
+        {
+          "adStrictApproval": false,
+          "name": "Seller_S31",
+          "pid": 802,
+          "type": "SELLER"
+        }
+      ],
+      "status": true,
+      "updatedOn": 1570454794000,
+      "version": 0
+    },
+    {
+      "name": "Seller seat 2",
+      "pid": 2,
+      "sellers": [
+        {
+          "adStrictApproval": false,
+          "name": "Seller_S12",
+          "pid": 810,
+          "type": "SELLER"
+        },
+        {
+          "adStrictApproval": false,
+          "name": "Seller_S22",
+          "pid": 811,
+          "type": "SELLER"
+        },
+        {
+          "adStrictApproval": false,
+          "name": "Seller_S32",
+          "pid": 812,
+          "type": "SELLER"
+        }
+      ],
+      "status": true,
+      "updatedOn": 1570454794000,
+      "version": 0
+    },
+    {
+      "description": "Some desc 3",
+      "name": "Seller seat 3",
+      "pid": 3,
+      "sellers": [
+        {
+          "adStrictApproval": false,
+          "name": "Test API Buyer Company",
+          "pid": 10234,
+          "type": "BUYER"
+        },
+        {
+          "adStrictApproval": false,
+          "name": "Seller_S33_1",
+          "pid": 99998,
+          "type": "SELLER"
+        }
+      ],
+      "status": false,
+      "updatedOn": 1570454794000,
+      "version": 0
+    },
+    {
+      "name": "Seller seat 4",
+      "pid": 4,
+      "status": false,
+      "updatedOn": 1570454794000,
+      "version": 0
+    },
+    {
+      "description": "Some desc 5",
+      "name": "Seller seat 5",
+      "pid": 5,
+      "status": true,
+      "updatedOn": 1570454794000,
+      "version": 0
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 5,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 5,
+  "totalPages": 1
+}

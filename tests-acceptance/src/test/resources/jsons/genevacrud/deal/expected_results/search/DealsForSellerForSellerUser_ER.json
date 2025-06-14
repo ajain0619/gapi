@@ -1,0 +1,21 @@
+{
+  "content": [
+    {
+      "pid": 13,
+      "dealId": "InventoryDeal2",
+      "description": "Inventory Test Deal2",
+      "start": 1582693200000,
+      "status": "Active",
+      "auctionType": 4,
+      "visibility": true,
+      "placementFormulaStatus": "DONE"
+    }
+  ],
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 1,
+  "first": true,
+  "numberOfElements": 1,
+  "size": 10,
+  "number": 0
+}

@@ -1,0 +1,19 @@
+{
+  "pid": 10225,
+  "version": 0,
+  "name": "transparency_enabled",
+  "id": "ff808081015d5d55e25355e45ac20005",
+  "attributes": {
+    "version": 0,
+    "defaultBlock": [],
+    "individualsDefaultBlock": [],
+    "defaultBidderGroups": [],
+    "individualsDefaultBidderGroups": [],
+    "defaultBiddersAllowList": false,
+    "defaultTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "defaultTransparencyMgmtEnablement": "ENABLED"
+  },
+  "eligibleBidderGroups": []
+}

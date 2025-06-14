@@ -1,0 +1,57 @@
+{
+  "publisher": {
+    "pid": 105,
+    "adServingEnabled": false,
+    "restrictDrillDown": false,
+    "test": false,
+    "selfServeAllowed": false,
+    "numberOfUsers": 0,
+    "defaultRtbProfilesEnabled": false
+  },
+  "description": "site for revenue",
+  "domain": "domain.com",
+  "name": "revenueSite",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "rev.com",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "IAB1",
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": true,
+  "trafficThrottle": 45,
+  "adTruthEnabled": false,
+  "globalAliasName": "globAli",
+  "metadataEnablement": true,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": true,
+    "groups": [
+      "EnBarraquillaMeQuedo"
+    ]
+  },
+  "reportFrequency": 15000,
+  "reportBatchSize": 1,
+  "rulesUpdateFrequency": 15000,
+  "filterBots": false,
+  "buyerTimeout": 90,
+  "daysFree": 0,
+  "totalTimeout": 90,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": true,
+  "consumerProfileUsed": true,
+  "overrideIP": false,
+  "ethnicityMap": "afr=0,asian=1,hisp=2,wh=3,oth=4",
+  "genderMap": "a1=M",
+  "maritalStatusMap": "single=S,married=M,divorced=D,other=O",
+  "inputDateFormat": "123456780",
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.53,
+    "rtbFee": 0.32
+  }
+}

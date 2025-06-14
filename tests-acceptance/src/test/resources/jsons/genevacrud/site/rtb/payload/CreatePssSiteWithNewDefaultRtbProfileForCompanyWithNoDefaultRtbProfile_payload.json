@@ -1,0 +1,79 @@
+{
+  "publisher": {
+    "pid": 10229,
+    "adServingEnabled": false,
+    "restrictDrillDown": false,
+    "test": false,
+    "selfServeAllowed": false,
+    "numberOfUsers": 0
+  },
+  "description": "site for deb_rtbprofile_publisher1",
+  "domain": "def.com",
+  "name": "site_for_negative_test_no_publisher_default_rtb_profile",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "http://def.com",
+  "coppaRestricted": false,
+  "rtb1CategoryRollup": "",
+  "iabCategories": [
+    "IAB7"
+  ],
+  "positions": [
+    {
+      "pid": 100329,
+      "name": "position_for_rtbprofile_pub1"
+    }
+  ],
+  "mode": "TEST",
+  "hbEnabled": false,
+  "trafficThrottle": 0,
+  "adTruthEnabled": false,
+  "metadataEnablement": false,
+  "adScreeningEnabled": false,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "reportFrequency": 180000,
+  "reportBatchSize": 10,
+  "rulesUpdateFrequency": 1800000,
+  "filterBots": true,
+  "buyerTimeout": 500,
+  "daysFree": 0,
+  "totalTimeout": 5000,
+  "defaultPositions": [],
+  "passthruParameters": [],
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "defaultRtbProfile": {
+    "pubNetReserve": 2.0,
+    "libraries": [],
+    "name": "ironWill",
+    "bidderFilterAllowlist": false,
+    "useDefaultBlock": true,
+    "includeConsumerId": true,
+    "includeDomainReferences": true,
+    "includeConsumerProfile": true,
+    "screeningLevel": "AllowAll",
+    "useDefaultBidders": false,
+    "auctionType": "EXCHANGE_DEFAULT",
+    "alterReserve": "ONLY_IF_HIGHER",
+    "siteTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "publisherTransparencySettings": {
+      "transparencyMode": "RealName"
+    },
+    "description": "new site rtbprofile for nexage admin",
+    "siteType": "W",
+    "defaultReserve": 1.04,
+    "blockedExternalDataProviderMap": {},
+    "bidderFilterMap": {},
+    "libraryPids": [],
+    "includeGeoData": true,
+    "bidderFilters": [],
+    "blockedAdCategories": []
+  }
+}

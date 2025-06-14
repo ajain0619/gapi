@@ -1,0 +1,21 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "attributePid": 888,
+          "operator": "EQUALS",
+          "ruleData": "MOBILE_WEB"
+        },
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "attributePid": 888,
+          "operator": "EQUALS",
+          "ruleData": "MOBILE_WEB"
+        }
+      ]
+    }
+  ]
+}

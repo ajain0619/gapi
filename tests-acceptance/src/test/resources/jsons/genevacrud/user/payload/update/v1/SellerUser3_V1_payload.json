@@ -1,0 +1,20 @@
+{
+  "id": "ff8080810151510f18db1ad1098403ec",
+  "pid": 732,
+  "version": 0,
+  "userName": "selleruser3",
+  "name": "seller user3 udpated",
+  "email": "1hgdfh@req.ru",
+  "contactNumber": "54223",
+  "title": "Mr",
+  "role": "ROLE_USER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10063,
+      "type": "SELLER",
+      "name": "test_rtb"
+    }
+  ]
+}

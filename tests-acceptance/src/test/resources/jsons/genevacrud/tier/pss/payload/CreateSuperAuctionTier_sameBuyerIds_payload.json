@@ -1,0 +1,16 @@
+{
+  "level": 9999,
+  "orderStrategy": "Dynamic",
+  "tierType": "SUPER_AUCTION",
+  "tags": [
+    {
+      "pid": 5566596
+    },
+    {
+      "pid": 5566597
+    },
+    {
+      "pid": 5566598
+    }
+  ]
+}

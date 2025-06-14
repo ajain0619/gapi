@@ -1,0 +1,61 @@
+{
+  "content": [
+    {
+      "pid": 1,
+      "id": "abc123",
+      "name": "google_partner_test",
+      "partnerHandler": "my_test_partner",
+      "status": "ACTIVE",
+      "version": 0,
+      "formattedDefaultTypeEnabled": false,
+      "multiImpressionBid": true,
+      "fillMaxDuration": false,
+      "maxAdsPerPod": 8
+    },
+    {
+      "pid": 2,
+      "id": "xyz456",
+      "name": "mopub_partner_test",
+      "partnerHandler": "my_test_partner2",
+      "status": "ACTIVE",
+      "version": 0,
+      "formattedDefaultTypeEnabled": false,
+      "multiImpressionBid": true,
+      "fillMaxDuration": true
+    },
+    {
+      "pid": 3,
+      "id": "xyz789",
+      "name": "amazon-partner-test",
+      "partnerHandler": "amazon",
+      "status": "ACTIVE",
+      "version": 1,
+      "formattedDefaultTypeEnabled": false,
+      "multiImpressionBid": false,
+      "fillMaxDuration": false
+    },
+    {
+      "pid": 4,
+      "id": "xyz768",
+      "name": "ebay-partner-test",
+      "partnerHandler": "default",
+      "status": "ACTIVE",
+      "version": 1,
+      "formattedDefaultTypeEnabled": false,
+      "multiImpressionBid": false,
+      "fillMaxDuration": false
+    }
+  ],
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 4,
+  "first": true,
+  "size": 1000,
+  "number": 0,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  },
+  "numberOfElements": 4
+}

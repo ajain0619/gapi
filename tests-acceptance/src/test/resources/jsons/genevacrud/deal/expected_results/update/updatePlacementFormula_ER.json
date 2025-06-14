@@ -1,0 +1,41 @@
+{
+  "pid": 1,
+  "dealId": "1442225178554269962",
+  "description": "updated",
+  "start": 1442462400000,
+  "stop": 1442721599000,
+  "floor": 100,
+  "createdBy": 2,
+  "status": "Active",
+  "auctionType": "None",
+  "bidders": [],
+  "profiles": [],
+  "rules": [],
+  "positions": [],
+  "visibility": false,
+  "sites": [],
+  "publishers": [],
+  "placementFormula": {
+    "groupedBy": "OR",
+    "formulaGroups": [
+      {
+        "formulaRules": [
+          {
+            "attribute": "PLACEMENT_NAME",
+            "operator": "CONTAINS",
+            "ruleData": "native",
+            "attributePid": null
+          },
+          {
+            "attribute": "SITE_NAME",
+            "operator": "CONTAINS",
+            "ruleData": "CRUD",
+            "attributePid": null
+          }
+        ]
+      }
+    ]
+  },
+  "autoUpdate": true,
+  "placementFormulaStatus": "NEW"
+}

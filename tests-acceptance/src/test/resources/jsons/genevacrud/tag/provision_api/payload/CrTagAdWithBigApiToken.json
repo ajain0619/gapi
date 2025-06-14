@@ -1,0 +1,18 @@
+{
+  "name": "AV107",
+  "buyer": {
+    "pid": "4252"
+  },
+  "primaryId": "123",
+  "adNetReportApiKey": "key",
+  "adNetReportApiToken": "12346578901234657890123465789012346578901234657890123465789012346578901234657890123465789012346578901",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "Username",
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

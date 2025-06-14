@@ -1,0 +1,20 @@
+{
+  "id": "ff8080810151510f18db1ad106b803ea",
+  "pid": 730,
+  "version": 0,
+  "userName": "buyeruser2",
+  "name": "byuer user2 updated",
+  "email": "1jdfjdf@erqw.ru",
+  "contactNumber": "213434",
+  "title": "Mr",
+  "role": "ROLE_USER",
+  "enabled": false,
+  "primaryContact": false,
+  "companies": [
+    {
+      "pid": 10024,
+      "type": "BUYER",
+      "name": "MedFTBuyer"
+    }
+  ]
+}

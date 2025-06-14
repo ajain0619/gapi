@@ -1,0 +1,1948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        sum(vw.bid_requests) as bidRequests,
+        sum(vw.bid_responses) as bidReceived,
+        sum(vw.bids_timeout) as timeouts,
+    #else
+        -1 as bidRequests,
+        -1 as bidReceived,
+        -1 as timeouts,
+    #end
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.bids_timeout) as timeouts,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost
+FROM
+    (select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            sum(f2.bid_requests) as bid_requests,
+            sum(f2.bid_responses) as bid_responses,
+        #end
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue
+    from
+        (
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        select
+            sum(bid_requests) as bid_requests,
+            sum(bid_responses) as bid_responses,
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            sum(bids_timeout) as bids_timeout,
+            0 as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue
+        from
+        fact_exchange_bidders f
+        where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        UNION ALL
+        #end
+        select
+            #if(!$StringUtils.isEmpty($deal) || !$StringUtils.isEmpty($seat))
+              sum(bids) as bids,
+              sum(bids_won) as bids_won,
+              sum(bids_insufficient) as bids_insufficient,
+              0 as bids_timeout,
+              sum(wins_timeout) as win_notice_timeouts,
+              sum(bids_forfeit) as bids_forfeit,
+              0 as ads_delivered,
+              cast(0 as decimal (16 , 8 )) as price_sum,
+              cast(0 as decimal (16 , 8 )) as revenue
+         #else
+                0 as bid_requests,
+                0 as bid_responses,
+                0 as bids,
+                0 as bids_won,
+                0 as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                0 as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue
+            #end
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+            ) f2
+    where
+        1 = 1
+        UNION ALL
+        select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            0 as bid_requests,
+            0 as bid_responses,
+        #end
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    ) vw
+  ]]>
+  </entry>
+
+  <entry key="dim=site">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        sum(vw.bid_requests) as bidRequests,
+        sum(vw.bid_responses) as bidReceived,
+        sum(vw.bids_timeout) as timeouts,
+    #else
+        -1 as bidRequests,
+        -1 as bidReceived,
+        -1 as timeouts,
+    #end
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    #if ($reportUser.isNexageUser())
+        case when max(dt.external_name) IS NOT NULL AND d.name!=max(dt.external_name) then
+            d.name || ' (' || max(dt.external_name) || ')'
+        else
+          d.name
+        end as site,
+    #else
+        dt.external_name as site,
+    #end
+    vw.site_id as siteId
+FROM
+    (select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            sum(f2.bid_requests) as bid_requests,
+            sum(f2.bid_responses) as bid_responses,
+        #end
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.site_id,
+            t.id as tag_id
+    from
+        (
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        select
+            sum(bid_requests) as bid_requests,
+            sum(bid_responses) as bid_responses,
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            sum(bids_timeout) as bids_timeout,
+            0 as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f.site_id,
+            f.tag_id AS rtb_profile_id
+        from
+        fact_exchange_bidders f
+        where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY f.site_id , f.tag_id
+        UNION ALL
+        #end
+        select
+            #if(!$StringUtils.isEmpty($deal) || !$StringUtils.isEmpty($seat))
+                sum(bids) as bids,
+                sum(bids_won) as bids_won,
+                sum(bids_insufficient) as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                sum(bids_forfeit) as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue,
+                f.site_id,
+                f.tag_id AS rtb_profile_id
+           #else
+                0 as bid_requests,
+                0 as bid_responses,
+                0 as bids,
+                0 as bids_won,
+                0 as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                0 as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue,
+                f.site_id,
+                f.tag_id AS rtb_profile_id
+            #end
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY f.site_id , f.tag_id
+    ) f2
+    inner join dim_tag t ON t.rtb_profile_id = f2.rtb_profile_id
+        and t.site_id = f2.site_id
+    where
+        1 = 1
+    GROUP BY f2.site_id , t.id
+        UNION ALL
+        select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            0 as bid_requests,
+            0 as bid_responses,
+        #end
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            f.site_id,
+            f.tag_id AS rtb_profile_id
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY f.site_id , f.tag_id
+    ) vw
+        INNER JOIN
+    dim_site d ON d.id = vw.site_id
+        inner join
+    dim_tag dt ON dt.id = vw.tag_id
+        and dt.site_id = vw.site_id
+GROUP BY vw.site_id, dt.external_name, d.name
+    ]]>
+  </entry>
+
+  <entry key="dim=seat">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    -1 as bidRequests,
+    -1 as bidReceived,
+    -1 as timeouts,
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    vw.seat_id as seat
+FROM
+    (select
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.seat_id
+    from
+        (
+        select
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            0 as bids_timeout,
+            sum(wins_timeout) as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f.seat_id
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY f.seat_id
+    ) f2
+    where
+        1 = 1
+    GROUP BY f2.seat_id
+        UNION ALL
+        select
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            f.seat_id
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY f.seat_id
+    ) vw
+GROUP BY vw.seat_id
+    ]]>
+  </entry>
+
+  <entry key="dim=deal">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    -1 as bidRequests,
+    -1 as bidReceived,
+    -1 as timeouts,
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    vw.deal_id as dealId
+FROM
+    (select
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.deal_id
+    from
+        (
+        select
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            0 as bids_timeout,
+            sum(wins_timeout) as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f.deal_id
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY f.deal_id
+    ) f2
+    where
+        1 = 1
+    GROUP BY f2.deal_id
+        UNION ALL
+        select
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            f.deal_id
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY f.deal_id
+    ) vw
+      GROUP BY vw.deal_id
+    ]]>
+  </entry>
+
+  <entry key="dim=bidder">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        sum(vw.bid_requests) as bidRequests,
+        sum(vw.bid_responses) as bidReceived,
+        sum(vw.bids_timeout) as timeouts,
+    #else
+        -1 as bidRequests,
+        -1 as bidReceived,
+        -1 as timeouts,
+    #end
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    vw.bidder_id as bidderId,
+    d.name as bidder
+FROM
+    (select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            sum(f2.bid_requests) as bid_requests,
+            sum(f2.bid_responses) as bid_responses,
+        #end
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.bidder_id
+    from
+        (
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        select
+            sum(bid_requests) as bid_requests,
+            sum(bid_responses) as bid_responses,
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            sum(bids_timeout) as bids_timeout,
+            0 as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f.bidder_id
+        from
+        fact_exchange_bidders f
+        where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY f.bidder_id
+        UNION ALL
+        #end
+        select
+            #if(!$StringUtils.isEmpty($deal) || !$StringUtils.isEmpty($seat))
+                sum(bids) as bids,
+                sum(bids_won) as bids_won,
+                sum(bids_insufficient) as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                sum(bids_forfeit) as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue,
+                f.bidder_id
+           #else
+                0 as bid_requests,
+                0 as bid_responses,
+                0 as bids,
+                0 as bids_won,
+                0 as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                0 as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue,
+                f.bidder_id
+            #end
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY f.bidder_id
+    ) f2
+    GROUP BY f2.bidder_id
+        UNION ALL
+        select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            0 as bid_requests,
+            0 as bid_responses,
+        #end
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            f.bidder_id
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY f.bidder_id
+    ) vw
+        INNER JOIN
+    dim_bidder d ON d.id = vw.bidder_id
+GROUP BY vw.bidder_id, d.name
+    ]]>
+  </entry>
+
+  <entry key="dim=buyer">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        sum(vw.bid_requests) as bidRequests,
+        sum(vw.bid_responses) as bidReceived,
+        sum(vw.bids_timeout) as timeouts,
+    #else
+        -1 as bidRequests,
+        -1 as bidReceived,
+        -1 as timeouts,
+    #end
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    d.id as buyerId,
+    d.name as buyer
+FROM
+    (select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            sum(f2.bid_requests) as bid_requests,
+            sum(f2.bid_responses) as bid_responses,
+        #end
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.bidder_id
+    from
+        (
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        select
+            sum(bid_requests) as bid_requests,
+            sum(bid_responses) as bid_responses,
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            sum(bids_timeout) as bids_timeout,
+            0 as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f.bidder_id
+        from
+        fact_exchange_bidders f
+        where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY f.bidder_id
+        UNION ALL
+        #end
+        select
+            #if(!$StringUtils.isEmpty($deal) || !$StringUtils.isEmpty($seat))
+                sum(bids) as bids,
+                sum(bids_won) as bids_won,
+                sum(bids_insufficient) as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                sum(bids_forfeit) as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue,
+                f.bidder_id
+           #else
+                0 as bid_requests,
+                0 as bid_responses,
+                0 as bids,
+                0 as bids_won,
+                0 as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                0 as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue,
+                f.bidder_id
+            #end
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY f.bidder_id
+    ) f2
+    GROUP BY f2.bidder_id
+        UNION ALL
+        select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            0 as bid_requests,
+            0 as bid_responses,
+        #end
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            f.bidder_id
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY f.bidder_id
+    ) vw
+    INNER JOIN
+    dim_bidder b ON b.id = vw.bidder_id
+    inner join dim_company d on d.id=b.company_id
+GROUP BY d.id, d.name
+    ]]>
+  </entry>
+
+  <entry key="dim=hour">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        sum(vw.bid_requests) as bidRequests,
+        sum(vw.bid_responses) as bidReceived,
+        sum(vw.bids_timeout) as timeouts,
+    #else
+        -1 as bidRequests,
+        -1 as bidReceived,
+        -1 as timeouts,
+    #end
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    vw.interval
+FROM
+    (select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            sum(f2.bid_requests) as bid_requests,
+            sum(f2.bid_responses) as bid_responses,
+        #end
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.interval
+    from
+        (
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        select
+            sum(bid_requests) as bid_requests,
+            sum(bid_responses) as bid_responses,
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            sum(bids_timeout) as bids_timeout,
+            0 as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            date_part('hour', f.start) AS interval
+        from
+        fact_exchange_bidders f
+        where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        group by date_part('hour', f.start)
+        UNION ALL
+        #end
+        select
+            #if(!$StringUtils.isEmpty($deal) || !$StringUtils.isEmpty($seat))
+                sum(bids) as bids,
+                sum(bids_won) as bids_won,
+                sum(bids_insufficient) as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                sum(bids_forfeit) as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue
+           #else
+                0 as bid_requests,
+                0 as bid_responses,
+                0 as bids,
+                0 as bids_won,
+                0 as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                0 as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue
+            #end
+            , date_part('hour', f.start) AS interval
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    group by date_part('hour', f.start)
+            ) f2
+    where
+        1 = 1
+    group by f2.interval
+        UNION ALL
+        select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            0 as bid_requests,
+            0 as bid_responses,
+        #end
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            date_part('hour', f.start) AS interval
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY date_part('hour', f.start)
+    ) vw
+    GROUP BY vw.interval
+    ]]>
+  </entry>
+
+  <entry key="dim=day">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        sum(vw.bid_requests) as bidRequests,
+        sum(vw.bid_responses) as bidReceived,
+        sum(vw.bids_timeout) as timeouts,
+    #else
+        -1 as bidRequests,
+        -1 as bidReceived,
+        -1 as timeouts,
+    #end
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    vw.interval
+FROM
+    (select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            sum(f2.bid_requests) as bid_requests,
+            sum(f2.bid_responses) as bid_responses,
+        #end
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.interval
+    from
+        (
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        select
+            sum(bid_requests) as bid_requests,
+            sum(bid_responses) as bid_responses,
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            sum(bids_timeout) as bids_timeout,
+            0 as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            DATE_TRUNC('day', f.start) AS interval
+        from
+        fact_exchange_bidders f
+        where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        group by DATE_TRUNC('day', f.start)
+        UNION ALL
+        #end
+        select
+            #if(!$StringUtils.isEmpty($deal) || !$StringUtils.isEmpty($seat))
+                sum(bids) as bids,
+                sum(bids_won) as bids_won,
+                sum(bids_insufficient) as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                sum(bids_forfeit) as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue
+           #else
+                0 as bid_requests,
+                0 as bid_responses,
+                0 as bids,
+                0 as bids_won,
+                0 as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                0 as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue
+            #end
+            , DATE_TRUNC('day', f.start) AS interval
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    group by DATE_TRUNC('day', f.start)
+            ) f2
+    where
+        1 = 1
+    group by f2.interval
+        UNION ALL
+        select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            0 as bid_requests,
+            0 as bid_responses,
+        #end
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            DATE_TRUNC('day', f.start) AS interval
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY DATE_TRUNC('day', f.start)
+    ) vw
+    GROUP BY vw.interval
+    ]]>
+  </entry>
+
+  <entry key="dim=month">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        sum(vw.bid_requests) as bidRequests,
+        sum(vw.bid_responses) as bidReceived,
+        sum(vw.bids_timeout) as timeouts,
+    #else
+        -1 as bidRequests,
+        -1 as bidReceived,
+        -1 as timeouts,
+    #end
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    vw.interval
+FROM
+    (select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            sum(f2.bid_requests) as bid_requests,
+            sum(f2.bid_responses) as bid_responses,
+        #end
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.interval
+    from
+        (
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        select
+            sum(bid_requests) as bid_requests,
+            sum(bid_responses) as bid_responses,
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            sum(bids_timeout) as bids_timeout,
+            0 as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            DATE_TRUNC('month', f.start) AS interval
+        from
+        fact_exchange_bidders f
+        where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        group by DATE_TRUNC('month', f.start)
+        UNION ALL
+        #end
+        select
+            #if(!$StringUtils.isEmpty($deal) || !$StringUtils.isEmpty($seat))
+                sum(bids) as bids,
+                sum(bids_won) as bids_won,
+                sum(bids_insufficient) as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                sum(bids_forfeit) as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue
+           #else
+                0 as bid_requests,
+                0 as bid_responses,
+                0 as bids,
+                0 as bids_won,
+                0 as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                0 as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue
+            #end
+            , DATE_TRUNC('month', f.start) AS interval
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    group by DATE_TRUNC('month', f.start)
+            ) f2
+    where
+        1 = 1
+    group by f2.interval
+        UNION ALL
+        select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            0 as bid_requests,
+            0 as bid_responses,
+        #end
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            DATE_TRUNC('month', f.start) AS interval
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY DATE_TRUNC('month', f.start)
+    ) vw
+    GROUP BY vw.interval
+    ]]>
+  </entry>
+
+  <entry key="dim=week">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        sum(vw.bid_requests) as bidRequests,
+        sum(vw.bid_responses) as bidReceived,
+        sum(vw.bids_timeout) as timeouts,
+    #else
+        -1 as bidRequests,
+        -1 as bidReceived,
+        -1 as timeouts,
+    #end
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    vw.interval
+FROM
+    (select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            sum(f2.bid_requests) as bid_requests,
+            sum(f2.bid_responses) as bid_responses,
+        #end
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.interval
+    from
+        (
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        select
+            sum(bid_requests) as bid_requests,
+            sum(bid_responses) as bid_responses,
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            sum(bids_timeout) as bids_timeout,
+            0 as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            greatest(timestamp_trunc(f.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) AS interval
+        from
+        fact_exchange_bidders f
+        where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY timestamp_trunc(f.start, 'dy')
+        UNION ALL
+        #end
+        select
+            #if(!$StringUtils.isEmpty($deal) || !$StringUtils.isEmpty($seat))
+                sum(bids) as bids,
+                sum(bids_won) as bids_won,
+                sum(bids_insufficient) as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                sum(bids_forfeit) as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue
+           #else
+                0 as bid_requests,
+                0 as bid_responses,
+                0 as bids,
+                0 as bids_won,
+                0 as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                0 as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue
+            #end
+            , greatest(timestamp_trunc(f.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) AS interval
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY timestamp_trunc(f.start, 'dy')
+            ) f2
+    where
+        1 = 1
+    group by f2.interval
+        UNION ALL
+        select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            0 as bid_requests,
+            0 as bid_responses,
+        #end
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            greatest(timestamp_trunc(f.start, 'dy'),  to_date(:start, 'YYYY-MM-DD')) AS interval
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY timestamp_trunc(f.start, 'dy')
+    ) vw
+    GROUP BY vw.interval
+    ]]>
+  </entry>
+
+  <entry key="dim=headerBidding">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        sum(vw.bid_requests) as bidRequests,
+        sum(vw.bid_responses) as bidReceived,
+        sum(vw.bids_timeout) as timeouts,
+    #else
+        -1 as bidRequests,
+        -1 as bidReceived,
+        -1 as timeouts,
+    #end
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    (CASE WHEN vw.headerBidding=0 THEN 'Waterfall' ELSE 'Header Bidding' END) AS headerBidding,
+    vw.headerBidding AS hbId
+FROM
+    (select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            sum(f2.bid_requests) as bid_requests,
+            sum(f2.bid_responses) as bid_responses,
+        #end
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.headerBidding
+    from
+        (
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        select
+            sum(bid_requests) as bid_requests,
+            sum(bid_responses) as bid_responses,
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            sum(bids_timeout) as bids_timeout,
+            0 as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            (CASE WHEN hb_type IS NULL OR hb_type=-1 THEN 0 ELSE 1 END) AS headerBidding
+        from
+        fact_exchange_bidders f
+        where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY headerBidding
+        UNION ALL
+        #end
+        select
+            #if(!$StringUtils.isEmpty($deal) || !$StringUtils.isEmpty($seat))
+                sum(bids) as bids,
+                sum(bids_won) as bids_won,
+                sum(bids_insufficient) as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                sum(bids_forfeit) as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue,
+                (CASE WHEN hb_type IS NULL OR hb_type=-1 THEN 0 ELSE 1 END) AS headerBidding
+           #else
+                0 as bid_requests,
+                0 as bid_responses,
+                0 as bids,
+                0 as bids_won,
+                0 as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                0 as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue,
+                (CASE WHEN hb_type IS NULL OR hb_type=-1 THEN 0 ELSE 1 END) AS headerBidding
+            #end
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY headerBidding
+    ) f2
+    GROUP BY f2.headerBidding
+        UNION ALL
+        select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            0 as bid_requests,
+            0 as bid_responses,
+        #end
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            (CASE WHEN hb_type IS NULL OR hb_type=-1 THEN 0 ELSE 1 END) AS headerBidding
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+                          #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY headerBidding
+    ) vw
+GROUP BY headerBidding, hbId
+    ]]>
+  </entry>
+
+  <entry key="dim=s2sHbPartner">
+    <![CDATA[
+select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+    #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        sum(vw.bid_requests) as bidRequests,
+        sum(vw.bid_responses) as bidReceived,
+        sum(vw.bids_timeout) as timeouts,
+    #else
+        -1 as bidRequests,
+        -1 as bidReceived,
+        -1 as timeouts,
+    #end
+    sum(vw.bids) as bids,
+    sum(vw.bids_won) as wins,
+    sum(vw.bids_insufficient) as insufficientBids,
+    sum(vw.win_notice_timeouts) as winNoticeTimeouts,
+    sum(vw.bids_forfeit) as forfeits,
+    sum(vw.ads_delivered) as adDelivered,
+    sum(vw.price_sum) as grossAcquisitionCost,
+    sum(vw.revenue) as netAcquisitionCost,
+    vw.s2sHbPartnerPid,
+    IFNULL (p.id, 'Direct') AS s2sHbPartner, IFNULL(p.name, 'Direct') AS s2sHbPartnerName
+FROM
+    (select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            sum(f2.bid_requests) as bid_requests,
+            sum(f2.bid_responses) as bid_responses,
+        #end
+            sum(f2.bids) as bids,
+            sum(f2.bids_won) as bids_won,
+            sum(f2.bids_insufficient) as bids_insufficient,
+            sum(f2.bids_timeout) as bids_timeout,
+            sum(f2.win_notice_timeouts) as win_notice_timeouts,
+            sum(f2.bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            f2.s2sHbPartnerPid
+    from
+        (
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+        select
+            sum(bid_requests) as bid_requests,
+            sum(bid_responses) as bid_responses,
+            sum(bids) as bids,
+            sum(bids_won) as bids_won,
+            sum(bids_insufficient) as bids_insufficient,
+            sum(bids_timeout) as bids_timeout,
+            0 as win_notice_timeouts,
+            sum(bids_forfeit) as bids_forfeit,
+            0 as ads_delivered,
+            cast(0 as decimal (16 , 8 )) as price_sum,
+            cast(0 as decimal (16 , 8 )) as revenue,
+            (CASE WHEN hb_partner_pid IS NULL THEN -999 ELSE hb_partner_pid END) AS s2sHbPartnerPid
+        from
+        fact_exchange_bidders f
+        where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+        GROUP BY s2sHbPartnerPid
+        UNION ALL
+        #end
+        select
+            #if(!$StringUtils.isEmpty($deal) || !$StringUtils.isEmpty($seat))
+              sum(bids) as bids,
+              sum(bids_won) as bids_won,
+              sum(bids_insufficient) as bids_insufficient,
+              0 as bids_timeout,
+              sum(wins_timeout) as win_notice_timeouts,
+              sum(bids_forfeit) as bids_forfeit,
+              0 as ads_delivered,
+              cast(0 as decimal (16 , 8 )) as price_sum,
+              cast(0 as decimal (16 , 8 )) as revenue,
+              (CASE WHEN hb_partner_pid IS NULL THEN -999 ELSE hb_partner_pid END) AS s2sHbPartnerPid
+         #else
+                0 as bid_requests,
+                0 as bid_responses,
+                0 as bids,
+                0 as bids_won,
+                0 as bids_insufficient,
+                0 as bids_timeout,
+                sum(wins_timeout) as win_notice_timeouts,
+                0 as bids_forfeit,
+                0 as ads_delivered,
+                cast(0 as decimal (16 , 8 )) as price_sum,
+                cast(0 as decimal (16 , 8 )) as revenue,
+                (CASE WHEN hb_partner_pid IS NULL THEN -999 ELSE hb_partner_pid END) AS s2sHbPartnerPid
+            #end
+    from
+        fact_exchange_seatbids f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+             GROUP BY s2sHbPartnerPid
+            ) f2
+    GROUP BY f2.s2sHbPartnerPid
+        UNION ALL
+        select
+        #if($StringUtils.isEmpty($deal) && $StringUtils.isEmpty($seat))
+            0 as bid_requests,
+            0 as bid_responses,
+        #end
+            0 as bids,
+            0 as bids_won,
+            0 as bids_insufficient,
+            0 as bids_timeout,
+            0 as win_notice_timeouts,
+            0 as bids_forfeit,
+            sum(f.ads_delivered) as ads_delivered,
+            sum(f.price_sum) as price_sum,
+            sum(f.revenue) as revenue,
+            (CASE WHEN hb_partner_pid IS NULL THEN -999 ELSE hb_partner_pid END) AS s2sHbPartnerPid
+    from
+        fact_exchange_wins f
+    where
+            f.start >= :start
+            AND f.start < :stop
+             #if(!$StringUtils.isEmpty($site)) AND f.site_id=:site #end
+             #if(!$StringUtils.isEmpty($bidder)) AND f.bidder_id=:bidder #end
+             #if(!$StringUtils.isEmpty($seat)) AND f.seat_id=:seat #end
+             #if($isDealNone) AND f.deal_id IS NULL
+             #elseif(!$StringUtils.isEmpty($deal)) AND f.deal_id=:deal
+             #end
+             #if(!$StringUtils.isEmpty($headerBidding)&& $headerBidding==0)
+               AND (f.hb_type IS NULL OR f.hb_type=-1)
+             #elseif(!$StringUtils.isEmpty($headerBidding) && $headerBidding==1)
+               AND f.hb_type>=0
+             #end
+             #if(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner==-999)
+               AND (f.hb_partner_pid IS NULL OR f.hb_partner_pid=-999)
+             #elseif(!$StringUtils.isEmpty($s2sHbPartner) && $s2sHbPartner!=-999)
+               AND f.hb_partner_pid = :s2sHbPartner
+             #end
+             #if(!$StringUtils.isEmpty($buyer)) AND f.bidder_id in (select id from dim_bidder where company_id = :buyer) #end
+    GROUP BY s2sHbPartnerPid
+    ) vw
+    LEFT JOIN
+    dim_hb_partner p ON p.pid = vw.s2sHbPartnerPid
+GROUP BY vw.s2sHbPartnerPid, p.id, p.name
+  ]]>
+  </entry>
+</properties>

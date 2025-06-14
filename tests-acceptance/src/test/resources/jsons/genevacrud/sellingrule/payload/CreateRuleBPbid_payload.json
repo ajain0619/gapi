@@ -1,0 +1,56 @@
+{
+  "name": "BPruleWithBidTargets",
+  "description": "description",
+  "status": "ACTIVE",
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+      "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "IAB_CATEGORY",
+      "data": "bidData2"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "CREATIVE_ID",
+      "data": "bidData4"
+    },
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "ADVERTISER_BRAND",
+      "data": "bidData5"
+    }
+  ],
+  "assignments": {
+    "publishers": [
+      {
+        "pid": 10225
+      }
+    ],
+    "sites": [
+      {
+        "pid": 10000202
+      }
+    ],
+    "positions": [
+      {
+        "pid": 100318
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 16,
+  "status": "ACTIVE",
+  "version": 0,
+  "keyOnRequest": "test3",
+  "value": 42,
+  "valueType": "NUMERIC",
+  "sellerId": 10000,
+  "reportable": false,
+  "keyName": "Key 3"
+}

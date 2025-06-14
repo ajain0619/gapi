@@ -1,0 +1,18 @@
+{
+  "description": "requiredFieldsTest",
+  "pid": 19,
+  "dealId": "1446629641838983368",
+  "createdBy": 781,
+  "status": "Active",
+  "start": 1446613200000,
+  "stop": 1452315599000,
+  "profiles": [],
+  "bidders": [],
+  "publishers": [],
+  "priorityType": "OPEN",
+  "auctionType": "None",
+  "dealCategory": 1,
+  "visibility": false,
+  "floor": 100,
+  "placementFormulaStatus": "DONE"
+}

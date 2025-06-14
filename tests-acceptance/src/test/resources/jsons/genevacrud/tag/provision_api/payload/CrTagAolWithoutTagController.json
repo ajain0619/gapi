@@ -1,0 +1,15 @@
+{
+  "name": "AV34",
+  "buyer": {
+    "pid": 2160
+  },
+  "ecpmProvision": "Auto",
+  "ecpmManual": 0,
+  "importRevenueFlag": true,
+  "rtbProfile": {
+    "pubNetReserve": 5,
+    "bidderFilterWhitelist": false,
+    "useDefaultBidders": true
+  },
+  "rules": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": 10000209,
+  "version": 1,
+  "publisher": {
+    "pid": 10228
+  },
+  "dcn": "customId",
+  "description": "website",
+  "domain": "website_site1.com",
+  "name": "website_site1",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "WEBSITE",
+  "url": "website_site1.com",
+  "appBundle": "",
+  "coppaRestricted": true,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0
+  }
+}

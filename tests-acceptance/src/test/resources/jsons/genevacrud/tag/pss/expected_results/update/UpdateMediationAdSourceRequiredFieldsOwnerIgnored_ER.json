@@ -1,0 +1,25 @@
+{
+  "pid": 3381,
+  "version": 4,
+  "site": {
+    "pid": 963
+  },
+  "name": "Nexage-Adserver-test8c-updated",
+  "ecpmAuto": 0,
+  "ecpmManual": 0,
+  "owner": "Publisher",
+  "status": "ACTIVE",
+  "buyer": {
+    "pid": 5669
+  },
+  "position": {
+    "pid": 14730
+  },
+  "primaryId": "test8c",
+  "primaryName": "8c",
+  "ecpmProvision": "Auto",
+  "tagType": "Mediation",
+  "type": "Mediation",
+  "publisherPid": 105,
+  "monetization": true
+}

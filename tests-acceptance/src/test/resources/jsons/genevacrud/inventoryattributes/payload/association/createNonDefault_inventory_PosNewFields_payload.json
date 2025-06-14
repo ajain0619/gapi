@@ -1,0 +1,18 @@
+{
+  "site": {
+    "pid": 10000207,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "interstitial": false,
+  "screenLocation": "ABOVE_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "width": 300,
+  "height": 50,
+  "memo": "opium",
+  "name": "nonDefaultPlacementInventory",
+  "placementCategory": "INTERSTITIAL",
+  "positionAliasName": "opium",
+  "mraidAdvancedTracking": true
+}

@@ -1,0 +1,29 @@
+{
+  "pid": 100246,
+  "version": 4,
+  "site": {
+    "pid": 10000174,
+    "coppaRestricted":false,
+    "hbEnabled":false,
+    "adTruthEnabled":false,
+    "adScreeningEnabled":false,
+    "filterBots":false,
+    "consumerProfileContributed":false,
+    "consumerProfileUsed":false,
+    "overrideIP":false
+  },
+  "name": "CRUDPosition_UpdateCases",
+  "memo": "CRUDPosition_UpdateCases",
+  "mraidSupport": "NO",
+  "videoSupport": "NATIVE",
+  "screenLocation": "UNDEFINED",
+  "interstitial": false,
+  "placementCategory": "NATIVE",
+  "trafficType": "MEDIATION",
+  "hbPartnerAttributes" : [{
+    "hbPartnerPid" : 116,
+    "type" : "DEFAULT_VIDEO"
+  }],
+  "longform": false,
+  "impressionTypeHandling": "BASED_ON_PLACEMENT_CONFIG"
+}

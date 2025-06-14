@@ -1,0 +1,16 @@
+{
+  "name": "AV78",
+  "buyer": {
+    "pid": "4512"
+  },
+  "primaryId": "apikey",
+  "secondaryId": "sid",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

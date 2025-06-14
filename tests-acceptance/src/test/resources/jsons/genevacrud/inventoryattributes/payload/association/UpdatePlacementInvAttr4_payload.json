@@ -1,0 +1,23 @@
+{
+  "pid": 100329,
+  "version": 0,
+  "site": {
+    "pid": 10000202,
+    "hbEnabled": false,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "special_formula",
+  "memo": "special_formula",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "positionAliasName": "formula",
+  "mraidAdvancedTracking": false
+}

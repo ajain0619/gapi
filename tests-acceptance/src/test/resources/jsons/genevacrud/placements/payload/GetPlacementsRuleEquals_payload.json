@@ -1,0 +1,15 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "operator": "EQUALS",
+          "attributePid": 4,
+          "ruleData": "SSP"
+        }
+      ]
+    }
+  ]
+}

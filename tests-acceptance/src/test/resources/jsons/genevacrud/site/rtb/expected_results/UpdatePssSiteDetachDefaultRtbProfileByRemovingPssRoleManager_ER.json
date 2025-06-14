@@ -1,0 +1,65 @@
+{
+  "coppaRestricted": false,
+  "dcn": "8a859e06014f4fd97b68dbd1bf0c000f",
+  "description": "test",
+  "domain": "test",
+  "hbEnabled": false,
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "TEST",
+  "name": "CRUDPosition_Site3",
+  "pid": 10000176,
+  "platform": "OTHER",
+  "positions": [
+    {
+      "memo": "DealTagTest-MedRec",
+      "name": "DealTagTest-MedRec",
+      "pid": 100283
+    },
+    {
+      "memo": "DealTagTest-Native",
+      "name": "DealTagTest-Native",
+      "pid": 100284
+    },
+    {
+      "memo": "DealTagTest-InstreamVideo",
+      "name": "DealTagTest-InstreamVideo",
+      "pid": 100285
+    },
+    {
+      "memo": "DealTagTest-Inter-Static",
+      "name": "DealTagTest-Inter-Static",
+      "pid": 100281
+    },
+    {
+      "memo": "DealTagTest-Inter-Both",
+      "name": "DealTagTest-Inter-Both",
+      "pid": 100280
+    },
+    {
+      "memo": "DealTagTest-Banner",
+      "name": "DealTagTest-Banner",
+      "pid": 100279
+    },
+    {
+      "memo": "DealTagTest-Inter-Video",
+      "name": "DealTagTest-Inter-Video",
+      "pid": 100282
+    }
+  ],
+  "publisher": {
+    "adServingEnabled": false,
+    "defaultRtbProfilesEnabled": false,
+    "numberOfUsers": 0,
+    "pid": 10201,
+    "restrictDrillDown": false,
+    "selfServeAllowed": false,
+    "test": false
+  },
+  "rtb1CategoryRollup": "",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "test",
+  "version": 80
+}

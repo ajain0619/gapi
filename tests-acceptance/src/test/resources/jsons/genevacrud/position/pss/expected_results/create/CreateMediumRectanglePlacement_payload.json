@@ -1,0 +1,19 @@
+{
+  "pid": null,
+  "version": null,
+  "site": {
+    "pid": 10000174
+  },
+  "interstitial": false,
+  "screenLocation": "BELOW_VISIBLE",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "width": 300,
+  "height": 250,
+  "memo": "medium rectangle placement",
+  "name": "medium_rectangle_placement_1",
+  "placementCategory": "MEDIUM_RECTANGLE",
+  "trafficType": "SMART_YIELD",
+  "positionAliasName": "rossa",
+  "mraidAdvancedTracking": true
+}

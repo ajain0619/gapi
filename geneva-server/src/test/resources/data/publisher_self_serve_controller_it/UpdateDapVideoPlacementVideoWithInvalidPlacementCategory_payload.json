@@ -1,0 +1,31 @@
+{
+  "pid": 100251,
+  "site": {
+    "pid": 10000174,
+    "type": "MOBILE_WEB",
+    "platform":"OTHER"
+  },
+  "name": "dap_placement_instream_video",
+  "memo": "DAP PLacement InSteam Video",
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "interstitial": false,
+  "videoLinearity": "LINEAR",
+  "height": 480,
+  "width": 320,
+  "longform": false,
+  "placementCategory": "BANNER",
+  "positionAliasName": "test_dap_position",
+  "mraidAdvancedTracking": true,
+  "placementVideo": {
+    "pid": 100251,
+    "linearity":"LINEAR",
+    "playerRequired":false,
+    "longform": false,
+    "videoPlacementType": "IN_STREAM",
+    "dapPlayerType": "O2",
+    "playerId": "Valid-Player-id",
+    "playListId": "Valid-playlist-ID"
+  }
+}

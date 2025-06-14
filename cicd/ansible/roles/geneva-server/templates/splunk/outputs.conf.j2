@@ -1,0 +1,11 @@
+[tcpout]
+defaultGroup = splunkssl
+
+[tcpout:splunkssl]
+server = {{ geneva_server_splunk_collector_url }}
+compressed = true
+sslRootCAPath = /opt/pcp/myCACertificate.pem
+sslCertPath = /opt/pcp/myServerCertificate.pem
+
+sslVerifyServerCert = true
+sslCommonNameToCheck = {{ geneva_server_splunk_collector_name }}

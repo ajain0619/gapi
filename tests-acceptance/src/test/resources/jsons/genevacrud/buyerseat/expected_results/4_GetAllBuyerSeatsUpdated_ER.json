@@ -1,0 +1,52 @@
+[
+  {
+    "pid": 7,
+    "name": "BuyerSeatCucumber33",
+    "seat": "SeatThirtyThreeId",
+    "enabled": true,
+    "buyerGroupPid": 1,
+    "version": 0,
+    "companyPid": 10024,
+    "buyerTransparencyFeedEnabled": false
+  },
+  {
+    "pid": 6,
+    "name": "BuyerSeatCucumber23",
+    "seat": "SeatFourx",
+    "enabled": true,
+    "buyerGroupPid": 1,
+    "version": 0,
+    "companyPid": 10024,
+    "buyerTransparencyFeedEnabled": false
+  },
+  {
+    "pid": 3,
+    "name": "SeatOneName_updated",
+    "seat": "SeatOneId",
+    "enabled": true,
+    "buyerGroupPid": 3,
+    "version": 1,
+    "companyPid": 10024,
+    "buyerTransparencyFeedEnabled": false
+  },
+  {
+    "pid": 4,
+    "name": "SeatTwoName",
+    "seat": "SeatTwoId",
+    "enabled": false,
+    "buyerGroupPid": 3,
+    "version": 0,
+    "companyPid": 10024,
+    "buyerTransparencyFeedEnabled": false
+  },
+  {
+    "pid": 5,
+    "name": "SeatThreeName_MovedGroup",
+    "seat": "SeatThreeId",
+    "enabled": false,
+    "buyerGroupPid": 4,
+    "version": 1,
+    "companyPid": 10024,
+    "buyerTransparencyFeedEnabled": false
+  }
+]

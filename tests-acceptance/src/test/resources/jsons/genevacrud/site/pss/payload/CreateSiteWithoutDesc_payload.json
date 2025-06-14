@@ -1,0 +1,16 @@
+{
+  "domain": "test2.com",
+  "name": "test2noDesc",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "mode": "TEST",
+  "url": "https://test2.com",
+  "coppaRestricted": true,
+  "iabCategories": [
+    "IAB2",
+    "IAB4",
+    "IAB5",
+    "IAB7"
+  ]
+}

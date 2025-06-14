@@ -1,0 +1,78 @@
+{
+  "name": "RulePFormulaAutoUpdateNull",
+  "description": "allBMdescription",
+  "status": "ACTIVE",
+  "intendedActions": [
+    {
+      "actionType": "FLOOR",
+      "actionData": "1.00"
+    }
+  ],
+  "type": "BRAND_PROTECTION",
+  "ownerCompanyPid": 10225,
+  "targets": [
+    {
+      "status": "ACTIVE",
+      "matchType": "EXCLUDE_LIST",
+      "targetType": "COUNTRY",
+      "data": "{\"geosegments\":[{\"woeid\":23424977,\"name\":\"United States (US)\"}]}"
+    }
+  ],
+  "assignments": {},
+  "ruleFormula": {
+    "autoUpdate": false,
+    "placementFormula": {
+      "groupedBy": "OR",
+      "formulaGroups": [
+        {
+          "formulaRules": [
+            {
+              "attribute": "PLACEMENT_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "trans"
+            },
+            {
+              "attribute": "PLACEMENT_TYPE",
+              "operator": "EQUALS",
+              "ruleData": "BANNER"
+            },
+            {
+              "attribute": "SITE_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "al"
+            },
+            {
+              "attribute": "SITE_TYPE",
+              "operator": "EQUALS",
+              "ruleData": "MOBILE_WEB"
+            }
+          ]
+        },
+        {
+          "formulaRules": [
+            {
+              "attribute": "PLACEMENT_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "_formula"
+            },
+            {
+              "attribute": "PLACEMENT_TYPE",
+              "operator": "EQUALS",
+              "ruleData": "INTERSTITIAL"
+            },
+            {
+              "attribute": "SITE_NAME",
+              "operator": "CONTAINS",
+              "ruleData": "site"
+            },
+            {
+              "attribute": "SITE_TYPE",
+              "operator": "NOT_EQUALS",
+              "ruleData": "APPLICATION"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

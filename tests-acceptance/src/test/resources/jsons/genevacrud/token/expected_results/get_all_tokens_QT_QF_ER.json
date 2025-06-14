@@ -1,0 +1,23 @@
+{
+  "content": [
+    {
+      "accessToken": "AB456",
+      "expiresIn": 3600,
+      "tokenType": "Bearer"
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 1,
+  "pageable": "INSTANCE",
+  "size": 1,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  },
+  "totalElements": 1,
+  "totalPages": 1
+}

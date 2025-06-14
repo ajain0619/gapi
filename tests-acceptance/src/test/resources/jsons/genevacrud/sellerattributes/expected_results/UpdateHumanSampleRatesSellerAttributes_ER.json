@@ -1,0 +1,12 @@
+{
+  "adStrictApproval": false,
+  "defaultTransparencyMgmtEnablement": "DISABLED",
+  "humanPostbidSampleRate": 90,
+  "humanPrebidSampleRate": 10,
+  "revenueGroupPid": 3,
+  "revenueShare": 0,
+  "sellerPid": 10201,
+  "smartQPSEnabled": false,
+  "version": 0,
+  "humanOptOut": false
+}

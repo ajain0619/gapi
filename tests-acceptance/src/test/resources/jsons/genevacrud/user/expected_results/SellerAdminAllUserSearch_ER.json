@@ -1,0 +1,75 @@
+{
+  "content": [
+    {
+      "companies": [
+        {
+          "name": "Athens1",
+          "pid": 339,
+          "type": "SELLER"
+        }
+      ],
+      "contactNumber": "7827678976",
+      "dealAdmin": false,
+      "email": "athens1manager1@athens1.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0f013b3b761d5a76c002aa0015",
+      "name": "manager1",
+      "oneCentralUserName": "athens1manager1",
+      "pid": 209,
+      "primaryContact": false,
+      "role": "ROLE_MANAGER",
+      "title": "mr",
+      "userName": "athens1manager1",
+      "version": 3
+    },
+    {
+      "companies": [
+        {
+          "name": "Athens1",
+          "pid": 339,
+          "type": "SELLER"
+        }
+      ],
+      "contactNumber": "7816765432",
+      "dealAdmin": false,
+      "email": "athens1user1@athens1.com",
+      "enabled": true,
+      "global": false,
+      "id": "8a859e0f013b3b761d5a76c17b7a0016",
+      "name": "user1",
+      "oneCentralUserName": "athens1user1",
+      "pid": 222,
+      "primaryContact": false,
+      "role": "ROLE_USER",
+      "title": "mr",
+      "userName": "athens1user1",
+      "version": 3
+    }
+  ],
+  "empty": false,
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 2,
+  "pageable": {
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 200,
+    "paged": true,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "unpaged": false
+  },
+  "size": 200,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 2,
+  "totalPages": 1
+}

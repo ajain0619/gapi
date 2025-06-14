@@ -1,0 +1,31 @@
+{
+  "pid": 3,
+  "dealId": "144222524111424355",
+  "description": "",
+  "start": 1447131600000,
+  "createdBy": 2,
+  "status": "Inactive",
+  "dateCreated": 1442225257000,
+  "auctionType": "None",
+  "bidders": [],
+  "profiles": [
+    {
+      "pid": 3,
+      "rtbProfilePid": 50001,
+      "auctionType": 0,
+      "defaultReserve": 0,
+      "pubAlias": 1,
+      "siteAlias": 1,
+      "pubNameAlias": "",
+      "siteNameAlias": "Site-1 For Mobilewalla Functional Testing",
+      "siteType": "A",
+      "isRealName": "false",
+      "siteId": 20003,
+      "siteName": "Gogii-textPlus-Android",
+      "pubId": 10000,
+      "pubName": "Seller1"
+    }
+  ],
+  "visibility": false,
+  "stop": null
+}

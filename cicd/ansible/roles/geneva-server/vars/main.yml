@@ -1,0 +1,28 @@
+geneva_server_home: /srv/apps/geneva-server
+geneva_server_logs: /srv/logs/geneva-server
+geneva_server_app_user: root
+geneva_server_app_group: root
+geneva_server_service_path: /etc/systemd/system
+geneva_server_service_name: geneva-server
+geneva_server_healthcheck_service_name: geneva-server-healthcheck
+geneva_server_ssl_cert_alias: one-mobile.geneva-api
+geneva_server_ssl_truststore_password: changeit
+geneva_server_logs_filename: service.log
+geneva_server_logs_filename_pattern: service.%i.log
+geneva_server_logs_root_level: WARN
+geneva_server_logs_logger_level_com_nexage: INFO
+geneva_server_logs_logger_level_com_ssp_geneva: INFO
+geneva_server_logs_logger_level_com_nexage_dw_report: INFO
+geneva_server_logs_logger_level_org_springframework: WARN
+geneva_server_logs_logger_level_org_springframework_data: WARN
+geneva_server_logs_logger_level_org_springframework_security: WARN
+geneva_server_logs_logger_level_org_hibernate: WARN
+geneva_server_logs_logger_level_org_hibernate_slow_sql: INFO
+geneva_server_logs_logger_level_org_hibernate_sql: WARN
+geneva_server_hibernate_slow_sql_timeout_ms: 500
+geneva_server_splunk_home: /opt/splunkforwarder
+geneva_server_splunk_version: 9.0.6
+
+datadog_jmx_template: "../../geneva-server/templates/datadog/jmx.yaml.j2"
+datadog_repo_signing_keys:
+  - "https://keys.datadoghq.com/DATADOG_RPM_KEY_CURRENT.public"

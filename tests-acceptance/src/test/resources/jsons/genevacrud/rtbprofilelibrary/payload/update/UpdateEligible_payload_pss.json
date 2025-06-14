@@ -1,0 +1,21 @@
+{
+  "pid": 12,
+  "name": "BDGRP1",
+  "version": 2,
+  "publisherPid": 10218,
+  "privilegeLevel": "PUBLISHER",
+  "isDefaultEligible": true,
+  "groups": [
+    {
+      "pid": 16,
+      "name": "BDGRP1",
+      "version": 0,
+      "publisherPid": 10218,
+      "privilegeLevel": "PUBLISHER",
+      "data": "1,2",
+      "itemType": "BIDDER",
+      "listType": "BLOCKLIST",
+      "isIndividualsGroup": false
+    }
+  ]
+}

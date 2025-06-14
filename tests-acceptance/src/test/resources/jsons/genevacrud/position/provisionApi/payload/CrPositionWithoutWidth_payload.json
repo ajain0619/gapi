@@ -1,0 +1,10 @@
+{
+  "placementCategory": "INTERSTITIAL",
+  "memo": "Draft",
+  "name": "draft",
+  "screenLocation": "FULLSCREEN_VISIBLE",
+  "height": 9999,
+  "mraidSupport": "NO",
+  "videoSupport": "VIDEO_AND_BANNER",
+  "interstitial": true
+}

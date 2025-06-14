@@ -1,0 +1,21 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "operator": "EQUALS",
+          "ruleData": "principality",
+          "attributePid": 5
+        },
+        {
+          "attribute": "INVENTORY_ATTRIBUTE",
+          "operator": "EQUALS",
+          "ruleData": "Novogrudok",
+          "attributePid": 6
+        }
+      ]
+    }
+  ]
+}

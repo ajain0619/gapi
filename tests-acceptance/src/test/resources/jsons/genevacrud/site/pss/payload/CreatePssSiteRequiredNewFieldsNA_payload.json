@@ -1,0 +1,40 @@
+{
+  "publisher": {
+    "pid": 10228
+  },
+  "description": "site with only new required fields deskription",
+  "domain": "mgb8site.com",
+  "name": "mgb8site",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "url": "date.com",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB4"
+  ],
+  "mode": "LIVE",
+  "appBundle": "",
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "totalTimeout": 100,
+  "trafficThrottle": 55,
+  "buyerTimeout": 100,
+  "impressionGroup": {
+    "enabled": false,
+    "groups": []
+  },
+  "rtb1CategoryRollup": "",
+  "adTruthEnabled": false,
+  "globalAliasName": "",
+  "metadataEnablement": false,
+  "hbEnabled": false,
+  "adScreeningEnabled": false,
+  "reportBatchSize": 10,
+  "reportFrequency": 18000,
+  "rulesUpdateFrequency": 18000,
+  "filterBots": false,
+  "daysFree": 0,
+  "passthruParameters": []
+}

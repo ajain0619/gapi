@@ -1,0 +1,38 @@
+{
+  "content": [
+    {
+      "pid": 13625,
+      "name": "body",
+      "mraidAdvancedTracking": true,
+      "status": "ACTIVE",
+      "trafficType": "MEDIATION",
+      "version": 7,
+      "screenLocation": "UNDEFINED"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalPages": 1,
+  "totalElements": 1,
+  "last": true,
+  "size": 10,
+  "numberOfElements": 1,
+  "number": 0,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "first": true,
+  "empty": false
+}

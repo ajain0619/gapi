@@ -1,0 +1,119 @@
+stack: central
+application: geneva-platform
+name: geneva-api
+owner: ssp-team-gsy@yahooinc.com
+description: Geneva API
+template-repo: git@git.ouryahoo.com:SSP/cloudformation-ec2.git
+template-version: v3.9.1
+roles:
+  - effect: Allow
+    action: ["s3:Put*", "s3:Get*", "s3:List*", "s3:Delete*"]
+    resource: [
+               "arn:aws:s3:::geneva-static-dev-us-east-1",
+               "arn:aws:s3:::geneva-static-dev-us-east-1/*",
+               "arn:aws:s3:::geneva-static-qa-us-east-1",
+               "arn:aws:s3:::geneva-static-qa-us-east-1/*",
+               "arn:aws:s3:::geneva-static-uat-us-east-1",
+               "arn:aws:s3:::geneva-static-uat-us-east-1/*",
+               "arn:aws:s3:::geneva-static-perf-us-east-1",
+               "arn:aws:s3:::geneva-static-perf-us-east-1/*",
+               "arn:aws:s3:::geneva-static-beta-us-east-1",
+               "arn:aws:s3:::geneva-static-beta-us-east-1/*",
+               "arn:aws:s3:::geneva-static-prod-us-east-1",
+               "arn:aws:s3:::geneva-static-prod-us-east-1/*",
+               "arn:aws:s3:::geneva-data-dev-us-east-1/",
+               "arn:aws:s3:::geneva-data-dev-us-east-1/*",
+               "arn:aws:s3:::geneva-data-qa-us-east-1/",
+               "arn:aws:s3:::geneva-data-qa-us-east-1/*",
+               "arn:aws:s3:::geneva-data-uat-us-east-1/",
+               "arn:aws:s3:::geneva-data-uat-us-east-1/*",
+               "arn:aws:s3:::geneva-data-perf-us-east-1/",
+               "arn:aws:s3:::geneva-data-perf-us-east-1/*",
+               "arn:aws:s3:::geneva-data-beta-us-east-1/",
+               "arn:aws:s3:::geneva-data-beta-us-east-1/*",
+               "arn:aws:s3:::geneva-data-prod-us-east-1/",
+               "arn:aws:s3:::geneva-data-prod-us-east-1/*"
+               ]
+  - effect: Allow
+    action: ["sns:ListTopics"]
+    resource: [
+                "arn:aws:sns:us-east-1:778855753946:*",
+                "arn:aws:sns:us-east-1:697206947197:*"
+              ]
+  - effect: Allow
+    action: ["sns:Publish"]
+    resource: [
+                "arn:aws:sns:us-east-1:778855753946:geneva-messaging-dev-placement",
+                "arn:aws:sns:us-east-1:778855753946:geneva-messaging-perf-placement",
+                "arn:aws:sns:us-east-1:778855753946:geneva-messaging-qa-placement",
+                "arn:aws:sns:us-east-1:778855753946:geneva-messaging-uat-placement",
+                "arn:aws:sns:us-east-1:697206947197:geneva-messaging-beta-placement",
+                "arn:aws:sns:us-east-1:697206947197:geneva-messaging-prod-placement",
+                "arn:aws:sns:us-east-1:778855753946:geneva-messaging-dev-company",
+                "arn:aws:sns:us-east-1:778855753946:geneva-messaging-perf-company",
+                "arn:aws:sns:us-east-1:778855753946:geneva-messaging-qa-company",
+                "arn:aws:sns:us-east-1:778855753946:geneva-messaging-uat-company",
+                "arn:aws:sns:us-east-1:697206947197:geneva-messaging-beta-company",
+                "arn:aws:sns:us-east-1:697206947197:geneva-messaging-prod-company"
+              ]
+  - effect: Allow
+    action: ["sqs:ListQueues"]
+    resource: [
+                "arn:aws:sqs:us-east-1:778855753946:*",
+                "arn:aws:sqs:us-east-1:697206947197:*"
+              ]
+  - effect: Allow
+    action: ["sqs:GetQueueUrl", "sqs:ReceiveMessage", "sqs:GetQueueAttributes", "sqs:DeleteMessage"]
+    resource: [
+                "arn:aws:sqs:us-east-1:778855753946:geneva-messaging-dev-placement-ssp",
+                "arn:aws:sqs:us-east-1:778855753946:geneva-messaging-perf-placement-ssp",
+                "arn:aws:sqs:us-east-1:778855753946:geneva-messaging-qa-placement-ssp",
+                "arn:aws:sqs:us-east-1:778855753946:geneva-messaging-uat-placement-ssp",
+                "arn:aws:sqs:us-east-1:697206947197:geneva-messaging-beta-placement-ssp",
+                "arn:aws:sqs:us-east-1:697206947197:geneva-messaging-prod-placement-ssp"
+              ]
+user-data: |
+  echo "geneva-api" > /etc/component
+parameters:
+  default:
+    instance-type: m5.xlarge
+    min-capacity: "2"
+    max-capacity: "12"
+    dns-prefix: "geneva-api"
+    dns-zone: "one-mobile-dev.aws.oath.cloud."
+    include-elb: "yes"
+    public-elb: "yes"
+    elb-idle-timeout: "600"
+    elb-health-check-interval: "100"
+    elb-health-check-timeout: "5"
+    elb-unhealthy-threshold: "6"
+    elb-health-check-path: /geneva/awsHealthCheck
+    certificate-id: api.ssp.yahooinc.com
+  dev:
+    min-capacity: "1"
+    max-capacity: "2"
+    certificate-id: star.one-mobile-dev.aws.oath.cloud
+  beta:
+    dns-zone: "one-mobile-prod.aws.oath.cloud."
+    certificate-id: api.ssp.yahooinc.com
+  prod:
+    min-capacity: "3"
+    instance-type: m5.2xlarge
+    dns-zone: "one-mobile-prod.aws.oath.cloud."
+    certificate-id: api.ssp.yahooinc.com
+  perf:
+    certificate-id: api.ssp.yahooinc.com
+  cron:
+    dns-prefix: ""
+    min-capacity: "1"
+    max-capacity: "2"
+    certificate-id: ""
+  ext:
+    dns-zone: "one-mobile-prod.aws.oath.cloud."
+    certificate-id: api.ssp.yahooinc.com
+    web-acl-id: e6c3d298-a8f0-476e-977c-bfa9669936b3
+bullhorn:
+  qa:
+    track-enable: true
+  uat:
+    track-enable: true

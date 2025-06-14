@@ -1,0 +1,29 @@
+{
+  "pid": 6,
+  "name": "TEST CLONE",
+  "version": 0,
+  "publisherPid": 105,
+  "privilegeLevel": "PUbLISHER",
+  "groups": [
+    {
+      "pid": 11,
+      "name": "ff8080810150505ad7c0a36979870788",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUbLISHER",
+      "data": "IAB1,IAB7-1,IAB3,ADDITIONAl",
+      "itemType": "CATEGORY",
+      "listType": "BLOCKLIST"
+    },
+    {
+      "pid": 10,
+      "name": "ff8080810150505ad7c0a36979870789",
+      "version": 0,
+      "publisherPid": 105,
+      "privilegeLevel": "PUbLISHER",
+      "data": "domain3.com,domain2.com,domain1.com",
+      "itemType": "ADOMAIN",
+      "listType": "BLOCKLIST"
+    }
+  ]
+}

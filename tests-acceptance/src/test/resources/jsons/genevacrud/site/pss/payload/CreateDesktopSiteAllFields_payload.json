@@ -1,0 +1,16 @@
+{
+  "description": "desktop",
+  "domain": "desktop_site1.com",
+  "name": "desktop_site1",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "DESKTOP",
+  "url": "desktop_site1.com",
+  "coppaRestricted": true,
+  "iabCategories": [
+    "IAB1"
+  ],
+  "mode": "LIVE",
+  "appBundle": "",
+  "dcn": "customId"
+}

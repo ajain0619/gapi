@@ -1,0 +1,98 @@
+[
+  {
+    "groups": [
+      {
+        "data": "4,2",
+        "itemType": "BIDDER",
+        "listType": "WHITELIST",
+        "name": "BGN1",
+        "pid": 5,
+        "privilegeLevel": "PUBLISHER",
+        "publisherPid": 105,
+        "version": 0
+      }
+    ],
+    "name": "BGN1",
+    "pid": 3,
+    "privilegeLevel": "PUBLISHER",
+    "publisherPid": 105,
+    "version": 1
+  },
+  {
+    "groups": [
+      {
+        "data": "4,2,3",
+        "itemType": "BIDDER",
+        "listType": "WHITELIST",
+        "name": "BGN2",
+        "pid": 6,
+        "privilegeLevel": "PUBLISHER",
+        "publisherPid": 105,
+        "version": 0
+      }
+    ],
+    "name": "BGN2",
+    "pid": 4,
+    "privilegeLevel": "PUBLISHER",
+    "publisherPid": 105,
+    "version": 1
+  },
+  {
+    "groups": [
+      {
+        "data": "IAB1,IAB3,IAB7-1",
+        "itemType": "CATEGORY",
+        "listType": "BLOCKLIST",
+        "name": "BGR2",
+        "pid": 4,
+        "privilegeLevel": "PUBLISHER",
+        "publisherPid": 105,
+        "version": 0
+      },
+      {
+        "data": "domain1.com,domain2.com,domain3.com",
+        "itemType": "ADOMAIN",
+        "listType": "BLOCKLIST",
+        "name": "BGR2",
+        "pid": 3,
+        "privilegeLevel": "PUBLISHER",
+        "publisherPid": 105,
+        "version": 0
+      }
+    ],
+    "name": "BGR2",
+    "pid": 2,
+    "privilegeLevel": "PUBLISHER",
+    "publisherPid": 105,
+    "version": 1
+  },
+  {
+    "groups": [
+      {
+        "data": "domain1.com,domain2.com",
+        "itemType": "ADOMAIN",
+        "listType": "BLOCKLIST",
+        "name": "BGR1",
+        "pid": 1,
+        "privilegeLevel": "PUBLISHER",
+        "publisherPid": 105,
+        "version": 0
+      },
+      {
+        "data": "IAB1,IAB3",
+        "itemType": "CATEGORY",
+        "listType": "BLOCKLIST",
+        "name": "BGR1",
+        "pid": 2,
+        "privilegeLevel": "PUBLISHER",
+        "publisherPid": 105,
+        "version": 0
+      }
+    ],
+    "name": "BGR1",
+    "pid": 1,
+    "privilegeLevel": "PUBLISHER",
+    "publisherPid": 105,
+    "version": 1
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "pid": 37,
+  "version": 1,
+  "name": "RuleBMWithTarget_DealCategory",
+  "description": "Updated: Bid management rule with DEAL_CATEGORY target type",
+  "status": "ACTIVE",
+  "ownerCompanyPid": 10000,
+  "type": "BRAND_PROTECTION",
+  "intendedActions": [
+    {
+      "actionType": "FILTER",
+      "actionData": "BLOCKLIST"
+    }
+  ],
+  "targets": [
+    {
+      "pid": 22,
+      "version": 0,
+      "targetType": "DEAL_CATEGORY",
+      "matchType":"INCLUDE_LIST",
+      "status":"ACTIVE",
+      "data": "1"
+    }
+  ]
+}

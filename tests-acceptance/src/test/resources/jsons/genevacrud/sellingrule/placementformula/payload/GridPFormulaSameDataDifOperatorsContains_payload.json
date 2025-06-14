@@ -1,0 +1,19 @@
+{
+  "groupedBy": "OR",
+  "formulaGroups": [
+    {
+      "formulaRules": [
+        {
+          "attribute": "PLACEMENT_NAME",
+          "operator": "CONTAINS",
+          "ruleData": "special"
+        },
+        {
+          "attribute": "PLACEMENT_NAME",
+          "operator": "NOT_CONTAINS",
+          "ruleData": "transparency_enabled_position"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+package com.nexage.admin.core.enums;
+
+public enum ContextSubType {
+  GENERAL_OR_MIXED,
+  PRIMARILY_ARTICLE,
+  PRIMARILY_VIDEO,
+  PRIMARILY_AUDIO,
+  PRIMARILY_IMAGE,
+  USER_GENERATED,
+  SOCIAL,
+  PRIMARILY_EMAIL,
+  PRIMARILY_CHAT,
+  SELLING,
+  APP_STORE,
+  REVIEWS
+}

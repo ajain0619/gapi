@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+  select
+    /* $reportUser.userName */
+    /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName$$!dim)*/
+      t.bidder_id as bidderId,
+      d3.name as buyer,
+      d2.name as bidder,
+      SUM(t.bids_requested) as bidRequests,
+      SUM(t.revenue) as netAcquisitionCost,
+      SUM(t.grossWins) / 1000 as grossWins
+  FROM
+      (
+        SELECT
+            f1.bidder_id AS bidder_id,
+              CAST(SUM(f1.revenue) AS DECIMAL (18 , 8 )) AS revenue,
+              0 AS bids_requested,
+              SUM(f1.price_sum) as grossWins
+        FROM
+            fact_exchange_wins f1
+        WHERE
+            f1.start >= :start AND f1.start < :stop
+              AND f1.exchange_id IN (2160)
+        GROUP BY f1.bidder_id UNION ALL SELECT
+            f2.bidder_id AS bidder_id,
+              CAST(0 AS DECIMAL (18 , 8 )) AS revenue,
+              SUM(f2.bid_requests) AS bids_requested,
+              cast(0 as decimal (16 , 8 )) as grossWins
+        FROM
+            fact_exchange_bidders f2
+        WHERE
+            f2.start >= :start AND f2.start < :stop
+              AND f2.exchange_id IN (2160)
+        GROUP BY f2.bidder_id
+      ) AS t
+          INNER JOIN dim_bidder d2 ON t.bidder_id = d2.id
+          INNER JOIN dim_company d3 ON d3.id = d2.company_id
+  GROUP BY t.bidder_id, d3.name, d2.name
+  ORDER BY d3.name, d2.name
+      ]]>
+  </entry>
+
+</properties>

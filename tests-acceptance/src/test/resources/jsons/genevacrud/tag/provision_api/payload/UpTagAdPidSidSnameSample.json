@@ -1,0 +1,14 @@
+{
+  "name": "b6",
+  "buyer": {
+    "pid": "7056"
+  },
+  "primaryId": "pid17",
+  "secondaryId": "sid17",
+  "secondaryName": "sname17",
+  "ecpmManual": 15,
+  "ecpmProvision": "Manual",
+  "importRevenueFlag": false,
+  "rules": [],
+  "version": 0
+}

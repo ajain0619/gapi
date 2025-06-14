@@ -1,0 +1,44 @@
+{
+  "pid": 10000209,
+  "version": 2,
+  "publisher": {
+    "pid": 10228
+  },
+  "dcn": "customId",
+  "description": "website",
+  "domain": "website_site11.com",
+  "name": "website_site11",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "WEBSITE",
+  "url": "website_site11.com",
+  "appBundle": "",
+  "coppaRestricted": false,
+  "iabCategories": [
+    "IAB1",
+    "IAB4",
+    "IAB5",
+    "IAB3"
+  ],
+  "mode": "LIVE",
+  "hbEnabled": false,
+  "buyerTimeout": 1000,
+  "daysFree": 1,
+  "filterBots": true,
+  "adTruthEnabled": true,
+  "reportBatchSize": 10,
+  "globalAliasName": "alias",
+  "metadataEnablement": true,
+  "adScreeningEnabled": false,
+  "reportFrequency": 1000,
+  "rulesUpdateFrequency": 1000,
+  "totalTimeout": 1000,
+  "trafficThrottle": 1,
+  "consumerProfileContributed": false,
+  "consumerProfileUsed": false,
+  "overrideIP": false,
+  "currentDealTerm": {
+    "nexageRevenueShare": 0.011,
+    "rtbFee": 0.025
+  }
+}

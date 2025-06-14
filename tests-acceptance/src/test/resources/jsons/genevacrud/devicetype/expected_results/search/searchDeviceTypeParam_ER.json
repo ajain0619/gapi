@@ -1,0 +1,34 @@
+{
+  "content": [
+    {
+      "pid": 3,
+      "deviceTypeId": 4,
+      "name": "Phone"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 10,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": true,
+  "totalElements": 1,
+  "totalPages": 1,
+  "first": true,
+  "numberOfElements": 1,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "empty": false
+}

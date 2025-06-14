@@ -1,0 +1,16 @@
+{
+  "dcn": "1231241231241231f24123124123124123124123124123124f",
+  "description": "dcn_internal_big_length",
+  "domain": "http://dcn_internal.com",
+  "name": "dcn_internal_big_length",
+  "platform": "OTHER",
+  "status": "ACTIVE",
+  "type": "MOBILE_WEB",
+  "mode": "TEST",
+  "url": "https://dcn_internal.com",
+  "coppaRestricted": true,
+  "hbEnabled": true,
+  "iabCategories": [
+    "IAB5"
+  ]
+}

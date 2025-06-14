@@ -1,0 +1,17 @@
+{
+  "name": "AV101",
+  "buyer": {
+    "pid": "4252"
+  },
+  "primaryId": "pid123",
+  "adNetReportApiToken": "token",
+  "ecpmManual": 0,
+  "ecpmProvision": "Auto",
+  "importRevenueFlag": true,
+  "rules": [],
+  "adNetReportUserName": "Username",
+  "adNetReportPassword": "Password",
+  "tagController": {
+    "autoExpand": false
+  }
+}

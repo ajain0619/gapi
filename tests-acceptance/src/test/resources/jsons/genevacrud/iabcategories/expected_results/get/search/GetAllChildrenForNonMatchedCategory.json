@@ -1,0 +1,93 @@
+{
+  "content": [
+    {
+      "pid": 257,
+      "categoryId": 6,
+      "name": "Arts & Entertainment Other",
+      "rtbId": "NEX1-101",
+      "crsTags": [],
+      "parentTagPid": 668
+    },
+    {
+      "pid": 250,
+      "categoryId": 6,
+      "name": "Books & Literature",
+      "rtbId": "IAB1-1",
+      "crsTags": [],
+      "parentTagPid": 668
+    },
+    {
+      "pid": 251,
+      "categoryId": 6,
+      "name": "Celebrity Fan/Gossip",
+      "rtbId": "IAB1-2",
+      "crsTags": [],
+      "parentTagPid": 668
+    },
+    {
+      "pid": 252,
+      "categoryId": 6,
+      "name": "Fine Art",
+      "rtbId": "IAB1-3",
+      "crsTags": [],
+      "parentTagPid": 668
+    },
+    {
+      "pid": 253,
+      "categoryId": 6,
+      "name": "Humor",
+      "rtbId": "IAB1-4",
+      "crsTags": [],
+      "parentTagPid": 668
+    },
+    {
+      "pid": 254,
+      "categoryId": 6,
+      "name": "Movies",
+      "rtbId": "IAB1-5",
+      "crsTags": [],
+      "parentTagPid": 668
+    },
+    {
+      "pid": 255,
+      "categoryId": 6,
+      "name": "Music",
+      "rtbId": "IAB1-6",
+      "crsTags": [],
+      "parentTagPid": 668
+    },
+    {
+      "pid": 256,
+      "categoryId": 6,
+      "name": "Television",
+      "rtbId": "IAB1-7",
+      "crsTags": [],
+      "parentTagPid": 668
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": false,
+      "sorted": true,
+      "empty": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 20,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalPages": 1,
+  "totalElements": 8,
+  "last": true,
+  "number": 0,
+  "sort": {
+    "unsorted": false,
+    "sorted": true,
+    "empty": false
+  },
+  "size": 20,
+  "numberOfElements": 8,
+  "first": true,
+  "empty": false
+}

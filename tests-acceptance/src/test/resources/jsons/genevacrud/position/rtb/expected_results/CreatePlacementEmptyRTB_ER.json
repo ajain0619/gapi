@@ -1,0 +1,38 @@
+{
+  "pid": 100329,
+  "version": 0,
+  "site": {
+    "pid": 10000202,
+    "hbEnabled": false
+  },
+  "name": "tracker1",
+  "memo": "banner placement",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "defaultRtbProfile": {
+    "pid": 10000070,
+    "version": 0,
+    "name": "Anna",
+    "libraries": [],
+    "useDefaultBlock": true,
+    "includeConsumerId": false,
+    "includeDomainReferences": false,
+    "includeConsumerProfile": false,
+    "screeningLevel": "AllowAll",
+    "useDefaultBidders": true,
+    "auctionType": "EXCHANGE_DEFAULT",
+    "lowReserve": 0,
+    "defaultReserve": 0,
+    "blockedExternalDataProviderMap": {},
+    "bidderFilterMap": {},
+    "includeGeoData": false
+  },
+  "mraidAdvancedTracking": false
+}

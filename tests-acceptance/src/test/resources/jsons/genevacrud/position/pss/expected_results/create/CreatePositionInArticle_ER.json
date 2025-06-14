@@ -1,0 +1,18 @@
+{
+  "site":{
+    "pid":10000192
+  },
+  "screenLocation":"UNKNOWN",
+  "mraidSupport":"NO",
+  "placementCategory":"IN_ARTICLE",
+  "interstitial": false,
+  "mraidAdvancedTracking":true,
+  "positionAliasName":"CreatePlacementInArticleAlias",
+  "videoSupport":"VIDEO",
+  "width":1400,
+  "height":400,
+  "adSizeType":"STANDARD",
+  "memo":"CreatePlacementInArticle",
+  "name":"createplacementinarticle",
+  "impressionTypeHandling":"BASED_ON_PLACEMENT_CONFIG"
+}

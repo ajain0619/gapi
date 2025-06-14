@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+  <entry key="default">
+    <![CDATA[
+    SELECT /* $reportUser.userName */
+        /*+label($!reportMetadata.environment$$!reportMetadata.reportType$$!reportMetadata.reportName)*/
+        summary.company_id companyId
+        ,name company
+        ,direct_sold directSold
+        ,remnant_house remnantHouse
+        ,premium_house premiumHouse
+        ,COALESCE(ar.ads_requested,0) requests
+    FROM(
+        SELECT company.id company_id
+            ,SUM(CASE WHEN advertiser.name != 'HOUSE' THEN adserver.ads_served ELSE 0 END) AS direct_sold
+            ,SUM(CASE WHEN adserver.campaign_type = 0 AND advertiser.name = 'HOUSE' THEN adserver.ads_served ELSE 0 END) AS remnant_house
+            ,SUM(CASE WHEN adserver.campaign_type != 0 AND advertiser.name = 'HOUSE' THEN adserver.ads_served ELSE 0 END) AS premium_house
+        FROM fact_traffic_adserver adserver
+        INNER JOIN dim_advertiser advertiser ON adserver.advertiser_id = advertiser.id
+        INNER JOIN dim_company company ON advertiser.company_id = company.id
+        WHERE adserver.start >= :start
+            AND adserver.start < :stop
+        GROUP BY company.id
+    ) AS summary
+    INNER JOIN dim_company c ON summary.company_id = c.id
+    LEFT JOIN(
+        SELECT ds.company_id
+            ,SUM(fts.ads_requested) AS ads_requested
+        FROM fact_traffic_site fts
+        INNER JOIN dim_site ds ON ds.id = fts.site_id
+        WHERE fts.start >= :start
+            AND fts.start < :stop
+        GROUP BY ds.company_id
+    ) ar ON ar.company_id = summary.company_id
+      ]]>
+  </entry>
+  <entry key="company_fees_data">
+    <![CDATA[
+    SELECT
+        direct_ad_serving_fee directFee,
+        house_ad_serving_fee houseFee,
+        non_remnant_house_ad_cap cap,
+        house_ad_overage_fee houseOverageFee
+    FROM company
+    WHERE pid = :company
+      ]]>
+  </entry>
+</properties>

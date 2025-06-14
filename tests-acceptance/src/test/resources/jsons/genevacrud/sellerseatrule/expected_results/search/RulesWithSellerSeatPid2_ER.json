@@ -1,0 +1,104 @@
+{
+  "content": [
+    {
+      "description": "description",
+      "intendedActions": [
+        {
+          "actionData": "BLOCKLIST",
+          "actionType": "FILTER",
+          "version": 0
+        }
+      ],
+      "name": "SellerSeatBPrule",
+      "sellerSeatPid": 2,
+      "status": "ACTIVE",
+      "targets": [
+        {
+          "data": "category2",
+          "matchType": "EXCLUDE_LIST",
+          "status": "ACTIVE",
+          "targetType": "IAB_CATEGORY",
+          "version": 0
+        },
+        {
+          "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]",
+          "matchType": "EXCLUDE_LIST",
+          "status": "ACTIVE",
+          "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+          "version": 0
+        },
+        {
+          "data": "cid4",
+          "matchType": "EXCLUDE_LIST",
+          "status": "ACTIVE",
+          "targetType": "CREATIVE_ID",
+          "version": 0
+        }
+      ],
+      "type": "BRAND_PROTECTION",
+      "version": 0
+    },
+    {
+      "description": "The Brave Knight",
+      "intendedActions": [
+        {
+          "actionData": "BLOCKLIST",
+          "actionType": "FILTER",
+          "version": 0
+        }
+      ],
+      "name": "Sir Lancelot 1234",
+      "sellerSeatPid": 2,
+      "status": "ACTIVE",
+      "targets": [
+        {
+          "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]",
+          "matchType": "EXCLUDE_LIST",
+          "pid": 8,
+          "status": "ACTIVE",
+          "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+          "version": 0
+        }
+      ],
+      "type": "BRAND_PROTECTION",
+      "version": 0
+    },
+    {
+      "description": "The Not-Quite-So-Brave-as-Sir-Lancelot Knight",
+      "intendedActions": [
+        {
+          "actionData": "BLOCKLIST",
+          "actionType": "FILTER",
+          "version": 0
+        }
+      ],
+      "name": "Sir Robin 5678",
+      "sellerSeatPid": 2,
+      "status": "ACTIVE",
+      "targets": [
+        {
+          "data": "[{\"tag_id\":124,\"tag_values\":[\"a.aa\"]}]",
+          "matchType": "EXCLUDE_LIST",
+          "pid": 9,
+          "status": "ACTIVE",
+          "targetType": "EXACT_MATCH_ADVERTISER_DOMAIN",
+          "version": 0
+        }
+      ],
+      "type": "BRAND_PROTECTION",
+      "version": 0
+    }
+  ],
+  "first": true,
+  "last": true,
+  "number": 0,
+  "numberOfElements": 3,
+  "size": 10,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "totalElements": 3,
+  "totalPages": 1
+}

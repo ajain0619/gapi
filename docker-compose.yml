@@ -1,0 +1,51 @@
+version: "3.3"
+services:
+  coredb:
+    image: docker.ouroath.com:4443/ssp/db-core:${DBCORE_VERSION}
+    container_name: coredb
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./tests-acceptance/src/test/resources/data/db_core.sql:/docker-entrypoint-initdb.d/d_db_core.sql
+      - ./cicd/data/coredb/qa/geneva_ui_smoke.sql:/docker-entrypoint-initdb.d/g_geneva_ui_smoke.sql
+  dwdb:
+    image: docker.ouroath.com:4443/ssp/dwdb:${DWDB_VERSION}
+    container_name: dwdb
+    ports:
+      - "5433:5433"
+  redis-cluster:
+    image: docker.ouroath.com:4443/ssp/redis-cluster:${REDIS_VERSION}
+    container_name: redis-cluster
+    ports:
+      - "8380:8380"
+      - "8381:8381"
+      - "8382:8382"
+      - "8383:8383"
+      - "8384:8384"
+      - "8385:8385"
+  localstack:
+    image: docker.ouroath.com:4443/docker.io/localstack/localstack:${LOCALSTACK_VERSION}
+    container_name: localstack
+    network_mode: bridge
+    ports:
+      - "4566:4566"
+      - "4510-4559:4510-4559"
+    environment:
+      - DEBUG=${DEBUG-}
+      - DATA_DIR=${DATA_DIR-}
+      - PORT_WEB_UI=${PORT_WEB_UI-}
+      - HOST_TMP_FOLDER=/tmp/localstack
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - "/tmp/localstack:/tmp/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+  sso-mock:
+    image: docker.ouroath.com:4443/ssp/sso-mock:${SSO_MOCK_VERSION}
+    container_name: sso-mock
+    ports:
+      - "8090:8090"
+  geneva-ui:
+    image: docker.ouroath.com:4443/ssp/geneva-ui:${UI_VERSION}
+    container_name: geneva-ui
+    ports:
+      - "9001:9000"

@@ -1,0 +1,23 @@
+{
+  "pid": 1,
+  "version": 2,
+  "tiers": [],
+  "name": "test1",
+  "memo": "test1",
+  "mraidSupport": "YES",
+  "videoSupport": "NATIVE",
+  "screenLocation": "FOOTER_VISIBLE",
+  "mraidAdvancedTracking": false,
+  "positionAliasName": "test1",
+  "externalAdVerificationSamplingRate": 30.5,
+  "status": "ACTIVE",
+  "placementCategory": "NATIVE_V2",
+  "positionBuyer": {
+    "pid": 1,
+    "positionPid": 123456789,
+    "buyerPositionId": "sectionId",
+    "companyPid": 2,
+    "version": 9
+  },
+  "nativeConfig": "{\"context\":\"SOCIAL\",\"contextSubType\":\"USER_GENERATED\",\"placementType\":\"IN_FEED\",\"assetTemplate\":\"awesomeAssets\",\"assetSets\":[{\"rule\":\"REQ_ALL\",\"assets\":[{\"type\":\"TITLE\",\"key\":\"myTitle\",\"title\":{\"maxLength\":75}}]}]}"
+}

@@ -1,0 +1,75 @@
+{
+  "content": [
+    {
+      "pid": 1,
+      "name": "Seller seat 1",
+      "description": "Some desc 1",
+      "status": true,
+      "version": 0,
+      "updatedOn": 1570454794000,
+      "sellers": [
+        {
+          "pid": 10235,
+          "name": "Cooler Screens",
+          "type": "SELLER",
+          "adStrictApproval": false
+        },
+        {
+          "pid": 802,
+          "name": "Seller_S31",
+          "type": "SELLER",
+          "adStrictApproval": false
+        },
+        {
+          "pid": 456,
+          "name": "Rovio",
+          "type": "SELLER",
+          "adStrictApproval": false
+        },
+        {
+          "pid": 801,
+          "name": "Seller_S21",
+          "type": "SELLER",
+          "adStrictApproval": false
+        },
+        {
+          "pid": 248,
+          "name": "MedFTCompany",
+          "type": "SELLER",
+          "adStrictApproval": false
+        },
+        {
+          "pid": 800,
+          "name": "Seller_S11",
+          "type": "SELLER",
+          "adStrictApproval": false
+        }
+      ]
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 1000,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalElements": 1,
+  "totalPages": 1,
+  "last": true,
+  "size": 1000,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "numberOfElements": 1,
+  "first": true,
+  "empty": false
+}

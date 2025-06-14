@@ -1,0 +1,36 @@
+{
+  "content": [
+    {
+      "pid": 1,
+      "filterListId": 1,
+      "domain": "www.xyz.com",
+      "status": "VALID",
+      "version": 0
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": true,
+      "sorted": false,
+      "empty": true
+    },
+    "pageNumber": 0,
+    "pageSize": 10,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "totalElements": 1,
+  "totalPages": 1,
+  "last": true,
+  "numberOfElements": 1,
+  "first": true,
+  "number": 0,
+  "size": 10,
+  "sort": {
+    "unsorted": true,
+    "sorted": false,
+    "empty": true
+  },
+  "empty": false
+}

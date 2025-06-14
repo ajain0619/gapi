@@ -1,0 +1,12 @@
+{
+  "name": "Without_description_desc",
+  "domain": "q1",
+  "url": "h",
+  "coppaRestricted": false,
+  "platform": "OTHER",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "DESKTOP"
+}

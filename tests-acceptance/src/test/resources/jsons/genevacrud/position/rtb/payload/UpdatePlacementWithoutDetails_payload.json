@@ -1,0 +1,29 @@
+{
+  "pid": 100331,
+  "version": 3,
+  "site": {
+    "pid": 10000202,
+    "hbEnabled": false,
+    "type": "MOBILE_WEB",
+    "platform": "OTHER"
+  },
+  "name": "updatedAgain",
+  "memo": "banner placement",
+  "mraidSupport": "YES",
+  "videoSupport": "BANNER",
+  "screenLocation": "ABOVE_VISIBLE",
+  "interstitial": false,
+  "height": 50,
+  "width": 300,
+  "placementCategory": "BANNER",
+  "trafficType": "MEDIATION",
+  "status": "ACTIVE",
+  "defaultRtbProfile": {
+    "pid": 10000071,
+    "version": 2,
+    "name": "updatedAgain",
+    "description": "description",
+    "defaultRtbProfileOwnerCompanyPid": 10225
+  },
+  "mraidAdvancedTracking": false
+}

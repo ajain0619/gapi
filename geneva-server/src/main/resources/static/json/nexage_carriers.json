@@ -1,0 +1,2750 @@
+[
+  {
+    "carrier": "WIFI",
+    "code": "1"
+  },
+  {
+    "carrier": "3",
+    "code": "2"
+  },
+  {
+    "carrier": "1O1O AND ONE2FREE",
+    "code": "3"
+  },
+  {
+    "carrier": "2DEGREES",
+    "code": "4"
+  },
+  {
+    "carrier": "3 ITALIA",
+    "code": "5"
+  },
+  {
+    "carrier": "G MOBILE",
+    "code": "6"
+  },
+  {
+    "carrier": "42IT",
+    "code": "7"
+  },
+  {
+    "carrier": "6GMOBILE",
+    "code": "8"
+  },
+  {
+    "carrier": "A1",
+    "code": ",9"
+  },
+  {
+    "carrier": "ACCESS TELECOM",
+    "code": "10"
+  },
+  {
+    "carrier": "ACES",
+    "code": "11"
+  },
+  {
+    "carrier": "ADVANCE",
+    "code": "12"
+  },
+  {
+    "carrier": "ADVANTAGE",
+    "code": "13"
+  },
+  {
+    "carrier": "AERIS",
+    "code": "14"
+  },
+  {
+    "carrier": "AERO2",
+    "code": "15"
+  },
+  {
+    "carrier": "AEROMOBILE",
+    "code": "16"
+  },
+  {
+    "carrier": "AFRICELL",
+    "code": "17"
+  },
+  {
+    "carrier": "AIRADIGM",
+    "code": "18"
+  },
+  {
+    "carrier": "AIRCEL",
+    "code": "19"
+  },
+  {
+    "carrier": "AIRDATA",
+    "code": "20"
+  },
+  {
+    "carrier": "AIRLINK PCS",
+    "code": "21"
+  },
+  {
+    "carrier": "AIRPEAK",
+    "code": "22"
+  },
+  {
+    "carrier": "AIRTEL",
+    "code": "23"
+  },
+  {
+    "carrier": "AIRWAVE",
+    "code": "24"
+  },
+  {
+    "carrier": "AIS",
+    "code": "25"
+  },
+  {
+    "carrier": "AIS GSM 1800",
+    "code": "26"
+  },
+  {
+    "carrier": "AL JAWAL",
+    "code": "27"
+  },
+  {
+    "carrier": "ALASKA DIGITEL",
+    "code": "28"
+  },
+  {
+    "carrier": "ALEGRO",
+    "code": "29"
+  },
+  {
+    "carrier": "ALFA",
+    "code": "30"
+  },
+  {
+    "carrier": "AL-JEEL PHONE",
+    "code": "31"
+  },
+  {
+    "carrier": "ALLTEL",
+    "code": "32"
+  },
+  {
+    "carrier": "ALPMOBILE",
+    "code": "33"
+  },
+  {
+    "carrier": "AMC",
+    "code": "34"
+  },
+  {
+    "carrier": "AMERILINK PCS",
+    "code": "35"
+  },
+  {
+    "carrier": "AMERIS",
+    "code": "36"
+  },
+  {
+    "carrier": "A-MOBILE",
+    "code": "37"
+  },
+  {
+    "carrier": "AMT",
+    "code": "38"
+  },
+  {
+    "carrier": "ANTEL",
+    "code": "39"
+  },
+  {
+    "carrier": "APS KBUS",
+    "code": "40"
+  },
+  {
+    "carrier": "APTG",
+    "code": "41"
+  },
+  {
+    "carrier": "APUA",
+    "code": "42"
+  },
+  {
+    "carrier": "AQUAFON",
+    "code": "43"
+  },
+  {
+    "carrier": "ARCOR",
+    "code": "44"
+  },
+  {
+    "carrier": "AS BRAVOCOM MOBIIL",
+    "code": "45"
+  },
+  {
+    "carrier": "ASIA CELL",
+    "code": "46"
+  },
+  {
+    "carrier": "ASPIDER",
+    "code": "47"
+  },
+  {
+    "carrier": "AT&T",
+    "code": "48"
+  },
+  {
+    "carrier": "ATM MOBILIS",
+    "code": "49"
+  },
+  {
+    "carrier": "AU",
+    "code": "50"
+  },
+  {
+    "carrier": "AVEA",
+    "code": "51"
+  },
+  {
+    "carrier": "AWCC",
+    "code": "52"
+  },
+  {
+    "carrier": "AXIS",
+    "code": "53"
+  },
+  {
+    "carrier": "AZERCELL",
+    "code": "54"
+  },
+  {
+    "carrier": "AZUR",
+    "code": "55"
+  },
+  {
+    "carrier": "BABILON-M",
+    "code": "56"
+  },
+  {
+    "carrier": "BAKCELL",
+    "code": "57"
+  },
+  {
+    "carrier": "BANGLALINK",
+    "code": "58"
+  },
+  {
+    "carrier": "BARABLU",
+    "code": "59"
+  },
+  {
+    "carrier": "BASE",
+    "code": "60"
+  },
+  {
+    "carrier": "BATELCO",
+    "code": "61"
+  },
+  {
+    "carrier": "BAYKALWESTCOM",
+    "code": "62"
+  },
+  {
+    "carrier": "BAYOS",
+    "code": "63"
+  },
+  {
+    "carrier": "BBCOM",
+    "code": "64"
+  },
+  {
+    "carrier": "BEBBICELL",
+    "code": "65"
+  },
+  {
+    "carrier": "BEELINE",
+    "code": "66"
+  },
+  {
+    "carrier": "BEEPSPEND",
+    "code": "67"
+  },
+  {
+    "carrier": "BELCEL",
+    "code": "68"
+  },
+  {
+    "carrier": "BELL",
+    "code": "69"
+  },
+  {
+    "carrier": "BENSON ONLINE",
+    "code": "70"
+  },
+  {
+    "carrier": "BH MOBILE",
+    "code": "71"
+  },
+  {
+    "carrier": "BITE",
+    "code": "72"
+  },
+  {
+    "carrier": "BLUESKY",
+    "code": "73"
+  },
+  {
+    "carrier": "BMOBILE",
+    "code": "74"
+  },
+  {
+    "carrier": "B-MOBILE",
+    "code": "75"
+  },
+  {
+    "carrier": "BOB",
+    "code": "76"
+  },
+  {
+    "carrier": "BOKAMOSO CONSORTIUM",
+    "code": "77"
+  },
+  {
+    "carrier": "BOUYGUES",
+    "code": "78"
+  },
+  {
+    "carrier": "BREEZE",
+    "code": "79"
+  },
+  {
+    "carrier": "BREEZZ",
+    "code": "80"
+  },
+  {
+    "carrier": "BSNL MOBILE",
+    "code": "81"
+  },
+  {
+    "carrier": "BT",
+    "code": "82"
+  },
+  {
+    "carrier": "BTC MOBILE",
+    "code": "83"
+  },
+  {
+    "carrier": "BUG TUSSEL WIRELESS",
+    "code": "84"
+  },
+  {
+    "carrier": "C SPIRE WIRELESS",
+    "code": "85"
+  },
+  {
+    "carrier": "CABLE & WIRELESS",
+    "code": "86"
+  },
+  {
+    "carrier": "CAMEL MOBILE",
+    "code": "87"
+  },
+  {
+    "carrier": "CAPROCK",
+    "code": "88"
+  },
+  {
+    "carrier": "CAPX",
+    "code": "89"
+  },
+  {
+    "carrier": "CAROLINA PHONE",
+    "code": "90"
+  },
+  {
+    "carrier": "CAT CDMA",
+    "code": "91"
+  },
+  {
+    "carrier": "CCT BOATPHONE",
+    "code": "92"
+  },
+  {
+    "carrier": "CDMA UKRAINE",
+    "code": "93"
+  },
+  {
+    "carrier": "CELCOM",
+    "code": "94"
+  },
+  {
+    "carrier": "CELL C",
+    "code": "95"
+  },
+  {
+    "carrier": "CELL ONE AMARILLO",
+    "code": "96"
+  },
+  {
+    "carrier": "CELLCO",
+    "code": "97"
+  },
+  {
+    "carrier": "CELLCOM",
+    "code": "98"
+  },
+  {
+    "carrier": "CELLULAR ONE",
+    "code": "99"
+  },
+  {
+    "carrier": "CELLULAR ONE OF EAST TEXAS",
+    "code": "100"
+  },
+  {
+    "carrier": "CELLULAR PROPERTIES",
+    "code": "101"
+  },
+  {
+    "carrier": "CENTENNIAL",
+    "code": "102"
+  },
+  {
+    "carrier": "CENTERNET",
+    "code": "103"
+  },
+  {
+    "carrier": "CERIA",
+    "code": "104"
+  },
+  {
+    "carrier": "CHARITON VALLEY",
+    "code": "105"
+  },
+  {
+    "carrier": "CHINA MOBILE",
+    "code": "106"
+  },
+  {
+    "carrier": "CHINA MOTION TELECOM",
+    "code": "107"
+  },
+  {
+    "carrier": "CHINA TELECOM",
+    "code": "108"
+  },
+  {
+    "carrier": "CHINA TIETONG",
+    "code": "109"
+  },
+  {
+    "carrier": "CHINA UNICOM",
+    "code": "110"
+  },
+  {
+    "carrier": "CHINGUITEL",
+    "code": "111"
+  },
+  {
+    "carrier": "CHIPPIE",
+    "code": "112"
+  },
+  {
+    "carrier": "CHOICE PHONE",
+    "code": "113"
+  },
+  {
+    "carrier": "CHUNGHWA LDM",
+    "code": "114"
+  },
+  {
+    "carrier": "CHUNGWA",
+    "code": "115"
+  },
+  {
+    "carrier": "CINCINNATI BELL",
+    "code": "116"
+  },
+  {
+    "carrier": "CITYCELL",
+    "code": "117"
+  },
+  {
+    "carrier": "CLARO",
+    "code": "118"
+  },
+  {
+    "carrier": "CLEVER COMMUNICATIONS",
+    "code": "119"
+  },
+  {
+    "carrier": "CLOUD9",
+    "code": "120"
+  },
+  {
+    "carrier": "CMCC HK",
+    "code": "121"
+  },
+  {
+    "carrier": "COLEMAN COUNTY TELECOM",
+    "code": "122"
+  },
+  {
+    "carrier": "COLOMBIA TELECOM",
+    "code": "123"
+  },
+  {
+    "carrier": "COLT MOBILE",
+    "code": "124"
+  },
+  {
+    "carrier": "COM4",
+    "code": "125"
+  },
+  {
+    "carrier": "COMCEL",
+    "code": "126"
+  },
+  {
+    "carrier": "COMIUM",
+    "code": "127"
+  },
+  {
+    "carrier": "COMMNET WIRELESS",
+    "code": "128"
+  },
+  {
+    "carrier": "CONCHO",
+    "code": "129"
+  },
+  {
+    "carrier": "CONESTOGA",
+    "code": "130"
+  },
+  {
+    "carrier": "CONSOLIDATED TELECOM",
+    "code": "131"
+  },
+  {
+    "carrier": "CONVEY",
+    "code": "132"
+  },
+  {
+    "carrier": "COPACO",
+    "code": "133"
+  },
+  {
+    "carrier": "CORR",
+    "code": "134"
+  },
+  {
+    "carrier": "COSMOTE",
+    "code": "135"
+  },
+  {
+    "carrier": "CRAZY JOHN'S",
+    "code": "136"
+  },
+  {
+    "carrier": "CRICKET",
+    "code": "137"
+  },
+  {
+    "carrier": "CSL LIMITED",
+    "code": "138"
+  },
+  {
+    "carrier": "CSTMOVEL",
+    "code": "139"
+  },
+  {
+    "carrier": "CTBC CELULAR",
+    "code": "140"
+  },
+  {
+    "carrier": "CTE TELECOM PERSONAL",
+    "code": "141"
+  },
+  {
+    "carrier": "CTM",
+    "code": "142"
+  },
+  {
+    "carrier": "CTP",
+    "code": "143"
+  },
+  {
+    "carrier": "CTS MOBILE",
+    "code": "144"
+  },
+  {
+    "carrier": "CUBACEL",
+    "code": "145"
+  },
+  {
+    "carrier": "CUBIC TELECOM",
+    "code": "146"
+  },
+  {
+    "carrier": "CVMOVEL",
+    "code": "147"
+  },
+  {
+    "carrier": "CYFROWY POLSAT",
+    "code": "148"
+  },
+  {
+    "carrier": "DALACOM",
+    "code": "149"
+  },
+  {
+    "carrier": "DANSK",
+    "code": "150"
+  },
+  {
+    "carrier": "DAUPHIN",
+    "code": "151"
+  },
+  {
+    "carrier": "DB TELEMATIK",
+    "code": "152"
+  },
+  {
+    "carrier": "DEBITEL",
+    "code": "153"
+  },
+  {
+    "carrier": "DHIRAAGU",
+    "code": "154"
+  },
+  {
+    "carrier": "DIALOG",
+    "code": "155"
+  },
+  {
+    "carrier": "DIGI",
+    "code": "156"
+  },
+  {
+    "carrier": "DIGICEL",
+    "code": "157"
+  },
+  {
+    "carrier": "DIGIMOBILE",
+    "code": "158"
+  },
+  {
+    "carrier": "DIGITEL",
+    "code": "159"
+  },
+  {
+    "carrier": "DISHNET WIRELESS",
+    "code": "160"
+  },
+  {
+    "carrier": "DJEZZY",
+    "code": "161"
+  },
+  {
+    "carrier": "DJUICE",
+    "code": "162"
+  },
+  {
+    "carrier": "DMTS",
+    "code": "163"
+  },
+  {
+    "carrier": "DNA",
+    "code": "164"
+  },
+  {
+    "carrier": "DOCOMO",
+    "code": "165"
+  },
+  {
+    "carrier": "DOLPHIN",
+    "code": "166"
+  },
+  {
+    "carrier": "DSTCOM",
+    "code": "167"
+  },
+  {
+    "carrier": "DTAC",
+    "code": "168"
+  },
+  {
+    "carrier": "DTRN",
+    "code": "169"
+  },
+  {
+    "carrier": "DU",
+    "code": "170"
+  },
+  {
+    "carrier": "DUTCH HARBOR",
+    "code": "171"
+  },
+  {
+    "carrier": "EAGLE MOBILE",
+    "code": "172"
+  },
+  {
+    "carrier": "EASTERBROOKE",
+    "code": "173"
+  },
+  {
+    "carrier": "EASTLINK",
+    "code": "174"
+  },
+  {
+    "carrier": "ECONET",
+    "code": "175"
+  },
+  {
+    "carrier": "EDATEL",
+    "code": "176"
+  },
+  {
+    "carrier": "EIRCOM",
+    "code": "177"
+  },
+  {
+    "carrier": "ELECTCOMS WIRELESS",
+    "code": "178"
+  },
+  {
+    "carrier": "ELEPHANT TALK",
+    "code": "179"
+  },
+  {
+    "carrier": "ELISA",
+    "code": "180"
+  },
+  {
+    "carrier": "ELLIPSO",
+    "code": "181"
+  },
+  {
+    "carrier": "EMERY TELCOM WIRELESS",
+    "code": "182"
+  },
+  {
+    "carrier": "EMOBILE",
+    "code": "183"
+  },
+  {
+    "carrier": "EMT",
+    "code": "184"
+  },
+  {
+    "carrier": "EMTEL",
+    "code": "185"
+  },
+  {
+    "carrier": "ENDLESS MOUNTAINS WIRELESS",
+    "code": "186"
+  },
+  {
+    "carrier": "ENIGMA-SYSTEM",
+    "code": "187"
+  },
+  {
+    "carrier": "ENTEL",
+    "code": "188"
+  },
+  {
+    "carrier": "EPIC TOUCH",
+    "code": "189"
+  },
+  {
+    "carrier": "E-PLUS",
+    "code": "190"
+  },
+  {
+    "carrier": "ERICSSON",
+    "code": "191"
+  },
+  {
+    "carrier": "ERITEL",
+    "code": "192"
+  },
+  {
+    "carrier": "EROSKI",
+    "code": "193"
+  },
+  {
+    "carrier": "ESIA",
+    "code": "194"
+  },
+  {
+    "carrier": "E-TELKO",
+    "code": "195"
+  },
+  {
+    "carrier": "ETB",
+    "code": "196"
+  },
+  {
+    "carrier": "ETISALAT",
+    "code": "197"
+  },
+  {
+    "carrier": "ETK",
+    "code": "198"
+  },
+  {
+    "carrier": "ETL",
+    "code": "199"
+  },
+  {
+    "carrier": "EUSKALTEL",
+    "code": "200"
+  },
+  {
+    "carrier": "EVATIS",
+    "code": "201"
+  },
+  {
+    "carrier": "EVERYTHING EVERYWHERE",
+    "code": "202"
+  },
+  {
+    "carrier": "EVNTELECOM",
+    "code": "203"
+  },
+  {
+    "carrier": "EXCELL",
+    "code": "204"
+  },
+  {
+    "carrier": "EXPRESSO",
+    "code": "205"
+  },
+  {
+    "carrier": "FAREASTONE",
+    "code": "206"
+  },
+  {
+    "carrier": "FARMERS CELLULAR",
+    "code": "207"
+  },
+  {
+    "carrier": "FAROESE TELECOM",
+    "code": "208"
+  },
+  {
+    "carrier": "FIDO",
+    "code": "209"
+  },
+  {
+    "carrier": "FIRST CELLULAR",
+    "code": "210"
+  },
+  {
+    "carrier": "FL1",
+    "code": "211"
+  },
+  {
+    "carrier": "FLEXTEL",
+    "code": "212"
+  },
+  {
+    "carrier": "FMS SOLUTIONS",
+    "code": "213"
+  },
+  {
+    "carrier": "FONEX",
+    "code": "214"
+  },
+  {
+    "carrier": "FONYOU",
+    "code": "215"
+  },
+  {
+    "carrier": "FREE MOBILE",
+    "code": "216"
+  },
+  {
+    "carrier": "FREN/HEPI",
+    "code": "217"
+  },
+  {
+    "carrier": "FSM EMMANUEL",
+    "code": "218"
+  },
+  {
+    "carrier": "G.MOBILE",
+    "code": "219"
+  },
+  {
+    "carrier": "GAMCEL",
+    "code": "220"
+  },
+  {
+    "carrier": "GEOCELL",
+    "code": "221"
+  },
+  {
+    "carrier": "GIBTEL",
+    "code": "222"
+  },
+  {
+    "carrier": "GLO",
+    "code": "223"
+  },
+  {
+    "carrier": "GLOBALSTAR",
+    "code": "224"
+  },
+  {
+    "carrier": "GLOBE",
+    "code": "225"
+  },
+  {
+    "carrier": "GLOBUL",
+    "code": "226"
+  },
+  {
+    "carrier": "GO",
+    "code": "227"
+  },
+  {
+    "carrier": "GOLDEN TELECOM",
+    "code": "228"
+  },
+  {
+    "carrier": "GOLIS",
+    "code": "229"
+  },
+  {
+    "carrier": "GOTANET",
+    "code": "230"
+  },
+  {
+    "carrier": "GRAMEENPHONE",
+    "code": "231"
+  },
+  {
+    "carrier": "GREENFONE",
+    "code": "232"
+  },
+  {
+    "carrier": "GSM-AQ",
+    "code": "233"
+  },
+  {
+    "carrier": "GT&T CELLINK PLUS",
+    "code": "234"
+  },
+  {
+    "carrier": "GUAM TELEPHONE",
+    "code": "235"
+  },
+  {
+    "carrier": "HATEF LIBYA",
+    "code": "236"
+  },
+  {
+    "carrier": "HAY SYSTEMS",
+    "code": "237"
+  },
+  {
+    "carrier": "HELLO",
+    "code": "238"
+  },
+  {
+    "carrier": "HIGH PLAINS WIRELESS",
+    "code": "239"
+  },
+  {
+    "carrier": "HIGHLAND CELLULAR",
+    "code": "240"
+  },
+  {
+    "carrier": "HONDUTEL",
+    "code": "241"
+  },
+  {
+    "carrier": "HORMUUD",
+    "code": "242"
+  },
+  {
+    "carrier": "HT-ERONET",
+    "code": "243"
+  },
+  {
+    "carrier": "HURI-SNPT",
+    "code": "244"
+  },
+  {
+    "carrier": "HUTCHISON",
+    "code": "245"
+  },
+  {
+    "carrier": "I CAN_GSM",
+    "code": "246"
+  },
+  {
+    "carrier": "I WIRELESS",
+    "code": "247"
+  },
+  {
+    "carrier": "IAM",
+    "code": "248"
+  },
+  {
+    "carrier": "ICE",
+    "code": "249"
+  },
+  {
+    "carrier": "ICE.NET",
+    "code": "250"
+  },
+  {
+    "carrier": "ICECELL",
+    "code": "251"
+  },
+  {
+    "carrier": "ICO",
+    "code": "252"
+  },
+  {
+    "carrier": "IDEA",
+    "code": "253"
+  },
+  {
+    "carrier": "ILIZWI TELECOMMUNICATIONS",
+    "code": "254"
+  },
+  {
+    "carrier": "IN&PHONE",
+    "code": "255"
+  },
+  {
+    "carrier": "INDIGO",
+    "code": "256"
+  },
+  {
+    "carrier": "INDOSAT",
+    "code": "257"
+  },
+  {
+    "carrier": "INMARSAT",
+    "code": "258"
+  },
+  {
+    "carrier": "INTERCITY",
+    "code": "259"
+  },
+  {
+    "carrier": "INTERNET COMPUTER BUREAU",
+    "code": "260"
+  },
+  {
+    "carrier": "INUM",
+    "code": "261"
+  },
+  {
+    "carrier": "INWI",
+    "code": "262"
+  },
+  {
+    "carrier": "IRANCELL",
+    "code": "263"
+  },
+  {
+    "carrier": "IRAPHONE",
+    "code": "264"
+  },
+  {
+    "carrier": "IRIDIUM",
+    "code": "265"
+  },
+  {
+    "carrier": "IRIS WIRELESS",
+    "code": "266"
+  },
+  {
+    "carrier": "IR-MCI",
+    "code": "267"
+  },
+  {
+    "carrier": "ISLACOM",
+    "code": "268"
+  },
+  {
+    "carrier": "ISLANDCOM",
+    "code": "269"
+  },
+  {
+    "carrier": "IT",
+    "code": "270"
+  },
+  {
+    "carrier": "IT&E WIRELESS",
+    "code": "271"
+  },
+  {
+    "carrier": "IUSACELL / UNEFON",
+    "code": "272"
+  },
+  {
+    "carrier": "IZZI",
+    "code": "273"
+  },
+  {
+    "carrier": "JABATAN TELEKOM",
+    "code": "274"
+  },
+  {
+    "carrier": "JASPER",
+    "code": "275"
+  },
+  {
+    "carrier": "JAWWAL",
+    "code": "276"
+  },
+  {
+    "carrier": "JAZZTEL",
+    "code": "277"
+  },
+  {
+    "carrier": "JERNBANEVERKET",
+    "code": "278"
+  },
+  {
+    "carrier": "JSC INGENIUM",
+    "code": "279"
+  },
+  {
+    "carrier": "JT-WAVE",
+    "code": "280"
+  },
+  {
+    "carrier": "KARABO TELECOMS",
+    "code": "281"
+  },
+  {
+    "carrier": "KAZAKHTELECOM",
+    "code": "282"
+  },
+  {
+    "carrier": "KCELL",
+    "code": "283"
+  },
+  {
+    "carrier": "KDDI",
+    "code": "284"
+  },
+  {
+    "carrier": "KG TELECOM",
+    "code": "285"
+  },
+  {
+    "carrier": "KIRIBATI FRIGATE",
+    "code": "286"
+  },
+  {
+    "carrier": "KOREK",
+    "code": "287"
+  },
+  {
+    "carrier": "KORYOLINK",
+    "code": "288"
+  },
+  {
+    "carrier": "KOZ",
+    "code": "289"
+  },
+  {
+    "carrier": "KPN",
+    "code": "290"
+  },
+  {
+    "carrier": "KT",
+    "code": "291"
+  },
+  {
+    "carrier": "KYIVSTAR",
+    "code": "292"
+  },
+  {
+    "carrier": "LANCELOT",
+    "code": "293"
+  },
+  {
+    "carrier": "LEO",
+    "code": "294"
+  },
+  {
+    "carrier": "LGT",
+    "code": "295"
+  },
+  {
+    "carrier": "LIBERCELL",
+    "code": "296"
+  },
+  {
+    "carrier": "LIBERCOM",
+    "code": "297"
+  },
+  {
+    "carrier": "LIBERTIS TELECOM",
+    "code": "298"
+  },
+  {
+    "carrier": "LIBTELCO",
+    "code": "299"
+  },
+  {
+    "carrier": "LIBYA PHONE",
+    "code": "300"
+  },
+  {
+    "carrier": "LIBYANA",
+    "code": "301"
+  },
+  {
+    "carrier": "LIFE:)",
+    "code": "302"
+  },
+  {
+    "carrier": "LIFFEY TELECOM",
+    "code": "303"
+  },
+  {
+    "carrier": "LIME",
+    "code": "304"
+  },
+  {
+    "carrier": "LINDHOLMEN SCIENCE PARK",
+    "code": "305"
+  },
+  {
+    "carrier": "LITRAIL",
+    "code": "306"
+  },
+  {
+    "carrier": "LMT",
+    "code": "307"
+  },
+  {
+    "carrier": "LONESTAR CELL",
+    "code": "308"
+  },
+  {
+    "carrier": "LONG LINES WIRELESS",
+    "code": "309"
+  },
+  {
+    "carrier": "LOOP MOBILE",
+    "code": "310"
+  },
+  {
+    "carrier": "LTC",
+    "code": "311"
+  },
+  {
+    "carrier": "LUXGSM",
+    "code": "312"
+  },
+  {
+    "carrier": "LYCAMOBILE",
+    "code": "313"
+  },
+  {
+    "carrier": "M:TEL CG",
+    "code": "314"
+  },
+  {
+    "carrier": "M1",
+    "code": "315"
+  },
+  {
+    "carrier": "MADAR",
+    "code": "316"
+  },
+  {
+    "carrier": "MAGTICOM",
+    "code": "317"
+  },
+  {
+    "carrier": "MALITEL",
+    "code": "318"
+  },
+  {
+    "carrier": "MANX TELECOM",
+    "code": "319"
+  },
+  {
+    "carrier": "MASCOM",
+    "code": "320"
+  },
+  {
+    "carrier": "MATTEL",
+    "code": "321"
+  },
+  {
+    "carrier": "MAURITEL",
+    "code": "322"
+  },
+  {
+    "carrier": "MAXIS",
+    "code": "323"
+  },
+  {
+    "carrier": "MB TEL MOBILITY",
+    "code": "324"
+  },
+  {
+    "carrier": "MCEL",
+    "code": "325"
+  },
+  {
+    "carrier": "MEDIAFON",
+    "code": "326"
+  },
+  {
+    "carrier": "MEDIATECH",
+    "code": "327"
+  },
+  {
+    "carrier": "MEDITEL",
+    "code": "328"
+  },
+  {
+    "carrier": "MEGACOM",
+    "code": "329"
+  },
+  {
+    "carrier": "MEGAFON",
+    "code": "330"
+  },
+  {
+    "carrier": "MELITA",
+    "code": "331"
+  },
+  {
+    "carrier": "METFONE",
+    "code": "332"
+  },
+  {
+    "carrier": "METROPCS",
+    "code": "333"
+  },
+  {
+    "carrier": "MFONE",
+    "code": "334"
+  },
+  {
+    "carrier": "MID-RIVERS WIRELESS",
+    "code": "335"
+  },
+  {
+    "carrier": "MID-TEX CELLULAR",
+    "code": "336"
+  },
+  {
+    "carrier": "MIGWAY AS",
+    "code": "337"
+  },
+  {
+    "carrier": "MIO",
+    "code": "338"
+  },
+  {
+    "carrier": "MIRS",
+    "code": "339"
+  },
+  {
+    "carrier": "MISSOURI RSA5",
+    "code": "340"
+  },
+  {
+    "carrier": "MIXE",
+    "code": "341"
+  },
+  {
+    "carrier": "MLT",
+    "code": "342"
+  },
+  {
+    "carrier": "MOBICOM",
+    "code": "343"
+  },
+  {
+    "carrier": "MOBIFONE",
+    "code": "344"
+  },
+  {
+    "carrier": "MOBILAND",
+    "code": "345"
+  },
+  {
+    "carrier": "MOBILE ARTS",
+    "code": "346"
+  },
+  {
+    "carrier": "MOBILE R",
+    "code": "347"
+  },
+  {
+    "carrier": "MOBILE TELECOM",
+    "code": "348"
+  },
+  {
+    "carrier": "MOBILICITY",
+    "code": "349"
+  },
+  {
+    "carrier": "MOBILINK",
+    "code": "350"
+  },
+  {
+    "carrier": "MOBILIS",
+    "code": "351"
+  },
+  {
+    "carrier": "MOBILITY",
+    "code": "352"
+  },
+  {
+    "carrier": "MOBILY",
+    "code": "353"
+  },
+  {
+    "carrier": "MOBINIL",
+    "code": "354"
+  },
+  {
+    "carrier": "MOBISIR",
+    "code": "355"
+  },
+  {
+    "carrier": "MOBISTAR",
+    "code": "356"
+  },
+  {
+    "carrier": "MOBITAI",
+    "code": "357"
+  },
+  {
+    "carrier": "MOBITEL",
+    "code": "358"
+  },
+  {
+    "carrier": "MOBYLAND",
+    "code": "359"
+  },
+  {
+    "carrier": "MOLDCELL",
+    "code": "360"
+  },
+  {
+    "carrier": "MONACO TELECOM",
+    "code": "361"
+  },
+  {
+    "carrier": "MOOV",
+    "code": "362"
+  },
+  {
+    "carrier": "MOTIV",
+    "code": "363"
+  },
+  {
+    "carrier": "MOVICEL",
+    "code": "364"
+  },
+  {
+    "carrier": "MOVILNET",
+    "code": "365"
+  },
+  {
+    "carrier": "MOVISTAR",
+    "code": "366"
+  },
+  {
+    "carrier": "MPT",
+    "code": "367"
+  },
+  {
+    "carrier": "MPULSE",
+    "code": "368"
+  },
+  {
+    "carrier": "MT&T MOBILITY",
+    "code": "369"
+  },
+  {
+    "carrier": "MT:S",
+    "code": "370"
+  },
+  {
+    "carrier": "MTC",
+    "code": "371"
+  },
+  {
+    "carrier": "MTCE",
+    "code": "372"
+  },
+  {
+    "carrier": "MTC-TOUCH",
+    "code": "373"
+  },
+  {
+    "carrier": "M-TEL",
+    "code": "374"
+  },
+  {
+    "carrier": "MTML",
+    "code": "375"
+  },
+  {
+    "carrier": "MTN",
+    "code": "376"
+  },
+  {
+    "carrier": "MTS",
+    "code": "377"
+  },
+  {
+    "carrier": "MUNDIO MOBILE",
+    "code": "378"
+  },
+  {
+    "carrier": "NAR MOBILE",
+    "code": "379"
+  },
+  {
+    "carrier": "NASH TECHNOLOGIES",
+    "code": "380"
+  },
+  {
+    "carrier": "NATCOM",
+    "code": "381"
+  },
+  {
+    "carrier": "NATIONLINK",
+    "code": "382"
+  },
+  {
+    "carrier": "NAVITAS",
+    "code": "383"
+  },
+  {
+    "carrier": "NAWRAS",
+    "code": "384"
+  },
+  {
+    "carrier": "NCC",
+    "code": "385"
+  },
+  {
+    "carrier": "NCELL",
+    "code": "386"
+  },
+  {
+    "carrier": "NEOTEL",
+    "code": "387"
+  },
+  {
+    "carrier": "NETCOM",
+    "code": "388"
+  },
+  {
+    "carrier": "NETIA",
+    "code": "389"
+  },
+  {
+    "carrier": "NET-ONE",
+    "code": "390"
+  },
+  {
+    "carrier": "NETWORK NORWAY",
+    "code": "391"
+  },
+  {
+    "carrier": "NETWORK RAIL",
+    "code": "392"
+  },
+  {
+    "carrier": "NEW TEL MOBILITY",
+    "code": "393"
+  },
+  {
+    "carrier": "NEXTEL",
+    "code": "394"
+  },
+  {
+    "carrier": "NOKIA",
+    "code": "395"
+  },
+  {
+    "carrier": "NORDISK POLSKA",
+    "code": "396"
+  },
+  {
+    "carrier": "NORFOLK TELECOM",
+    "code": "397"
+  },
+  {
+    "carrier": "NORTH SITE",
+    "code": "398"
+  },
+  {
+    "carrier": "NORTHSTAR",
+    "code": "399"
+  },
+  {
+    "carrier": "NOVA",
+    "code": "400"
+  },
+  {
+    "carrier": "NT MOBILE",
+    "code": "401"
+  },
+  {
+    "carrier": "NTC",
+    "code": "402"
+  },
+  {
+    "carrier": "NTT DOCOMO",
+    "code": "403"
+  },
+  {
+    "carrier": "NUEVATEL",
+    "code": "404"
+  },
+  {
+    "carrier": "O!",
+    "code": "405"
+  },
+  {
+    "carrier": "O2",
+    "code": "406"
+  },
+  {
+    "carrier": "OGERO MOBILE",
+    "code": "407"
+  },
+  {
+    "carrier": "OI / BRASIL TELECOM",
+    "code": "408"
+  },
+  {
+    "carrier": "OKINAWA CELLULAR",
+    "code": "409"
+  },
+  {
+    "carrier": "OKLAHOMA WESTERN",
+    "code": "410"
+  },
+  {
+    "carrier": "OMAN MOBILE",
+    "code": "411"
+  },
+  {
+    "carrier": "OMNITEL",
+    "code": "412"
+  },
+  {
+    "carrier": "OMNNEA",
+    "code": "413"
+  },
+  {
+    "carrier": "ONAIR SWITZERLAND",
+    "code": "414"
+  },
+  {
+    "carrier": "ONATEL",
+    "code": "415"
+  },
+  {
+    "carrier": "ONE",
+    "code": "416"
+  },
+  {
+    "carrier": "ONEPHONE",
+    "code": "417"
+  },
+  {
+    "carrier": "ONO",
+    "code": "418"
+  },
+  {
+    "carrier": "ON-WAVES",
+    "code": "419"
+  },
+  {
+    "carrier": "OPEN MOBILE",
+    "code": "420"
+  },
+  {
+    "carrier": "OPTIMUS",
+    "code": "421"
+  },
+  {
+    "carrier": "OPTUS",
+    "code": "422"
+  },
+  {
+    "carrier": "ORANGE",
+    "code": "423"
+  },
+  {
+    "carrier": "ORANGE KENYA",
+    "code": "424"
+  },
+  {
+    "carrier": "ORICEL",
+    "code": "425"
+  },
+  {
+    "carrier": "OSNO TELECOM",
+    "code": "426"
+  },
+  {
+    "carrier": "OUTREMER",
+    "code": "427"
+  },
+  {
+    "carrier": "OY TOP CONNECT",
+    "code": "428"
+  },
+  {
+    "carrier": "PACE",
+    "code": "429"
+  },
+  {
+    "carrier": "PALAU MOBILE",
+    "code": "430"
+  },
+  {
+    "carrier": "PANHANDLE",
+    "code": "431"
+  },
+  {
+    "carrier": "PCCW MOBILE (CDMA)",
+    "code": "432"
+  },
+  {
+    "carrier": "PELEPHONE",
+    "code": "433"
+  },
+  {
+    "carrier": "PEOPLENET",
+    "code": "434"
+  },
+  {
+    "carrier": "PERFECTUM MOBILE",
+    "code": "435"
+  },
+  {
+    "carrier": "PERSONAL",
+    "code": "436"
+  },
+  {
+    "carrier": "PETROCOM",
+    "code": "437"
+  },
+  {
+    "carrier": "PINE CELLULAR",
+    "code": "438"
+  },
+  {
+    "carrier": "PINPOINT",
+    "code": "439"
+  },
+  {
+    "carrier": "PLATEAU WIRELESS",
+    "code": "440"
+  },
+  {
+    "carrier": "PLAY",
+    "code": "441"
+  },
+  {
+    "carrier": "PLDT",
+    "code": "442"
+  },
+  {
+    "carrier": "PLUS",
+    "code": "443"
+  },
+  {
+    "carrier": "PNCC",
+    "code": "444"
+  },
+  {
+    "carrier": "PRIMA",
+    "code": "445"
+  },
+  {
+    "carrier": "PRIMETEL",
+    "code": "446"
+  },
+  {
+    "carrier": "PRIVATE MOBILE NETWORKS",
+    "code": "447"
+  },
+  {
+    "carrier": "PRIVATE MOBILITY",
+    "code": "448"
+  },
+  {
+    "carrier": "PROGROUP HOLDING",
+    "code": "449"
+  },
+  {
+    "carrier": "PRORAIL",
+    "code": "450"
+  },
+  {
+    "carrier": "PROXIMUS",
+    "code": "451"
+  },
+  {
+    "carrier": "PSN",
+    "code": "452"
+  },
+  {
+    "carrier": "PTI PACIFICA",
+    "code": "453"
+  },
+  {
+    "carrier": "QB",
+    "code": "454"
+  },
+  {
+    "carrier": "QCELL",
+    "code": "455"
+  },
+  {
+    "carrier": "QTEL",
+    "code": "456"
+  },
+  {
+    "carrier": "RADIOACCESS",
+    "code": "457"
+  },
+  {
+    "carrier": "RAILCORP",
+    "code": "458"
+  },
+  {
+    "carrier": "RAILTRACK",
+    "code": "459"
+  },
+  {
+    "carrier": "RAILWAYS",
+    "code": "460"
+  },
+  {
+    "carrier": "RELIANCE",
+    "code": "461"
+  },
+  {
+    "carrier": "RFI",
+    "code": "462"
+  },
+  {
+    "carrier": "RIM",
+    "code": "463"
+  },
+  {
+    "carrier": "ROBI",
+    "code": "464"
+  },
+  {
+    "carrier": "ROGERS WIRELESS",
+    "code": "465"
+  },
+  {
+    "carrier": "ROMTELECOM",
+    "code": "466"
+  },
+  {
+    "carrier": "ROSHAN",
+    "code": "467"
+  },
+  {
+    "carrier": "ROUTOMESSAGING",
+    "code": "468"
+  },
+  {
+    "carrier": "S TEL",
+    "code": "469"
+  },
+  {
+    "carrier": "S TELECOM",
+    "code": "470"
+  },
+  {
+    "carrier": "SABAFON",
+    "code": "471"
+  },
+  {
+    "carrier": "SACEL",
+    "code": "472"
+  },
+  {
+    "carrier": "SAFARICOM",
+    "code": "473"
+  },
+  {
+    "carrier": "SAHELCOM",
+    "code": "474"
+  },
+  {
+    "carrier": "SAIT TELECOM",
+    "code": "475"
+  },
+  {
+    "carrier": "SALAM",
+    "code": "476"
+  },
+  {
+    "carrier": "SAMK",
+    "code": "477"
+  },
+  {
+    "carrier": "SAMOATEL",
+    "code": "478"
+  },
+  {
+    "carrier": "SANATEL",
+    "code": "479"
+  },
+  {
+    "carrier": "SASATEL",
+    "code": "480"
+  },
+  {
+    "carrier": "SASKTEL",
+    "code": "481"
+  },
+  {
+    "carrier": "SAUNALAHTI",
+    "code": "482"
+  },
+  {
+    "carrier": "SBB",
+    "code": "483"
+  },
+  {
+    "carrier": "SEAMOBILE",
+    "code": "484"
+  },
+  {
+    "carrier": "SEANET",
+    "code": "485"
+  },
+  {
+    "carrier": "SENSE COMMUNICATIONS",
+    "code": "486"
+  },
+  {
+    "carrier": "SENTECH",
+    "code": "487"
+  },
+  {
+    "carrier": "SERCOMTEL",
+    "code": "488"
+  },
+  {
+    "carrier": "SETAR",
+    "code": "489"
+  },
+  {
+    "carrier": "SFERIA",
+    "code": "490"
+  },
+  {
+    "carrier": "S-FONE",
+    "code": "491"
+  },
+  {
+    "carrier": "SFR",
+    "code": "492"
+  },
+  {
+    "carrier": "SHORELINE COMMUNICATION",
+    "code": "493"
+  },
+  {
+    "carrier": "SI.MOBIL",
+    "code": "494"
+  },
+  {
+    "carrier": "SIBCHALLENGE",
+    "code": "495"
+  },
+  {
+    "carrier": "SIEMENS",
+    "code": "496"
+  },
+  {
+    "carrier": "SILKNET",
+    "code": "497"
+  },
+  {
+    "carrier": "SIMINN",
+    "code": "498"
+  },
+  {
+    "carrier": "SIMMETRY",
+    "code": "499"
+  },
+  {
+    "carrier": "SINGTEL",
+    "code": "500"
+  },
+  {
+    "carrier": "SINGTEL-G18",
+    "code": "501"
+  },
+  {
+    "carrier": "SKT",
+    "code": "502"
+  },
+  {
+    "carrier": "SKY/C-PHONE",
+    "code": "503"
+  },
+  {
+    "carrier": "SKYLINK",
+    "code": "504"
+  },
+  {
+    "carrier": "SKYTEL",
+    "code": "505"
+  },
+  {
+    "carrier": "SMART",
+    "code": "506"
+  },
+  {
+    "carrier": "SMART MOBILE",
+    "code": "507"
+  },
+  {
+    "carrier": "SMARTONE",
+    "code": "508"
+  },
+  {
+    "carrier": "SMARTS",
+    "code": "509"
+  },
+  {
+    "carrier": "SMILE",
+    "code": "510"
+  },
+  {
+    "carrier": "SOFTBANK",
+    "code": "511"
+  },
+  {
+    "carrier": "SOMAFONE",
+    "code": "512"
+  },
+  {
+    "carrier": "SOMTEL",
+    "code": "513"
+  },
+  {
+    "carrier": "SONERA",
+    "code": "514"
+  },
+  {
+    "carrier": "SOTELGUI",
+    "code": "515"
+  },
+  {
+    "carrier": "SOUL",
+    "code": "516"
+  },
+  {
+    "carrier": "SOUTHERN COMMUNICATIONS",
+    "code": "517"
+  },
+  {
+    "carrier": "SPEAKUP",
+    "code": "518"
+  },
+  {
+    "carrier": "SPRINT",
+    "code": "519"
+  },
+  {
+    "carrier": "SPROCKET",
+    "code": "520"
+  },
+  {
+    "carrier": "STAR-CELL",
+    "code": "521"
+  },
+  {
+    "carrier": "STARHUB",
+    "code": "522"
+  },
+  {
+    "carrier": "SUDANI ONE",
+    "code": "523"
+  },
+  {
+    "carrier": "SUN",
+    "code": "524"
+  },
+  {
+    "carrier": "SUNBEACH",
+    "code": "525"
+  },
+  {
+    "carrier": "SUNNET",
+    "code": "526"
+  },
+  {
+    "carrier": "SUNRISE",
+    "code": "527"
+  },
+  {
+    "carrier": "SUPERCELL",
+    "code": "528"
+  },
+  {
+    "carrier": "SWEDEN 2G",
+    "code": "529"
+  },
+  {
+    "carrier": "SWEDEN 3G",
+    "code": "530"
+  },
+  {
+    "carrier": "SWISSCOM",
+    "code": "531"
+  },
+  {
+    "carrier": "SWITCH",
+    "code": "532"
+  },
+  {
+    "carrier": "SYNECTIV",
+    "code": "533"
+  },
+  {
+    "carrier": "SYRIATEL",
+    "code": "534"
+  },
+  {
+    "carrier": "SYSTEMNET",
+    "code": "535"
+  },
+  {
+    "carrier": "T-2",
+    "code": "536"
+  },
+  {
+    "carrier": "TAIWAN MOBILE",
+    "code": "537"
+  },
+  {
+    "carrier": "TAL",
+    "code": "538"
+  },
+  {
+    "carrier": "TALIYA",
+    "code": "539"
+  },
+  {
+    "carrier": "TALK TALK",
+    "code": "540"
+  },
+  {
+    "carrier": "TAMBOV",
+    "code": "541"
+  },
+  {
+    "carrier": "TANGO",
+    "code": "542"
+  },
+  {
+    "carrier": "TASHICELL",
+    "code": "543"
+  },
+  {
+    "carrier": "TATA",
+    "code": "544"
+  },
+  {
+    "carrier": "TBAY",
+    "code": "545"
+  },
+  {
+    "carrier": "TCELL",
+    "code": "546"
+  },
+  {
+    "carrier": "TCHAD MOBILE",
+    "code": "547"
+  },
+  {
+    "carrier": "TCI",
+    "code": "548"
+  },
+  {
+    "carrier": "TDC",
+    "code": "549"
+  },
+  {
+    "carrier": "TELCEL",
+    "code": "550"
+  },
+  {
+    "carrier": "TELCELL",
+    "code": "551"
+  },
+  {
+    "carrier": "TELCOM",
+    "code": "552"
+  },
+  {
+    "carrier": "TELE 2",
+    "code": "553"
+  },
+  {
+    "carrier": "TELE GREENLAND",
+    "code": "554"
+  },
+  {
+    "carrier": "TELE.RING",
+    "code": "555"
+  },
+  {
+    "carrier": "TELE1 EUROPE",
+    "code": "556"
+  },
+  {
+    "carrier": "TELE2",
+    "code": "557"
+  },
+  {
+    "carrier": "TELECABLE",
+    "code": "558"
+  },
+  {
+    "carrier": "TELECEL",
+    "code": "559"
+  },
+  {
+    "carrier": "TELECOM COOK",
+    "code": "560"
+  },
+  {
+    "carrier": "TELECOM NIUE",
+    "code": "561"
+  },
+  {
+    "carrier": "TELEENA",
+    "code": "562"
+  },
+  {
+    "carrier": "TELEKOM MALAYSIA",
+    "code": "563"
+  },
+  {
+    "carrier": "TELENOR",
+    "code": "564"
+  },
+  {
+    "carrier": "TELESOM",
+    "code": "565"
+  },
+  {
+    "carrier": "TELESUR",
+    "code": "566"
+  },
+  {
+    "carrier": "TELETALK",
+    "code": "567"
+  },
+  {
+    "carrier": "TELETOPIA",
+    "code": "568"
+  },
+  {
+    "carrier": "TELFORT",
+    "code": "569"
+  },
+  {
+    "carrier": "TELIA",
+    "code": "570"
+  },
+  {
+    "carrier": "TELKOMFLEXI",
+    "code": "571"
+  },
+  {
+    "carrier": "TELKOMMOBILE",
+    "code": "572"
+  },
+  {
+    "carrier": "TELKOMSEL",
+    "code": "573"
+  },
+  {
+    "carrier": "TELMA",
+    "code": "574"
+  },
+  {
+    "carrier": "TELMOB",
+    "code": "575"
+  },
+  {
+    "carrier": "TELNA MOBILE",
+    "code": "576"
+  },
+  {
+    "carrier": "TELSTRA",
+    "code": "577"
+  },
+  {
+    "carrier": "TELUS",
+    "code": "578"
+  },
+  {
+    "carrier": "TESTING",
+    "code": "579"
+  },
+  {
+    "carrier": "THINTA THINTA",
+    "code": "580"
+  },
+  {
+    "carrier": "THURAYA",
+    "code": "581"
+  },
+  {
+    "carrier": "TIGO",
+    "code": "582"
+  },
+  {
+    "carrier": "TIM",
+    "code": "583"
+  },
+  {
+    "carrier": "TIMOR TELECOM",
+    "code": "584"
+  },
+  {
+    "carrier": "TKC",
+    "code": "585"
+  },
+  {
+    "carrier": "TM-CELL",
+    "code": "586"
+  },
+  {
+    "carrier": "TME",
+    "code": "587"
+  },
+  {
+    "carrier": "TMN",
+    "code": "588"
+  },
+  {
+    "carrier": "T-MOBILE",
+    "code": "589"
+  },
+  {
+    "carrier": "TNM",
+    "code": "590"
+  },
+  {
+    "carrier": "TOGEWANET",
+    "code": "591"
+  },
+  {
+    "carrier": "TOGO CELL",
+    "code": "592"
+  },
+  {
+    "carrier": "TONGA COMMUNICATIONS",
+    "code": "593"
+  },
+  {
+    "carrier": "TOT 3G",
+    "code": "594"
+  },
+  {
+    "carrier": "T-PLUS",
+    "code": "595"
+  },
+  {
+    "carrier": "TRANSASIA",
+    "code": "596"
+  },
+  {
+    "carrier": "TRANSATEL MOBILE",
+    "code": "597"
+  },
+  {
+    "carrier": "TRAVEL TELEKOM",
+    "code": "598"
+  },
+  {
+    "carrier": "TRIATEL",
+    "code": "599"
+  },
+  {
+    "carrier": "TRICOM",
+    "code": "600"
+  },
+  {
+    "carrier": "TRUE MOVE",
+    "code": "601"
+  },
+  {
+    "carrier": "TRUPHONE",
+    "code": "602"
+  },
+  {
+    "carrier": "TTCL MOBILE",
+    "code": "603"
+  },
+  {
+    "carrier": "TUNICELL",
+    "code": "604"
+  },
+  {
+    "carrier": "TUNISIANA",
+    "code": "605"
+  },
+  {
+    "carrier": "TUNTEX",
+    "code": "606"
+  },
+  {
+    "carrier": "TURKCELL",
+    "code": "607"
+  },
+  {
+    "carrier": "TUSMOBIL",
+    "code": "608"
+  },
+  {
+    "carrier": "U MOBILE",
+    "code": "609"
+  },
+  {
+    "carrier": "U:FON",
+    "code": "610"
+  },
+  {
+    "carrier": "UCELL",
+    "code": "611"
+  },
+  {
+    "carrier": "U-COM",
+    "code": "612"
+  },
+  {
+    "carrier": "UFONE",
+    "code": "613"
+  },
+  {
+    "carrier": "UK BROADBAND",
+    "code": "614"
+  },
+  {
+    "carrier": "UKRTELECOM",
+    "code": "615"
+  },
+  {
+    "carrier": "UMNIAH",
+    "code": "616"
+  },
+  {
+    "carrier": "UNICA",
+    "code": "617"
+  },
+  {
+    "carrier": "UNICEL",
+    "code": "618"
+  },
+  {
+    "carrier": "UNIENT",
+    "code": "619"
+  },
+  {
+    "carrier": "UNIFY GROUP HOLDING",
+    "code": "620"
+  },
+  {
+    "carrier": "UNINOR",
+    "code": "621"
+  },
+  {
+    "carrier": "UNIQA",
+    "code": "622"
+  },
+  {
+    "carrier": "UNITE",
+    "code": "623"
+  },
+  {
+    "carrier": "UNITEL",
+    "code": "624"
+  },
+  {
+    "carrier": "UPC",
+    "code": "625"
+  },
+  {
+    "carrier": "US CELLULAR",
+    "code": "626"
+  },
+  {
+    "carrier": "UTEL",
+    "code": "627"
+  },
+  {
+    "carrier": "UTL",
+    "code": "628"
+  },
+  {
+    "carrier": "UTS",
+    "code": "629"
+  },
+  {
+    "carrier": "VECTONE MOBILE",
+    "code": "630"
+  },
+  {
+    "carrier": "VELCOM",
+    "code": "631"
+  },
+  {
+    "carrier": "VENTELO",
+    "code": "632"
+  },
+  {
+    "carrier": "VERISIGN",
+    "code": "633"
+  },
+  {
+    "carrier": "VERIZON",
+    "code": "634"
+  },
+  {
+    "carrier": "VIAERO",
+    "code": "635"
+  },
+  {
+    "carrier": "VIBO",
+    "code": "636"
+  },
+  {
+    "carrier": "VIDEOCON DATACOM",
+    "code": "637"
+  },
+  {
+    "carrier": "VIDEOTRON",
+    "code": "638"
+  },
+  {
+    "carrier": "VIETNAMOBILE",
+    "code": "639"
+  },
+  {
+    "carrier": "VIETTEL MOBILE",
+    "code": "640"
+  },
+  {
+    "carrier": "VIKING",
+    "code": "641"
+  },
+  {
+    "carrier": "VINAPHONE",
+    "code": "642"
+  },
+  {
+    "carrier": "VINI",
+    "code": "643"
+  },
+  {
+    "carrier": "VIOLA",
+    "code": "644"
+  },
+  {
+    "carrier": "VIP",
+    "code": "645"
+  },
+  {
+    "carrier": "VIP MK",
+    "code": "646"
+  },
+  {
+    "carrier": "VIRGIN MOBILE",
+    "code": "647"
+  },
+  {
+    "carrier": "VIRVE",
+    "code": "648"
+  },
+  {
+    "carrier": "VISAFONE",
+    "code": "649"
+  },
+  {
+    "carrier": "VIVA",
+    "code": "650"
+  },
+  {
+    "carrier": "VIVACELL-MTS",
+    "code": "651"
+  },
+  {
+    "carrier": "VIVACOM",
+    "code": "652"
+  },
+  {
+    "carrier": "VIVO",
+    "code": "653"
+  },
+  {
+    "carrier": "VODACOM",
+    "code": "654"
+  },
+  {
+    "carrier": "VODAFONE",
+    "code": "655"
+  },
+  {
+    "carrier": "VOICEWORKS",
+    "code": "656"
+  },
+  {
+    "carrier": "VOX",
+    "code": "657"
+  },
+  {
+    "carrier": "VTR MOVIL",
+    "code": "658"
+  },
+  {
+    "carrier": "WARID",
+    "code": "659"
+  },
+  {
+    "carrier": "WARID TELECOM",
+    "code": "660"
+  },
+  {
+    "carrier": "WATANIYA",
+    "code": "661"
+  },
+  {
+    "carrier": "WCS IQ",
+    "code": "662"
+  },
+  {
+    "carrier": "WEBLINKS",
+    "code": "663"
+  },
+  {
+    "carrier": "WEST CENTRAL",
+    "code": "664"
+  },
+  {
+    "carrier": "WEST VIRGINIA WIRELESS",
+    "code": "665"
+  },
+  {
+    "carrier": "WESTLINK",
+    "code": "666"
+  },
+  {
+    "carrier": "WIKES CELLULAR",
+    "code": "667"
+  },
+  {
+    "carrier": "WILKES CELLULAR",
+    "code": "668"
+  },
+  {
+    "carrier": "WILL",
+    "code": "669"
+  },
+  {
+    "carrier": "WIND",
+    "code": "670"
+  },
+  {
+    "carrier": "WIND MOBILE",
+    "code": "671"
+  },
+  {
+    "carrier": "WIRELESS MAINGATE NORDIC",
+    "code": "672"
+  },
+  {
+    "carrier": "WOOSH",
+    "code": "673"
+  },
+  {
+    "carrier": "XIT WIRELESS",
+    "code": "674"
+  },
+  {
+    "carrier": "XL",
+    "code": "675"
+  },
+  {
+    "carrier": "XPRESS TELECOM",
+    "code": "676"
+  },
+  {
+    "carrier": "XT MOBILE NETWORK",
+    "code": "677"
+  },
+  {
+    "carrier": "YEMEN MOBILE",
+    "code": "678"
+  },
+  {
+    "carrier": "YES",
+    "code": "679"
+  },
+  {
+    "carrier": "YESSS",
+    "code": "680"
+  },
+  {
+    "carrier": "YOIGO",
+    "code": "681"
+  },
+  {
+    "carrier": "YOTA",
+    "code": "682"
+  },
+  {
+    "carrier": "YU",
+    "code": "683"
+  },
+  {
+    "carrier": "ZAIN",
+    "code": "684"
+  },
+  {
+    "carrier": "ZANTEL",
+    "code": "685"
+  },
+  {
+    "carrier": "ZIGGO",
+    "code": "686"
+  },
+  {
+    "carrier": "ZSR",
+    "code": "687"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "a56",
+  "description": "kuskus",
+  "domain": "q1",
+  "appBundle": "65gfretyur",
+  "url": "https://itunes.apple.com/us/artist/r-e-m/id311145",
+  "coppaRestricted": false,
+  "platform": "IPAD_IPHONE",
+  "iabCategories": [
+    "IAB1",
+    "IAB2"
+  ],
+  "type": "APPLICATION"
+}

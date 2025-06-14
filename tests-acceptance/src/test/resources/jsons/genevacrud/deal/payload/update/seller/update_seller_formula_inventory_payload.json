@@ -1,0 +1,27 @@
+{
+  "content": [
+    {
+      "dealPid": 1,
+      "autoUpdate": true,
+      "placementFormula": {
+        "groupedBy": "OR",
+        "formulaGroups": [
+          {
+            "formulaRules": [
+              {
+                "attribute": "PUBLISHER_NAME",
+                "operator": "EQUALS",
+                "ruleData": "Nexage Inc"
+              },
+              {
+                "attribute": "PLACEMENT_NAME",
+                "operator": "CONTAINS",
+                "ruleData": "Food"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
